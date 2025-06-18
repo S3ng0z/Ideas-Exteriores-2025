@@ -208,8 +208,8 @@
           assign border_bottom_setting_id = 'border_width'
       endcase
 
-      assign style = '--border-bottom-width: [width]px; ' | replace: '[width]', section.settings[border_bottom_setting_id]
-
+      #assign style = '--border-bottom-width: [width]px; ' | replace: '[width]', section.settings[border_bottom_setting_id]
+      assign style = '--border-bottom-width: {{ section.settings.divider_width }}px; '
       if row == 'top'
         assign style = style | append: '--border-bottom-width-mobile: [width]px; ' | replace: '[width]', section.settings.border_width
       endif
@@ -901,6 +901,16 @@
       ],
       "default": "default",
       "visible_if": "{{ section.settings.enable_transparent_header_home }}"
+    },
+    {
+      "type": "range",
+      "id": "divider_width",
+      "label": "t:settings.divider_thickness",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "default": 0
     },
     {
       "type": "header",
