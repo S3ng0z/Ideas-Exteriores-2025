@@ -482,9 +482,12 @@
     }
 
     @media screen and (width < 750px) {
-      --header-template-columns: var(--header-mobile-bookend) var(--header-mobile-bookend) 1fr
-        var(--header-mobile-bookend) var(--header-mobile-bookend);
-      grid-template-areas: 'leftA leftB center rightA rightB';
+      /*--header-template-columns: var(--header-mobile-bookend) var(--header-mobile-bookend) 1fr
+        var(--header-mobile-bookend) var(--header-mobile-bookend);*/
+      --header-template-columns: var(--header-mobile-bookend) 1fr
+        var(--header-mobile-bookend);
+      /*grid-template-areas: 'leftA leftB center rightA rightB';*/
+      grid-template-areas: 'leftA center rightA';
       grid-column: span 3;
       column-gap: 0;
       align-items: center;
