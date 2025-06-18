@@ -1,6 +1,7 @@
 
 
-{% assign plain_text = block.settings.text | strip_newlines | strip_html | strip %}
+<!--{% assign plain_text = block.settings.text | strip_newlines | strip_html | strip %}-->
+{% assign plain_text = block.settings.custom_liquid | strip_newlines | strip_html | strip %}
 {%- assign block_index = section.blocks | find_index: 'id', block.id -%}
 
 {%- unless plain_text == '' -%}
@@ -26,7 +27,8 @@
     aria-hidden="{% if block_index == 0 %}false{% else %}true{% endif %}"
   >
     <p class="announcement-bar__text">
-      {{ block.settings.text }}
+      <!--{{ block.settings.text }}-->
+      {{ block.settings.custom_liquid }}
     </p>
 
     {% if block.settings.link != blank %}
@@ -35,7 +37,8 @@
         href="{{ block.settings.link }}"
       >
         <span class="visually-hidden">
-          {{ block.settings.text | strip_html }}
+          <!--{{ block.settings.text | strip_html }}-->
+          {{ block.settings.custom_liquid | strip_html }}
         </span>
       </a>
     {% endif %}
@@ -134,6 +137,12 @@
       "id": "text",
       "label": "t:settings.text",
       "default": "t:text_defaults.shop_our_latest_arrivals"
+    },
+    {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:settings.custom_liquid",
+      "info": "t:info.custom_liquid"
     },
     {
       "type": "url",
