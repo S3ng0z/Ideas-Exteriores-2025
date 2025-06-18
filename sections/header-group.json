@@ -27,32 +27,16 @@
             "case": "uppercase"
           },
           "blocks": {}
-        },
-        "announcement_fiQ6DF": {
-          "type": "_announcement",
-          "name": "t:names.announcement",
-          "settings": {
-            "text": "Shop our latest arrivals!",
-            "custom_liquid": "",
-            "link": "",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "weight": "",
-            "letter_spacing": "normal",
-            "case": "none"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "announcement_thFH6p",
-        "announcement_fiQ6DF"
+        "announcement_thFH6p"
       ],
       "name": "t:names.announcement_bar",
       "settings": {
         "speed": 5,
         "section_width": "full-width",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "divider_width": 2,
         "padding-block-start": 15,
         "padding-block-end": 15
