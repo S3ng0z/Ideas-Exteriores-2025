@@ -210,9 +210,9 @@
 
       #assign style = '--border-bottom-width: [width]px; ' | replace: '[width]', section.settings[border_bottom_setting_id]
       assign style = '--border-bottom-width: {{ section.settings.divider_width }}px; '
-      if row == 'top'
-        assign style = style | append: '--border-bottom-width-mobile: [width]px; ' | replace: '[width]', section.settings.border_width
-      endif
+      #if row == 'top'
+        #assign style = style | append: '--border-bottom-width-mobile: [width]px; ' | replace: '[width]', section.settings.border_width
+      #endif
     %}
 
     {% capture content %}
