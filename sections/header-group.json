@@ -18,6 +18,7 @@
           "type": "_announcement",
           "settings": {
             "text": "Shop our latest arrivals!",
+            "custom_liquid": "<div style=\"width: 100%; background-color: #48423f; padding: 15px 0; display: flex; justify-content: center; gap: 60px;\">\n  \n  <div style=\"display: flex; align-items: center; gap: 10px;\">\n    <img src=\"{{ 'icon-delivery.svg' | asset_url }}\" alt=\"Entrega rápida\" style=\"width: 20px; height: 20px;\">\n    <span>Entrega rápida</span>\n  </div>\n\n  <div style=\"display: flex; align-items: center; gap: 10px;\">\n    <img src=\"{{ 'icon-quality.svg' | asset_url }}\" alt=\"Alta calidad\" style=\"width: 20px; height: 20px;\">\n    <span>Alta calidad</span>\n  </div>\n\n  <div style=\"display: flex; align-items: center; gap: 10px;\">\n    <img src=\"{{ 'icon-payment.svg' | asset_url }}\" alt=\"Pago flexible\" style=\"width: 20px; height: 20px;\">\n    <span>Pago flexible</span>\n  </div>\n\n</div>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -32,6 +33,7 @@
           "name": "t:names.announcement",
           "settings": {
             "text": "Shop our latest arrivals!",
+            "custom_liquid": "",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
