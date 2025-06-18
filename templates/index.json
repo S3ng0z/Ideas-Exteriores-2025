@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "hero_irjTFL": {
       "type": "hero",
@@ -44,10 +45,11 @@
       "name": "Hero",
       "settings": {
         "link": "shopify://collections",
-        "open_in_new_tab": false,
-        "media_type_1": "image",
+        "open_in_new_tab": true,
+        "media_type_1": "video",
+        "video_1": "shopify://files/videos/7da16321cc074643967e564011090bb8.mp4",
         "media_type_2": "image",
-        "content_direction": "column",
+        "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
@@ -63,6 +65,8 @@
         "overlay_color": "#0000009e",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
         "padding-block-start": 48,
         "padding-block-end": 48
       }
@@ -232,6 +236,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "link": "",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "cover",
@@ -316,6 +321,7 @@
       },
       "name": "t:names.featured_product",
       "settings": {
+        "product": "",
         "layout": "media-left",
         "color_scheme": "scheme-2",
         "padding-block-start": 0,
@@ -331,6 +337,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "link": "",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "cover",
@@ -415,6 +422,7 @@
       },
       "name": "t:names.featured_product",
       "settings": {
+        "product": "",
         "layout": "media-right",
         "color_scheme": "scheme-2",
         "padding-block-start": 0,
@@ -528,6 +536,7 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -599,6 +608,12 @@
                     "type_preset": "paragraph",
                     "width": "100%",
                     "alignment": "center",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -739,6 +754,7 @@
       },
       "name": "t:names.collections_grid",
       "settings": {
+        "collection_list": [],
         "layout_type": "grid",
         "carousel_on_mobile": true,
         "columns": 3,
