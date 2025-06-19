@@ -431,6 +431,7 @@ p:empty {
   /*width: 100%;*/
   width: 45rem;
   height: 100%;
+  text-align: justify;
 }
 
 /* Utility */
