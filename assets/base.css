@@ -429,7 +429,7 @@ p:empty {
   min-height: calc(var(--section-min-height, 'auto') - var(--section-height-offset, 0px));
   position: relative;
   /*width: 100%;*/
-  width: 100%;
+  width: 30rem;
   height: 100%;
 }
 
