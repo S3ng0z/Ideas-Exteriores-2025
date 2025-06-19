@@ -43,7 +43,8 @@
         "text_CXHmij"
       ],
       "custom_css": [
-        ".text-block h2,.text-block h4 {text-transform: uppercase; text-align: justify;}"
+        ".text-block h2,.text-block h4 {text-transform: uppercase; text-align: justify;}",
+        ".section-content-wrapper.section-content-wrapper {width: 52rem;}"
       ],
       "name": "Hero",
       "settings": {
