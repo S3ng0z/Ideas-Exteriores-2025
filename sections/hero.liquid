@@ -561,7 +561,7 @@
           "label": "t:options.space_between"
         }
       ],
-      "default": "space-between",
+      "default": "flex-start",
       "visible_if": "{{ section.settings.content_direction == 'row' }}"
     },
     {
@@ -608,6 +608,10 @@
         {
           "value": "flex-end",
           "label": "t:options.right"
+        },
+        {
+          "value": "justify",
+          "label": "t:options.justify"
         }
       ],
       "default": "flex-start",
