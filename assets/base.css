@@ -428,8 +428,7 @@ p:empty {
 .section-content-wrapper.section-content-wrapper {
   min-height: calc(var(--section-min-height, 'auto') - var(--section-height-offset, 0px));
   position: relative;
-  /*width: 100%;*/
-  width: 45rem;
+  width: 100%;
   height: 100%;
   text-align: justify;
 }
