@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h2><strong>Soluciones en Madera a Medida</strong></h2><h4><br/>Construimos casas, casetas y estructuras de madera personalizadas con diseño de calidad y alto rendimiento energético. Desde proyectos a medida hasta entregas llave en mano, ofrecemos soluciones sostenibles, eficientes y adaptadas a tus necesidades. Usamos entramado ligero y paneles SIP para garantizar durabilidad, confort y eficiencia.<br/><br/></h4>",
+            "text": "<h3><strong>Soluciones en Madera a Medida</strong></h3><h4><br/>Construimos casas, casetas y estructuras de madera personalizadas con diseño de calidad y alto rendimiento energético. Desde proyectos a medida hasta entregas llave en mano, ofrecemos soluciones sostenibles, eficientes y adaptadas a tus necesidades. Usamos entramado ligero y paneles SIP para garantizar durabilidad, confort y eficiencia.<br/><br/></h4>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -43,8 +43,9 @@
         "text_CXHmij"
       ],
       "custom_css": [
-        ".text-block h2,.text-block h4 {text-transform: uppercase; text-align: justify;}",
-        ".section-content-wrapper.section-content-wrapper {width: 52rem;}"
+        ".text-block h3,.text-block h4 {text-transform: uppercase; text-align: justify;}",
+        ".section-content-wrapper.section-content-wrapper {width: 45rem;}",
+        ".text-block h4 {font-size: 1.3rem}"
       ],
       "name": "Hero",
       "settings": {
