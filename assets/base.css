@@ -2314,6 +2314,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 
 .shopify-policy__container {
   padding-block: var(--padding-xl);
+  --page-content-width: var(--narrow-page-width);
   --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));
 }
 
