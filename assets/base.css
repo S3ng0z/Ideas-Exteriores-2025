@@ -2258,6 +2258,10 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
     margin-block: clamp(1.5rem, 1em * 3.3, 2.5rem) clamp(1rem, 1em * 0.25, 2rem);
   }
 
+  :is(h1) {
+    font-size: var(--font-h2--size) !important;
+  }
+
   :is(p, h1, h2, h3, h4, h5, h6):first-child,
   :empty:first-child + :is(p, h1, h2, h3, h4, h5, h6) {
     margin-block-start: 0;
