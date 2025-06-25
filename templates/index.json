@@ -77,6 +77,174 @@
         "padding-block-end": 48
       }
     },
+    "section_gcxq38": {
+      "type": "section",
+      "blocks": {
+        "image_Q96A4Q": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_igLTgP": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_f39tJ8": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Casas & Casetas Prefabricadas | Ideas Exteriores</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_Dgm3TY": {
+              "type": "text",
+              "settings": {
+                "text": "<p>En Ideas Exteriores, construimos casas y casetas de madera que se adaptan a tus ideas y necesidades. El 95% de nuestros proyectos son personalizados, porque creemos que tu visión merece ser única</p><p>Ofrecemos dos sistemas constructivos innovadores:</p><ul><li><strong>Entramado Ligero</strong>: Perfecto para diseños personalizados y adaptaciones a terrenos con desniveles.</li><li><strong>Paneles SIP (Paneles Estructurales Aislados)</strong>: Hogares acogedores, sostenibles y de alta eficiencia energética.</li></ul><p>Beneficios de elegirnos:</p><ul><li><strong>Diseño a medida</strong>: Amplía tu hogar, añade luminosidad o crea algo único.</li><li><strong>Calidad y rapidez</strong>: Instalación eficiente sin comprometer la excelencia.</li><li><strong>Sostenibilidad</strong>: Ahorro energético y respeto por el medio ambiente.</li><li><strong>Versatilidad</strong>: Desde casas personalizadas hasta soluciones prefabricadas.</li></ul><p>Construye de forma inteligente y sostenible con Ideas Exteriores. Tu hogar, nuestra pasión.</p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_VxirF6": {
+              "type": "button",
+              "settings": {
+                "label": "Ver modelos",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": true,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_f39tJ8",
+            "text_Dgm3TY",
+            "button_VxirF6"
+          ]
+        }
+      },
+      "block_order": [
+        "image_Q96A4Q",
+        "group_igLTgP"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
     "product_list_x9Yaab": {
       "type": "product-list",
       "blocks": {
@@ -781,6 +949,7 @@
   },
   "order": [
     "hero_irjTFL",
+    "section_gcxq38",
     "product_list_x9Yaab",
     "featured_product_yEF9dK",
     "featured_product_kAzr6f",
