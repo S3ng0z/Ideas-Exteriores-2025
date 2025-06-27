@@ -432,6 +432,7 @@ p:empty {
   height: 100%;
   text-align: justify;
   max-width: var(--home-content-width) !important;
+  margin: auto;
 }
 
 /* Utility */
