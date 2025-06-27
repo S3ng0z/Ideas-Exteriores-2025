@@ -350,7 +350,7 @@
                 "text_KdHD74": {
                   "type": "text",
                   "settings": {
-                    "text": "<h3>Diseño exclusivo</h3>",
+                    "text": "<p><strong>Diseña a tu medida</strong></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
