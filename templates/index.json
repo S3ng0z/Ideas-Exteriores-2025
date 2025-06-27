@@ -83,6 +83,7 @@
         "image_Q96A4Q": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Tipo_de_sistemas_Constructivos.png",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
