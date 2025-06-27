@@ -670,7 +670,7 @@
                 "text_HMtCBh": {
                   "type": "text",
                   "settings": {
-                    "text": "<h3>Calidad garantizada</h3>",
+                    "text": "<p><strong>Calidad certificada</strong></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -830,7 +830,7 @@
                 "text_Pr7jPh": {
                   "type": "text",
                   "settings": {
-                    "text": "<h3>Compromiso sostenible</h3>",
+                    "text": "<p><strong>Compromiso ecológico</strong></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
