@@ -510,7 +510,7 @@
                 "text_HyRmrt": {
                   "type": "text",
                   "settings": {
-                    "text": "<h3>Construcción eficiente</h3>",
+                    "text": "<p><strong>Construcción eficiente</strong></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
