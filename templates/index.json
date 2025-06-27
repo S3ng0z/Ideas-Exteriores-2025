@@ -1148,13 +1148,25 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_XNEW3U": {
-              "type": "icon",
+            "image_3yWmUT": {
+              "type": "image",
               "settings": {
-                "icon": "heart",
-                "width": 32,
+                "image": "shopify://shop_images/Tipo_de_sistemas_Constructivos.png",
                 "link": "",
-                "open_in_new_tab": false
+                "image_ratio": "square",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -1254,7 +1266,7 @@
             }
           },
           "block_order": [
-            "icon_XNEW3U",
+            "image_3yWmUT",
             "group_cQhjPV"
           ]
         },
@@ -1296,13 +1308,25 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_9A8Dj3": {
-              "type": "icon",
+            "image_azUkc8": {
+              "type": "image",
               "settings": {
-                "icon": "silhouette",
-                "width": 32,
+                "image": "shopify://shop_images/Tipo_de_sistemas_Constructivos.png",
                 "link": "",
-                "open_in_new_tab": false
+                "image_ratio": "square",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -1402,7 +1426,7 @@
             }
           },
           "block_order": [
-            "icon_9A8Dj3",
+            "image_azUkc8",
             "group_8Y48Mg"
           ]
         }
