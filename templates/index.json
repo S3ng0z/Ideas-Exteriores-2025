@@ -931,8 +931,9 @@
         "image_idqhC9": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Modelo_Entramado_Ligero_2fbe75e5-3256-4913-8971-4a8653265208.png",
             "link": "",
-            "image_ratio": "square",
+            "image_ratio": "adapt",
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
