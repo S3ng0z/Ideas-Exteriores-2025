@@ -23,7 +23,9 @@
     assign price = 1999
   endif
 
-  {{ price }}
+  <script>
+    console.log("Price: {{ price | escape }}");
+  </script>
 
   # Checks if product handle matches the closest product's handle (i.e. product page)
   # and if the currency code is enabled for product pages
