@@ -169,7 +169,7 @@
             "text_Dgm3TY": {
               "type": "text",
               "settings": {
-                "text": "<p>En Ideas Exteriores, construimos casas y casetas de madera que se adaptan a tus ideas y necesidades. El 95% de nuestros proyectos son personalizados, porque creemos que tu visión merece ser única</p><p>Ofrecemos dos sistemas constructivos innovadores:</p><ul><li><strong>Entramado Ligero</strong>: Perfecto para diseños personalizados y adaptaciones a terrenos con desniveles.</li><li><strong>Paneles SIP (Paneles Estructurales Aislados)</strong>: Hogares acogedores, sostenibles y de alta eficiencia energética.</li></ul><p>Beneficios de elegirnos:</p><ul><li><strong>Diseño a medida</strong>: Amplía tu hogar, añade luminosidad o crea algo único.</li><li><strong>Calidad y rapidez</strong>: Instalación eficiente sin comprometer la excelencia.</li><li><strong>Sostenibilidad</strong>: Ahorro energético y respeto por el medio ambiente.</li><li><strong>Versatilidad</strong>: Desde casas personalizadas hasta soluciones prefabricadas.</li></ul><p>Construye de forma inteligente y sostenible con Ideas Exteriores. Tu hogar, nuestra pasión.</p>",
+                "text": "<p>En <strong>Ideas Exteriores</strong> diseñamos y construimos casas y casetas de madera totalmente personalizadas (95 % de nuestros proyectos), adaptadas a tus ideas y necesidades.</p><p>Utilizamos dos sistemas constructivos:</p><ul><li><strong>Entramado ligero</strong>: ideal para diseños únicos y terrenos con desniveles.</li><li><strong>Paneles SIP</strong>: soluciones sostenibles, eficientes y acogedoras.</li></ul><p><strong>Ventajas de elegirnos:</strong></p><ul><li><strong>Diseño a medida</strong>: amplía tu hogar, potencia la iluminación o crea espacios originales.</li><li><strong>Rapidez y calidad</strong>: montaje eficiente sin renunciar al detalle.</li><li><strong>Sostenibilidad</strong>: ahorro energético y respeto al entorno.</li><li><strong>Adaptabilidad</strong>: desde construcciones promocionales hasta propuestas personalizadas.</li></ul><p>Construye de forma inteligente y responsable con <strong>Ideas Exteriores</strong>: tu proyecto, nuestra pasión.</p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -350,7 +350,7 @@
                 "text_KdHD74": {
                   "type": "text",
                   "settings": {
-                    "text": "<h3>Diseño exclusivo</h3>",
+                    "text": "<p><strong>Diseña a tu medida</strong></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -375,7 +375,7 @@
                 "text_kUHHxm": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Encuentra el modelo que te representa o crea un diseño único para tu casa o caseta.</p>",
+                    "text": "<p>Elige entre modelos exclusivos o crea tu propia caseta o vivienda. Nos adaptamos a tu estilo y espacio.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -510,7 +510,7 @@
                 "text_HyRmrt": {
                   "type": "text",
                   "settings": {
-                    "text": "<h3>Construcción eficiente</h3>",
+                    "text": "<p><strong>Construcción eficiente</strong></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -535,7 +535,7 @@
                 "text_zntnRd": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Expertos en paneles estructurales SIP, ofrecemos espacios sostenibles con una construcción eficiente.</p>",
+                    "text": "<p>Somos expertos en estructuras eficientes, saludables y con alto aislamiento térmico.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -670,7 +670,7 @@
                 "text_HMtCBh": {
                   "type": "text",
                   "settings": {
-                    "text": "<h3>Calidad garantizada</h3>",
+                    "text": "<p><strong>Calidad certificada</strong></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -695,7 +695,7 @@
                 "text_GW7cCc": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Utilizamos maderas y materiales certificados con el sello CE. Tu tranquilidad es nuestra prioridad.</p>",
+                    "text": "<p>Trabajamos con madera y materiales con sello CE para ofrecerte la seguridad y durabilidad que mereces.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -830,7 +830,7 @@
                 "text_Pr7jPh": {
                   "type": "text",
                   "settings": {
-                    "text": "<h3>Compromiso sostenible</h3>",
+                    "text": "<p><strong>Compromiso ecológico</strong></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -855,7 +855,7 @@
                 "text_yHnhXa": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Construimos con elegancia y eficiencia, mostrando compromiso con el medio ambiente.</p>",
+                    "text": "<p>Elaboramos con elegancia y eficiencia, minimizando el impacto ambiental y maximizando el ahorro energético.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -923,6 +923,176 @@
         "gradient_direction": "to top",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "section_aAqjjb": {
+      "type": "section",
+      "blocks": {
+        "group_QyTUAX": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_nJefke": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<p><strong>Naturalidad y calidad en cada proyecto</strong></p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 12,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_JfGQpF": {
+              "type": "text",
+              "settings": {
+                "text": "<p><strong>Diseños exclusivos y funcionales</strong><br/><br/>Descubre modelos únicos o diseña tu propia casa o caseta. Espacios personalizados que reflejan tu estilo.</p><p><strong>Construcción eficiente y ecológica</strong><br/><br/>Especialistas en paneles SIP, creamos estructuras sostenibles, con alta eficiencia térmica y montaje ágil.</p><p><strong>Calidad certificada</strong><br/><br/>Empleamos madera y materiales con sello CE, garantizando durabilidad, seguridad y confianza.</p><p><strong>Compromiso verde</strong><br/><br/>Construimos soluciones elegantes y optimizadas, reduciendo el impacto ambiental y mejorando el ahorro energético.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_rt74di": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Más información",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_nJefke",
+            "text_JfGQpF",
+            "button_rt74di"
+          ]
+        },
+        "image_idqhC9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Modelo_Entramado_Ligero_2fbe75e5-3256-4913-8971-4a8653265208.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "group_QyTUAX",
+        "image_idqhC9"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
       }
     },
     "product_list_x9Yaab": {
@@ -1631,6 +1801,7 @@
     "hero_irjTFL",
     "section_gcxq38",
     "section_g3xbzL",
+    "section_aAqjjb",
     "product_list_x9Yaab",
     "featured_product_yEF9dK",
     "featured_product_kAzr6f",
