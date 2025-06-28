@@ -938,7 +938,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
             "width": "custom",
@@ -1017,25 +1017,18 @@
               },
               "blocks": {}
             },
-            "image_C4C6Qw": {
-              "type": "image",
+            "button_rt74di": {
+              "type": "button",
+              "name": "t:names.button",
               "settings": {
-                "image": "shopify://shop_images/Modelo_Entramado_Ligero_2fbe75e5-3256-4913-8971-4a8653265208.png",
-                "link": "",
-                "image_ratio": "adapt",
-                "width": "fill",
+                "label": "Más información",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
                 "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
               },
               "blocks": {}
             }
@@ -1043,12 +1036,35 @@
           "block_order": [
             "text_nJefke",
             "text_JfGQpF",
-            "image_C4C6Qw"
+            "button_rt74di"
           ]
+        },
+        "image_idqhC9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Modelo_Entramado_Ligero_2fbe75e5-3256-4913-8971-4a8653265208.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "group_QyTUAX"
+        "group_QyTUAX",
+        "image_idqhC9"
       ],
       "name": "t:names.image_with_text",
       "settings": {
