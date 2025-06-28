@@ -175,7 +175,7 @@
     "duties_and_taxes_included": "Aranceles e impuestos incluidos.",
     "duties_included": "Aranceles incluidos.",
     "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la página de pago.",
-    "taxes_included": "Impuestos incluidos.",
+    "taxes_included": "IVA Incluido.",
     "product_badge_sold_out": "Agotado",
     "product_badge_sale": "Oferta",
     "grid_view": {
