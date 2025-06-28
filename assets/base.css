@@ -435,6 +435,11 @@ p:empty {
   margin: auto;
 }
 
+.display_prices{
+  display: flex;
+  justify-content: flex-start;
+}
+
 /* Utility */
 
 .hidden {
