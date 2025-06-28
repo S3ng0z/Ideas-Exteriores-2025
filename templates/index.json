@@ -928,28 +928,6 @@
     "section_aAqjjb": {
       "type": "section",
       "blocks": {
-        "image_idqhC9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Modelo_Entramado_Ligero_2fbe75e5-3256-4913-8971-4a8653265208.png",
-            "link": "",
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "group_QyTUAX": {
           "type": "group",
           "settings": {
@@ -1038,16 +1016,38 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "image_C4C6Qw": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/Modelo_Entramado_Ligero_2fbe75e5-3256-4913-8971-4a8653265208.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_nJefke",
-            "text_JfGQpF"
+            "text_JfGQpF",
+            "image_C4C6Qw"
           ]
         }
       },
       "block_order": [
-        "image_idqhC9",
         "group_QyTUAX"
       ],
       "name": "t:names.image_with_text",
