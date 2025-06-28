@@ -23,6 +23,8 @@
     assign price = 1999
   endif
 
+  {{ price }}
+
   # Checks if product handle matches the closest product's handle (i.e. product page)
   # and if the currency code is enabled for product pages
   if product.handle == closest.product.handle and settings.currency_code_enabled_product_pages
