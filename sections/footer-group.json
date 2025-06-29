@@ -286,7 +286,7 @@
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "flex-start",
         "gap": 64,
-        "section_width": "page-width",
+        "section_width": "full-width",
         "section_height": "",
         "color_scheme": "scheme-4",
         "background_media": "none",
