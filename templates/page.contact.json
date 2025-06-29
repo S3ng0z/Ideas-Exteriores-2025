@@ -13,7 +13,7 @@
       "type": "custom-liquid",
       "custom_css": [
         ".lux-breadcrumb-box {margin: 2rem 0; background: #fff;}",
-        ".lux-breadcrumb-inner {max-width: 100%; margin: auto;}",
+        ".lux-breadcrumb-inner {max-width: 1200px; margin: auto;}",
         ".lux-breadcrumb a,.lux-breadcrumb span {color: #666; margin-right: 0.5rem; text-transform: capitalize;}",
         ".lux-title {color: #111; margin-top: 1rem; display: flex; justify-content: center;}"
       ],
