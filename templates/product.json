@@ -9,6 +9,23 @@
  */
 {
   "sections": {
+    "custom_liquid_JViiDQ": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".lux-breadcrumb-box {margin: 2rem 0; background: #fff;}",
+        ".lux-breadcrumb-inner {max-width: 95rem; margin: auto;}",
+        ".lux-breadcrumb a,.lux-breadcrumb span {color: #666; margin-right: 0.5rem; text-transform: capitalize;}",
+        ".lux-title {color: #111; margin-top: 0; display: flex; justify-content: center;}"
+      ],
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"lux-breadcrumb-box\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      <a href=\"{{ routes.root_url }}\">Inicio</a>\n      {% if collection %}\n        <span>/</span>\n        <a href=\"{{ collection.url }}\">{{ collection.title }}</a>\n      {% endif %}\n      <span>/</span>\n      <span class=\"current\">{{ product.title }}</span>\n    </nav>\n    <h2 class=\"lux-title\">{{ product.title }}</h2>\n  </div>\n</div>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "main": {
       "type": "product-information",
       "blocks": {
@@ -78,7 +95,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 28,
+                "gap": 12,
                 "width": "fill",
                 "custom_width": 65,
                 "width_mobile": "fill",
@@ -98,7 +115,7 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 40,
+                "padding-block-start": 12,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -145,6 +162,7 @@
                   "blocks": {
                     "text_C373zj": {
                       "type": "text",
+                      "disabled": true,
                       "settings": {
                         "text": "<h1>{{ closest.product.title }}</h1>",
                         "width": "100%",
@@ -214,7 +232,7 @@
                             "show_sale_price_first": true,
                             "show_installments": true,
                             "show_tax_info": true,
-                            "type_preset": "h5",
+                            "type_preset": "h4",
                             "width": "100%",
                             "alignment": "left",
                             "font": "var(--font-body--family)",
@@ -257,6 +275,7 @@
                 "divider_grFKCP": {
                   "type": "_divider",
                   "name": "t:names.divider",
+                  "disabled": true,
                   "settings": {
                     "thickness": 1,
                     "corner_radius": "square",
@@ -986,6 +1005,7 @@
     }
   },
   "order": [
+    "custom_liquid_JViiDQ",
     "main",
     "product-recommendations"
   ]
