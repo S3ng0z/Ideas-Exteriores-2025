@@ -4111,3 +4111,24 @@ text-component {
 .wizard__content p {
   visibility: hidden;
 }
+
+.lux-breadcrumb-box {
+  margin: 2rem 0;
+  background: #fff;
+}
+.lux-breadcrumb-inner {
+  max-width: 95rem;
+  margin: auto;
+}
+.lux-breadcrumb a,
+.lux-breadcrumb span {
+  color: #666;
+  margin-right: 0.5rem;
+  text-transform: capitalize;
+}
+.lux-title {
+  color: #111;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
