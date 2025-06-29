@@ -4107,3 +4107,7 @@ text-component {
   transform: none;
   box-shadow: none;
 }
+
+.wizard__content p {
+  visibility: hidden;
+}
