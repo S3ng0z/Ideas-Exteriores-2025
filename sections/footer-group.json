@@ -270,6 +270,18 @@
                   },
                   "blocks": {}
                 },
+                "divider_F7pUNp": {
+                  "type": "_divider",
+                  "name": "t:names.divider",
+                  "settings": {
+                    "thickness": 1,
+                    "corner_radius": "square",
+                    "width_percent": 100,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0
+                  },
+                  "blocks": {}
+                },
                 "text_M99M4A": {
                   "type": "text",
                   "name": "t:names.text",
@@ -295,24 +307,12 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "divider_F7pUNp": {
-                  "type": "_divider",
-                  "name": "t:names.divider",
-                  "settings": {
-                    "thickness": 1,
-                    "corner_radius": "square",
-                    "width_percent": 100,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "image_VpbACJ",
-                "text_M99M4A",
-                "divider_F7pUNp"
+                "divider_F7pUNp",
+                "text_M99M4A"
               ]
             }
           },
