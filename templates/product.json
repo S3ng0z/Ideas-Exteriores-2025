@@ -11,12 +11,7 @@
   "sections": {
     "custom_liquid_JViiDQ": {
       "type": "custom-liquid",
-      "custom_css": [
-        ".lux-breadcrumb-box {margin: 2rem 0; background: #fff;}",
-        ".lux-breadcrumb-inner {max-width: 95rem; margin: auto;}",
-        ".lux-breadcrumb a,.lux-breadcrumb span {color: #666; margin-right: 0.5rem; text-transform: capitalize;}",
-        ".lux-title {color: #111; margin-top: 0; display: flex; justify-content: center;}"
-      ],
+      "custom_css": [],
       "name": "t:names.custom_liquid",
       "settings": {
         "custom_liquid": "<div class=\"lux-breadcrumb-box\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      <a href=\"{{ routes.root_url }}\">Inicio</a>\n      {% if collection %}\n        <span>/</span>\n        <a href=\"{{ collection.url }}\">{{ collection.title }}</a>\n      {% endif %}\n      <span>/</span>\n      <span class=\"current\">{{ product.title }}</span>\n    </nav>\n    <h2 class=\"lux-title\">{{ product.title }}</h2>\n  </div>\n</div>",
