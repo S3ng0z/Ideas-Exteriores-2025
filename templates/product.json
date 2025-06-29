@@ -309,6 +309,7 @@
                 "accordion_jjaG39": {
                   "type": "accordion",
                   "name": "t:names.accordion",
+                  "disabled": true,
                   "settings": {
                     "icon": "plus",
                     "dividers": true,
