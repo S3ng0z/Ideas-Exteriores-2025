@@ -47,6 +47,10 @@
   "
   {{ block.shopify_attributes }}
 >
+  <script>
+    window.product_{{ product.id }} = {{ product | json }};
+  </script>
+  
   {% render 'price',
     show_unit_price: true,
     product_resource: product_resource,
