@@ -223,9 +223,9 @@
                         "price_WRfkDh": {
                           "type": "price",
                           "settings": {
-                            "product": "{{ closest.product }}",
+                            "product": "cenador-shanina",
                             "show_sale_price_first": false,
-                            "show_installments": true,
+                            "show_installments": false,
                             "show_tax_info": true,
                             "type_preset": "h4",
                             "width": "100%",
