@@ -11,12 +11,7 @@
   "sections": {
     "custom_liquid_XhFbnp": {
       "type": "custom-liquid",
-      "custom_css": [
-        ".lux-breadcrumb-box {margin: 2rem 0; background: #fff;}",
-        ".lux-breadcrumb-inner {max-width: 95rem; margin: auto;}",
-        ".lux-breadcrumb a,.lux-breadcrumb span {color: #666; margin-right: 0.5rem; text-transform: capitalize;}",
-        ".lux-title {color: #111; margin-top: 1rem; display: flex; justify-content: center;}"
-      ],
+      "custom_css": [],
       "name": "t:names.custom_liquid",
       "settings": {
         "custom_liquid": "<div class=\"lux-breadcrumb-box\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      <a href=\"{{ routes.root_url }}\">Inicio</a>\n      {% assign segments = request.path | split: '/' %}\n      {% for segment in segments offset:1 %}\n        {% unless forloop.last %}\n          <span>/</span><a href=\"/{{ segment }}\">{{ segment | replace: '-', ' ' | capitalize }}</a>\n        {% endunless %}\n      {% endfor %}\n      <span>/</span><span class=\"current\">{{ page.title }}</span>\n    </nav>\n    <h2 class=\"lux-title\">{{ page.title }}</h2>\n  </div>\n</div>",
