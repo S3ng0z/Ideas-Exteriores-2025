@@ -4113,7 +4113,7 @@ text-component {
 }
 
 .lux-breadcrumb-box {
-  margin: 2rem 0;
+  margin: 2rem 0 .5rem;
   background: #fff;
 }
 .lux-breadcrumb-inner {
@@ -4131,4 +4131,5 @@ text-component {
   margin-top: 0;
   display: flex;
   justify-content: center;
+  padding-top: .5rem;
 }
