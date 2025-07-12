@@ -19,9 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!newVariant) return;
   
       // Actualizar el precio en el DOM (ajusta según tu estructura)
-      const priceContainer = productElement.querySelector('.price .price__sale, .price .price__regular');
+      const priceContainer = productElement.querySelector('product-price');
       if (priceContainer) {
-        priceContainer.textContent = Shopify.formatMoney(newVariant.price, Shopify.money_format);
+        priceContainer.innerHTML = `
+          <span class="price__regular">${Shopify.formatMoney(newVariant.price, Shopify.money_format)}</span>
+        `;
       }
   
       // Actualizar el input oculto de cuota (si existe)
