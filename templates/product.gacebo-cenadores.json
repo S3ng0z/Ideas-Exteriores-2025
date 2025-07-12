@@ -29,7 +29,7 @@
           "static": true,
           "settings": {
             "product": "{{ closest.product }}",
-            "media_presentation": "grid",
+            "media_presentation": "carousel",
             "media_columns": "one",
             "image_gap": 1,
             "large_first_image": false,
@@ -979,6 +979,7 @@
       "block_order": [
         "header"
       ],
+      "disabled": true,
       "settings": {
         "product": "{{ closest.product }}",
         "recommendation_type": "related",
