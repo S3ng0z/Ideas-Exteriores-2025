@@ -96,6 +96,16 @@
   </product-card-link>
 {%- endif -%}
 
+{% javascript %}
+document.addEventListener("DOMContentLoaded", function() {
+  const phone = "34687480356"; // Tu número de WhatsApp
+  const message = `Hola, me gustaría un presupuesto. Esta es la página desde la que contacto: ${window.location.href}`;
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  
+  document.getElementById("whatsapp-link").setAttribute("href", url);
+});
+{% endjavascript %}
+
 {% stylesheet %}
   product-card-link {
     width: 100%;

@@ -63,15 +63,5 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
-
-    {% javascript %}
-      document.addEventListener("DOMContentLoaded", function() {
-        const phone = "34687480356"; // Tu número de WhatsApp
-        const message = `Hola, me gustaría un presupuesto. Esta es la página desde la que contacto: ${window.location.href}`;
-        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-        
-        document.getElementById("whatsapp-link").setAttribute("href", url);
-      });
-    {% endjavascript %}
   </body>
 </html>
