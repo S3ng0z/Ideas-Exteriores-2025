@@ -1085,7 +1085,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>BASIC</h2><p><strong>{{ closest.product.metafields.custom.price_basic | metafield_tag }}</strong><strong> (IVA INCLUIDO)</strong></p>",
+                "text": "<h2>BASIC</h2><h2>{{ closest.product.metafields.custom.price_basic | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h2>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
