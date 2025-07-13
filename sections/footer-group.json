@@ -315,13 +315,22 @@
                 "divider_F7pUNp",
                 "text_M99M4A"
               ]
+            },
+            "custom_liquid_YQfgTA": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<!-- WhatsApp botón fijo en esquina inferior izquierda -->\n<a href=\"https://wa.me/34687480356\" \n   class=\"whatsapp-fixed\" \n   target=\"_blank\" \n   rel=\"noopener noreferrer\" \n   aria-label=\"Contactar por WhatsApp\">\n  <img src=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png\" \n       alt=\"WhatsApp\" \n       class=\"whatsapp-icon\">\n</a>\n\n<style>\n  .whatsapp-fixed {\n    position: fixed;\n    bottom: 20px;\n    left: 20px;\n    z-index: 1000;\n    display: block;\n    width: 60px;\n    height: 60px;\n  }\n\n  .whatsapp-icon {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    border-radius: 50%;\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);\n    transition: transform 0.2s ease;\n  }\n\n  .whatsapp-icon:hover {\n    transform: scale(1.1);\n  }\n</style>"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "menu_bHXMX6",
             "menu_3Wwzta",
             "group_9LTGgk",
-            "group_fjVYxq"
+            "group_fjVYxq",
+            "custom_liquid_YQfgTA"
           ]
         },
         "footer_utilities_zVWazC": {
