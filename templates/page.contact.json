@@ -14,7 +14,7 @@
       "custom_css": [],
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<div class=\"lux-breadcrumb-box\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      <a href=\"{{ routes.root_url }}\">Inicio</a>\n      {% assign segments = request.path | split: '/' %}\n      {% for segment in segments offset:1 %}\n        {% unless forloop.last %}\n          <span>/</span><a href=\"/{{ segment }}\">{{ segment | replace: '-', ' ' | capitalize }}</a>\n        {% endunless %}\n      {% endfor %}\n      <span>/</span><span class=\"current\">{{ page.title }}</span>\n    </nav>\n    <h2 class=\"lux-title\">{{ page.title }}</h2>\n  </div>\n</div>",
+        "custom_liquid": "<div class=\"lux-breadcrumb-box\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      <a href=\"{{ routes.root_url }}\">Inicio</a>\n      {% assign segments = request.path | split: '/' %}\n      {% for segment in segments offset:1 %}\n        {% unless forloop.last %}\n          <span>/</span><a href=\"/pages/directorio\">{{ segment | replace: '-', ' ' | capitalize }}</a>\n        {% endunless %}\n      {% endfor %}\n      <span>/</span><span class=\"current\">{{ page.title }}</span>\n    </nav>\n    <h2 class=\"lux-title\">{{ page.title }}</h2>\n  </div>\n</div>",
         "color_scheme": "",
         "section_width": "page-width",
         "padding-block-start": 0,
