@@ -9,17 +9,6 @@
  */
 {
   "sections": {
-    "custom_liquid_EwMjGd": {
-      "type": "custom-liquid",
-      "name": "t:names.custom_liquid",
-      "settings": {
-        "custom_liquid": "<h3>Páginas</h3>\n<ul>\n  {% assign sorted_pages = pages | sort: \"title\" %}\n  {% for page in sorted_pages %}\n    <li><a href=\"{{ page.url }}\">{{ page.title }}</a></li>\n  {% endfor %}\n</ul>\n\n<h3>Productos</h3>\n<ul>\n  {% assign sorted_products = all_products | sort_natural: \"title\" %}\n  {% for handle in sorted_products %}\n    {% assign product = all_products[handle] %}\n    {% if product %}\n      <li><a href=\"{{ product.url }}\">{{ product.title }}</a></li>\n    {% endif %}\n  {% endfor %}\n</ul>\n\n<h3>Entradas de blog</h3>\n<ul>\n  {% assign all_articles = \"\" | split: \"\" %}\n  {% for blog in blogs %}\n    {% assign all_articles = all_articles | concat: blog.articles %}\n  {% endfor %}\n  {% assign sorted_articles = all_articles | sort: \"title\" %}\n  {% for article in sorted_articles %}\n    <li><a href=\"{{ article.url }}\">{{ article.title }}</a></li>\n  {% endfor %}\n</ul>\n<h3>Políticas</h3>\n<ul>\n  {% assign policies_array = \"\" | split: \"\" %}\n\n  {% if shop.privacy_policy %}\n    {% assign policies_array = policies_array | push: shop.privacy_policy %}\n  {% endif %}\n  {% if shop.refund_policy %}\n    {% assign policies_array = policies_array | push: shop.refund_policy %}\n  {% endif %}\n  {% if shop.shipping_policy %}\n    {% assign policies_array = policies_array | push: shop.shipping_policy %}\n  {% endif %}\n  {% if shop.terms_of_service %}\n    {% assign policies_array = policies_array | push: shop.terms_of_service %}\n  {% endif %}\n  {% if shop.contact_policy %}\n    {% assign policies_array = policies_array | push: shop.contact_policy %}\n  {% endif %}\n\n  {% assign sorted_policies = policies_array | sort: \"title\" %}\n  {% for policy in sorted_policies %}\n    <li><a href=\"{{ policy.url }}\">{{ policy.title }}</a></li>\n  {% endfor %}\n</ul>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
     "main": {
       "type": "main-404",
       "blocks": {
@@ -352,7 +341,6 @@
     }
   },
   "order": [
-    "custom_liquid_EwMjGd",
     "main",
     "product_list_B79ALx"
   ]
