@@ -150,6 +150,11 @@ class OverflowList extends DeclarativeShadowElement {
       this.#reflowItems();
     }
 
+    document.querySelectorAll('.metafield-money').forEach(el => {
+      const text = el.textContent;
+      const cleaned = text.replace(/€|EUR/g, '').trim();
+      el.textContent = `${cleaned} €`;
+    });
     document.querySelectorAll('.pricing-box').forEach(el => {
       const text = el.textContent;
       const cleaned = text.replace(/€|EUR/g, '').trim();
