@@ -675,7 +675,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>STANDARD</h2><h2>{{ closest.product.metafields.custom.price_basic | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h2>",
+                "text": "<h2>STANDARD</h2><h2>{{ closest.product.metafields.custom.price_basic | metafield_tag }}<strong> (IVA INCLUIDO) </strong></h2>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
@@ -767,13 +767,39 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "text_VpUawP": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h4>STANDARD</h4><h4>{{ closest.product.metafields.custom.price_basic | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h4>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_9qD6WY": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
+                "text": "<p><strong>1. ¿Qué incluye el paquete PASSIVE?</strong></p><p><strong>Estructura de paneles SIP completa con triple<br/>aislamiento:</strong></p><p>El sistema<br/>estructural del modelo PASSIVE ofrece un envolvente térmico de altísimo<br/>rendimiento. Está compuesto por:</p><ul><li>Paneles SIP con núcleo de EPS<br/>     de 100 mm y tableros OSB-3 de 12 mm a cada lado, según norma EN 300.</li><li>Aislamiento interior de lana<br/>     mineral Rockwool Superrock de 72 mm.</li><li>Aislamiento exterior<br/>     adicional con panel rígido Rockwool FrontRock MAX E de 103 mm.</li><li>Estructura auxiliar con<br/>     madera maciza estructural C16/C24, secada al horno, calibrada y<br/>     certificada conforme a EN 338.</li></ul><p><strong>Cimentación y montaje completo:</strong></p><p>Incluye la<br/>cimentación estructural necesaria (losa armada, zapatas o pilotes, según<br/>diseño) y el montaje integral de la estructura SIP, cubierta, fachada y<br/>elementos auxiliares por parte de equipos técnicos cualificados.</p><p><strong>Distribución interior personalizada:</strong></p><p>Se desarrolla un<br/>diseño interior ajustado a las necesidades del cliente, optimizado para<br/>eficiencia energética y normativa CTE.</p><p><strong>Carpintería de alta eficiencia:</strong></p><ul><li>Ventanas de PVC de gama alta<br/>     con rotura de puente térmico y doble acristalamiento (4/16/4 mm), cámara<br/>     con gas argón, Uw ≤ 1,3 W/m²·K. Sin persianas.</li><li>Puertas interiores estándar<br/>     (lacadas o de tablero).</li><li>Puerta de entrada blindada<br/>     RC2 con cerradura multipunto de seguridad.</li></ul><p><strong>Aislamiento térmico integral en toda la envolvente:</strong></p><ul><li>Fachadas: SIP + Rockwool<br/>     exterior (103 mm) + Rockwool interior (72 mm).</li><li>Cubierta: aislamiento<br/>     superior con 200 mm de lana mineral Rockwool.</li><li>Muros interiores y tabiques<br/>     aislados para control acústico y térmico adicional.</li><li>Membrana cortaviento exterior<br/>     (transpirable) y barrera de vapor interior Sd=8 m.</li></ul><p><strong>Revestimientos exteriores e interiores incluidos:</strong></p><ul><li>Revestimiento exterior en<br/>     friso de madera tratada clase 3, con cámara de aire ventilada.</li><li>Acabado de cubierta con<br/>     tégola asfáltica adherida.</li><li>Friso interior de pino o<br/>     abeto cepillado (140×20 mm) en techos y zonas visibles.</li><li>Acabados interiores: tabiques<br/>     en pladur u OSB, pintura, pavimentos, falsos techos, conforme a memoria de<br/>     calidades.</li></ul><p><strong>Instalaciones completas (eléctrica y fontanería):</strong></p><ul><li>Canalización e instalación<br/>     eléctrica interior, mecanismos, cuadro eléctrico general.</li><li>Instalación de fontanería<br/>     para agua fría, caliente sanitaria (ACS) y desagües interiores, conforme<br/>     al DB-HS del CTE.</li><li>Preinstalación para<br/>     sanitarios, cocinas y calefacción (si se define en proyecto).</li></ul><p><strong>Terraza (según diseño):</strong></p><p>Incluida según<br/>especificaciones del modelo contratado.</p><p><strong>Transporte incluido:</strong></p><p>Entrega del paquete<br/>estructural, materiales de acabado e instalaciones en cualquier punto de la<br/>Península Ibérica con descarga incluida.</p><p> </p><p><strong>2. ¿Qué NO está incluido en el modelo PASSIVE?</strong></p><ul><li>Proyecto de arquitectura,<br/>     cálculo estructural o visado técnico (puede contratarse por separado).</li><li>Dirección de obra, gestión de<br/>     licencias, coordinación de seguridad y salud.</li><li>Movimiento de tierras y<br/>     nivelación inicial del terreno.</li><li>Instalación de saneamiento<br/>     externo (conexión a red pública o fosa séptica).</li><li>Aislamiento térmico bajo la<br/>     cimentación (disponible como mejora).</li><li>Equipamiento de cocina,<br/>     sanitarios, armarios o mobiliario interior.</li></ul><p> </p><p><strong>3. Detalle técnico constructivo</strong></p><p><strong>A. Paredes exteriores – Sistema SIP + doble<br/>aislamiento</strong></p><ul><li><strong>Espesor<br/>     total</strong>: 300 mm<br/>     aprox.</li><li>OSB-3 interior: 12 mm.</li><li>EPS núcleo: 100 mm.</li><li>OSB-3 exterior: 12 mm.</li><li>Rockwool FrontRock MAX E<br/>      exterior: 103 mm.</li><li>Rockwool Superrock interior:<br/>      72 mm.</li><li><strong>Subestructura</strong>: listones de madera C16/C24,<br/>     60×40 mm.</li><li><strong>Membranas</strong>:</li><li>Exterior: transpirable, Sd ≈<br/>      0,015 m.</li><li>Interior: barrera de vapor<br/>      Primavap Sd-8.</li></ul><p><strong>B. Tabiques interiores portantes – Panel SIP</strong></p><ul><li><strong>Espesor<br/>     total</strong>: 74 mm.</li><li>OSB-3 (x2): 12 mm.</li><li>EPS: 50 mm.</li><li><strong>Listón<br/>     estructural</strong>:<br/>     C16/C24, 60×40 mm.</li></ul><p><strong>C. Cubierta estructural y aislamiento térmico</strong></p><ul><li><strong>Vigas</strong>: madera estructural C16/C24,<br/>     160×80 mm.</li><li><strong>Correas</strong>: madera C16/C24, 200×80 mm o<br/>     adaptadas.</li><li><strong>Aislamiento</strong>: Rockwool Superrock 200 mm,<br/>     λD = 0,035 W/m·K, Euroclase A1.</li><li><strong>Friso<br/>     interior</strong>: pino o<br/>     abeto cepillado, 140×20 mm.</li><li><strong>Acabado<br/>     exterior</strong>: tégola<br/>     asfáltica sobre tablero OSB-3 estructural.</li></ul><p><strong>D. Certificaciones y normativa</strong></p><ul><li>Madera estructural: C16/C24<br/>     con marcado CE, FSC o PEFC. Normativa: Eurocódigo 5.</li><li>OSB-3: según EN 300, clase de<br/>     servicio 2.</li><li>EPS: densidad ≥20 kg/m³,<br/>     Euroclase E.</li><li>Rockwool Superrock /<br/>     FrontRock: EN 13162, Euroclase A1.</li><li>Ventanas: conforme UNE-EN<br/>     14351-1.</li><li>Puerta RC2: norma UNE-EN<br/>     1627.</li></ul>",
+                "width": "100%",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
@@ -795,6 +821,7 @@
             }
           },
           "block_order": [
+            "text_VpUawP",
             "text_9qD6WY"
           ]
         }
