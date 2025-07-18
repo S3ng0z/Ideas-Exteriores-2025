@@ -730,7 +730,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h4>PASSIVE</h4><h4>{{ closest.product.metafields.custom.price_basic | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h4>",
+                "text": "<h4>PASSIVE</h4><h4>{{ closest.product.metafields.custom.price_passive | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h4>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
