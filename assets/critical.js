@@ -155,7 +155,7 @@ class OverflowList extends DeclarativeShadowElement {
       const cleaned = text.replace(/€|EUR/g, '').trim();
       el.textContent = `${cleaned} €`;
     });
-    document.querySelectorAll('.pricing-box').forEach(el => {
+    document.querySelectorAll('.pricing-price').forEach(el => {
       const text = el.textContent;
       const cleaned = text.replace(/€|EUR/g, '').trim();
       el.textContent = `${cleaned} €`;
