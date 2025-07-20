@@ -2260,13 +2260,11 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 }
 
 /* RTE styles */
-.shopify-policy__title{
-  text-transform: uppercase !important;
-}
 .rte,
 .shopify-policy__title {
   :is(h1, h2, h3, h4, h5, h6) {
     margin-block: clamp(1.5rem, 1em * 3.3, 2.5rem) clamp(1rem, 1em * 0.25, 2rem);
+    text-transform: uppercase !important;
   }
 
   :is(h1) {
