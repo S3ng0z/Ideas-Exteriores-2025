@@ -116,10 +116,22 @@
         "enable_transparent_header_collection": false,
         "collection_color_scheme": "default"
       }
+    },
+    "custom_liquid_feCTxz": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"lux-breadcrumb-box\"> \n  <div class=\"lux-breadcrumb-inner\">\n\n    {%- comment -%}\n    Obtener la URL base y el path actual\n    {%- endcomment -%}\n    {% assign full_url = canonical_url %}\n    {% assign base_url_parts = full_url | split: '/' | slice: 0, 3 %}\n    {% assign base_url = base_url_parts | join: '/' %}\n    {% assign current_path = full_url | remove: base_url %}\n\n    {%- comment -%}\n    Determinar el título actual basado en políticas o título de la página\n    {%- endcomment -%}\n    {% assign current_title = page.title %}\n\n    {% if template == 'policy' %}\n      {% if shop.policies.refund_policy and shop.policies.refund_policy.url contains current_path %}\n        {% assign current_title = shop.policies.refund_policy.title %}\n      {% elsif shop.policies.privacy_policy and shop.policies.privacy_policy.url contains current_path %}\n        {% assign current_title = shop.policies.privacy_policy.title %}\n      {% elsif shop.policies.terms_of_service and shop.policies.terms_of_service.url contains current_path %}\n        {% assign current_title = shop.policies.terms_of_service.title %}\n      {% elsif shop.policies.shipping_policy and shop.policies.shipping_policy.url contains current_path %}\n        {% assign current_title = shop.policies.shipping_policy.title %}\n      {% elsif shop.policies.contact_policy and shop.policies.contact_policy.url contains current_path %}\n        {% assign current_title = shop.policies.contact_policy.title %}\n      {% endif %}\n    {% endif %}\n\n    {%- comment -%}\n    Breadcrumb visual\n    {%- endcomment -%}\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      <a href=\"{{ routes.root_url }}\">Inicio</a>\n\n      {% assign segments = current_path | split: '/' %}\n      {% assign url = \"\" %}\n      {% for segment in segments offset:1 %}\n        {% assign url = url | append: '/' | append: segment %}\n        {% unless forloop.last %}\n          <span>/</span>\n          <a href=\"{{ url }}\">{{ segment | replace: '-', ' ' | capitalize }}</a>\n        {% endunless %}\n      {% endfor %}\n\n      <span>/</span>\n      <span class=\"current\">{{ current_title }}</span>\n    </nav>\n\n    <h2 class=\"lux-title\">{{ current_title }}</h2>\n  </div>\n</div>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
     "header_announcements_fEaamX",
-    "header_section"
+    "header_section",
+    "custom_liquid_feCTxz"
   ]
 }
