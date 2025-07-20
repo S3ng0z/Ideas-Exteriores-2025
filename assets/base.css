@@ -4150,10 +4150,8 @@ text-component {
 }
 
 .container_text {
-  max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-  font-family: Arial, sans-serif;
   color: #333;
   padding: 0 15px;
 }
