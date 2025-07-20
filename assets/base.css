@@ -4148,3 +4148,29 @@ text-component {
   font-size: 2rem;
   font-weight: 600;
 }
+
+.container_text {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 0 15px;
+}
+.container_text h3 {
+  margin-top: 1.5em;
+}
+.container_text p, .container_text li {
+  margin-bottom: 1em;
+}
+.container_text ul {
+  padding-left: 1.2em;
+  list-style-type: disc;
+}
+.highlight {
+  background-color: #f5fdf7;
+  border-left: 5px solid #3b725a;
+  padding: 20px;
+  margin: 2em 0;
+  border-radius: 4px;
+}
