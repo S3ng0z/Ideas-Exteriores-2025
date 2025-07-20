@@ -2260,6 +2260,9 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 }
 
 /* RTE styles */
+.shopify-policy__title{
+  text-transform: uppercase;
+}
 .rte,
 .shopify-policy__title {
   :is(h1, h2, h3, h4, h5, h6) {
