@@ -1795,6 +1795,17 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "custom_liquid_XFwM4h": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  .link-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(clamp(120px, 20vw, 250px), 1fr));\n    gap: clamp(0.5rem, 2vw, 1.5rem);\n    list-style: none;\n    padding: 0;\n    margin: 2rem 0;\n  }\n\n  .link-grid li {\n    margin-bottom: 0.5rem;\n  }\n\n  @media screen and (max-width: 749px) {\n    .link-grid {\n      grid-template-columns: repeat(2, 1fr);\n      gap: 1rem;\n    }\n  }\n\n  @media screen and (min-width: 750px) and (max-width: 1199px) {\n    .link-grid {\n      grid-template-columns: repeat(3, 1fr);\n    }\n  }\n\n  @media screen and (min-width: 1200px) and (max-width: 1439px) {\n    .link-grid {\n      grid-template-columns: repeat(4, 1fr);\n    }\n  }\n\n  @media screen and (min-width: 1440px) {\n    .link-grid {\n      grid-template-columns: repeat(6, 1fr);\n    }\n  }\n</style>\n\n<!-- BLOG -->\n<h3>ENTRADAS DE BLOG</h3>\n<ul class=\"link-grid\">\n  {% assign all_articles = \"\" | split: \"\" %}\n  {% for blog in blogs %}\n    {% assign all_articles = all_articles | concat: blog.articles %}\n  {% endfor %}\n  {% assign sorted_articles = all_articles | sort: \"title\" %}\n  {% for article in sorted_articles %}\n    <li><a href=\"{{ article.url }}\">{{ article.title }}</a></li>\n  {% endfor %}\n</ul>\n\n<!-- PÁGINAS -->\n<h3>PÁGINAS</h3>\n<ul class=\"link-grid\">\n  {% assign sorted_pages = pages | sort: \"title\" %}\n  {% for page in sorted_pages %}\n    <li><a href=\"{{ page.url }}\">{{ page.title }}</a></li>\n  {% endfor %}\n</ul>\n\n<!-- POLÍTICAS -->\n<h3>POLÍTICAS</h3>\n<ul class=\"link-grid\">\n  {% if shop.privacy_policy %}\n    <li><a href=\"{{ shop.privacy_policy.url }}\">POLÍTICA DE PRIVACIDAD</a></li>\n  {% endif %}\n  {% if shop.refund_policy %}\n    <li><a href=\"{{ shop.refund_policy.url }}\">POLÍTICA DE REEMBOLSO</a></li>\n  {% endif %}\n  {% if shop.shipping_policy %}\n    <li><a href=\"{{ shop.shipping_policy.url }}\">POLÍTICA DE ENVÍO</a></li>\n  {% endif %}\n  {% if shop.terms_of_service %}\n    <li><a href=\"{{ shop.terms_of_service.url }}\">TÉRMINOS DEL SERVICIO</a></li>\n  {% endif %}\n  {% if shop.contact_policy %}\n    <li><a href=\"{{ shop.contact_policy.url }}\">POLÍTICA DE CONTACTO</a></li>\n  {% endif %}\n</ul>\n\n<!-- PRODUCTOS -->\n<h3>PRODUCTOS</h3>\n<ul class=\"link-grid\">\n  {% assign sorted_products = collections.all.products | sort: \"title\" %}\n  {% for product in sorted_products %}\n    <li><a href=\"{{ product.url }}\">{{ product.title | upcase }}</a></li>\n  {% endfor %}\n</ul>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
@@ -1806,6 +1817,7 @@
     "featured_product_yEF9dK",
     "featured_product_kAzr6f",
     "product_list_nQbyNK",
-    "collection_list_bGtkjG"
+    "collection_list_bGtkjG",
+    "custom_liquid_XFwM4h"
   ]
 }
