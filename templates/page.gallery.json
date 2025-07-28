@@ -92,7 +92,7 @@
         "enorm_image_gallery_video_embed_code_dWHUqx"
       ],
       "custom_css": [
-        ".section-content-wrapper.section-content-wrapper {max-width: 100%; margin: auto;}"
+        ".section-content-wrapper.section-content-wrapper {max-width: 100% !important;}"
       ],
       "settings": {
         "content_direction": "column",
