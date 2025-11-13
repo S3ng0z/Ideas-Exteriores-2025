@@ -91,7 +91,7 @@
         ".tag {text-transform: uppercase; color: #006c5f; display: block; margin-bottom: 4px;}",
         ".m {border: 1px dashed #ccc; padding: 10px; text-align: center;}",
         "@media (max-width: 768px) {.cols {grid-template-columns: 1fr; }}",
-        ".page-width-wide {--page-content-width: 100% !important; --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));}"
+        ".page-width-content {--page-content-width: 100% !important; --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));}"
       ],
       "settings": {
         "content_direction": "column",
