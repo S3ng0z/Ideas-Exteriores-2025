@@ -23,33 +23,6 @@
     "main": {
       "type": "main-page",
       "blocks": {
-        "text_A8F3Wr": {
-          "type": "text",
-          "name": "t:names.heading",
-          "disabled": true,
-          "settings": {
-            "text": "<p>{{ closest.page.title }}</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h1",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "text_KMwtTr": {
           "type": "text",
           "name": "t:names.text",
@@ -78,7 +51,6 @@
         }
       },
       "block_order": [
-        "text_A8F3Wr",
         "text_KMwtTr"
       ],
       "custom_css": [
@@ -87,8 +59,8 @@
         ".g {margin: 2rem 0; display: grid; gap: 1rem;}",
         ".cols {grid-template-columns: 3fr 2fr;}",
         ".b {background: rgba(138 154 91 / 0.15); padding: 4rem 2rem; text-align: justify;}",
-        ".b h3 {margin: 0 0 6px;}",
-        ".tag {text-transform: uppercase; color: rgba(138 154 91 / 1.0); display: block; margin-bottom: 1rem;}",
+        ".b h4 {margin: 0 0 1.5rem;}",
+        ".tag {text-transform: uppercase; color: rgba(138 154 91 / 1); display: block; margin-bottom: 1rem;}",
         ".m {border: 1px dashed #ccc; padding: 10px; text-align: center;}",
         "@media (max-width: 768px) {.cols {grid-template-columns: 1fr; }}",
         ".page-width-content {--page-content-width: 100% !important;}"
