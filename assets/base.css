@@ -4133,6 +4133,7 @@ text-component {
   color: #666;
   margin-right: 0.25rem;
   text-transform: uppercase;
+  font-size: 0.75rem;
 }
 
 .lux-breadcrumb a:hover {
