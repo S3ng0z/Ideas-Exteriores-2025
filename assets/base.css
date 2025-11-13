@@ -4126,7 +4126,7 @@ text-component {
   padding: 0 1rem;
 }
 .lux-breadcrumb {
-  padding: 1.5rem 0 1rem;
+  padding: 1.5rem 0;
 }
 .lux-breadcrumb a,
 .lux-breadcrumb span {
