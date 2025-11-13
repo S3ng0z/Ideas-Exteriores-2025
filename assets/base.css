@@ -4122,7 +4122,6 @@ text-component {
 }
 
 .lux-breadcrumb-inner {
-  max-width: 95rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
