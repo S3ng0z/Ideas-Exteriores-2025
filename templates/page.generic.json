@@ -84,7 +84,7 @@
       "custom_css": [
         ".e {margin: 0 auto; padding: 16px;}",
         ".e h2 {margin: 0 0 8px;}",
-        ".g {display: grid; gap: 12px;}",
+        ".g {margin: 2rem 0; display: grid; gap: 1rem;}",
         ".cols {grid-template-columns: 3fr 2fr;}",
         ".b {background: #f5f5f5; padding: 12px;}",
         ".b h3 {margin: 0 0 6px;}",
