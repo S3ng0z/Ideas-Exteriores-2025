@@ -81,6 +81,18 @@
         "text_A8F3Wr",
         "text_KMwtTr"
       ],
+      "custom_css": [
+        ".e {margin: 0 auto; padding: 16px;}",
+        ".e h2 {margin: 0 0 8px;}",
+        ".g {display: grid; gap: 12px;}",
+        ".cols {grid-template-columns: 3fr 2fr;}",
+        ".b {background: #f5f5f5; padding: 12px;}",
+        ".b h3 {margin: 0 0 6px;}",
+        ".tag {text-transform: uppercase; color: #006c5f; display: block; margin-bottom: 4px;}",
+        ".m {border: 1px dashed #ccc; padding: 10px; text-align: center;}",
+        "@media (max-width: 768px) {.cols {grid-template-columns: 1fr; }}",
+        ".page-width-wide {--page-content-width: var(--wide-page-width); --page-width: calc(var(--page-content-width) + (var(--page-margin) * 2));}"
+      ],
       "settings": {
         "content_direction": "column",
         "gap": 32,
