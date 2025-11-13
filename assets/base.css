@@ -4125,11 +4125,13 @@ text-component {
   margin: 0 auto;
   padding: 0 1rem;
 }
-
+.lux-breadcrumb {
+  padding: 2rem 0 0;
+}
 .lux-breadcrumb a,
 .lux-breadcrumb span {
   color: #666;
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
   text-transform: uppercase;
 }
 
