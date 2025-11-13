@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "collection_list_Y66Rtq": {
       "type": "collection-list",
@@ -15,6 +16,7 @@
           "type": "group",
           "name": "t:names.header",
           "settings": {
+            "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -87,7 +89,7 @@
           "settings": {
             "collection": "{{ closest.collection }}",
             "placement": "on_image",
-            "horizontal_alignment": "flex-start",
+            "horizontal_alignment": "center",
             "vertical_alignment": "flex-end",
             "collection_card_gap": 8,
             "inherit_color_scheme": false,
@@ -106,15 +108,15 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "h4",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
+                "color": "var(--color-foreground-heading)",
+                "background": true,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
@@ -130,7 +132,7 @@
               "static": true,
               "settings": {
                 "collection": "{{ closest.collection }}",
-                "image_ratio": "portrait",
+                "image_ratio": "landscape",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -153,6 +155,7 @@
       ],
       "name": "t:names.collections_grid",
       "settings": {
+        "collection_list": [],
         "layout_type": "grid",
         "carousel_on_mobile": true,
         "columns": 3,
