@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h3><strong>Soluciones en Madera</strong></h3><p><br/>Construimos casas, casetas y estructuras de madera personalizadas con diseño de calidad y alto rendimiento energético. Desde proyectos a medida hasta entregas llave en mano, ofrecemos soluciones sostenibles, eficientes y adaptadas a tus necesidades. Usamos entramado ligero y paneles SIP para garantizar durabilidad, confort y eficiencia.<br/><br/></p>",
+            "text": "<h3><strong>Soluciones en Madera</strong></h3><h4><br/>Construimos casas, casetas y estructuras de madera personalizadas con diseño de calidad y alto rendimiento energético. Desde proyectos a medida hasta entregas llave en mano, ofrecemos soluciones sostenibles, eficientes y adaptadas a tus necesidades. Usamos entramado ligero y paneles SIP para garantizar durabilidad, confort y eficiencia.<br/><br/></h4>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -43,10 +43,10 @@
         "text_CXHmij"
       ],
       "custom_css": [
-        ".text-block h3,.text-block h4 {text-transform: uppercase; text-align: justify;}",
-        ".section-content-wrapper.section-content-wrapper {width: 45rem;}",
-        ".text-block h3 {font-size: 2.25rem; margin: 0; padding: 0; font-family: \"Red Hat Display\", sans-serif;}",
-        ".text-block p {font-size: 1.2rem; margin: 0; padding: 0; text-align: justify; font-family: \"Red Hat Display\", sans-serif;}"
+        ".text-block h3 {text-transform: uppercase; text-align: center;}",
+        ".section-content-wrapper.section-content-wrapper {width: 50vw;}",
+        ".text-block h3 {margin: 0; padding: 0;}",
+        ".text-block h4 {margin: 0; padding: 0; text-align: justify;}"
       ],
       "name": "Hero",
       "settings": {
