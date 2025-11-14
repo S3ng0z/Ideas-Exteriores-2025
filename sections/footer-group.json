@@ -159,7 +159,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>PRÓXIMAMENTE EN</strong>: Ctra. de Yuncos a Cedillo, km. 1.3<br/>45210 Yuncos, Toledo<br/>al lado de Mármoles Yuncos<br/><strong>TELÉFONO</strong>: +34 916 99 60 93<br/><strong>EMAIL</strong>: info@ideas-exteriores.com<br/><strong>HORARIO</strong>: L-V de 9:00 a 18:00<br/><strong>SÓLO ATENDEMOS CON CITA PREVIA</strong></p>",
+                    "text": "<p><strong>PRÓXIMAMENTE EN</strong>: </p><p>Ctra. de Yuncos a Cedillo, km. 1.3<br/>45210 Yuncos, Toledo<br/>al lado de Mármoles Yuncos<br/><strong>TELÉFONO</strong>: +34 916 99 60 93<br/><strong>EMAIL</strong>: info@ideas-exteriores.com<br/><strong>HORARIO</strong>: L-V de 9:00 a 18:00<br/><strong>SÓLO ATENDEMOS CON CITA PREVIA</strong></p>",
                     "width": "fit-content",
                     "max_width": "none",
                     "alignment": "left",
