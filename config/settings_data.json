@@ -75,13 +75,13 @@
     "variant_button_width": "equal-width-buttons",
     "content_for_index": [],
     "blocks": {
-      "12741885996470144523": {
-        "type": "shopify://apps/enorm-image-gallery-video/blocks/embed-js/01219f89-c8d0-40c2-a0ff-1987199e84a2",
+      "6279071938380501511": {
+        "type": "shopify://apps/powerful-form-builder/blocks/app-embed/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
         "disabled": false,
         "settings": {}
       },
-      "6279071938380501511": {
-        "type": "shopify://apps/powerful-form-builder/blocks/app-embed/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+      "4672466289803156472": {
+        "type": "shopify://apps/essential-grid-gallery/blocks/app-embed/b252af1e-c43a-4272-b19c-e87bc447c686",
         "disabled": false,
         "settings": {}
       }
