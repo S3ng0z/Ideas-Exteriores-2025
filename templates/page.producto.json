@@ -144,13 +144,13 @@
               "settings": {
                 "collection": "{{ closest.collection }}",
                 "image_ratio": "landscape",
-                "toggle_overlay": true,
-                "overlay_color": "#c3c3c3",
+                "toggle_overlay": false,
+                "overlay_color": "#e1e1e1",
                 "overlay_style": "gradient",
                 "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
+                "border": "solid",
+                "border_width": 0,
+                "border_opacity": 39,
                 "border_radius": 0
               },
               "blocks": {}
