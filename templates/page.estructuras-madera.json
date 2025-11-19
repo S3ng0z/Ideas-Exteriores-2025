@@ -164,12 +164,9 @@
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
-          "casetas-de-entramado-ligero",
-          "cenadores-gazebos",
-          "porche-natura",
           "pergola-clasica",
-          "sip-compactkit",
-          "sip-smartfit",
+          "porche-natura",
+          "cenadores-gazebos",
           "tarima-natural",
           "tarima-protech"
         ],
