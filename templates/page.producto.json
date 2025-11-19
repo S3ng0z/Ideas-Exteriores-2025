@@ -258,6 +258,9 @@
           ]
         }
       },
+      "custom_css": [
+        ".media-with-content .media-with-content__content {grid-area: content; border-top: solid 2px; border-bottom: solid 2px; border-right: solid 2px;}"
+      ],
       "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
@@ -438,6 +441,9 @@
           ]
         }
       },
+      "custom_css": [
+        ".media-with-content .media-with-content__content {grid-area: content; border-top: solid 2px; border-bottom: solid 2px; border-left: solid 2px;}"
+      ],
       "name": "t:names.editorial",
       "settings": {
         "media_position": "right",
@@ -618,6 +624,9 @@
           ]
         }
       },
+      "custom_css": [
+        ".media-with-content .media-with-content__content {grid-area: content; border-top: solid 2px; border-bottom: solid 2px; border-right: solid 2px;}"
+      ],
       "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
@@ -798,6 +807,9 @@
           ]
         }
       },
+      "custom_css": [
+        ".media-with-content .media-with-content__content {grid-area: content; border-top: solid 2px; border-bottom: solid 2px; border-left: solid 2px;}"
+      ],
       "name": "t:names.editorial",
       "settings": {
         "media_position": "right",
