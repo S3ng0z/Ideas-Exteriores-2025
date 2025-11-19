@@ -145,7 +145,7 @@
                 "collection": "{{ closest.collection }}",
                 "image_ratio": "landscape",
                 "toggle_overlay": true,
-                "overlay_color": "#00000026",
+                "overlay_color": "#c3c3c3",
                 "overlay_style": "gradient",
                 "gradient_direction": "to top",
                 "border": "none",
