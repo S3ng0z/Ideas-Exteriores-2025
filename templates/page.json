@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "main-page",
@@ -14,6 +15,7 @@
         "text_A8F3Wr": {
           "type": "text",
           "name": "t:names.heading",
+          "disabled": true,
           "settings": {
             "text": "<p>{{ closest.page.title }}</p>",
             "width": "fit-content",
@@ -75,9 +77,21 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "custom_liquid_nxCcxc": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"lux-breadcrumb-box page-width-content\">  \n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      {%- comment -%} Enlace a INICIO {%- endcomment -%}\n      <a href=\"{{ routes.root_url }}\">INICIO</a>\n\n      {%- comment -%}\n        Determinamos el objeto actual: colección o página.\n      {%- endcomment -%}\n      {% if collection %}\n        {% assign current_obj = collection %}\n      {% else %}\n        {% assign current_obj = page %}\n      {% endif %}\n\n      {%- comment -%}\n        Metafields (ajusta \"custom\" si usas otro namespace)\n      {%- endcomment -%}\n      {% assign n1     = current_obj.metafields.custom.n1     | default: current_obj.metafields.custom.N1 %}\n      {% assign n1_url = current_obj.metafields.custom.n1_url | default: current_obj.metafields.custom.N1_URL %}\n      {% assign n2     = current_obj.metafields.custom.n2     | default: current_obj.metafields.custom.N2 %}\n      {% assign n2_url = current_obj.metafields.custom.n2_url | default: current_obj.metafields.custom.N2_URL %}\n      {% assign n3     = current_obj.metafields.custom.n3     | default: current_obj.metafields.custom.N3 %}\n      {% assign n3_url = current_obj.metafields.custom.n3_url | default: current_obj.metafields.custom.N3_URL %}\n\n      {%- comment -%} N1 {%- endcomment -%}\n      {% if n1 != blank %}\n        <span>/</span>\n        {% if n1_url != blank %}\n          <a href=\"{{ n1_url }}\">{{ n1 }}</a>\n        {% else %}\n          <span>{{ n1 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N2 {%- endcomment -%}\n      {% if n2 != blank %}\n        <span>/</span>\n        {% if n2_url != blank %}\n          <a href=\"{{ n2_url }}\">{{ n2 }}</a>\n        {% else %}\n          <span>{{ n2 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N3 {%- endcomment -%}\n      {% if n3 != blank %}\n        <span>/</span>\n        {% if n3_url != blank %}\n          <a href=\"{{ n3_url }}\">{{ n3 }}</a>\n        {% else %}\n          <span>{{ n3 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} Página / colección actual {%- endcomment -%}\n      <span>/</span>\n      <span class=\"current\">\n        {% if collection %}\n          {{ collection.title }}\n        {% else %}\n          {{ page.title }}\n        {% endif %}\n      </span>\n    </nav>\n\n    <h3 class=\"lux-title\">\n      {% if collection %}\n        {{ collection.title }}\n      {% else %}\n        {{ page.title }}\n      {% endif %}\n    </h3>\n  </div>\n</div>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
+    "custom_liquid_nxCcxc",
     "main"
   ]
 }
