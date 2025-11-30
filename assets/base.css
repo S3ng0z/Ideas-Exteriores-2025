@@ -4296,15 +4296,15 @@ text-component {
 
 /* Botón principal: “Ver ejemplos de casas de entramado ligero” */
 .cta-wrapper .button:not(.button--secondary) {
-  background-color: #2F5D3A;        /* verde oscuro tipo “madera / naturaleza” */
+  background-color: rgba(138 154 91 / 1.0);        /* verde oscuro tipo “madera / naturaleza” */
   color: #ffffff;
-  border-color: #2F5D3A;
+  border-color: rgba(138 154 91 / 1.0);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .cta-wrapper .button:not(.button--secondary):hover {
-  background-color: #3F7448;
-  border-color: #3F7448;
+  background-color: rgba(138 154 91 / 1.0);
+  border-color: rgba(138 154 91 / 1.0);
   transform: translateY(-1px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
 }
