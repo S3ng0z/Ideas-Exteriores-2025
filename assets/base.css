@@ -4179,3 +4179,97 @@ text-component {
 .header__column--right {
   justify-content: center !important;
 }
+
+/* CONTENIDO PÁGINAS*/
+
+.e { 
+  margin: 0 auto;
+}
+
+/* CONTENEDOR DE BLOQUES (TEXTO + IMAGEN) */
+.g {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+/* DOS COLUMNAS: TEXTO + IMAGEN  */
+.cols {
+  grid-template-columns: 3fr 2fr;
+}
+
+.cols2 {
+  grid-template-columns: 2fr 3fr;
+}
+
+/* 
+  BLOQUE DE TEXTO (.b) Y BLOQUE DE IMAGEN (.m)
+  -> LOS CONVERTIMOS EN FLEX PARA CENTRAR CONTENIDO VERTICALMENTE
+*/
+.b,
+.m {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente el contenido dentro de cada columna */
+}
+
+/* BLOQUE DE TEXTO */
+.b {
+  background: rgba(138 154 91 / 0.15);
+  padding: 4rem 2rem;
+  text-align: justify;
+}
+
+.b h4 {
+  margin: 0 0 1.5rem;
+  text-align: start;
+}
+
+/* ETIQUETA SUPERIOR (SISTEMA, USO, ETC.) */
+.tag {
+  text-transform: uppercase;
+  color: rgba(138 154 91 / 1);
+  display: block;
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+/* BLOQUE CONTENEDOR DE IMAGEN */
+.m {
+  border: 1px dashed #ccc;
+  padding: 10px;
+  text-align: center;
+  align-items: center; /* centra horizontalmente la imagen dentro del marco */
+}
+
+/* IMAGEN RESPONSIVE DENTRO DE .m  */
+.m img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* OPCIONAL: LIMITAR UN POCO LA ALTURA PARA LAYOUTS MUY ALTOS */
+@media (min-width: 769px) {
+  .m img {
+    max-height: 540px; /* ajusta si quieres que la imagen crezca algo más o menos */
+    object-fit: contain;
+  }
+}
+
+/* RESPONSIVE PARA MÓVIL */
+@media (max-width: 768px) {
+  .cols,
+  .cols2 {
+    grid-template-columns: 1fr;
+  }
+
+  .b {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .m {
+    padding: 1.5rem;
+  }
+}
