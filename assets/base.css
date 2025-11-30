@@ -4399,5 +4399,6 @@ text-component {
 }
 
 .b hr {
-  border: 1px solid gray;
+    border: 1px solid #cbcacc;
+    width: 100%;
 }
