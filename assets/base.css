@@ -4312,15 +4312,15 @@ text-component {
 /* Botón secundario: “Solicita asesoría para tu proyecto” */
 .cta-wrapper .button.button--secondary {
   background-color: #ffffff;
-  color: #2F5D3A;
-  border-color: #2F5D3A;
+  color: rgba(138 154 91 / 1.0);
+  border-color: rgba(138 154 91 / 1.0);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
 .cta-wrapper .button.button--secondary:hover {
   background-color: #F5F7F5;
-  border-color: #3F7448;
-  color: #1F3B2F;
+  border-color: rgba(138 154 91 / 1.0);
+  color: rgba(138 154 91 / 1.0);
   transform: translateY(-1px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
