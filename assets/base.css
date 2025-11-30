@@ -4185,6 +4185,9 @@ text-component {
 .e { 
   margin: 0 auto;
 }
+.e .sub { 
+  text-align: justify;
+}
 
 /* CONTENEDOR DE BLOQUES (TEXTO + IMAGEN) */
 .g {
