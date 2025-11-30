@@ -99,13 +99,13 @@
           "static": true,
           "settings": {
             "collection": "{{ closest.collection }}",
-            "placement": "on_image",
+            "placement": "below_image",
             "horizontal_alignment": "center",
             "vertical_alignment": "flex-end",
-            "collection_card_gap": 8,
+            "collection_card_gap": 10,
             "inherit_color_scheme": true,
             "color_scheme": "",
-            "border": "solid",
+            "border": "none",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0
@@ -127,7 +127,7 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "background": true,
+                "background": false,
                 "background_color": "#ffffff",
                 "corner_radius": 0,
                 "padding-block-start": 4,
@@ -144,13 +144,13 @@
               "settings": {
                 "collection": "{{ closest.collection }}",
                 "image_ratio": "landscape",
-                "toggle_overlay": true,
-                "overlay_color": "#00000026",
+                "toggle_overlay": false,
+                "overlay_color": "#e1e1e1",
                 "overlay_style": "gradient",
-                "gradient_direction": "to bottom",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
+                "gradient_direction": "to top",
+                "border": "solid",
+                "border_width": 0,
+                "border_opacity": 39,
                 "border_radius": 0
               },
               "blocks": {}
@@ -164,12 +164,9 @@
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
-          "casetas-de-entramado-ligero",
-          "gazebos",
-          "natura-porch",
           "classic-pergola",
-          "sip-compactkit",
-          "sip-smartfit",
+          "natura-porch",
+          "gazebos",
           "natural-decking",
           "protech-decking"
         ],
@@ -179,15 +176,15 @@
         "mobile_columns": "2",
         "columns_gap": 20,
         "bento_gap": 8,
-        "rows_gap": 80,
+        "rows_gap": 20,
         "max_collections": 4,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 12,
         "color_scheme": "",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 20,
+        "padding-block-end": 80
       }
     }
   },

@@ -9,6 +9,17 @@
  */
 {
   "sections": {
+    "custom_liquid_X78RHa": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"lux-breadcrumb-box page-width-content\">  \n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      {%- comment -%} Enlace a INICIO {%- endcomment -%}\n      <a href=\"{{ routes.root_url }}\">INICIO</a>\n\n      {%- comment -%}\n        Asignamos variables de metafields.\n        Ajusta \"custom\" por tu namespace real si es otro.\n      {%- endcomment -%}\n      {% assign n1      = page.metafields.custom.n1 | default: page.metafields.custom.N1 %}\n      {% assign n1_url  = page.metafields.custom.n1_url | default: page.metafields.custom.N1_URL %}\n      {% assign n2      = page.metafields.custom.n2 | default: page.metafields.custom.N2 %}\n      {% assign n2_url  = page.metafields.custom.n2_url | default: page.metafields.custom.N2_URL %}\n      {% assign n3      = page.metafields.custom.n3 | default: page.metafields.custom.N3 %}\n      {% assign n3_url  = page.metafields.custom.n3_url | default: page.metafields.custom.N3_URL %}\n\n      {%- comment -%} N1 {%- endcomment -%}\n      {% if n1 != blank %}\n        <span>/</span>\n        {% if n1_url != blank %}\n          <a href=\"{{ n1_url }}\">{{ n1 }}</a>\n        {% else %}\n          <span>{{ n1 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N2 {%- endcomment -%}\n      {% if n2 != blank %}\n        <span>/</span>\n        {% if n2_url != blank %}\n          <a href=\"{{ n2_url }}\">{{ n2 }}</a>\n        {% else %}\n          <span>{{ n2 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N3 {%- endcomment -%}\n      {% if n3 != blank %}\n        <span>/</span>\n        {% if n3_url != blank %}\n          <a href=\"{{ n3_url }}\">{{ n3 }}</a>\n        {% else %}\n          <span>{{ n3 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} Página actual {%- endcomment -%}\n      <span>/</span><span class=\"current\">{{ page.title }}</span>\n    </nav>\n\n    <h3 class=\"lux-title\">{{ page.title }}</h3>\n  </div>\n</div>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "main": {
       "type": "main-page",
       "blocks": {
@@ -37,37 +48,10 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "text_KMwtTr": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "{{ closest.page.content }}",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "text_A8F3Wr",
-        "text_KMwtTr"
+        "text_A8F3Wr"
       ],
       "disabled": true,
       "settings": {
@@ -81,15 +65,26 @@
     "17537374647b539d70": {
       "type": "_blocks",
       "blocks": {
-        "enorm_image_gallery_video_embed_code_dWHUqx": {
-          "type": "shopify://apps/enorm-image-gallery-video/blocks/embed-code/01219f89-c8d0-40c2-a0ff-1987199e84a2",
+        "essential_grid_gallery_app_block_Ye3HTg": {
+          "type": "shopify://apps/essential-grid-gallery/blocks/app-block/b252af1e-c43a-4272-b19c-e87bc447c686",
           "settings": {
-            "embed-code": "<div id=\"enap-gallery-93891\"></div>"
+            "eg_grid_metakey": 1,
+            "eg_grid_dynamic_metakey": "",
+            "eg_grid_heading": "",
+            "eg_grid_sub_heading": "",
+            "eg_grid_heading_size": 30,
+            "eg_grid_sub_heading_size": 15,
+            "eg_grid_heading_alignment": "center",
+            "eg_grid_sec_back_color": "",
+            "eg_grid_sec_front_color": "",
+            "eg_grid_sec_sub_heading_color": "",
+            "eg_grid_sec_pad_top": 40,
+            "eg_grid_sec_pad_bot": 80
           }
         }
       },
       "block_order": [
-        "enorm_image_gallery_video_embed_code_dWHUqx"
+        "essential_grid_gallery_app_block_Ye3HTg"
       ],
       "custom_css": [
         ".shopify-block {max-width: 100% !important; width: 100% !important; height: 100% !important;}"
@@ -155,6 +150,7 @@
     }
   },
   "order": [
+    "custom_liquid_X78RHa",
     "main",
     "17537374647b539d70",
     "1753738957b07b9805"

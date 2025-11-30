@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "custom_liquid_chGEnT": {
+    "custom_liquid_nxCcxc": {
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
       "settings": {
@@ -23,13 +23,40 @@
     "main": {
       "type": "main-page",
       "blocks": {
+        "text_A8F3Wr": {
+          "type": "text",
+          "name": "t:names.heading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>{{ closest.page.title }}</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "text_KMwtTr": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
             "text": "{{ closest.page.content }}",
-            "width": "100%",
-            "max_width": "none",
+            "width": "fit-content",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
@@ -51,11 +78,10 @@
         }
       },
       "block_order": [
+        "text_A8F3Wr",
         "text_KMwtTr"
       ],
-      "custom_css": [
-        ".page-width-content {--page-content-width: 100% !important;}"
-      ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -63,10 +89,22 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "custom_liquid_fPjJK9": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "{%- comment -%}\n  Leemos JSON desde page.metafields.custom.contenido_json\n{%- endcomment -%}\n\n{%- assign mf = page.metafields.custom.contenido_json -%}\n{%- assign data = nil -%}\n\n{%- if mf -%}\n  {%- if mf.value -%}\n    {%- assign data = mf.value -%}\n  {%- else -%}\n    {%- assign mf_string = mf | strip -%}\n    {%- if mf_string != '' -%}\n      {%- assign data = mf_string | parse_json -%}\n    {%- endif -%}\n  {%- endif -%}\n{%- endif -%}\n\n{%- if data and data.editorials and data.editorials.size > 0 -%}\n  {%- assign item_count = data.editorials.size | plus: 0 -%}\n\n  {%- assign tablet_cols = item_count -%}\n  {%- if tablet_cols > 2 -%}{%- assign tablet_cols = 2 -%}{%- endif -%}\n  {%- if tablet_cols < 1 -%}{%- assign tablet_cols = 1 -%}{%- endif -%}\n\n  {%- assign desktop_cols = item_count -%}\n  {%- if desktop_cols > 4 -%}{%- assign desktop_cols = 4 -%}{%- endif -%}\n  {%- if desktop_cols < 1 -%}{%- assign desktop_cols = 1 -%}{%- endif -%}\n\n  <style>\n    .editorials-grid {\n      display: grid;\n      grid-template-columns: repeat(1, minmax(0, 1fr)); /* móvil */\n      gap: 1.5rem;\n    }\n\n    @media screen and (min-width: 750px) {\n      .editorials-grid {\n        grid-template-columns: repeat(var(--cols-tablet, 2), minmax(0, 1fr));\n      }\n    }\n\n    @media screen and (min-width: 990px) {\n      .editorials-grid {\n        grid-template-columns: repeat(var(--cols-desktop, 4), minmax(0, 1fr));\n      }\n    }\n\n    .editorial-card {\n      position: relative;\n      width: 100%;\n      padding-top: 57.5%; /* ⬅️ Altura reducida a la mitad */\n      background-size: cover;\n      background-position: center;\n      background-repeat: no-repeat;\n      border-radius: 8px;\n      overflow: hidden;\n      text-decoration: none;\n      color: #ffffff;\n      display: flex;\n      align-items: flex-end;\n      justify-content: center;\n      transition: transform 150ms ease, box-shadow 150ms ease;\n    }\n\n    .editorial-card::before {\n      content: \"\";\n      position: absolute;\n      inset: 0;\n      background: linear-gradient(\n        to top,\n        rgba(0, 0, 0, 0.65),\n        rgba(0, 0, 0, 0.1)\n      );\n      z-index: 0;\n    }\n\n    .editorial-card__content {\n      position: relative;\n      z-index: 1;\n      padding: 1.2rem;\n      width: 100%;\n      max-width: 90%;\n      text-align: center;\n      box-sizing: border-box;\n    }\n\n    .editorial-card__caption {\n      font-size: 0.75rem;\n      letter-spacing: 0.08em;\n      text-transform: uppercase;\n      margin-bottom: 0.35rem;\n      opacity: 0.9;\n    }\n\n    .editorial-card__heading {\n      font-size: 1rem;\n      font-weight: 600;\n      margin-bottom: 0.4rem;\n    }\n\n    .editorial-card__text {\n      font-size: 0.85rem;\n      margin: 0;\n      text-align: justify;\n    }\n\n    .editorial-card:hover {\n      transform: translateY(-2px);\n      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);\n    }\n  </style>\n\n  <div\n    class=\"editorials-grid\"\n    style=\"\n      --cols-tablet: {{ tablet_cols }};\n      --cols-desktop: {{ desktop_cols }};\n    \"\n  >\n    {%- for item in data.editorials -%}\n      {%- assign media_url = item.Media | default: '' -%}\n      {%- assign caption = item.Content.caption | default: '' -%}\n      {%- assign heading = item.Content.Heading | default: '' -%}\n      {%- assign text = item.Content.Text | default: '' -%}\n      {%- assign link_url = item.url | default: '#' -%}\n\n      <a\n        class=\"editorial-card\"\n        href=\"{{ link_url }}\"\n        style=\"background-image: url('{{ media_url }}');\"\n      >\n        <div class=\"editorial-card__content\">\n          {%- if caption != '' -%}\n            <div class=\"editorial-card__caption\">{{ caption }}</div>\n          {%- endif -%}\n\n          {%- if heading != '' -%}\n            <h3 class=\"editorial-card__heading\">{{ heading }}</h3>\n          {%- endif -%}\n\n          {%- if text != '' -%}\n            <p class=\"editorial-card__text\">{{ text }}</p>\n          {%- endif -%}\n        </div>\n      </a>\n    {%- endfor -%}\n  </div>\n{%- endif -%}",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 20,
+        "padding-block-end": 80
+      }
     }
   },
   "order": [
-    "custom_liquid_chGEnT",
-    "main"
+    "custom_liquid_nxCcxc",
+    "main",
+    "custom_liquid_fPjJK9"
   ]
 }
