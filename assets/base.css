@@ -4276,3 +4276,41 @@ text-component {
     padding: 1.5rem;
   }
 }
+
+/* H5 dentro del artículo de entramado ligero */
+.b h5 {
+  font-family: inherit;              /* Respeta la tipografía del tema */
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #1f2933;                    /* Gris muy oscuro, profesional */
+  
+  margin: 1.8rem 0 0.75rem;
+  padding-left: 0.9rem;
+  
+  position: relative;
+}
+
+/* Pequeño acento vertical tipo “marca” madera */
+.b h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  width: 3px;
+  border-radius: 999px;
+  
+  /* Tono cálido que encaja con madera (ajusta si tienes color corporativo) */
+  background: linear-gradient(180deg, #c58c4b, #8b5a2b);
+}
+
+/* Un poco más compacto en móvil */
+@media (max-width: 768px) {
+  .b h5 {
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    margin-top: 1.4rem;
+  }
+}
