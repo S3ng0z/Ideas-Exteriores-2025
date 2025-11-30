@@ -4261,6 +4261,77 @@ text-component {
   }
 }
 
+/* Contenedor de las llamadas a la acción */
+.cta-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  align-items: center;
+}
+
+/* Botones dentro del bloque CTA
+   (sobrescribe el estilo global sólo en este contexto) */
+.cta-wrapper .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;              /* pastilla, más premium */
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+  white-space: nowrap;
+}
+
+/* Botón principal: “Ver ejemplos de casas de entramado ligero” */
+.cta-wrapper .button:not(.button--secondary) {
+  background-color: #2F5D3A;        /* verde oscuro tipo “madera / naturaleza” */
+  color: #ffffff;
+  border-color: #2F5D3A;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.cta-wrapper .button:not(.button--secondary):hover {
+  background-color: #3F7448;
+  border-color: #3F7448;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* Botón secundario: “Solicita asesoría para tu proyecto” */
+.cta-wrapper .button.button--secondary {
+  background-color: #ffffff;
+  color: #2F5D3A;
+  border-color: #2F5D3A;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.cta-wrapper .button.button--secondary:hover {
+  background-color: #F5F7F5;
+  border-color: #3F7448;
+  color: #1F3B2F;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Pequeño ajuste visual cuando van juntos:
+   el secundario se ve como opción alternativa, no “menos importante” */
+.cta-wrapper .button + .button {
+  /* Separación extra sólo entre botones, por si cambias el gap general */
+  margin-left: 0.25rem;
+}
+
 /* RESPONSIVE PARA MÓVIL */
 @media (max-width: 768px) {
   .cols,
@@ -4274,6 +4345,17 @@ text-component {
 
   .m {
     padding: 1.5rem;
+  }
+  .cta-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-wrapper .button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;     /* permite que el texto salte de línea en pantallas pequeñas */
   }
 }
 
