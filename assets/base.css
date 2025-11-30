@@ -4397,3 +4397,7 @@ text-component {
     margin-top: 1.4rem;
   }
 }
+
+.b hr {
+  border: 1px solid gray;
+}
