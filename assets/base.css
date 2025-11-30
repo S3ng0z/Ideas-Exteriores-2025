@@ -4284,9 +4284,10 @@ text-component {
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
+  line-height: 2rem;
   color: #1f2933;                    /* Gris muy oscuro, profesional */
   
-  margin: 2.5rem 0 1rem;
+  margin: 1.8rem 0 0.75rem;
   padding-left: 0.9rem;
   
   position: relative;
