@@ -4256,7 +4256,7 @@ text-component {
 /* OPCIONAL: LIMITAR UN POCO LA ALTURA PARA LAYOUTS MUY ALTOS */
 @media (min-width: 769px) {
   .m img {
-    max-height: 540px; /* ajusta si quieres que la imagen crezca algo más o menos */
+    /*max-height: 540px;*/ /* ajusta si quieres que la imagen crezca algo más o menos */
     object-fit: contain;
   }
 }
