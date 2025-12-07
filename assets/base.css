@@ -4226,8 +4226,7 @@ text-component {
 }
 
 .detalles-row__img {
-  width: 25rem;
-  height: 25rem;
+  width: 33.33%;
   padding: .5rem 1rem;
 }
 
