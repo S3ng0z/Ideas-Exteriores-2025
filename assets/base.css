@@ -4226,7 +4226,9 @@ text-component {
 }
 
 .detalles-row__img {
-  width: auto;
+  width: 25rem;
+  height: 25rem;
+  padding: .5rem 1rem;
 }
 
 /* BLOQUE DE TEXTO */
