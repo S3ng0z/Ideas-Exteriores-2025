@@ -4222,11 +4222,11 @@ text-component {
   gap: 8px;
   justify-content: center;
   align-items: center;
+  flex-direction: inherit;
 }
 
 .detalles-row__img {
-  max-width: 150px; /* tamaño en tablet/ordenador */
-  width: 100%;
+  width: auto;
 }
 
 /* BLOQUE DE TEXTO */
