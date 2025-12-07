@@ -4216,6 +4216,19 @@ text-component {
   justify-content: center; /* centra verticalmente el contenido dentro de cada columna */
 }
 
+/* Desktop y tablet: en fila */
+.detalles-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.detalles-row__img {
+  max-width: 150px; /* tamaño en tablet/ordenador */
+  width: 100%;
+}
+
 /* BLOQUE DE TEXTO */
 .b {
   background: rgba(138 154 91 / 0.15);
@@ -4356,6 +4369,16 @@ text-component {
     justify-content: center;
     text-align: center;
     white-space: normal;     /* permite que el texto salte de línea en pantallas pequeñas */
+  }
+  .detalles-row {
+    display: block;
+    text-align: center; /* opcional */
+  }
+
+  .detalles-row__img {
+    display: block;
+    max-width: 100%;    /* que ocupe el ancho del móvil */
+    margin: 0 auto 8px; /* centrada y separada */
   }
 }
 
