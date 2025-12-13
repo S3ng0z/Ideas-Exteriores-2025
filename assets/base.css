@@ -4205,6 +4205,10 @@ text-component {
   grid-template-columns: 2fr 3fr;
 }
 
+.cols3 {
+  grid-template-columns: 3fr 3fr;
+}
+
 /* 
   BLOQUE DE TEXTO (.b) Y BLOQUE DE IMAGEN (.m)
   -> LOS CONVERTIMOS EN FLEX PARA CENTRAR CONTENIDO VERTICALMENTE
@@ -4349,7 +4353,8 @@ text-component {
 /* RESPONSIVE PARA MÓVIL */
 @media (max-width: 768px) {
   .cols,
-  .cols2 {
+  .cols2,
+  .cols3 {
     grid-template-columns: 1fr;
   }
 
