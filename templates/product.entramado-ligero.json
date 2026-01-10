@@ -316,6 +316,20 @@
         "padding-block-end": 20
       }
     },
+    "divider_VdaAeR": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    },
     "custom_liquid_qhhcp9": {
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
@@ -323,6 +337,109 @@
         "custom_liquid": "{%- comment -%}\nTabla comparativa (responsive) — pegar en una sección \"Custom liquid\"\n- Desktop/Tablet: tabla normal\n- Móvil: filas tipo “tarjeta” con etiquetas\n{%- endcomment -%}\n\n<section class=\"cmp-compare color-{{ section.settings.color_scheme | default: 'background-1' }}\">\n  <div class=\"page-width\">\n    <div class=\"cmp-compare__header\">\n      <h4 class=\"cmp-compare__title\">Comparativa de niveles</h4>\n      <p class=\"cmp-compare__subtitle\">Checklist rápido (BASIC / STANDARD / PASSIVE)</p>\n    </div>\n\n    <div class=\"cmp-compare__table-wrap\" role=\"region\" aria-label=\"Tabla comparativa\" tabindex=\"0\">\n      <table class=\"cmp-compare__table\">\n        <thead>\n          <tr>\n            <th scope=\"col\" class=\"cmp-compare__q\">Pregunta</th>\n            <th scope=\"col\" class=\"cmp-compare__plan\">BASIC</th>\n            <th scope=\"col\" class=\"cmp-compare__plan\">STANDARD</th>\n            <th scope=\"col\" class=\"cmp-compare__plan\">PASSIVE</th>\n          </tr>\n        </thead>\n\n        <tbody>\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿El kit de entramado ligero llega mecanizado y listo para montar (piezas cortadas/preparadas) para ahorrar tiempo en obra?\n            </th>\n            <td data-label=\"BASIC\">{{ '✓' | escape }}</td>\n            <td data-label=\"STANDARD\">{{ '✓' | escape }}</td>\n            <td data-label=\"PASSIVE\">{{ '✓' | escape }}</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La madera es estructural (C24/C16 según cálculo), seca y con documentación/CE apta para vivienda en España (CTE)?\n            </th>\n            <td data-label=\"BASIC\">✓</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La estructura incorpora rigidización anti-deformaciones (tableros estructurales tipo OSB/3 y arriostramiento)?\n            </th>\n            <td data-label=\"BASIC\">✓</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La envolvente deja la fachada preparada para elegir después SATE o fachada ventilada sin rehacer nada?\n            </th>\n            <td data-label=\"BASIC\">✓</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye previsión técnica para instalaciones (pasos de electricidad/fontanería/ventilación) y transporte+descarga en Península?\n            </th>\n            <td data-label=\"BASIC\">✓</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye aislamiento continuo exterior (además del aislamiento interior) para reducir puentes térmicos y estabilizar la temperatura?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Viene con hermeticidad “de verdad” (cintas y sellados en juntas/esquinas) para evitar corrientes con el tiempo?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye lámina exterior transpirable cortaviento/impermeable para proteger el aislamiento y gestionar la humedad?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Las ventanas están planteadas con instalación estanca (precerco + sellado interior/exterior) para evitar agua/aire alrededor del hueco?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La cubierta viene “completa” (aislamiento potente + acabado exterior instalado + opción de acabado interior tipo madera vista)?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye la cimentación estructural (losa/zapatas según proyecto) para empezar a montar sin contratar esa parte aparte?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye el montaje completo de estructura + cubierta + fachada por equipo especializado (no solo suministro del kit)?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La madera llega con tratamiento según clase de uso/exposición para máxima durabilidad en zonas sensibles?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye instalaciones interiores dentro de la vivienda (electricidad + fontanería/desagües) sin subcontratarlo aparte?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Deja preparada la casa para calidad de aire premium (preparación para filtros y sensores CO₂/humedad) y puerta de entrada muy estanca “cero corrientes”?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <style>\n    .cmp-compare { padding: 1.25rem 0; }\n    .cmp-compare__header { margin-bottom: .75rem; }\n    .cmp-compare__title {\n      margin: 0 0 .15rem 0;\n      font-family: var(--font-heading-family, inherit);\n      letter-spacing: .01em;\n      line-height: 1.2;\n    }\n    .cmp-compare__subtitle {\n      margin: 0;\n      opacity: .75;\n      font-size: .95em;\n    }\n\n    .cmp-compare__table-wrap{\n      border: 1px solid rgba(var(--color-foreground), .12);\n      border-radius: 14px;\n      background: rgb(var(--color-background));\n      overflow: hidden;\n    }\n\n    /* Desktop/tablet: tabla limpia */\n    .cmp-compare__table{\n      width: 100%;\n      border-collapse: separate;\n      border-spacing: 0;\n      font-size: .98em;\n    }\n    .cmp-compare__table thead th{\n      position: sticky;\n      top: 0;\n      z-index: 2;\n      background: rgb(var(--color-background));\n      border-bottom: 1px solid rgba(var(--color-foreground), .12);\n      padding: .8rem .9rem;\n      text-align: left;\n      font-weight: 600;\n      white-space: nowrap;\n    }\n    .cmp-compare__table thead th.cmp-compare__plan{ text-align: center; }\n\n    .cmp-compare__table tbody th,\n    .cmp-compare__table tbody td{\n      padding: .75rem .9rem;\n      border-bottom: 1px solid rgba(var(--color-foreground), .08);\n      vertical-align: top;\n    }\n\n    .cmp-compare__table tbody tr:nth-child(even) th,\n    .cmp-compare__table tbody tr:nth-child(even) td{\n      background: rgba(var(--color-foreground), .02);\n    }\n\n    .cmp-compare__q{\n      width: 55%;\n      font-weight: 500;\ntext-align: left;\n    }\n\n    .cmp-compare__table tbody td{\n      text-align: center;\n      width: 15%;\n      font-weight: 700;\n      letter-spacing: .02em;\n    }\n\n    /* Sí / No con look minimal */\n    .cmp-compare__table tbody td:where(:contains(\"✓\")) { }\n    .cmp-compare__table tbody td{\n      color: rgb(var(--color-foreground));\n    }\n    .cmp-compare__table tbody td[data-label]:where(:contains(\"—\")) { }\n    .cmp-compare__table tbody td{\n      font-variant-numeric: tabular-nums;\n    }\n    .cmp-compare__table tbody td:empty::before{\n      content: \"—\";\n      opacity: .55;\n    }\n    .cmp-compare__table tbody td{\n      line-height: 1.1;\n    }\n    .cmp-compare__table tbody td{\n      /* Atenúa el “—” */\n    }\n    .cmp-compare__table tbody td{\n      /* (sin colores hardcodeados; se integra con el tema) */\n    }\n    .cmp-compare__table tbody td{\n      /* Ajuste fino: “—” más suave */\n    }\n    .cmp-compare__table tbody td:where(:not(:contains(\"✓\"))){\n      /* no-op */\n    }\n    .cmp-compare__table tbody td{\n      /* fallback */\n    }\n    .cmp-compare__table tbody td{\n      /* Si usas “—”, queda más discreto */\n    }\n    .cmp-compare__table tbody td{\n      /* (no usamos verde/rojo para mantener look premium) */\n    }\n    .cmp-compare__table tbody td{\n      /* Detectar “—” con clase sería ideal, pero lo mantenemos simple */\n    }\n    .cmp-compare__table tbody td{\n      /* Alternativa: cambia los “—” por <span class=\"is-no\">—</span> si quieres aún más control */\n    }\n\n    /* Mobile: tarjetas por fila */\n    @media (max-width: 749px){\n      .cmp-compare__table thead{ display:none; }\n      .cmp-compare__table, .cmp-compare__table tbody, .cmp-compare__table tr,\n      .cmp-compare__table th, .cmp-compare__table td{ display:block; width:100%; }\n\n      .cmp-compare__table tr{\n        border-bottom: 1px solid rgba(var(--color-foreground), .10);\n      }\n\n      .cmp-compare__table tbody th.cmp-compare__q{\n        padding: .85rem .9rem .75rem;\n        background: rgba(var(--color-foreground), .02);\n        font-weight: 600;\n      }\n\n      .cmp-compare__table tbody td{\n        padding: .65rem .9rem;\n        text-align: right;\n        font-weight: 700;\n      }\n\n      .cmp-compare__table tbody td::before{\n        content: attr(data-label);\n        float: left;\n        opacity: .75;\n        font-weight: 600;\n      }\n\n      .cmp-compare__table tbody tr:last-child{\n        border-bottom: 0;\n      }\n    }\n  </style>\n</section>",
         "color_scheme": "",
         "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "176805135143cd7128": {
+      "type": "_blocks",
+      "blocks": {
+        "powerful_form_builder_app_block_Qncarh": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_Qncarh"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_DjM3tc": {
+      "type": "section",
+      "blocks": {
+        "text_6GYn4n": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>PARA MÁS INFORMACIÓN </h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_6GYn4n"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -649,7 +766,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
+        "padding-block-start": 20,
         "padding-block-end": 48
       }
     },
@@ -839,12 +956,45 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "divider_e7dGcf": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    },
+    "divider_98i4bF": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
     }
   },
   "order": [
     "custom_liquid_JViiDQ",
     "main",
+    "divider_VdaAeR",
     "custom_liquid_qhhcp9",
+    "divider_e7dGcf",
+    "176805135143cd7128",
+    "divider_98i4bF",
+    "section_DjM3tc",
     "section_AczQVi",
     "product-recommendations"
   ]
