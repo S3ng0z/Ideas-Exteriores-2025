@@ -1022,7 +1022,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Más información",
-                "link": "shopify://collections/all",
+                "link": "shopify://collections/casas-entramado-ligero",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
