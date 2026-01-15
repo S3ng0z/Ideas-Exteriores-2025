@@ -171,7 +171,7 @@
               "settings": {
                 "text": "<p>En <strong>Ideas Exteriores</strong> diseñamos y construimos casas y casetas de madera totalmente personalizadas (95 % de nuestros proyectos), adaptadas a tus ideas y necesidades.</p><p>Utilizamos dos sistemas constructivos:</p><ul><li><strong>Entramado ligero</strong>: ideal para diseños únicos y terrenos con desniveles.</li><li><strong>Paneles SIP</strong>: soluciones sostenibles, eficientes y acogedoras.</li></ul><p><strong>Ventajas de elegirnos:</strong></p><ul><li><strong>Diseño a medida</strong>: amplía tu hogar, potencia la iluminación o crea espacios originales.</li><li><strong>Rapidez y calidad</strong>: montaje eficiente sin renunciar al detalle.</li><li><strong>Sostenibilidad</strong>: ahorro energético y respeto al entorno.</li><li><strong>Adaptabilidad</strong>: desde construcciones promocionales hasta propuestas personalizadas.</li></ul><p>Construye de forma inteligente y responsable con <strong>Ideas Exteriores</strong>: tu proyecto, nuestra pasión.</p>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "paragraph",
                 "font": "var(--font-body--family)",
@@ -997,7 +997,7 @@
               "settings": {
                 "text": "<p><strong>Diseños exclusivos y funcionales</strong><br/><br/>Descubre modelos únicos o diseña tu propia casa o caseta. Espacios personalizados que reflejan tu estilo.</p><p><strong>Construcción eficiente y ecológica</strong><br/><br/>Especialistas en paneles SIP, creamos estructuras sostenibles, con alta eficiencia térmica y montaje ágil.</p><p><strong>Calidad certificada</strong><br/><br/>Empleamos madera y materiales con sello CE, garantizando durabilidad, seguridad y confianza.</p><p><strong>Compromiso verde</strong><br/><br/>Construimos soluciones elegantes y optimizadas, reduciendo el impacto ambiental y mejorando el ahorro energético.</p>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "paragraph",
                 "font": "var(--font-body--family)",
