@@ -997,7 +997,7 @@
               "settings": {
                 "text": "<p><strong>Diseños exclusivos y funcionales</strong><br/><br/>Descubre modelos únicos o diseña tu propia casa o caseta. Espacios personalizados que reflejan tu estilo.</p><p><strong>Construcción eficiente y ecológica</strong><br/><br/>Especialistas en paneles SIP, creamos estructuras sostenibles, con alta eficiencia térmica y montaje ágil.</p><p><strong>Calidad certificada</strong><br/><br/>Empleamos madera y materiales con sello CE, garantizando durabilidad, seguridad y confianza.</p><p><strong>Compromiso verde</strong><br/><br/>Construimos soluciones elegantes y optimizadas, reduciendo el impacto ambiental y mejorando el ahorro energético.</p>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "paragraph",
                 "font": "var(--font-body--family)",
