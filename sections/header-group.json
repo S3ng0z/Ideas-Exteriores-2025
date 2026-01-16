@@ -17,7 +17,7 @@
         "announcement_thFH6p": {
           "type": "_announcement",
           "settings": {
-            "text": "Shop our latest arrivals!",
+            "text": "",
             "custom_liquid": "<div class=\"benefits-bar\">\n  \n  <div class=\"benefit-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0921/0796/4760/files/express-delivery_inverte.png?v=1750285290\" alt=\"Entrega rápida\">\n    <h5>Entrega rápida</h5>\n  </div>\n\n  <div class=\"benefit-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0921/0796/4760/files/badge_inverte.png?v=1750285289\" alt=\"Alta calidad\">\n    <h5>Asesoría a medida</h5>\n  </div>\n\n  <div class=\"benefit-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0921/0796/4760/files/credit-card_inverte.png?v=1750285290\" alt=\"Pago flexible\">\n    <h5>Pago Flexible</h5>\n  </div>\n\n</div>\n\n<style>\n.benefits-bar {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  gap: 7rem;\n  flex-wrap: wrap;\n  text-align: center;\n}\n\n.benefit-item {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n}\n\n.benefit-item img {\n  width: 25px;\n  height: 25px;\n}\n\n/* Tablets (medianas) */\n@media (max-width: 992px) {\n  .benefits-bar {\n    gap: 4rem;\n  }\n}\n\n/* Smartphones (pequeñas) */\n@media (max-width: 600px) {\n  .benefits-bar {\n    align-items: center;\n    gap: .5rem;\n  }\n}\n</style>",
             "link": "",
             "font": "var(--font-body--family)",
