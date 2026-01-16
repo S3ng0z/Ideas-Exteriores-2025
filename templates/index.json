@@ -897,7 +897,7 @@
         "group_gHiHzg"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {img {width: 50%; }}"
+        "img {width: 50%; }"
       ],
       "name": "t:names.icons_with_text",
       "settings": {
