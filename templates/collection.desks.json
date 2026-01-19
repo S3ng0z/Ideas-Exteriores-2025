@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_WMRJ7B": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"lux-breadcrumb-box page-width-content\">  \n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      {%- comment -%} Enlace a INICIO {%- endcomment -%}\n      <a href=\"{{ routes.root_url }}\">INICIO</a>\n\n      {%- comment -%}\n        Determinamos el objeto actual: colección o página.\n      {%- endcomment -%}\n      {% if collection %}\n        {% assign current_obj = collection %}\n      {% else %}\n        {% assign current_obj = page %}\n      {% endif %}\n\n      {%- comment -%}\n        Metafields (ajusta \"custom\" si usas otro namespace)\n      {%- endcomment -%}\n      {% assign n1     = current_obj.metafields.custom.n1     | default: current_obj.metafields.custom.N1 %}\n      {% assign n1_url = current_obj.metafields.custom.n1_url | default: current_obj.metafields.custom.N1_URL %}\n      {% assign n2     = current_obj.metafields.custom.n2     | default: current_obj.metafields.custom.N2 %}\n      {% assign n2_url = current_obj.metafields.custom.n2_url | default: current_obj.metafields.custom.N2_URL %}\n      {% assign n3     = current_obj.metafields.custom.n3     | default: current_obj.metafields.custom.N3 %}\n      {% assign n3_url = current_obj.metafields.custom.n3_url | default: current_obj.metafields.custom.N3_URL %}\n\n      {%- comment -%} N1 {%- endcomment -%}\n      {% if n1 != blank %}\n        <span>/</span>\n        {% if n1_url != blank %}\n          <a href=\"{{ n1_url }}\">{{ n1 }}</a>\n        {% else %}\n          <span>{{ n1 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N2 {%- endcomment -%}\n      {% if n2 != blank %}\n        <span>/</span>\n        {% if n2_url != blank %}\n          <a href=\"{{ n2_url }}\">{{ n2 }}</a>\n        {% else %}\n          <span>{{ n2 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N3 {%- endcomment -%}\n      {% if n3 != blank %}\n        <span>/</span>\n        {% if n3_url != blank %}\n          <a href=\"{{ n3_url }}\">{{ n3 }}</a>\n        {% else %}\n          <span>{{ n3 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} Página / colección actual {%- endcomment -%}\n      <span>/</span>\n      <span class=\"current\">\n        {% if collection %}\n          {{ collection.title }}\n        {% else %}\n          {{ page.title }}\n        {% endif %}\n      </span>\n    </nav>\n\n    <h3 class=\"lux-title\">\n      {% if collection %}\n        {{ collection.title }}\n      {% else %}\n        {{ page.title }}\n      {% endif %}\n    </h3>\n  </div>\n</div>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "static": true,
+          "settings": {
+            "enable_filtering": true,
+            "filter_style": "horizontal",
+            "filter_width": "centered",
+            "text_label_case": "uppercase",
+            "show_swatch_label": true,
+            "show_filter_label": true,
+            "enable_sorting": true,
+            "enable_grid_density": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "padding-block-start": 8,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "facets_margin_bottom": 8,
+            "facets_margin_right": 20
+          },
+          "blocks": {}
+        },
+        "product-card": {
+          "type": "product-card",
+          "static": true,
+          "settings": {
+            "product": "{{ closest.product }}",
+            "product_card_gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card-gallery": {
+              "type": "_product-card-gallery",
+              "settings": {
+                "product": "{{ closest.product }}",
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "group": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "product_title_hgAHWC": {
+                  "type": "product-title",
+                  "name": "t:names.product_title",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price": {
+                  "type": "price",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "swatches": {
+                  "type": "swatches",
+                  "name": "t:names.swatches",
+                  "disabled": true,
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "product_swatches_alignment": "center",
+                    "product_swatches_alignment_mobile": "flex-start",
+                    "hide_padding": false,
+                    "product_swatches_padding_top": 4,
+                    "product_swatches_padding_bottom": 0,
+                    "product_swatches_padding_left": 0,
+                    "product_swatches_padding_right": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_title_hgAHWC",
+                "price",
+                "swatches"
+              ]
+            }
+          },
+          "block_order": [
+            "card-gallery",
+            "group"
+          ]
+        }
+      },
+      "settings": {
+        "layout_type": "grid",
+        "product_card_size": "medium",
+        "mobile_product_card_size": "small",
+        "product_grid_width": "centered",
+        "full_width_on_mobile": true,
+        "columns_gap_horizontal": 16,
+        "columns_gap_vertical": 16,
+        "padding-inline-start": 0,
+        "padding-inline-end": 0,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 20,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_WMRJ7B",
+    "main"
+  ]
+}
