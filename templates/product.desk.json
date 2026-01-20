@@ -320,12 +320,6 @@
     "section_PJbace": {
       "type": "section",
       "blocks": {
-        "powerful_form_builder_app_block_PrA8Uh": {
-          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-          "settings": {
-            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
-          }
-        },
         "product_description_q9HYne": {
           "type": "product-description",
           "name": "t:names.product_description",
@@ -341,7 +335,7 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "var(--color-foreground)",
+            "color": "var(--color-foreground-heading)",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
@@ -354,7 +348,6 @@
         }
       },
       "block_order": [
-        "powerful_form_builder_app_block_PrA8Uh",
         "product_description_q9HYne"
       ],
       "name": "t:names.custom_section",
