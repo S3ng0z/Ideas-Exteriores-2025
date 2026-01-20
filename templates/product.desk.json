@@ -350,6 +350,9 @@
       "block_order": [
         "product_description_q9HYne"
       ],
+      "custom_css": [
+        ".bloque-info {max-width: inherit;}"
+      ],
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "row",
