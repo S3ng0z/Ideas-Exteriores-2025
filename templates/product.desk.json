@@ -1,0 +1,839 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_JViiDQ": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"lux-breadcrumb-box\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      <a href=\"{{ routes.root_url }}\">Inicio</a>\n      <span>/</span>\n      <a href=\"https://9qmnma-zm.myshopify.com/collections/casas-sip\">Casas SIP</a>\n      <span>/</span>\n      <span class=\"current\">{{ product.title }}</span>\n    </nav>\n    <h2 class=\"lux-title\">{{ product.title }}</h2>\n  </div>\n</div>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "product": "{{ closest.product }}",
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 10,
+            "large_first_image": true,
+            "icons_style": "arrows",
+            "slideshow_controls_style": "dots",
+            "slideshow_mobile_controls_style": "hint",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 50,
+            "aspect_ratio": "2/1",
+            "media_radius": 10,
+            "extend_media": false,
+            "constrain_to_viewport": true,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "gap": 20,
+            "sticky_details_desktop": true,
+            "width": "fill",
+            "custom_width": 75,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 18,
+            "padding-block-end": 48,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_JtXipy": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 65,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 12,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "group_xr9GGL": {
+                  "type": "group",
+                  "name": "Header",
+                  "settings": {
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "content_direction": "column",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "flex-start",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 8,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background_media": "none",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "group_K8TE9x": {
+                      "type": "group",
+                      "name": "Price & Rating",
+                      "settings": {
+                        "link": "",
+                        "open_in_new_tab": false,
+                        "content_direction": "row",
+                        "vertical_on_mobile": true,
+                        "horizontal_alignment": "flex-start",
+                        "vertical_alignment": "flex-start",
+                        "align_baseline": false,
+                        "horizontal_alignment_flex_direction_column": "flex-start",
+                        "vertical_alignment_flex_direction_column": "center",
+                        "gap": 24,
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "custom_height": 100,
+                        "inherit_color_scheme": true,
+                        "color_scheme": "",
+                        "background_media": "none",
+                        "video_position": "cover",
+                        "background_image_position": "cover",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "toggle_overlay": false,
+                        "overlay_color": "#00000026",
+                        "overlay_style": "solid",
+                        "gradient_direction": "to top",
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {
+                        "price_WRfkDh": {
+                          "type": "price",
+                          "disabled": true,
+                          "settings": {
+                            "product": "{{ closest.product }}",
+                            "show_sale_price_first": false,
+                            "show_installments": false,
+                            "show_tax_info": true,
+                            "type_preset": "h4",
+                            "width": "100%",
+                            "alignment": "left",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "color": "var(--color-foreground)",
+                            "padding-block-start": 4,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        },
+                        "review_m3RVcq": {
+                          "type": "review",
+                          "disabled": true,
+                          "settings": {
+                            "product": "{{ closest.product }}",
+                            "stars_style": "shaded",
+                            "show_number": true,
+                            "rating_color": "primary",
+                            "type_preset": "paragraph",
+                            "alignment": "left"
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "price_WRfkDh",
+                        "review_m3RVcq"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "group_K8TE9x"
+                  ]
+                },
+                "custom_liquid_wYfRkd": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<style>\n/*====================\n  PRECIOS (PRICING BOXES)\n======================*/\n.pricing-section {\n  display: flex;\n  justify-content: center;\n  margin: 0 auto .5rem;\n}\n\n.pricing-boxes {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  gap: 1.5rem;\n  max-width: 960px;\n}\n\n.pricing-box {\n  background-color: #d9d9d9;\n  padding: .5rem;\n  text-align: center;\n  min-width: 200px;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  flex: 1 1 200px;\n}\n\n.pricing-basic{\nbackground: #F0EAE0;\n}\n.pricing-standard{\nbackground: #DDD2C0;\n}\n.pricing-passive{\nbackground: #C4B49A;\n}\n\n.pricing-box h4 {\n  margin: 0;\n  margin-bottom: 0.5rem;\n  text-transform: uppercase;\n}\n\n.pricing-box p {\n  margin: 0;\n}\n</style>\n\n<!-- PRECIOS -->\n<div class=\"pricing-section\">\n  <div class=\"pricing-boxes\">\n    <div class=\"pricing-box pricing-basic\">\n      <h4>BASIC</h4>\n      <p class=\"pricing-price\">{{ product.metafields.custom.price_basic.value | money }}</p>\n    </div>\n    <div class=\"pricing-box pricing-standard\">\n      <h4>STANDARD</h4>\n      <p class=\"pricing-price\">{{ product.metafields.custom.price_standard.value | money }}</p>\n    </div>\n    <div class=\"pricing-box pricing-passive\">\n      <h4>PASSIVE</h4>\n      <p class=\"pricing-price\">{{ product.metafields.custom.price_passive.value | money }}</p>\n    </div>\n  </div>\n</div>"
+                  },
+                  "blocks": {}
+                },
+                "product_description_8gHdXj": {
+                  "type": "product-description",
+                  "name": "Product description",
+                  "settings": {
+                    "text": "{{ closest.product.description }}",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "variant_picker_nhbWcG": {
+                  "type": "variant-picker",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "variant_style": "buttons",
+                    "show_swatches": true,
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "group_xr9GGL",
+                "custom_liquid_wYfRkd",
+                "product_description_8gHdXj",
+                "variant_picker_nhbWcG"
+              ]
+            }
+          },
+          "block_order": [
+            "group_JtXipy"
+          ]
+        }
+      },
+      "settings": {
+        "product": "{{ closest.product }}",
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": true,
+        "limit_details_width": false,
+        "gap": 20,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 0,
+        "padding-block-end": 20
+      }
+    },
+    "section_AczQVi": {
+      "type": "section",
+      "blocks": {
+        "group_AXhEUM": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_LgHFAV": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>BASIC</h2><h2>{{ closest.product.metafields.custom.price_basic | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h2>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#f0eae0",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_t97rHE": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>1. ¿Qué incluye el paquete BASIC?</strong></p><p><strong>Estructura de paneles SIP completa: </strong>Se entrega un kit estructural prefabricado compuesto por paneles SIP de alta eficiencia energética, diseñados para paredes exteriores, tabiques interiores y cubierta. La estructura está formada por:</p><ul><li><strong>Madera estructural C16/C24</strong>, secada al horno (humedad ≤16 %), calibrada, tratada y certificada según normativa EN 338.</li><li><strong>Paneles SIP</strong>: Compuestos por tableros OSB-3 de 12 mm a cada lado, conforme a norma EN 300, con núcleo de poliestireno expandido (EPS) de 100 mm de densidad 20 kg/m³. Cumple con Euroclase E de reacción al fuego y requisitos del CTE.</li><li><strong>Aislamiento térmico continuo</strong> en núcleo de panel SIP con resistencia térmica ≥2,6 m²·K/W (λ = 0,038 W/m·K).</li></ul><p><strong>Distribución interior personalizada: </strong>Incluye planos de distribución adaptados a las necesidades del cliente (sin proyecto visado ni dirección de obra).</p><p><strong>Carpintería básica:</strong></p><ul><li><strong>Ventanas de PVC</strong> con rotura de puente térmico (perfil multicámara), doble acristalamiento 4/16/4 mm con gas argón. Cumplen norma UNE-EN 14351-1. No incluye persianas.</li><li><strong>Puertas interiores</strong> de tablero aglomerado con núcleo hueco y acabado estándar.</li><li><strong>Puerta de entrada blindada</strong>, clase de seguridad RC2, con cerradura  multipunto.</li></ul><p><strong>Sistema de cubierta estructural:</strong></p><ul><li><strong>Vigas principales</strong> de madera estructural C16/C24 de 160×80 mm.</li><li><strong>Correas estructurales</strong> de madera C16/C24 de 200×80 mm (adaptables según cálculo estructural).</li><li><strong>Friso interior opcional</strong> en madera de pino o abeto cepillado, 140×20 mm.</li><li>No se incluye aislamiento superior ni acabado exterior de cubierta (opcional según modelo superior).</li></ul><p><strong>Terraza: </strong>Incluida si está contemplada en el diseño base del cliente.</p><p><strong>Transporte: </strong>Incluye entrega gratuita del kit estructural en cualquier punto de la Península Ibérica (descarga incluida).</p><p><strong>2. ¿Qué NO está incluido en el modelo BASIC?</strong></p><ul><li>Proyecto de arquitectura, cálculo estructural ni visado técnico.</li><li>Dirección de obra, coordinación de seguridad y salud, ni gestión de licencias.</li><li>Movimiento de tierras, estudio geotécnico o cimentación (zapatas, losa o pilotes).</li><li>Montaje de la estructura (servicio disponible bajo demanda).</li><li>Aislamiento térmico adicional (interior o exterior).</li><li>Acabado de cubierta (impermeabilización o revestimientos finales).</li><li>Instalación eléctrica, fontanería y saneamientos.</li><li>Acabados interiores: pintura, suelos, falsos techos, carpintería decorativa.</li><li>Revestimiento exterior de fachada, canalones u otros acabados.</li><li>Cocina, sanitarios, armarios o mobiliario interior.</li></ul><p><strong>3. Detalle técnico constructivo</strong></p><p><strong>A. Paredes exteriores – Panel SIP</strong></p><ul><li><strong>Espesor total </strong>aprox.,124 mm: 2× OSB-3: 12 mm (interior y exterior), EPS núcleo: 100 mm, densidad 20 kg/m³</li><li><strong>Listón estructural</strong>: madera C16/C24 de 100×40 mm</li><li><strong>Membrana transpirable exterior (opcional), </strong>Sd ≈ 0,015 m, densidad 130 g/m², difusión de vapor controlada.</li></ul><p><strong>B. Tabiques interiores estructurales – Panel SIP</strong></p><ul><li><strong>Espesor total </strong>74 mm: 2× OSB-3: 12 mm, EPS núcleo: 50 mm, densidad 20 kg/m³</li><li><strong>Listón estructural</strong>: madera C16/C24 de 50×40 mm</li></ul><p><strong>C. Cubierta estructural</strong></p><ul><li><strong>Vigas principales</strong>: madera maciza C16/C24, sección 160×80 mm</li><li><strong>Correas</strong>: madera estructural C16/C24 de 200×80 mm (ajustable según cálculo estructural).</li><li><strong>Friso interior (opcional)</strong>: pino o abeto cepillado, 140×20 mm.</li><li><strong>Sin aislamiento superior ni acabado exterior incluido</strong> (consultar modelos superiores)</li></ul><p><strong>D. Certificaciones y normativa</strong></p><ul><li><strong>Madera estructural</strong>: con certificado FSC o PEFC, conforme al Eurocódigo 5.</li><li><strong>Paneles OSB-3</strong>: fabricados según norma EN 300, clase de servicio 2 (uso estructural, ambientes húmedos).</li><li><strong>EPS</strong>: densidad 20 kg/m³, Euroclase E de reacción al fuego, conforme al Reglamento de Productos de Construcción.</li><li><strong>Compatible con el CTE – DB HE</strong> en función del uso, zona climática y estrategia energética del proyecto.</li></ul>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#f0eae0",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_LgHFAV",
+            "text_t97rHE"
+          ]
+        },
+        "group_EHMRTr": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_czYbPY": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>STANDARD</h2><h2>{{ closest.product.metafields.custom.price_standard | metafield_tag }}<strong> (IVA INCLUIDO) </strong></h2>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "h4",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#ddd2c0",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_HXt33e": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>1. ¿Qué incluye el paquete STANDARD?</strong></p><p><strong>Estructura de paneles SIP completa:</strong> Se entrega un kit estructural prefabricado compuesto por paneles SIP de alta eficiencia energética, diseñados para paredes exteriores, tabiques interiores y cubierta. El sistema está compuesto por:</p><ul><li><strong>Madera estructural C16/C24</strong>, secada al horno (humedad ≤16 %), calibrada, tratada y certificada conforme a la norma EN 338.</li><li><strong>Paneles SIP</strong>: Compuestos por tableros OSB-3 de 12 mm a cada lado, conforme a norma EN 300, con núcleo de poliestireno expandido (EPS) de 100 mm de densidad 20 kg/m³. Cumple con Euroclase E de reacción al fuego y requisitos del CTE.</li><li><strong>Aislamiento térmico continuo en núcleo SIP</strong>, con resistencia térmica ≥2,6 m²·K/W (λ = 0,038 W/m·K).</li></ul><p><strong>Aislamiento adicional interior (trasdosado técnico):</strong></p><ul><li>Aislamiento de lana mineral Rockwool Superrock, 70 mm (λ = 0,035 W/m·K, Euroclase A1).</li><li>Subestructura auxiliar de madera C16/C24 (60×40 mm) y acabado en placa de yeso laminado (pladur) o tablero OSB-3.</li></ul><p><strong>Aislamiento superior en cubierta: </strong>Capa de lana mineral Rockwool Superrock de 200 mm (λ = 0,035 W/m·K), valor U aproximado: 0,175 W/m²·K.</p><p><strong>Distribución interior personalizada: </strong>Incluye planos de distribución adaptados a las necesidades del cliente. No se incluye proyecto visado ni dirección facultativa.</p><p><strong>Carpintería básica:</strong></p><ul><li><strong>Ventanas de PVC</strong> con rotura de puente térmico y doble acristalamiento 4/16/4 mm con gas argón. Certificadas según UNE-EN 14351-1. No se incluyen persianas.</li><li><strong>Puertas interiores</strong> estándar (tablero aglomerado o MDF, núcleo hueco).</li><li><strong>Puerta de entrada blindada</strong> clase RC2, con cerradura multipunto de seguridad.</li></ul><p><strong>Revestimiento exterior: </strong>Friso de madera tratada para exterior (clase 3), instalado sobre subestructura ventilada. Protección hidrófuga y fungicida.</p><p><strong>Cubierta completa con aislamiento y acabado exterior:</strong></p><ul><li><strong>Vigas principales</strong> de madera C16/C24, sección 160×80 mm.</li><li><strong>Correas estructurales</strong> de madera C16/C24, sección 200×80 mm (adaptables según cálculo).</li><li><strong>Acabado interior</strong>: friso de madera cepillada de pino o abeto (140×20 mm).</li><li><strong>Acabado exterior</strong>: tégola asfáltica adherida sobre soporte estructural OSB-3.</li></ul><p><strong>Terraza: </strong>Incluida si está contemplada en el diseño base del cliente.</p><p><strong>Transporte: </strong>Incluye entrega gratuita del kit estructural en cualquier punto de la Península Ibérica (descarga incluida).</p><p><strong>2. ¿Qué NO está incluido en el modelo STANDARD?</strong></p><ul><li>Proyecto básico o de ejecución visado por arquitecto/aparejador.</li><li>Dirección de obra, coordinación de seguridad y salud, licencias  urbanísticas.</li><li>Movimiento de tierras, replanteo o cimentación (pilotes, losa o zapatas).</li><li>Montaje de la estructura (disponible como servicio adicional).</li><li>Aislamiento de suelo o barrera antihumedad.</li><li>Instalación eléctrica, fontanería o saneamientos.</li><li>Acabados interiores: pintura, suelos, falsos techos, carpintería decorativa.</li><li>Equipamiento de cocina, baños, armarios o mobiliario interior.</li></ul><p><strong>3. Detalle técnico constructivo</strong></p><p><strong>A. Paredes exteriores – Panel SIP + trasdosado<br/>interior</strong></p><ul><li><strong>Espesor total </strong>aprox. 196 mm: 2x OSB-3: 12 mm, EPS núcleo: 100 mm (20 kg/m³), Lana mineral Rockwool: 70 mm, Subestructura de madera: 60×40 mm. Acabado: placa de yeso laminado o tablero OSB, 12 mm</li><li><strong>Membrana transpirable exterior</strong>: Sd ≈ 0,015 m (resistencia al viento y difusión de vapor controlada)</li></ul><p><strong>B. Tabiques interiores estructurales – Panel SIP</strong></p><ul><li><strong>Espesor total</strong>: 74 mm: 2x OSB-3: 12 mm, EPS núcleo: 50 mm.</li><li><strong>Listones estructurales</strong>: madera C16/C24 de 50×40 mm</li></ul><p><strong>C. Cubierta estructural y térmica</strong></p><ul><li><strong>Vigas principales</strong>: madera C16/C24, sección 160×80 mm</li><li><strong>Correas estructurales</strong>: madera C16/C24, sección 200×80 mm.</li><li><strong>Aislamiento térmico superior</strong>: Rockwool Superrock 200 mm (λD = 0,035 W/m·K)</li><li><strong>Acabado interior</strong>: friso de madera cepillada (pino/abeto) de 140×20 mm</li><li><strong>Acabado exterior</strong>: tégola asfáltica adherida sobre tablero OSB-3 estructural</li></ul><p><strong>D. Certificaciones y normativa</strong></p><ul><li><strong>Madera estructural</strong>: C16/C24 con marcado CE, certificada FSC o PEFC, conforme al Eurocódigo 5.</li><li><strong>Paneles OSB-3</strong>: norma EN 300, clase de servicio 2.</li><li><strong>EPS</strong>: densidad 20 kg/m³, Euroclase E.</li><li><strong>Lana mineral Rockwool Superrock</strong>: EN 13162, Euroclase A1.</li><li><strong>Ventanas</strong>: certificadas UNE-EN 14351-1.</li><li><strong>Puerta blindada RC2</strong>: conforme a norma UNE-EN 1627.</li></ul>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#ddd2c0",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_czYbPY",
+            "text_HXt33e"
+          ]
+        },
+        "group_BTGVVY": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_VpUawP": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h4>PASSIVE</h4><h4>{{ closest.product.metafields.custom.price_passive | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h4>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#c4b49a",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_9qD6WY": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><strong>1. ¿Qué incluye el paquete PASSIVE?</strong></p><p><strong>Estructura de paneles SIP completa con triple aislamiento: </strong>Se entrega un kit estructural prefabricado compuesto por paneles SIP de alta eficiencia energética, diseñados para paredes exteriores, tabiques interiores y cubierta. El sistema está compuesto por:</p><ul><li><strong>Madera estructural C16/C24</strong>, secada al horno (humedad ≤16 %), calibrada, tratada y certificada conforme a norma EN 338.</li><li><strong>Paneles SIP</strong>: Compuestos por tableros OSB-3 de 12 mm a cada lado, conforme a norma EN 300, con núcleo de poliestireno expandido (EPS) de 100 mm de densidad 20 kg/m³. Cumple con Euroclase E de reacción al fuego y requisitos del CTE.</li><li><strong>Aislamiento interior adicional</strong>: Lana mineral Rockwool Superrock de 72 mm (λ = 0,035 W/m·K, Euroclase A1), sobre subestructura de madera C16/C24 de 60×40 mm.</li><li><strong>Aislamiento exterior adicional</strong>: Panel rígido Rockwool FrontRock MAX E de 103 mm (Euroclase A1, λ = 0,036 W/m·K), montado sobre cámara ventilada.</li></ul><p><strong>Membranas de control higrotérmico:</strong></p><ul><li>Exterior: membrana transpirable (Sd ≈ 0,015 m)</li><li>Interior: barrera de vapor Primavap Sd = 8 m</li></ul><p><strong>Cimentación y montaje completo: </strong>Incluye la cimentación estructural (pilotes, losa o zapatas, según diseño) y montaje integral de la estructura (paredes, cubierta y fachada) por parte de equipos técnicos cualificados.</p><p><strong>Distribución interior personalizada: </strong>Incluye planos de distribución adaptados a las necesidades del cliente. No incluye proyecto técnico visado ni dirección de obra.</p><p><strong>Carpintería de alta eficiencia:</strong></p><ul><li><strong>Ventanas de PVC</strong> de gama alta con rotura de puente térmico y doble acristalamiento 4/16/4 mm con gas argón. Uw ≤ 1,3 W/m²·K. Sin persianas.</li><li><strong>Puertas interiores</strong> estándar (lacadas o tablero aglomerado).</li><li><strong>Puerta de entrada blindada</strong>, clase RC2 con cerradura multipunto de seguridad.</li></ul><p><strong>Aislamiento térmico integral:</strong></p><ul><li><strong>Fachadas</strong>: SIP + 72 mm interior (Rockwool) + 103 mm exterior (Rockwool).</li><li><strong>Cubierta</strong>: aislamiento superior de 200 mm de lana mineral Rockwool (λ = 0,035 W/m·K).</li><li><strong>Tabiques interiores</strong>: aislamiento adicional para mejora acústica y térmica.</li></ul><p><strong>Revestimientos exteriores e interiores incluidos:</strong></p><ul><li>Revestimiento exterior de friso de madera tratada clase 3, instalado sobre cámara ventilada.</li><li>Acabado interior en friso de madera cepillada (pino o abeto, 140×20 mm).</li><li>Acabados interiores: tabiques en pladur u OSB, pintura, pavimentos, falsos techos (según memoria de calidades).</li><li>Acabado de cubierta con tégola asfáltica adherida.</li></ul><p><strong>Instalaciones completas:</strong></p><ul><li><strong>Instalación eléctrica</strong> completa con canalización, mecanismos y cuadro eléctrico.</li><li><strong>Instalación de fontanería</strong>: agua fría y caliente sanitaria (ACS), y  evacuación de aguas conforme a DB-HS del CTE.</li><li><strong>Preinstalación para cocina, baños y calefacción</strong> (si se define en el proyecto).</li></ul><p><strong>Terraza: </strong>Incluida si está contemplada en el diseño base del cliente.</p><p><strong>Transporte: </strong>Incluye entrega gratuita del kit estructural en cualquier punto de la Península Ibérica (descarga incluida).</p><p><strong>2. ¿Qué NO está incluido en el modelo PASSIVE?</strong></p><ul><li>Proyecto de arquitectura visado, cálculo estructural o dirección facultativa (pueden contratarse por separado).</li><li>Dirección de obra, gestión de licencias urbanísticas, coordinación de seguridad y salud.</li><li>Movimiento de tierras o nivelación inicial del terreno.</li><li>Saneamiento exterior (conexión a red pública o fosa séptica).</li><li>Aislamiento térmico bajo cimentación (opcional).</li><li>Equipamiento de cocina, sanitarios, armarios o mobiliario interior.</li></ul><p><strong>3. Detalle técnico constructivo</strong></p><p><strong>A. Paredes exteriores – Sistema SIP + doble aislamiento</strong></p><ul><li><strong>Espesor total aprox. </strong>300 mm, 2× OSB-3: 12 mm, EPS núcleo: 100 mm (20 kg/m³), Aislamiento exterior: Rockwool FrontRock MAX E, 103 mm, Aislamiento interior: Rockwool Superrock, 72 mm.</li><li><strong>Subestructura auxiliar</strong>: madera C16/C24, 60×40 mm.</li><li><strong>Membranas</strong>: Exterior: Sd ≈ 0,015 m (transpirable), Interior: Sd = 8 m (barrera de vapor)</li></ul><p><strong>B. Tabiques interiores estructurales – Panel SIP</strong></p><ul><li><strong>Espesor total </strong>74 mm: 2× OSB-3: 12 mm, EPS núcleo: 50 mm.</li><li><strong>Listones estructurales</strong>: madera C16/C24 de 60×40 mm</li></ul><p><strong>C. Cubierta estructural y térmica</strong></p><ul><li><strong>Vigas principales</strong>: madera C16/C24, sección 160×80 mm</li><li><strong>Correas estructurales</strong>: madera C16/C24, sección 200×80 mm (adaptables)</li><li><strong>Aislamiento térmico</strong>: Rockwool Superrock 200 mm, λ = 0,035 W/m·K, Euroclase A1</li><li><strong>Acabado interior</strong>: friso de madera cepillada (pino o abeto), 140×20 mm</li><li><strong>Acabado exterior</strong>: tégola asfáltica adherida sobre OSB-3 estructural</li></ul><p><strong>D. Certificaciones y normativa</strong></p><ul><li><strong>Madera estructural</strong>: C16/C24 con marcado CE, certificada FSC o PEFC. Conforme al Eurocódigo 5.</li><li><strong>Paneles OSB-3</strong>: norma EN 300, clase de servicio 2.</li><li><strong>EPS</strong>: densidad ≥20 kg/m³, Euroclase E.</li><li><strong>Lana mineral Rockwool Superrock / FrontRock</strong>: EN 13162, Euroclase A1.</li><li><strong>Ventanas</strong>: conforme UNE-EN 14351-1.</li><li><strong>Puerta  blindada</strong>: conforme a UNE-EN 1627 (RC2).</li></ul>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#c4b49a",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_VpUawP",
+            "text_9qD6WY"
+          ]
+        }
+      },
+      "block_order": [
+        "group_AXhEUM",
+        "group_EHMRTr",
+        "group_BTGVVY"
+      ],
+      "name": "t:names.icons_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "blocks": {
+        "header": {
+          "type": "text",
+          "name": "t:names.header",
+          "settings": {
+            "text": "<p><strong>Recomendado para ti</strong></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h3",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-product-card": {
+          "type": "product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product": "{{ closest.product }}",
+            "product_card_gap": 16,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card-gallery": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "product": "{{ closest.product }}",
+                "image_ratio": "landscape",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "group": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "product_title_AQqXJ9": {
+                  "type": "product-title",
+                  "name": "t:names.product_title",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price": {
+                  "type": "price",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_title_AQqXJ9",
+                "price"
+              ]
+            }
+          },
+          "block_order": [
+            "card-gallery",
+            "group"
+          ]
+        }
+      },
+      "block_order": [
+        "header"
+      ],
+      "settings": {
+        "product": "{{ closest.product }}",
+        "recommendation_type": "related",
+        "layout_type": "grid",
+        "carousel_on_mobile": true,
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 12,
+        "rows_gap": 36,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "full-width",
+        "gap": 28,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_JViiDQ",
+    "main",
+    "section_AczQVi",
+    "product-recommendations"
+  ]
+}
