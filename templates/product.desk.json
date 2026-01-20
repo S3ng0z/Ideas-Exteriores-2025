@@ -29,7 +29,7 @@
           "static": true,
           "settings": {
             "product": "{{ closest.product }}",
-            "media_presentation": "grid",
+            "media_presentation": "carousel",
             "media_columns": "two",
             "image_gap": 10,
             "large_first_image": true,
