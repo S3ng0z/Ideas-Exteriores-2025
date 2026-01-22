@@ -1584,7 +1584,7 @@
       },
       "name": "t:names.products_grid",
       "settings": {
-        "collection": "home-sip",
+        "collection": "sip-panel-houses",
         "layout_type": "grid",
         "carousel_on_mobile": true,
         "max_products": 8,
