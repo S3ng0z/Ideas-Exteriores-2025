@@ -1025,7 +1025,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Más información",
-                "link": "shopify://collections/casas-entramado-ligero",
+                "link": "shopify://collections/light-frame-houses",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -1332,7 +1332,7 @@
       },
       "name": "t:names.products_carousel",
       "settings": {
-        "collection": "casas-entramado-ligero",
+        "collection": "light-frame-houses",
         "layout_type": "grid",
         "carousel_on_mobile": true,
         "max_products": 8,
