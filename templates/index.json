@@ -45,7 +45,7 @@
       "custom_css": [
         ".text-block h1 {text-transform: uppercase; text-align: center;}",
         "@media (min-width: 769px) {.section-content-wrapper.section-content-wrapper {width: 45vw; }}",
-        ".text-block h1 {margin: 0; padding: 0; font-size: 1.6rem !important;}",
+        ".text-block h1 {margin: 0; padding: 0; font-size: 1.6rem !important; line-height: 2rem}",
         ".text-block p {margin: 0; padding: 0; text-align: justify;}"
       ],
       "name": "Hero",
