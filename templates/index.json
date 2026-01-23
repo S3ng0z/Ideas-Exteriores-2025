@@ -1586,7 +1586,7 @@
       "settings": {
         "collection": "sip-panel-houses",
         "layout_type": "grid",
-        "carousel_on_mobile": true,
+        "carousel_on_mobile": false,
         "max_products": 8,
         "columns": 4,
         "mobile_columns": "2",
