@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h1>CASAS Y CASETAS PREFABRICADAS DE MADERA | ENTRAMADO LIGERO Y PANEL SIP</h1><p><br/>Construimos casas, casetas y estructuras en madera, con soluciones constructivas como el entramado ligero y los paneles SIP. Soluciones eficientes y sostenibles: montaje rápido, gran aislamiento térmico y un acabado cuidado. Proyecto a medida o llave en mano.<br/></p>",
+            "text": "<h1>CASAS y CASETAS DE MADERA PREFABRICADAS</h1><h1>ENTRAMADO LIGERO Y PANEL SIP</h1><p><br/>Construimos casas, casetas y estructuras en madera, con soluciones constructivas como el entramado ligero y los paneles SIP. Soluciones eficientes y sostenibles: montaje rápido, gran aislamiento térmico y un acabado cuidado. Proyecto a medida o llave en mano.<br/></p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -45,7 +45,7 @@
       "custom_css": [
         ".text-block h1 {text-transform: uppercase; text-align: center;}",
         "@media (min-width: 769px) {.section-content-wrapper.section-content-wrapper {width: 45vw; }}",
-        ".text-block h1 {margin: 0; padding: 0; font-size: 1.55rem !important;}",
+        ".text-block h1 {margin: 0; padding: 0; font-size: 1.6rem !important;}",
         ".text-block p {margin: 0; padding: 0; text-align: justify;}"
       ],
       "name": "Hero",
