@@ -290,7 +290,7 @@
             "image_RJAVQf": {
               "type": "image",
               "settings": {
-                "image": "shopify://shop_images/design_1.png",
+                "image": "shopify://shop_images/design_1.webp",
                 "link": "",
                 "image_ratio": "square",
                 "width": "custom",
