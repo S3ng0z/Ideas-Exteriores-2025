@@ -194,8 +194,8 @@
             "button_VxirF6": {
               "type": "button",
               "settings": {
-                "label": "Ver modelos",
-                "link": "shopify://collections/all",
+                "label": "VER TRABAJOS REALIZADOS",
+                "link": "shopify://pages/wood-project-gallery",
                 "open_in_new_tab": true,
                 "style_class": "button",
                 "width": "fit-content",
