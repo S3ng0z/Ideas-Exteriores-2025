@@ -45,7 +45,7 @@
       "custom_css": [
         ".text-block h1 {text-transform: uppercase; text-align: center;}",
         "@media (min-width: 769px) {.section-content-wrapper.section-content-wrapper {width: 45vw; }}",
-        ".text-block h1 {margin: 0; padding: 0; font-size: 1.6rem !important; line-height: 2rem}",
+        ".text-block h1 {margin: 0; padding: 0; font-size: 1.6rem !important; line-height: 2rem;}",
         ".text-block p {margin: 0; padding: 0; text-align: justify;}"
       ],
       "name": "Hero",
@@ -998,7 +998,7 @@
             "text_JfGQpF": {
               "type": "text",
               "settings": {
-                "text": "<p><strong>Diseños exclusivos y funcionales</strong><br/><br/>Descubre modelos únicos o diseña tu propia casa o caseta. Espacios personalizados que reflejan tu estilo.</p><p><strong>Construcción eficiente y ecológica</strong><br/><br/>Especialistas en paneles SIP, creamos estructuras sostenibles, con alta eficiencia térmica y montaje ágil.</p><p><strong>Calidad certificada</strong><br/><br/>Empleamos madera y materiales con sello CE, garantizando durabilidad, seguridad y confianza.</p><p><strong>Compromiso verde</strong><br/><br/>Construimos soluciones elegantes y optimizadas, reduciendo el impacto ambiental y mejorando el ahorro energético.</p>",
+                "text": "<p><strong>Diseños exclusivos y funcionales</strong><br/>Descubre modelos únicos o diseña tu propia casa o caseta. Espacios personalizados que reflejan tu estilo.</p><p><strong>Construcción eficiente y ecológica</strong><br/>Especialistas en paneles SIP, creamos estructuras sostenibles, con alta eficiencia térmica y montaje ágil.</p><p><strong>Calidad certificada</strong><br/>Empleamos madera y materiales con sello CE, garantizando durabilidad, seguridad y confianza.</p><p><strong>Compromiso verde</strong><br/>Construimos soluciones elegantes y optimizadas, reduciendo el impacto ambiental y mejorando el ahorro energético.</p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
