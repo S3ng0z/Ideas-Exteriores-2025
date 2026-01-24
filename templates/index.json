@@ -1024,8 +1024,8 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "Más información",
-                "link": "shopify://collections/light-frame-houses",
+                "label": "VER TRABAJOS REALIZADOS",
+                "link": "shopify://pages/wood-project-gallery",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
