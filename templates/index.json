@@ -1123,7 +1123,7 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "label": "SOLICITA PRESUPEUSTO",
+                    "label": "SOLICITA PRESUPUESTO",
                     "link": "shopify://pages/contact-ideas-exteriores",
                     "open_in_new_tab": true,
                     "style_class": "button",
