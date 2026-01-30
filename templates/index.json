@@ -31,10 +31,10 @@
             "background": true,
             "background_color": "#00000026",
             "corner_radius": 18,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 25,
+            "padding-block-end": 25,
+            "padding-inline-start": 25,
+            "padding-inline-end": 25
           },
           "blocks": {}
         }
@@ -44,7 +44,7 @@
       ],
       "custom_css": [
         ".text-block h1 {text-transform: uppercase; text-align: center;}",
-        "@media (min-width: 769px) {.section-content-wrapper.section-content-wrapper {width: 45vw; } .text-block p {margin: 0; padding: 0; text-align: justify; font-size: 16px; } .text-block h1 {font-size: 2.1rem !important; line-height: 2.5rem; }}",
+        "@media (min-width: 769px) {.section-content-wrapper.section-content-wrapper {width: 45vw; } .text-block p {font-size: 16px; line-height: 2rem; } .text-block h1 {font-size: 2.1rem !important; line-height: 2.5rem; }}",
         "@media (max-width: 769px) {.text-block h1 {font-size: 1.5rem !important; line-height: 1.8rem; }}",
         ".text-block h1 {margin: 0; padding: 0;}",
         ".text-block p {margin: 0; padding: 0; text-align: justify; text-transform: uppercase;}"
