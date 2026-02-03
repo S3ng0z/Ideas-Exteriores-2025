@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h3><strong>Soluciones en Madera</strong></h3><p><br/>Construimos casas, casetas y estructuras en madera, con soluciones constructivas como el entramado ligero y los paneles SIP. Soluciones eficientes y sostenibles: montaje rápido, gran aislamiento térmico y un acabado cuidado. Proyecto a medida o llave en mano.<br/></p>",
+            "text": "<h1> ENTRAMADO LIGERO Y PANEL SIP: CASAS & CASETAS DE MADERA PREFABRICADAS</h1><p><br/>Construimos casas, casetas y estructuras en madera, con soluciones constructivas como el entramado ligero y los paneles SIP. Soluciones eficientes y sostenibles: montaje rápido, gran aislamiento térmico y un acabado cuidado. Proyecto a medida o llave en mano.<br/></p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -31,10 +31,10 @@
             "background": true,
             "background_color": "#00000026",
             "corner_radius": 18,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 25,
+            "padding-block-end": 25,
+            "padding-inline-start": 25,
+            "padding-inline-end": 25
           },
           "blocks": {}
         }
@@ -43,10 +43,10 @@
         "text_CXHmij"
       ],
       "custom_css": [
-        ".text-block h3 {text-transform: uppercase; text-align: center;}",
-        "@media (min-width: 769px) {.section-content-wrapper.section-content-wrapper {width: 45vw; }}",
-        ".text-block h3 {margin: 0; padding: 0;}",
-        ".text-block p {margin: 0; padding: 0; text-align: justify;}"
+        ".text-block h1 {margin: 0; padding: 0; text-align: center;}",
+        ".text-block p {margin: 0; padding: 0; text-transform: uppercase;}",
+        "@media (min-width: 769px) {.section-content-wrapper {width: 45vw; } .text-block h1 {font-size: 2.1rem !important; line-height: 2.5rem; } .text-block p {font-size: 1rem; line-height: 2rem; text-align: justify; }}",
+        "@media (max-width: 768px) {.text-block h1 {font-size: 1.2rem !important; line-height: 1.5rem; } .text-block p {font-size: 0.85rem; line-height: 1rem; text-align: center; }}"
       ],
       "name": "Hero",
       "settings": {
@@ -83,7 +83,7 @@
         "image_Q96A4Q": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Tipo_de_sistemas_Constructivos.png",
+            "image": "shopify://shop_images/Tipo_de_sistemas_Constructivos.webp",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
@@ -191,25 +191,85 @@
               },
               "blocks": {}
             },
-            "button_VxirF6": {
-              "type": "button",
+            "group_yqDTQ3": {
+              "type": "group",
+              "name": "t:names.group",
               "settings": {
-                "label": "Ver modelos",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": true,
-                "style_class": "button",
-                "width": "fit-content",
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "row",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "button_LkzC4B": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "Solicita presupuesto",
+                    "link": "shopify://pages/contact-ideas-exteriores",
+                    "open_in_new_tab": true,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                },
+                "button_cLMagy": {
+                  "type": "button",
+                  "settings": {
+                    "label": "VER TRABAJOS REALIZADOS",
+                    "link": "shopify://pages/wood-project-gallery",
+                    "open_in_new_tab": true,
+                    "style_class": "button-secondary",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_LkzC4B",
+                "button_cLMagy"
+              ]
             }
           },
           "block_order": [
             "text_f39tJ8",
             "text_Dgm3TY",
-            "button_VxirF6"
+            "group_yqDTQ3"
           ]
         }
       },
@@ -290,7 +350,7 @@
             "image_RJAVQf": {
               "type": "image",
               "settings": {
-                "image": "shopify://shop_images/design_1.png",
+                "image": "shopify://shop_images/design_1.webp",
                 "link": "",
                 "image_ratio": "square",
                 "width": "custom",
@@ -379,7 +439,7 @@
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "",
                     "line_height": "normal",
@@ -539,7 +599,7 @@
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "",
                     "line_height": "normal",
@@ -699,7 +759,7 @@
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "",
                     "line_height": "normal",
@@ -859,7 +919,7 @@
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "",
                     "line_height": "normal",
@@ -924,8 +984,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "section_aAqjjb": {
@@ -998,7 +1058,7 @@
             "text_JfGQpF": {
               "type": "text",
               "settings": {
-                "text": "<p><strong>Diseños exclusivos y funcionales</strong><br/><br/>Descubre modelos únicos o diseña tu propia casa o caseta. Espacios personalizados que reflejan tu estilo.</p><p><strong>Construcción eficiente y ecológica</strong><br/><br/>Especialistas en paneles SIP, creamos estructuras sostenibles, con alta eficiencia térmica y montaje ágil.</p><p><strong>Calidad certificada</strong><br/><br/>Empleamos madera y materiales con sello CE, garantizando durabilidad, seguridad y confianza.</p><p><strong>Compromiso verde</strong><br/><br/>Construimos soluciones elegantes y optimizadas, reduciendo el impacto ambiental y mejorando el ahorro energético.</p>",
+                "text": "<p><strong>Diseños exclusivos y funcionales</strong><br/>Descubre modelos únicos o diseña tu propia casa o caseta. Espacios personalizados que reflejan tu estilo.</p><p><strong>Construcción eficiente y ecológica</strong><br/>Especialistas en paneles SIP, creamos estructuras sostenibles, con alta eficiencia térmica y montaje ágil.</p><p><strong>Calidad certificada</strong><br/>Empleamos madera y materiales con sello CE, garantizando durabilidad, seguridad y confianza.</p><p><strong>Compromiso verde</strong><br/>Construimos soluciones elegantes y optimizadas, reduciendo el impacto ambiental y mejorando el ahorro energético.</p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -1020,26 +1080,86 @@
               },
               "blocks": {}
             },
-            "button_rt74di": {
-              "type": "button",
-              "name": "t:names.button",
+            "group_BRY7h6": {
+              "type": "group",
+              "name": "t:names.group",
               "settings": {
-                "label": "Más información",
-                "link": "shopify://collections/casas-entramado-ligero",
+                "link": "",
                 "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
+                "content_direction": "row",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
                 "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "button_6xhrAm": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "SOLICITA PRESUPUESTO",
+                    "link": "shopify://pages/contact-ideas-exteriores",
+                    "open_in_new_tab": true,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                },
+                "button_kqdxCx": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "VER TRABAJOS REALIZADOS",
+                    "link": "shopify://pages/wood-project-gallery",
+                    "open_in_new_tab": true,
+                    "style_class": "button-secondary",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "button_6xhrAm",
+                "button_kqdxCx"
+              ]
             }
           },
           "block_order": [
             "text_nJefke",
             "text_JfGQpF",
-            "button_rt74di"
+            "group_BRY7h6"
           ]
         },
         "image_idqhC9": {
@@ -1110,7 +1230,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 20,
             "width": "fill",
@@ -1138,7 +1258,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>ENTRAMADO LIGERO</h3>",
+                "text": "<h3>SISTEMA CONSTRUCTIVO ENTRAMADO LIGERO</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1168,14 +1288,14 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h3",
+                "type_preset": "h4",
                 "font": "var(--font-tertiary--family)",
                 "font_size": "var(--font-size--heading-md)",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "",
+                "color": "var(--color-foreground-heading)",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -1332,9 +1452,9 @@
       },
       "name": "t:names.products_carousel",
       "settings": {
-        "collection": "casas-entramado-ligero",
+        "collection": "light-frame-houses",
         "layout_type": "grid",
-        "carousel_on_mobile": true,
+        "carousel_on_mobile": false,
         "max_products": 8,
         "columns": 4,
         "mobile_columns": "2",
@@ -1362,12 +1482,12 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
+            "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
-            "width": "fill",
+            "width": "custom",
             "custom_width": 100,
-            "width_mobile": "fill",
+            "width_mobile": "custom",
             "custom_width_mobile": 100,
             "height": "fit",
             "custom_height": 100,
@@ -1390,7 +1510,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>PANELES SIP</h3>",
+                "text": "<h3>SISTEMA CONSTRUCTIVO PANELES SIP</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1420,7 +1540,7 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h3",
+                "type_preset": "h4",
                 "font": "var(--font-tertiary--family)",
                 "font_size": "var(--font-size--heading-md)",
                 "line_height": "normal",
@@ -1584,9 +1704,9 @@
       },
       "name": "t:names.products_grid",
       "settings": {
-        "collection": "home-sip",
+        "collection": "sip-panel-houses",
         "layout_type": "grid",
-        "carousel_on_mobile": true,
+        "carousel_on_mobile": false,
         "max_products": 8,
         "columns": 4,
         "mobile_columns": "2",

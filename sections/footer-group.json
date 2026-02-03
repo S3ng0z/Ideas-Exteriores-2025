@@ -60,7 +60,7 @@
                 "menu": "productos",
                 "heading": "Productos",
                 "menu_spacing": 12,
-                "show_as_accordion": false,
+                "show_as_accordion": true,
                 "accordion_icon": "caret",
                 "accordion_dividers": false,
                 "inherit_color_scheme": true,
@@ -81,7 +81,7 @@
                 "menu": "soluciones",
                 "heading": "SERVICIOS",
                 "menu_spacing": 12,
-                "show_as_accordion": false,
+                "show_as_accordion": true,
                 "accordion_icon": "caret",
                 "accordion_dividers": false,
                 "inherit_color_scheme": true,
@@ -188,7 +188,7 @@
                     "menu": "empresa",
                     "heading": "",
                     "menu_spacing": 12,
-                    "show_as_accordion": false,
+                    "show_as_accordion": true,
                     "accordion_icon": "caret",
                     "accordion_dividers": false,
                     "inherit_color_scheme": true,
@@ -353,6 +353,7 @@
             },
             "policy_list": {
               "type": "_footer-policy-list",
+              "disabled": true,
               "static": true,
               "settings": {
                 "font_size": "0.75rem",
@@ -369,7 +370,7 @@
                   "type": "_social-link",
                   "name": "Facebook",
                   "settings": {
-                    "link": "http://facebook.com/shopify"
+                    "link": "https://www.facebook.com/Ideas.Exteriores"
                   },
                   "blocks": {}
                 },
@@ -377,7 +378,7 @@
                   "type": "_social-link",
                   "name": "Instagram",
                   "settings": {
-                    "link": "http://instagram.com/shopify"
+                    "link": "https://www.instagram.com/ideas.exteriores/"
                   },
                   "blocks": {}
                 },
@@ -402,6 +403,7 @@
                 "social_link_r9Bcfb": {
                   "type": "_social-link",
                   "name": "Youtube",
+                  "disabled": true,
                   "settings": {
                     "link": "https://www.youtube.com/shopify"
                   },

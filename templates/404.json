@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h1>Page not found</h1>",
+            "text": "<p><strong>Ups… aquí no hay nada (404)</strong></p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>The link may be incorrect, or the page has been removed. </p>",
+            "text": "<p>El enlace puede ser incorrecto o la página se ha eliminado.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -68,8 +68,8 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Continue shopping",
-            "link": "shopify://collections/all",
+            "label": "Explorar soluciones en madera",
+            "link": "https://www.ideas-exteriores.com/",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
