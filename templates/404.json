@@ -64,18 +64,11 @@
           },
           "blocks": {}
         },
-        "button_PAQMwR": {
-          "type": "button",
-          "name": "t:names.button",
+        "custom_liquid_f3FVew": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
           "settings": {
-            "label": "Explorar soluciones en madera",
-            "link": "https://www.ideas-exteriores.com/",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+            "custom_liquid": "{% comment %}\n  Custom Liquid - Search bar (responsive)\n  - Works in any theme because it only submits to /search\n  - Optional: tweak placeholder + product-only search\n{% endcomment %}\n\n<div class=\"cl-search\" role=\"search\" aria-label=\"Buscar en la tienda\">\n  <form class=\"cl-search__form\" action=\"{{ routes.search_url }}\" method=\"get\">\n    {%- comment -%}\n      Limita a productos (opcional). Si quieres buscar todo, elimina este input.\n    {%- endcomment -%}\n    <input type=\"hidden\" name=\"type\" value=\"product\">\n\n    <label class=\"cl-search__label visually-hidden\" for=\"clSearchInput\">\n      Buscar\n    </label>\n\n    <input\n      id=\"clSearchInput\"\n      class=\"cl-search__input\"\n      type=\"search\"\n      name=\"q\"\n      value=\"{{ search.terms | escape }}\"\n      placeholder=\"¿Qué estás buscando?\"\n      autocomplete=\"off\"\n      enterkeyhint=\"search\"\n    >\n\n    <button class=\"cl-search__btn\" type=\"submit\" aria-label=\"Buscar\">\n      <span class=\"cl-search__icon\" aria-hidden=\"true\">\n        {{ 'icon-search.svg' | inline_asset_content }}\n      </span>\n      <span class=\"visually-hidden\">Buscar</span>\n    </button>\n  </form>\n</div>\n\n<style>\n  .cl-search {\n    --cl-radius: var(--style-border-radius-inputs, 10px);\n    --cl-border: var(--style-border-width-inputs, 1px);\n    --cl-border-color: var(--color-foreground, #111);\n    --cl-bg: var(--color-background, #fff);\n    --cl-fg: var(--color-foreground, #111);\n\n    width: 100%;\n  }\n\n  .cl-search__form{\n    display: grid;\n    grid-template-columns: 1fr auto;\n    align-items: center;\n    gap: .5rem;\n    width: 100%;\n  }\n\n  .cl-search__input{\n    width: 100%;\n    min-width: 0;\n    padding: .75rem 1rem;\n    border-radius: var(--cl-radius);\n    border: var(--cl-border) solid color-mix(in srgb, var(--cl-border-color) 25%, transparent);\n    background: var(--cl-bg);\n    color: var(--cl-fg);\n    line-height: 1;\n  }\n\n  .cl-search__input:focus{\n    outline: 2px solid color-mix(in srgb, var(--cl-border-color) 55%, transparent);\n    outline-offset: 2px;\n  }\n\n  .cl-search__btn{\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    padding: .75rem .9rem;\n    border-radius: var(--cl-radius);\n    border: var(--cl-border) solid color-mix(in srgb, var(--cl-border-color) 25%, transparent);\n    background: var(--cl-bg);\n    color: var(--cl-fg);\n    cursor: pointer;\n    line-height: 0;\n  }\n\n  .cl-search__btn:hover{\n    border-color: color-mix(in srgb, var(--cl-border-color) 45%, transparent);\n  }\n\n  .cl-search__icon svg{\n    width: 18px;\n    height: 18px;\n    display: block;\n  }\n\n  /* Responsive: en desktop, si lo quieres más compacto */\n  @media (min-width: 750px){\n    .cl-search{ max-width: 520px; }\n  }\n</style>"
           },
           "blocks": {}
         }
@@ -83,7 +76,7 @@
       "block_order": [
         "text_GqmVFf",
         "text_Ua9XAW",
-        "button_PAQMwR"
+        "custom_liquid_f3FVew"
       ],
       "settings": {
         "content_direction": "column",
