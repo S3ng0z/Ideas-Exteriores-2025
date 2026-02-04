@@ -54,6 +54,50 @@
         "padding-block-end": 0
       }
     },
+    "section_XTynUH": {
+      "type": "section",
+      "blocks": {
+        "custom_liquid_VcKrgP": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
+          "settings": {
+            "custom_liquid": "{% comment %}\n  Search Results Output (Pages + Collections)\n  - Shows ONLY pages + collections\n  - If URL doesn't request page/collection, auto-redirects to include them\n{% endcomment %}\n\n<div class=\"ix-results\" data-ix-results>\n  <header class=\"ix-results__head\">\n    <h1 class=\"ix-results__title\">Resultados</h1>\n\n    {% if search.performed %}\n      <p class=\"ix-results__meta\">\n        Búsqueda: <strong>{{ search.terms | escape }}</strong>\n      </p>\n    {% else %}\n      <p class=\"ix-results__meta\">No se ha realizado ninguna búsqueda.</p>\n    {% endif %}\n  </header>\n\n  {% if search.performed %}\n    {% assign pages = search.results | where: \"object_type\", \"page\" %}\n    {% assign collections = search.results | where: \"object_type\", \"collection\" %}\n\n    <div class=\"ix-results__grid\">\n      <section class=\"ix-results__panel\">\n        <div class=\"ix-results__panelHead\">\n          <h2 class=\"ix-results__h2\">Colecciones</h2>\n          <span class=\"ix-results__count\">{{ collections.size }}</span>\n        </div>\n\n        {% if collections.size > 0 %}\n          <div class=\"ix-results__cards\">\n            {% for c in collections %}\n              <a class=\"ix-results__card\" href=\"{{ c.url }}\">\n                <div class=\"ix-results__thumb\">\n                  {% if c.featured_image %}\n                    <img\n                      src=\"{{ c.featured_image | image_url: width: 360 }}\"\n                      alt=\"{{ c.featured_image.alt | escape }}\"\n                      loading=\"lazy\"\n                    >\n                  {% else %}\n                    <span class=\"ix-results__thumbPh\" aria-hidden=\"true\"></span>\n                  {% endif %}\n                </div>\n                <div class=\"ix-results__body\">\n                  <div class=\"ix-results__kicker\">Colección</div>\n                  <div class=\"ix-results__name\">{{ c.title | escape }}</div>\n                </div>\n              </a>\n            {% endfor %}\n          </div>\n        {% else %}\n          <p class=\"ix-results__empty\">No hay colecciones que coincidan.</p>\n        {% endif %}\n      </section>\n\n      <section class=\"ix-results__panel\">\n        <div class=\"ix-results__panelHead\">\n          <h2 class=\"ix-results__h2\">Páginas</h2>\n          <span class=\"ix-results__count\">{{ pages.size }}</span>\n        </div>\n\n        {% if pages.size > 0 %}\n          <div class=\"ix-results__list\">\n            {% for p in pages %}\n              <a class=\"ix-results__row\" href=\"{{ p.url }}\">\n                <div class=\"ix-results__rowMain\">\n                  <div class=\"ix-results__kicker\">Página</div>\n                  <div class=\"ix-results__name\">{{ p.title | escape }}</div>\n                </div>\n                <span class=\"ix-results__chev\" aria-hidden=\"true\">→</span>\n              </a>\n            {% endfor %}\n          </div>\n        {% else %}\n          <p class=\"ix-results__empty\">No hay páginas que coincidan.</p>\n        {% endif %}\n      </section>\n    </div>\n\n    {% if pages.size == 0 and collections.size == 0 %}\n      <div class=\"ix-results__noall\">\n        No se encontraron resultados en <strong>Páginas</strong> ni <strong>Colecciones</strong> para “{{ search.terms | escape }}”.\n      </div>\n    {% endif %}\n  {% endif %}\n</div>\n\n<style>\n  .ix-results{\n    --bg:#fff; --fg:#111; --muted:#6b7280;\n    --b: rgba(17,17,17,.12);\n    --shadow: 0 14px 40px rgba(0,0,0,.08);\n    --r: 16px;\n    max-width: 1100px;\n    margin: 0 auto;\n    padding: 24px 16px;\n    color: var(--fg);\n  }\n\n  .ix-results__head{ margin-bottom: 14px; }\n  .ix-results__title{ margin: 0 0 6px 0; font-size: 22px; letter-spacing: -.01em; }\n  .ix-results__meta{ margin: 0; color: var(--muted); font-size: 14px; }\n\n  .ix-results__grid{\n    display:grid;\n    grid-template-columns: 1fr;\n    gap: 18px;\n  }\n  @media (min-width: 900px){\n    .ix-results__grid{ grid-template-columns: 1fr 1fr; }\n  }\n\n  .ix-results__panel{\n    border: 1px solid var(--b);\n    border-radius: calc(var(--r) + 2px);\n    background: var(--bg);\n    box-shadow: var(--shadow);\n    overflow: hidden;\n  }\n  .ix-results__panelHead{\n    display:flex; justify-content:space-between; align-items:baseline;\n    padding: 14px 14px 10px 14px;\n    border-bottom: 1px solid rgba(17,17,17,.06);\n  }\n  .ix-results__h2{\n    margin:0;\n    font-size: 14px;\n    text-transform: uppercase;\n    letter-spacing: .02em;\n    color: var(--muted);\n  }\n  .ix-results__count{\n    font-size: 12px;\n    color: var(--muted);\n    border: 1px solid rgba(17,17,17,.12);\n    padding: 2px 8px;\n    border-radius: 999px;\n  }\n\n  .ix-results__cards{ display:grid; gap:10px; padding: 14px; }\n  .ix-results__card{\n    display:grid; grid-template-columns: 72px 1fr; gap: 12px;\n    align-items:center;\n    padding: 10px;\n    border-radius: 14px;\n    text-decoration:none; color:inherit;\n    border: 1px solid rgba(17,17,17,.08);\n    background: rgba(17,17,17,.02);\n    transition: background .15s ease, border-color .15s ease, transform .06s ease;\n  }\n  .ix-results__card:hover{\n    background: rgba(17,17,17,.05);\n    border-color: rgba(17,17,17,.14);\n  }\n  .ix-results__card:active{ transform: translateY(1px); }\n\n  .ix-results__thumb{\n    width:72px; height:72px;\n    border-radius: 14px;\n    overflow:hidden;\n    border: 1px solid rgba(17,17,17,.10);\n    background: rgba(17,17,17,.04);\n  }\n  .ix-results__thumb img{ width:100%; height:100%; object-fit:cover; display:block; }\n  .ix-results__thumbPh{ display:block; width:100%; height:100%; }\n\n  .ix-results__list{ padding: 8px; }\n  .ix-results__row{\n    display:flex; justify-content:space-between; align-items:center;\n    gap: 10px;\n    padding: 12px;\n    border-radius: 14px;\n    text-decoration:none; color:inherit;\n    transition: background .15s ease;\n  }\n  .ix-results__row:hover{ background: rgba(17,17,17,.05); }\n  .ix-results__rowMain{ min-width: 0; }\n\n  .ix-results__kicker{ font-size: 12px; color: var(--muted); margin-bottom: 2px; }\n  .ix-results__name{\n    font-size: 15px;\n    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;\n  }\n  .ix-results__chev{ color: var(--muted); }\n\n  .ix-results__empty{ margin: 0; padding: 14px; color: var(--muted); }\n  .ix-results__noall{\n    margin-top: 14px;\n    padding: 14px;\n    border: 1px dashed rgba(17,17,17,.22);\n    border-radius: var(--r);\n    color: var(--muted);\n  }\n\n  @media (prefers-color-scheme: dark){\n    .ix-results{\n      --bg:#0b0b0c; --fg:#f4f4f5; --muted:#a1a1aa;\n      --b: rgba(244,244,245,.14);\n      --shadow: 0 14px 40px rgba(0,0,0,.45);\n    }\n    .ix-results__count{ border-color: rgba(244,244,245,.18); }\n    .ix-results__panelHead{ border-bottom-color: rgba(244,244,245,.08); }\n  }\n</style>\n\n<script>\n(function(){\n  // Si la URL viene con type=product (o sin type), forzamos a page,collection\n  // para garantizar que Shopify devuelva esos resultados.\n  const params = new URLSearchParams(window.location.search);\n  const q = params.get('q');\n\n  if(!q || q.trim().length === 0) return;\n\n  const type = (params.get('type') || '').toLowerCase();\n\n  // Si ya incluye page o collection, no hacemos nada\n  const hasPage = type.includes('page');\n  const hasCollection = type.includes('collection');\n\n  if(hasPage || hasCollection) return;\n\n  // Forzar types a page,collection (y mantener options[prefix] si existe)\n  params.set('type', 'page,collection');\n\n  // Si no viene options[prefix], lo ponemos (no hace daño)\n  if(!params.has('options[prefix]')) params.set('options[prefix]', 'last');\n\n  const newUrl = window.location.pathname + '?' + params.toString();\n\n  // Evita bucle: si ya estamos en la URL resultante, no redirigir\n  if(newUrl !== window.location.pathname + window.location.search){\n    window.location.replace(newUrl);\n  }\n})();\n</script>"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "custom_liquid_VcKrgP"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "main": {
       "type": "search-results",
       "blocks": {
@@ -244,42 +288,11 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
-    },
-    "section_XTynUH": {
-      "type": "section",
-      "name": "t:names.custom_section",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
     }
   },
   "order": [
     "search",
-    "main",
-    "section_XTynUH"
+    "section_XTynUH",
+    "main"
   ]
 }
