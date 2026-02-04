@@ -205,7 +205,7 @@
               "name": "t:names.product_card_media",
               "settings": {
                 "product": "{{ closest.product }}",
-                "image_ratio": "portrait",
+                "image_ratio": "landscape",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
