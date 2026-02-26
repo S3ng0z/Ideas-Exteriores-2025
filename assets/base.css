@@ -4703,3 +4703,8 @@ text-component {
     padding: 1rem;
   }
 }
+
+.botones a{
+  font-size: 2rem !important;
+  padding: 0 1rem !important;
+}
