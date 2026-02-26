@@ -4497,3 +4497,206 @@ text-component {
     border: 1px solid #cbcacc;
     width: 100%;
 }
+
+/* ==================================================
+   Bloque Producto — Tarima Iroko (solo componente)
+   Compatible con tu CSS base (no redefine globals)
+================================================== */
+
+.producto {
+  /* Se integra con el ancho del tema (si existe) y añade un límite razonable */
+  width: 100%;
+  max-width: min(980px, 100%);
+  margin-inline: auto;
+  padding: clamp(1rem, 2.6vw, 1.6rem);
+}
+
+/* Tipografías: deja que el tema mande; solo ajustamos jerarquía y ritmo */
+.producto .cabecera,
+.producto .bloque {
+  border: 1px solid rgb(from var(--color-foreground) r g b / 12%);
+  border-radius: var(--style-border-radius-popover, 16px);
+  background: var(--color-background);
+}
+
+/* CABECERA */
+.producto .cabecera {
+  padding: clamp(1.2rem, 3vw, 2rem);
+  box-shadow: 0 10px 30px rgb(from var(--color-shadow) r g b / 12%);
+  /* sutil “panel” sin romper el scheme */
+  background: linear-gradient(
+    180deg,
+    var(--color-background),
+    rgb(from var(--color-foreground) r g b / 3%)
+  );
+}
+
+.producto .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  border: 1px solid rgb(from var(--color-foreground) r g b / 12%);
+  background: rgb(from var(--color-background) r g b / 75%);
+  color: rgb(from var(--color-foreground) r g b / 70%);
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+}
+
+.producto .cabecera h1 {
+  margin: .75rem 0 .35rem;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.producto .cabecera p {
+  margin: 0;
+  color: rgb(from var(--color-foreground) r g b / 70%);
+  line-height: 1.65;
+  max-width: 75ch;
+}
+
+/* NAV (píldoras) */
+.producto .nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+
+.producto .pill {
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem .8rem;
+  border-radius: 999px;
+  border: 1px solid rgb(from var(--color-foreground) r g b / 12%);
+  background: rgb(from var(--color-foreground) r g b / 3%);
+  color: var(--color-foreground);
+  font-size: .95rem;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+@media (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .producto .pill:hover {
+    transform: translateY(-1px);
+    background: rgb(from var(--color-foreground) r g b / 5%);
+  }
+}
+
+/* BLOQUES */
+.producto .bloque {
+  margin-top: 1rem;
+  padding: clamp(1rem, 2.4vw, 1.5rem);
+  box-shadow: 0 1px 0 rgb(from var(--color-foreground) r g b / 4%);
+}
+
+.producto .bloque h2 {
+  margin: 0 0 .75rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.producto .bloque h3 {
+  margin: 1.15rem 0 .6rem;
+  line-height: 1.3;
+}
+
+/* Párrafos del componente */
+.producto .texto {
+  margin: 0 0 .85rem;
+  line-height: 1.7;
+}
+
+/* Texto “muted” usando tokens del tema */
+.producto .muted {
+  color: rgb(from var(--color-foreground) r g b / 70%);
+}
+
+/* FICHA TÉCNICA */
+.producto .ficha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: clamp(.75rem, 2vw, 1rem);
+  margin: 0;
+}
+
+.producto .item {
+  background: rgb(from var(--color-foreground) r g b / 3%);
+  border: 1px solid rgb(from var(--color-foreground) r g b / 10%);
+  border-radius: 14px;
+  padding: .95rem 1rem;
+}
+
+.producto .item dt {
+  font-weight: 800;
+  margin: 0 0 .25rem;
+  font-size: .98rem;
+  letter-spacing: .01em;
+}
+
+.producto .item dd {
+  margin: 0;
+  color: rgb(from var(--color-foreground) r g b / 70%);
+  line-height: 1.55;
+}
+
+/* LISTAS */
+.producto .lista {
+  margin: .35rem 0 0;
+  padding-inline-start: 1.05rem;
+  line-height: 1.7;
+}
+
+.producto .lista li {
+  margin: .25rem 0;
+}
+
+/* CHECKLIST */
+.producto .checklist {
+  list-style: none;
+  padding: 0;
+  margin: .25rem 0 0;
+  display: grid;
+  gap: .55rem;
+}
+
+.producto .checklist li {
+  display: flex;
+  gap: .65rem;
+  align-items: flex-start;
+  padding: .75rem .85rem;
+  border: 1px solid rgb(from var(--color-foreground) r g b / 10%);
+  border-radius: 14px;
+  background: var(--color-background);
+}
+
+.producto .dot {
+  width: .6rem;
+  height: .6rem;
+  margin-top: .45rem;
+  border-radius: 999px;
+  background: rgb(from var(--color-foreground) r g b / 30%);
+  flex: 0 0 auto;
+}
+
+/* NOTA */
+.producto .nota {
+  margin-top: .9rem;
+  padding: .85rem 1rem;
+  border-radius: 14px;
+  border: 1px dashed rgb(from var(--color-foreground) r g b / 18%);
+  background: rgb(from var(--color-foreground) r g b / 2%);
+  color: rgb(from var(--color-foreground) r g b / 72%);
+  line-height: 1.65;
+}
+
+/* Ajustes móviles */
+@media (max-width: 480px) {
+  .producto .cabecera {
+    padding: 1.1rem;
+  }
+  .producto .bloque {
+    padding: 1rem;
+  }
+}
