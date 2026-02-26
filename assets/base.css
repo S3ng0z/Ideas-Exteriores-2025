@@ -4555,7 +4555,6 @@ text-component {
   margin: 0;
   color: rgb(from var(--color-foreground) r g b / 70%);
   line-height: 1.65;
-  max-width: 75ch;
 }
 
 /* NAV (píldoras) */
