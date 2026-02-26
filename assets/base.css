@@ -4596,6 +4596,7 @@ text-component {
   margin: 0 0 .75rem;
   line-height: 1.25;
   letter-spacing: -0.01em;
+  font-size: 1.6rem !important;
 }
 
 .producto .bloque h3 {
