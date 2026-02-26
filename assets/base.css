@@ -4602,6 +4602,7 @@ text-component {
 .producto .bloque h3 {
   margin: 1.15rem 0 .6rem;
   line-height: 1.3;
+  font-size: 1.4rem !important;
 }
 
 /* Párrafos del componente */
