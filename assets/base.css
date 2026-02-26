@@ -4499,554 +4499,381 @@ text-component {
 }
 
 
-/* ==========================================================================
-   IE-PDP v1 (Ideas Exteriores – Product Detail Page module)
-   Objetivo: CSS 100% aislado (no colisiona con tu web).
-   - Todo está namespaced bajo: .ie-pdp
-   - Variables SOLO dentro de .ie-pdp (sin :root, sin body, sin * global)
-   - Nada de selectores genéricos: no se toca a, img, label, input fuera del módulo
-   - Responsive con cariño: 4 breakpoints + layout mobile-first donde conviene
-   ========================================================================== */
+/* ==========================================================
+  PDP / CONTENIDO RTE: estilos mínimos, reutilizando el theme
+  - No redefine reset, body, a, h*, .button, .section, .product-grid global
+  - Namespaced: .pdp-*
+========================================================== */
 
-/* ====== SCOPE / RESET LOCAL ====== */
-.ie-pdp{ 
-  /* Variables SOLO para este módulo */
-  --ie-bg: #ffffff;
-  --ie-text: #0f1115;
-  --ie-muted: #5b616e;
-  --ie-border: rgba(15,17,21,.10);
-  --ie-card: #fbfbfc;
-  --ie-card2: #ffffff;
-
-  --ie-primary: #111317;
-  --ie-primary-contrast: #ffffff;
-  --ie-accent: #0b5fff; /* úsalo si quieres un “toque” en CTA secundario */
-  --ie-focus: rgba(11,95,255,.25);
-
-  --ie-radius: 18px;
-  --ie-radius-sm: 14px;
-
-  --ie-shadow-sm: 0 8px 18px rgba(15,17,21,.06);
-  --ie-shadow-md: 0 14px 34px rgba(15,17,21,.10);
-
-  --ie-container: 1120px;
-  --ie-gutter: 16px;
-  --ie-gap: 18px;
-  --ie-gap-lg: 28px;
-
-  --ie-font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  --ie-line: 1.5;
-
-  --ie-h1: clamp(28px, 3.1vw, 44px);
-  --ie-h2: clamp(20px, 2.1vw, 26px);
-  --ie-h3: 16px;
-
-  font-family: var(--ie-font);
-  line-height: var(--ie-line);
-  color: var(--ie-text);
-  background: transparent; /* no pintamos fondo general */
-  isolation: isolate; /* reduce efectos de z-index externos */
+:root{
+  /* Tokens locales (fallbacks) */
+  --pdp-radius: var(--style-border-radius-popover, 16px);
+  --pdp-radius-sm: var(--style-border-radius-inputs, 12px);
+  --pdp-border: rgba(from var(--color-border, #000) r g b / 15%);
+  --pdp-shadow: var(--shadow-popover, 0 10px 24px rgba(0,0,0,.08));
+  --pdp-bg: var(--color-background, #fff);
+  --pdp-fg: var(--color-foreground, #111);
+  --pdp-muted: rgba(from var(--color-foreground, #111) r g b / 72%);
+  --pdp-soft: rgba(from var(--color-foreground, #111) r g b / 5%);
+  --pdp-gap: var(--gap-md, 16px);
+  --pdp-pad: var(--padding-lg, 24px);
 }
 
-/* reset local (solo dentro del módulo) */
-.ie-pdp,
-.ie-pdp *{ box-sizing: border-box; }
-
-.ie-pdp img{ display:block; max-width:100%; height:auto; }
-
-.ie-pdp a{ color: inherit; text-decoration: none; }
-.ie-pdp a:hover{ text-decoration: none; }
-
-.ie-pdp :focus-visible{
-  outline: 3px solid var(--ie-focus);
-  outline-offset: 2px;
-  border-radius: 10px;
-}
-
-/* Utilidad: contenedor */
-.ie-pdp__wrap{
-  width: min(100% - (var(--ie-gutter) * 2), var(--ie-container));
-  margin-inline: auto;
-  padding: 24px 0 60px;
-}
-
-/* ====== HERO ====== */
-.ie-pdp__hero{
+/* Contenedor general del bloque (si lo metes en .container_text o .section-content-wrapper) */
+.pdp-wrap{
   display: grid;
-  gap: var(--ie-gap-lg);
-  grid-template-columns: 1.2fr .8fr;
+  gap: clamp(18px, 2.4vw, 28px);
+}
+
+/* ---------- Breadcrumbs (si usas tu .lux-breadcrumb, puedes omitir esto) ---------- */
+.pdp-breadcrumbs{
+  margin: 0;
+  padding: 0;
+}
+.pdp-breadcrumbs ol{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--pdp-muted);
+}
+.pdp-breadcrumbs li+li::before{
+  content: "›";
+  margin-inline: 6px 2px;
+  color: rgba(from var(--pdp-fg) r g b / 35%);
+}
+
+/* ---------- HERO ---------- */
+.pdp-hero{
+  display: grid;
+  gap: clamp(16px, 2.5vw, 28px);
   align-items: start;
-  padding: 10px 0 8px;
+}
+@media (width >= 990px){
+  .pdp-hero{ grid-template-columns: 1.1fr .9fr; }
 }
 
-.ie-pdp__kicker{
-  margin: 0 0 6px;
-  color: var(--ie-muted);
-  font-size: 13px;
-  letter-spacing: .2px;
+.pdp-eyebrow{
+  margin: 0 0 .35rem;
+  font-size: .82rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--pdp-muted);
 }
 
-.ie-pdp__title{
-  margin: 0 0 10px;
-  font-size: var(--ie-h1);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+.pdp-title{
+  margin: 0 0 .5rem;
 }
 
-.ie-pdp__subtitle{
-  margin: 0 0 14px;
-  font-size: 16px;
-  color: var(--ie-muted);
-  max-width: 65ch;
+.pdp-subtitle{
+  margin: 0 0 1rem;
+  color: var(--pdp-muted);
 }
 
-.ie-pdp__badges{
+/* Barra de “puntos clave” (reutilizable) */
+.pdp-keypoints{
+  background: var(--pdp-soft);
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius);
+  padding: clamp(14px, 2vw, 18px);
+}
+.pdp-keypoints ul{
+  margin: 0;
+  padding-inline-start: 1.1rem;
+}
+.pdp-keypoints li{ margin: .35rem 0; }
+
+/* CTA: usa botones del tema */
+.pdp-cta{
+  display: grid;
+  gap: 10px;
+  background: var(--pdp-bg);
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius);
+  padding: clamp(14px, 2vw, 18px);
+  box-shadow: var(--pdp-shadow);
+}
+.pdp-cta__actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.pdp-cta__note{
+  margin: 0;
+  color: var(--pdp-muted);
+  font-size: .95rem;
+}
+
+/* Nav interna (chips) */
+.pdp-nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.pdp-nav a{
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--pdp-border);
+  background: var(--pdp-bg);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: .78rem;
+}
+
+/* ---------- GALERÍA (si no usas media-gallery nativo) ---------- */
+.pdp-gallery{
+  background: var(--pdp-soft);
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius);
+  padding: clamp(12px, 2vw, 16px);
+  box-shadow: var(--pdp-shadow);
+}
+.pdp-gallery__main img{
+  border-radius: calc(var(--pdp-radius) - 6px);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.pdp-gallery__thumbs{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+.pdp-thumb{
+  border: 1px solid var(--pdp-border);
+  background: var(--pdp-bg);
+  border-radius: 12px;
+  padding: 6px;
+}
+.pdp-thumb img{
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Trust badges */
+.pdp-badges{
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 10px;
+}
+.pdp-badge{
+  background: var(--pdp-bg);
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius-sm);
+  padding: 12px 14px;
+}
+.pdp-badge__title{
+  display: block;
+  font-weight: 700;
+}
+.pdp-badge__desc{
+  display: block;
+  color: var(--pdp-muted);
+  font-size: .95rem;
+}
+
+/* ---------- SECCIONES (no tocamos .section global; solo “bloques” internos) ---------- */
+.pdp-section{
+  display: grid;
+  gap: 14px;
+}
+.pdp-section__head{
+  max-width: 900px;
+}
+.pdp-lead{
+  margin: 0;
+  color: var(--pdp-muted);
+}
+
+/* Cards de beneficios (reutiliza tu estética) */
+.pdp-grid-3,
+.pdp-grid-2{
+  display: grid;
+  gap: var(--pdp-gap);
+}
+@media (width >= 900px){
+  .pdp-grid-3{ grid-template-columns: repeat(3, 1fr); }
+  .pdp-grid-2{ grid-template-columns: repeat(2, 1fr); }
+}
+.pdp-card{
+  background: var(--pdp-bg);
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius);
+  padding: clamp(14px, 2vw, 18px);
+  box-shadow: var(--pdp-shadow);
+}
+.pdp-card p{ margin: 0; color: var(--pdp-muted); }
+
+/* Nota destacada */
+.pdp-note{
+  background: var(--pdp-bg);
+  border: 1px dashed rgba(from var(--color-foreground, #111) r g b / 35%);
+  border-radius: var(--pdp-radius);
+  padding: clamp(14px, 2vw, 18px);
+}
+
+/* ---------- FICHA TÉCNICA (spec grid) ---------- */
+.pdp-spec-grid{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--pdp-gap);
+}
+@media (width >= 990px){
+  .pdp-spec-grid{ grid-template-columns: repeat(4, 1fr); }
+}
+@media (width >= 520px) and (width < 990px){
+  .pdp-spec-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+.pdp-spec{
+  background: var(--pdp-bg);
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius);
+  padding: 14px 16px;
+}
+.pdp-spec__k{
+  display:block;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.pdp-spec__v{
+  display:block;
+  color: var(--pdp-muted);
+}
+
+/* Tabla: delega en tus estilos .rte table si puedes; si no, usa esto */
+.pdp-tablewrap{
+  overflow-x: auto;
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius);
+  background: var(--pdp-bg);
+}
+.pdp-table{
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+.pdp-table th,
+.pdp-table td{
+  padding: 12px 14px;
+  border-top: 1px solid var(--pdp-border);
+  text-align: start;
+  vertical-align: top;
+}
+.pdp-table thead th{
+  background: var(--pdp-soft);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: .82rem;
+}
+
+/* ---------- FAQ (details) ---------- */
+.pdp-faq{
+  display: grid;
+  gap: 10px;
+  max-width: 900px;
+}
+.pdp-faq details{
+  background: var(--pdp-bg);
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius);
+  padding-inline: 16px;
+  box-shadow: var(--pdp-shadow);
+}
+.pdp-faq summary{
+  padding-block: 12px;
+  font-weight: 800;
+}
+.pdp-faq .pdp-faq__content{
+  padding: 0 0 14px 0;
+  color: var(--pdp-muted);
+}
+
+/* ---------- SIMILARES (NO usar .product-grid global) ---------- */
+.pdp-similar-grid{
+  display: grid;
+  gap: var(--pdp-gap);
+}
+@media (width >= 1100px){
+  .pdp-similar-grid{ grid-template-columns: repeat(4, 1fr); }
+}
+@media (width >= 820px) and (width < 1100px){
+  .pdp-similar-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (width >= 520px) and (width < 820px){
+  .pdp-similar-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Reutiliza “card hover” del tema: usamos .product-card ya existente */
+.pdp-similar-grid .product-card{
+  height: 100%;
+  border: 1px solid var(--pdp-border);
+  border-radius: var(--pdp-radius);
+  overflow: hidden;
+  box-shadow: var(--pdp-shadow);
+}
+.pdp-similar-grid .product-card__link{
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+}
+.pdp-similar-grid .product-card__img{
+  border-radius: calc(var(--pdp-radius) - 6px);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--pdp-soft);
+  border: 1px solid var(--pdp-border);
+}
+.pdp-similar-grid .product-card__desc{
+  color: var(--pdp-muted);
+  font-size: .95rem;
+  margin: 0;
+}
+.pdp-similar-grid .product-card__meta{
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   padding: 0;
-  margin: 0 0 14px;
-  list-style: none;
+  margin: 0;
 }
-
-.ie-pdp__badge{
-  border: 1px solid var(--ie-border);
-  background: var(--ie-card2);
-  padding: 6px 10px;
+.pdp-similar-grid .product-card__meta li{
+  border: 1px solid var(--pdp-border);
+  background: var(--pdp-soft);
   border-radius: 999px;
-  font-size: 12.5px;
-  color: var(--ie-muted);
-  white-space: nowrap;
+  padding: 4px 10px;
+  font-size: .8rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
 
-.ie-pdp__cta{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  margin: 12px 0 16px;
+/* ---------- CTA final (usa botones del tema) ---------- */
+.pdp-cta-final{
+  border-radius: calc(var(--pdp-radius) + 4px);
+  background: rgba(from var(--color-foreground, #111) r g b / 92%);
+  color: var(--pdp-bg);
+  padding: clamp(16px, 2.8vw, 22px);
+  box-shadow: var(--pdp-shadow);
+}
+.pdp-cta-final p{
+  color: rgba(255,255,255,.86);
 }
 
-/* highlights */
-.ie-pdp__highlights{
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 10px;
-}
-.ie-pdp__hl{
-  border: 1px solid var(--ie-border);
-  background: var(--ie-card);
-  border-radius: var(--ie-radius-sm);
-  padding: 10px 12px;
-}
-.ie-pdp__hl dt{
-  font-size: 12px;
-  color: var(--ie-muted);
-  margin: 0 0 2px;
-}
-.ie-pdp__hl dd{
-  margin: 0;
-  font-weight: 650;
-  font-size: 14px;
-  color: var(--ie-text);
-}
-
-/* hero media */
-.ie-pdp__media{
-  display: grid;
-  gap: 12px;
-}
-.ie-pdp__mediaBox{
-  border-radius: var(--ie-radius);
-  overflow: hidden;
-  border: 1px solid var(--ie-border);
-  background: var(--ie-card2);
-  box-shadow: var(--ie-shadow-md);
-}
-.ie-pdp__trust{
-  border: 1px solid var(--ie-border);
-  border-radius: var(--ie-radius);
-  background: var(--ie-card);
-  padding: 14px;
-  box-shadow: var(--ie-shadow-sm);
-}
-.ie-pdp__trustTitle{
-  margin: 0 0 4px;
-  font-weight: 750;
-  font-size: 14px;
-}
-.ie-pdp__trustText{
-  margin: 0;
-  color: var(--ie-muted);
-  font-size: 13.5px;
-}
-
-/* ====== NAV ANCHORS (sticky) ====== */
-.ie-pdp__nav{
-  position: sticky;
-  top: 0;
-  z-index: 40;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding: 12px 0;
-  margin: 14px 0 0;
-  border-top: 1px solid var(--ie-border);
-  border-bottom: 1px solid var(--ie-border);
-  background: color-mix(in srgb, var(--ie-bg) 92%, transparent);
-  backdrop-filter: blur(10px);
-}
-
-.ie-pdp__nav a{
-  font-size: 13.5px;
-  color: var(--ie-muted);
-  padding: 7px 10px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  transition: background .15s ease, border-color .15s ease, color .15s ease;
-}
-.ie-pdp__nav a:hover{
-  border-color: var(--ie-border);
-  background: var(--ie-card2);
-  color: var(--ie-text);
-}
-
-/* ====== SECTIONS ====== */
-.ie-pdp__section{
-  padding: 26px 0;
-}
-
-.ie-pdp__sectionHead{ margin-bottom: 14px; }
-
-.ie-pdp__h2{
-  margin: 0 0 6px;
-  font-size: var(--ie-h2);
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-}
-
-.ie-pdp__subtitle2{
-  margin: 0;
-  color: var(--ie-muted);
-  max-width: 78ch;
-  font-size: 15px;
-}
-
-/* ====== LAYOUT GRIDS ====== */
-.ie-pdp__grid2{
-  display: grid;
-  gap: var(--ie-gap);
-  grid-template-columns: repeat(2, minmax(0,1fr));
-}
-
-.ie-pdp__grid3{
-  display: grid;
-  gap: var(--ie-gap);
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  margin-top: 14px;
-}
-
-/* ====== CARD ====== */
-.ie-pdp__card{
-  border: 1px solid var(--ie-border);
-  border-radius: var(--ie-radius);
-  background: var(--ie-card);
-  padding: 16px;
-  box-shadow: var(--ie-shadow-sm);
-}
-
-.ie-pdp__card--white{
-  background: var(--ie-card2);
-}
-
-.ie-pdp__h3{
-  margin: 0 0 8px;
-  font-size: var(--ie-h3);
-  letter-spacing: -0.01em;
-}
-
-.ie-pdp__p{
-  margin: 0 0 10px;
-  color: var(--ie-muted);
-  font-size: 14.5px;
-}
-
-/* ====== PACKS (pricing cards) ====== */
-.ie-pdp__pack{
-  border: 1px solid var(--ie-border);
-  border-radius: var(--ie-radius);
-  background: var(--ie-card2);
-  box-shadow: var(--ie-shadow-md);
-  padding: 16px;
-  display: grid;
-  gap: 12px;
-  position: relative;
-}
-
-.ie-pdp__packFeatured{
-  border-color: rgba(15,17,21,.18);
-  transform: translateY(-2px);
-}
-
-.ie-pdp__ribbon{
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  font-size: 12px;
-  font-weight: 750;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--ie-border);
-  background: var(--ie-card);
-}
-
-.ie-pdp__packName{
-  margin: 0;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-}
-
-.ie-pdp__packMeta{
-  margin: 4px 0 0;
-  color: var(--ie-muted);
-  font-size: 13px;
-}
-
-.ie-pdp__packPrice{
-  margin: 10px 0 0;
-  font-size: 22px;
-  font-weight: 850;
-  letter-spacing: -0.01em;
-}
-.ie-pdp__packUnit{
-  font-size: 13px;
-  font-weight: 650;
-  color: var(--ie-muted);
-}
-
-.ie-pdp__bullets{
-  margin: 0;
-  padding-left: 18px;
-  color: var(--ie-text);
-  font-size: 14px;
-}
-.ie-pdp__bullets li{ margin: 6px 0; }
-
-.ie-pdp__smallLine{
-  margin: 10px 0 0;
-  font-size: 13.5px;
-  color: var(--ie-muted);
-}
-.ie-pdp__smallLine strong{ color: var(--ie-text); }
-
-/* ====== TABLES (specs) ====== */
-.ie-pdp__table{
-  width: 100%;
-  border-collapse: collapse;
-  overflow: hidden;
-  border-radius: var(--ie-radius-sm);
-  background: var(--ie-card2);
-}
-
-.ie-pdp__table th,
-.ie-pdp__table td{
-  text-align: left;
-  padding: 11px 10px;
-  border-bottom: 1px solid var(--ie-border);
-  vertical-align: top;
-  font-size: 14px;
-}
-
-.ie-pdp__table th{
-  width: 40%;
-  color: var(--ie-muted);
-  font-weight: 700;
-}
-
-.ie-pdp__note{
-  margin: 12px 0 0;
-  color: var(--ie-muted);
-  font-size: 13.5px;
-}
-
-/* ====== CHECKLIST ====== */
-.ie-pdp__check{
-  margin: 0;
-  padding-left: 18px;
-  font-size: 14px;
-}
-.ie-pdp__check li{ margin: 8px 0; }
-
-/* ====== FAQ ====== */
-.ie-pdp__faq details{
-  border: 1px solid var(--ie-border);
-  border-radius: var(--ie-radius);
-  background: var(--ie-card2);
-  box-shadow: var(--ie-shadow-sm);
-  padding: 12px 14px;
-  margin: 10px 0;
-}
-
-.ie-pdp__faq summary{
-  cursor: pointer;
-  font-weight: 800;
-  list-style: none;
-  font-size: 14.5px;
-}
-.ie-pdp__faq summary::-webkit-details-marker{ display:none; }
-
-.ie-pdp__faq details[open]{
-  border-color: rgba(15,17,21,.16);
-}
-
-.ie-pdp__faq p{
-  margin: 10px 0 0;
-  color: var(--ie-muted);
-  font-size: 14px;
-}
-
-/* ====== FORM ====== */
-.ie-pdp__form{
-  display: grid;
-  gap: 12px;
-}
-.ie-pdp__row{
-  display: grid;
-  gap: 6px;
-}
-.ie-pdp__label{
-  font-size: 13px;
-  color: var(--ie-muted);
-  font-weight: 750;
-}
-.ie-pdp__input,
-.ie-pdp__select,
-.ie-pdp__textarea{
-  width: 100%;
-  padding: 11px 12px;
-  border: 1px solid var(--ie-border);
-  border-radius: 12px;
-  font: inherit;
-  background: var(--ie-card2);
-  color: var(--ie-text);
-  transition: border-color .15s ease, box-shadow .15s ease;
-}
-.ie-pdp__textarea{ resize: vertical; min-height: 110px; }
-
-.ie-pdp__input:focus,
-.ie-pdp__select:focus,
-.ie-pdp__textarea:focus{
-  outline: none;
-  border-color: rgba(11,95,255,.55);
-  box-shadow: 0 0 0 3px var(--ie-focus);
-}
-
-/* ====== BUTTONS ====== */
-.ie-pdp__btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border-radius: 999px;
-  padding: 10px 14px;
-  font-weight: 850;
-  font-size: 14px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: transform .06s ease, filter .15s ease, background .15s ease, border-color .15s ease;
-  user-select: none;
-}
-
-.ie-pdp__btnPrimary{
-  background: var(--ie-primary);
-  color: var(--ie-primary-contrast);
-  border-color: var(--ie-primary);
-}
-
-.ie-pdp__btnGhost{
-  background: transparent;
-  border-color: var(--ie-border);
-  color: var(--ie-text);
-}
-
-.ie-pdp__btnLink{
-  background: transparent;
-  border: none;
-  padding: 10px 6px;
-  color: var(--ie-muted);
-  text-decoration: underline;
-  border-radius: 12px;
-}
-
-.ie-pdp__btnFull{
-  width: 100%;
-  border-radius: 14px;
-}
-
-.ie-pdp__btn:hover{ filter: brightness(.98); }
-.ie-pdp__btn:active{ transform: translateY(1px); }
-
-/* ====== CALLOUTS ====== */
-.ie-pdp__callout{
-  margin-top: 12px;
-  border: 1px solid var(--ie-border);
-  border-radius: var(--ie-radius);
-  background: var(--ie-card2);
-  padding: 14px;
-  box-shadow: var(--ie-shadow-sm);
-}
-.ie-pdp__calloutWarn{
-  border-color: rgba(15,17,21,.18);
-  background: linear-gradient(180deg, rgba(15,17,21,.02), rgba(15,17,21,.00));
-}
-.ie-pdp__fineprint{
-  margin: 14px 0 0;
-  color: var(--ie-muted);
-  font-size: 13px;
-}
-
-/* ====== RESPONSIVE (con cariño) ====== */
-
-/* 1) Tablets grandes */
-@media (max-width: 1024px){
-  .ie-pdp__hero{ grid-template-columns: 1fr; }
-  .ie-pdp__grid3{ grid-template-columns: 1fr; }
-  .ie-pdp__grid2{ grid-template-columns: 1fr; }
-  .ie-pdp__highlights{ grid-template-columns: 1fr; }
-}
-
-/* 2) Tablets / móvil grande */
-@media (max-width: 768px){
-  .ie-pdp__wrap{ padding: 18px 0 44px; }
-  .ie-pdp__nav{ gap: 8px; }
-  .ie-pdp__nav a{ padding: 7px 9px; font-size: 13px; }
-  .ie-pdp__pack{ padding: 14px; }
-  .ie-pdp__card{ padding: 14px; }
-  .ie-pdp__table th{ width: 45%; }
-}
-
-/* 3) Móvil */
-@media (max-width: 520px){
-  .ie-pdp__cta{ gap: 8px; }
-  .ie-pdp__btn{ width: 100%; }            /* CTAs apilados */
-  .ie-pdp__btnLink{ width: auto; }        /* pero el link no hace falta full */
-  .ie-pdp__highlights{ gap: 8px; }
-  .ie-pdp__hl{ padding: 10px; }
-  .ie-pdp__nav{ padding: 10px 0; }
-  .ie-pdp__section{ padding: 22px 0; }
-}
-
-/* 4) Móvil muy pequeño */
-@media (max-width: 380px){
-  .ie-pdp__title{ letter-spacing: -0.01em; }
-  .ie-pdp__packPrice{ font-size: 20px; }
-  .ie-pdp__table th,
-  .ie-pdp__table td{ padding: 10px 8px; }
-}
-
-/* ====== Preferencias del usuario ====== */
-@media (prefers-reduced-motion: reduce){
-  .ie-pdp__btn{ transition: none; }
-  .ie-pdp__nav a{ transition: none; }
+/* Ajuste: evita chips/nav demasiado “apretados” en móvil */
+@media (width < 520px){
+  .pdp-nav a{ width: 100%; justify-content: center; }
 }
