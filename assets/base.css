@@ -4545,9 +4545,10 @@ text-component {
 }
 
 .producto .cabecera h1 {
-  margin: .75rem 0 .35rem;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+    margin: 1rem 0 .5rem;
+    line-height: 1.12;
+    letter-spacing: -.02em;
+    font-size: 1.8rem !important;
 }
 
 .producto .cabecera p {
