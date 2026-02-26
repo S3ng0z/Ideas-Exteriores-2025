@@ -4708,3 +4708,7 @@ text-component {
   font-size: 2rem !important;
   padding: 0 1rem !important;
 }
+
+.grupo-botones {
+  padding: 1rem 0;
+}
