@@ -1631,7 +1631,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/CANVA_00187.png",
+                "image": "shopify://shop_images/CANVA_00187.webp",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
