@@ -431,6 +431,9 @@
         "group_bA6rnT",
         "footer_utilities_zVWazC"
       ],
+      "custom_css": [
+        ".text-block>*:last-child {text-align: justify;}"
+      ],
       "name": "t:names.footer",
       "settings": {
         "content_direction": "column",
