@@ -138,10 +138,10 @@
                   "type": "menu",
                   "name": "t:names.menu",
                   "settings": {
-                    "menu": "",
+                    "menu": "empresa",
                     "heading": "Empresa",
-                    "menu_spacing": 0,
-                    "show_as_accordion": false,
+                    "menu_spacing": 12,
+                    "show_as_accordion": true,
                     "accordion_icon": "caret",
                     "accordion_dividers": false,
                     "inherit_color_scheme": true,
@@ -149,7 +149,7 @@
                     "heading_preset": "h4",
                     "link_preset": "paragraph",
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-end": 20,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -180,33 +180,11 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "menu_Bck6rx": {
-                  "type": "menu",
-                  "name": "t:names.menu",
-                  "settings": {
-                    "menu": "empresa",
-                    "heading": "",
-                    "menu_spacing": 12,
-                    "show_as_accordion": true,
-                    "accordion_icon": "caret",
-                    "accordion_dividers": false,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "heading_preset": "h5",
-                    "link_preset": "paragraph",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "menu_if7JpN",
-                "text_CnNaLz",
-                "menu_Bck6rx"
+                "text_CnNaLz"
               ]
             },
             "group_fjVYxq": {
@@ -320,7 +298,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid":"<!-- WhatsApp Floating Button --><div class=\"whatsapp-container\"><a href=\"https://wa.me/34687480356\" target=\"_blank\" aria-label=\"Contáctanos por WhatsApp\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png\" alt=\"WhatsApp\" class=\"whatsapp-icon\"></a><div class=\"whatsapp-tooltip\">¿En qué puedo ayudarte?</div></div><style>.whatsapp-container{position:fixed;bottom:50px;left:50px;z-index:9999}.whatsapp-icon{width:60px;height:60px;cursor:pointer}.whatsapp-tooltip{display:none;position:absolute;bottom:70px;left:0;background:#25D366;color:#fff;padding:10px 15px;border-radius:20px;white-space:nowrap;opacity:0;transition:opacity .5s,transform .5s;transform:translateY(10px);box-shadow:0 4px 10px rgba(0,0,0,.2)}.whatsapp-tooltip.show{display:block;opacity:1;transform:translateY(0)}@media (max-width:1024px){.whatsapp-container{bottom:25px;left:15px}}</style><script>document.addEventListener(\"DOMContentLoaded\",function(){setTimeout(function(){var t=document.querySelector(\".whatsapp-tooltip\");t&&t.classList.add(\"show\")},2000)});</script>"
+                "custom_liquid": "<!-- WhatsApp Floating Button --><div class=\"whatsapp-container\"><a href=\"https://wa.me/34687480356\" target=\"_blank\" aria-label=\"Contáctanos por WhatsApp\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png\" alt=\"WhatsApp\" class=\"whatsapp-icon\"></a><div class=\"whatsapp-tooltip\">¿En qué puedo ayudarte?</div></div><style>.whatsapp-container{position:fixed;bottom:50px;left:50px;z-index:9999}.whatsapp-icon{width:60px;height:60px;cursor:pointer}.whatsapp-tooltip{display:none;position:absolute;bottom:70px;left:0;background:#25D366;color:#fff;padding:10px 15px;border-radius:20px;white-space:nowrap;opacity:0;transition:opacity .5s,transform .5s;transform:translateY(10px);box-shadow:0 4px 10px rgba(0,0,0,.2)}.whatsapp-tooltip.show{display:block;opacity:1;transform:translateY(0)}@media (max-width:1024px){.whatsapp-container{bottom:25px;left:15px}}</style><script>document.addEventListener(\"DOMContentLoaded\",function(){setTimeout(function(){var t=document.querySelector(\".whatsapp-tooltip\");t&&t.classList.add(\"show\")},2000)});</script>"
               },
               "blocks": {}
             }
