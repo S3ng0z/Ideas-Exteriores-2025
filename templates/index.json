@@ -43,10 +43,11 @@
         "text_CXHmij"
       ],
       "custom_css": [
-        ".text-block h1 {margin: 0; padding: 0; text-align: center;}",
-        ".text-block p {margin: 0; padding: 0; text-transform: uppercase;}",
-        "@media (min-width: 769px) {.section-content-wrapper {width: 100%; max-width: 950px !important; } .text-block h1 {font-size: 2.1rem !important; line-height: 2.5rem; } .text-block p {font-size: 1.25rem; line-height: 2.25rem; text-align: justify; }}",
-        "@media (max-width: 768px) {.text-block h1 {font-size: 1.2rem !important; line-height: 1.5rem; } .text-block p {font-size: 0.85rem; line-height: 1rem; text-align: center; }}"
+        ".text-block h1,.text-block p{margin:0;padding:0}",
+        ".text-block h1{text-align:center;font-size:clamp(1.2rem,2vw,2.1rem);line-height:1.2}",
+        ".text-block p{text-transform:uppercase;text-align:center;font-size:clamp(.85rem,1.2vw,1.25rem);line-height:1.4}",
+        ".section-content-wrapper{width:min(90vw,950px)!important}",
+        "@media(min-width:769px){.text-block p{text-align:justify}}"
       ],
       "name": "Hero",
       "settings": {
