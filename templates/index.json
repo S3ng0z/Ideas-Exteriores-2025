@@ -45,7 +45,7 @@
       "custom_css": [
         ".text-block h1,.text-block p {margin: 0; padding: 0;}",
         ".text-block h1 {text-align: center; font-size: clamp(1.2rem, 2vw, 2.1rem) !important; line-height: 1.2;}",
-        ".text-block p {text-transform: uppercase; text-align: center; font-size: clamp(0.85rem, 1.2vw, 1.25rem) !important; line-height: 1.4;}",
+        ".text-block p {text-transform: uppercase; text-align: center; font-size: clamp(1rem, 1.2vw, 1.25rem) !important; line-height: 1.4;}",
         ".section-content-wrapper {width: 100%; max-width: 850px !important;}",
         "@media (min-width: 769px) {.text-block p {text-align: justify; }}"
       ],
