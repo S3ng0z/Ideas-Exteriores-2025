@@ -58,7 +58,7 @@
               "name": "t:names.menu",
               "settings": {
                 "menu": "productos",
-                "heading": "Productos",
+                "heading": "PRODUCTOS",
                 "menu_spacing": 12,
                 "show_as_accordion": true,
                 "accordion_icon": "caret",
@@ -139,7 +139,7 @@
                   "name": "t:names.menu",
                   "settings": {
                     "menu": "empresa",
-                    "heading": "Empresa",
+                    "heading": "EMPRESA",
                     "menu_spacing": 12,
                     "show_as_accordion": true,
                     "accordion_icon": "caret",
