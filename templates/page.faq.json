@@ -72,11 +72,37 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Frequently asked questions</h3>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "rte",
+            "text": "<p><strong>Preguntas frecuentes de clientes sobre casas y soluciones de madera</strong></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_C4GhKR": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<p>Proyecto</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h4",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -116,18 +142,18 @@
             "accordion_row_QfwgVR": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is the return policy?",
+                "heading": "¿Qué tipo de proyectos realizamos?",
                 "open_by_default": false
               },
               "blocks": {
                 "text_bMcbdt": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn’t the case, let us know and we’ll do our best to work with you to make it right. </p>",
-                    "width": "100%",
-                    "max_width": "normal",
+                    "text": "<p>Diseñamos, fabricamos e instalamos soluciones en madera para exterior y uso habitable: casas, casetas, estudios, oficinas de jardín, porches, pérgolas, cenadores, tarimas y proyectos a medida.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -150,21 +176,21 @@
                 "text_bMcbdt"
               ]
             },
-            "accordion_row_Awr4pa": {
+            "accordion_row_k3PTWc": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
+                "heading": "¿Trabajamos solo modelos estándar o también proyectos a medida?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_jccNWC": {
+                "text_q33b8E": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
+                    "text": "<p>Trabajamos ambas opciones. Existen modelos base para agilizar tiempos, pero gran parte de los proyectos se adaptan en medidas, distribución, acabados, aislamiento y detalles técnicos.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -184,26 +210,24 @@
                 }
               },
               "block_order": [
-                "text_jccNWC"
+                "text_q33b8E"
               ]
             },
-            "accordion_row_7bDyAp": {
+            "accordion_row_8aFRTB": {
               "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "¿Se puede usar una construcción de madera como vivienda, oficina o estudio?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_cJGaQE": {
+                "text_J7KYhN": {
                   "type": "text",
-                  "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
+                    "text": "<p>Sí, siempre que el proyecto esté diseñado para ese uso y cumpla los requisitos técnicos y urbanísticos aplicables. No es lo mismo una caseta auxiliar que un espacio habitable o de uso permanente.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -223,26 +247,24 @@
                 }
               },
               "block_order": [
-                "text_cJGaQE"
+                "text_J7KYhN"
               ]
             },
-            "accordion_row_Hn4BNh": {
+            "accordion_row_REybip": {
               "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "Where are your products manufactured?",
+                "heading": "¿Qué necesito para pedir presupuesto?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_BzxDP3": {
+                "text_HMxpUw": {
                   "type": "text",
-                  "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
-                    "width": "100%",
-                    "max_width": "normal",
+                    "text": "<p>Lo ideal es facilitar el uso previsto, medidas aproximadas, ubicación del proyecto, fotografías del terreno o espacio, y cualquier plano, croquis o referencia que ayude a definir la propuesta.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -262,26 +284,24 @@
                 }
               },
               "block_order": [
-                "text_BzxDP3"
+                "text_HMxpUw"
               ]
             },
-            "accordion_row_3M3MUW": {
+            "accordion_row_HjzKzc": {
               "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "How much does shipping cost?",
+                "heading": "¿Se realiza diseño previo antes de fabricar?",
                 "open_by_default": false
               },
               "blocks": {
-                "text_UKHpPT": {
+                "text_wYP9MH": {
                   "type": "text",
-                  "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
+                    "text": "<p>Sí. Definir bien el diseño antes de fabricar permite ajustar mejor el presupuesto, prever detalles técnicos y evitar cambios posteriores en obra.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "paragraph",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -301,22 +321,386 @@
                 }
               },
               "block_order": [
-                "text_UKHpPT"
+                "text_wYP9MH"
+              ]
+            },
+            "accordion_row_Hgwhje": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "¿Se puede instalar en cualquier parcela?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_6jqK9y": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>No siempre. Antes de confirmar un proyecto conviene revisar accesos, pendientes, retranqueos, normativa, uso permitido y condiciones del terreno.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_6jqK9y"
+              ]
+            },
+            "accordion_row_yJqVW4": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "¿Puedo personalizar acabados, revestimientos y distribución?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_MrnxX3": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Sí. Se pueden adaptar medidas, estética exterior, distribución interior, carpinterías, revestimientos, aislamiento y múltiples detalles para ajustarlos al uso real del espacio.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_MrnxX3"
+              ]
+            },
+            "accordion_row_gHgQzE": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "¿Qué solución encaja mejor para un estudio de jardín o una oficina exterior?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_AH6fzV": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Para un uso frecuente o intensivo, conviene priorizar confort térmico, aislamiento acústico, calidad de carpinterías y una envolvente bien resuelta. La solución se define según el nivel de uso previsto durante todo el año.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_AH6fzV"
+              ]
+            },
+            "accordion_row_VfGNbh": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "¿Por qué elegir una solución en madera frente a una obra tradicional?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_VL8Nnc": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Porque permite combinar diseño, rapidez, eficiencia, imagen cuidada y un proceso más controlado. Además, ofrece un alto nivel de personalización y una construcción más ligera y versátil.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_VL8Nnc"
+              ]
+            },
+            "accordion_row_Q6UKfd": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "¿Cómo saber qué solución encaja mejor con el presupuesto disponible?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_iaMxDm": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>La mejor forma es valorar el proyecto completo, no solo el precio base. Hay que comparar sistema constructivo, aislamiento, acabados, base, transporte, montaje y uso real del espacio.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_iaMxDm"
+              ]
+            },
+            "accordion_row_cP9Ud7": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "¿Cómo empezar?",
+                "open_by_default": false
+              },
+              "blocks": {
+                "text_FCyaDa": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Solo hace falta explicar qué se quiere construir, para qué se va a utilizar y dónde se va a instalar. A partir de ahí se puede orientar la solución más adecuada y preparar una propuesta realista.</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_FCyaDa"
               ]
             }
           },
           "block_order": [
             "accordion_row_QfwgVR",
-            "accordion_row_Awr4pa",
-            "accordion_row_7bDyAp",
-            "accordion_row_Hn4BNh",
-            "accordion_row_3M3MUW"
+            "accordion_row_k3PTWc",
+            "accordion_row_8aFRTB",
+            "accordion_row_REybip",
+            "accordion_row_HjzKzc",
+            "accordion_row_Hgwhje",
+            "accordion_row_yJqVW4",
+            "accordion_row_gHgQzE",
+            "accordion_row_VfGNbh",
+            "accordion_row_Q6UKfd",
+            "accordion_row_cP9Ud7"
           ]
+        },
+        "text_QPhLAL": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<p>Licencias</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_34EA4r": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<p>Sistemas constructivos</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_cbpXGT": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h4>Montaje</h4>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_GULxLD": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h4>Mantenimiento</h4>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PreQCz": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h4>Garantías</h4>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "text_diNUYP",
-        "accordion_zjqrkR"
+        "text_C4GhKR",
+        "accordion_zjqrkR",
+        "text_QPhLAL",
+        "text_34EA4r",
+        "text_cbpXGT",
+        "text_GULxLD",
+        "text_PreQCz"
       ],
       "name": "t:names.faq_section",
       "settings": {
