@@ -94,6 +94,67 @@
           },
           "blocks": {}
         },
+        "accordion_YYaiLq": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_hKLF7W": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "¿Todavía hay dudas sobre qué sistema o tipo de proyecto encaja mejor?",
+                "open_by_default": true
+              },
+              "blocks": {
+                "text_BW9Qqf": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Cada proyecto es distinto. Una primera consulta permite valorar la mejor solución según uso, parcela, presupuesto y nivel de acabados, evitando errores desde el inicio</p>",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_BW9Qqf"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_hKLF7W"
+          ]
+        },
         "text_C4GhKR": {
           "type": "text",
           "name": "t:names.heading",
@@ -1797,6 +1858,7 @@
       },
       "block_order": [
         "text_diNUYP",
+        "accordion_YYaiLq",
         "text_C4GhKR",
         "accordion_zjqrkR",
         "text_QPhLAL",
