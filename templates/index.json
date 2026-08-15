@@ -12,35 +12,88 @@
     "hero_irjTFL": {
       "type": "hero",
       "blocks": {
-        "text_CXHmij": {
-          "type": "text",
-          "name": "t:names.text",
+        "group_3HxC8A": {
+          "type": "group",
+          "name": "t:names.group",
           "settings": {
-            "text": "<h1> ENTRAMADO LIGERO Y PANEL SIP: CASAS & CASETAS DE MADERA PREFABRICADAS</h1><p><br/>Construimos casas, casetas y estructuras en madera, con soluciones constructivas como el entramado ligero y los paneles SIP. Soluciones eficientes y sostenibles: montaje rápido, gran aislamiento térmico y un acabado cuidado. Proyecto a medida o llave en mano.<br/></p>",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-heading--family)",
-            "font_size": "var(--font-size--heading-xl)",
-            "line_height": "tight",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": true,
-            "background_color": "#00000026",
-            "corner_radius": 18,
-            "padding-block-start": 25,
-            "padding-block-end": 25,
-            "padding-inline-start": 25,
-            "padding-inline-end": 25
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "custom_liquid_g8Q4XD": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<!-- POPUP VACACIONES · IDEAS EXTERIORES -->\n<div\n  id=\"vacation-popup\"\n  class=\"ie-vacation-popup\"\n  role=\"dialog\"\n  aria-modal=\"true\"\n  aria-labelledby=\"vacation-popup-title\"\n  aria-describedby=\"vacation-popup-text\"\n  hidden\n>\n  <div class=\"ie-vacation-popup__overlay\"></div>\n\n  <div class=\"ie-vacation-popup__box\">\n    <button\n      type=\"button\"\n      class=\"ie-vacation-popup__close\"\n      aria-label=\"Cerrar aviso\"\n    >\n      <span aria-hidden=\"true\">&times;</span>\n    </button>\n\n    <span class=\"ie-vacation-popup__label\">AVISO IMPORTANTE</span>\n\n    <h2 id=\"vacation-popup-title\">\n      Cerramos por vacaciones\n    </h2>\n\n    <div class=\"ie-vacation-popup__line\"></div>\n\n    <p id=\"vacation-popup-text\">\n      Nuestro equipo estará de vacaciones hasta el\n      <strong>31 de agosto</strong>.\n    </p>\n\n    <p class=\"ie-vacation-popup__secondary\">\n      Puedes seguir visitando nuestra web y descubriendo todos nuestros\n      productos y soluciones en madera.\n    </p>\n\n    <button type=\"button\" class=\"ie-vacation-popup__continue\">\n      SEGUIR NAVEGANDO\n    </button>\n  </div>\n</div>\n\n<style>\n  .ie-vacation-popup {\n    position: fixed;\n    inset: 0;\n    z-index: 999999;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 20px;\n    font-family: inherit;\n  }\n\n  .ie-vacation-popup[hidden] {\n    display: none;\n  }\n\n  .ie-vacation-popup__overlay {\n    position: absolute;\n    inset: 0;\n    background: rgba(25, 28, 22, 0.62);\n    backdrop-filter: blur(3px);\n    -webkit-backdrop-filter: blur(3px);\n  }\n\n  .ie-vacation-popup__box {\n    position: relative;\n    width: min(100%, 540px);\n    padding: 54px 48px 46px;\n    background: #ffffff;\n    color: #252822;\n    text-align: center;\n    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);\n    animation: ie-popup-enter 0.4s ease-out;\n  }\n\n  .ie-vacation-popup__close {\n    position: absolute;\n    top: 14px;\n    right: 17px;\n    width: 38px;\n    height: 38px;\n    padding: 0;\n    border: 0;\n    background: transparent;\n    color: #252822;\n    font-family: Arial, sans-serif;\n    font-size: 30px;\n    font-weight: 300;\n    line-height: 38px;\n    cursor: pointer;\n    transition: color 0.2s ease, transform 0.2s ease;\n  }\n\n  .ie-vacation-popup__close:hover {\n    color: #8a9a5b;\n    transform: rotate(90deg);\n  }\n\n  .ie-vacation-popup__label {\n    display: block;\n    margin-bottom: 14px;\n    color: #8a9a5b;\n    font-size: 12px;\n    font-weight: 600;\n    line-height: 1.4;\n    letter-spacing: 0.18em;\n  }\n\n  .ie-vacation-popup h2 {\n    margin: 0;\n    color: #252822;\n    font-family: inherit;\n    font-size: clamp(27px, 4vw, 38px);\n    font-weight: 500;\n    line-height: 1.15;\n    letter-spacing: -0.02em;\n  }\n\n  .ie-vacation-popup__line {\n    width: 46px;\n    height: 2px;\n    margin: 24px auto;\n    background: #8a9a5b;\n  }\n\n  .ie-vacation-popup p {\n    margin: 0 auto;\n    max-width: 430px;\n    color: #45483f;\n    font-size: 16px;\n    line-height: 1.65;\n  }\n\n  .ie-vacation-popup__secondary {\n    margin-top: 10px !important;\n    color: #6c6f66 !important;\n    font-size: 14px !important;\n  }\n\n  .ie-vacation-popup__continue {\n    margin-top: 30px;\n    min-width: 210px;\n    padding: 15px 28px;\n    border: 1px solid #8a9a5b;\n    border-radius: 0;\n    background: #8a9a5b;\n    color: #ffffff;\n    font-family: inherit;\n    font-size: 13px;\n    font-weight: 600;\n    line-height: 1.2;\n    letter-spacing: 0.09em;\n    cursor: pointer;\n    transition:\n      background 0.2s ease,\n      color 0.2s ease;\n  }\n\n  .ie-vacation-popup__continue:hover {\n    background: transparent;\n    color: #657143;\n  }\n\n  .ie-vacation-popup__continue:focus-visible,\n  .ie-vacation-popup__close:focus-visible {\n    outline: 2px solid #252822;\n    outline-offset: 3px;\n  }\n\n  @keyframes ie-popup-enter {\n    from {\n      opacity: 0;\n      transform: translateY(18px) scale(0.98);\n    }\n\n    to {\n      opacity: 1;\n      transform: translateY(0) scale(1);\n    }\n  }\n\n  @media screen and (max-width: 600px) {\n    .ie-vacation-popup {\n      padding: 16px;\n    }\n\n    .ie-vacation-popup__box {\n      padding: 48px 25px 36px;\n    }\n\n    .ie-vacation-popup h2 {\n      font-size: 28px;\n    }\n\n    .ie-vacation-popup p {\n      font-size: 15px;\n    }\n\n    .ie-vacation-popup__continue {\n      width: 100%;\n    }\n  }\n\n  @media (prefers-reduced-motion: reduce) {\n    .ie-vacation-popup__box {\n      animation: none;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function () {\n    const popup = document.getElementById('vacation-popup');\n\n    if (!popup) return;\n\n    const closeButton = popup.querySelector('.ie-vacation-popup__close');\n    const continueButton = popup.querySelector('.ie-vacation-popup__continue');\n    const overlay = popup.querySelector('.ie-vacation-popup__overlay');\n    const storageKey = 'ideas_exteriores_vacaciones_2026';\n    const endDate = new Date('2026-09-01T00:00:00+02:00');\n\n    let alreadyClosed = false;\n\n    try {\n      alreadyClosed = sessionStorage.getItem(storageKey) === 'closed';\n    } catch (error) {\n      alreadyClosed = false;\n    }\n\n    if (new Date() < endDate && !alreadyClosed) {\n      popup.hidden = false;\n      document.body.style.overflow = 'hidden';\n\n      setTimeout(function () {\n        continueButton.focus();\n      }, 100);\n    }\n\n    function closePopup() {\n      popup.hidden = true;\n      document.body.style.overflow = '';\n\n      try {\n        sessionStorage.setItem(storageKey, 'closed');\n      } catch (error) {\n        /* El popup se cierra aunque el navegador bloquee el almacenamiento. */\n      }\n    }\n\n    closeButton.addEventListener('click', closePopup);\n    continueButton.addEventListener('click', closePopup);\n    overlay.addEventListener('click', closePopup);\n\n    document.addEventListener('keydown', function (event) {\n      if (event.key === 'Escape' && !popup.hidden) {\n        closePopup();\n      }\n    });\n  });\n</script>"
+              },
+              "blocks": {}
+            },
+            "text_MggaYr": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h1> ENTRAMADO LIGERO Y PANEL SIP: CASAS & CASETAS DE MADERA PREFABRICADAS</h1><p><br/>Construimos casas, casetas y estructuras en madera, con soluciones constructivas como el entramado ligero y los paneles SIP. Soluciones eficientes y sostenibles: montaje rápido, gran aislamiento térmico y un acabado cuidado. Proyecto a medida o llave en mano.<br/></p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-heading--family)",
+                "font_size": "var(--font-size--heading-xl)",
+                "line_height": "tight",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": true,
+                "background_color": "#00000026",
+                "corner_radius": 18,
+                "padding-block-start": 25,
+                "padding-block-end": 25,
+                "padding-inline-start": 25,
+                "padding-inline-end": 25
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "custom_liquid_g8Q4XD",
+            "text_MggaYr"
+          ]
         }
       },
       "block_order": [
-        "text_CXHmij"
+        "group_3HxC8A"
       ],
       "custom_css": [
         ".text-block h1,.text-block p {margin: 0; padding: 0;}",
