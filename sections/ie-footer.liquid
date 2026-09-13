@@ -1,0 +1,26 @@
+{{ 'ie-footer.css' | asset_url | stylesheet_tag }}
+
+<div class="section-background color-{{ section.settings.color_scheme }}"></div>
+<div class="section color-{{ section.settings.color_scheme }} ie-footer">
+  <div class="ie-footer__inner">
+    <p>{{ shop.name | escape }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "IE Footer",
+  "class": "ie-footer-section",
+  "tag": "footer",
+  "enabled_on": {"groups": ["footer"]},
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Esquema de color",
+      "default": "scheme-4"
+    }
+  ],
+  "presets": [{"name": "IE Footer"}]
+}
+{% endschema %}
