@@ -19,10 +19,10 @@
 }
 
 .ie-footer__inner {
-  width: min(100%, 1180px);
+  width: min(calc(100% - (var(--page-margin, 40px) * 2)), var(--home-content-width, 95rem));
   margin-inline: auto;
   padding-block: var(--ie-footer-padding-top, 34px) var(--ie-footer-padding-bottom, 16px);
-  padding-inline: max(24px, var(--page-margin, 24px));
+  padding-inline: 0;
 }
 
 .ie-footer__masthead {
@@ -286,7 +286,7 @@
 
 @media screen and (max-width: 980px) {
   .ie-footer__inner {
-    width: min(100%, 900px);
+    width: calc(100% - (var(--page-margin, 40px) * 2));
   }
 
   .ie-footer__masthead {
@@ -340,8 +340,9 @@
 
 @media screen and (max-width: 640px) {
   .ie-footer__inner {
+    width: calc(100% - 40px);
     padding-block: 30px 16px;
-    padding-inline: max(20px, var(--page-margin, 20px));
+    padding-inline: 0;
   }
 
   .ie-footer__logo {
