@@ -1,0 +1,75 @@
+<div class="ie-floating-utilities" data-ie-floating-utilities>
+  <a
+    class="ie-floating-utilities__whatsapp"
+    href="https://wa.me/34687480356"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <span aria-hidden="true">WhatsApp</span>
+  </a>
+
+  <div class="ie-floating-utilities__right">
+    <button
+      type="button"
+      class="ie-floating-utilities__button ie-floating-utilities__scroll-top"
+      data-ie-scroll-top
+      aria-label="Volver arriba"
+      title="Volver arriba"
+    >
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 19V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M6.75 11.25L12 6l5.25 5.25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <a
+      class="ie-floating-utilities__dossier"
+      href="https://cdn.shopify.com/s/files/1/0921/0796/4760/files/Conoce_Ideas_Exteriores_-_Especialistas_en_Madera.pdf?v=1773865931"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Descargar dossier corporativo"
+      title="Descargar dossier corporativo"
+    >
+      <img
+        src="https://cdn.shopify.com/s/files/1/0921/0796/4760/files/Download_dossier.webp?v=1775065699"
+        alt=""
+        loading="lazy"
+        width="64"
+        height="64"
+      >
+    </a>
+  </div>
+</div>
+
+<style>
+  .ie-floating-utilities{position:fixed;inset:auto 0 20px 0;z-index:40;pointer-events:none}
+  .ie-floating-utilities__whatsapp,.ie-floating-utilities__right{pointer-events:auto;position:absolute;bottom:0}
+  .ie-floating-utilities__whatsapp{left:20px;display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#25d366;color:#fff;text-decoration:none;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,.18)}
+  .ie-floating-utilities__right{right:20px;display:grid;gap:12px;justify-items:center}
+  .ie-floating-utilities__button{display:grid;place-items:center;width:48px;height:48px;border:0;border-radius:50%;background:#1f231e;color:#fff;cursor:pointer}
+  .ie-floating-utilities__button svg{width:22px;height:22px}
+  .ie-floating-utilities__dossier{display:block;width:56px;height:64px}
+  .ie-floating-utilities__dossier img{display:block;width:100%;height:100%;object-fit:contain}
+  @media(max-width:640px){.ie-floating-utilities{bottom:14px}.ie-floating-utilities__whatsapp{left:14px;min-height:44px;padding-inline:14px;font-size:.875rem}.ie-floating-utilities__right{right:14px;gap:10px}.ie-floating-utilities__button{width:44px;height:44px}.ie-floating-utilities__dossier{width:48px;height:56px}}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var button = document.querySelector('[data-ie-scroll-top]');
+    if (!button) return;
+    button.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "IE Floating Utilities",
+  "tag": "section",
+  "enabled_on": {"groups": ["footer"]},
+  "settings": [],
+  "presets": [{"name": "IE Floating Utilities"}]
+}
+{% endschema %}
