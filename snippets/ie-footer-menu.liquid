@@ -1,36 +1,38 @@
 {%- if menu != blank and menu.links.size > 0 -%}
-  <nav class="ie-footer__menu" aria-labelledby="ie-footer-{{ key }}-{{ section_id }}">
+  <nav class="ie-footer__menu ie-footer__menu--{{ key }}" aria-labelledby="ie-footer-{{ key }}-{{ section_id }}">
     <h2 class="ie-footer__nav-heading" id="ie-footer-{{ key }}-{{ section_id }}">
       {{ heading | escape }}
     </h2>
 
     <ul class="ie-footer__nav-list" role="list">
       {%- for link in menu.links -%}
-        <li class="ie-footer__nav-item">
-          <a
-            class="ie-footer__nav-link"
-            href="{{ link.url }}"
-            {% if link.current %}aria-current="page"{% endif %}
-          >
-            {{ link.title | escape }}
-          </a>
+        {%- unless link.url == routes.search_url -%}
+          <li class="ie-footer__nav-item">
+            <a
+              class="ie-footer__nav-link"
+              href="{{ link.url }}"
+              {% if link.current %}aria-current="page"{% endif %}
+            >
+              {{ link.title | escape }}
+            </a>
 
-          {%- if link.links != blank -%}
-            <ul class="ie-footer__nav-sublist" role="list">
-              {%- for child_link in link.links -%}
-                <li>
-                  <a
-                    class="ie-footer__nav-link ie-footer__nav-link--secondary"
-                    href="{{ child_link.url }}"
-                    {% if child_link.current %}aria-current="page"{% endif %}
-                  >
-                    {{ child_link.title | escape }}
-                  </a>
-                </li>
-              {%- endfor -%}
-            </ul>
-          {%- endif -%}
-        </li>
+            {%- if link.links != blank -%}
+              <ul class="ie-footer__nav-sublist" role="list">
+                {%- for child_link in link.links -%}
+                  <li>
+                    <a
+                      class="ie-footer__nav-link ie-footer__nav-link--secondary"
+                      href="{{ child_link.url }}"
+                      {% if child_link.current %}aria-current="page"{% endif %}
+                    >
+                      {{ child_link.title | escape }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </li>
+        {%- endunless -%}
       {%- endfor -%}
     </ul>
   </nav>
