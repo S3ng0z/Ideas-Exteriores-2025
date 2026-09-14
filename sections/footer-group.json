@@ -16,7 +16,7 @@
       "settings": {
         "color_scheme": "scheme-4",
         "logo": "shopify://shop_images/convertio.in_Footer__0029-transformed.webp",
-        "brand_copy": "<p>Diseñamos y construimos espacios en madera a medida para exterior y uso habitable, combinando diseño, funcionalidad, durabilidad y una ejecución cuidada en cada proyecto.</p>",
+        "brand_copy": "<p>Soluciones en madera para exterior y espacios habitables.</p>",
         "location_heading": "Ubicación",
         "contact_heading": "Contacto",
         "address": "<p>Próximamente en:<br>Ctra. de Yuncos a Cedillo, km. 1.3<br>45210 Yuncos, Toledo<br>al lado de Mármoles Yuncos</p>",
@@ -36,8 +36,8 @@
         "budget_label": "Pedir presupuesto",
         "show_account": false,
         "show_cart": false,
-        "padding_top": 40,
-        "padding_bottom": 20
+        "padding_top": 34,
+        "padding_bottom": 16
       }
     },
     "ie_floating_utilities": {
