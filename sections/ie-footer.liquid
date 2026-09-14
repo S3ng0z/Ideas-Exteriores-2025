@@ -12,10 +12,10 @@
           <a class="ie-footer__logo-link" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}">
             {{
               section.settings.logo
-              | image_url: width: 440
+              | image_url: width: 640
               | image_tag:
-                widths: '160, 220, 320, 440',
-                sizes: '(max-width: 640px) 160px, 190px',
+                widths: '220, 300, 420, 640',
+                sizes: '(max-width: 640px) 190px, 300px',
                 class: 'ie-footer__logo',
                 loading: 'lazy',
                 alt: shop.name
@@ -24,47 +24,64 @@
         {%- else -%}
           <a class="ie-footer__brand-name" href="{{ routes.root_url }}">{{ shop.name | escape }}</a>
         {%- endif -%}
+      </div>
 
+      <div class="ie-footer__masthead-content">
         {%- if section.settings.brand_copy != blank -%}
           <div class="ie-footer__brand-copy rte">{{ section.settings.brand_copy }}</div>
         {%- endif -%}
-      </div>
 
-      <div class="ie-footer__contact" aria-label="Información de contacto">
-        <div class="ie-footer__contact-block">
-          <p class="ie-footer__eyebrow">{{ section.settings.location_heading | escape }}</p>
-          {%- if section.settings.address != blank -%}
-            <address class="ie-footer__location rte">{{ section.settings.address }}</address>
-          {%- endif -%}
-        </div>
+        <div class="ie-footer__contact" aria-label="Información de contacto">
+          <div class="ie-footer__contact-block">
+            <p class="ie-footer__eyebrow">
+              <span class="ie-footer__eyebrow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.7"/>
+                </svg>
+              </span>
+              <span>{{ section.settings.location_heading | escape }}</span>
+            </p>
+            {%- if section.settings.address != blank -%}
+              <address class="ie-footer__location rte">{{ section.settings.address }}</address>
+            {%- endif -%}
+          </div>
 
-        <div class="ie-footer__contact-block">
-          <p class="ie-footer__eyebrow">{{ section.settings.contact_heading | escape }}</p>
+          <div class="ie-footer__contact-block">
+            <p class="ie-footer__eyebrow">
+              <span class="ie-footer__eyebrow-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M7.2 3.8 10 8.1 8.3 9.8a15 15 0 0 0 5.9 5.9l1.7-1.7 4.3 2.8c.4.3.6.8.4 1.3-.7 1.7-2 2.8-3.8 2.8C10 20.9 3.1 14 3.1 7.2c0-1.8 1.1-3.1 2.8-3.8.5-.2 1 0 1.3.4Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>{{ section.settings.contact_heading | escape }}</span>
+            </p>
 
-          {%- if section.settings.phone != blank or section.settings.email != blank -%}
-            <ul class="ie-footer__contact-links" role="list">
-              {%- if section.settings.phone != blank -%}
-                {%- assign phone_href = section.settings.phone | replace: ' ', '' | replace: '-', '' | replace: '.', '' -%}
-                <li>
-                  <a class="ie-footer__contact-link" href="tel:{{ phone_href | escape }}">
-                    {{ section.settings.phone | escape }}
-                  </a>
-                </li>
-              {%- endif -%}
+            {%- if section.settings.phone != blank or section.settings.email != blank -%}
+              <ul class="ie-footer__contact-links" role="list">
+                {%- if section.settings.phone != blank -%}
+                  {%- assign phone_href = section.settings.phone | replace: ' ', '' | replace: '-', '' | replace: '.', '' -%}
+                  <li>
+                    <a class="ie-footer__contact-link" href="tel:{{ phone_href | escape }}">
+                      {{ section.settings.phone | escape }}
+                    </a>
+                  </li>
+                {%- endif -%}
 
-              {%- if section.settings.email != blank -%}
-                <li>
-                  <a class="ie-footer__contact-link" href="mailto:{{ section.settings.email | escape }}">
-                    {{ section.settings.email | escape }}
-                  </a>
-                </li>
-              {%- endif -%}
-            </ul>
-          {%- endif -%}
+                {%- if section.settings.email != blank -%}
+                  <li>
+                    <a class="ie-footer__contact-link" href="mailto:{{ section.settings.email | escape }}">
+                      {{ section.settings.email | escape }}
+                    </a>
+                  </li>
+                {%- endif -%}
+              </ul>
+            {%- endif -%}
 
-          {%- if section.settings.hours != blank -%}
-            <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
-          {%- endif -%}
+            {%- if section.settings.hours != blank -%}
+              <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
+            {%- endif -%}
+          </div>
         </div>
       </div>
     </div>
@@ -151,169 +168,36 @@
   "tag": "footer",
   "enabled_on": {"groups": ["footer"]},
   "settings": [
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "Esquema de color",
-      "default": "scheme-4"
-    },
-    {
-      "type": "header",
-      "content": "Marca"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logotipo"
-    },
-    {
-      "type": "richtext",
-      "id": "brand_copy",
-      "label": "Texto breve de marca",
-      "default": "<p>Soluciones de madera industrializables para exterior y espacios habitables.</p>"
-    },
-    {
-      "type": "header",
-      "content": "Contacto"
-    },
-    {
-      "type": "text",
-      "id": "location_heading",
-      "label": "Título de ubicación",
-      "default": "Ubicación"
-    },
-    {
-      "type": "text",
-      "id": "contact_heading",
-      "label": "Título de contacto",
-      "default": "Contacto"
-    },
-    {
-      "type": "richtext",
-      "id": "address",
-      "label": "Dirección"
-    },
-    {
-      "type": "text",
-      "id": "phone",
-      "label": "Teléfono"
-    },
-    {
-      "type": "text",
-      "id": "email",
-      "label": "Email"
-    },
-    {
-      "type": "text",
-      "id": "hours",
-      "label": "Horario / nota de atención"
-    },
-    {
-      "type": "header",
-      "content": "Navegación"
-    },
-    {
-      "type": "text",
-      "id": "solutions_heading",
-      "label": "Título Soluciones",
-      "default": "Soluciones"
-    },
-    {
-      "type": "link_list",
-      "id": "solutions_menu",
-      "label": "Menú Soluciones"
-    },
-    {
-      "type": "text",
-      "id": "technical_heading",
-      "label": "Título Técnico",
-      "default": "Técnico"
-    },
-    {
-      "type": "link_list",
-      "id": "technical_menu",
-      "label": "Menú Técnico"
-    },
-    {
-      "type": "text",
-      "id": "company_heading",
-      "label": "Título Empresa",
-      "default": "Empresa"
-    },
-    {
-      "type": "link_list",
-      "id": "company_menu",
-      "label": "Menú Empresa"
-    },
-    {
-      "type": "text",
-      "id": "legal_heading",
-      "label": "Título Legal",
-      "default": "Legal y ayuda"
-    },
-    {
-      "type": "link_list",
-      "id": "legal_menu",
-      "label": "Menú Legal"
-    },
-    {
-      "type": "header",
-      "content": "Utilidades"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_search",
-      "label": "Mostrar Buscar",
-      "default": true
-    },
-    {
-      "type": "url",
-      "id": "budget_link",
-      "label": "Enlace Presupuesto general"
-    },
-    {
-      "type": "text",
-      "id": "budget_label",
-      "label": "Texto Presupuesto general",
-      "default": "Pedir presupuesto"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_account",
-      "label": "Mostrar Cuenta",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_cart",
-      "label": "Mostrar Carrito",
-      "default": false
-    },
-    {
-      "type": "header",
-      "content": "Espaciado"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 32,
-      "max": 96,
-      "step": 8,
-      "unit": "px",
-      "label": "Padding superior",
-      "default": 48
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 16,
-      "max": 64,
-      "step": 8,
-      "unit": "px",
-      "label": "Padding inferior",
-      "default": 24
-    }
+    {"type":"color_scheme","id":"color_scheme","label":"Esquema de color","default":"scheme-4"},
+    {"type":"header","content":"Marca"},
+    {"type":"image_picker","id":"logo","label":"Logotipo"},
+    {"type":"richtext","id":"brand_copy","label":"Texto breve de marca","default":"<p>Diseñamos y construimos soluciones en madera a medida para exterior y espacios habitables, combinando diseño, funcionalidad y durabilidad.</p>"},
+    {"type":"header","content":"Contacto"},
+    {"type":"text","id":"location_heading","label":"Título de ubicación","default":"Ubicación"},
+    {"type":"text","id":"contact_heading","label":"Título de contacto","default":"Contacto"},
+    {"type":"richtext","id":"address","label":"Dirección"},
+    {"type":"text","id":"phone","label":"Teléfono"},
+    {"type":"text","id":"email","label":"Email"},
+    {"type":"text","id":"hours","label":"Horario / nota de atención"},
+    {"type":"header","content":"Navegación"},
+    {"type":"text","id":"solutions_heading","label":"Título Soluciones","default":"Soluciones"},
+    {"type":"link_list","id":"solutions_menu","label":"Menú Soluciones"},
+    {"type":"text","id":"technical_heading","label":"Título Técnico","default":"Técnico"},
+    {"type":"link_list","id":"technical_menu","label":"Menú Técnico"},
+    {"type":"text","id":"company_heading","label":"Título Empresa","default":"Empresa"},
+    {"type":"link_list","id":"company_menu","label":"Menú Empresa"},
+    {"type":"text","id":"legal_heading","label":"Título Legal","default":"Legal y ayuda"},
+    {"type":"link_list","id":"legal_menu","label":"Menú Legal"},
+    {"type":"header","content":"Utilidades"},
+    {"type":"checkbox","id":"show_search","label":"Mostrar Buscar","default":true},
+    {"type":"url","id":"budget_link","label":"Enlace Presupuesto general"},
+    {"type":"text","id":"budget_label","label":"Texto Presupuesto general","default":"Pedir presupuesto"},
+    {"type":"checkbox","id":"show_account","label":"Mostrar Cuenta","default":false},
+    {"type":"checkbox","id":"show_cart","label":"Mostrar Carrito","default":false},
+    {"type":"header","content":"Espaciado"},
+    {"type":"range","id":"padding_top","min":32,"max":96,"step":8,"unit":"px","label":"Padding superior","default":40},
+    {"type":"range","id":"padding_bottom","min":16,"max":64,"step":8,"unit":"px","label":"Padding inferior","default":20}
   ],
-  "presets": [{"name": "IE Footer optimizado"}]
+  "presets": [{"name":"IE Footer optimizado"}]
 }
 {% endschema %}
