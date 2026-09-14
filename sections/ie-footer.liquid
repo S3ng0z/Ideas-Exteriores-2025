@@ -84,12 +84,35 @@
           key: 'company',
           section_id: section.id
         %}
-        {% render 'ie-footer-menu',
-          menu: section.settings.legal_menu,
-          heading: section.settings.legal_heading,
-          key: 'legal',
-          section_id: section.id
-        %}
+
+        {%- if section.settings.legal_menu != blank and section.settings.legal_menu.links.size > 0 -%}
+          {% render 'ie-footer-menu',
+            menu: section.settings.legal_menu,
+            heading: section.settings.legal_heading,
+            key: 'legal',
+            section_id: section.id
+          %}
+        {%- else -%}
+          <nav class="ie-footer__menu" aria-labelledby="ie-footer-legal-{{ section.id }}">
+            <h2 class="ie-footer__nav-heading" id="ie-footer-legal-{{ section.id }}">
+              {{ section.settings.legal_heading | escape }}
+            </h2>
+            <ul class="ie-footer__nav-list" role="list">
+              {%- if shop.privacy_policy != blank -%}
+                <li><a class="ie-footer__nav-link" href="{{ shop.privacy_policy.url }}">{{ shop.privacy_policy.title | escape }}</a></li>
+              {%- endif -%}
+              {%- if shop.terms_of_service != blank -%}
+                <li><a class="ie-footer__nav-link" href="{{ shop.terms_of_service.url }}">{{ shop.terms_of_service.title | escape }}</a></li>
+              {%- endif -%}
+              {%- if shop.refund_policy != blank -%}
+                <li><a class="ie-footer__nav-link" href="{{ shop.refund_policy.url }}">{{ shop.refund_policy.title | escape }}</a></li>
+              {%- endif -%}
+              {%- if shop.shipping_policy != blank -%}
+                <li><a class="ie-footer__nav-link" href="{{ shop.shipping_policy.url }}">{{ shop.shipping_policy.title | escape }}</a></li>
+              {%- endif -%}
+            </ul>
+          </nav>
+        {%- endif -%}
       </div>
     </div>
 
