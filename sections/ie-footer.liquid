@@ -12,10 +12,10 @@
           <a class="ie-footer__logo-link" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}">
             {{
               section.settings.logo
-              | image_url: width: 520
+              | image_url: width: 440
               | image_tag:
-                widths: '180, 260, 360, 520',
-                sizes: '(max-width: 640px) 180px, 220px',
+                widths: '160, 220, 320, 440',
+                sizes: '(max-width: 640px) 160px, 190px',
                 class: 'ie-footer__logo',
                 loading: 'lazy',
                 alt: shop.name
@@ -30,37 +30,42 @@
         {%- endif -%}
       </div>
 
-      <div class="ie-footer__contact">
-        <p class="ie-footer__eyebrow">{{ section.settings.contact_heading | escape }}</p>
+      <div class="ie-footer__contact" aria-label="Información de contacto">
+        <div class="ie-footer__contact-block">
+          <p class="ie-footer__eyebrow">{{ section.settings.location_heading | escape }}</p>
+          {%- if section.settings.address != blank -%}
+            <address class="ie-footer__location rte">{{ section.settings.address }}</address>
+          {%- endif -%}
+        </div>
 
-        {%- if section.settings.address != blank -%}
-          <address class="ie-footer__location rte">{{ section.settings.address }}</address>
-        {%- endif -%}
+        <div class="ie-footer__contact-block">
+          <p class="ie-footer__eyebrow">{{ section.settings.contact_heading | escape }}</p>
 
-        {%- if section.settings.phone != blank or section.settings.email != blank -%}
-          <ul class="ie-footer__contact-links" role="list">
-            {%- if section.settings.phone != blank -%}
-              {%- assign phone_href = section.settings.phone | replace: ' ', '' | replace: '-', '' | replace: '.', '' -%}
-              <li>
-                <a class="ie-footer__contact-link" href="tel:{{ phone_href | escape }}">
-                  {{ section.settings.phone | escape }}
-                </a>
-              </li>
-            {%- endif -%}
+          {%- if section.settings.phone != blank or section.settings.email != blank -%}
+            <ul class="ie-footer__contact-links" role="list">
+              {%- if section.settings.phone != blank -%}
+                {%- assign phone_href = section.settings.phone | replace: ' ', '' | replace: '-', '' | replace: '.', '' -%}
+                <li>
+                  <a class="ie-footer__contact-link" href="tel:{{ phone_href | escape }}">
+                    {{ section.settings.phone | escape }}
+                  </a>
+                </li>
+              {%- endif -%}
 
-            {%- if section.settings.email != blank -%}
-              <li>
-                <a class="ie-footer__contact-link" href="mailto:{{ section.settings.email | escape }}">
-                  {{ section.settings.email | escape }}
-                </a>
-              </li>
-            {%- endif -%}
-          </ul>
-        {%- endif -%}
+              {%- if section.settings.email != blank -%}
+                <li>
+                  <a class="ie-footer__contact-link" href="mailto:{{ section.settings.email | escape }}">
+                    {{ section.settings.email | escape }}
+                  </a>
+                </li>
+              {%- endif -%}
+            </ul>
+          {%- endif -%}
 
-        {%- if section.settings.hours != blank -%}
-          <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
-        {%- endif -%}
+          {%- if section.settings.hours != blank -%}
+            <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
+          {%- endif -%}
+        </div>
       </div>
     </div>
 
@@ -93,7 +98,7 @@
             section_id: section.id
           %}
         {%- else -%}
-          <nav class="ie-footer__menu" aria-labelledby="ie-footer-legal-{{ section.id }}">
+          <nav class="ie-footer__menu ie-footer__menu--legal" aria-labelledby="ie-footer-legal-{{ section.id }}">
             <h2 class="ie-footer__nav-heading" id="ie-footer-legal-{{ section.id }}">
               {{ section.settings.legal_heading | escape }}
             </h2>
@@ -170,6 +175,12 @@
     {
       "type": "header",
       "content": "Contacto"
+    },
+    {
+      "type": "text",
+      "id": "location_heading",
+      "label": "Título de ubicación",
+      "default": "Ubicación"
     },
     {
       "type": "text",
@@ -286,21 +297,21 @@
       "type": "range",
       "id": "padding_top",
       "min": 32,
-      "max": 128,
+      "max": 96,
       "step": 8,
       "unit": "px",
       "label": "Padding superior",
-      "default": 72
+      "default": 48
     },
     {
       "type": "range",
       "id": "padding_bottom",
-      "min": 24,
-      "max": 96,
+      "min": 16,
+      "max": 64,
       "step": 8,
       "unit": "px",
       "label": "Padding inferior",
-      "default": 40
+      "default": 24
     }
   ],
   "presets": [{"name": "IE Footer optimizado"}]
