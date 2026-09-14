@@ -1,4 +1,4 @@
-/* Ideas Exteriores — footer component.
+/* Ideas Exteriores — optimized footer component.
  * Uses the active Shopify color scheme; it does not define a parallel palette.
  */
 
@@ -9,7 +9,7 @@
 .ie-footer__inner {
   width: min(100%, 1440px);
   margin-inline: auto;
-  padding-block: var(--ie-footer-padding-top) var(--ie-footer-padding-bottom);
+  padding-block: var(--ie-footer-padding-top, 72px) var(--ie-footer-padding-bottom, 40px);
   padding-inline: max(24px, var(--page-margin, 24px));
 }
 
@@ -25,10 +25,19 @@
   max-width: 660px;
 }
 
-.ie-footer__logo-link {
+.ie-footer__logo-link,
+.ie-footer__brand-name {
   display: inline-flex;
   align-items: center;
   max-width: 100%;
+  color: inherit;
+}
+
+.ie-footer__brand-name {
+  font-family: var(--font-heading--family);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.05;
+  text-decoration: none;
 }
 
 .ie-footer__logo {
@@ -67,6 +76,7 @@
 .ie-footer__location {
   margin-block-start: 16px;
   font-size: 0.9375rem;
+  font-style: normal;
   line-height: 1.55;
 }
 
@@ -76,7 +86,8 @@
 
 .ie-footer__contact-links,
 .ie-footer__utility-links,
-.ie-footer__nav-list {
+.ie-footer__nav-list,
+.ie-footer__nav-sublist {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -98,6 +109,9 @@
 }
 
 .ie-footer__contact-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: 0.9375rem;
 }
 
@@ -139,11 +153,27 @@
   gap: 10px;
 }
 
-.ie-footer__nav-link {
-  display: inline;
+.ie-footer__nav-sublist {
+  display: grid;
+  gap: 8px;
+  margin-block-start: 8px;
+  padding-inline-start: 12px;
+}
+
+.ie-footer__nav-link,
+.ie-footer__utility-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: 0.9375rem;
   line-height: 1.45;
   text-decoration-color: transparent;
+}
+
+.ie-footer__nav-link--secondary {
+  min-height: 36px;
+  font-size: 0.875rem;
+  opacity: 0.86;
 }
 
 .ie-footer__nav-link:hover,
@@ -153,6 +183,15 @@
 .ie-footer__utility-link:hover,
 .ie-footer__utility-link:focus-visible {
   text-decoration-color: currentcolor;
+}
+
+.ie-footer__nav-link:focus-visible,
+.ie-footer__contact-link:focus-visible,
+.ie-footer__utility-link:focus-visible,
+.ie-footer__logo-link:focus-visible,
+.ie-footer__brand-name:focus-visible {
+  outline: 2px solid currentcolor;
+  outline-offset: 3px;
 }
 
 .ie-footer__nav-link[aria-current='page'] {
@@ -177,7 +216,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 8px 20px;
+  gap: 4px 20px;
 }
 
 .ie-footer__utility-link {
