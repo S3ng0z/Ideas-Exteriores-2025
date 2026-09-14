@@ -1,28 +1,31 @@
-/* Ideas Exteriores — refined footer component.
- * Uses the active Shopify color scheme; no parallel palette is introduced.
+/* Ideas Exteriores — minimal, editorial footer refinement.
+ * Keeps the active Shopify background scheme while using the approved Ink tone
+ * for readable, restrained typography on Sage.
  */
 
 .ie-footer {
+  --ie-footer-ink: var(--ie-color-ink, #1f231e);
+  color: var(--ie-footer-ink);
   font-family: var(--font-body--family);
 }
 
 .ie-footer__inner {
-  width: min(100%, 1280px);
+  width: min(100%, 1320px);
   margin-inline: auto;
-  padding-block: var(--ie-footer-padding-top, 48px) var(--ie-footer-padding-bottom, 24px);
+  padding-block: var(--ie-footer-padding-top, 40px) var(--ie-footer-padding-bottom, 20px);
   padding-inline: max(24px, var(--page-margin, 24px));
 }
 
 .ie-footer__masthead {
   display: grid;
-  grid-template-columns: minmax(240px, 0.82fr) minmax(0, 1.18fr);
-  gap: clamp(40px, 6vw, 88px);
-  align-items: start;
-  padding-block-end: 32px;
+  grid-template-columns: minmax(300px, 0.9fr) minmax(560px, 1.1fr);
+  gap: clamp(56px, 7vw, 112px);
+  align-items: center;
+  padding-block-end: 28px;
 }
 
 .ie-footer__brand {
-  max-width: 470px;
+  max-width: 520px;
 }
 
 .ie-footer__logo-link,
@@ -35,22 +38,23 @@
 
 .ie-footer__brand-name {
   font-family: var(--font-heading--family);
-  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.15rem);
   line-height: 1.05;
   text-decoration: none;
 }
 
 .ie-footer__logo {
   display: block;
-  width: min(190px, 55vw);
+  width: min(240px, 60vw);
   height: auto;
 }
 
 .ie-footer__brand-copy {
-  max-width: 44ch;
-  margin-block-start: 16px;
-  font-size: 0.9375rem;
-  line-height: 1.55;
+  max-width: 40ch;
+  margin-block-start: 14px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  opacity: 0.88;
 }
 
 .ie-footer__brand-copy > * {
@@ -59,11 +63,11 @@
 
 .ie-footer__contact {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(24px, 4vw, 56px);
-  width: 100%;
-  max-width: 680px;
+  grid-template-columns: minmax(250px, 1.05fr) minmax(260px, 0.95fr);
+  gap: clamp(36px, 5vw, 72px);
+  width: min(100%, 660px);
   justify-self: end;
+  align-self: center;
 }
 
 .ie-footer__contact-block {
@@ -76,16 +80,16 @@
   font-size: 0.6875rem;
   font-weight: 600;
   line-height: 1.3;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  opacity: 0.82;
+  opacity: 0.72;
 }
 
 .ie-footer__location {
-  margin-block-start: 10px;
+  margin-block-start: 8px;
   font-size: 0.8125rem;
   font-style: normal;
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .ie-footer__location > * {
@@ -102,8 +106,9 @@
 }
 
 .ie-footer__contact-links {
-  display: grid;
-  gap: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 18px;
   margin-block-start: 6px;
 }
 
@@ -111,8 +116,8 @@
 .ie-footer__utility-link,
 .ie-footer__nav-link {
   color: inherit;
-  text-underline-offset: 0.2em;
-  text-decoration-thickness: 0.075em;
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: 0.07em;
 }
 
 .ie-footer__contact-link {
@@ -120,16 +125,15 @@
   align-items: center;
   min-height: 30px;
   font-size: 0.8125rem;
-  line-height: 1.4;
+  line-height: 1.35;
   text-decoration-color: transparent;
 }
 
 .ie-footer__hours {
-  max-width: 34ch;
-  margin: 8px 0 0;
+  margin: 7px 0 0;
   font-size: 0.75rem;
-  line-height: 1.45;
-  opacity: 0.86;
+  line-height: 1.4;
+  opacity: 0.74;
 }
 
 .ie-footer__nav,
@@ -145,14 +149,18 @@
   top: 0;
   height: 1px;
   background: currentcolor;
-  opacity: 0.18;
+  opacity: 0.16;
 }
 
 .ie-footer__nav-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1.35fr) minmax(0, 0.85fr) minmax(0, 0.9fr);
-  gap: 28px clamp(28px, 4vw, 56px);
-  padding-block: 28px 30px;
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(320px, 1.55fr)
+    minmax(150px, 0.72fr)
+    minmax(180px, 0.82fr);
+  gap: 24px clamp(30px, 3.5vw, 52px);
+  padding-block: 24px 28px;
 }
 
 .ie-footer__menu {
@@ -160,50 +168,55 @@
 }
 
 .ie-footer__nav-heading {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   font-family: var(--font-body--family) !important;
-  font-size: 1rem !important;
+  font-size: 0.875rem !important;
   font-weight: 600 !important;
   line-height: 1.25 !important;
-  letter-spacing: 0.01em !important;
+  letter-spacing: 0 !important;
   text-transform: none !important;
 }
 
 .ie-footer__nav-list {
   display: grid;
-  gap: 2px;
+  gap: 1px;
 }
 
 .ie-footer__menu--solutions .ie-footer__nav-list {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 22px;
+  column-gap: 20px;
 }
 
 .ie-footer__nav-sublist {
   display: grid;
-  gap: 3px;
-  margin-block-start: 3px;
-  padding-inline-start: 10px;
+  gap: 2px;
+  margin-block-start: 2px;
+  padding-inline-start: 8px;
 }
 
 .ie-footer__nav-link,
 .ie-footer__utility-link {
   display: inline-flex;
   align-items: center;
-  min-height: 28px;
-  font-size: 0.8125rem;
-  line-height: 1.4;
+  min-height: 27px;
+  font-size: 0.78125rem;
+  line-height: 1.35;
   text-decoration-color: transparent;
+  opacity: 0.9;
 }
 
 .ie-footer__nav-link {
-  max-width: 28ch;
+  max-width: 30ch;
+}
+
+.ie-footer__menu--technical .ie-footer__nav-link {
+  max-width: none;
 }
 
 .ie-footer__nav-link--secondary {
-  min-height: 26px;
-  font-size: 0.78125rem;
-  opacity: 0.82;
+  min-height: 25px;
+  font-size: 0.75rem;
+  opacity: 0.78;
 }
 
 .ie-footer__nav-link:hover,
@@ -212,6 +225,7 @@
 .ie-footer__contact-link:focus-visible,
 .ie-footer__utility-link:hover,
 .ie-footer__utility-link:focus-visible {
+  opacity: 1;
   text-decoration-color: currentcolor;
 }
 
@@ -225,36 +239,43 @@
 }
 
 .ie-footer__nav-link[aria-current='page'] {
+  opacity: 1;
   text-decoration-color: currentcolor;
 }
 
 .ie-footer__bottom {
   display: flex;
-  gap: 16px 28px;
+  gap: 12px 24px;
   align-items: center;
   justify-content: space-between;
-  min-height: 48px;
-  padding-block-start: 14px;
+  min-height: 40px;
+  padding-block-start: 12px;
 }
 
 .ie-footer__copyright {
   margin: 0;
   font-size: 0.6875rem;
   line-height: 1.4;
-  opacity: 0.8;
+  opacity: 0.68;
 }
 
 .ie-footer__utility-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 2px 16px;
+  gap: 2px 14px;
 }
 
 .ie-footer__utility-link {
-  min-height: 28px;
+  min-height: 26px;
   font-size: 0.6875rem;
   line-height: 1.4;
+}
+
+@media screen and (min-width: 1101px) {
+  .ie-footer__menu--technical .ie-footer__nav-link {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -263,17 +284,22 @@
   }
 
   .ie-footer__masthead {
-    grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
-    gap: 40px;
+    grid-template-columns: minmax(240px, 0.78fr) minmax(0, 1.22fr);
+    gap: 44px;
+  }
+
+  .ie-footer__logo {
+    width: min(220px, 58vw);
   }
 
   .ie-footer__contact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
 
   .ie-footer__nav-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px 44px;
+    gap: 28px 44px;
   }
 
   .ie-footer__menu--solutions .ie-footer__nav-list {
@@ -288,8 +314,8 @@
 
   .ie-footer__masthead {
     grid-template-columns: 1fr;
-    gap: 28px;
-    padding-block-end: 28px;
+    gap: 24px;
+    padding-block-end: 24px;
   }
 
   .ie-footer__brand {
@@ -304,21 +330,26 @@
 
 @media screen and (max-width: 640px) {
   .ie-footer__inner {
-    padding-block: 36px 20px;
+    padding-block: 32px 18px;
   }
 
   .ie-footer__logo {
-    width: min(160px, 52vw);
+    width: min(190px, 56vw);
   }
 
   .ie-footer__brand-copy {
-    margin-block-start: 14px;
+    margin-block-start: 12px;
     font-size: 0.875rem;
   }
 
   .ie-footer__contact {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 18px;
+  }
+
+  .ie-footer__contact-links {
+    display: grid;
+    gap: 0;
   }
 
   .ie-footer__contact-link {
@@ -329,15 +360,15 @@
   .ie-footer__nav-grid {
     grid-template-columns: 1fr;
     gap: 0;
-    padding-block: 18px 22px;
+    padding-block: 14px 18px;
   }
 
   .ie-footer__menu {
-    padding-block: 18px;
+    padding-block: 16px;
   }
 
   .ie-footer__menu + .ie-footer__menu {
-    border-top: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+    border-top: 1px solid color-mix(in srgb, currentColor 14%, transparent);
   }
 
   .ie-footer__menu--solutions .ie-footer__nav-list {
@@ -345,7 +376,7 @@
   }
 
   .ie-footer__nav-heading {
-    margin-block-end: 10px;
+    margin-block-end: 8px;
     font-size: 0.9375rem !important;
   }
 
@@ -363,9 +394,9 @@
   .ie-footer__bottom {
     align-items: flex-start;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     min-height: auto;
-    padding-block-start: 18px;
+    padding-block-start: 16px;
   }
 
   .ie-footer__copyright,
