@@ -1,12 +1,21 @@
-/* Ideas Exteriores — final footer alignment.
- * Editorial, minimal and responsive. Uses current Shopify color scheme
- * with Ink text for contrast over Sage.
+/* Ideas Exteriores — footer exact visual specification.
+ * Scope: logo scale, presentation/contact alignment, single-column Solutions,
+ * no desktop wraps in Solutions/Technical and white footer typography.
  */
 
 .ie-footer {
-  --ie-footer-ink: var(--ie-color-ink, #1f231e);
-  color: var(--ie-footer-ink);
+  --ie-footer-text: #ffffff;
+  color: var(--ie-footer-text);
   font-family: var(--font-body--family);
+}
+
+.ie-footer,
+.ie-footer a,
+.ie-footer p,
+.ie-footer h2,
+.ie-footer address,
+.ie-footer .rte {
+  color: var(--ie-footer-text);
 }
 
 .ie-footer__inner {
@@ -16,17 +25,18 @@
   padding-inline: max(24px, var(--page-margin, 24px));
 }
 
+/* Top: logo at left. Presentation first, then location/contact at right. */
 .ie-footer__masthead {
   display: grid;
-  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
-  gap: clamp(64px, 8vw, 128px);
+  grid-template-columns: minmax(360px, 0.86fr) minmax(0, 1.14fr);
+  gap: clamp(64px, 7vw, 112px);
   align-items: start;
   padding-block-end: 30px;
 }
 
 .ie-footer__brand {
   align-self: start;
-  max-width: 360px;
+  max-width: 390px;
 }
 
 .ie-footer__logo-link,
@@ -39,28 +49,31 @@
 
 .ie-footer__brand-name {
   font-family: var(--font-heading--family);
-  font-size: clamp(1.7rem, 2.5vw, 2.25rem);
+  font-size: clamp(1.8rem, 2.6vw, 2.35rem);
   line-height: 1.05;
   text-decoration: none;
 }
 
 .ie-footer__logo {
   display: block;
-  width: min(300px, 68vw);
+  width: min(360px, 76vw);
   height: auto;
 }
 
 .ie-footer__masthead-content {
   min-width: 0;
-  padding-block-start: 4px;
+  width: min(100%, 760px);
+  justify-self: end;
+  padding-block-start: 2px;
 }
 
 .ie-footer__brand-copy {
-  max-width: 62ch;
-  margin: 0 0 22px;
+  max-width: 72ch;
+  margin: 0 0 24px;
   font-size: 0.9375rem;
-  line-height: 1.6;
-  opacity: 0.9;
+  font-weight: 400;
+  line-height: 1.55;
+  opacity: 0.96;
 }
 
 .ie-footer__brand-copy > * {
@@ -70,8 +83,9 @@
 .ie-footer__contact {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(42px, 5vw, 72px);
-  width: min(100%, 680px);
+  gap: clamp(44px, 5vw, 76px);
+  width: 100%;
+  align-items: start;
 }
 
 .ie-footer__contact-block {
@@ -81,7 +95,7 @@
 .ie-footer__eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
   margin: 0;
   font-family: var(--font-body--family);
   font-size: 0.6875rem;
@@ -89,14 +103,15 @@
   line-height: 1.3;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  opacity: 0.75;
+  opacity: 0.92;
 }
 
 .ie-footer__eyebrow-icon {
   display: inline-flex;
-  width: 14px;
-  height: 14px;
-  flex: 0 0 14px;
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+  color: currentcolor;
 }
 
 .ie-footer__eyebrow-icon svg {
@@ -109,6 +124,7 @@
   font-size: 0.8125rem;
   font-style: normal;
   line-height: 1.5;
+  opacity: 0.96;
 }
 
 .ie-footer__location > * {
@@ -127,7 +143,7 @@
 .ie-footer__contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px 18px;
+  gap: 0 20px;
   margin-block-start: 7px;
 }
 
@@ -152,9 +168,10 @@
   margin: 7px 0 0;
   font-size: 0.75rem;
   line-height: 1.4;
-  opacity: 0.75;
+  opacity: 0.86;
 }
 
+/* Navigation */
 .ie-footer__nav,
 .ie-footer__bottom {
   position: relative;
@@ -168,17 +185,17 @@
   top: 0;
   height: 1px;
   background: currentcolor;
-  opacity: 0.15;
+  opacity: 0.22;
 }
 
 .ie-footer__nav-grid {
   display: grid;
   grid-template-columns:
-    minmax(230px, 1fr)
-    minmax(360px, 1.45fr)
-    minmax(150px, 0.7fr)
-    minmax(180px, 0.78fr);
-  gap: 24px clamp(32px, 4vw, 56px);
+    minmax(320px, 1.08fr)
+    minmax(390px, 1.38fr)
+    minmax(150px, 0.62fr)
+    minmax(180px, 0.72fr);
+  gap: 24px clamp(28px, 3.2vw, 48px);
   padding-block: 24px 28px;
 }
 
@@ -189,53 +206,55 @@
 .ie-footer__nav-heading {
   margin: 0 0 10px;
   font-family: var(--font-body--family) !important;
-  font-size: 0.875rem !important;
+  font-size: 0.9375rem !important;
   font-weight: 600 !important;
   line-height: 1.25 !important;
   letter-spacing: 0 !important;
   text-transform: none !important;
+  color: var(--ie-footer-text) !important;
 }
 
 .ie-footer__nav-list {
   display: grid;
-  gap: 1px;
+  gap: 0;
 }
 
+/* Soluciones: exactly one column, compact rows. */
 .ie-footer__menu--solutions .ie-footer__nav-list {
   grid-template-columns: 1fr;
 }
 
 .ie-footer__nav-sublist {
   display: grid;
-  gap: 2px;
-  margin-block-start: 2px;
+  gap: 0;
+  margin-block-start: 0;
   padding-inline-start: 8px;
 }
 
 .ie-footer__nav-link,
 .ie-footer__utility-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 27px;
+  display: inline-block;
+  min-height: 0;
+  padding-block: 4px;
   font-size: 0.78125rem;
-  line-height: 1.35;
+  line-height: 1.25;
   text-decoration-color: transparent;
-  opacity: 0.9;
+  opacity: 0.94;
 }
 
 .ie-footer__nav-link {
-  max-width: 34ch;
+  max-width: none;
 }
 
+/* Desktop: no line breaks in Solutions or Technical values. */
+.ie-footer__menu--solutions .ie-footer__nav-link,
 .ie-footer__menu--technical .ie-footer__nav-link {
-  max-width: none;
   white-space: nowrap;
 }
 
 .ie-footer__nav-link--secondary {
-  min-height: 25px;
   font-size: 0.75rem;
-  opacity: 0.78;
+  opacity: 0.84;
 }
 
 .ie-footer__nav-link:hover,
@@ -275,7 +294,7 @@
   margin: 0;
   font-size: 0.6875rem;
   line-height: 1.4;
-  opacity: 0.68;
+  opacity: 0.82;
 }
 
 .ie-footer__utility-links {
@@ -286,19 +305,22 @@
 }
 
 .ie-footer__utility-link {
-  min-height: 26px;
   font-size: 0.6875rem;
   line-height: 1.4;
 }
 
 @media screen and (max-width: 1180px) {
   .ie-footer__masthead {
-    grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+    grid-template-columns: minmax(300px, 0.78fr) minmax(0, 1.22fr);
     gap: 48px;
   }
 
   .ie-footer__logo {
-    width: min(260px, 64vw);
+    width: min(320px, 68vw);
+  }
+
+  .ie-footer__masthead-content {
+    width: 100%;
   }
 
   .ie-footer__nav-grid {
@@ -306,6 +328,7 @@
     gap: 28px 44px;
   }
 
+  .ie-footer__menu--solutions .ie-footer__nav-link,
   .ie-footer__menu--technical .ie-footer__nav-link {
     white-space: normal;
   }
@@ -318,7 +341,7 @@
 
   .ie-footer__masthead {
     grid-template-columns: 1fr;
-    gap: 26px;
+    gap: 24px;
     padding-block-end: 24px;
   }
 
@@ -326,7 +349,12 @@
     max-width: 520px;
   }
 
+  .ie-footer__logo {
+    width: min(280px, 72vw);
+  }
+
   .ie-footer__masthead-content {
+    justify-self: start;
     padding-block-start: 0;
   }
 
@@ -341,7 +369,7 @@
   }
 
   .ie-footer__logo {
-    width: min(210px, 60vw);
+    width: min(240px, 70vw);
   }
 
   .ie-footer__brand-copy {
@@ -375,7 +403,7 @@
   }
 
   .ie-footer__menu + .ie-footer__menu {
-    border-top: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
   }
 
   .ie-footer__nav-heading {
@@ -385,8 +413,12 @@
 
   .ie-footer__nav-link,
   .ie-footer__utility-link {
+    display: inline-flex;
+    align-items: center;
     min-height: 44px;
+    padding-block: 0;
     font-size: 0.875rem;
+    white-space: normal !important;
   }
 
   .ie-footer__nav-link--secondary {
