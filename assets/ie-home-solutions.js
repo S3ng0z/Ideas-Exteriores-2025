@@ -2,15 +2,15 @@
   'use strict';
 
   var COPY = {
-    heading: 'Casas y casetas prefabricadas de madera',
+    heading: 'Sistemas constructivos en madera',
     body:
-      '<p class="ie-home-solutions__intro">Trabajamos con tres sistemas constructivos para casas, casetas y espacios habitables, seleccionados según el uso, el nivel de acabado y el alcance de cada proyecto.</p>' +
+      '<p class="ie-home-solutions__intro">Comercializamos tres sistemas constructivos en madera para casas, casetas y espacios habitables. Cada uno responde a necesidades distintas de configuración, acabado y montaje.</p>' +
       '<ul class="ie-home-solutions__systems">' +
-        '<li><strong>Sistema europeo</strong><span>Solución prefabricada en madera basada en modelos definidos y configuraciones estandarizadas, con piezas preparadas para un montaje preciso y un acabado natural.</span></li>' +
-        '<li><strong>Entramado ligero</strong><span>Sistema estructural ligero y versátil que permite resolver distintas tipologías con configuraciones y acabados definidos.</span></li>' +
+        '<li><strong>Sistema europeo</strong><span>Solución prefabricada en madera con modelos definidos, piezas preparadas para un montaje preciso y un acabado natural.</span></li>' +
+        '<li><strong>Entramado ligero</strong><span>Sistema estructural ligero y versátil, configurable según la tipología y el nivel de acabado.</span></li>' +
         '<li><strong>Panel SIP</strong><span>Sistema prefabricado con paneles estructurales aislados, orientado a una ejecución precisa y una envolvente eficiente.</span></li>' +
       '</ul>' +
-      '<p class="ie-home-solutions__closing">Te ayudamos a elegir la opción más adecuada y a definir suministro, acabado y montaje con un alcance claro desde el presupuesto.</p>'
+      '<p class="ie-home-solutions__closing">Te ayudamos a elegir el sistema más adecuado y a definir con claridad el alcance de suministro y montaje.</p>'
   };
 
   function findSection() {
