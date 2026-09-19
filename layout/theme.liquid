@@ -38,6 +38,8 @@
     {% if request.page_type == 'index' %}
       {{ 'ie-home-hero.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'ie-home-hero.js' | asset_url }}" defer></script>
+      {{ 'ie-home-solutions.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'ie-home-solutions.js' | asset_url }}" defer></script>
     {% endif %}
     {%- render 'color-schemes' -%}
 

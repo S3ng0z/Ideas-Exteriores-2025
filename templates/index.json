@@ -199,10 +199,10 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Casas & Casetas Prefabricadas | Ideas Exteriores</h2>",
+                "text": "<h2>Casas y casetas prefabricadas de madera</h2>",
                 "width": "100%",
                 "max_width": "normal",
-                "alignment": "center",
+                "alignment": "left",
                 "type_preset": "h4",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -224,7 +224,7 @@
             "text_Dgm3TY": {
               "type": "text",
               "settings": {
-                "text": "<p>En <strong>IDEAS EXTERIORES</strong> diseñamos y construimos casas y casetas de madera totalmente personalizadas (95 % de nuestros proyectos), adaptadas a tus ideas y necesidades.</p><p>Utilizamos dos sistemas constructivos:</p><ul><li><strong>Entramado ligero</strong>: ideal para diseños únicos y terrenos con desniveles.</li><li><strong>Paneles SIP</strong>: soluciones sostenibles, eficientes y acogedoras.</li></ul><p><strong>Ventajas de elegirnos:</strong></p><ul><li>Diseño a medida: amplía tu hogar, potencia la iluminación o crea espacios originales.</li><li>Rapidez y calidad: montaje eficiente sin renunciar al detalle.</li><li>Sostenibilidad: ahorro energético y respeto al entorno.</li><li>Adaptabilidad: desde construcciones promocionales hasta propuestas personalizadas.</li></ul><p>Construye de forma inteligente y responsable con <strong>IDEAS EXTERIORES</strong>: tu proyecto, nuestra pasión.</p>",
+                "text": "<p>En <strong>Ideas Exteriores</strong> desarrollamos soluciones en madera para vivienda, estudio, oficina y espacio exterior a partir de modelos definidos y configurables, con un alcance claro desde el presupuesto hasta el montaje.</p><p><strong>Elige el sistema que mejor encaja con tu proyecto:</strong></p><ul><li><strong>Entramado ligero:</strong> una solución versátil para construcciones de madera con configuraciones y acabados definidos según el modelo.</li><li><strong>Panel SIP:</strong> un sistema prefabricado basado en paneles estructurales que integra aislamiento y favorece una ejecución precisa.</li></ul><p><strong>Qué aportamos:</strong></p><ul><li>Modelos, superficies y opciones comparables para decidir con claridad.</li><li>Asesoramiento técnico para definir sistema, nivel de acabado, base y montaje según el alcance del proyecto.</li><li>Suministro y montaje coordinados, con inclusiones y exclusiones claras.</li></ul><p>Cuéntanos qué espacio necesitas y te orientamos hacia la solución y configuración más adecuada.</p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
