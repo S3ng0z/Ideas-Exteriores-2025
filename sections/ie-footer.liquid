@@ -26,45 +26,47 @@
         {%- endif -%}
       </div>
 
-      {%- if section.settings.brand_copy != blank -%}
-        <div class="ie-footer__brand-copy rte">{{ section.settings.brand_copy }}</div>
-      {%- endif -%}
+      <div class="ie-footer__info">
+        {%- if section.settings.brand_copy != blank -%}
+          <div class="ie-footer__brand-copy rte">{{ section.settings.brand_copy }}</div>
+        {%- endif -%}
 
-      <div class="ie-footer__contact" aria-label="Información de contacto">
-        <div class="ie-footer__contact-block">
-          <p class="ie-footer__eyebrow">{{ section.settings.location_heading | escape }}</p>
-          {%- if section.settings.address != blank -%}
-            <address class="ie-footer__location rte">{{ section.settings.address }}</address>
-          {%- endif -%}
-        </div>
+        <div class="ie-footer__contact" aria-label="Información de contacto">
+          <div class="ie-footer__contact-block">
+            <p class="ie-footer__eyebrow">{{ section.settings.location_heading | escape }}</p>
+            {%- if section.settings.address != blank -%}
+              <address class="ie-footer__location rte">{{ section.settings.address }}</address>
+            {%- endif -%}
+          </div>
 
-        <div class="ie-footer__contact-block">
-          <p class="ie-footer__eyebrow">{{ section.settings.contact_heading | escape }}</p>
+          <div class="ie-footer__contact-block">
+            <p class="ie-footer__eyebrow">{{ section.settings.contact_heading | escape }}</p>
 
-          {%- if section.settings.phone != blank or section.settings.email != blank -%}
-            <ul class="ie-footer__contact-links" role="list">
-              {%- if section.settings.phone != blank -%}
-                {%- assign phone_href = section.settings.phone | replace: ' ', '' | replace: '-', '' | replace: '.', '' -%}
-                <li>
-                  <a class="ie-footer__contact-link" href="tel:{{ phone_href | escape }}">
-                    {{ section.settings.phone | escape }}
-                  </a>
-                </li>
-              {%- endif -%}
+            {%- if section.settings.phone != blank or section.settings.email != blank -%}
+              <ul class="ie-footer__contact-links" role="list">
+                {%- if section.settings.phone != blank -%}
+                  {%- assign phone_href = section.settings.phone | replace: ' ', '' | replace: '-', '' | replace: '.', '' -%}
+                  <li>
+                    <a class="ie-footer__contact-link" href="tel:{{ phone_href | escape }}">
+                      {{ section.settings.phone | escape }}
+                    </a>
+                  </li>
+                {%- endif -%}
 
-              {%- if section.settings.email != blank -%}
-                <li>
-                  <a class="ie-footer__contact-link" href="mailto:{{ section.settings.email | escape }}">
-                    {{ section.settings.email | escape }}
-                  </a>
-                </li>
-              {%- endif -%}
-            </ul>
-          {%- endif -%}
+                {%- if section.settings.email != blank -%}
+                  <li>
+                    <a class="ie-footer__contact-link" href="mailto:{{ section.settings.email | escape }}">
+                      {{ section.settings.email | escape }}
+                    </a>
+                  </li>
+                {%- endif -%}
+              </ul>
+            {%- endif -%}
 
-          {%- if section.settings.hours != blank -%}
-            <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
-          {%- endif -%}
+            {%- if section.settings.hours != blank -%}
+              <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
+            {%- endif -%}
+          </div>
         </div>
       </div>
     </div>

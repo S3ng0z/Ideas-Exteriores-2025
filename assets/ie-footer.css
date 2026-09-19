@@ -29,17 +29,12 @@
 .ie-footer__masthead {
   display: grid;
   grid-template-columns: minmax(300px, 340px) minmax(0, 1fr);
-  grid-template-areas:
-    "brand copy"
-    "brand contact";
   column-gap: clamp(64px, 5.5vw, 80px);
-  row-gap: 16px;
   align-items: start;
   padding-block-end: 42px;
 }
 
 .ie-footer__brand {
-  grid-area: brand;
   width: min(100%, 340px);
   min-width: 0;
 }
@@ -70,12 +65,16 @@
   height: auto;
 }
 
-.ie-footer__brand-copy {
-  grid-area: copy;
+.ie-footer__info {
   width: 100%;
-  max-width: 58ch;
-  margin: 0;
+  min-width: 0;
   padding-block-start: 2px;
+}
+
+.ie-footer__brand-copy {
+  width: 100%;
+  max-width: 62ch;
+  margin: 0 0 22px;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -91,7 +90,6 @@
 }
 
 .ie-footer__contact {
-  grid-area: contact;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: clamp(72px, 9vw, 128px);
@@ -289,11 +287,7 @@
 @media screen and (max-width: 1100px) {
   .ie-footer__masthead {
     grid-template-columns: minmax(270px, 310px) minmax(0, 1fr);
-    grid-template-areas:
-      "brand copy"
-      "brand contact";
     column-gap: 48px;
-    row-gap: 14px;
     padding-block-end: 42px;
   }
 
@@ -324,10 +318,6 @@
 
   .ie-footer__masthead {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "brand"
-      "copy"
-      "contact";
     gap: 24px;
     padding-block-end: 30px;
   }
@@ -341,9 +331,13 @@
     max-width: 280px;
   }
 
+  .ie-footer__info {
+    padding-block-start: 0;
+  }
+
   .ie-footer__brand-copy {
     max-width: 42ch;
-    padding-block-start: 0;
+    margin-block-end: 20px;
   }
 
   .ie-footer__contact {
