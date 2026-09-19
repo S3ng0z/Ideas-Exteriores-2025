@@ -28,39 +28,233 @@
       href="https://cdn.shopify.com/s/files/1/0921/0796/4760/files/Conoce_Ideas_Exteriores_-_Especialistas_en_Madera.pdf?v=1773865931"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Descargar dossier corporativo"
+      aria-label="Descargar dossier corporativo de Ideas Exteriores en PDF"
       title="Descargar dossier corporativo"
+      data-ie-dossier-download
     >
-      <img
-        src="https://cdn.shopify.com/s/files/1/0921/0796/4760/files/Download_dossier.webp?v=1775065699"
-        alt=""
-        loading="lazy"
-        width="64"
-        height="64"
-      >
+      <span class="ie-floating-utilities__dossier-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M7.75 3.75h5.4l3.1 3.1v7.4a2 2 0 0 1-2 2h-6.5a2 2 0 0 1-2-2v-8.5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round"/>
+          <path d="M13 3.95v3.3h3.25" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round"/>
+          <path d="M12 11v8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="m8.9 16 3.1 3.1 3.1-3.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+
+      <span class="ie-floating-utilities__dossier-copy">
+        <span class="ie-floating-utilities__dossier-title">Dossier corporativo</span>
+        <span class="ie-floating-utilities__dossier-meta">Descargar PDF</span>
+      </span>
     </a>
   </div>
 </div>
 
 <style>
-  .ie-floating-utilities{position:fixed;inset:auto 0 20px 0;z-index:40;pointer-events:none}
-  .ie-floating-utilities__whatsapp,.ie-floating-utilities__right{pointer-events:auto;position:absolute;bottom:0}
-  .ie-floating-utilities__whatsapp{left:20px;display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:#25d366;color:#fff;text-decoration:none;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,.18)}
-  .ie-floating-utilities__right{right:20px;display:grid;gap:12px;justify-items:center}
-  .ie-floating-utilities__button{display:grid;place-items:center;width:48px;height:48px;border:0;border-radius:50%;background:#1f231e;color:#fff;cursor:pointer}
-  .ie-floating-utilities__button svg{width:22px;height:22px}
-  .ie-floating-utilities__dossier{display:block;width:56px;height:64px}
-  .ie-floating-utilities__dossier img{display:block;width:100%;height:100%;object-fit:contain}
-  @media(max-width:640px){.ie-floating-utilities{bottom:14px}.ie-floating-utilities__whatsapp{left:14px;min-height:44px;padding-inline:14px;font-size:.875rem}.ie-floating-utilities__right{right:14px;gap:10px}.ie-floating-utilities__button{width:44px;height:44px}.ie-floating-utilities__dossier{width:48px;height:56px}}
+  .ie-floating-utilities{
+    position:fixed;
+    inset:auto 0 20px 0;
+    z-index:40;
+    pointer-events:none;
+  }
+
+  .ie-floating-utilities__whatsapp,
+  .ie-floating-utilities__right{
+    pointer-events:auto;
+    position:absolute;
+    bottom:0;
+  }
+
+  .ie-floating-utilities__whatsapp{
+    left:20px;
+    display:inline-flex;
+    align-items:center;
+    min-height:48px;
+    padding:0 18px;
+    border-radius:999px;
+    background:#25d366;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 4px 12px rgba(0,0,0,.18);
+  }
+
+  .ie-floating-utilities__right{
+    right:20px;
+    display:grid;
+    gap:12px;
+    justify-items:end;
+  }
+
+  .ie-floating-utilities__button{
+    display:grid;
+    place-items:center;
+    width:48px;
+    height:48px;
+    border:0;
+    border-radius:50%;
+    background:#1f231e;
+    color:#fff;
+    cursor:pointer;
+    box-shadow:0 6px 18px rgba(20,24,18,.2);
+  }
+
+  .ie-floating-utilities__button svg{
+    width:22px;
+    height:22px;
+  }
+
+  .ie-floating-utilities__dossier{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-width:176px;
+    min-height:58px;
+    padding:8px 12px 8px 9px;
+    border:1px solid rgba(86,98,54,.24);
+    border-radius:14px;
+    background:rgba(249,248,246,.97);
+    color:#2f3820;
+    text-decoration:none;
+    box-shadow:0 10px 28px rgba(28,34,22,.22);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+
+  .ie-floating-utilities__dossier-icon{
+    flex:0 0 40px;
+    display:grid;
+    place-items:center;
+    width:40px;
+    height:40px;
+    border-radius:10px;
+    background:#566236;
+    color:#fff;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
+  }
+
+  .ie-floating-utilities__dossier-icon svg{
+    width:23px;
+    height:23px;
+  }
+
+  .ie-floating-utilities__dossier-copy{
+    display:grid;
+    gap:2px;
+    min-width:0;
+    line-height:1.15;
+  }
+
+  .ie-floating-utilities__dossier-title{
+    font-size:.875rem;
+    font-weight:600;
+    letter-spacing:0;
+    white-space:nowrap;
+  }
+
+  .ie-floating-utilities__dossier-meta{
+    font-size:.75rem;
+    font-weight:500;
+    color:rgba(47,56,32,.72);
+    white-space:nowrap;
+  }
+
+  .ie-floating-utilities__dossier:hover{
+    transform:translateY(-2px);
+    border-color:rgba(86,98,54,.4);
+    box-shadow:0 13px 32px rgba(28,34,22,.27);
+  }
+
+  .ie-floating-utilities__dossier:focus-visible,
+  .ie-floating-utilities__button:focus-visible,
+  .ie-floating-utilities__whatsapp:focus-visible{
+    outline:3px solid #f9f8f6;
+    outline-offset:3px;
+  }
+
+  @media(max-width:640px){
+    .ie-floating-utilities{
+      bottom:14px;
+    }
+
+    .ie-floating-utilities__whatsapp{
+      left:14px;
+      min-height:44px;
+      padding-inline:14px;
+      font-size:.875rem;
+    }
+
+    .ie-floating-utilities__right{
+      right:14px;
+      gap:10px;
+    }
+
+    .ie-floating-utilities__button{
+      width:44px;
+      height:44px;
+    }
+
+    .ie-floating-utilities__dossier{
+      min-width:0;
+      width:50px;
+      height:50px;
+      min-height:50px;
+      padding:5px;
+      border-radius:13px;
+    }
+
+    .ie-floating-utilities__dossier-icon{
+      flex-basis:38px;
+      width:38px;
+      height:38px;
+      border-radius:9px;
+    }
+
+    .ie-floating-utilities__dossier-copy{
+      position:absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    .ie-floating-utilities__dossier{
+      transition:none;
+    }
+
+    .ie-floating-utilities__dossier:hover{
+      transform:none;
+    }
+  }
 </style>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var button = document.querySelector('[data-ie-scroll-top]');
-    if (!button) return;
-    button.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    if (button) {
+      button.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    var dossierLink = document.querySelector('[data-ie-dossier-download]');
+    if (dossierLink) {
+      dossierLink.addEventListener('click', function () {
+        if (window.dataLayer && Array.isArray(window.dataLayer)) {
+          window.dataLayer.push({
+            event: 'download_dossier',
+            document_name: 'Dossier corporativo Ideas Exteriores',
+            document_format: 'pdf'
+          });
+        }
+      });
+    }
   });
 </script>
 
