@@ -65,6 +65,10 @@
 
     {% render 'search-modal' %}
 
+    {% if request.page_type == 'index' %}
+      {% render 'ie-home-hero-override' %}
+    {% endif %}
+
     {% # theme-check-disable ParserBlockingScript %}
     <script src="{{ 'critical.js' | asset_url }}"></script>
     {% # theme-check-enable ParserBlockingScript %}
