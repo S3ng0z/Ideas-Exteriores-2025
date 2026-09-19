@@ -3,27 +3,28 @@
 
 .ie-home-solutions__section .ie-home-solutions__heading {
   width: 100% !important;
-  max-width: 24ch !important;
-  margin: 0 0 14px !important;
+  max-width: 100% !important;
+  margin: 0 0 12px !important;
   padding: 0 !important;
   text-align: left !important;
   font-family: "Source Serif 4", Georgia, serif !important;
-  font-size: clamp(1.7rem, 2vw, 2.25rem) !important;
+  font-size: clamp(1.65rem, 1.75vw, 2rem) !important;
   font-weight: 500 !important;
   line-height: 1.1 !important;
   letter-spacing: -0.015em !important;
   text-transform: none !important;
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .ie-home-solutions__section .ie-home-solutions__copy {
   width: 100% !important;
-  max-width: 68ch !important;
+  max-width: none !important;
   padding: 0 !important;
   font-family: var(--font-body--family), Manrope, Arial, sans-serif !important;
   font-size: clamp(.98rem, 1vw, 1.08rem) !important;
-  line-height: 1.55 !important;
+  line-height: 1.52 !important;
   text-align: left !important;
+  text-wrap: pretty;
 }
 
 .ie-home-solutions__section .ie-home-solutions__copy p {
@@ -35,7 +36,7 @@
 }
 
 .ie-home-solutions__section .ie-home-solutions__copy ul {
-  margin: 0 0 16px !important;
+  margin: 0 0 14px !important;
   padding-inline-start: 1.25rem !important;
 }
 
