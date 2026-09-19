@@ -1,0 +1,64 @@
+/* Home · justificación editorial
+   Objetivo: justificación tipo procesador de textos sin partición automática
+   de palabras. Se aplica a prosa y descripciones, no a navegación, botones,
+   precios, etiquetas ni títulos. */
+
+#MainContent :where(
+  .ie-home-hero__lead,
+  .ie-home-solutions__intro,
+  .ie-home-solutions__closing,
+  .ie-home-solutions__systems span,
+  .ie-home-benefit__copy p,
+  .ie-home-criteria__item span,
+  .text-block:not(.ie-home-hero__message):not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading) p,
+  .text-block:not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading) li
+),
+.ie-footer__intro,
+.ie-footer__intro p {
+  text-align: justify !important;
+  text-align-last: left !important;
+  text-justify: inter-word !important;
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+/* Evita que los títulos se partan dentro de una palabra.
+   Siguen rompiendo de línea únicamente en espacios normales. */
+#MainContent :where(h1, h2, h3, h4, h5, h6) {
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+/* Los textos estructurados de los tres bloques creados para Home necesitan
+   la regla en el nodo que realmente contiene la frase. */
+#MainContent .ie-home-solutions__systems span,
+#MainContent .ie-home-criteria__item span,
+#MainContent .ie-home-benefit__copy p {
+  width: 100%;
+}
+
+/* En móvil mantenemos la misma justificación solicitada, pero sin
+   partición silábica ni guiones automáticos. */
+@media screen and (max-width: 749px) {
+  #MainContent :where(
+    .ie-home-hero__lead,
+    .ie-home-solutions__intro,
+    .ie-home-solutions__closing,
+    .ie-home-solutions__systems span,
+    .ie-home-benefit__copy p,
+    .ie-home-criteria__item span,
+    .text-block:not(.ie-home-hero__message):not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading) p,
+    .text-block:not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading) li
+  ) {
+    text-align: justify !important;
+    text-align-last: left !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}

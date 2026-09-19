@@ -62,7 +62,8 @@
   text-align: justify !important;
   text-align-last: left !important;
   text-justify: inter-word;
-  hyphens: auto;
+  hyphens: none;
+  -webkit-hyphens: none;
   text-wrap: pretty;
   color: rgba(255, 255, 255, 0.94) !important;
 }
@@ -91,7 +92,8 @@
     font-size: 1rem !important;
     line-height: 1.52 !important;
     text-align: left !important;
-    hyphens: manual;
+    hyphens: none;
+    -webkit-hyphens: none;
   }
 }
 
