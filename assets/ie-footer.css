@@ -97,6 +97,60 @@
   opacity: 0.18;
 }
 
+
+/* Compatibility fallback for the currently published MAIN theme markup.
+ * The live Shopify section can lag behind GitHub Liquid while CSS syncs.
+ * When brand_copy still lives inside .ie-footer__brand, position it in the
+ * right-hand column above the contact divider. This becomes inert as soon as
+ * the updated Liquid structure is synced.
+ */
+.ie-footer__brand > .ie-footer__brand-copy {
+  position: absolute;
+  inset-inline-start: calc(340px + clamp(64px, 5.5vw, 80px));
+  inset-inline-end: 0;
+  top: 2px;
+  width: auto;
+  max-width: 62ch;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.96;
+}
+
+.ie-footer__brand > .ie-footer__brand-copy > * {
+  margin-block: 0;
+}
+
+.ie-footer__brand > .ie-footer__brand-copy strong {
+  font-weight: inherit;
+}
+
+.ie-footer__brand + .ie-footer__contact {
+  margin-block-start: 54px;
+  padding-block-start: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media screen and (max-width: 1100px) {
+  .ie-footer__brand > .ie-footer__brand-copy {
+    inset-inline-start: calc(310px + 48px);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .ie-footer__brand > .ie-footer__brand-copy {
+    position: static;
+    width: 100%;
+    max-width: 42ch;
+    margin-block-start: 20px;
+  }
+
+  .ie-footer__brand + .ie-footer__contact {
+    margin-block-start: 0;
+  }
+}
+
 .ie-footer__contact {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
