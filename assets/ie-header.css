@@ -170,25 +170,11 @@
   border-radius: 2px;
 }
 
-.header-section:has(> #header-component[sticky="scroll-up"][data-sticky-state="active"]) {
-  top: 0 !important;
-}
-
+/* Sticky visibility and geometry are intentionally left to the native
+   Shopify header implementation. In particular, header.liquid uses top:-1px
+   so its IntersectionObserver can distinguish the sticky state reliably. */
 #header-component[data-sticky-state] {
-  transition:
-    opacity 150ms ease,
-    transform 220ms var(--ie-header-ease) !important;
-  will-change: transform, opacity;
-}
-
-#header-component[data-sticky-state="active"] {
-  opacity: 1 !important;
-  transform: translateY(0);
-}
-
-#header-component[data-sticky-state="active"][data-animating] {
-  opacity: 0 !important;
-  transform: translateY(-100%);
+  will-change: opacity;
 }
 
 @media screen and (max-width: 749px) {

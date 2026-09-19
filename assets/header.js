@@ -58,6 +58,13 @@ class HeaderComponent extends Component {
   #animationDelay = 150;
 
   /**
+   * Minimum accumulated scroll delta before changing direction/state.
+   * Prevents trackpad/wheel micro-jitter from rapidly toggling the sticky header.
+   * @constant {number}
+   */
+  #scrollThreshold = 6;
+
+  /**
    * Keeps the global `--header-height` custom property up to date,
    * which other theme components can then consume
    */
@@ -129,7 +136,14 @@ class HeaderComponent extends Component {
     if (!this.#offscreen && stickyMode !== 'always') return;
 
     const scrollTop = document.scrollingElement?.scrollTop ?? 0;
-    const isScrollingUp = scrollTop < this.#lastScrollTop;
+    const delta = scrollTop - this.#lastScrollTop;
+
+    // Ignore micro-movements from trackpads, inertial scrolling and elastic
+    // viewport settling. Direction changes are only meaningful after the
+    // accumulated delta crosses the threshold.
+    if (Math.abs(delta) < this.#scrollThreshold) return;
+
+    const isScrollingUp = delta < 0;
     if (this.#timeout) {
       clearTimeout(this.#timeout);
       this.#timeout = null;
