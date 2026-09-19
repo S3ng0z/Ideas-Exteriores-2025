@@ -26,10 +26,12 @@
         {%- endif -%}
       </div>
 
-      <div class="ie-footer__info">
+      <div class="ie-footer__content-column">
         {%- if section.settings.brand_copy != blank -%}
-          <div class="ie-footer__brand-copy rte">{{ section.settings.brand_copy }}</div>
+          <div class="ie-footer__intro rte">{{ section.settings.brand_copy }}</div>
         {%- endif -%}
+
+        <div class="ie-footer__contact-separator" aria-hidden="true"></div>
 
         <div class="ie-footer__contact" aria-label="Información de contacto">
           <div class="ie-footer__contact-block">
