@@ -4,20 +4,13 @@
   var COPY = {
     heading: 'Casas y casetas prefabricadas de madera',
     body:
-      '<p class="ie-home-solutions__intro">En <strong>Ideas Exteriores</strong> desarrollamos soluciones en madera para vivienda, estudio, oficina y espacio exterior a partir de modelos definidos y configurables, con un alcance claro desde el presupuesto hasta el montaje.</p>' +
-      '<p><strong>Elige el sistema que mejor encaja con tu proyecto:</strong></p>' +
-      '<ul>' +
-        '<li><strong>Sistema europeo:</strong> una solución prefabricada en madera orientada a modelos definidos y configuraciones estandarizadas, con piezas preparadas para facilitar un montaje preciso y un acabado natural.</li>' +
-        '<li><strong>Entramado ligero:</strong> una solución versátil para construcciones de madera con configuraciones y acabados definidos según el modelo.</li>' +
-        '<li><strong>Panel SIP:</strong> un sistema prefabricado basado en paneles estructurales que integra aislamiento y favorece una ejecución precisa.</li>' +
+      '<p class="ie-home-solutions__intro">Trabajamos con tres sistemas constructivos para casas, casetas y espacios habitables, seleccionados según el uso, el nivel de acabado y el alcance de cada proyecto.</p>' +
+      '<ul class="ie-home-solutions__systems">' +
+        '<li><strong>Sistema europeo</strong><span>Solución prefabricada en madera basada en modelos definidos y configuraciones estandarizadas, con piezas preparadas para un montaje preciso y un acabado natural.</span></li>' +
+        '<li><strong>Entramado ligero</strong><span>Sistema estructural ligero y versátil que permite resolver distintas tipologías con configuraciones y acabados definidos.</span></li>' +
+        '<li><strong>Panel SIP</strong><span>Sistema prefabricado con paneles estructurales aislados, orientado a una ejecución precisa y una envolvente eficiente.</span></li>' +
       '</ul>' +
-      '<p><strong>Qué aportamos:</strong></p>' +
-      '<ul>' +
-        '<li>Modelos, superficies y opciones comparables para decidir con claridad.</li>' +
-        '<li>Asesoramiento técnico para definir sistema, nivel de acabado, base y montaje según el alcance del proyecto.</li>' +
-        '<li>Suministro y montaje coordinados, con inclusiones y exclusiones claras.</li>' +
-      '</ul>' +
-      '<p class="ie-home-solutions__closing">Cuéntanos qué espacio necesitas y te orientamos hacia la solución y configuración más adecuada.</p>'
+      '<p class="ie-home-solutions__closing">Te ayudamos a elegir la opción más adecuada y a definir suministro, acabado y montaje con un alcance claro desde el presupuesto.</p>'
   };
 
   function findSection() {
@@ -52,7 +45,8 @@
         txt.indexOf('95') !== -1 ||
         txt.indexOf('Utilizamos dos sistemas constructivos') !== -1 ||
         txt.indexOf('Ventajas de elegirnos') !== -1 ||
-        txt.indexOf('Qué aportamos') !== -1
+        txt.indexOf('Qué aportamos') !== -1 ||
+        txt.indexOf('Trabajamos con tres sistemas constructivos') !== -1
       ) {
         bodyBlock = textBlocks[i];
         break;
