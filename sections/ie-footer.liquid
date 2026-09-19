@@ -24,65 +24,46 @@
         {%- else -%}
           <a class="ie-footer__brand-name" href="{{ routes.root_url }}">{{ shop.name | escape }}</a>
         {%- endif -%}
-      </div>
 
-      <div class="ie-footer__masthead-content">
         {%- if section.settings.brand_copy != blank -%}
           <div class="ie-footer__brand-copy rte">{{ section.settings.brand_copy }}</div>
         {%- endif -%}
+      </div>
 
-        <div class="ie-footer__contact" aria-label="Información de contacto">
-          <div class="ie-footer__contact-block">
-            <p class="ie-footer__eyebrow">
-              <span class="ie-footer__eyebrow-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.7"/>
-                </svg>
-              </span>
-              <span>{{ section.settings.location_heading | escape }}</span>
-            </p>
-            {%- if section.settings.address != blank -%}
-              <address class="ie-footer__location rte">{{ section.settings.address }}</address>
-            {%- endif -%}
-          </div>
+      <div class="ie-footer__contact-block ie-footer__contact-block--location">
+        <p class="ie-footer__eyebrow">{{ section.settings.location_heading | escape }}</p>
+        {%- if section.settings.address != blank -%}
+          <address class="ie-footer__location rte">{{ section.settings.address }}</address>
+        {%- endif -%}
+      </div>
 
-          <div class="ie-footer__contact-block">
-            <p class="ie-footer__eyebrow">
-              <span class="ie-footer__eyebrow-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M7.2 3.8 10 8.1 8.3 9.8a15 15 0 0 0 5.9 5.9l1.7-1.7 4.3 2.8c.4.3.6.8.4 1.3-.7 1.7-2 2.8-3.8 2.8C10 20.9 3.1 14 3.1 7.2c0-1.8 1.1-3.1 2.8-3.8.5-.2 1 0 1.3.4Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
-              <span>{{ section.settings.contact_heading | escape }}</span>
-            </p>
+      <div class="ie-footer__contact-block ie-footer__contact-block--details">
+        <p class="ie-footer__eyebrow">{{ section.settings.contact_heading | escape }}</p>
 
-            {%- if section.settings.phone != blank or section.settings.email != blank -%}
-              <ul class="ie-footer__contact-links" role="list">
-                {%- if section.settings.phone != blank -%}
-                  {%- assign phone_href = section.settings.phone | replace: ' ', '' | replace: '-', '' | replace: '.', '' -%}
-                  <li>
-                    <a class="ie-footer__contact-link" href="tel:{{ phone_href | escape }}">
-                      {{ section.settings.phone | escape }}
-                    </a>
-                  </li>
-                {%- endif -%}
-
-                {%- if section.settings.email != blank -%}
-                  <li>
-                    <a class="ie-footer__contact-link" href="mailto:{{ section.settings.email | escape }}">
-                      {{ section.settings.email | escape }}
-                    </a>
-                  </li>
-                {%- endif -%}
-              </ul>
+        {%- if section.settings.phone != blank or section.settings.email != blank -%}
+          <ul class="ie-footer__contact-links" role="list">
+            {%- if section.settings.phone != blank -%}
+              {%- assign phone_href = section.settings.phone | replace: ' ', '' | replace: '-', '' | replace: '.', '' -%}
+              <li>
+                <a class="ie-footer__contact-link" href="tel:{{ phone_href | escape }}">
+                  {{ section.settings.phone | escape }}
+                </a>
+              </li>
             {%- endif -%}
 
-            {%- if section.settings.hours != blank -%}
-              <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
+            {%- if section.settings.email != blank -%}
+              <li>
+                <a class="ie-footer__contact-link" href="mailto:{{ section.settings.email | escape }}">
+                  {{ section.settings.email | escape }}
+                </a>
+              </li>
             {%- endif -%}
-          </div>
-        </div>
+          </ul>
+        {%- endif -%}
+
+        {%- if section.settings.hours != blank -%}
+          <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
+        {%- endif -%}
       </div>
     </div>
 

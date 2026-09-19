@@ -1,6 +1,5 @@
-/* Ideas Exteriores — reference-style footer refinement.
- * Compact, balanced and editorial. Keeps the approved Sage background
- * while using white typography for a clean premium finish.
+/* Ideas Exteriores — footer matched to the approved visual reference.
+ * Scope is intentionally isolated under .ie-footer to avoid global theme regressions.
  */
 
 .ie-footer {
@@ -27,14 +26,16 @@
 
 .ie-footer__masthead {
   display: grid;
-  grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.28fr);
-  gap: clamp(64px, 7vw, 96px);
+  grid-template-columns: minmax(300px, 1.28fr) minmax(240px, 1fr) minmax(260px, 1.03fr);
+  grid-template-areas: "brand location contact";
+  column-gap: clamp(48px, 4.25vw, 80px);
   align-items: start;
-  padding-block-end: 26px;
+  padding-block-end: 44px;
 }
 
 .ie-footer__brand {
-  max-width: 300px;
+  grid-area: brand;
+  width: min(100%, 300px);
 }
 
 .ie-footer__logo-link,
@@ -58,68 +59,48 @@
   height: auto;
 }
 
-.ie-footer__masthead-content {
-  width: min(100%, 660px);
-  justify-self: end;
-  min-width: 0;
-  padding-block-start: 8px;
-}
-
 .ie-footer__brand-copy {
   max-width: 43ch;
-  margin: 0 0 20px;
+  margin: 10px 0 0;
   font-size: 0.8125rem;
-  line-height: 1.45;
-  opacity: 0.94;
+  line-height: 1.42;
+  opacity: 0.96;
 }
 
 .ie-footer__brand-copy > * {
   margin-block: 0;
 }
 
-.ie-footer__contact {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(44px, 5vw, 70px);
-  width: 100%;
-}
-
 .ie-footer__contact-block {
   min-width: 0;
+  padding-block-start: 12px;
+}
+
+.ie-footer__contact-block--location {
+  grid-area: location;
+}
+
+.ie-footer__contact-block--details {
+  grid-area: contact;
 }
 
 .ie-footer__eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
   margin: 0;
   font-family: var(--font-body--family);
   font-size: 0.625rem;
   font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.06em;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
   text-transform: uppercase;
-  opacity: 0.92;
-}
-
-.ie-footer__eyebrow-icon {
-  display: inline-flex;
-  width: 13px;
-  height: 13px;
-  flex: 0 0 13px;
-}
-
-.ie-footer__eyebrow-icon svg {
-  width: 100%;
-  height: 100%;
+  opacity: 0.96;
 }
 
 .ie-footer__location {
-  margin-block-start: 7px;
+  margin-block-start: 11px;
   font-size: 0.75rem;
   font-style: normal;
   line-height: 1.45;
-  opacity: 0.96;
+  opacity: 0.98;
 }
 
 .ie-footer__location > * {
@@ -138,7 +119,7 @@
 .ie-footer__contact-links {
   display: grid;
   gap: 0;
-  margin-block-start: 6px;
+  margin-block-start: 8px;
 }
 
 .ie-footer__contact-link {
@@ -153,7 +134,7 @@
 }
 
 .ie-footer__hours {
-  margin: 6px 0 0;
+  margin: 2px 0 0;
   font-size: 0.6875rem;
   line-height: 1.4;
   opacity: 0.82;
@@ -183,7 +164,7 @@
     minmax(145px, 0.65fr)
     minmax(170px, 0.75fr);
   gap: 22px clamp(28px, 3vw, 44px);
-  padding-block: 22px 26px;
+  padding-block: 22px 30px;
 }
 
 .ie-footer__menu {
@@ -191,7 +172,7 @@
 }
 
 .ie-footer__nav-heading {
-  margin: 0 0 8px;
+  margin: 0 0 11px;
   font-family: var(--font-body--family) !important;
   font-size: 0.8125rem !important;
   font-weight: 600 !important;
@@ -219,13 +200,13 @@
 .ie-footer__utility-link {
   display: inline-block;
   min-height: 0;
-  padding-block: 3px;
+  padding-block: 5px;
   font-size: 0.6875rem;
   line-height: 1.3;
   color: inherit;
   text-decoration-color: transparent;
   text-underline-offset: 0.2em;
-  opacity: 0.94;
+  opacity: 0.95;
 }
 
 .ie-footer__menu--solutions .ie-footer__nav-link,
@@ -270,7 +251,7 @@
   margin: 0;
   font-size: 0.625rem;
   line-height: 1.4;
-  opacity: 0.78;
+  opacity: 0.8;
 }
 
 .ie-footer__utility-links {
@@ -281,25 +262,18 @@
 }
 
 .ie-footer__utility-link {
+  padding-block: 3px;
   font-size: 0.625rem;
 }
 
-@media screen and (max-width: 980px) {
-  .ie-footer__inner {
-    width: calc(100% - (var(--page-margin, 40px) * 2));
-  }
-
+@media screen and (max-width: 1100px) {
   .ie-footer__masthead {
-    grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
-    gap: 40px;
+    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 32px;
   }
 
   .ie-footer__logo {
     width: min(235px, 64vw);
-  }
-
-  .ie-footer__masthead-content {
-    width: 100%;
   }
 
   .ie-footer__nav-grid {
@@ -315,21 +289,20 @@
 
 @media screen and (max-width: 760px) {
   .ie-footer__masthead {
-    grid-template-columns: 1fr;
-    gap: 22px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "brand brand"
+      "location contact";
+    gap: 24px 36px;
+    padding-block-end: 30px;
   }
 
   .ie-footer__brand {
-    max-width: 320px;
+    width: min(100%, 320px);
   }
 
-  .ie-footer__masthead-content {
-    justify-self: start;
+  .ie-footer__contact-block {
     padding-block-start: 0;
-  }
-
-  .ie-footer__contact {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .ie-footer__nav-grid {
@@ -345,17 +318,22 @@
     padding-inline: 0;
   }
 
+  .ie-footer__masthead {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "location"
+      "contact";
+    gap: 22px;
+  }
+
   .ie-footer__logo {
     width: min(220px, 68vw);
   }
 
   .ie-footer__brand-copy {
+    max-width: 36ch;
     font-size: 0.8125rem;
-  }
-
-  .ie-footer__contact {
-    grid-template-columns: 1fr;
-    gap: 18px;
   }
 
   .ie-footer__contact-link {
@@ -374,7 +352,7 @@
   }
 
   .ie-footer__menu + .ie-footer__menu {
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .ie-footer__nav-heading {
