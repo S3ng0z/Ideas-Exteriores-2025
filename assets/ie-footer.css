@@ -74,11 +74,16 @@
 
 .ie-footer__intro {
   width: 100%;
-  max-width: 62ch;
-  margin: 0 0 20px;
+  max-width: 88ch;
+  margin: 0 0 22px;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.55;
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+  text-wrap: pretty;
+  hyphens: auto;
   opacity: 0.96;
 }
 
@@ -402,8 +407,10 @@
   }
 
   .ie-footer__intro {
-    max-width: 42ch;
+    max-width: 100%;
     margin-block-end: 20px;
+    text-align: left;
+    hyphens: manual;
   }
 
   .ie-footer__contact {
@@ -524,11 +531,16 @@
     grid-row: 1;
     inset: auto !important;
     width: 100% !important;
-    max-width: 62ch;
+    max-width: 88ch;
     margin: 0 !important;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.55;
+    text-align: justify;
+    text-align-last: left;
+    text-justify: inter-word;
+    text-wrap: pretty;
+    hyphens: auto;
     opacity: 0.96;
   }
 
@@ -580,8 +592,10 @@
     position: static !important;
     inset: auto !important;
     width: 100% !important;
-    max-width: 42ch;
+    max-width: 100%;
     margin: 20px 0 0 !important;
+    text-align: left;
+    hyphens: manual;
   }
 
   .ie-footer__masthead:has(> .ie-footer__brand > .ie-footer__brand-copy)
