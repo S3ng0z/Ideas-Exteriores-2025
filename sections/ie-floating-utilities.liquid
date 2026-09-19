@@ -353,22 +353,26 @@
       return null;
     }
 
-    function getPreviousSection() {
-      var referenceY = getCurrentReferenceY();
-      var sections = getMajorSections();
-      var previous = null;
+    function scrollToTop() {
+      var behavior = getScrollBehavior();
 
-      for (var index = 0; index < sections.length; index += 1) {
-        var top = getDocumentTop(sections[index]);
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: behavior
+      });
 
-        if (top < referenceY - 40) {
-          previous = sections[index];
-        } else {
-          break;
-        }
+      var scrollingElement = document.scrollingElement;
+      if (scrollingElement && typeof scrollingElement.scrollTo === 'function') {
+        scrollingElement.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: behavior
+        });
+      } else {
+        document.documentElement.scrollTop = 0;
+        if (document.body) document.body.scrollTop = 0;
       }
-
-      return previous;
     }
 
     function scrollToSection(target) {
@@ -421,18 +425,13 @@
       }
 
       previousButton.addEventListener('click', function () {
-        var target = getPreviousSection();
-
-        if (target) {
-          scrollToSection(target);
-        } else {
-          window.scrollTo({ top: 0, behavior: getScrollBehavior() });
-        }
+        scrollToTop();
 
         if (window.dataLayer && Array.isArray(window.dataLayer)) {
           window.dataLayer.push({
             event: 'floating_scroll_navigation',
-            direction: 'up'
+            direction: 'up',
+            destination: 'top'
           });
         }
       });
