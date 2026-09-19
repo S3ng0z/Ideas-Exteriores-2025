@@ -1,0 +1,222 @@
+/* Ideas Exteriores · Header "Natural Precision"
+   Desktop: una sola fila, 76–80 px, navegación limpia y sticky discreto.
+   Comportamiento:
+   - top: transparente sobre hero
+   - hover/focus: Bone/White
+   - scroll down: oculto (gestión nativa de header.js)
+   - scroll up: sticky Bone/White
+*/
+
+#header-component {
+  --ie-header-surface: rgba(249, 248, 246, 0.97);
+  --ie-header-surface-solid: #f9f8f6;
+  --ie-header-ink: #1f231e;
+  --ie-header-forest: #566236;
+  --ie-header-border: rgba(31, 35, 30, 0.14);
+  --ie-header-height-desktop: 78px;
+  --ie-header-height-mobile: 64px;
+  --ie-header-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media screen and (min-width: 750px) {
+  #header-component .header__row--top .header__columns {
+    width: min(calc(100% - 96px), 1440px) !important;
+    min-height: var(--ie-header-height-desktop);
+    margin-inline: auto !important;
+    padding: 0 !important;
+    grid-template-areas: "left center right" !important;
+    grid-template-columns: minmax(190px, 1fr) auto minmax(190px, 1fr) !important;
+    column-gap: clamp(28px, 3vw, 48px) !important;
+    align-items: center;
+  }
+
+  #header-component .header__column--left {
+    justify-content: flex-start !important;
+  }
+
+  #header-component .header__column--center {
+    justify-content: center !important;
+    min-width: 0;
+  }
+
+  #header-component .header__column--right {
+    justify-content: flex-end !important;
+  }
+
+  #header-component header-menu,
+  #header-component .header-menu,
+  #header-component .header-menu__inner,
+  #header-component nav[header-menu],
+  #header-component .menu-list {
+    width: auto !important;
+    min-width: 0;
+  }
+
+  #header-component .menu-list {
+    --menu-horizontal-gap: clamp(24px, 2.15vw, 36px) !important;
+  }
+
+  #header-component .menu-list__list {
+    align-items: center;
+  }
+
+  #header-component .header-logo {
+    width: auto !important;
+    max-width: 230px;
+    margin-inline: 0 !important;
+  }
+
+  #header-component .header-logo__image {
+    max-width: 230px;
+  }
+}
+
+#header-component .menu-list__link {
+  position: relative;
+  min-height: 44px;
+  padding-inline: 0 !important;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif !important;
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.005em !important;
+  text-transform: none !important;
+  text-decoration: none !important;
+}
+
+#header-component .menu-list__link-title {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+#header-component .menu-list__link-title::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -6px;
+  height: 1.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  opacity: 0.9;
+  transition:
+    transform 180ms var(--ie-header-ease),
+    background-color 180ms ease;
+}
+
+#header-component .menu-list__list-item:hover > .menu-list__link .menu-list__link-title::after,
+#header-component .menu-list__list-item:focus-within > .menu-list__link .menu-list__link-title::after,
+#header-component .menu-list__link--active .menu-list__link-title::after {
+  transform: scaleX(1);
+}
+
+#header-component .header__row {
+  transition:
+    background-color 220ms var(--ie-header-ease),
+    color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 220ms var(--ie-header-ease),
+    backdrop-filter 220ms var(--ie-header-ease) !important;
+}
+
+#header-component[transparent]:not([data-sticky-state="active"]) .header__row {
+  box-shadow: none !important;
+}
+
+#header-component[transparent]:has(
+    .header__row:hover,
+    nav[header-menu]:focus-within,
+    [role="menuitem"][aria-expanded="true"]
+  )
+  .header__row,
+#header-component[transparent][data-sticky-state="active"] .header__row,
+#header-component[data-sticky-state="active"] .header__row {
+  --color-foreground: var(--ie-header-ink) !important;
+  --menu-top-level-font-color: var(--ie-header-ink) !important;
+  --header-bg-color: var(--ie-header-surface) !important;
+  color: var(--ie-header-ink) !important;
+  background: var(--ie-header-surface) !important;
+  border-bottom-color: var(--ie-header-border) !important;
+  box-shadow: 0 1px 0 var(--ie-header-border) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#header-component[data-sticky-state="active"] .menu-list__link-title::after {
+  background: var(--ie-header-forest);
+}
+
+#header-component[transparent][data-sticky-state="active"] {
+  --header-logo-display: block !important;
+  --header-logo-inverse-display: none !important;
+}
+
+#header-component .search-action,
+#header-component .header__search,
+#header-component [data-testid*="search"] {
+  color: currentColor;
+}
+
+#header-component .search-action svg,
+#header-component .header__search svg {
+  width: 20px;
+  height: 20px;
+}
+
+#header-component :is(.menu-list__link, .header-logo, .search-action):focus-visible {
+  outline: 2px solid currentColor !important;
+  outline-offset: 5px !important;
+  border-radius: 2px;
+}
+
+.header-section:has(> #header-component[sticky="scroll-up"][data-sticky-state="active"]) {
+  top: 0 !important;
+}
+
+#header-component[data-sticky-state] {
+  transition:
+    opacity 150ms ease,
+    transform 220ms var(--ie-header-ease) !important;
+  will-change: transform, opacity;
+}
+
+#header-component[data-sticky-state="active"] {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+
+#header-component[data-sticky-state="active"][data-animating] {
+  opacity: 0 !important;
+  transform: translateY(-100%);
+}
+
+@media screen and (max-width: 749px) {
+  #header-component .header__row--top .header__columns {
+    min-height: var(--ie-header-height-mobile);
+    padding-inline: 16px !important;
+  }
+
+  #header-component .header-logo__image {
+    max-height: 38px;
+  }
+
+  #header-component[transparent]:has(
+      .header__row:hover,
+      .header__drawer[open],
+      .search-modal[open]
+    )
+    .header__row,
+  #header-component[data-sticky-state="active"] .header__row {
+    background: var(--ie-header-surface) !important;
+    color: var(--ie-header-ink) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #header-component,
+  #header-component .header__row,
+  #header-component .menu-list__link-title::after {
+    transition: none !important;
+  }
+}
