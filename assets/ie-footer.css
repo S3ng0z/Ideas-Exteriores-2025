@@ -28,14 +28,14 @@
 
 .ie-footer__masthead {
   display: grid;
-  grid-template-columns: minmax(430px, 500px) minmax(0, 1fr);
+  grid-template-columns: minmax(500px, 560px) minmax(0, 1fr);
   column-gap: clamp(64px, 5.5vw, 80px);
   align-items: start;
   padding-block-end: 54px;
 }
 
 .ie-footer__brand {
-  width: min(100%, 500px);
+  width: min(100%, 560px);
   min-width: 0;
 }
 
@@ -47,6 +47,10 @@
   color: inherit;
 }
 
+.ie-footer__logo-link {
+  width: 100%;
+}
+
 .ie-footer__brand-name {
   font-family: var(--font-heading--family);
   font-size: clamp(1.7rem, 2.4vw, 2.25rem);
@@ -56,7 +60,8 @@
 
 .ie-footer__logo {
   display: block;
-  width: min(480px, 100%);
+  width: 100% !important;
+  max-width: 560px;
   height: auto;
 }
 
@@ -275,13 +280,14 @@
 
 @media screen and (max-width: 1100px) {
   .ie-footer__masthead {
-    grid-template-columns: minmax(320px, 390px) minmax(0, 1fr);
+    grid-template-columns: minmax(350px, 420px) minmax(0, 1fr);
     column-gap: 48px;
     padding-block-end: 42px;
   }
 
   .ie-footer__logo {
-    width: min(380px, 100%);
+    width: min(420px, 100%) !important;
+    max-width: 420px;
   }
 
   .ie-footer__masthead-content {
@@ -315,11 +321,12 @@
   }
 
   .ie-footer__brand {
-    width: min(100%, 360px);
+    width: min(100%, 380px);
   }
 
   .ie-footer__logo {
-    width: min(350px, 100%);
+    width: min(380px, 100%) !important;
+    max-width: 380px;
   }
 
   .ie-footer__masthead-content {
@@ -350,7 +357,8 @@
   }
 
   .ie-footer__logo {
-    width: min(320px, 88vw);
+    width: min(340px, 90vw) !important;
+    max-width: 340px;
   }
 
   .ie-footer__brand-copy {
