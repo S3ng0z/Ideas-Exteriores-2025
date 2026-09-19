@@ -68,7 +68,7 @@
 .ie-footer__brand-copy {
   max-width: 48ch;
   margin: 0 0 26px;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   line-height: 1.5;
   opacity: 0.96;
 }
@@ -93,7 +93,7 @@
 .ie-footer__eyebrow {
   margin: 0;
   font-family: var(--font-body--family);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.025em;
@@ -103,7 +103,7 @@
 
 .ie-footer__location {
   margin-block-start: 11px;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-style: normal;
   line-height: 1.45;
   opacity: 0.98;
@@ -131,8 +131,8 @@
 .ie-footer__contact-link {
   display: inline-flex;
   align-items: center;
-  min-height: 30px;
-  font-size: 0.875rem;
+  min-height: 31px;
+  font-size: 0.9375rem;
   line-height: 1.35;
   color: inherit;
   text-decoration-color: transparent;
@@ -141,9 +141,9 @@
 
 .ie-footer__hours {
   margin: 2px 0 0;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.45;
-  opacity: 0.88;
+  opacity: 0.9;
 }
 
 .ie-footer__nav,
@@ -180,7 +180,7 @@
 .ie-footer__nav-heading {
   margin: 0 0 11px;
   font-family: var(--font-body--family) !important;
-  font-size: 0.9375rem !important;
+  font-size: 1rem !important;
   font-weight: 600 !important;
   line-height: 1.2 !important;
   letter-spacing: 0 !important;
@@ -207,8 +207,8 @@
   display: inline-block;
   min-height: 0;
   padding-block: 5px;
-  font-size: 0.8125rem;
-  line-height: 1.4;
+  font-size: 0.875rem;
+  line-height: 1.45;
   color: inherit;
   text-decoration-color: transparent;
   text-underline-offset: 0.2em;
@@ -221,8 +221,8 @@
 }
 
 .ie-footer__nav-link--secondary {
-  font-size: 0.78125rem;
-  opacity: 0.88;
+  font-size: 0.875rem;
+  opacity: 0.9;
 }
 
 .ie-footer__nav-link:hover,
@@ -255,9 +255,9 @@
 
 .ie-footer__copyright {
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   line-height: 1.45;
-  opacity: 0.84;
+  opacity: 0.86;
 }
 
 .ie-footer__utility-links {
@@ -269,7 +269,7 @@
 
 .ie-footer__utility-link {
   padding-block: 3px;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 @media screen and (max-width: 1100px) {
@@ -353,7 +353,7 @@
   }
 
   .ie-footer__brand-copy {
-    font-size: 0.8125rem;
+    font-size: 0.9375rem;
   }
 
   .ie-footer__contact {
@@ -363,7 +363,7 @@
 
   .ie-footer__contact-link {
     min-height: 44px;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
 
   .ie-footer__nav-grid {
@@ -381,7 +381,7 @@
   }
 
   .ie-footer__nav-heading {
-    font-size: 0.9375rem !important;
+    font-size: 1rem !important;
   }
 
   .ie-footer__nav-link,
@@ -390,7 +390,7 @@
     align-items: center;
     min-height: 44px;
     padding-block: 0;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     white-space: normal !important;
   }
 
@@ -404,7 +404,7 @@
 
   .ie-footer__copyright,
   .ie-footer__utility-link {
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
   }
 
   .ie-footer__utility-links {
