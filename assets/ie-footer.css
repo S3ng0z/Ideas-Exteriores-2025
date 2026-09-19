@@ -1,5 +1,7 @@
-/* Ideas Exteriores — footer matched to the approved visual reference.
- * Scope is intentionally isolated under .ie-footer to avoid global theme regressions.
+/* Ideas Exteriores — footer matched to the supplied reference.
+ * Desktop proportions intentionally follow the reference composition:
+ * large brand lockup on the left; copy + divider + contact on the right;
+ * four navigation columns and a compact legal bottom bar.
  */
 
 .ie-footer {
@@ -18,7 +20,7 @@
 }
 
 .ie-footer__inner {
-  width: min(calc(100% - (var(--page-margin, 40px) * 2)), var(--home-content-width, 95rem));
+  width: min(calc(100% - (var(--page-margin, 36px) * 2)), var(--home-content-width, 95rem));
   margin-inline: auto;
   padding-block: var(--ie-footer-padding-top, 34px) var(--ie-footer-padding-bottom, 16px);
   padding-inline: 0;
@@ -26,42 +28,46 @@
 
 .ie-footer__masthead {
   display: grid;
-  grid-template-columns: minmax(300px, 1.28fr) minmax(240px, 1fr) minmax(260px, 1.03fr);
-  grid-template-areas: "brand location contact";
-  column-gap: clamp(48px, 4.25vw, 80px);
+  grid-template-columns: minmax(360px, 430px) minmax(0, 1fr);
+  column-gap: clamp(64px, 5.5vw, 80px);
   align-items: start;
-  padding-block-end: 44px;
+  padding-block-end: 54px;
 }
 
 .ie-footer__brand {
-  grid-area: brand;
-  width: min(100%, 300px);
+  min-width: 0;
 }
 
 .ie-footer__logo-link,
 .ie-footer__brand-name {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   max-width: 100%;
   color: inherit;
 }
 
 .ie-footer__brand-name {
   font-family: var(--font-heading--family);
-  font-size: clamp(1.6rem, 2.3vw, 2rem);
+  font-size: clamp(1.7rem, 2.4vw, 2.25rem);
   line-height: 1.05;
   text-decoration: none;
 }
 
 .ie-footer__logo {
   display: block;
-  width: min(270px, 68vw);
+  width: min(400px, 100%);
   height: auto;
 }
 
+.ie-footer__masthead-content {
+  width: 100%;
+  min-width: 0;
+  padding-block-start: 78px;
+}
+
 .ie-footer__brand-copy {
-  max-width: 43ch;
-  margin: 10px 0 0;
+  max-width: 48ch;
+  margin: 0 0 26px;
   font-size: 0.8125rem;
   line-height: 1.42;
   opacity: 0.96;
@@ -71,17 +77,17 @@
   margin-block: 0;
 }
 
+.ie-footer__contact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(72px, 9vw, 128px);
+  width: 100%;
+  padding-block-start: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .ie-footer__contact-block {
   min-width: 0;
-  padding-block-start: 12px;
-}
-
-.ie-footer__contact-block--location {
-  grid-area: location;
-}
-
-.ie-footer__contact-block--details {
-  grid-area: contact;
 }
 
 .ie-footer__eyebrow {
@@ -163,8 +169,8 @@
     minmax(330px, 1.35fr)
     minmax(145px, 0.65fr)
     minmax(170px, 0.75fr);
-  gap: 22px clamp(28px, 3vw, 44px);
-  padding-block: 22px 30px;
+  column-gap: clamp(28px, 3vw, 44px);
+  padding-block: 26px 34px;
 }
 
 .ie-footer__menu {
@@ -268,12 +274,21 @@
 
 @media screen and (max-width: 1100px) {
   .ie-footer__masthead {
-    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1fr) minmax(0, 1fr);
-    column-gap: 32px;
+    grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
+    column-gap: 48px;
+    padding-block-end: 42px;
   }
 
   .ie-footer__logo {
-    width: min(235px, 64vw);
+    width: min(340px, 100%);
+  }
+
+  .ie-footer__masthead-content {
+    padding-block-start: 42px;
+  }
+
+  .ie-footer__contact {
+    column-gap: 40px;
   }
 
   .ie-footer__nav-grid {
@@ -288,21 +303,36 @@
 }
 
 @media screen and (max-width: 760px) {
+  .ie-footer__inner {
+    width: calc(100% - 40px);
+  }
+
   .ie-footer__masthead {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-areas:
-      "brand brand"
-      "location contact";
-    gap: 24px 36px;
+    grid-template-columns: 1fr;
+    gap: 28px;
     padding-block-end: 30px;
   }
 
   .ie-footer__brand {
-    width: min(100%, 320px);
+    width: min(100%, 340px);
   }
 
-  .ie-footer__contact-block {
+  .ie-footer__logo {
+    width: min(320px, 100%);
+  }
+
+  .ie-footer__masthead-content {
     padding-block-start: 0;
+  }
+
+  .ie-footer__brand-copy {
+    max-width: 40ch;
+    margin-block-end: 20px;
+  }
+
+  .ie-footer__contact {
+    column-gap: 36px;
+    padding-block-start: 20px;
   }
 
   .ie-footer__nav-grid {
@@ -318,22 +348,17 @@
     padding-inline: 0;
   }
 
-  .ie-footer__masthead {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "brand"
-      "location"
-      "contact";
-    gap: 22px;
-  }
-
   .ie-footer__logo {
-    width: min(220px, 68vw);
+    width: min(300px, 84vw);
   }
 
   .ie-footer__brand-copy {
-    max-width: 36ch;
     font-size: 0.8125rem;
+  }
+
+  .ie-footer__contact {
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
 
   .ie-footer__contact-link {
