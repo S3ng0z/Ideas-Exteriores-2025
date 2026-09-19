@@ -2,9 +2,9 @@
   'use strict';
 
   var HERO_COPY = {
-    eyebrow: 'Construcción en madera',
-    heading: 'Casas y casetas de madera prefabricadas con entramado ligero y panel SIP',
-    lead: 'Soluciones para vivienda, estudio, oficina y exterior, con modelos definidos y configuraciones adaptables. Te ayudamos a elegir el sistema, el nivel de acabado y el alcance del proyecto, coordinando suministro y montaje con acompañamiento técnico de principio a fin.'
+    eyebrow: 'Soluciones habitables en madera',
+    heading: 'Casas y casetas prefabricadas de madera para vivir, trabajar y disfrutar',
+    lead: 'Modelos configurables para vivienda, estudio, oficina y exterior, disponibles en sistema europeo, entramado ligero y panel SIP. Te asesoramos para definir la solución, el acabado y el montaje con un alcance claro desde el presupuesto.'
   };
 
   function findHeroTextBlock(root) {
