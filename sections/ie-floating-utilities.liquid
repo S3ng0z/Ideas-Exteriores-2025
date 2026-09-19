@@ -10,20 +10,6 @@
   </a>
 
   <div class="ie-floating-utilities__right">
-    <button
-      type="button"
-      class="ie-floating-utilities__button ie-floating-utilities__scroll-nav"
-      data-ie-scroll-nav
-      data-direction="down"
-      aria-label="Ir a la siguiente sección"
-      title="Ir a la siguiente sección"
-    >
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M12 5v13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
-        <path d="m6.75 12.75 5.25 5.25 5.25-5.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
-
     <a
       class="ie-floating-utilities__dossier"
       href="https://cdn.shopify.com/s/files/1/0921/0796/4760/files/Conoce_Ideas_Exteriores_-_Especialistas_en_Madera.pdf?v=1773865931"
@@ -47,6 +33,34 @@
         <span class="ie-floating-utilities__dossier-meta">Descargar PDF</span>
       </span>
     </a>
+
+    <div class="ie-floating-utilities__nav" aria-label="Navegación por secciones">
+      <button
+        type="button"
+        class="ie-floating-utilities__button"
+        data-ie-scroll-prev
+        aria-label="Ir a la sección anterior"
+        title="Ir a la sección anterior"
+      >
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 19V6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          <path d="M6.75 11.25 12 6l5.25 5.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <button
+        type="button"
+        class="ie-floating-utilities__button"
+        data-ie-scroll-next
+        aria-label="Ir a la siguiente sección"
+        title="Ir a la siguiente sección"
+      >
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 5v13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+          <path d="m6.75 12.75 5.25 5.25 5.25-5.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -81,9 +95,15 @@
 
   .ie-floating-utilities__right{
     right:20px;
-    display:grid;
-    gap:12px;
-    justify-items:end;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  .ie-floating-utilities__nav{
+    display:flex;
+    align-items:center;
+    gap:8px;
   }
 
   .ie-floating-utilities__button{
@@ -104,28 +124,26 @@
       background-color .18s ease,
       border-color .18s ease,
       box-shadow .18s ease,
-      transform .18s ease;
+      transform .18s ease,
+      opacity .18s ease;
   }
 
   .ie-floating-utilities__button svg{
     width:23px;
     height:23px;
-    transition:transform .22s ease;
   }
 
-  .ie-floating-utilities__scroll-nav[data-direction="up"] svg{
-    transform:rotate(180deg);
-  }
-
-  .ie-floating-utilities__button:hover{
+  .ie-floating-utilities__button:hover:not(:disabled){
     background:#566236;
     border-color:rgba(255,255,255,.38);
     box-shadow:0 11px 28px rgba(20,24,18,.28);
     transform:translateY(-2px);
   }
 
-  .ie-floating-utilities__button[hidden]{
-    display:none;
+  .ie-floating-utilities__button:disabled{
+    opacity:.38;
+    cursor:default;
+    box-shadow:0 5px 15px rgba(20,24,18,.12);
   }
 
   .ie-floating-utilities__dossier{
@@ -211,33 +229,37 @@
 
     .ie-floating-utilities__right{
       right:14px;
-      gap:10px;
+      gap:8px;
+    }
+
+    .ie-floating-utilities__nav{
+      gap:6px;
     }
 
     .ie-floating-utilities__button{
-      width:46px;
-      height:46px;
+      width:44px;
+      height:44px;
       border-radius:7px;
     }
 
     .ie-floating-utilities__button svg{
-      width:21px;
-      height:21px;
+      width:20px;
+      height:20px;
     }
 
     .ie-floating-utilities__dossier{
       min-width:0;
-      width:50px;
-      height:50px;
-      min-height:50px;
+      width:48px;
+      height:48px;
+      min-height:48px;
       padding:5px;
-      border-radius:13px;
+      border-radius:12px;
     }
 
     .ie-floating-utilities__dossier-icon{
-      flex-basis:38px;
-      width:38px;
-      height:38px;
+      flex-basis:36px;
+      width:36px;
+      height:36px;
       border-radius:9px;
     }
 
@@ -256,12 +278,11 @@
 
   @media(prefers-reduced-motion:reduce){
     .ie-floating-utilities__button,
-    .ie-floating-utilities__button svg,
     .ie-floating-utilities__dossier{
       transition:none;
     }
 
-    .ie-floating-utilities__button:hover,
+    .ie-floating-utilities__button:hover:not(:disabled),
     .ie-floating-utilities__dossier:hover{
       transform:none;
     }
@@ -270,7 +291,9 @@
 
 <script>
   (function () {
-    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reduceMotion =
+      window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     function getScrollBehavior() {
       return reduceMotion ? 'auto' : 'smooth';
@@ -305,7 +328,8 @@
       });
 
       return sections.sort(function (a, b) {
-        return a.getBoundingClientRect().top - b.getBoundingClientRect().top;
+        return (a.getBoundingClientRect().top + window.scrollY) -
+          (b.getBoundingClientRect().top + window.scrollY);
       });
     }
 
@@ -313,13 +337,16 @@
       return element.getBoundingClientRect().top + window.scrollY;
     }
 
+    function getCurrentReferenceY() {
+      return window.scrollY + Math.min(160, Math.max(88, window.innerHeight * 0.12));
+    }
+
     function getNextSection() {
-      var currentY = window.scrollY;
-      var threshold = currentY + Math.min(160, Math.max(88, window.innerHeight * 0.12));
+      var referenceY = getCurrentReferenceY();
       var sections = getMajorSections();
 
       for (var index = 0; index < sections.length; index += 1) {
-        if (getDocumentTop(sections[index]) > threshold) {
+        if (getDocumentTop(sections[index]) > referenceY) {
           return sections[index];
         }
       }
@@ -327,42 +354,45 @@
       return null;
     }
 
-    function scrollToNextSection() {
-      var target = getNextSection();
+    function getPreviousSection() {
+      var referenceY = getCurrentReferenceY();
+      var sections = getMajorSections();
+      var previous = null;
 
-      if (target) {
-        var targetTop = Math.max(0, getDocumentTop(target) - 24);
-        window.scrollTo({ top: targetTop, behavior: getScrollBehavior() });
-        return;
+      for (var index = 0; index < sections.length; index += 1) {
+        var top = getDocumentTop(sections[index]);
+
+        if (top < referenceY - 40) {
+          previous = sections[index];
+        } else {
+          break;
+        }
       }
 
+      return previous;
+    }
+
+    function scrollToSection(target) {
+      if (!target) return;
+
+      var targetTop = Math.max(0, getDocumentTop(target) - 24);
       window.scrollTo({
-        top: document.documentElement.scrollHeight,
+        top: targetTop,
         behavior: getScrollBehavior()
       });
     }
 
-    function isFooterApproaching() {
-      var footer = document.querySelector(
-        '.shopify-section-group-footer-group, footer, [data-footer-group]'
-      );
-
-      if (footer) {
-        var rect = footer.getBoundingClientRect();
-        if (rect.top <= window.innerHeight * 0.88) {
-          return true;
-        }
+    function initSectionNavigation(previousButton, nextButton) {
+      if (
+        !previousButton ||
+        !nextButton ||
+        previousButton.dataset.ieInitialized === 'true'
+      ) {
+        return;
       }
 
-      return (
-        window.scrollY + window.innerHeight >=
-        document.documentElement.scrollHeight - Math.max(220, window.innerHeight * 0.22)
-      );
-    }
-
-    function initScrollNavigation(button) {
-      if (!button || button.dataset.ieInitialized === 'true') return;
-      button.dataset.ieInitialized = 'true';
+      previousButton.dataset.ieInitialized = 'true';
+      nextButton.dataset.ieInitialized = 'true';
 
       var ticking = false;
 
@@ -372,21 +402,11 @@
         var scrollable =
           document.documentElement.scrollHeight > window.innerHeight + 80;
 
-        button.hidden = !scrollable;
-        if (!scrollable) return;
-
-        var direction = isFooterApproaching() ? 'up' : 'down';
-        var isUp = direction === 'up';
-
-        button.dataset.direction = direction;
-        button.setAttribute(
-          'aria-label',
-          isUp ? 'Volver al inicio' : 'Ir a la siguiente sección'
-        );
-        button.setAttribute(
-          'title',
-          isUp ? 'Volver al inicio' : 'Ir a la siguiente sección'
-        );
+        previousButton.disabled = !scrollable || window.scrollY <= 24;
+        nextButton.disabled =
+          !scrollable ||
+          window.scrollY + window.innerHeight >=
+            document.documentElement.scrollHeight - 24;
       }
 
       function requestStateUpdate() {
@@ -395,19 +415,39 @@
         window.requestAnimationFrame(updateState);
       }
 
-      button.addEventListener('click', function () {
-        var direction = button.dataset.direction || 'down';
+      previousButton.addEventListener('click', function () {
+        var target = getPreviousSection();
 
-        if (direction === 'up') {
-          window.scrollTo({ top: 0, behavior: getScrollBehavior() });
+        if (target) {
+          scrollToSection(target);
         } else {
-          scrollToNextSection();
+          window.scrollTo({ top: 0, behavior: getScrollBehavior() });
         }
 
         if (window.dataLayer && Array.isArray(window.dataLayer)) {
           window.dataLayer.push({
             event: 'floating_scroll_navigation',
-            direction: direction
+            direction: 'up'
+          });
+        }
+      });
+
+      nextButton.addEventListener('click', function () {
+        var target = getNextSection();
+
+        if (target) {
+          scrollToSection(target);
+        } else {
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: getScrollBehavior()
+          });
+        }
+
+        if (window.dataLayer && Array.isArray(window.dataLayer)) {
+          window.dataLayer.push({
+            event: 'floating_scroll_navigation',
+            direction: 'down'
           });
         }
       });
@@ -419,6 +459,7 @@
 
     function initDossierTracking(link) {
       if (!link || link.dataset.ieTrackingInitialized === 'true') return;
+
       link.dataset.ieTrackingInitialized = 'true';
 
       link.addEventListener('click', function () {
@@ -434,8 +475,15 @@
 
     function init(root) {
       var scope = root || document;
-      initScrollNavigation(scope.querySelector('[data-ie-scroll-nav]'));
-      initDossierTracking(scope.querySelector('[data-ie-dossier-download]'));
+
+      initSectionNavigation(
+        scope.querySelector('[data-ie-scroll-prev]'),
+        scope.querySelector('[data-ie-scroll-next]')
+      );
+
+      initDossierTracking(
+        scope.querySelector('[data-ie-dossier-download]')
+      );
     }
 
     if (document.readyState === 'loading') {
