@@ -27,17 +27,15 @@
 }
 
 .ie-footer__masthead {
-  display: grid;
-  grid-template-columns: minmax(300px, 340px) minmax(0, 1fr);
-  column-gap: clamp(64px, 5.5vw, 80px);
-  align-items: start;
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(64px, 5.5vw, 80px);
   padding-block-end: 42px;
 }
 
 .ie-footer__brand {
-  grid-column: 1;
-  grid-row: 1;
-  width: min(100%, 340px);
+  flex: 0 0 340px;
+  width: 340px;
   min-width: 0;
 }
 
@@ -68,9 +66,8 @@
 }
 
 .ie-footer__content-column {
-  grid-column: 2;
-  grid-row: 1;
-  width: 100%;
+  flex: 1 1 auto;
+  width: auto;
   min-width: 0;
   padding-block-start: 2px;
 }
@@ -296,9 +293,13 @@
 
 @media screen and (max-width: 1100px) {
   .ie-footer__masthead {
-    grid-template-columns: minmax(270px, 310px) minmax(0, 1fr);
-    column-gap: 48px;
+    gap: 48px;
     padding-block-end: 42px;
+  }
+
+  .ie-footer__brand {
+    flex-basis: 310px;
+    width: 310px;
   }
 
   .ie-footer__logo {
@@ -327,7 +328,7 @@
   }
 
   .ie-footer__masthead {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 24px;
     padding-block-end: 30px;
   }
@@ -342,8 +343,7 @@
   }
 
   .ie-footer__content-column {
-    grid-column: 1;
-    grid-row: auto;
+    width: 100%;
     padding-block-start: 0;
   }
 
