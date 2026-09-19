@@ -140,10 +140,8 @@
     transform:translateY(-2px);
   }
 
-  .ie-floating-utilities__button:disabled{
-    opacity:.38;
-    cursor:default;
-    box-shadow:0 5px 15px rgba(20,24,18,.12);
+  .ie-floating-utilities__button[hidden]{
+    display:none !important;
   }
 
   .ie-floating-utilities__dossier{
@@ -399,14 +397,20 @@
       function updateState() {
         ticking = false;
 
-        var scrollable =
-          document.documentElement.scrollHeight > window.innerHeight + 80;
+        var documentHeight = document.documentElement.scrollHeight;
+        var viewportHeight = window.innerHeight;
+        var maxScroll = Math.max(0, documentHeight - viewportHeight);
+        var currentScroll = Math.max(0, window.scrollY);
 
-        previousButton.disabled = !scrollable || window.scrollY <= 24;
-        nextButton.disabled =
-          !scrollable ||
-          window.scrollY + window.innerHeight >=
-            document.documentElement.scrollHeight - 24;
+        var scrollable = maxScroll > 1;
+        var atTop = currentScroll <= 1;
+        var atEnd = maxScroll - currentScroll <= 1;
+
+        previousButton.hidden = !scrollable || atTop;
+        nextButton.hidden = !scrollable || atEnd;
+
+        previousButton.disabled = false;
+        nextButton.disabled = false;
       }
 
       function requestStateUpdate() {
