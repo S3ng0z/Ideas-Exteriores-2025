@@ -12,14 +12,15 @@
   <div class="ie-floating-utilities__right">
     <button
       type="button"
-      class="ie-floating-utilities__button ie-floating-utilities__scroll-top"
-      data-ie-scroll-top
-      aria-label="Volver arriba"
-      title="Volver arriba"
+      class="ie-floating-utilities__button ie-floating-utilities__scroll-nav"
+      data-ie-scroll-nav
+      data-direction="down"
+      aria-label="Ir a la siguiente sección"
+      title="Ir a la siguiente sección"
     >
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M12 19V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-        <path d="M6.75 11.25L12 6l5.25 5.25" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 5v13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        <path d="m6.75 12.75 5.25 5.25 5.25-5.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
 
@@ -88,19 +89,43 @@
   .ie-floating-utilities__button{
     display:grid;
     place-items:center;
-    width:48px;
-    height:48px;
-    border:0;
-    border-radius:50%;
-    background:#1f231e;
+    width:52px;
+    height:52px;
+    padding:0;
+    border:1px solid rgba(255,255,255,.22);
+    border-radius:8px;
+    background:rgba(31,35,30,.94);
     color:#fff;
     cursor:pointer;
-    box-shadow:0 6px 18px rgba(20,24,18,.2);
+    box-shadow:0 8px 24px rgba(20,24,18,.22);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    transition:
+      background-color .18s ease,
+      border-color .18s ease,
+      box-shadow .18s ease,
+      transform .18s ease;
   }
 
   .ie-floating-utilities__button svg{
-    width:22px;
-    height:22px;
+    width:23px;
+    height:23px;
+    transition:transform .22s ease;
+  }
+
+  .ie-floating-utilities__scroll-nav[data-direction="up"] svg{
+    transform:rotate(180deg);
+  }
+
+  .ie-floating-utilities__button:hover{
+    background:#566236;
+    border-color:rgba(255,255,255,.38);
+    box-shadow:0 11px 28px rgba(20,24,18,.28);
+    transform:translateY(-2px);
+  }
+
+  .ie-floating-utilities__button[hidden]{
+    display:none;
   }
 
   .ie-floating-utilities__dossier{
@@ -190,8 +215,14 @@
     }
 
     .ie-floating-utilities__button{
-      width:44px;
-      height:44px;
+      width:46px;
+      height:46px;
+      border-radius:7px;
+    }
+
+    .ie-floating-utilities__button svg{
+      width:21px;
+      height:21px;
     }
 
     .ie-floating-utilities__dossier{
@@ -224,10 +255,13 @@
   }
 
   @media(prefers-reduced-motion:reduce){
+    .ie-floating-utilities__button,
+    .ie-floating-utilities__button svg,
     .ie-floating-utilities__dossier{
       transition:none;
     }
 
+    .ie-floating-utilities__button:hover,
     .ie-floating-utilities__dossier:hover{
       transform:none;
     }
@@ -235,17 +269,159 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var button = document.querySelector('[data-ie-scroll-top]');
-    if (button) {
-      button.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+  (function () {
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function getScrollBehavior() {
+      return reduceMotion ? 'auto' : 'smooth';
+    }
+
+    function getMajorSections() {
+      var selectors = [
+        'main .shopify-section',
+        'main > section',
+        'main > div[id^="shopify-section-"]'
+      ];
+
+      var seen = new Set();
+      var sections = [];
+
+      document.querySelectorAll(selectors.join(',')).forEach(function (element) {
+        if (seen.has(element)) return;
+        seen.add(element);
+
+        var rect = element.getBoundingClientRect();
+        var style = window.getComputedStyle(element);
+
+        if (
+          rect.height < 120 ||
+          style.display === 'none' ||
+          style.visibility === 'hidden'
+        ) {
+          return;
+        }
+
+        sections.push(element);
+      });
+
+      return sections.sort(function (a, b) {
+        return a.getBoundingClientRect().top - b.getBoundingClientRect().top;
       });
     }
 
-    var dossierLink = document.querySelector('[data-ie-dossier-download]');
-    if (dossierLink) {
-      dossierLink.addEventListener('click', function () {
+    function getDocumentTop(element) {
+      return element.getBoundingClientRect().top + window.scrollY;
+    }
+
+    function getNextSection() {
+      var currentY = window.scrollY;
+      var threshold = currentY + Math.min(160, Math.max(88, window.innerHeight * 0.12));
+      var sections = getMajorSections();
+
+      for (var index = 0; index < sections.length; index += 1) {
+        if (getDocumentTop(sections[index]) > threshold) {
+          return sections[index];
+        }
+      }
+
+      return null;
+    }
+
+    function scrollToNextSection() {
+      var target = getNextSection();
+
+      if (target) {
+        var targetTop = Math.max(0, getDocumentTop(target) - 24);
+        window.scrollTo({ top: targetTop, behavior: getScrollBehavior() });
+        return;
+      }
+
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: getScrollBehavior()
+      });
+    }
+
+    function isFooterApproaching() {
+      var footer = document.querySelector(
+        '.shopify-section-group-footer-group, footer, [data-footer-group]'
+      );
+
+      if (footer) {
+        var rect = footer.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.88) {
+          return true;
+        }
+      }
+
+      return (
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight - Math.max(220, window.innerHeight * 0.22)
+      );
+    }
+
+    function initScrollNavigation(button) {
+      if (!button || button.dataset.ieInitialized === 'true') return;
+      button.dataset.ieInitialized = 'true';
+
+      var ticking = false;
+
+      function updateState() {
+        ticking = false;
+
+        var scrollable =
+          document.documentElement.scrollHeight > window.innerHeight + 80;
+
+        button.hidden = !scrollable;
+        if (!scrollable) return;
+
+        var direction = isFooterApproaching() ? 'up' : 'down';
+        var isUp = direction === 'up';
+
+        button.dataset.direction = direction;
+        button.setAttribute(
+          'aria-label',
+          isUp ? 'Volver al inicio' : 'Ir a la siguiente sección'
+        );
+        button.setAttribute(
+          'title',
+          isUp ? 'Volver al inicio' : 'Ir a la siguiente sección'
+        );
+      }
+
+      function requestStateUpdate() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(updateState);
+      }
+
+      button.addEventListener('click', function () {
+        var direction = button.dataset.direction || 'down';
+
+        if (direction === 'up') {
+          window.scrollTo({ top: 0, behavior: getScrollBehavior() });
+        } else {
+          scrollToNextSection();
+        }
+
+        if (window.dataLayer && Array.isArray(window.dataLayer)) {
+          window.dataLayer.push({
+            event: 'floating_scroll_navigation',
+            direction: direction
+          });
+        }
+      });
+
+      window.addEventListener('scroll', requestStateUpdate, { passive: true });
+      window.addEventListener('resize', requestStateUpdate, { passive: true });
+      updateState();
+    }
+
+    function initDossierTracking(link) {
+      if (!link || link.dataset.ieTrackingInitialized === 'true') return;
+      link.dataset.ieTrackingInitialized = 'true';
+
+      link.addEventListener('click', function () {
         if (window.dataLayer && Array.isArray(window.dataLayer)) {
           window.dataLayer.push({
             event: 'download_dossier',
@@ -255,7 +431,25 @@
         }
       });
     }
-  });
+
+    function init(root) {
+      var scope = root || document;
+      initScrollNavigation(scope.querySelector('[data-ie-scroll-nav]'));
+      initDossierTracking(scope.querySelector('[data-ie-dossier-download]'));
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        init(document);
+      }, { once: true });
+    } else {
+      init(document);
+    }
+
+    document.addEventListener('shopify:section:load', function (event) {
+      init(event.target);
+    });
+  })();
 </script>
 
 {% schema %}
