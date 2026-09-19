@@ -77,13 +77,13 @@
   max-width: 88ch;
   margin: 0 0 22px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.55;
   text-align: justify;
   text-align-last: left;
   text-justify: inter-word;
   text-wrap: pretty;
-  hyphens: auto;
+  hyphens: manual;
   opacity: 0.96;
 }
 
@@ -222,6 +222,11 @@
   font-size: 0.875rem;
   line-height: 1.45;
   opacity: 0.9;
+}
+
+.ie-footer__appointment {
+  font-weight: 700;
+  opacity: 1;
 }
 
 .ie-footer__nav,
@@ -534,13 +539,13 @@
     max-width: 88ch;
     margin: 0 !important;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.55;
     text-align: justify;
     text-align-last: left;
     text-justify: inter-word;
     text-wrap: pretty;
-    hyphens: auto;
+    hyphens: manual;
     opacity: 0.96;
   }
 

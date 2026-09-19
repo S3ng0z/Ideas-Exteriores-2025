@@ -29,7 +29,14 @@
 
       <div class="ie-footer__content-column">
         {%- if section.settings.brand_copy != blank -%}
-          <div class="ie-footer__intro rte">{{ section.settings.brand_copy }}</div>
+          {%- assign ie_brand_copy_plain = section.settings.brand_copy | strip_html | strip -%}
+          <div class="ie-footer__intro rte">
+            {%- if ie_brand_copy_plain contains 'En Ideas Exteriores diseñamos, fabricamos e instalamos soluciones en madera' -%}
+              <p>En Ideas Exteriores creamos espacios habitables y exteriores en madera: casas y casetas prefabricadas, estudios, oficinas, pérgolas, cenadores y tarimas. Trabajamos con sistema europeo, entramado ligero y panel SIP, combinando diseño configurable, asesoramiento técnico y montaje profesional.</p>
+            {%- else -%}
+              {{ section.settings.brand_copy }}
+            {%- endif -%}
+          </div>
         {%- endif -%}
 
         <div class="ie-footer__contact-separator" aria-hidden="true"></div>
@@ -67,7 +74,10 @@
             {%- endif -%}
 
             {%- if section.settings.hours != blank -%}
-              <p class="ie-footer__hours">{{ section.settings.hours | escape }}</p>
+              {%- assign ie_hours_safe = section.settings.hours | escape -%}
+              {%- capture ie_appointment_bold -%}<strong class="ie-footer__appointment">Solo con cita previa</strong>{%- endcapture -%}
+              {%- assign ie_hours_markup = ie_hours_safe | replace: 'Solo con cita previa', ie_appointment_bold | replace: 'solo con cita previa', ie_appointment_bold -%}
+              <p class="ie-footer__hours">{{ ie_hours_markup }}</p>
             {%- endif -%}
           </div>
         </div>
@@ -159,7 +169,7 @@
     {"type":"color_scheme","id":"color_scheme","label":"Esquema de color","default":"scheme-4"},
     {"type":"header","content":"Marca"},
     {"type":"image_picker","id":"logo","label":"Logotipo"},
-    {"type":"richtext","id":"brand_copy","label":"Texto breve de marca","default":"<p>En Ideas Exteriores diseñamos, fabricamos e instalamos soluciones en madera para crear espacios exteriores y habitables a medida. Desarrollamos casas y construcciones con sistema SIP y entramado ligero, casetas, estudios y oficinas modulares, pérgolas, cenadores, tarimas y otras estructuras, acompañando cada proyecto desde el asesoramiento inicial hasta el montaje. Apostamos por un diseño funcional, materiales adecuados y una ejecución profesional para ofrecer espacios confortables, duraderos y pensados para disfrutarse durante años.</p>"},
+    {"type":"richtext","id":"brand_copy","label":"Texto breve de marca","default":"<p>En Ideas Exteriores creamos espacios habitables y exteriores en madera: casas y casetas prefabricadas, estudios, oficinas, pérgolas, cenadores y tarimas. Trabajamos con sistema europeo, entramado ligero y panel SIP, combinando diseño configurable, asesoramiento técnico y montaje profesional.</p>"},
     {"type":"header","content":"Contacto"},
     {"type":"text","id":"location_heading","label":"Título de ubicación","default":"Ubicación"},
     {"type":"text","id":"contact_heading","label":"Título de contacto","default":"Contacto"},
