@@ -28,14 +28,14 @@
 
 .ie-footer__masthead {
   display: grid;
-  grid-template-columns: minmax(360px, 420px) minmax(0, 1fr);
+  grid-template-columns: minmax(300px, 340px) minmax(0, 1fr);
   column-gap: clamp(64px, 5.5vw, 80px);
   align-items: start;
   padding-block-end: 42px;
 }
 
 .ie-footer__brand {
-  width: min(100%, 420px);
+  width: min(100%, 340px);
   min-width: 0;
 }
 
@@ -60,8 +60,8 @@
 
 .ie-footer__logo {
   display: block;
-  width: min(390px, 100%) !important;
-  max-width: 390px;
+  width: min(310px, 100%) !important;
+  max-width: 310px;
   height: auto;
 }
 
@@ -280,14 +280,14 @@
 
 @media screen and (max-width: 1100px) {
   .ie-footer__masthead {
-    grid-template-columns: minmax(300px, 350px) minmax(0, 1fr);
+    grid-template-columns: minmax(270px, 310px) minmax(0, 1fr);
     column-gap: 48px;
     padding-block-end: 42px;
   }
 
   .ie-footer__logo {
-    width: min(330px, 100%) !important;
-    max-width: 330px;
+    width: min(285px, 100%) !important;
+    max-width: 285px;
   }
 
   .ie-footer__masthead-content {
@@ -321,12 +321,12 @@
   }
 
   .ie-footer__brand {
-    width: min(100%, 330px);
+    width: min(100%, 300px);
   }
 
   .ie-footer__logo {
-    width: min(320px, 100%) !important;
-    max-width: 320px;
+    width: min(280px, 100%) !important;
+    max-width: 280px;
   }
 
   .ie-footer__masthead-content {
@@ -357,8 +357,8 @@
   }
 
   .ie-footer__logo {
-    width: min(300px, 86vw) !important;
-    max-width: 300px;
+    width: min(260px, 82vw) !important;
+    max-width: 260px;
   }
 
   .ie-footer__brand-copy {

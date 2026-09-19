@@ -12,10 +12,10 @@
           <a class="ie-footer__logo-link" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }}">
             {{
               section.settings.logo
-              | image_url: width: 1200
+              | image_url: width: 800
               | image_tag:
-                widths: '320, 480, 640, 800, 1000, 1200',
-                sizes: '(max-width: 640px) 340px, (max-width: 1100px) 420px, 560px',
+                widths: '260, 320, 480, 640, 800',
+                sizes: '(max-width: 640px) 260px, (max-width: 1100px) 285px, 310px',
                 class: 'ie-footer__logo',
                 loading: 'lazy',
                 alt: shop.name
