@@ -35,6 +35,10 @@
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
     {{ 'ie-typography.css' | asset_url | stylesheet_tag }}
+    {% if request.page_type == 'index' %}
+      {{ 'ie-home-hero.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'ie-home-hero.js' | asset_url }}" defer></script>
+    {% endif %}
     {%- render 'color-schemes' -%}
 
     {% if request.design_mode %}
@@ -64,10 +68,6 @@
     {% sections 'footer-group' %}
 
     {% render 'search-modal' %}
-
-    {% if request.page_type == 'index' %}
-      {% render 'ie-home-hero-override' %}
-    {% endif %}
 
     {% # theme-check-disable ParserBlockingScript %}
     <script src="{{ 'critical.js' | asset_url }}"></script>
