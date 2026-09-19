@@ -7,6 +7,7 @@
       '<p class="ie-home-solutions__intro">En <strong>Ideas Exteriores</strong> desarrollamos soluciones en madera para vivienda, estudio, oficina y espacio exterior a partir de modelos definidos y configurables, con un alcance claro desde el presupuesto hasta el montaje.</p>' +
       '<p><strong>Elige el sistema que mejor encaja con tu proyecto:</strong></p>' +
       '<ul>' +
+        '<li><strong>Sistema europeo:</strong> una solución prefabricada en madera orientada a modelos definidos y configuraciones estandarizadas, con piezas preparadas para facilitar un montaje preciso y un acabado natural.</li>' +
         '<li><strong>Entramado ligero:</strong> una solución versátil para construcciones de madera con configuraciones y acabados definidos según el modelo.</li>' +
         '<li><strong>Panel SIP:</strong> un sistema prefabricado basado en paneles estructurales que integra aislamiento y favorece una ejecución precisa.</li>' +
       '</ul>' +
