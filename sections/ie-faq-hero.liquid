@@ -1,0 +1,92 @@
+{{ 'ie-faq-page.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-faq ie-faq--hero" aria-labelledby="ie-faq-title-{{ section.id }}">
+  <div class="ie-faq__inner">
+    <nav class="ie-faq__breadcrumb" aria-label="Migas de pan">
+      <a href="{{ routes.root_url }}">Inicio</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{{ page.title }}</span>
+    </nav>
+
+    <div class="ie-faq__hero">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-faq__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+
+        <h1 id="ie-faq-title-{{ section.id }}">{{ section.settings.heading }}</h1>
+
+        {% if section.settings.lead != blank %}
+          <div class="ie-faq__lead rte">{{ section.settings.lead }}</div>
+        {% endif %}
+      </div>
+
+      {% if section.blocks.size > 0 %}
+        <nav class="ie-faq__topic-nav" aria-label="Temas de preguntas frecuentes">
+          {% if section.settings.nav_title != blank %}
+            <p class="ie-faq__topic-title">{{ section.settings.nav_title }}</p>
+          {% endif %}
+          <ol class="ie-faq__topic-list">
+            {% for block in section.blocks %}
+              <li {{ block.shopify_attributes }}>
+                <a href="{{ block.settings.anchor }}">
+                  <small>{{ block.settings.number }}</small>
+                  <strong>{{ block.settings.label }}</strong>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ol>
+        </nav>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{%- assign ie_home_url = shop.url | append: routes.root_url -%}
+{%- assign ie_current_url = shop.url | append: page.url -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": {{ ie_home_url | json }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.title | json }},
+      "item": {{ ie_current_url | json }}
+    }
+  ]
+}
+</script>
+
+{% schema %}
+{
+  "name": "FAQ · Hero",
+  "settings": [
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Información para decidir con claridad"},
+    {"type":"text","id":"heading","label":"Título","default":"Preguntas frecuentes sobre proyectos en madera"},
+    {"type":"richtext","id":"lead","label":"Introducción","default":"<p>Resolvemos las dudas que más influyen antes de elegir una solución: presupuesto, configuración, licencias, sistemas constructivos, montaje, mantenimiento y garantías. Si tu caso depende de la parcela, el municipio o un alcance concreto, lo revisamos contigo.</p>"},
+    {"type":"text","id":"nav_title","label":"Título del índice","default":"Ir directamente a"}
+  ],
+  "blocks": [
+    {
+      "type":"topic",
+      "name":"Tema",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"label","label":"Texto","default":"Proyecto y presupuesto"},
+        {"type":"text","id":"anchor","label":"Ancla","default":"#proyecto-presupuesto"}
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets":[{"name":"FAQ · Hero"}]
+}
+{% endschema %}
