@@ -463,6 +463,12 @@
   color: var(--ie-muted);
 }
 
+.ie-services__closing .ie-services__button {
+  flex: 0 0 auto;
+  min-width: max-content;
+  white-space: nowrap;
+}
+
 .ie-services a:focus-visible {
   outline: 2px solid var(--ie-forest);
   outline-offset: 4px;
@@ -786,6 +792,8 @@
 
   .ie-services__closing .ie-services__button {
     width: 100%;
+    min-width: 0;
+    white-space: nowrap;
   }
 }
 
