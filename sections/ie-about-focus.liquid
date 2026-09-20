@@ -1,0 +1,51 @@
+<section class="ie-about ie-about--focus" aria-labelledby="ie-about-focus-title-{{ section.id }}">
+  <div class="ie-about__inner">
+    <div class="ie-about__section-head">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-about__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-about-focus-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}
+        <div class="ie-about__section-intro rte">{{ section.settings.intro }}</div>
+      {% endif %}
+    </div>
+
+    <div class="ie-about__focus-grid">
+      {% for block in section.blocks %}
+        <article class="ie-about__focus-card" {{ block.shopify_attributes }}>
+          <p class="ie-about__focus-index">{{ block.settings.index }}</p>
+          <h3>{{ block.settings.heading }}</h3>
+          {% if block.settings.text != blank %}
+            <div class="ie-about__focus-text rte">{{ block.settings.text }}</div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Nosotros · Ámbitos",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Qué hacemos"},
+    {"type":"text","id":"heading","label":"Título","default":"Tres ámbitos, una misma forma de trabajar"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Organizamos la oferta para que sea fácil entender qué solución encaja con cada necesidad. Los sistemas constructivos, materiales y servicios actúan como capas técnicas de apoyo a esa elección.</p>"}
+  ],
+  "blocks":[
+    {
+      "type":"focus",
+      "name":"Ámbito",
+      "settings":[
+        {"type":"text","id":"index","label":"Índice","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Exterior"},
+        {"type":"richtext","id":"text","label":"Texto","default":"<p>Soluciones de madera para mejorar el uso del jardín y los espacios exteriores.</p>"}
+      ]
+    }
+  ],
+  "max_blocks":3,
+  "presets":[{"name":"Nosotros · Ámbitos"}]
+}
+{% endschema %}
