@@ -1,0 +1,227 @@
+/*
+ * ------------------------------------------------------------
+ * About Ideas Exteriores · canonical native Shopify Online Store 2.0
+ * Dedicated sections only. Canonical template for /pages/about-ideas-exteriores.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "ie-about-hero",
+      "blocks": {
+        "s1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Elegir con claridad"
+          }
+        },
+        "s2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Definir técnicamente"
+          }
+        },
+        "s3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Ejecutar con control"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "eyebrow": "Ideas Exteriores",
+        "heading": "Madera, diseño y ejecución con criterio",
+        "lead": "<p>Desarrollamos soluciones de madera para exterior, estructuras y espacios habitables a partir de modelos y configuraciones definidas. Coordinamos diseño, sistema, suministro y montaje para que cada proyecto avance con un alcance claro.</p>",
+        "summary_title": "Nuestra forma de trabajar"
+      }
+    },
+    "story": {
+      "type": "ie-about-story",
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "heading": "Madera",
+            "text": "Material protagonista y criterio de identidad."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "heading": "Diseño",
+            "text": "Proporción, integración y acabados cuidados."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "heading": "Control",
+            "text": "Alcance, montaje y responsabilidades definidos."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/about-us.webp",
+        "image_alt": "Estructura y trabajo en madera de Ideas Exteriores",
+        "eyebrow": "Quiénes somos",
+        "heading": "Una forma más clara de construir con madera",
+        "text": "<p>La madera es el material que articula nuestra propuesta. La combinamos con vidrio, acero, aluminio, aislantes, herrajes y otros materiales cuando mejoran el resultado del conjunto.</p><p>Trabajamos con un catálogo curado de soluciones y opciones compatibles, porque definir bien desde el principio permite controlar mejor fabricación, transporte, montaje, prestaciones y presupuesto.</p>"
+      }
+    },
+    "focus": {
+      "type": "ie-about-focus",
+      "blocks": {
+        "exterior": {
+          "type": "focus",
+          "settings": {
+            "index": "01 · Exterior",
+            "heading": "Espacios para disfrutar fuera",
+            "text": "<p>Pérgolas, porches, cenadores, tarimas y otras soluciones que mejoran el uso del jardín, la terraza o la parcela con una integración cuidada.</p>"
+          }
+        },
+        "habitables": {
+          "type": "focus",
+          "settings": {
+            "index": "02 · Habitables",
+            "heading": "Espacios para vivir y trabajar",
+            "text": "<p>Casas, casetas, estudios y oficinas desarrollados sobre modelos y configuraciones definidas, con el sistema y el nivel de acabado adecuados a cada uso.</p>"
+          }
+        },
+        "structures": {
+          "type": "focus",
+          "settings": {
+            "index": "03 · Estructuras",
+            "heading": "Soluciones con criterio técnico",
+            "text": "<p>Estructuras y sistemas de madera para proyectos que requieren definición técnica, suministro, logística o montaje coordinado.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "exterior",
+        "habitables",
+        "structures"
+      ],
+      "settings": {
+        "eyebrow": "Qué hacemos",
+        "heading": "Tres ámbitos, una misma forma de trabajar",
+        "intro": "<p>Organizamos la oferta para que sea fácil entender qué solución encaja con cada necesidad. Los sistemas constructivos, materiales y servicios actúan como capas técnicas de apoyo a esa elección.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-about-process",
+      "blocks": {
+        "st1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Entender",
+            "text": "Partimos del uso, la ubicación, las medidas y las condiciones reales del proyecto."
+          }
+        },
+        "st2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Elegir",
+            "text": "Seleccionamos la familia, el modelo y el sistema compatibles con la necesidad."
+          }
+        },
+        "st3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Definir",
+            "text": "Concretamos configuración, alcance, documentación y criterio de presupuesto."
+          }
+        },
+        "st4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Ejecutar",
+            "text": "Coordinamos suministro, logística y montaje según la modalidad contratada."
+          }
+        }
+      },
+      "block_order": [
+        "st1",
+        "st2",
+        "st3",
+        "st4"
+      ],
+      "settings": {
+        "eyebrow": "Cómo trabajamos",
+        "heading": "De la necesidad a una solución ejecutable",
+        "intro": "<p>Ordenamos las decisiones para reducir incertidumbre y convertir una necesidad en un proyecto con alcance, sistema y siguiente paso definidos.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-about-confidence",
+      "blocks": {
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Catálogo curado",
+            "text": "Modelos y opciones compatibles para elegir sin convertir cada proyecto en un desarrollo desde cero."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Criterio técnico",
+            "text": "Sistemas, materiales y detalles se valoran por uso, prestaciones y condiciones reales de ejecución."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Alcance claro",
+            "text": "Definimos qué incluye cada propuesta, qué requiere preparación previa y qué decisiones quedan por cerrar."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "eyebrow": "Nuestro criterio",
+        "heading": "Diseño, técnica y claridad comercial"
+      }
+    },
+    "cta": {
+      "type": "ie-about-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Elige una solución y avancemos con un alcance claro",
+        "text": "<p>Explora nuestros productos y servicios o cuéntanos qué espacio necesitas. Te orientaremos hacia la opción y el nivel de intervención más adecuados.</p>",
+        "primary_label": "Ver productos",
+        "primary_link": "/collections",
+        "secondary_label": "Hablar con el equipo",
+        "secondary_link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "story",
+    "focus",
+    "process",
+    "confidence",
+    "cta"
+  ]
+}
