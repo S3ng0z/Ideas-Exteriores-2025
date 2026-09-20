@@ -1,0 +1,51 @@
+<section class="ie-contact ie-contact--process" aria-labelledby="ie-contact-process-title-{{ section.id }}">
+  <div class="ie-contact__inner">
+    <div class="ie-contact__process">
+      <div class="ie-contact__process-intro">
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-contact__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-contact-process-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}
+          <div class="rte">{{ section.settings.intro }}</div>
+        {% endif %}
+      </div>
+
+      <ol class="ie-contact__process-list">
+        {% for block in section.blocks %}
+          <li class="ie-contact__process-step" {{ block.shopify_attributes }}>
+            <span class="ie-contact__process-number">{{ block.settings.number }}</span>
+            <div>
+              <h3>{{ block.settings.heading }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Contacto · Siguiente paso",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Qué ocurre después"},
+    {"type":"text","id":"heading","label":"Título","default":"Revisamos primero el contexto, después definimos el siguiente paso"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>La consulta no termina en un formulario genérico. Revisamos el punto de partida para dirigirla al servicio, sistema o solución que corresponda y pedir únicamente la información necesaria.</p>"}
+  ],
+  "blocks":[
+    {
+      "type":"step",
+      "name":"Paso",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Revisar"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Comprobamos el motivo de contacto, la solución y la información disponible."}
+      ]
+    }
+  ],
+  "max_blocks":4,
+  "presets":[{"name":"Contacto · Siguiente paso"}]
+}
+{% endschema %}

@@ -1,0 +1,119 @@
+{% assign form_id = 'IEContactForm-' | append: section.id %}
+
+{% form 'contact', id: form_id, class: 'ie-contact__native-form' %}
+  {% if form.posted_successfully? %}
+    <div class="ie-contact__form-status ie-contact__form-status--success" tabindex="-1">
+      Hemos recibido tu consulta. Revisaremos la información para indicarte el siguiente paso.
+    </div>
+  {% endif %}
+
+  {% if form.errors %}
+    <div class="ie-contact__form-status ie-contact__form-status--error" tabindex="-1">
+      {{ form.errors | default_errors }}
+    </div>
+  {% endif %}
+
+  <input type="hidden" name="contact[Origen]" value="{{ canonical_url }}">
+
+  <div class="ie-contact__form-grid">
+    <div class="ie-contact__field">
+      <label for="{{ form_id }}-name">Nombre</label>
+      <input
+        id="{{ form_id }}-name"
+        type="text"
+        name="contact[name]"
+        autocomplete="name"
+        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+      >
+    </div>
+
+    <div class="ie-contact__field">
+      <label for="{{ form_id }}-email">Email *</label>
+      <input
+        id="{{ form_id }}-email"
+        type="email"
+        name="contact[email]"
+        autocomplete="email"
+        required
+        aria-required="true"
+        value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+      >
+    </div>
+
+    <div class="ie-contact__field">
+      <label for="{{ form_id }}-phone">Teléfono</label>
+      <input
+        id="{{ form_id }}-phone"
+        type="tel"
+        name="contact[phone]"
+        autocomplete="tel"
+        value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+      >
+    </div>
+
+    <div class="ie-contact__field">
+      <label for="{{ form_id }}-reason">Motivo de contacto *</label>
+      <select id="{{ form_id }}-reason" name="contact[Motivo]" required aria-required="true">
+        <option value="">Selecciona una opción</option>
+        <option value="Presupuesto">Presupuesto</option>
+        <option value="Consulta técnica">Consulta técnica</option>
+        <option value="Servicio o mantenimiento">Servicio o mantenimiento</option>
+        <option value="Otra consulta">Otra consulta</option>
+      </select>
+    </div>
+
+    <div class="ie-contact__field">
+      <label for="{{ form_id }}-solution">Tipo de solución</label>
+      <select id="{{ form_id }}-solution" name="contact[Tipo de solución]">
+        <option value="">Selecciona una opción</option>
+        <option value="Casa prefabricada">Casa prefabricada</option>
+        <option value="Estudio u oficina">Estudio u oficina</option>
+        <option value="Caseta">Caseta</option>
+        <option value="Pérgola o porche">Pérgola o porche</option>
+        <option value="Cenador">Cenador</option>
+        <option value="Tarima">Tarima</option>
+        <option value="Otra solución">Otra solución</option>
+      </select>
+    </div>
+
+    <div class="ie-contact__field">
+      <label for="{{ form_id }}-location">Ubicación / código postal</label>
+      <input id="{{ form_id }}-location" type="text" name="contact[Ubicación]" autocomplete="postal-code">
+    </div>
+
+    <div class="ie-contact__field ie-contact__field--full">
+      <label for="{{ form_id }}-status">¿En qué punto estás?</label>
+      <select id="{{ form_id }}-status" name="contact[Estado del proyecto]">
+        <option value="">Selecciona una opción</option>
+        <option value="Comparando opciones">Estoy comparando opciones</option>
+        <option value="Modelo o solución seleccionada">Ya tengo un modelo o solución seleccionada</option>
+        <option value="Tengo medidas o planos">Tengo medidas o planos</option>
+        <option value="Ubicación o parcela definida">Tengo ubicación o parcela definida</option>
+        <option value="Proyecto en ejecución">El proyecto ya está en ejecución</option>
+      </select>
+    </div>
+
+    <div class="ie-contact__field ie-contact__field--full">
+      <label for="{{ form_id }}-body">Cuéntanos lo esencial *</label>
+      <textarea
+        id="{{ form_id }}-body"
+        name="contact[body]"
+        required
+        aria-required="true"
+        placeholder="Uso previsto, medidas aproximadas, modelo si lo conoces y cualquier condicionante importante."
+      >{{ form.body }}</textarea>
+    </div>
+  </div>
+
+  <label class="ie-contact__privacy">
+    <input type="checkbox" name="contact[Privacidad]" value="Aceptada" required>
+    <span>
+      He leído y acepto la
+      <a href="{{ section.settings.privacy_link | default: '/policies/privacy-policy' }}">política de privacidad</a>.
+    </span>
+  </label>
+
+  <button class="ie-contact__button ie-contact__button--primary ie-contact__submit" type="submit">
+    {{ section.settings.submit_label | default: 'Enviar consulta' }}
+  </button>
+{% endform %}
