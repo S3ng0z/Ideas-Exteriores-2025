@@ -1,3 +1,10 @@
+/*
+ * ------------------------------------------------------------
+ * FAQ landing · native Shopify Online Store 2.0
+ * Dedicated sections: ie-faq-hero / ie-faq-group / ie-faq-cta
+ * No Custom Liquid composition.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
