@@ -1,11 +1,44 @@
 /*
- * Dedicated Services landing.
- * Native Online Store 2.0 sections; no page-specific Custom Liquid.
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
  */
 {
   "sections": {
     "hero": {
       "type": "ie-services-hero",
+      "blocks": {
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Definir el proyecto y su alcance"
+          }
+        },
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Preparar y ejecutar el montaje"
+          }
+        },
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Entregar, proteger y mantener"
+          }
+        }
+      },
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
       "settings": {
         "eyebrow": "Servicios para proyectos en madera",
         "heading": "Diseño, montaje y acompañamiento técnico para construir con claridad",
@@ -15,111 +48,170 @@
         "secondary_label": "Ver trabajos realizados",
         "secondary_link": "/pages/wood-project-gallery",
         "summary_title": "Un proceso coordinado"
-      },
-      "blocks": {
-        "summary_1": {"type":"summary","settings":{"number":"01","label":"Definir el proyecto y su alcance"}},
-        "summary_2": {"type":"summary","settings":{"number":"02","label":"Preparar y ejecutar el montaje"}},
-        "summary_3": {"type":"summary","settings":{"number":"03","label":"Entregar, proteger y mantener"}}
-      },
-      "block_order":["summary_1","summary_2","summary_3"]
+      }
     },
     "services": {
       "type": "ie-services-cards",
+      "blocks": {
+        "service_design": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_y_definicion_tecnica.webp",
+            "image_alt": "Planos y documentación para definir un proyecto en madera",
+            "index": "01 · Definir",
+            "heading": "Diseño y definición técnica",
+            "text": "<p>Convertimos la necesidad en decisiones concretas: uso, medidas, sistema, documentación y viabilidad cuando el proyecto lo requiere.</p>",
+            "link_1_label": "Diseño 3D y asesoría técnica",
+            "link_1": "/pages/wood-3d-design-consulting",
+            "link_2_label": "Proyectos y licencias",
+            "link_2": "/pages/project-management-permits",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "service_build": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt": "Montaje profesional de una estructura de madera",
+            "index": "02 · Ejecutar",
+            "heading": "Preparación, base y montaje",
+            "text": "<p>Coordinamos los trabajos previos y el montaje para que la estructura llegue a obra con un alcance definido y una secuencia de ejecución clara.</p>",
+            "link_1_label": "Bases y soleras",
+            "link_1": "/pages/timber-bases-and-foundations",
+            "link_2_label": "Montaje profesional",
+            "link_2": "/pages/timber-structure-installation",
+            "link_3_label": "Tratamiento y protección",
+            "link_3": "/pages/wood-treatment-protection"
+          }
+        },
+        "service_aftercare": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Proteccion_mantenimiento_y_posventa.webp",
+            "image_alt": "Mantenimiento y revisión de una estructura de madera",
+            "index": "03 · Cuidar",
+            "heading": "Protección, mantenimiento y posventa",
+            "text": "<p>Después de la entrega, la madera necesita criterios de protección y mantenimiento adecuados al uso, la exposición y el acabado de cada solución.</p>",
+            "link_1_label": "Mantenimiento y reparación",
+            "link_1": "/pages/wood-maintenance-repair",
+            "link_2_label": "Garantía, entrega y pago",
+            "link_2": "/pages/warranty-delivery-payment-options",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_design",
+        "service_build",
+        "service_aftercare"
+      ],
       "settings": {
         "eyebrow": "Servicios principales",
         "heading": "El soporte adecuado en cada fase",
         "intro": "<p>No todos los proyectos necesitan lo mismo. Puedes contratar servicios concretos o coordinarlos dentro de un mismo alcance, según el punto en el que se encuentre tu proyecto.</p>"
-      },
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
       "blocks": {
-        "service_design": {
-          "type":"service",
-          "settings":{
-            "image":"shopify://shop_images/project-management-permits_001.png",
-            "image_alt":"Planos y documentación para definir un proyecto en madera",
-            "index":"01 · Definir",
-            "heading":"Diseño y definición técnica",
-            "text":"<p>Convertimos la necesidad en decisiones concretas: uso, medidas, sistema, documentación y viabilidad cuando el proyecto lo requiere.</p>",
-            "link_1_label":"Diseño 3D y asesoría técnica",
-            "link_1":"/pages/wood-3d-design-consulting",
-            "link_2_label":"Proyectos y licencias",
-            "link_2":"/pages/project-management-permits",
-            "link_3_label":"",
-            "link_3":""
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Entender",
+            "text": "Partimos del uso, la ubicación, las medidas y el estado real del proyecto."
           }
         },
-        "service_build": {
-          "type":"service",
-          "settings":{
-            "image":"shopify://shop_images/timber-structure-installation_001.png",
-            "image_alt":"Montaje profesional de una estructura de madera",
-            "index":"02 · Ejecutar",
-            "heading":"Preparación, base y montaje",
-            "text":"<p>Coordinamos los trabajos previos y el montaje para que la estructura llegue a obra con un alcance definido y una secuencia de ejecución clara.</p>",
-            "link_1_label":"Bases y soleras",
-            "link_1":"/pages/timber-bases-and-foundations",
-            "link_2_label":"Montaje profesional",
-            "link_2":"/pages/timber-structure-installation",
-            "link_3_label":"Tratamiento y protección",
-            "link_3":"/pages/wood-treatment-protection"
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Definir",
+            "text": "Concretamos sistema, alcance, documentación, acabados y responsabilidades."
           }
         },
-        "service_aftercare": {
-          "type":"service",
-          "settings":{
-            "image":"shopify://shop_images/wood-maintenance-repair_002.png",
-            "image_alt":"Mantenimiento y revisión de una estructura de madera",
-            "index":"03 · Cuidar",
-            "heading":"Protección, mantenimiento y posventa",
-            "text":"<p>Después de la entrega, la madera necesita criterios de protección y mantenimiento adecuados al uso, la exposición y el acabado de cada solución.</p>",
-            "link_1_label":"Mantenimiento y reparación",
-            "link_1":"/pages/wood-maintenance-repair",
-            "link_2_label":"Garantía, entrega y pago",
-            "link_2":"/pages/warranty-delivery-payment-options",
-            "link_3_label":"",
-            "link_3":""
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Preparar y montar",
+            "text": "Coordinamos base, suministro, logística y ejecución según el servicio contratado."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Entregar y mantener",
+            "text": "Cerramos el alcance y dejamos claro el cuidado posterior de la solución."
           }
         }
       },
-      "block_order":["service_design","service_build","service_aftercare"]
-    },
-    "process": {
-      "type":"ie-services-process",
-      "settings":{
-        "eyebrow":"Cómo trabajamos",
-        "heading":"De la primera decisión al montaje",
-        "intro":"<p>Ordenamos el proyecto por fases para reducir improvisaciones y dejar claro qué se decide, qué se prepara y qué se ejecuta en cada momento.</p>"
-      },
-      "blocks":{
-        "step_1":{"type":"step","settings":{"number":"01","heading":"Entender","text":"Partimos del uso, la ubicación, las medidas y el estado real del proyecto."}},
-        "step_2":{"type":"step","settings":{"number":"02","heading":"Definir","text":"Concretamos sistema, alcance, documentación, acabados y responsabilidades."}},
-        "step_3":{"type":"step","settings":{"number":"03","heading":"Preparar y montar","text":"Coordinamos base, suministro, logística y ejecución según el servicio contratado."}},
-        "step_4":{"type":"step","settings":{"number":"04","heading":"Entregar y mantener","text":"Cerramos el alcance y dejamos claro el cuidado posterior de la solución."}}
-      },
-      "block_order":["step_1","step_2","step_3","step_4"]
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "eyebrow": "Cómo trabajamos",
+        "heading": "De la primera decisión al montaje",
+        "intro": "<p>Ordenamos el proyecto por fases para reducir improvisaciones y dejar claro qué se decide, qué se prepara y qué se ejecuta en cada momento.</p>"
+      }
     },
     "confidence": {
-      "type":"ie-services-confidence",
-      "settings":{
-        "eyebrow":"Criterio de servicio",
-        "heading":"Claridad antes, durante y después de la obra"
+      "type": "ie-services-confidence",
+      "blocks": {
+        "principle_1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Alcance definido",
+            "text": "Qué incluye cada servicio, qué queda fuera y qué información necesitamos para presupuestar con criterio."
+          }
+        },
+        "principle_2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Coordinación técnica",
+            "text": "Diseño, base, montaje y acabados se plantean como partes de un mismo proyecto, no como decisiones aisladas."
+          }
+        },
+        "principle_3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Seguimiento útil",
+            "text": "Acompañamiento para resolver decisiones, organizar la ejecución y mantener la madera en buenas condiciones."
+          }
+        }
       },
-      "blocks":{
-        "principle_1":{"type":"principle","settings":{"heading":"Alcance definido","text":"Qué incluye cada servicio, qué queda fuera y qué información necesitamos para presupuestar con criterio."}},
-        "principle_2":{"type":"principle","settings":{"heading":"Coordinación técnica","text":"Diseño, base, montaje y acabados se plantean como partes de un mismo proyecto, no como decisiones aisladas."}},
-        "principle_3":{"type":"principle","settings":{"heading":"Seguimiento útil","text":"Acompañamiento para resolver decisiones, organizar la ejecución y mantener la madera en buenas condiciones."}}
-      },
-      "block_order":["principle_1","principle_2","principle_3"]
+      "block_order": [
+        "principle_1",
+        "principle_2",
+        "principle_3"
+      ],
+      "settings": {
+        "eyebrow": "Criterio de servicio",
+        "heading": "Claridad antes, durante y después de la obra"
+      }
     },
     "cta": {
-      "type":"ie-services-cta",
-      "settings":{
-        "eyebrow":"Siguiente paso",
-        "heading":"Cuéntanos en qué fase está tu proyecto",
-        "text":"<p>Si ya tienes medidas, planos, una parcela o simplemente una necesidad concreta, dinos desde dónde partes. Te orientaremos hacia el servicio y el siguiente paso más adecuados.</p>",
-        "label":"Hablar con el equipo",
-        "link":"/pages/contact-ideas-exteriores"
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Cuéntanos en qué fase está tu proyecto",
+        "text": "<p>Si ya tienes medidas, planos, una parcela o simplemente una necesidad concreta, dinos desde dónde partes. Te orientaremos hacia el servicio y el siguiente paso más adecuados.</p>",
+        "label": "Hablar con el equipo",
+        "link": "/pages/contact-ideas-exteriores"
       }
     }
   },
-  "order":["hero","services","process","confidence","cta"]
+  "order": [
+    "hero",
+    "services",
+    "process",
+    "confidence",
+    "cta"
+  ]
 }
