@@ -1,0 +1,51 @@
+<section class="ie-services ie-services--process" aria-labelledby="ie-services-process-title-{{ section.id }}">
+  <div class="ie-services__inner">
+    <div class="ie-services__process">
+      <div class="ie-services__process-intro">
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-services__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-services-process-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}
+          <div class="rte">{{ section.settings.intro }}</div>
+        {% endif %}
+      </div>
+
+      <ol class="ie-services__process-list">
+        {% for block in section.blocks %}
+          <li class="ie-services__process-step" {{ block.shopify_attributes }}>
+            <span class="ie-services__process-number">{{ block.settings.number }}</span>
+            <div>
+              <h3>{{ block.settings.heading }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Servicios · Proceso",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Cómo trabajamos"},
+    {"type":"text","id":"heading","label":"Título","default":"De la primera decisión al montaje"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Ordenamos el proyecto por fases para reducir improvisaciones y dejar claro qué se decide, qué se prepara y qué se ejecuta en cada momento.</p>"}
+  ],
+  "blocks":[
+    {
+      "type":"step",
+      "name":"Paso",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Entender"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Partimos del uso, la ubicación, las medidas y el estado real del proyecto."}
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets":[{"name":"Servicios · Proceso"}]
+}
+{% endschema %}

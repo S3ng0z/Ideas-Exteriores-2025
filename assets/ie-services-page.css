@@ -19,6 +19,22 @@
   padding-block: 28px 96px;
 }
 
+
+/* Native OS 2.0 services sections share the same visual system without a monolithic Custom Liquid wrapper. */
+.ie-services--hero .ie-services__inner {
+  padding-block: 28px 0;
+}
+
+.ie-services--cards .ie-services__inner,
+.ie-services--process .ie-services__inner,
+.ie-services--confidence .ie-services__inner {
+  padding-block: 0;
+}
+
+.ie-services--cta .ie-services__inner {
+  padding-block: 0 96px;
+}
+
 .ie-services__breadcrumb {
   display: flex;
   align-items: center;
