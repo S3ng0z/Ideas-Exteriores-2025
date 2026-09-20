@@ -41,24 +41,129 @@
   width: 100%;
 }
 
-/* En móvil mantenemos la misma justificación solicitada, pero sin
-   partición silábica ni guiones automáticos. */
+/* Mobile editorial treatment
+   En pantallas estrechas evitamos la justificación completa: genera ríos
+   blancos y espacios irregulares. La home pasa a alineación izquierda,
+   cuerpo mínimo de 16 px y ritmo de lectura más natural. */
 @media screen and (max-width: 749px) {
   #MainContent :where(
     .ie-home-hero__lead,
     .ie-home-solutions__intro,
     .ie-home-solutions__closing,
     .ie-home-solutions__systems span,
-    .ie-home-benefit__copy p,
     .ie-home-criteria__item span,
-    .text-block:not(.ie-home-hero__message):not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading) p,
-    .text-block:not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading) li
-  ) {
-    text-align: justify !important;
-    text-align-last: left !important;
+    #shopify-section-section_gcxq38 .text-block p,
+    #shopify-section-section_gcxq38 .text-block li,
+    #shopify-section-section_aAqjjb .text-block p,
+    #shopify-section-section_aAqjjb .text-block li,
+    #shopify-section-product_list_wcJxUp .text-block p,
+    #shopify-section-product_list_x9Yaab .text-block p,
+    #shopify-section-product_list_nQbyNK .text-block p,
+    .container_text,
+    .container_text p,
+    .container_text li,
+    .e .sub,
+    .b
+  ),
+  .ie-footer__intro,
+  .ie-footer__intro p {
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
     hyphens: none !important;
     -webkit-hyphens: none !important;
     word-break: normal !important;
-    overflow-wrap: normal !important;
+    overflow-wrap: break-word !important;
+    text-wrap: pretty;
+  }
+
+  /* Prosa comercial: legible, compacta y sin huecos artificiales. */
+  #MainContent :where(
+    .ie-home-hero__lead,
+    .ie-home-solutions__intro,
+    .ie-home-solutions__closing,
+    .ie-home-solutions__systems span,
+    .ie-home-criteria__item span,
+    #shopify-section-section_gcxq38 .text-block p,
+    #shopify-section-section_gcxq38 .text-block li,
+    #shopify-section-section_aAqjjb .text-block p,
+    #shopify-section-section_aAqjjb .text-block li
+  ),
+  .ie-footer__intro {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0 !important;
+  }
+
+  /* El hero mantiene una jerarquía editorial clara, con una medida de línea
+     contenida para que el mensaje no parezca un bloque denso. */
+  #MainContent .ie-home-hero__message h1 {
+    max-width: 19ch !important;
+    text-align: left !important;
+    text-wrap: balance;
+  }
+
+  #MainContent .ie-home-hero__lead {
+    max-width: 38ch !important;
+    margin-inline: 0 !important;
+  }
+
+  /* Sistemas y criterio: cada idea se lee como unidad, no como tabla
+     comprimida. */
+  #MainContent .ie-home-solutions__systems li,
+  #MainContent .ie-home-criteria__item {
+    text-align: left !important;
+  }
+
+  #MainContent .ie-home-solutions__systems strong,
+  #MainContent .ie-home-criteria__item strong {
+    line-height: 1.35 !important;
+  }
+
+  #MainContent .ie-home-solutions__systems span,
+  #MainContent .ie-home-criteria__item span {
+    margin-top: 2px;
+  }
+
+  /* Los beneficios son mensajes cortos; pueden seguir centrados y respirar
+     mejor que una justificación de una sola frase. */
+  #MainContent .ie-home-benefit__title,
+  #MainContent .ie-home-benefit__title p,
+  #MainContent .ie-home-benefit__copy,
+  #MainContent .ie-home-benefit__copy p {
+    text-align: center !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  #MainContent .ie-home-benefit__copy {
+    max-width: 34ch !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Cabeceras de catálogo: alineación consistente y sin mayúsculas forzadas
+     por el ajuste móvil. Las cards conservan su layout nativo. */
+  #MainContent :where(
+    #shopify-section-product_list_wcJxUp,
+    #shopify-section-product_list_x9Yaab,
+    #shopify-section-product_list_nQbyNK
+  ) :where(h2, h3, .text-block p) {
+    text-align: left !important;
+    text-align-last: auto !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* El footer de la Home usa la misma lógica editorial en móvil. */
+  .ie-footer__intro {
+    width: 100% !important;
+    max-width: none !important;
+    margin-bottom: 20px !important;
   }
 }
