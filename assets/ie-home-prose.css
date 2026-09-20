@@ -41,12 +41,15 @@
   width: 100%;
 }
 
-/* Mobile editorial treatment
-   En pantallas estrechas evitamos la justificación completa: genera ríos
-   blancos y espacios irregulares. La home pasa a alineación izquierda,
-   cuerpo mínimo de 16 px y ritmo de lectura más natural. */
+/* Mobile editorial treatment · smartphone only
+   En <750 px la home abandona cualquier justificación de párrafo. La prioridad
+   es lectura natural, líneas amplias y jerarquía compacta. Desktop y tablet no
+   cambian con este bloque. */
 @media screen and (max-width: 749px) {
+  /* Regla base móvil para los bloques editoriales de la Home.
+     Evita los huecos de la justificación tipo Word en columnas estrechas. */
   #MainContent :where(
+    .ie-home-hero__eyebrow,
     .ie-home-hero__lead,
     .ie-home-solutions__intro,
     .ie-home-solutions__closing,
@@ -66,7 +69,9 @@
     .b
   ),
   .ie-footer__intro,
-  .ie-footer__intro p {
+  .ie-footer__intro p,
+  .ie-footer__brand-copy,
+  .ie-footer__brand-copy p {
     text-align: left !important;
     text-align-last: auto !important;
     text-justify: auto !important;
@@ -77,60 +82,106 @@
     text-wrap: pretty;
   }
 
-  /* Prosa comercial: legible, compacta y sin huecos artificiales. */
-  #MainContent :where(
-    .ie-home-hero__lead,
-    .ie-home-solutions__intro,
-    .ie-home-solutions__closing,
-    .ie-home-solutions__systems span,
-    .ie-home-criteria__item span,
-    #shopify-section-section_gcxq38 .text-block p,
-    #shopify-section-section_gcxq38 .text-block li,
-    #shopify-section-section_aAqjjb .text-block p,
-    #shopify-section-section_aAqjjb .text-block li
-  ),
-  .ie-footer__intro {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-    letter-spacing: 0 !important;
+  /* HERO
+     El Theme Editor puede mostrar el contenido del JSON antes de que el JS añada
+     las clases ie-home-hero__. Por eso cubrimos también la estructura nativa. */
+  #shopify-section-hero_irjTFL .section-content-wrapper,
+  #MainContent .ie-home-hero__wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
-  /* El hero mantiene una jerarquía editorial clara, con una medida de línea
-     contenida para que el mensaje no parezca un bloque denso. */
-  #MainContent .ie-home-hero__message h1 {
-    max-width: 19ch !important;
+  #shopify-section-hero_irjTFL .text-block,
+  #MainContent .ie-home-hero__message {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 18px 16px !important;
+    border-radius: 10px !important;
     text-align: left !important;
-    text-wrap: balance;
   }
 
+  #shopify-section-hero_irjTFL .text-block p:first-of-type,
+  #MainContent .ie-home-hero__eyebrow {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 8px !important;
+    padding: 0 !important;
+    font-family: var(--font-body--family), Manrope, Arial, sans-serif !important;
+    font-size: .72rem !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    letter-spacing: .045em !important;
+    text-transform: uppercase !important;
+    text-align: left !important;
+    text-align-last: left !important;
+    white-space: nowrap;
+  }
+
+  #shopify-section-hero_irjTFL .text-block h1,
+  #MainContent .ie-home-hero__message h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 14px !important;
+    padding: 0 !important;
+    font-size: clamp(1.45rem, 6.2vw, 1.7rem) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -.015em !important;
+    text-align: left !important;
+    text-wrap: pretty !important;
+  }
+
+  #shopify-section-hero_irjTFL .text-block p:last-of-type,
   #MainContent .ie-home-hero__lead {
-    max-width: 38ch !important;
-    margin-inline: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: var(--font-body--family), Manrope, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.55 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
   }
 
-  /* Sistemas y criterio: cada idea se lee como unidad, no como tabla
-     comprimida. */
+  /* SISTEMAS / CRITERIO
+     Una idea por bloque, sin justificar y usando todo el ancho disponible. */
+  #MainContent .ie-home-solutions__section .ie-home-solutions__copy,
+  #MainContent .ie-home-solutions__intro,
+  #MainContent .ie-home-solutions__closing,
+  #MainContent .ie-home-criteria .ie-home-criteria__body,
+  #MainContent .ie-home-criteria__item span {
+    width: 100% !important;
+    max-width: none !important;
+    font-size: 1rem !important;
+    line-height: 1.55 !important;
+    text-align: left !important;
+  }
+
   #MainContent .ie-home-solutions__systems li,
   #MainContent .ie-home-criteria__item {
+    grid-template-columns: 1fr !important;
+    gap: 3px !important;
     text-align: left !important;
   }
 
   #MainContent .ie-home-solutions__systems strong,
   #MainContent .ie-home-criteria__item strong {
-    line-height: 1.35 !important;
+    line-height: 1.3 !important;
   }
 
-  #MainContent .ie-home-solutions__systems span,
-  #MainContent .ie-home-criteria__item span {
-    margin-top: 2px;
-  }
-
-  /* Los beneficios son mensajes cortos; pueden seguir centrados y respirar
-     mejor que una justificación de una sola frase. */
+  /* BENEFICIOS
+     Son mensajes breves: centrados sí, justificados no. Se elimina la medida
+     estrecha para reducir saltos de línea innecesarios. */
   #MainContent .ie-home-benefit__title,
   #MainContent .ie-home-benefit__title p,
   #MainContent .ie-home-benefit__copy,
   #MainContent .ie-home-benefit__copy p {
+    width: 100% !important;
+    max-width: 100% !important;
     text-align: center !important;
     text-align-last: auto !important;
     text-justify: auto !important;
@@ -138,15 +189,17 @@
     -webkit-hyphens: none !important;
     word-break: normal !important;
     overflow-wrap: break-word !important;
+    text-wrap: pretty;
   }
 
   #MainContent .ie-home-benefit__copy {
-    max-width: 34ch !important;
-    line-height: 1.55 !important;
+    font-size: .95rem !important;
+    line-height: 1.5 !important;
   }
 
-  /* Cabeceras de catálogo: alineación consistente y sin mayúsculas forzadas
-     por el ajuste móvil. Las cards conservan su layout nativo. */
+  /* CABECERAS DE CATÁLOGO
+     Mantienen cards y precios intactos; solo normalizamos el texto editorial
+     que introduce cada familia. */
   #MainContent :where(
     #shopify-section-product_list_wcJxUp,
     #shopify-section-product_list_x9Yaab,
@@ -154,16 +207,24 @@
   ) :where(h2, h3, .text-block p) {
     text-align: left !important;
     text-align-last: auto !important;
+    text-justify: auto !important;
     hyphens: none !important;
     -webkit-hyphens: none !important;
     word-break: normal !important;
     overflow-wrap: break-word !important;
+    text-wrap: pretty;
   }
 
-  /* El footer de la Home usa la misma lógica editorial en móvil. */
-  .ie-footer__intro {
+  /* FOOTER HOME
+     El mensaje corporativo se comporta como prosa móvil normal. */
+  .ie-footer__intro,
+  .ie-footer__brand-copy {
     width: 100% !important;
     max-width: none !important;
     margin-bottom: 20px !important;
+    font-size: 1rem !important;
+    line-height: 1.55 !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
   }
 }
