@@ -607,6 +607,38 @@
   }
 }
 
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .ie-services__confidence {
+    grid-template-columns: minmax(280px, .85fr) minmax(0, 1.35fr);
+    gap: 28px;
+  }
+
+  .ie-services__confidence-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .ie-services__confidence-grid h3 {
+    font-size: .9rem !important;
+    line-height: 1.24 !important;
+  }
+
+  .ie-services__confidence-grid p,
+  .ie-services__closing .rte {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: none;
+    -webkit-hyphens: none;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  .ie-services__closing {
+    align-items: end;
+    gap: 28px;
+  }
+}
+
 @media screen and (max-width: 749px) {
 
   .ie-services__lead,
