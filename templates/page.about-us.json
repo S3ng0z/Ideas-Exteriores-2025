@@ -1,811 +1,227 @@
 /*
  * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
+ * About landing · native Shopify Online Store 2.0
+ * Dedicated sections; no monolithic Custom Liquid composition.
  * ------------------------------------------------------------
  */
 {
   "sections": {
-    "custom_liquid_chGEnT": {
-      "type": "custom-liquid",
-      "name": "t:names.custom_liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"lux-breadcrumb-box\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      <a href=\"{{ routes.root_url }}\">Inicio</a>\n      {% assign segments = request.path | split: '/' %}\n      {% for segment in segments offset:1 %}\n        {% unless forloop.last %}\n          <span>/</span><a href=\"/pages/directorio\">{{ segment | replace: '-', ' ' | capitalize }}</a>\n        {% endunless %}\n      {% endfor %}\n      <span>/</span><span class=\"current\">{{ page.title }}</span>\n    </nav>\n    <h2 class=\"lux-title\">{{ page.title }}</h2>\n  </div>\n</div>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "main": {
-      "type": "main-page",
+    "hero": {
+      "type": "ie-about-hero",
       "blocks": {
-        "text_A8F3Wr": {
-          "type": "text",
-          "name": "t:names.heading",
-          "disabled": true,
+        "s1": {
+          "type": "summary",
           "settings": {
-            "text": "<p>{{ closest.page.title }}</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h1",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "number": "01",
+            "label": "Elegir con claridad"
+          }
         },
-        "text_KMwtTr": {
-          "type": "text",
-          "name": "t:names.text",
+        "s2": {
+          "type": "summary",
           "settings": {
-            "text": "{{ closest.page.content }}",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "number": "02",
+            "label": "Definir técnicamente"
+          }
+        },
+        "s3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Ejecutar con control"
+          }
         }
       },
       "block_order": [
-        "text_A8F3Wr",
-        "text_KMwtTr"
+        "s1",
+        "s2",
+        "s3"
       ],
-      "disabled": true,
       "settings": {
-        "content_direction": "column",
-        "gap": 32,
-        "color_scheme": "",
-        "padding-block-start": 40,
-        "padding-block-end": 80
+        "eyebrow": "Ideas Exteriores",
+        "heading": "Madera, diseño y ejecución con criterio",
+        "lead": "<p>Desarrollamos soluciones de madera para exterior, estructuras y espacios habitables a partir de modelos y configuraciones definidas. Coordinamos diseño, sistema, suministro y montaje para que cada proyecto avance con un alcance claro.</p>",
+        "summary_title": "Nuestra forma de trabajar"
       }
     },
-    "section_UGGikp": {
-      "type": "section",
+    "story": {
+      "type": "ie-about-story",
       "blocks": {
-        "image_g8zLqH": {
-          "type": "image",
+        "p1": {
+          "type": "point",
           "settings": {
-            "image": "shopify://shop_images/convertio.in_nosotros1-transformed.webp",
-            "link": "",
-            "image_ratio": "landscape",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "heading": "Madera",
+            "text": "Material protagonista y criterio de identidad."
+          }
         },
-        "group_97NYWY": {
-          "type": "group",
+        "p2": {
+          "type": "point",
           "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_UPEeqQ": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>Sobre nosotros</h2>",
-                "width": "fit-content",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_TewanX": {
-              "type": "text",
-              "settings": {
-                "text": "<p>En <strong>Ideas Exteriores</strong> transformamos la madera en espacios donde vivir, compartir y disfrutar. Nos especializamos en proyectos de carpintería exterior a medida: pérgolas, porches, cerramientos, suelos de madera… y especialmente, en la construcción de <strong>casas y casetas de madera</strong> con soluciones modernas, eficientes y duraderas.</p><p>Acompañamos cada proyecto desde la idea inicial hasta su entrega final, con un equipo experto en diseño, arquitectura, carpintería y construcción. Trabajamos contigo para dar forma a tu espacio, adaptándonos a tus necesidades y estilo de vida.</p>",
-                "width": "fit-content",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_pThXJc": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>Qué hacemos</h2>",
-                "width": "fit-content",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_XycaQn": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<p>Diseñamos y realizamos todo tipo de estructuras en madera, combinando estética, funcionalidad y confort para crear espacios únicos al aire libre. Nuestra experiencia abarca:</p><p><strong>Casas y casetas de madera</strong><br/><br/>Construimos viviendas y estructuras auxiliares con dos sistemas constructivos de vanguardia:</p><ul><li>Entramado ligero: técnica versátil, rápida y altamente resistente.<br/></li><li>Paneles SIP (Structural Insulated Panels): ofrecen máxima eficiencia energética, excelente aislamiento térmico y rapidez en el montaje.<br/></li></ul><p><strong>Porches, pérgolas, terrazas y entarimados</strong><br/><br/>Creamos estructuras duraderas y personalizadas para jardines, patios y otros espacios exteriores, adaptadas a tus gustos, necesidades y estilo de vida.</p><p><strong>Reformas y ampliaciones</strong><br/><br/>Renovamos y ampliamos construcciones existentes utilizando madera tratada y soluciones técnicas adaptadas a cada entorno, garantizando armonía, durabilidad y confort.</p>",
-                "width": "fit-content",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_UPEeqQ",
-            "text_TewanX",
-            "text_pThXJc",
-            "text_XycaQn"
-          ]
+            "heading": "Diseño",
+            "text": "Proporción, integración y acabados cuidados."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "heading": "Control",
+            "text": "Alcance, montaje y responsabilidades definidos."
+          }
         }
       },
       "block_order": [
-        "image_g8zLqH",
-        "group_97NYWY"
+        "p1",
+        "p2",
+        "p3"
       ],
-      "name": "t:names.image_with_text",
       "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 6,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "image": "shopify://shop_images/about-us.webp",
+        "image_alt": "Estructura y trabajo en madera de Ideas Exteriores",
+        "eyebrow": "Quiénes somos",
+        "heading": "Una forma más clara de construir con madera",
+        "text": "<p>La madera es el material que articula nuestra propuesta. La combinamos con vidrio, acero, aluminio, aislantes, herrajes y otros materiales cuando mejoran el resultado del conjunto.</p><p>Trabajamos con un catálogo curado de soluciones y opciones compatibles, porque definir bien desde el principio permite controlar mejor fabricación, transporte, montaje, prestaciones y presupuesto.</p>"
       }
     },
-    "section_cnWwEg": {
-      "type": "section",
+    "focus": {
+      "type": "ie-about-focus",
       "blocks": {
-        "image_3nUyce": {
-          "type": "image",
+        "exterior": {
+          "type": "focus",
           "settings": {
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "index": "01 · Exterior",
+            "heading": "Espacios para disfrutar fuera",
+            "text": "<p>Pérgolas, porches, cenadores, tarimas y otras soluciones que mejoran el uso del jardín, la terraza o la parcela con una integración cuidada.</p>"
+          }
         },
-        "group_HBWmic": {
-          "type": "group",
+        "habitables": {
+          "type": "focus",
           "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_86Rzeb": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>Our signature product.</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_MKyg9X": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_KGq6hd": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_86Rzeb",
-            "text_MKyg9X",
-            "button_KGq6hd"
-          ]
+            "index": "02 · Habitables",
+            "heading": "Espacios para vivir y trabajar",
+            "text": "<p>Casas, casetas, estudios y oficinas desarrollados sobre modelos y configuraciones definidas, con el sistema y el nivel de acabado adecuados a cada uso.</p>"
+          }
+        },
+        "structures": {
+          "type": "focus",
+          "settings": {
+            "index": "03 · Estructuras",
+            "heading": "Soluciones con criterio técnico",
+            "text": "<p>Estructuras y sistemas de madera para proyectos que requieren definición técnica, suministro, logística o montaje coordinado.</p>"
+          }
         }
       },
       "block_order": [
-        "image_3nUyce",
-        "group_HBWmic"
+        "exterior",
+        "habitables",
+        "structures"
       ],
-      "name": "t:names.image_with_text",
       "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "eyebrow": "Qué hacemos",
+        "heading": "Tres ámbitos, una misma forma de trabajar",
+        "intro": "<p>Organizamos la oferta para que sea fácil entender qué solución encaja con cada necesidad. Los sistemas constructivos, materiales y servicios actúan como capas técnicas de apoyo a esa elección.</p>"
       }
     },
-    "section_dHp8mD": {
-      "type": "section",
+    "process": {
+      "type": "ie-about-process",
       "blocks": {
-        "image_xzQKx3": {
-          "type": "image",
+        "st1": {
+          "type": "step",
           "settings": {
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "number": "01",
+            "heading": "Entender",
+            "text": "Partimos del uso, la ubicación, las medidas y las condiciones reales del proyecto."
+          }
         },
-        "group_tHeYV9": {
-          "type": "group",
+        "st2": {
+          "type": "step",
           "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_mJWaHr": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>Our signature product.</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_aE8QqG": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
-                "width": "fit-content",
-                "max_width": "narrow",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_azThab": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_mJWaHr",
-            "text_aE8QqG",
-            "button_azThab"
-          ]
+            "number": "02",
+            "heading": "Elegir",
+            "text": "Seleccionamos la familia, el modelo y el sistema compatibles con la necesidad."
+          }
+        },
+        "st3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Definir",
+            "text": "Concretamos configuración, alcance, documentación y criterio de presupuesto."
+          }
+        },
+        "st4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Ejecutar",
+            "text": "Coordinamos suministro, logística y montaje según la modalidad contratada."
+          }
         }
       },
       "block_order": [
-        "image_xzQKx3",
-        "group_tHeYV9"
+        "st1",
+        "st2",
+        "st3",
+        "st4"
       ],
-      "name": "t:names.image_with_text",
       "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "eyebrow": "Cómo trabajamos",
+        "heading": "De la necesidad a una solución ejecutable",
+        "intro": "<p>Ordenamos las decisiones para reducir incertidumbre y convertir una necesidad en un proyecto con alcance, sistema y siguiente paso definidos.</p>"
       }
     },
-    "media_with_content_iPCRkH": {
-      "type": "media-with-content",
+    "confidence": {
+      "type": "ie-about-confidence",
       "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true,
+        "c1": {
+          "type": "principle",
           "settings": {
-            "media_type": "image",
-            "link": "",
-            "video_loop": true,
-            "video_autoplay": false,
-            "image_position": "cover",
-            "video_position": "cover"
-          },
-          "blocks": {}
+            "heading": "Catálogo curado",
+            "text": "Modelos y opciones compatibles para elegir sin convertir cada proyecto en un desarrollo desde cero."
+          }
         },
-        "content": {
-          "type": "_content-without-appearance",
-          "static": true,
+        "c2": {
+          "type": "principle",
           "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 24
-          },
-          "blocks": {
-            "text_JQgpGk": {
-              "type": "text",
-              "name": "t:names.caption",
-              "settings": {
-                "text": "<p>HOLA MUNDO</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h6",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "group_Ak66GW": {
-              "type": "group",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_QEdrT4": {
-                  "type": "text",
-                  "name": "t:names.heading",
-                  "settings": {
-                    "text": "<h2>HOLA MUNDO 32</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_ihJANK": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>HOLA MUNDO 33</p>",
-                    "width": "fit-content",
-                    "max_width": "narrow",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_QEdrT4",
-                "text_ihJANK"
-              ]
-            }
-          },
-          "block_order": [
-            "text_JQgpGk",
-            "group_Ak66GW"
-          ]
+            "heading": "Criterio técnico",
+            "text": "Sistemas, materiales y detalles se valoran por uso, prestaciones y condiciones reales de ejecución."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Alcance claro",
+            "text": "Definimos qué incluye cada propuesta, qué requiere preparación previa y qué decisiones quedan por cerrar."
+          }
         }
       },
-      "name": "t:names.editorial",
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
       "settings": {
-        "media_position": "left",
-        "media_width": "medium",
-        "media_height": "60svh",
-        "section_width": "full-width",
-        "extend_media": true,
-        "color_scheme": "scheme-4",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "eyebrow": "Nuestro criterio",
+        "heading": "Diseño, técnica y claridad comercial"
+      }
+    },
+    "cta": {
+      "type": "ie-about-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Elige una solución y avancemos con un alcance claro",
+        "text": "<p>Explora nuestros productos y servicios o cuéntanos qué espacio necesitas. Te orientaremos hacia la opción y el nivel de intervención más adecuados.</p>",
+        "primary_label": "Ver productos",
+        "primary_link": "/collections",
+        "secondary_label": "Hablar con el equipo",
+        "secondary_link": "/pages/contact-ideas-exteriores"
       }
     }
   },
   "order": [
-    "custom_liquid_chGEnT",
-    "main",
-    "section_UGGikp",
-    "section_cnWwEg",
-    "section_dHp8mD",
-    "media_with_content_iPCRkH"
+    "hero",
+    "story",
+    "focus",
+    "process",
+    "confidence",
+    "cta"
   ]
 }
