@@ -392,22 +392,24 @@
 
 .ie-services__confidence {
   display: grid;
-  grid-template-columns: minmax(280px, .75fr) minmax(0, 1.25fr);
-  gap: clamp(42px, 7vw, 108px);
-  padding-block: 100px 84px;
+  grid-template-columns: minmax(390px, .9fr) minmax(0, 1.6fr);
+  gap: clamp(32px, 4vw, 60px);
+  padding-block: 92px 80px;
   border-bottom: 1px solid var(--ie-border);
 }
 
 .ie-services__confidence h2 {
-  max-width: 13ch;
-  font-size: clamp(2rem, 3vw, 3.4rem);
-  line-height: 1.02;
+  width: 100%;
+  max-width: none;
+  font-size: clamp(2rem, 2.45vw, 2.85rem);
+  line-height: 1.05;
+  text-wrap: pretty;
 }
 
 .ie-services__confidence-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
+  gap: clamp(22px, 2.2vw, 34px);
 }
 
 .ie-services__confidence-grid article {
@@ -416,10 +418,15 @@
 }
 
 .ie-services__confidence-grid h3 {
+  width: 100%;
+  max-width: none;
   margin: 0 0 9px;
   font-family: Manrope, var(--font-body--family), Arial, sans-serif;
-  font-size: .98rem;
+  font-size: 1rem !important;
   font-weight: 600;
+  line-height: 1.25 !important;
+  letter-spacing: 0;
+  text-wrap: pretty;
 }
 
 .ie-services__confidence-grid p {
@@ -439,9 +446,11 @@
 }
 
 .ie-services__closing h2 {
-  max-width: 17ch;
-  font-size: clamp(2rem, 3vw, 3.4rem);
-  line-height: 1.02;
+  width: 100%;
+  max-width: none;
+  font-size: clamp(2rem, 2.45vw, 2.85rem);
+  line-height: 1.05;
+  text-wrap: pretty;
 }
 
 .ie-services__closing .rte {
@@ -488,6 +497,30 @@
 }
 
 @media screen and (min-width: 750px) and (max-width: 1180px) {
+
+  .ie-services__confidence {
+    grid-template-columns: minmax(310px, .85fr) minmax(0, 1.35fr);
+    gap: 32px;
+  }
+
+  .ie-services__confidence h2,
+  .ie-services__closing h2 {
+    width: 100%;
+    max-width: none;
+    font-size: clamp(1.95rem, 3.2vw, 2.45rem);
+    line-height: 1.06;
+    text-wrap: pretty;
+  }
+
+  .ie-services__confidence-grid {
+    gap: 20px;
+  }
+
+  .ie-services__confidence-grid h3 {
+    font-size: .95rem !important;
+    line-height: 1.25 !important;
+  }
+
   .ie-services__section-head {
     grid-template-columns: minmax(320px, .9fr) minmax(0, 1.1fr);
     column-gap: 36px;
@@ -697,6 +730,20 @@
   .ie-services__confidence-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .ie-services__confidence h2,
+  .ie-services__closing h2 {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+    text-wrap: pretty;
+  }
+
+  .ie-services__confidence-grid h3 {
+    font-size: 1rem !important;
+    line-height: 1.25 !important;
+    text-align: left;
   }
 
   .ie-services__closing {
