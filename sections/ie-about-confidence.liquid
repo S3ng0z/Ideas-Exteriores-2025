@@ -1,0 +1,43 @@
+<section class="ie-about ie-about--confidence" aria-labelledby="ie-about-confidence-title-{{ section.id }}">
+  <div class="ie-about__inner">
+    <div class="ie-about__confidence">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-about__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-about-confidence-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+
+      <div class="ie-about__confidence-grid">
+        {% for block in section.blocks %}
+          <article {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.heading }}</h3>
+            <p>{{ block.settings.text }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Nosotros · Criterios",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Nuestro criterio"},
+    {"type":"text","id":"heading","label":"Título","default":"Diseño, técnica y claridad comercial"}
+  ],
+  "blocks":[
+    {
+      "type":"principle",
+      "name":"Criterio",
+      "settings":[
+        {"type":"text","id":"heading","label":"Título","default":"Catálogo curado"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Modelos y opciones compatibles para elegir sin convertir cada proyecto en un desarrollo desde cero."}
+      ]
+    }
+  ],
+  "max_blocks":4,
+  "presets":[{"name":"Nosotros · Criterios"}]
+}
+{% endschema %}
