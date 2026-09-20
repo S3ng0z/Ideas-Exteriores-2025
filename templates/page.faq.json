@@ -1,1910 +1,366 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "custom_liquid_chGEnT": {
-      "type": "custom-liquid",
-      "name": "t:names.custom_liquid",
-      "settings": {
-        "custom_liquid": "<style>\n  .lux-breadcrumb-box {\n    padding: 1rem 0;\n  }\n\n  .lux-breadcrumb-inner {\n    display: flex;\n    flex-direction: column;\n    gap: 0.5rem;\n  }\n\n  .lux-breadcrumb {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    font-size: 0.875rem;\n    line-height: 1.4;\n  }\n\n  .lux-breadcrumb a {\n    text-decoration: none;\n  }\n\n  .lux-breadcrumb a:hover {\n    text-decoration: underline;\n  }\n\n  .lux-breadcrumb-separator {\n    margin: 0 0.35rem;\n  }\n\n  .lux-breadcrumb .current {\n    font-weight: 600;\n  }\n\n  .lux-title {\n    font-size: 1.8rem;\n    line-height: 1.2;\n  }\n\n  /* Tablet */\n  @media (max-width: 1024px) {\n    .lux-title {\n      font-size: 1.5rem;\n    }\n\n    .lux-breadcrumb {\n      font-size: 0.8rem;\n    }\n  }\n\n  /* Smartphone */\n  @media (max-width: 640px) {\n    .lux-breadcrumb-inner {\n      gap: 0.25rem;\n    }\n\n    .lux-breadcrumb {\n      font-size: 0.75rem;\n    }\n\n    .lux-title {\n      font-size: 1.25rem;\n    }\n\n    .lux-breadcrumb .current {\n      white-space: nowrap;\n      overflow: hidden;\n      text-overflow: ellipsis;\n      max-width: 100%;\n    }\n  }\n</style>\n\n<div class=\"lux-breadcrumb-box page-width-content\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      {%- comment -%} Enlace a INICIO {%- endcomment -%}\n      <a href=\"{{ routes.root_url }}\">INICIO</a>\n\n      {%- comment -%}\n        Metafields (ajusta \"custom\" si usas otro namespace)\n      {%- endcomment -%}\n      {% assign n1      = page.metafields.custom.n1      | default: page.metafields.custom.N1 %}\n      {% assign n1_url  = page.metafields.custom.n1_url  | default: page.metafields.custom.N1_URL %}\n      {% assign n2      = page.metafields.custom.n2      | default: page.metafields.custom.N2 %}\n      {% assign n2_url  = page.metafields.custom.n2_url  | default: page.metafields.custom.N2_URL %}\n      {% assign n3      = page.metafields.custom.n3      | default: page.metafields.custom.N3 %}\n      {% assign n3_url  = page.metafields.custom.n3_url  | default: page.metafields.custom.N3_URL %}\n\n      {%- comment -%}\n        Función “manual” para extraer solo el path de una URL:\n        - Quita http:// y https://\n        - Separa por \"/\"\n        - Ignora el primer elemento (dominio) y reconstruye /lo/que/sea\n      {%- endcomment -%}\n\n      {%- assign n1_path = '' -%}\n      {%- if n1_url != blank -%}\n        {% assign n1_clean = n1_url | remove: 'https://' | remove: 'http://' %}\n        {% assign n1_parts = n1_clean | split: '/' %}\n        {% assign n1_path = '' %}\n        {% for part in n1_parts %}\n          {% if forloop.first %}\n          {% else %}\n            {% if part != blank %}\n              {% assign n1_path = n1_path | append: '/' | append: part %}\n            {% endif %}\n          {% endif %}\n        {% endfor %}\n      {%- endif -%}\n\n      {%- assign n2_path = '' -%}\n      {%- if n2_url != blank -%}\n        {% assign n2_clean = n2_url | remove: 'https://' | remove: 'http://' %}\n        {% assign n2_parts = n2_clean | split: '/' %}\n        {% assign n2_path = '' %}\n        {% for part in n2_parts %}\n          {% if forloop.first %}\n          {% else %}\n            {% if part != blank %}\n              {% assign n2_path = n2_path | append: '/' | append: part %}\n            {% endif %}\n          {% endif %}\n        {% endfor %}\n      {%- endif -%}\n\n      {%- assign n3_path = '' -%}\n      {%- if n3_url != blank -%}\n        {% assign n3_clean = n3_url | remove: 'https://' | remove: 'http://' %}\n        {% assign n3_parts = n3_clean | split: '/' %}\n        {% assign n3_path = '' %}\n        {% for part in n3_parts %}\n          {% if forloop.first %}\n          {% else %}\n            {% if part != blank %}\n              {% assign n3_path = n3_path | append: '/' | append: part %}\n            {% endif %}\n          {% endif %}\n        {% endfor %}\n      {%- endif -%}\n\n      {%- comment -%}\n        Si ya venía como \"/pages/xxx\", el sistema sigue funcionando porque:\n        \"/pages/xxx\" sin protocolo → primer elemento \"\" (dominio vacío) y luego \"pages\", \"xxx\" → /pages/xxx\n      {%- endcomment -%}\n\n      {%- comment -%} N1 {%- endcomment -%}\n      {% if n1 != blank %}\n        <span class=\"lux-breadcrumb-separator\">/</span>\n        {% if n1_path != blank %}\n          <a href=\"{{ n1_path }}\">{{ n1 }}</a>\n        {% else %}\n          <span>{{ n1 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N2 {%- endcomment -%}\n      {% if n2 != blank %}\n        <span class=\"lux-breadcrumb-separator\">/</span>\n        {% if n2_path != blank %}\n          <a href=\"{{ n2_path }}\">{{ n2 }}</a>\n        {% else %}\n          <span>{{ n2 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N3 {%- endcomment -%}\n      {% if n3 != blank %}\n        <span class=\"lux-breadcrumb-separator\">/</span>\n        {% if n3_path != blank %}\n          <a href=\"{{ n3_path }}\">{{ n3 }}</a>\n        {% else %}\n          <span>{{ n3 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} Página actual {%- endcomment -%}\n      <span class=\"lux-breadcrumb-separator\">/</span>\n      <span class=\"current\">{{ page.title }}</span>\n    </nav>\n\n    <h1 class=\"lux-title\">{{ page.title }}</h1>\n  </div>\n</div>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "main": {
-      "type": "main-page",
+    "hero": {
+      "type": "ie-faq-hero",
       "blocks": {
-        "text_KMwtTr": {
-          "type": "text",
-          "name": "t:names.text",
+        "topic_project": {
+          "type": "topic",
           "settings": {
-            "text": "{{ closest.page.content }}",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "number": "01",
+            "label": "Proyecto y presupuesto",
+            "anchor": "#proyecto-presupuesto"
+          }
+        },
+        "topic_licenses": {
+          "type": "topic",
+          "settings": {
+            "number": "02",
+            "label": "Licencias y viabilidad",
+            "anchor": "#licencias-viabilidad"
+          }
+        },
+        "topic_systems": {
+          "type": "topic",
+          "settings": {
+            "number": "03",
+            "label": "Sistemas constructivos",
+            "anchor": "#sistemas-constructivos"
+          }
+        },
+        "topic_mount": {
+          "type": "topic",
+          "settings": {
+            "number": "04",
+            "label": "Base, entrega y montaje",
+            "anchor": "#base-entrega-montaje"
+          }
+        },
+        "topic_care": {
+          "type": "topic",
+          "settings": {
+            "number": "05",
+            "label": "Mantenimiento y garantías",
+            "anchor": "#mantenimiento-garantias"
+          }
         }
       },
       "block_order": [
-        "text_KMwtTr"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".page-width-content {--page-content-width: 100% !important;}"
+        "topic_project",
+        "topic_licenses",
+        "topic_systems",
+        "topic_mount",
+        "topic_care"
       ],
       "settings": {
-        "content_direction": "column",
-        "gap": 32,
-        "color_scheme": "",
-        "padding-block-start": 40,
-        "padding-block-end": 80
+        "eyebrow": "Información para decidir con claridad",
+        "heading": "Preguntas frecuentes sobre proyectos en madera",
+        "lead": "<p>Resolvemos las dudas que más influyen antes de elegir una solución: presupuesto, configuración, licencias, sistemas constructivos, montaje, mantenimiento y garantías. Si tu caso depende de la parcela, el municipio o un alcance concreto, lo revisamos contigo.</p>",
+        "nav_title": "Ir directamente a"
       }
     },
-    "section_UhHJYh": {
-      "type": "section",
+    "project": {
+      "type": "ie-faq-group",
       "blocks": {
-        "text_diNUYP": {
-          "type": "text",
-          "name": "t:names.heading",
+        "q1": {
+          "type": "faq",
           "settings": {
-            "text": "<p><strong>Preguntas frecuentes de clientes sobre casas y soluciones de madera</strong></p>",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "center",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "question": "¿Qué tipo de soluciones comercializa Ideas Exteriores?",
+            "answer": "<p>Trabajamos con casas y casetas de madera, estudios y oficinas de jardín, pérgolas, cenadores, tarimas y otras soluciones para exterior y espacios habitables. La oferta se organiza en modelos definidos y configurables, con un alcance de suministro, acabado y montaje que se concreta antes de presupuestar.</p>",
+            "open_by_default": true
+          }
         },
-        "accordion_YYaiLq": {
-          "type": "accordion",
-          "name": "t:names.accordion",
+        "q2": {
+          "type": "faq",
           "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_hKLF7W": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Todavía hay dudas sobre qué sistema o tipo de proyecto encaja mejor?",
-                "open_by_default": true
-              },
-              "blocks": {
-                "text_BW9Qqf": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Cada proyecto es distinto. Una primera consulta permite valorar la mejor solución según uso, parcela, presupuesto y nivel de acabados, evitando errores desde el inicio</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_BW9Qqf"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_hKLF7W"
-          ]
+            "question": "¿Qué necesito para solicitar presupuesto?",
+            "answer": "<p>Cuanto más contexto tengamos, mejor podremos orientar la propuesta. Lo más útil es indicar el uso previsto, la ubicación o código postal, medidas aproximadas, el modelo o solución que te interesa si ya lo tienes identificado y, cuando sea posible, fotografías, planos o un croquis.</p>"
+          }
         },
-        "text_C4GhKR": {
-          "type": "text",
-          "name": "t:names.heading",
+        "q3": {
+          "type": "faq",
           "settings": {
-            "text": "<p>Proyecto</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "question": "¿Los modelos se pueden configurar?",
+            "answer": "<p>Sí, dentro de las opciones compatibles con cada modelo. Según la solución pueden variar acabados, nivel de aislamiento, carpinterías, modalidad de entrega, base o montaje. La configuración disponible y su alcance se detallan antes de cerrar el presupuesto.</p>"
+          }
         },
-        "accordion_zjqrkR": {
-          "type": "accordion",
-          "name": "t:names.accordion",
+        "q4": {
+          "type": "faq",
           "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_QfwgVR": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué tipo de proyectos realizamos?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_bMcbdt": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Diseñamos, fabricamos e instalamos soluciones en madera para exterior y uso habitable: casas, casetas, estudios, oficinas de jardín, porches, pérgolas, cenadores, tarimas y proyectos a medida.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_bMcbdt"
-              ]
-            },
-            "accordion_row_k3PTWc": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Trabajamos solo modelos estándar o también proyectos a medida?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_q33b8E": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Trabajamos ambas opciones. Existen modelos base para agilizar tiempos, pero gran parte de los proyectos se adaptan en medidas, distribución, acabados, aislamiento y detalles técnicos.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_q33b8E"
-              ]
-            },
-            "accordion_row_8aFRTB": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Se puede usar una construcción de madera como vivienda, oficina o estudio?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_J7KYhN": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí, siempre que el proyecto esté diseñado para ese uso y cumpla los requisitos técnicos y urbanísticos aplicables. No es lo mismo una caseta auxiliar que un espacio habitable o de uso permanente.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_J7KYhN"
-              ]
-            },
-            "accordion_row_REybip": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué necesito para pedir presupuesto?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_HMxpUw": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Lo ideal es facilitar el uso previsto, medidas aproximadas, ubicación del proyecto, fotografías del terreno o espacio, y cualquier plano, croquis o referencia que ayude a definir la propuesta.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_HMxpUw"
-              ]
-            },
-            "accordion_row_HjzKzc": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Se realiza diseño previo antes de fabricar?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_wYP9MH": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí. Definir bien el diseño antes de fabricar permite ajustar mejor el presupuesto, prever detalles técnicos y evitar cambios posteriores en obra.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_wYP9MH"
-              ]
-            },
-            "accordion_row_Hgwhje": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Se puede instalar en cualquier parcela?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_6jqK9y": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>No siempre. Antes de confirmar un proyecto conviene revisar accesos, pendientes, retranqueos, normativa, uso permitido y condiciones del terreno.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_6jqK9y"
-              ]
-            },
-            "accordion_row_yJqVW4": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Puedo personalizar acabados, revestimientos y distribución?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_MrnxX3": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí. Se pueden adaptar medidas, estética exterior, distribución interior, carpinterías, revestimientos, aislamiento y múltiples detalles para ajustarlos al uso real del espacio.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_MrnxX3"
-              ]
-            },
-            "accordion_row_gHgQzE": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué solución encaja mejor para un estudio de jardín o una oficina exterior?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_AH6fzV": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Para un uso frecuente o intensivo, conviene priorizar confort térmico, aislamiento acústico, calidad de carpinterías y una envolvente bien resuelta. La solución se define según el nivel de uso previsto durante todo el año.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_AH6fzV"
-              ]
-            },
-            "accordion_row_VfGNbh": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Por qué elegir una solución en madera frente a una obra tradicional?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_VL8Nnc": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Porque permite combinar diseño, rapidez, eficiencia, imagen cuidada y un proceso más controlado. Además, ofrece un alto nivel de personalización y una construcción más ligera y versátil.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_VL8Nnc"
-              ]
-            },
-            "accordion_row_Q6UKfd": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Cómo saber qué solución encaja mejor con el presupuesto disponible?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_iaMxDm": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>La mejor forma es valorar el proyecto completo, no solo el precio base. Hay que comparar sistema constructivo, aislamiento, acabados, base, transporte, montaje y uso real del espacio.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_iaMxDm"
-              ]
-            },
-            "accordion_row_cP9Ud7": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Cómo empezar?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_FCyaDa": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Solo hace falta explicar qué se quiere construir, para qué se va a utilizar y dónde se va a instalar. A partir de ahí se puede orientar la solución más adecuada y preparar una propuesta realista.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_FCyaDa"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_QfwgVR",
-            "accordion_row_k3PTWc",
-            "accordion_row_8aFRTB",
-            "accordion_row_REybip",
-            "accordion_row_HjzKzc",
-            "accordion_row_Hgwhje",
-            "accordion_row_yJqVW4",
-            "accordion_row_gHgQzE",
-            "accordion_row_VfGNbh",
-            "accordion_row_Q6UKfd",
-            "accordion_row_cP9Ud7"
-          ]
+            "question": "¿Cómo sé qué solución encaja mejor con mi proyecto?",
+            "answer": "<p>La elección depende del uso, la superficie necesaria, las prestaciones, la ubicación, los accesos, el nivel de acabado y el presupuesto disponible. Nuestro objetivo es ayudarte a comparar opciones reales y llevarte hacia la solución que mejor encaja, sin sobredimensionar el proyecto.</p>",
+            "link_label": "Ver servicios para proyectos en madera",
+            "link": "/pages/services"
+          }
         },
-        "text_QPhLAL": {
-          "type": "text",
-          "name": "t:names.heading",
+        "q5": {
+          "type": "faq",
           "settings": {
-            "text": "<p>Licencias</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "accordion_TdPHJK": {
-          "type": "accordion",
-          "name": "t:names.accordion",
-          "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_jG4XyK": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Necesito licencia para instalar una caseta, una oficina de jardín o una casa de madera?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_njV8aT": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>En muchos casos, sí. La necesidad de licencia o trámite previo depende del uso, dimensiones, ubicación, cimentación y normativa municipal. Cada ayuntamiento puede aplicar criterios distintos.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_njV8aT"
-              ]
-            },
-            "accordion_row_FqiiWf": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Puedo instalar la casa en un terreno rústico o no urbanizable?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_FRrPdY": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>No se puede responder de forma general. Depende de la normativa urbanística del municipio, la clasificación del suelo, el uso previsto, la superficie, el tipo de cimentación y la documentación técnica exigida. Antes de avanzar, conviene estudiar la viabilidad urbanística del caso concreto.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_FRrPdY"
-              ]
-            },
-            "accordion_row_pffizc": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué altura máxima puede tener mi pérgola?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_QTfhyP": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Depende de la normativa urbanística local, la ubicación dentro de la parcela, los retranqueos y el tipo de estructura. También influye si la pérgola es abierta, cubierta o está vinculada a otro volumen. Lo correcto es revisar la ordenanza municipal aplicable antes de definir el diseño final.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_QTfhyP"
-              ]
-            },
-            "accordion_row_qhyc7r": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué pasaría si se retrasa la licencia municipal?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_HJywKn": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Si la fabricación ya estuviera terminada y la licencia o autorización se retrasase, la estructura puede mantenerse en almacén de forma temporal. En ese caso, puede aplicarse un coste extra mensual de almacenaje y logística, que se indicaría previamente con total claridad.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_HJywKn"
-              ]
-            },
-            "accordion_row_UWDemV": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Podemos ayudar con la viabilidad urbanística y los permisos?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_cRhVRb": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí. Se puede acompañar el proceso con asesoramiento técnico, revisión inicial de viabilidad, documentación del proyecto y coordinación con los agentes necesarios según cada caso.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_cRhVRb"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_jG4XyK",
-            "accordion_row_FqiiWf",
-            "accordion_row_pffizc",
-            "accordion_row_qhyc7r",
-            "accordion_row_UWDemV"
-          ]
-        },
-        "text_34EA4r": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>Sistemas constructivos</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "accordion_beW744": {
-          "type": "accordion",
-          "name": "t:names.accordion",
-          "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_Ccxgtt": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué sistema es mejor: entramado ligero o panel SIP?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_DYQgfM": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Depende del proyecto. El entramado ligero ofrece gran flexibilidad de diseño y personalización. El sistema SIP destaca por su rapidez de montaje, alto aislamiento y buen control de la envolvente. La mejor opción depende del uso, la parcela, el presupuesto y el nivel de prestaciones que se busque.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_DYQgfM"
-              ]
-            },
-            "accordion_row_JbjNVh": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué tipo de aislamiento utilizan para las casas?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_ayBzd7": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Se emplean soluciones de aislamiento adaptadas al sistema constructivo y al uso previsto del edificio. Según el proyecto, se define el espesor, la composición de muros, cubierta y suelo, buscando un buen equilibrio entre confort térmico, eficiencia energética y durabilidad.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_ayBzd7"
-              ]
-            },
-            "accordion_row_TmnVwU": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Los paneles SIP aíslan bien de verdad?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_m8JWwH": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí. Son una solución de altas prestaciones, especialmente interesante cuando se busca una envolvente muy eficiente, con menos puentes térmicos y una ejecución muy controlada.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_m8JWwH"
-              ]
-            },
-            "accordion_row_b3iHg4": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿El entramado ligero también ofrece buen aislamiento?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_Tk38qg": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí. Bien diseñado y correctamente ejecutado, permite conseguir espacios muy confortables, eficientes y aptos para uso durante todo el año.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_Tk38qg"
-              ]
-            },
-            "accordion_row_G97bMc": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Cuál es el grado de aislamiento acústico para trabajar?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_Vcwidw": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Depende de la composición final de cerramientos, carpinterías, cubierta, encuentros y acabados interiores. Para un estudio, despacho o espacio de teletrabajo, se puede configurar una solución con un nivel de aislamiento acústico adecuado para trabajar con comodidad.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_Vcwidw"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_Ccxgtt",
-            "accordion_row_JbjNVh",
-            "accordion_row_TmnVwU",
-            "accordion_row_b3iHg4",
-            "accordion_row_G97bMc"
-          ]
-        },
-        "text_cbpXGT": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h4>Montaje</h4>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "accordion_tgF3t7": {
-          "type": "accordion",
-          "name": "t:names.accordion",
-          "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_WEjiBj": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿En el precio de la casa incluye el montaje?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_gHD3pk": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Depende del alcance contratado. En muchos proyectos sí se incluye, pero siempre debe quedar claramente detallado en el presupuesto: fabricación, transporte, montaje, base, medios auxiliares, acabados u otros trabajos complementarios.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_gHD3pk"
-              ]
-            },
-            "accordion_row_Uq3kGU": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Cuánto tiempo tarda un proyecto de madera?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_mNX3Rc": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Depende del tipo de proyecto, del nivel de personalización, de la carga de fabricación, de la licencia y de la preparación del terreno. Una buena planificación desde el inicio ayuda a reducir tiempos y evitar imprevistos.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_mNX3Rc"
-              ]
-            },
-            "accordion_row_Wmr9je": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Cuánto tiempo se tardaría en el montaje?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_cfFnwB": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Depende del tamaño, complejidad, accesos, sistema constructivo y grado de terminación contratado. En general, el montaje en obra suele ser mucho más rápido que en sistemas tradicionales, especialmente cuando la fabricación previa está bien definida.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_cfFnwB"
-              ]
-            },
-            "accordion_row_ymHzWN": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿El montaje es rápido?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_MHbrTz": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí. Uno de los puntos fuertes de estos sistemas es la rapidez de ejecución, la limpieza en obra y el mayor control del proceso constructivo.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_MHbrTz"
-              ]
-            },
-            "accordion_row_xDgjTH": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿También se realizan cimentación, bases o soleras?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_Q6XxPH": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí, según el proyecto. La base es una parte fundamental para asegurar estabilidad, nivelación, drenaje y una correcta durabilidad de la estructura.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_Q6XxPH"
-              ]
-            },
-            "accordion_row_j8FWFY": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Cómo se ancla un porche a la fachada de la casa para evitar filtraciones o daños en el aislamiento exterior?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_Ynbjq9": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Ese encuentro debe resolverse con mucho cuidado. Se define un sistema de fijación adecuado al soporte existente, con sellados, remates y soluciones constructivas pensadas para evitar entradas de agua y minimizar cualquier afección sobre la fachada o el aislamiento térmico exterior. Cada caso debe estudiarse según el tipo de muro y acabado existente.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_Ynbjq9"
-              ]
-            },
-            "accordion_row_HJmpwi": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Se podría desmontar y trasladar en caso de mudanza?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_w6Mk6t": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Depende del tipo de estructura y de cómo haya sido diseñada e instalada. Algunos proyectos permiten desmontaje parcial o traslado con mayor facilidad que otros. Es un aspecto que conviene valorar desde la fase de diseño si existe esa posibilidad a medio o largo plazo.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_w6Mk6t"
-              ]
-            },
-            "accordion_row_zwJ3AE": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Trabajamos en toda España?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_Wn4G3V": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí, se estudia cada proyecto según ubicación, accesos, transporte y necesidades de montaje.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_Wn4G3V"
-              ]
-            },
-            "accordion_row_BcYWYj": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué incluye normalmente el servicio?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_xnFxyE": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Según el proyecto, puede incluir asesoramiento, diseño, definición técnica, fabricación, transporte, montaje, base, protección de la madera y soporte postventa.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xnFxyE"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_WEjiBj",
-            "accordion_row_Uq3kGU",
-            "accordion_row_Wmr9je",
-            "accordion_row_ymHzWN",
-            "accordion_row_xDgjTH",
-            "accordion_row_j8FWFY",
-            "accordion_row_HJmpwi",
-            "accordion_row_zwJ3AE",
-            "accordion_row_BcYWYj"
-          ]
-        },
-        "text_GULxLD": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h4>Mantenimiento</h4>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "accordion_VXfH7Y": {
-          "type": "accordion",
-          "name": "t:names.accordion",
-          "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_ca9d4q": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Cuánto tiempo dura una estructura de madera?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_UDWnnb": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Una estructura de madera bien diseñada, correctamente ejecutada y con un mantenimiento razonable puede durar muchos años. La durabilidad depende del diseño constructivo, la protección frente a humedad, la ventilación, la calidad de los materiales y el cuidado posterior.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UDWnnb"
-              ]
-            },
-            "accordion_row_yHcq9C": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué mantenimiento se requiere para proteger contra la humedad y el sol?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_hy8HBg": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Se recomienda realizar revisiones periódicas del acabado exterior, juntas, encuentros, puntos expuestos al agua y zonas con mayor radiación solar. En función del producto aplicado y de la exposición, puede ser necesario renovar la protección superficial para mantener la madera en buen estado.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_hy8HBg"
-              ]
-            },
-            "accordion_row_fbcPVB": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿La madera necesita mucho mantenimiento?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_Fzggfx": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>No mucho, pero sí el adecuado. Un mantenimiento preventivo sencillo ayuda a conservar la estética, mejorar la protección y alargar la vida útil del conjunto.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_Fzggfx"
-              ]
-            },
-            "accordion_row_Rba4fG": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué pasa si en el futuro se necesita ampliar, reparar o actualizar la estructura?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_DzzGVA": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>En muchos casos es posible ampliar, modificar o actualizar la construcción. Lo recomendable es estudiar el proyecto original para plantear una solución técnica compatible y segura.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_DzzGVA"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_ca9d4q",
-            "accordion_row_yHcq9C",
-            "accordion_row_fbcPVB",
-            "accordion_row_Rba4fG"
-          ]
-        },
-        "text_PreQCz": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h4>Garantías</h4>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "accordion_qkVjWJ": {
-          "type": "accordion",
-          "name": "t:names.accordion",
-          "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "accordion_row_AJQNLE": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué garantías postventa se ofrecen si existiesen fallos estructurales o problemas de asentamiento durante los primeros años?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_AM8zKV": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Las garantías y el alcance del servicio postventa deben quedar definidos por escrito en cada presupuesto o contrato. En caso de incidencia, se analiza el origen del problema para determinar si corresponde a estructura, montaje, base, uso o mantenimiento, y se ofrece la solución adecuada dentro de las condiciones pactadas.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_AM8zKV"
-              ]
-            },
-            "accordion_row_Mf4NRh": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Ofrecemos servicio postventa?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_9EL9zX": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Sí. El servicio postventa está pensado para dar continuidad al proyecto una vez instalado, resolver incidencias y acompañar al cliente en el mantenimiento o en posibles ajustes posteriores.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_9EL9zX"
-              ]
-            },
-            "accordion_row_xrphxB": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "¿Qué ocurre si aparece una incidencia después del montaje?",
-                "open_by_default": false
-              },
-              "blocks": {
-                "text_W7rkFx": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Lo importante es revisar el caso cuanto antes. Cada incidencia se valora según su origen y alcance para definir la solución más adecuada, ya sea una reparación, un ajuste técnico o una actuación dentro de garantía.</p>",
-                    "width": "fit-content",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_W7rkFx"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_AJQNLE",
-            "accordion_row_Mf4NRh",
-            "accordion_row_xrphxB"
-          ]
+            "question": "¿Una caseta o módulo puede utilizarse como vivienda, oficina o estudio?",
+            "answer": "<p>Depende del modelo, del uso previsto y de los requisitos técnicos y urbanísticos aplicables. Una construcción auxiliar no debe darse por equivalente a un espacio habitable. Si el objetivo es vivienda, estudio u oficina de uso frecuente, hay que definir desde el inicio prestaciones, documentación y condiciones de implantación.</p>"
+          }
         }
       },
       "block_order": [
-        "text_diNUYP",
-        "accordion_YYaiLq",
-        "text_C4GhKR",
-        "accordion_zjqrkR",
-        "text_QPhLAL",
-        "accordion_TdPHJK",
-        "text_34EA4r",
-        "accordion_beW744",
-        "text_cbpXGT",
-        "accordion_tgF3t7",
-        "text_GULxLD",
-        "accordion_VXfH7Y",
-        "text_PreQCz",
-        "accordion_qkVjWJ"
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
       ],
-      "name": "t:names.faq_section",
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "full-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "anchor": "proyecto-presupuesto",
+        "index": "01 · Proyecto y presupuesto",
+        "heading": "Empezar con la información adecuada",
+        "intro": "<p>Primero definimos qué necesitas y qué datos condicionan la solución. Así el presupuesto parte de un alcance comprensible y comparable.</p>"
+      }
+    },
+    "licenses": {
+      "type": "ie-faq-group",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Necesito licencia para instalar una caseta, oficina de jardín o casa de madera?",
+            "answer": "<p>Puede ser necesaria. El trámite depende del uso, las dimensiones, la ubicación, la base o cimentación y la normativa municipal. Antes de fabricar o instalar conviene confirmar la situación urbanística y el procedimiento aplicable al caso concreto.</p>",
+            "open_by_default": true
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo instalar una construcción en suelo rústico o no urbanizable?",
+            "answer": "<p>No existe una respuesta válida para todos los casos. La viabilidad depende de la clasificación del suelo, el planeamiento municipal, el uso previsto y la documentación exigible. Recomendamos comprobarlo antes de comprometer una solución o una configuración.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Podéis ayudar con la viabilidad urbanística y los permisos?",
+            "answer": "<p>Sí, cuando el proyecto lo requiere podemos incorporar asesoramiento técnico, revisión inicial de viabilidad y apoyo con la documentación o coordinación necesaria, siempre con el alcance del servicio definido de antemano.</p>",
+            "link_label": "Ver proyectos y licencias",
+            "link": "/pages/project-management-permits"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Quién debe tramitar la licencia o autorización?",
+            "answer": "<p>La responsabilidad y el procedimiento dependen del tipo de actuación y del municipio. Podemos aportar o coordinar la documentación incluida en el servicio contratado, pero la tramitación concreta debe quedar definida para cada proyecto antes de iniciar la ejecución.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué ocurre si los permisos todavía no están resueltos?",
+            "answer": "<p>Lo recomendable es ordenar fabricación, preparación de la base y montaje de acuerdo con los hitos administrativos y técnicos del proyecto. Las condiciones de inicio, reserva, almacenamiento o reprogramación deben quedar expresamente indicadas en el presupuesto o contrato aplicable.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "anchor": "licencias-viabilidad",
+        "index": "02 · Licencias y viabilidad",
+        "heading": "Comprobar antes de ejecutar",
+        "intro": "<p>La normativa depende del municipio, del suelo y del uso. La prioridad es detectar estos condicionantes antes de que afecten al diseño, al presupuesto o al calendario.</p>",
+        "note": "<p>La información de este bloque es orientativa. La viabilidad y los trámites deben verificarse para la ubicación y el proyecto concretos.</p>"
+      }
+    },
+    "systems": {
+      "type": "ie-faq-group",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué sistemas constructivos trabajáis?",
+            "answer": "<p>Según la familia y el modelo, trabajamos con sistema europeo de madera prefabricada, entramado ligero y panel SIP. No todos los sistemas se aplican a todas las soluciones: la elección forma parte de la definición técnica del producto y de sus prestaciones.</p>",
+            "open_by_default": true
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué sistema es mejor: sistema europeo, entramado ligero o panel SIP?",
+            "answer": "<p>No existe un sistema universalmente mejor. La elección depende del uso, el modelo, la envolvente requerida, el nivel de acabado, el proceso de montaje y el alcance comercial. Comparamos las opciones que realmente son compatibles con tu proyecto.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué nivel de aislamiento térmico se puede conseguir?",
+            "answer": "<p>El resultado depende de la composición completa de muros, cubierta y suelo, de las carpinterías, de la continuidad del aislamiento y del control de los encuentros. El sistema constructivo es importante, pero el comportamiento final se define para el proyecto y el uso previstos.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Y el aislamiento acústico?",
+            "answer": "<p>También depende del conjunto: capas del cerramiento, cámaras, revestimientos, huecos, carpinterías y encuentros. En estudios, oficinas o espacios de uso frecuente se puede priorizar una configuración con mejores prestaciones acústicas dentro de las opciones disponibles.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué acabados exteriores e interiores se pueden elegir?",
+            "answer": "<p>Cada modelo dispone de una combinación de materiales y acabados compatibles. La selección se realiza dentro de esas opciones para mantener coherencia técnica, control de costes y una ejecución repetible. Las alternativas concretas se detallan en la ficha o propuesta correspondiente.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "anchor": "sistemas-constructivos",
+        "index": "03 · Sistemas constructivos",
+        "heading": "Elegir por uso y prestaciones",
+        "intro": "<p>La tecnología no se elige por una etiqueta, sino por cómo resuelve el uso, la envolvente, el montaje y el nivel de acabado de cada modelo.</p>"
+      }
+    },
+    "mount": {
+      "type": "ie-faq-group",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "¿El precio incluye transporte y montaje?",
+            "answer": "<p>Depende del modelo y de la modalidad contratada. El presupuesto debe indicar de forma expresa qué incluye el precio: suministro, transporte, base, montaje, medios auxiliares, acabados y cualquier trabajo complementario. Evitamos dar por incluido un concepto que no figure en el alcance.</p>",
+            "open_by_default": true
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Hace falta una base, solera o cimentación?",
+            "answer": "<p>Sí, la estructura necesita un apoyo adecuado a su tipología y a las condiciones del terreno. La solución puede ser distinta según dimensiones, cargas, drenaje y proyecto. Podemos estudiar bases y soleras cuando formen parte del alcance contratado.</p>",
+            "link_label": "Ver bases y soleras",
+            "link": "/pages/timber-bases-and-foundations"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué debe estar preparado antes del montaje?",
+            "answer": "<p>Antes de la llegada de la estructura deben estar claros los accesos, la zona de trabajo, la base o apoyo, los permisos necesarios y, cuando proceda, las previsiones de acometidas o instalaciones. Estos requisitos se coordinan antes de fijar la ejecución.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Cuánto tarda la fabricación y el montaje?",
+            "answer": "<p>El plazo depende del modelo, la configuración, la carga de fabricación, los permisos, los accesos y el alcance del montaje. Por eso no utilizamos un plazo genérico para todos los proyectos: el calendario se confirma cuando están definidas las condiciones que realmente lo condicionan.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "¿En qué zonas realizáis entregas o montajes?",
+            "answer": "<p>La cobertura se estudia en cada presupuesto según ubicación, accesos, transporte y necesidades de montaje. Para proyectos en España peninsular podemos valorar suministro y ejecución y confirmar las condiciones logísticas antes de contratar.</p>",
+            "link_label": "Consultar montaje profesional",
+            "link": "/pages/timber-structure-installation"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "anchor": "base-entrega-montaje",
+        "index": "04 · Base, entrega y montaje",
+        "heading": "Coordinar lo que ocurre antes de llegar a obra",
+        "intro": "<p>Una ejecución ordenada depende tanto de la estructura como de la base, los accesos, la logística y los trabajos previos. Todo debe quedar definido en el alcance.</p>"
+      }
+    },
+    "care": {
+      "type": "ie-faq-group",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "¿La madera necesita mucho mantenimiento?",
+            "answer": "<p>No necesariamente, pero sí necesita el mantenimiento adecuado a su especie, acabado y exposición. Revisar protección superficial, encuentros, zonas húmedas y puntos especialmente expuestos ayuda a conservar el aspecto y la durabilidad de la solución.</p>",
+            "open_by_default": true
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Cuánto puede durar una estructura de madera?",
+            "answer": "<p>La durabilidad depende del diseño, la protección frente al agua, la ventilación, la calidad de los materiales, la ejecución y el mantenimiento. Una solución correctamente diseñada y cuidada puede ofrecer una vida útil prolongada, pero no es responsable fijar una cifra única para todos los sistemas y exposiciones.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué garantías se ofrecen?",
+            "answer": "<p>Las garantías dependen del producto, los componentes y el servicio contratado. Su alcance, condiciones y exclusiones deben quedar reflejados en la documentación comercial o contractual aplicable a cada proyecto.</p>",
+            "link_label": "Ver garantía, entrega y pago",
+            "link": "/pages/warranty-delivery-payment-options"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué ocurre si aparece una incidencia después del montaje?",
+            "answer": "<p>La revisamos para identificar su origen y determinar la actuación adecuada. Según el caso puede tratarse de un ajuste, una reparación, una actuación de mantenimiento o una intervención cubierta por las condiciones de garantía.</p>",
+            "link_label": "Ver mantenimiento y reparación",
+            "link": "/pages/wood-maintenance-repair"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Se puede ampliar o modificar una estructura en el futuro?",
+            "answer": "<p>En muchos casos sí, pero debe comprobarse la compatibilidad con la estructura original, las cargas, los encuentros y la normativa aplicable. Si existe esa previsión, es preferible considerarla desde la fase inicial de definición.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "anchor": "mantenimiento-garantias",
+        "index": "05 · Mantenimiento y garantías",
+        "heading": "Conservar la solución después de la entrega",
+        "intro": "<p>La posventa útil empieza por dejar claro qué revisar, cómo mantener los materiales y qué procedimiento seguir si aparece una incidencia.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-faq-cta",
+      "settings": {
+        "eyebrow": "¿No encuentras tu caso?",
+        "heading": "Cuéntanos en qué punto está tu proyecto",
+        "text": "<p>Con el uso previsto, la ubicación y unas medidas aproximadas podemos orientarte hacia la solución, el servicio y el siguiente paso adecuados.</p>",
+        "primary_label": "Hacer una consulta",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Ver servicios",
+        "secondary_link": "/pages/services"
       }
     }
   },
   "order": [
-    "custom_liquid_chGEnT",
-    "main",
-    "section_UhHJYh"
+    "hero",
+    "project",
+    "licenses",
+    "systems",
+    "mount",
+    "care",
+    "cta"
   ]
 }
