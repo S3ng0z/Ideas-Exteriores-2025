@@ -1,0 +1,82 @@
+{% liquid
+  assign ie_products_url = pages['timber-products'].url | default: '/pages/timber-products'
+  assign ie_services_url = pages['services'].url | default: '/pages/services'
+  assign ie_contact_url = pages['contact'].url | default: '/pages/contact'
+  assign ie_is_sip = false
+  assign ie_is_ltf = false
+  if collection.handle == 'sip-panel-houses'
+    assign ie_is_sip = true
+    assign ie_system_url = pages['sip-building-system-overview'].url | default: '/pages/panel-sip'
+  elsif collection.handle == 'light-frame-houses'
+    assign ie_is_ltf = true
+    assign ie_system_url = pages['light-timber-building-system-overview'].url | default: '/pages/entramado-ligero'
+  endif
+%}
+
+{% if ie_is_sip or ie_is_ltf %}
+  {{ 'ie-habitable-system-collection.css' | asset_url | stylesheet_tag }}
+  {% if section.settings.mode == 'intro' %}
+    <section class="ie-hc ie-hc--hero" aria-labelledby="ie-hc-title">
+      <div class="ie-hc__inner">
+        <nav class="ie-hc__breadcrumb" aria-label="Migas de pan">
+          <a href="{{ routes.root_url }}">Inicio</a><span aria-hidden="true">/</span>
+          <a href="{{ ie_products_url }}">Productos</a><span aria-hidden="true">/</span>
+          <span aria-current="page">{% if ie_is_sip %}Casas con panel SIP{% else %}Casas de entramado ligero{% endif %}</span>
+        </nav>
+        <div class="ie-hc__hero-grid">
+          <div>
+            <p class="ie-hc__eyebrow">Viviendas en madera · {% if ie_is_sip %}Panel SIP{% else %}Entramado ligero{% endif %}</p>
+            <h1 id="ie-hc-title">{% if ie_is_sip %}Casas con panel SIP{% else %}Casas de entramado ligero{% endif %}</h1>
+            <p class="ie-hc__lead">{% if ie_is_sip %}Compara modelos de vivienda construidos con sistema de paneles SIP por superficie, distribución y precio de partida. Elige un modelo y revisa su alcance antes de solicitar estudio y presupuesto.{% else %}Compara modelos de vivienda en madera por superficie, distribución y precio de partida. Elige un modelo y revisa su alcance antes de solicitar estudio y presupuesto.{% endif %}</p>
+            <div class="ie-hc__actions">
+              <a class="ie-hc__button ie-hc__button--primary" href="#ResultsList">Ver {{ collection.products_count }} modelos</a>
+              <a class="ie-hc__button ie-hc__button--secondary" href="{{ ie_system_url }}">{% if ie_is_sip %}Entender el sistema SIP{% else %}Entender el entramado ligero{% endif %}</a>
+            </div>
+          </div>
+          <aside class="ie-hc__summary">
+            <p class="ie-hc__summary-title">Antes de pedir presupuesto</p>
+            <ol>
+              <li><span>01</span><strong>Selecciona un modelo base</strong></li>
+              <li><span>02</span><strong>Compara superficie, distribución y precio desde</strong></li>
+              <li><span>03</span><strong>Valida alcance, parcela y condiciones del proyecto</strong></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="ie-hc ie-hc--guide" aria-labelledby="ie-hc-guide-title">
+      <div class="ie-hc__inner">
+        <div class="ie-hc__guide-head">
+          <div><p class="ie-hc__eyebrow">Elegir con criterio</p><h2 id="ie-hc-guide-title">Del modelo al estudio de tu vivienda</h2></div>
+          <div class="ie-hc__guide-copy">
+            <p>{% if ie_is_sip %}Los modelos SIP son una selección comercial de viviendas. El sistema constructivo explica cómo se construyen; la decisión de compra empieza por el modelo, su superficie, distribución y alcance.{% else %}Los modelos permiten comparar una oferta reconocible sin convertir cada consulta en un proyecto abierto desde cero. El sistema constructivo actúa como información técnica de apoyo.{% endif %}</p>
+          </div>
+        </div>
+        <div class="ie-hc__guide-grid">
+          <article><p class="ie-hc__index">01 · MODELO</p><h3>Empieza por superficie y distribución</h3><p>Compara tamaños y organización interior para reducir opciones antes de entrar en el detalle técnico.</p></article>
+          <article><p class="ie-hc__index">02 · ALCANCE</p><h3>Lee el precio como punto de partida</h3><p>El importe mostrado orienta la comparación. La ficha del modelo debe concretar alcance, opciones y condiciones aplicables.</p></article>
+          <article><p class="ie-hc__index">03 · SISTEMA</p><h3>{% if ie_is_sip %}Consulta qué aporta el panel SIP{% else %}Consulta cómo funciona el entramado{% endif %}</h3><p>Usa la información de sistema para comprender composición, proceso y límites sin convertir la tecnología en el primer filtro de compra.</p></article>
+        </div>
+      </div>
+    </section>
+  {% else %}
+    <section class="ie-hc ie-hc--cta" aria-labelledby="ie-hc-cta-title">
+      <div class="ie-hc__inner">
+        <div class="ie-hc__cta">
+          <div><p class="ie-hc__eyebrow">Siguiente paso</p><h2 id="ie-hc-cta-title">¿Ya tienes un modelo en mente?</h2><p>Entra en su ficha para revisar el alcance disponible. Si necesitas orientación previa, consulta cómo trabajamos o habla con el equipo.</p></div>
+          <div class="ie-hc__actions"><a class="ie-hc__button ie-hc__button--primary" href="{{ ie_services_url }}">Cómo trabajamos</a><a class="ie-hc__button ie-hc__button--secondary" href="{{ ie_contact_url }}">Hablar con el equipo</a></div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "IE · Viviendas por sistema",
+  "enabled_on": {"templates": ["collection"]},
+  "settings": [{"type":"select","id":"mode","label":"Posición","options":[{"value":"intro","label":"Introducción"},{"value":"outro","label":"Cierre"}],"default":"intro"}],
+  "presets": [{"name":"IE · Viviendas por sistema"}]
+}
+{% endschema %}
