@@ -6,6 +6,7 @@
 %}
 
 {% if collection.handle == 'light-frame-houses' %}
+  {{ 'ie-light-frame-collection.css' | asset_url | stylesheet_tag }}
   {% if section.settings.mode == 'intro' %}
     <section class="ie-lf ie-lf--hero" aria-labelledby="ie-lf-title">
       <div class="ie-lf__inner">
