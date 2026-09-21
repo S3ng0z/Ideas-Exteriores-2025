@@ -302,9 +302,9 @@
   margin: 0 0 14px;
   max-width: none;
   font-family: "Source Serif 4", Georgia, serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: 0;
 }
 
@@ -535,7 +535,7 @@
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .ie-about__focus-card h3 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .ie-about__confidence-grid {
@@ -577,7 +577,7 @@
 
 @media screen and (max-width: 749px) {
   .ie-about__focus-card h3 {
-    font-size: 20px;
+    font-size: 18px;
     white-space: normal;
     text-wrap: balance;
   }
