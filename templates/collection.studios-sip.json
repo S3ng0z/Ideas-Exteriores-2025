@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "ie_light_frame_intro": {
+      "type": "ie-light-frame-collection",
+      "settings": {
+        "mode": "intro"
+      }
+    },
     "custom_liquid_jYa6g6": {
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
@@ -210,10 +216,18 @@
         "padding-block-start": 20,
         "padding-block-end": 48
       }
+    },
+    "ie_light_frame_outro": {
+      "type": "ie-light-frame-collection",
+      "settings": {
+        "mode": "outro"
+      }
     }
   },
   "order": [
+    "ie_light_frame_intro",
     "custom_liquid_jYa6g6",
-    "main"
+    "main",
+    "ie_light_frame_outro"
   ]
 }
