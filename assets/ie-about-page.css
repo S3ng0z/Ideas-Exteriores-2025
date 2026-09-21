@@ -300,10 +300,12 @@
 
 .ie-about__focus-card h3 {
   margin: 0 0 14px;
+  max-width: none;
   font-family: "Source Serif 4", Georgia, serif;
-  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  font-size: 20px;
   font-weight: 500;
-  line-height: 1.05;
+  line-height: 1.15;
+  letter-spacing: 0;
 }
 
 .ie-about__focus-text {
@@ -503,6 +505,11 @@
 }
 
 @media screen and (min-width: 750px) {
+  .ie-about__focus-card h3 {
+    white-space: nowrap;
+    text-wrap: nowrap;
+  }
+
   .ie-about.ie-about--confidence .ie-about__confidence-grid > article > h3 {
     font-size: 18px !important;
     line-height: 1.2 !important;
@@ -527,6 +534,10 @@
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
+  .ie-about__focus-card h3 {
+    font-size: 18px;
+  }
+
   .ie-about__confidence-grid {
     gap: 20px;
   }
@@ -565,6 +576,12 @@
 }
 
 @media screen and (max-width: 749px) {
+  .ie-about__focus-card h3 {
+    font-size: 20px;
+    white-space: normal;
+    text-wrap: balance;
+  }
+
   .ie-about__inner {
     width: calc(100% - 32px);
   }
