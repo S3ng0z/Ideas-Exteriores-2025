@@ -1,7 +1,10 @@
 /*
  * ------------------------------------------------------------
- * About Ideas Exteriores · canonical native Shopify Online Store 2.0
- * Dedicated sections only. Canonical template for /pages/about-ideas-exteriores.
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
 {
@@ -87,6 +90,8 @@
         "exterior": {
           "type": "focus",
           "settings": {
+            "image": "shopify://shop_images/CANVA_00194.png",
+            "image_alt": "",
             "index": "01 · Exterior",
             "heading": "Espacios para disfrutar fuera",
             "text": "<p>Pérgolas, porches, cenadores, tarimas y otras soluciones que mejoran el uso del jardín, la terraza o la parcela con una integración cuidada.</p>"
@@ -95,6 +100,8 @@
         "habitables": {
           "type": "focus",
           "settings": {
+            "image": "shopify://shop_images/00222.webp",
+            "image_alt": "",
             "index": "02 · Habitables",
             "heading": "Espacios para vivir y trabajar",
             "text": "<p>Casas, casetas, estudios y oficinas desarrollados sobre modelos y configuraciones definidas, con el sistema y el nivel de acabado adecuados a cada uso.</p>"
@@ -103,6 +110,8 @@
         "structures": {
           "type": "focus",
           "settings": {
+            "image": "shopify://shop_images/CANVA_00187.webp",
+            "image_alt": "",
             "index": "03 · Estructuras",
             "heading": "Soluciones con criterio técnico",
             "text": "<p>Estructuras y sistemas de madera para proyectos que requieren definición técnica, suministro, logística o montaje coordinado.</p>"
