@@ -1,3 +1,10 @@
+{% liquid
+  assign ie_products_url = pages['timber-products'].url | default: '/pages/timber-products'
+  assign ie_services_url = pages['services'].url | default: '/pages/services'
+  assign ie_contact_url = pages['contact'].url | default: '/pages/contact'
+  assign ie_system_url = pages['light-timber-building-system-overview'].url | default: '/pages/light-timber-building-system-overview'
+%}
+
 {% if collection.handle == 'light-frame-houses' %}
   {% if section.settings.mode == 'intro' %}
     <section class="ie-lf ie-lf--hero" aria-labelledby="ie-lf-title">
@@ -5,9 +12,9 @@
         <nav class="ie-lf__breadcrumb" aria-label="Migas de pan">
           <a href="{{ routes.root_url }}">Inicio</a>
           <span aria-hidden="true">/</span>
-          <a href="/collections/all">Productos</a>
+          <a href="{{ ie_products_url }}">Productos</a>
           <span aria-hidden="true">/</span>
-          <span aria-current="page">{{ collection.title }}</span>
+          <span aria-current="page">Casas de entramado ligero</span>
         </nav>
 
         <div class="ie-lf__hero">
@@ -19,11 +26,11 @@
             </div>
             <div class="ie-lf__hero-actions">
               <a class="ie-lf__button ie-lf__button--primary" href="#ResultsList">Ver {{ collection.products_count }} modelos</a>
-              <a class="ie-lf__text-link" href="/pages/services">Cómo trabajamos <span aria-hidden="true">→</span></a>
+              <a class="ie-lf__button ie-lf__button--secondary" href="{{ ie_services_url }}">Cómo trabajamos</a>
             </div>
           </div>
 
-          <aside class="ie-lf__summary" aria-label="Cómo comprar una casa de entramado ligero">
+          <aside class="ie-lf__summary" aria-label="Cómo avanzar con una casa de entramado ligero">
             <p class="ie-lf__summary-title">Antes de pedir presupuesto</p>
             <ul class="ie-lf__summary-list">
               <li><span>01</span><strong>Selecciona un modelo base</strong></li>
@@ -44,6 +51,9 @@
           </div>
           <div class="ie-lf__guide-intro">
             <p>Esta colección funciona como punto de partida: los modelos permiten comparar una oferta reconocible sin convertir cada consulta en un proyecto abierto desde cero.</p>
+            <p class="ie-lf__guide-link">
+              <a href="{{ ie_system_url }}">Entender el sistema de entramado ligero <span aria-hidden="true">→</span></a>
+            </p>
           </div>
         </div>
 
@@ -74,12 +84,12 @@
             <p class="ie-lf__eyebrow">Siguiente paso</p>
             <h2 id="ie-lf-cta-title">¿Ya tienes un modelo en mente?</h2>
             <div class="ie-lf__cta-text">
-              <p>Entra en su ficha para revisar el alcance disponible. Si necesitas orientación previa, consulta nuestro proceso de diseño, construcción y montaje.</p>
+              <p>Entra en su ficha para revisar el alcance disponible. Si necesitas orientación previa, te explicamos cómo definimos, preparamos y ejecutamos cada proyecto.</p>
             </div>
           </div>
           <div class="ie-lf__actions">
-            <a class="ie-lf__button ie-lf__button--primary" href="/pages/services">Ver servicios</a>
-            <a class="ie-lf__button ie-lf__button--secondary" href="/pages/contact">Contactar</a>
+            <a class="ie-lf__button ie-lf__button--primary" href="{{ ie_services_url }}">Cómo trabajamos</a>
+            <a class="ie-lf__button ie-lf__button--secondary" href="{{ ie_contact_url }}">Hablar con el equipo</a>
           </div>
         </div>
       </div>
