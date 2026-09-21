@@ -275,8 +275,23 @@
   border-right: 0;
 }
 
+.ie-about__focus-media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin: 0 0 24px;
+  overflow: hidden;
+  background: var(--ie-stone);
+}
+
+.ie-about__focus-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .ie-about__focus-index {
-  margin: 0 0 28px;
+  margin: 0 0 18px;
   font-family: Manrope, var(--font-body--family), Arial, sans-serif;
   font-size: .74rem;
   font-weight: 600;
