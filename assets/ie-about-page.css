@@ -400,9 +400,9 @@
   margin: 0 0 12px;
   max-width: none;
   font-family: Manrope, var(--font-body--family), Arial, sans-serif;
-  font-size: 14px !important;
+  font-size: 18px !important;
   font-weight: 600;
-  line-height: 1.15 !important;
+  line-height: 1.2 !important;
   text-transform: uppercase;
   letter-spacing: 0;
 }
@@ -489,8 +489,8 @@
 
 @media screen and (min-width: 750px) {
   .ie-about.ie-about--confidence .ie-about__confidence-grid > article > h3 {
-    font-size: 14px !important;
-    line-height: 1.15 !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
     white-space: nowrap;
     text-wrap: nowrap;
   }
@@ -517,7 +517,7 @@
   }
 
   .ie-about.ie-about--confidence .ie-about__confidence-grid > article > h3 {
-    font-size: 13px !important;
+    font-size: 16px !important;
   }
 }
 
