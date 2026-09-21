@@ -20,7 +20,7 @@
 
 {% liquid
   assign has_quick_add = false
-  if settings.quick_add and product.available
+  if settings.quick_add and product.available and collection.handle != 'light-frame-houses'
     assign has_quick_add = true
   endif
 
@@ -90,6 +90,9 @@
     ref="productCardLink"
   >
     {{ children }}
+    {% if collection.handle == 'light-frame-houses' %}
+      <span class="ie-lf__card-cta" aria-hidden="true">Ver modelo <span>→</span></span>
+    {% endif %}
   </a>
 </product-card>
 {%- if settings.transition_to_main_product -%}

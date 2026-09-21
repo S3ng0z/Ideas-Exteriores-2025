@@ -228,3 +228,110 @@
   .ie-lf__actions{width:100%;display:grid;grid-template-columns:1fr}
   .ie-lf__button{width:100%}
 }
+
+
+/* 2026-09 collection optimization: compatibility layer for /collections/light-frame-houses */
+.collection-light-frame-houses .content-for-layout{
+  background:var(--ie-bone,#f9f8f6);
+}
+.collection-light-frame-houses .lux-breadcrumb-box{
+  display:none;
+}
+.collection-light-frame-houses .product-grid-container{
+  --color-background:249,248,246;
+  background:var(--ie-bone,#f9f8f6);
+}
+.collection-light-frame-houses .collection-wrapper{
+  padding-top:18px;
+}
+.collection-light-frame-houses .facets-block-wrapper{
+  border-top:1px solid rgba(31,35,30,.14);
+  border-bottom:1px solid rgba(31,35,30,.14);
+}
+.collection-light-frame-houses .product-grid{
+  row-gap:34px;
+}
+.collection-light-frame-houses .product-card{
+  height:100%;
+}
+.collection-light-frame-houses .product-card__content{
+  height:100%;
+}
+.collection-light-frame-houses .card-gallery{
+  overflow:hidden;
+  border-radius:2px;
+  background:#f1f0ec;
+}
+.collection-light-frame-houses .card-gallery img{
+  transition:transform .45s ease;
+}
+@media (hover:hover){
+  .collection-light-frame-houses .product-card:hover .card-gallery img{
+    transform:scale(1.018);
+  }
+}
+.collection-light-frame-houses .product-card .group-block{
+  align-items:flex-start;
+  text-align:left;
+}
+.collection-light-frame-houses .product-card .group-block .text-block,
+.collection-light-frame-houses .product-card .group-block .price{
+  text-align:left;
+}
+.collection-light-frame-houses .ie-lf__card-cta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px solid rgba(31,35,30,.14);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.86rem;
+  font-weight:600;
+  color:#1f231e;
+}
+.collection-light-frame-houses .ie-lf__card-cta span{
+  transition:transform .2s ease;
+}
+@media (hover:hover){
+  .collection-light-frame-houses .product-card:hover .ie-lf__card-cta span{
+    transform:translateX(3px);
+  }
+}
+.ie-lf__hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:18px;
+  margin-top:26px;
+}
+.ie-lf__text-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding-block:10px;
+  color:var(--ie-ink);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.9rem;
+  font-weight:600;
+  text-decoration:none;
+  border-bottom:1px solid var(--ie-border);
+}
+.ie-lf__text-link:hover,
+.ie-lf__text-link:focus-visible{
+  border-color:var(--ie-ink);
+}
+@media screen and (max-width:749px){
+  .collection-light-frame-houses .product-grid{
+    row-gap:24px;
+  }
+  .ie-lf__hero-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+  .ie-lf__text-link{
+    width:max-content;
+  }
+}

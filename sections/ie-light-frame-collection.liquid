@@ -1,0 +1,116 @@
+{% if collection.handle == 'light-frame-houses' %}
+  {{ 'ie-light-frame-collection.css' | asset_url | stylesheet_tag }}
+
+  {% if section.settings.mode == 'intro' %}
+    <section class="ie-lf ie-lf--hero" aria-labelledby="ie-lf-title">
+      <div class="ie-lf__inner">
+        <nav class="ie-lf__breadcrumb" aria-label="Migas de pan">
+          <a href="{{ routes.root_url }}">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="/collections/all">Productos</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">{{ collection.title }}</span>
+        </nav>
+
+        <div class="ie-lf__hero">
+          <div>
+            <p class="ie-lf__eyebrow">Viviendas en madera · Entramado ligero</p>
+            <h1 id="ie-lf-title">Casas de entramado ligero</h1>
+            <div class="ie-lf__lead">
+              <p>Compara modelos de vivienda en madera por superficie, distribución y precio de partida. Elige primero un modelo y revisa su alcance antes de solicitar estudio y presupuesto.</p>
+            </div>
+            <div class="ie-lf__hero-actions">
+              <a class="ie-lf__button ie-lf__button--primary" href="#ResultsList">Ver {{ collection.products_count }} modelos</a>
+              <a class="ie-lf__text-link" href="/pages/services">Cómo trabajamos <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <aside class="ie-lf__summary" aria-label="Cómo comprar una casa de entramado ligero">
+            <p class="ie-lf__summary-title">Antes de pedir presupuesto</p>
+            <ul class="ie-lf__summary-list">
+              <li><span>01</span><strong>Selecciona un modelo base</strong></li>
+              <li><span>02</span><strong>Revisa superficie, distribución y precio desde</strong></li>
+              <li><span>03</span><strong>Valida alcance, parcela y necesidades del proyecto</strong></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="ie-lf ie-lf--guide" aria-labelledby="ie-lf-guide-title">
+      <div class="ie-lf__inner">
+        <div class="ie-lf__guide-head">
+          <div>
+            <p class="ie-lf__eyebrow">Elegir con criterio</p>
+            <h2 id="ie-lf-guide-title">Del catálogo al estudio de tu vivienda</h2>
+          </div>
+          <div class="ie-lf__guide-intro">
+            <p>Esta colección funciona como punto de partida: los modelos permiten comparar una oferta reconocible sin convertir cada consulta en un proyecto abierto desde cero.</p>
+          </div>
+        </div>
+
+        <div class="ie-lf__guide-grid">
+          <article class="ie-lf__guide-card">
+            <p class="ie-lf__guide-index">01 · MODELO</p>
+            <h3>Empieza por superficie y distribución</h3>
+            <p>Reduce opciones comparando el tamaño y la organización que mejor encajan con el uso previsto.</p>
+          </article>
+          <article class="ie-lf__guide-card">
+            <p class="ie-lf__guide-index">02 · ALCANCE</p>
+            <h3>Interpreta correctamente el “desde”</h3>
+            <p>El precio mostrado sirve como referencia inicial del modelo. La ficha debe concretar qué incluye y qué requiere validación.</p>
+          </article>
+          <article class="ie-lf__guide-card">
+            <p class="ie-lf__guide-index">03 · ESTUDIO</p>
+            <h3>Valida condiciones antes de cerrar</h3>
+            <p>Parcela, ubicación, montaje, acabados y condicionantes técnicos se revisan antes de preparar una propuesta definitiva.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  {% else %}
+    <section class="ie-lf ie-lf--cta" aria-labelledby="ie-lf-cta-title">
+      <div class="ie-lf__inner">
+        <div class="ie-lf__cta">
+          <div>
+            <p class="ie-lf__eyebrow">Siguiente paso</p>
+            <h2 id="ie-lf-cta-title">¿Ya tienes un modelo en mente?</h2>
+            <div class="ie-lf__cta-text">
+              <p>Entra en su ficha para revisar el alcance disponible. Si necesitas orientación previa, consulta nuestro proceso de diseño, construcción y montaje.</p>
+            </div>
+          </div>
+          <div class="ie-lf__actions">
+            <a class="ie-lf__button ie-lf__button--primary" href="/pages/services">Ver servicios</a>
+            <a class="ie-lf__button ie-lf__button--secondary" href="/pages/contact">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "IE · Entramado ligero",
+  "enabled_on": {
+    "templates": ["collection"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "Posición",
+      "options": [
+        { "value": "intro", "label": "Introducción" },
+        { "value": "outro", "label": "Cierre" }
+      ],
+      "default": "intro"
+    }
+  ],
+  "presets": [
+    {
+      "name": "IE · Entramado ligero"
+    }
+  ]
+}
+{% endschema %}
