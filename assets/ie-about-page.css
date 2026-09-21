@@ -396,15 +396,15 @@
   border-top: 1px solid var(--ie-ink);
 }
 
-.ie-about__confidence-grid h3 {
-  margin: 0 0 14px;
+.ie-about.ie-about--confidence .ie-about__confidence-grid > article > h3 {
+  margin: 0 0 12px;
   max-width: none;
   font-family: Manrope, var(--font-body--family), Arial, sans-serif;
-  font-size: 15px;
+  font-size: 14px !important;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15 !important;
   text-transform: uppercase;
-  letter-spacing: .01em;
+  letter-spacing: 0;
 }
 
 .ie-about__confidence-grid p {
@@ -488,7 +488,9 @@
 }
 
 @media screen and (min-width: 750px) {
-  .ie-about__confidence-grid h3 {
+  .ie-about.ie-about--confidence .ie-about__confidence-grid > article > h3 {
+    font-size: 14px !important;
+    line-height: 1.15 !important;
     white-space: nowrap;
     text-wrap: nowrap;
   }
@@ -514,8 +516,8 @@
     gap: 20px;
   }
 
-  .ie-about__confidence-grid h3 {
-    font-size: 14px;
+  .ie-about.ie-about--confidence .ie-about__confidence-grid > article > h3 {
+    font-size: 13px !important;
   }
 }
 
