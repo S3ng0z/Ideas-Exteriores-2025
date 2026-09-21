@@ -10,7 +10,7 @@
 {
   "sections": {
     "ie_light_frame_intro": {
-      "type": "ie-light-frame-collection",
+      "type": "ie-habitable-system-collection",
       "settings": {
         "mode": "intro"
       }
@@ -218,7 +218,7 @@
       }
     },
     "ie_light_frame_outro": {
-      "type": "ie-light-frame-collection",
+      "type": "ie-habitable-system-collection",
       "settings": {
         "mode": "outro"
       }
