@@ -1,10 +1,8 @@
 /*
  * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
+ * IDEAS EXTERIORES · Dedicated CASAS PANEL SIP collection template
+ * Source-controlled in GitHub main. Keep independent from studios-sip
+ * and from the light-frame-houses collection template.
  * ------------------------------------------------------------
  */
 {
@@ -203,13 +201,13 @@
       }
     },
     "ie_sip_intro": {
-      "type": "ie-habitable-system-collection",
+      "type": "ie-sip-panel-houses-collection",
       "settings": {
         "mode": "intro"
       }
     },
     "ie_sip_outro": {
-      "type": "ie-habitable-system-collection",
+      "type": "ie-sip-panel-houses-collection",
       "settings": {
         "mode": "outro"
       }
