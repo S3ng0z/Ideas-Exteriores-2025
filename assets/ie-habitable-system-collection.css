@@ -31,3 +31,5 @@
 .collection-sip-panel-houses .ie-hc__card-cta,.collection-light-frame-houses .ie-hc__card-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(31,35,30,.14);font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.86rem;font-weight:600;color:#1f231e}
 .collection-sip-panel-houses .ie-hc__card-cta span,.collection-light-frame-houses .ie-hc__card-cta span{transition:transform .2s ease}
 @media (hover:hover){.collection-sip-panel-houses .product-card:hover .ie-hc__card-cta span,.collection-light-frame-houses .product-card:hover .ie-hc__card-cta span{transform:translateX(3px)}}
+
+/* deployment sync marker: 2026-09-22 SIP collection */
