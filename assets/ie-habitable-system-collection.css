@@ -33,3 +33,7 @@
 @media (hover:hover){.collection-sip-panel-houses .product-card:hover .ie-hc__card-cta span,.collection-light-frame-houses .product-card:hover .ie-hc__card-cta span{transform:translateX(3px)}}
 
 /* deployment sync marker: 2026-09-22 SIP collection */
+
+.ie-hc__guide-link{margin-top:8px!important}
+.ie-hc__guide-link a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.ie-hc__guide-link a:hover,.ie-hc__guide-link a:focus-visible{text-decoration-thickness:2px}
