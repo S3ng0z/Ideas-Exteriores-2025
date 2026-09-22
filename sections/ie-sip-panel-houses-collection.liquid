@@ -1,0 +1,115 @@
+{% liquid
+  assign ie_products_url = pages['timber-products'].url | default: '/pages/timber-products'
+  assign ie_services_url = pages['services'].url | default: '/pages/services'
+  assign ie_contact_url = pages['contact'].url | default: '/pages/contact'
+  assign ie_system_url = pages['sip-building-system-overview'].url | default: '/pages/panel-sip'
+%}
+
+{% if collection.handle == 'sip-panel-houses' %}
+  {{ 'ie-sip-panel-houses-collection.css' | asset_url | stylesheet_tag }}
+
+  {% if section.settings.mode == 'intro' %}
+    <section class="ie-sip ie-sip--hero" aria-labelledby="ie-sip-title">
+      <div class="ie-sip__inner">
+        <nav class="ie-sip__breadcrumb" aria-label="Migas de pan">
+          <a href="{{ routes.root_url }}">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="{{ ie_products_url }}">Productos</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Casas con panel SIP</span>
+        </nav>
+
+        <div class="ie-sip__hero-grid">
+          <div>
+            <p class="ie-sip__eyebrow">Viviendas en madera · Panel SIP</p>
+            <h1 id="ie-sip-title">Casas con panel SIP</h1>
+            <p class="ie-sip__lead">Compara modelos de vivienda con panel SIP por superficie, distribución y precio de partida. Elige primero un modelo y revisa su alcance antes de solicitar estudio y presupuesto.</p>
+
+            <div class="ie-sip__actions">
+              <a class="ie-sip__button ie-sip__button--primary" href="#ResultsList">Ver {{ collection.products_count }} modelos</a>
+              <a class="ie-sip__button ie-sip__button--secondary" href="{{ ie_services_url }}">Cómo trabajamos</a>
+            </div>
+          </div>
+
+          <aside class="ie-sip__summary" aria-label="Antes de pedir presupuesto">
+            <p class="ie-sip__summary-title">Antes de pedir presupuesto</p>
+            <ol>
+              <li><span>01</span><strong>Selecciona un modelo base</strong></li>
+              <li><span>02</span><strong>Compara superficie, distribución y precio desde</strong></li>
+              <li><span>03</span><strong>Valida alcance, parcela y condiciones del proyecto</strong></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="ie-sip ie-sip--guide" aria-labelledby="ie-sip-guide-title">
+      <div class="ie-sip__inner">
+        <div class="ie-sip__guide-head">
+          <div>
+            <p class="ie-sip__eyebrow">Elegir con criterio</p>
+            <h2 id="ie-sip-guide-title">Del modelo al estudio de tu vivienda</h2>
+          </div>
+          <div class="ie-sip__guide-copy">
+            <p>Esta colección funciona como punto de partida: los modelos permiten comparar una oferta reconocible sin convertir cada consulta en un proyecto abierto desde cero.</p>
+            <p class="ie-sip__guide-link"><a href="{{ ie_system_url }}">Entender el sistema panel SIP <span aria-hidden="true">→</span></a></p>
+          </div>
+        </div>
+
+        <div class="ie-sip__guide-grid">
+          <article>
+            <p class="ie-sip__index">01 · MODELO</p>
+            <h3>Empieza por superficie y distribución</h3>
+            <p>Compara tamaños y organización interior para reducir opciones antes de entrar en el detalle técnico.</p>
+          </article>
+          <article>
+            <p class="ie-sip__index">02 · ALCANCE</p>
+            <h3>Interpreta correctamente el “desde”</h3>
+            <p>El precio mostrado sirve como referencia inicial del modelo. La ficha debe concretar qué incluye y qué requiere validación.</p>
+          </article>
+          <article>
+            <p class="ie-sip__index">03 · ESTUDIO</p>
+            <h3>Valida condiciones antes de cerrar</h3>
+            <p>Parcela, ubicación, montaje, acabados y condicionantes técnicos se revisan antes de preparar una propuesta definitiva.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  {% else %}
+    <section class="ie-sip ie-sip--cta" aria-labelledby="ie-sip-cta-title">
+      <div class="ie-sip__inner">
+        <div class="ie-sip__cta">
+          <div>
+            <p class="ie-sip__eyebrow">Siguiente paso</p>
+            <h2 id="ie-sip-cta-title">¿Ya tienes un modelo en mente?</h2>
+            <p>Entra en su ficha para revisar el alcance disponible. Si necesitas orientación previa, consulta cómo trabajamos o habla con el equipo.</p>
+          </div>
+          <div class="ie-sip__actions">
+            <a class="ie-sip__button ie-sip__button--primary" href="{{ ie_services_url }}">Cómo trabajamos</a>
+            <a class="ie-sip__button ie-sip__button--secondary" href="{{ ie_contact_url }}">Hablar con el equipo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "IE · Panel SIP",
+  "enabled_on": {"templates": ["collection"]},
+  "settings": [
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "Posición",
+      "options": [
+        {"value": "intro", "label": "Introducción"},
+        {"value": "outro", "label": "Cierre"}
+      ],
+      "default": "intro"
+    }
+  ],
+  "presets": [{"name": "IE · Panel SIP"}]
+}
+{% endschema %}
