@@ -1,0 +1,69 @@
+{% liquid
+  assign ie_object = breadcrumb_object
+  if ie_object == blank
+    if product
+      assign ie_object = product
+    elsif collection
+      assign ie_object = collection
+    elsif page
+      assign ie_object = page
+    endif
+  endif
+
+  assign ie_title = current_title
+  if ie_title == blank and ie_object != blank
+    assign ie_title = ie_object.title
+  endif
+
+  assign ie_home_label = home_label | default: 'Inicio'
+
+  assign ie_n1 = blank
+  assign ie_n2 = blank
+  assign ie_n3 = blank
+  assign ie_n1_url = blank
+  assign ie_n2_url = blank
+  assign ie_n3_url = blank
+
+  if ie_object != blank
+    assign ie_n1 = ie_object.metafields.custom.n1.value | default: ie_object.metafields.custom.N1.value
+    assign ie_n2 = ie_object.metafields.custom.n2.value | default: ie_object.metafields.custom.N2.value
+    assign ie_n3 = ie_object.metafields.custom.n3.value | default: ie_object.metafields.custom.N3.value
+    assign ie_n1_url = ie_object.metafields.custom.n1_url.value | default: ie_object.metafields.custom.N1_URL.value
+    assign ie_n2_url = ie_object.metafields.custom.n2_url.value | default: ie_object.metafields.custom.N2_URL.value
+    assign ie_n3_url = ie_object.metafields.custom.n3_url.value | default: ie_object.metafields.custom.N3_URL.value
+  endif
+
+  assign ie_n1 = ie_n1 | default: fallback_1_label
+  assign ie_n2 = ie_n2 | default: fallback_2_label
+  assign ie_n3 = ie_n3 | default: fallback_3_label
+  assign ie_n1_url = ie_n1_url | default: fallback_1_link
+  assign ie_n2_url = ie_n2_url | default: fallback_2_link
+  assign ie_n3_url = ie_n3_url | default: fallback_3_link
+
+  assign ie_n1_href = ie_n1_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', '' | replace: 'https://9qmnma-zm.myshopify.com', '' | replace: 'http://9qmnma-zm.myshopify.com', ''
+  assign ie_n2_href = ie_n2_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', '' | replace: 'https://9qmnma-zm.myshopify.com', '' | replace: 'http://9qmnma-zm.myshopify.com', ''
+  assign ie_n3_href = ie_n3_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', '' | replace: 'https://9qmnma-zm.myshopify.com', '' | replace: 'http://9qmnma-zm.myshopify.com', ''
+
+  assign ie_class = class_name | default: 'ie-breadcrumb'
+%}
+
+<nav class="{{ ie_class }} ie-breadcrumb" aria-label="{{ aria_label | default: 'Migas de pan' | escape }}">
+  <a href="{{ routes.root_url }}">{{ ie_home_label }}</a>
+
+  {% if ie_n1 != blank %}
+    <span class="ie-breadcrumb__separator" aria-hidden="true">/</span>
+    {% if ie_n1_href != blank %}<a href="{{ ie_n1_href }}">{{ ie_n1 }}</a>{% else %}<span>{{ ie_n1 }}</span>{% endif %}
+  {% endif %}
+  {% if ie_n2 != blank %}
+    <span class="ie-breadcrumb__separator" aria-hidden="true">/</span>
+    {% if ie_n2_href != blank %}<a href="{{ ie_n2_href }}">{{ ie_n2 }}</a>{% else %}<span>{{ ie_n2 }}</span>{% endif %}
+  {% endif %}
+  {% if ie_n3 != blank %}
+    <span class="ie-breadcrumb__separator" aria-hidden="true">/</span>
+    {% if ie_n3_href != blank %}<a href="{{ ie_n3_href }}">{{ ie_n3 }}</a>{% else %}<span>{{ ie_n3 }}</span>{% endif %}
+  {% endif %}
+  {% if ie_title != blank %}
+    <span class="ie-breadcrumb__separator" aria-hidden="true">/</span>
+    <span class="ie-breadcrumb__current" aria-current="page">{{ ie_title }}</span>
+  {% endif %}
+</nav>
