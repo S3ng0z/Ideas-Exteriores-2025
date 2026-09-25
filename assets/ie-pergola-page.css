@@ -422,3 +422,311 @@
     grid-column:auto;
   }
 }
+
+
+/* Pergola premium marketing refinement */
+.ie-services--hero.ie-services--pergola{
+  background:
+    radial-gradient(circle at 84% 18%, rgba(138,154,91,.10), transparent 30%),
+    linear-gradient(180deg,#fbfaf7 0%,#f7f5ef 100%);
+}
+
+.ie-services--pergola .ie-services__inner{
+  width:min(calc(100% - 64px),1440px);
+}
+
+.ie-services--pergola .ie-services__breadcrumb{
+  margin-bottom:clamp(30px,4vw,52px);
+}
+
+.ie-services--pergola .ie-services__hero{
+  grid-template-columns:minmax(0,1.7fr) minmax(320px,.58fr);
+  gap:clamp(46px,6vw,96px);
+  align-items:end;
+  padding-block:18px clamp(74px,8vw,118px);
+}
+
+.ie-services--pergola .ie-services__eyebrow{
+  margin-bottom:16px;
+  font-size:.72rem;
+  letter-spacing:.12em;
+}
+
+.ie-services--pergola .ie-services__hero h1{
+  max-width:1040px;
+  font-size:clamp(3.15rem,5.15vw,5.9rem);
+  line-height:.94;
+  letter-spacing:-.035em;
+}
+
+.ie-services--pergola .ie-services__lead{
+  max-width:790px;
+  margin-top:30px;
+  font-size:clamp(1.04rem,1.22vw,1.18rem);
+  line-height:1.72;
+}
+
+.ie-services--pergola .ie-services__actions{
+  margin-top:34px;
+  gap:14px;
+}
+
+.ie-services--pergola .ie-services__button{
+  min-height:54px;
+  padding-inline:26px;
+}
+
+.ie-services--pergola .ie-services__button--secondary{
+  border-color:rgba(31,35,30,.38);
+}
+
+.ie-services--pergola .ie-services__hero-summary{
+  padding:30px 30px 18px;
+  border:1px solid rgba(31,35,30,.14);
+  background:rgba(255,255,255,.56);
+  backdrop-filter:blur(8px);
+}
+
+.ie-services--pergola .ie-services__summary-title{
+  margin-bottom:16px;
+  font-size:.78rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#566236;
+}
+
+.ie-services--pergola .ie-services__summary-list li{
+  grid-template-columns:30px 1fr;
+  padding:15px 0;
+}
+
+.ie-services--pergola .ie-services__summary-list strong{
+  font-size:.92rem;
+  line-height:1.45;
+}
+
+.ie-services--pergola .ie-services__summary-list span{
+  color:#566236;
+  font-weight:700;
+}
+
+.ie-pergola--details{
+  padding-top:clamp(72px,9vw,128px);
+}
+
+.ie-pergola__section-head{
+  align-items:start;
+}
+
+.ie-pergola__section-head h2{
+  max-width:700px;
+}
+
+.ie-pergola__feature{
+  min-height:540px;
+}
+
+.ie-pergola__feature-media{
+  position:relative;
+  border:1px solid rgba(31,35,30,.08);
+}
+
+.ie-pergola__feature-media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);
+}
+
+.ie-pergola__feature-media img{
+  aspect-ratio:5/4;
+  transition:transform 600ms cubic-bezier(.22,1,.36,1);
+}
+
+@media (hover:hover){
+  .ie-pergola__feature:hover .ie-pergola__feature-media img{
+    transform:scale(1.015);
+  }
+}
+
+.ie-pergola__feature-index{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:16px;
+}
+
+.ie-pergola__feature-index::before{
+  content:"";
+  width:28px;
+  height:1px;
+  background:#566236;
+}
+
+.ie-pergola__feature-copy h3{
+  max-width:620px;
+  font-size:clamp(2rem,2.8vw,2.8rem);
+  line-height:1.04;
+}
+
+.ie-pergola__feature-text{
+  max-width:610px;
+  font-size:1rem;
+}
+
+.ie-pergola__points{
+  max-width:610px;
+  margin-top:30px;
+}
+
+.ie-pergola__points li{
+  grid-template-columns:12px 1fr;
+  padding:13px 0;
+  font-size:.88rem;
+}
+
+.ie-pergola__points li::before{
+  content:"";
+  width:5px;
+  height:5px;
+  margin-top:.48em;
+  border-radius:50%;
+  background:#566236;
+}
+
+.ie-services--confidence .ie-services__confidence{
+  padding-block:clamp(84px,9vw,126px);
+}
+
+.ie-services--confidence .ie-services__confidence h2{
+  max-width:560px;
+  font-size:clamp(2.2rem,3.3vw,3.65rem);
+  line-height:1.02;
+}
+
+.ie-services--confidence .ie-services__confidence-grid article{
+  padding-top:20px;
+}
+
+.ie-services--confidence .ie-services__confidence-grid h3{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.35rem!important;
+  font-weight:500;
+  line-height:1.15!important;
+}
+
+.ie-pergola__scope-grid{
+  background:rgba(255,255,255,.28);
+}
+
+.ie-pergola__scope-item{
+  position:relative;
+  overflow:hidden;
+  min-height:235px;
+  transition:background-color 180ms ease;
+}
+
+@media (hover:hover){
+  .ie-pergola__scope-item:hover{
+    background:rgba(255,255,255,.68);
+  }
+}
+
+.ie-pergola__scope-number{
+  margin-bottom:32px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:2rem;
+  font-weight:400;
+  line-height:1;
+  letter-spacing:-.03em;
+  color:rgba(86,98,54,.58);
+}
+
+.ie-pergola__scope-item h3{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.25rem;
+  font-weight:500;
+  letter-spacing:-.01em;
+}
+
+.ie-pergola__scope-item p{
+  max-width:330px;
+}
+
+.ie-services--process .ie-services__process{
+  margin-top:0;
+  padding:clamp(48px,6vw,78px);
+  background:#20241f;
+}
+
+.ie-services--process .ie-services__process h2{
+  font-size:clamp(2.35rem,3.4vw,3.8rem);
+  line-height:1;
+}
+
+.ie-services--process .ie-services__process-step{
+  padding:24px 0;
+}
+
+.ie-services--process .ie-services__process-step h3{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.25rem;
+  font-weight:500;
+}
+
+.ie-pergola--quote{
+  background:
+    linear-gradient(180deg,#f7f5ef 0%,#fbfaf7 100%);
+}
+
+.ie-pergola__quote-layout{
+  grid-template-columns:minmax(0,.78fr) minmax(520px,1.22fr);
+}
+
+.ie-pergola__quote-copy h2{
+  max-width:600px;
+  font-size:clamp(2.6rem,4.2vw,4.75rem);
+  line-height:.98;
+}
+
+.ie-pergola__form-panel{
+  box-shadow:0 24px 70px rgba(31,35,30,.07);
+}
+
+@media screen and (max-width:989px){
+  .ie-services--pergola .ie-services__hero{
+    grid-template-columns:1fr;
+    padding-bottom:76px;
+  }
+
+  .ie-services--pergola .ie-services__hero-summary{
+    max-width:none;
+  }
+
+  .ie-pergola__feature{
+    min-height:0;
+  }
+
+  .ie-pergola__quote-layout{
+    grid-template-columns:1fr;
+  }
+}
+
+@media screen and (max-width:749px){
+  .ie-services--pergola .ie-services__inner{
+    width:min(calc(100% - 32px),1440px);
+  }
+
+  .ie-services--pergola .ie-services__hero h1{
+    font-size:clamp(2.65rem,12vw,4rem);
+  }
+
+  .ie-services--pergola .ie-services__hero-summary{
+    padding:24px 20px 12px;
+  }
+
+  .ie-pergola__feature-copy h3{
+    font-size:clamp(1.8rem,8vw,2.35rem);
+  }
+}

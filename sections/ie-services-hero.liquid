@@ -1,7 +1,8 @@
 {{ 'ie-services-page.css' | asset_url | stylesheet_tag }}
+{% if section.settings.style_variant == 'pergola' %}{{ 'ie-pergola-page.css' | asset_url | stylesheet_tag }}{% endif %}
 {% comment %}IE breadcrumb renderer synced{% endcomment %}
 
-<section class="ie-services ie-services--hero" aria-labelledby="ie-services-title-{{ section.id }}">
+<section class="ie-services ie-services--hero{% if section.settings.style_variant == 'pergola' %} ie-services--pergola{% endif %}" aria-labelledby="ie-services-title-{{ section.id }}">
   <div class="ie-services__inner">
     {% render 'ie-breadcrumb', breadcrumb_object: page, current_title: page.title, class_name: 'ie-services__breadcrumb' %}
 
@@ -55,6 +56,7 @@
 {
   "name": "Servicios · Hero",
   "settings": [
+    {"type":"select","id":"style_variant","label":"Estilo","options":[{"value":"default","label":"Servicios"},{"value":"pergola","label":"Pérgola premium"}],"default":"default"},
     {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Servicios para proyectos en madera"},
     {"type":"text","id":"heading","label":"Título","default":"Diseño, montaje y acompañamiento técnico para construir con claridad"},
     {"type":"richtext","id":"lead","label":"Introducción","default":"<p>Te acompañamos desde la definición inicial hasta la entrega y el mantenimiento, coordinando las decisiones técnicas que realmente condicionan el resultado: diseño, documentación, preparación de la base, montaje, protección y soporte posterior.</p>"},
