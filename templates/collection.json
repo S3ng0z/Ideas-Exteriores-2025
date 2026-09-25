@@ -223,12 +223,26 @@
       "settings": {
         "mode": "outro"
       }
+    },
+    "ie_gazebo_intro": {
+      "type": "ie-gazebo-collection",
+      "settings": {
+        "mode": "intro"
+      }
+    },
+    "ie_gazebo_outro": {
+      "type": "ie-gazebo-collection",
+      "settings": {
+        "mode": "outro"
+      }
     }
   },
   "order": [
     "ie_light_frame_intro",
     "custom_liquid_WMRJ7B",
+    "ie_gazebo_intro",
     "main",
+    "ie_gazebo_outro",
     "ie_light_frame_outro"
   ]
 }
