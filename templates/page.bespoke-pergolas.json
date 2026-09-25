@@ -1,344 +1,317 @@
 {
-    "sections": {
-        "hero": {
-            "type": "ie-services-hero",
-            "blocks": {
-                "summary_1": {
-                    "type": "summary",
-                    "settings": {
-                        "number": "01",
-                        "label": "Encaje real, medidas y condicionantes"
-                    }
-                },
-                "summary_2": {
-                    "type": "summary",
-                    "settings": {
-                        "number": "02",
-                        "label": "Estructura, cubierta y anclajes"
-                    }
-                },
-                "summary_3": {
-                    "type": "summary",
-                    "settings": {
-                        "number": "03",
-                        "label": "Acabados, montaje y evolución futura"
-                    }
-                }
-            },
-            "block_order": [
-                "summary_1",
-                "summary_2",
-                "summary_3"
-            ],
-            "settings": {
-                "eyebrow": "Pérgola de madera a medida",
-                "heading": "Pérgolas de madera diseñadas para tu espacio, no kits adaptados",
-                "lead": "<p>Partimos del espacio real, el soporte, la exposición y el uso previsto para definir una pérgola adosada o exenta con estructura, cubierta, anclajes y acabados claros antes de fabricar. Cuando aporta valor, incorporamos visualización 3D para cerrar mejor las decisiones.</p>",
-                "primary_label": "Solicitar estudio y presupuesto",
-                "primary_link": "#ie-pergola-quote",
-                "secondary_label": "Ver trabajos realizados",
-                "secondary_link": "/pages/wood-project-gallery",
-                "summary_title": "Lo que definimos contigo"
-            }
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Diseño que encaja con tu vivienda"
+          }
         },
-        "details": {
-            "type": "ie-pergola-details",
-            "blocks": {
-                "design": {
-                    "type": "feature",
-                    "settings": {
-                        "image": "shopify://shop_images/pergola_001.png",
-                        "image_alt": "Diseño 3D y plano de una pérgola de madera a medida",
-                        "media_position": "left",
-                        "index": "01 · Encaje y diseño",
-                        "heading": "El proyecto empieza por el lugar real",
-                        "text": "<p>Medimos y ordenamos lo que condiciona el resultado: muros, huecos, bajantes, desniveles, toldos existentes, medianeras y accesos de montaje. Después definimos geometría, altura útil y si la solución será adosada o exenta.</p>",
-                        "point_1": "Medidas útiles y obstáculos del espacio",
-                        "point_2": "Geometría adosada o exenta",
-                        "point_3": "Visualización 3D cuando ayuda a decidir"
-                    }
-                },
-                "structure": {
-                    "type": "feature",
-                    "settings": {
-                        "image": "shopify://shop_images/pergola_002.png",
-                        "image_alt": "Detalle de uniones estructurales y herrajes de una pérgola de madera",
-                        "media_position": "right",
-                        "index": "02 · Estructura y uniones",
-                        "heading": "Rigidez y estabilidad se diseñan, no se improvisan",
-                        "text": "<p>La sensación de solidez depende de cómo se relacionan postes, vigas, correas, luces y arriostramientos. Definimos una solución coherente con la geometría y el uso, y seleccionamos uniones y herrajes adecuados para exterior.</p>",
-                        "point_1": "Secciones, luces y arriostramiento",
-                        "point_2": "Uniones vistas u opciones más limpias",
-                        "point_3": "Tornillería y herrajes compatibles con exterior"
-                    }
-                },
-                "roof": {
-                    "type": "feature",
-                    "settings": {
-                        "image": "shopify://shop_images/pergola_003.png",
-                        "image_alt": "Cubierta con pendiente y drenaje en una pérgola de madera",
-                        "media_position": "left",
-                        "index": "03 · Cubierta y agua",
-                        "heading": "Sombra y lluvia exigen decisiones distintas",
-                        "text": "<p>Una pérgola abierta para sombra y una solución que debe gestionar lluvia no se detallan igual. Cuando existe cubierta, definimos pendiente, encuentros, fijaciones, goterones y evacuación para que el agua tenga un recorrido previsto.</p>",
-                        "point_1": "Sombreo abierto o cubierta protegida",
-                        "point_2": "Pendiente, remates y evacuación",
-                        "point_3": "Encuentros con fachada y bajantes existentes"
-                    }
-                },
-                "anchors": {
-                    "type": "feature",
-                    "settings": {
-                        "image": "shopify://shop_images/pergola_004.png",
-                        "image_alt": "Bases elevadas y anclajes para postes de una pérgola de madera",
-                        "media_position": "right",
-                        "index": "04 · Base y anclajes",
-                        "heading": "La estructura necesita un apoyo compatible con el soporte",
-                        "text": "<p>No tratamos igual una solera, un forjado, un muro o una base nueva. Revisamos el soporte disponible, la exposición y la geometría para definir placas, separación respecto al agua y el tipo de fijación que corresponda al caso.</p>",
-                        "point_1": "Soporte existente y accesibilidad",
-                        "point_2": "Separación de la madera respecto al agua",
-                        "point_3": "Fijación mecánica o química cuando procede"
-                    }
-                },
-                "finishes": {
-                    "type": "feature",
-                    "settings": {
-                        "image": "shopify://shop_images/pergola_005.png",
-                        "image_alt": "Pérgola de madera con iluminación y opciones de cerramiento",
-                        "media_position": "left",
-                        "index": "05 · Materiales y evolución",
-                        "heading": "Madera, acabado y extras pensados desde el principio",
-                        "text": "<p>Elegimos la solución de madera y protección según exposición, estética y mantenimiento esperado. Si quieres incorporar iluminación, screens, cerramientos o tarima, conviene prever desde el diseño los refuerzos, pasos y encuentros necesarios.</p>",
-                        "point_1": "Madera estructural y protección para exterior",
-                        "point_2": "Acabados según orientación y mantenimiento",
-                        "point_3": "Previsión de iluminación, screens, cerramientos o tarima"
-                    }
-                }
-            },
-            "block_order": [
-                "design",
-                "structure",
-                "roof",
-                "anchors",
-                "finishes"
-            ],
-            "settings": {
-                "eyebrow": "Diseño y construcción",
-                "heading": "Las decisiones que hacen que una pérgola funcione de verdad",
-                "intro": "<p>Una solución a medida no empieza por elegir un modelo: empieza por entender el espacio, el soporte, la exposición y el uso previsto. A partir de ahí definimos estructura, cubierta, anclajes, madera y acabados con un alcance comprensible.</p>"
-            }
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Madera, cubierta y detalles pensados para exterior"
+          }
         },
-        "confidence": {
-            "type": "ie-services-confidence",
-            "blocks": {
-                "c1": {
-                    "type": "principle",
-                    "settings": {
-                        "heading": "Encaje antes que catálogo",
-                        "text": "La geometría y los detalles parten del espacio real. No forzamos un kit estándar para que parezca una solución a medida."
-                    }
-                },
-                "c2": {
-                    "type": "principle",
-                    "settings": {
-                        "heading": "Decisiones trazables",
-                        "text": "Medidas, materiales, cubierta, anclajes, acabados e incluidos se cierran antes de fabricar para reducir ambigüedad."
-                    }
-                },
-                "c3": {
-                    "type": "principle",
-                    "settings": {
-                        "heading": "Pensada para evolucionar",
-                        "text": "Cuando prevés iluminación, screens, cerramientos o tarima, dejamos la estructura preparada para integrarlos con más orden."
-                    }
-                }
-            },
-            "block_order": [
-                "c1",
-                "c2",
-                "c3"
-            ],
-            "settings": {
-                "eyebrow": "Criterio de proyecto",
-                "heading": "Una pérgola premium se nota en lo que queda resuelto"
-            }
-        },
-        "scope": {
-            "type": "ie-pergola-scope",
-            "blocks": {
-                "s1": {
-                    "type": "item",
-                    "settings": {
-                        "number": "01",
-                        "heading": "Medidas y encaje",
-                        "text": "Largo, ancho, altura útil, adosada o exenta, obstáculos, tolerancias y accesos."
-                    }
-                },
-                "s2": {
-                    "type": "item",
-                    "settings": {
-                        "number": "02",
-                        "heading": "Uso y exposición",
-                        "text": "Sombra o lluvia, orientación, viento, costa/interior y posibles elementos futuros."
-                    }
-                },
-                "s3": {
-                    "type": "item",
-                    "settings": {
-                        "number": "03",
-                        "heading": "Estructura",
-                        "text": "Secciones, luces, modulación, rigidez y arriostramiento según la solución definida."
-                    }
-                },
-                "s4": {
-                    "type": "item",
-                    "settings": {
-                        "number": "04",
-                        "heading": "Uniones y herrajes",
-                        "text": "Tipo de unión, tornillería de exterior, protección frente a corrosión y remates."
-                    }
-                },
-                "s5": {
-                    "type": "item",
-                    "settings": {
-                        "number": "05",
-                        "heading": "Madera",
-                        "text": "Tipo de madera, tratamiento, acabado y expectativas de mantenimiento."
-                    }
-                },
-                "s6": {
-                    "type": "item",
-                    "settings": {
-                        "number": "06",
-                        "heading": "Cubierta y drenaje",
-                        "text": "Pendiente, remates, canalización y encuentros cuando la pérgola debe gestionar lluvia."
-                    }
-                },
-                "s7": {
-                    "type": "item",
-                    "settings": {
-                        "number": "07",
-                        "heading": "Base y fijación",
-                        "text": "Soporte, placas, separación del agua y solución de anclaje compatible con el caso."
-                    }
-                },
-                "s8": {
-                    "type": "item",
-                    "settings": {
-                        "number": "08",
-                        "heading": "Acabados y extras",
-                        "text": "Color, protección, iluminación, screens, cerramientos o tarima previstos en el alcance."
-                    }
-                },
-                "s9": {
-                    "type": "item",
-                    "settings": {
-                        "number": "09",
-                        "heading": "Alcance y condiciones",
-                        "text": "Qué incluye la propuesta, qué debe coordinarse aparte, plazos y condicionantes del proyecto."
-                    }
-                }
-            },
-            "block_order": [
-                "s1",
-                "s2",
-                "s3",
-                "s4",
-                "s5",
-                "s6",
-                "s7",
-                "s8",
-                "s9"
-            ],
-            "settings": {
-                "eyebrow": "Antes del presupuesto",
-                "heading": "Nueve decisiones que conviene cerrar antes de fabricar",
-                "intro": "<p>Un presupuesto útil necesita algo más que largo × ancho. Estas decisiones reducen cambios, improvisaciones y partidas ambiguas durante la preparación y el montaje.</p>",
-                "note": "<p>Licencias, comunicaciones previas y condicionantes de comunidad o parcela dependen del municipio y del proyecto. Los revisamos como condicionantes del encargo; no los presentamos como un trámite idéntico para todos los casos.</p>"
-            }
-        },
-        "process": {
-            "type": "ie-services-process",
-            "blocks": {
-                "p1": {
-                    "type": "step",
-                    "settings": {
-                        "number": "01",
-                        "heading": "Compartir contexto",
-                        "text": "Nos envías ubicación, fotos, medidas aproximadas y el uso que buscas para entender el punto de partida."
-                    }
-                },
-                "p2": {
-                    "type": "step",
-                    "settings": {
-                        "number": "02",
-                        "heading": "Definir la solución",
-                        "text": "Concretamos geometría, estructura, cubierta, anclajes, madera, acabados y opciones futuras."
-                    }
-                },
-                "p3": {
-                    "type": "step",
-                    "settings": {
-                        "number": "03",
-                        "heading": "Cerrar alcance",
-                        "text": "Preparamos una propuesta con incluidos, condicionantes y trabajos que deben coordinarse antes del montaje."
-                    }
-                },
-                "p4": {
-                    "type": "step",
-                    "settings": {
-                        "number": "04",
-                        "heading": "Fabricar y montar",
-                        "text": "Organizamos fabricación, logística y montaje conforme al alcance acordado y cerramos los remates previstos."
-                    }
-                }
-            },
-            "block_order": [
-                "p1",
-                "p2",
-                "p3",
-                "p4"
-            ],
-            "settings": {
-                "eyebrow": "Cómo trabajamos",
-                "heading": "De la primera foto al montaje",
-                "intro": "<p>Ordenamos las decisiones para que el proyecto avance por fases y el presupuesto responda a un alcance real, no a una descripción genérica.</p>"
-            }
-        },
-        "quote": {
-            "type": "ie-pergola-quote",
-            "blocks": {
-                "powerful_form_builder": {
-                    "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-                    "settings": {
-                        "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
-                    }
-                }
-            },
-            "block_order": [
-                "powerful_form_builder"
-            ],
-            "settings": {
-                "eyebrow": "Siguiente paso",
-                "heading": "Cuéntanos el espacio y te orientamos con criterio",
-                "intro": "<p>Para una primera valoración no necesitas planos definitivos. Con ubicación, fotografías, medidas aproximadas y el uso que buscas podemos entender el punto de partida y decirte qué información falta.</p>",
-                "item_1": "Ubicación o código postal",
-                "item_2": "Fotos del espacio y apoyos existentes",
-                "item_3": "Largo, ancho y altura aproximados",
-                "item_4": "Uso: sombra, lluvia, cerramientos, iluminación o tarima",
-                "phone": "+34 916 99 60 93",
-                "email": "info@ideas-exteriores.com",
-                "submit_label": "Solicitar orientación",
-                "privacy_link": "/policies/privacy-policy"
-            }
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Alcance claro antes de fabricar y montar"
+          }
         }
+      },
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
+      "settings": {
+        "eyebrow": "Diseño · fabricación · montaje",
+        "heading": "Pérgolas de madera a medida para disfrutar más de tu exterior",
+        "lead": "<p>Diseñamos pérgolas de madera a medida para jardín, terraza y ático, adaptadas a tu vivienda, a la orientación y al uso que buscas: sombra, protección frente a la lluvia, iluminación, cerramientos o tarima. Definimos estructura, cubierta, anclajes y acabados antes de fabricar, con visualización 3D cuando ayuda a decidir.</p>",
+        "primary_label": "Quiero valorar mi pérgola",
+        "primary_link": "#ie-pergola-quote",
+        "secondary_label": "Ver proyectos realizados",
+        "secondary_link": "/pages/wood-project-gallery",
+        "summary_title": "Una solución realmente a medida"
+      }
     },
-    "order": [
-        "hero",
-        "details",
-        "confidence",
-        "scope",
-        "process",
-        "quote"
-    ]
+    "details": {
+      "type": "ie-pergola-details",
+      "blocks": {
+        "design": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/pergola_001.png",
+            "image_alt": "Diseño 3D y plano de una pérgola de madera a medida",
+            "media_position": "left",
+            "index": "01 · Diseño y encaje",
+            "heading": "Diseño 3D para ver cómo encaja antes de construir",
+            "text": "<p>Partimos de tu terraza, jardín o ático tal como es y estudiamos proporciones, pasos, vistas, huecos y condicionantes. Cuando aporta valor, la visualización 3D permite entender mejor la propuesta antes de pasar a fabricación.</p>",
+            "point_1": "Diseño adaptado a vivienda, jardín o terraza",
+            "point_2": "Altura y proporciones pensadas para el uso",
+            "point_3": "Visualización 3D para tomar decisiones con más claridad"
+          }
+        },
+        "structure": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/pergola_002.png",
+            "image_alt": "Detalle de uniones estructurales y herrajes de una pérgola de madera",
+            "media_position": "right",
+            "index": "02 · Estructura",
+            "heading": "Una estructura de madera proporcionada a tu espacio",
+            "text": "<p>La elegancia también se percibe en la solidez. Ajustamos postes, vigas, luces y uniones para conseguir una estructura equilibrada, estable y visualmente limpia, evitando sobredimensionar o resolver detalles a última hora.</p>",
+            "point_1": "Secciones y luces coherentes con la geometría",
+            "point_2": "Uniones y herrajes preparados para exterior",
+            "point_3": "Rigidez integrada sin penalizar la estética"
+          }
+        },
+        "roof": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/pergola_003.png",
+            "image_alt": "Cubierta con pendiente y drenaje en una pérgola de madera",
+            "media_position": "left",
+            "index": "03 · Cubierta y confort",
+            "heading": "Sombra o lluvia: la cubierta se diseña según cómo quieras usarla",
+            "text": "<p>No necesita la misma solución una pérgola abierta para sombra que un espacio exterior pensado para seguir utilizándose cuando llueve. Definimos el nivel de protección y resolvemos pendientes, encuentros y evacuación desde el proyecto.</p>",
+            "point_1": "Pérgola abierta para sombra y ligereza visual",
+            "point_2": "Cubierta protegida cuando el uso lo requiere",
+            "point_3": "Pendientes, remates y gestión del agua previstos"
+          }
+        },
+        "anchors": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/pergola_004.png",
+            "image_alt": "Bases elevadas y anclajes para postes de una pérgola de madera",
+            "media_position": "right",
+            "index": "04 · Apoyos y anclajes",
+            "heading": "Una buena pérgola empieza por resolver bien dónde se apoya",
+            "text": "<p>Revisamos el soporte existente y la relación con suelo, fachada o forjado para definir una solución de apoyo coherente. El objetivo es combinar estabilidad, durabilidad y una transición limpia entre estructura y arquitectura.</p>",
+            "point_1": "Solución adaptada al soporte disponible",
+            "point_2": "Protección de la madera frente a humedad",
+            "point_3": "Encuentros y fijaciones previstos desde el diseño"
+          }
+        },
+        "finishes": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/pergola_005.png",
+            "image_alt": "Pérgola de madera con iluminación y opciones de cerramiento",
+            "media_position": "left",
+            "index": "05 · Acabados y personalización",
+            "heading": "Acabados y extras integrados, no añadidos al final",
+            "text": "<p>El tono de la madera, la protección y los elementos de confort forman parte de la imagen final. Si quieres iluminación, screens, cerramientos o tarima, preverlos desde el inicio permite integrarlos con más orden y mantener una estética coherente.</p>",
+            "point_1": "Madera y acabado según exposición y estética",
+            "point_2": "Iluminación y pasos técnicos previstos",
+            "point_3": "Preparada para screens, cerramientos o tarima"
+          }
+        }
+      },
+      "block_order": [
+        "design",
+        "structure",
+        "roof",
+        "anchors",
+        "finishes"
+      ],
+      "settings": {
+        "eyebrow": "Pérgolas de madera a medida",
+        "heading": "Diseño, estructura y cubierta bien resueltos desde el principio",
+        "intro": "<p>El valor de una pérgola a medida no está solo en la madera. Está en cómo encaja con la vivienda, cómo responde al uso diario y cómo se resuelven estructura, cubierta, anclajes y acabados antes de fabricar.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Más integración",
+            "text": "Proporciones, materiales y encuentros se deciden desde la arquitectura existente para que la pérgola parezca parte del conjunto, no un elemento añadido después."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Más claridad",
+            "text": "Antes de fabricar sabes qué solución proponemos, qué incluye el alcance y qué condicionantes deben resolverse. Menos ambigüedad y menos decisiones improvisadas en obra."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Más libertad",
+            "text": "Cubierta, iluminación, screens, cerramientos o tarima pueden preverse desde el proyecto para adaptar el espacio a cómo quieres utilizarlo hoy y mañana."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "eyebrow": "A medida de verdad",
+        "heading": "Una pérgola que se integra en tu casa y se disfruta durante años"
+      }
+    },
+    "scope": {
+      "type": "ie-pergola-scope",
+      "blocks": {
+        "s1": {
+          "type": "item",
+          "settings": {
+            "number": "01",
+            "heading": "Dimensiones y diseño",
+            "text": "Largo, ancho, altura, geometría adosada o exenta y grado de adaptación a la vivienda o al jardín."
+          }
+        },
+        "s2": {
+          "type": "item",
+          "settings": {
+            "number": "02",
+            "heading": "Tipo de cubierta",
+            "text": "Pérgola abierta, protección solar o solución preparada para lluvia, con sus pendientes, encuentros y drenajes."
+          }
+        },
+        "s3": {
+          "type": "item",
+          "settings": {
+            "number": "03",
+            "heading": "Estructura de madera",
+            "text": "Luces, secciones, modulación, uniones y nivel de exigencia estructural que requiere la geometría elegida."
+          }
+        },
+        "s4": {
+          "type": "item",
+          "settings": {
+            "number": "04",
+            "heading": "Madera y acabado",
+            "text": "Especie o solución seleccionada, protección para exterior, tono, acabado y expectativas de mantenimiento."
+          }
+        },
+        "s5": {
+          "type": "item",
+          "settings": {
+            "number": "05",
+            "heading": "Soporte y anclajes",
+            "text": "Tipo de base, estado del soporte existente, encuentros con fachada y complejidad de fijación o preparación previa."
+          }
+        },
+        "s6": {
+          "type": "item",
+          "settings": {
+            "number": "06",
+            "heading": "Montaje y personalización",
+            "text": "Accesos, logística, iluminación, screens, cerramientos, tarima u otros extras integrados en el alcance."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "settings": {
+        "eyebrow": "Precio y alcance",
+        "heading": "Qué define el precio de una pérgola de madera a medida",
+        "intro": "<p>No existe una cifra única válida para todos los espacios. El precio depende de decisiones concretas de dimensiones, estructura, cubierta, madera, anclajes, montaje y nivel de personalización. Estas son las variables que más cambian el alcance de una propuesta.</p>",
+        "note": "<p>Los requisitos de licencia, comunicación previa, comunidad o parcela pueden variar según municipio y proyecto. Los tratamos como condicionantes del encargo y te indicamos qué conviene verificar en tu caso.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "p1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Cuéntanos el espacio",
+            "text": "Nos envías ubicación, fotografías, medidas aproximadas y cómo te gustaría utilizar la terraza o el jardín."
+          }
+        },
+        "p2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Diseñamos la solución",
+            "text": "Definimos geometría, estructura, cubierta, madera y acabados. Si ayuda a decidir, incorporamos visualización 3D."
+          }
+        },
+        "p3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Cerramos alcance y presupuesto",
+            "text": "Concretamos incluidos, condicionantes, trabajos previos y opciones para que la propuesta sea fácil de entender y comparar."
+          }
+        },
+        "p4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Fabricamos y montamos",
+            "text": "Organizamos fabricación, logística y montaje conforme a la solución acordada y a las condiciones reales del proyecto."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "eyebrow": "De la idea al montaje",
+        "heading": "Cómo hacemos una pérgola de madera a medida",
+        "intro": "<p>Un proceso pensado para convertir una idea inicial en una propuesta clara, visual y preparada para fabricar, evitando cerrar decisiones importantes cuando la estructura ya está en obra.</p>"
+      }
+    },
+    "quote": {
+      "type": "ie-pergola-quote",
+      "blocks": {
+        "powerful_form_builder": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder"
+      ],
+      "settings": {
+        "eyebrow": "Tu proyecto",
+        "heading": "¿Tienes una terraza o jardín? Cuéntanos qué quieres conseguir",
+        "intro": "<p>Para una primera valoración de tu pérgola de madera a medida no necesitas tener el proyecto cerrado. Con unas fotos, medidas aproximadas, ubicación y el uso que buscas podemos orientarte sobre la solución y los siguientes pasos.</p>",
+        "item_1": "Fotos y ubicación del espacio",
+        "item_2": "Medidas aproximadas y altura disponible",
+        "item_3": "Uso principal: sombra, lluvia, comedor o zona de estar",
+        "item_4": "Cubierta, iluminación, screens, cerramientos o tarima que quieras valorar",
+        "phone": "+34 916 99 60 93",
+        "email": "info@ideas-exteriores.com",
+        "submit_label": "Quiero valorar mi pérgola",
+        "privacy_link": "/policies/privacy-policy"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "details",
+    "confidence",
+    "scope",
+    "process",
+    "quote"
+  ]
 }

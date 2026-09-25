@@ -422,3 +422,316 @@
     grid-column:auto;
   }
 }
+
+
+/* Pergola editorial refinement — below hero only */
+.ie-pergola--details{
+  padding-block:clamp(72px,8vw,116px);
+  background:#fbfaf7;
+}
+
+.ie-pergola--details .ie-pergola__section-head{
+  grid-template-columns:minmax(340px,.9fr) minmax(0,1.1fr);
+  align-items:start;
+  padding-bottom:clamp(34px,4vw,54px);
+}
+
+.ie-pergola--details .ie-pergola__section-head h2{
+  max-width:720px;
+  font-size:clamp(2.25rem,3.55vw,3.65rem);
+  line-height:1;
+}
+
+.ie-pergola--details .ie-pergola__intro{
+  max-width:650px;
+  padding-top:5px;
+  font-size:1.02rem;
+}
+
+.ie-pergola__feature{
+  grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+  gap:clamp(44px,7vw,104px);
+  padding-block:clamp(58px,7vw,92px);
+}
+
+.ie-pergola__feature-media{
+  position:relative;
+  overflow:hidden;
+  background:#ebe8df;
+  box-shadow:0 18px 50px rgba(31,35,30,.07);
+}
+
+.ie-pergola__feature-media img{
+  aspect-ratio:16/11;
+  transition:transform 550ms cubic-bezier(.22,1,.36,1);
+}
+
+@media (hover:hover){
+  .ie-pergola__feature:hover .ie-pergola__feature-media img{
+    transform:scale(1.012);
+  }
+}
+
+.ie-pergola__feature-copy{
+  max-width:610px;
+}
+
+.ie-pergola__feature-index{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:15px;
+  font-size:.7rem;
+  letter-spacing:.11em;
+}
+
+.ie-pergola__feature-index::before{
+  content:"";
+  width:34px;
+  height:1px;
+  flex:0 0 auto;
+  background:var(--ie-pg-forest);
+}
+
+.ie-pergola__feature-copy h3{
+  margin-bottom:20px;
+  font-size:clamp(2rem,2.65vw,2.75rem);
+  line-height:1.04;
+}
+
+.ie-pergola__feature-text{
+  max-width:580px;
+  font-size:1rem;
+  line-height:1.72;
+}
+
+.ie-pergola__points{
+  max-width:580px;
+  margin-top:30px;
+}
+
+.ie-pergola__points li{
+  grid-template-columns:10px 1fr;
+  padding:13px 0;
+  font-size:.88rem;
+  color:var(--ie-pg-muted);
+}
+
+.ie-pergola__points li::before{
+  content:"";
+  width:4px;
+  height:4px;
+  margin-top:.62em;
+  border-radius:50%;
+  background:var(--ie-pg-forest);
+}
+
+/* Reuse Services criteria, but give it an editorial pergola treatment only on this page. */
+.ie-services--confidence{
+  background:#f0eee7;
+}
+
+.ie-services--confidence .ie-services__confidence{
+  padding-block:clamp(76px,8vw,112px);
+}
+
+.ie-services--confidence .ie-services__confidence h2{
+  max-width:620px;
+  font-size:clamp(2.2rem,3.3vw,3.55rem);
+  line-height:1.01;
+}
+
+.ie-services--confidence .ie-services__confidence-grid{
+  margin-top:clamp(40px,5vw,64px);
+  gap:0;
+  border-top:1px solid rgba(31,35,30,.15);
+  border-left:1px solid rgba(31,35,30,.15);
+}
+
+.ie-services--confidence .ie-services__confidence-grid article{
+  min-height:230px;
+  padding:30px 28px;
+  border-right:1px solid rgba(31,35,30,.15);
+  border-bottom:1px solid rgba(31,35,30,.15);
+}
+
+.ie-services--confidence .ie-services__confidence-grid h3{
+  margin-bottom:12px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.45rem;
+  font-weight:500;
+  line-height:1.12;
+  letter-spacing:-.01em;
+}
+
+.ie-services--confidence .ie-services__confidence-grid p{
+  max-width:360px;
+  line-height:1.65;
+}
+
+.ie-pergola--scope{
+  padding-block:clamp(72px,8vw,112px);
+  background:#f8f7f3;
+}
+
+.ie-pergola--scope .ie-pergola__section-head h2{
+  max-width:760px;
+  font-size:clamp(2.2rem,3.45vw,3.55rem);
+}
+
+.ie-pergola__scope-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin-top:clamp(38px,5vw,62px);
+  border:0;
+  background:transparent;
+}
+
+.ie-pergola__scope-item{
+  min-height:245px;
+  padding:30px 28px;
+  border:1px solid rgba(31,35,30,.12);
+  background:#fff;
+  transition:transform 180ms ease,box-shadow 180ms ease,border-color 180ms ease;
+}
+
+@media (hover:hover){
+  .ie-pergola__scope-item:hover{
+    transform:translateY(-2px);
+    border-color:rgba(86,98,54,.35);
+    box-shadow:0 18px 44px rgba(31,35,30,.07);
+  }
+}
+
+.ie-pergola__scope-number{
+  margin-bottom:34px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:2.15rem;
+  font-weight:400;
+  line-height:1;
+  letter-spacing:-.035em;
+  color:rgba(86,98,54,.58);
+}
+
+.ie-pergola__scope-item h3{
+  margin-bottom:12px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.34rem;
+  font-weight:500;
+  line-height:1.12;
+  letter-spacing:-.012em;
+}
+
+.ie-pergola__scope-item p{
+  max-width:340px;
+  line-height:1.62;
+}
+
+.ie-pergola__scope-note{
+  max-width:960px;
+  margin-top:32px;
+  padding:18px 20px;
+  border-left:2px solid var(--ie-pg-forest);
+  background:#efede5;
+}
+
+/* Process stays recognisably Services, with more generous editorial rhythm. */
+.ie-services--process .ie-services__process{
+  padding:clamp(52px,6vw,80px);
+  background:#20241f;
+}
+
+.ie-services--process .ie-services__process h2{
+  max-width:620px;
+  font-size:clamp(2.25rem,3.3vw,3.65rem);
+  line-height:1.01;
+}
+
+.ie-services--process .ie-services__process-step{
+  padding:25px 0;
+}
+
+.ie-services--process .ie-services__process-step h3{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.25rem;
+  font-weight:500;
+  line-height:1.15;
+}
+
+/* Commercial closing section. */
+.ie-pergola--quote{
+  padding-block:clamp(78px,9vw,128px);
+  background:#f4f1e9;
+}
+
+.ie-pergola__quote-layout{
+  grid-template-columns:minmax(0,.78fr) minmax(520px,1.22fr);
+  gap:clamp(54px,8vw,112px);
+}
+
+.ie-pergola__quote-copy h2{
+  max-width:620px;
+  font-size:clamp(2.55rem,4vw,4.35rem);
+  line-height:.99;
+}
+
+.ie-pergola__quote-copy > .rte{
+  max-width:560px;
+  font-size:1rem;
+}
+
+.ie-pergola__quote-checklist{
+  margin-top:34px;
+}
+
+.ie-pergola__quote-checklist li{
+  padding:15px 0;
+}
+
+.ie-pergola__form-panel{
+  padding:clamp(28px,4vw,48px);
+  border-color:rgba(31,35,30,.11);
+  box-shadow:0 24px 70px rgba(31,35,30,.07);
+}
+
+@media screen and (max-width:989px){
+  .ie-pergola--details .ie-pergola__section-head,
+  .ie-pergola__feature,
+  .ie-pergola__quote-layout{
+    grid-template-columns:1fr;
+  }
+
+  .ie-pergola__scope-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .ie-services--confidence .ie-services__confidence-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media screen and (max-width:749px){
+  .ie-pergola--details{
+    padding-block:56px 70px;
+  }
+
+  .ie-pergola__feature{
+    padding-block:44px;
+  }
+
+  .ie-pergola__feature-copy h3{
+    font-size:clamp(1.8rem,8vw,2.35rem);
+  }
+
+  .ie-pergola__scope-grid{
+    grid-template-columns:1fr;
+  }
+
+  .ie-pergola__scope-item{
+    min-height:0;
+  }
+
+  .ie-pergola__quote-copy h2{
+    font-size:clamp(2.2rem,10vw,3.25rem);
+  }
+}
