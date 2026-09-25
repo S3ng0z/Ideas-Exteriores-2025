@@ -1,0 +1,115 @@
+/* IDEAS EXTERIORES · Cenadores / gazebos collection */
+.ie-gz{
+  --ie-ink:#1f231e;
+  --ie-forest:#566236;
+  --ie-bone:#f9f8f6;
+  --ie-white:#ffffff;
+  --ie-border:rgba(31,35,30,.14);
+  --ie-muted:rgba(31,35,30,.72);
+  color:var(--ie-ink);
+  background:var(--ie-bone);
+}
+.ie-gz__inner{width:min(calc(100% - 64px),1600px);margin-inline:auto}
+.ie-gz--hero .ie-gz__inner{padding-block:28px 34px}
+.ie-gz__breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;min-height:40px;margin-bottom:34px;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.78rem;line-height:1.35;color:var(--ie-muted)}
+.ie-gz__breadcrumb a{color:inherit;text-decoration:none}
+.ie-gz__breadcrumb a:hover,.ie-gz__breadcrumb a:focus-visible{text-decoration:underline;text-underline-offset:3px;color:var(--ie-ink)}
+.ie-gz__hero-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(290px,.65fr);gap:clamp(36px,5vw,76px);align-items:end;padding-bottom:34px;border-bottom:1px solid var(--ie-border)}
+.ie-gz__eyebrow{margin:0 0 10px;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.76rem;font-weight:700;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:var(--ie-forest)}
+.ie-gz h1,.ie-gz h2{margin:0;font-family:"Source Serif 4",Georgia,serif;font-weight:500;letter-spacing:-.02em;text-transform:none}
+.ie-gz h1{font-size:clamp(2.55rem,3.65vw,4.25rem);line-height:.99;text-wrap:balance}
+.ie-gz h2{font-size:clamp(2rem,2.45vw,2.8rem);line-height:1.04;text-wrap:balance}
+.ie-gz__lead{max-width:1050px;margin:18px 0 0;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:clamp(1rem,1.1vw,1.12rem);line-height:1.62;color:var(--ie-muted)}
+.ie-gz__lead>*{margin:0}
+.ie-gz__actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:26px}
+.ie-gz__button{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 22px;border:1px solid var(--ie-forest);font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.92rem;font-weight:600;line-height:1;text-decoration:none;transition:background-color 160ms ease,border-color 160ms ease,color 160ms ease}
+.ie-gz__button--primary{color:#fff;background:var(--ie-forest)}
+.ie-gz__button--secondary{color:var(--ie-ink);background:transparent;border-color:var(--ie-ink)}
+.ie-gz__button--primary:hover,.ie-gz__button--primary:focus-visible{background:#414c28;border-color:#414c28}
+.ie-gz__button--secondary:hover,.ie-gz__button--secondary:focus-visible{color:#fff;background:var(--ie-ink)}
+.ie-gz__text-link{display:inline-flex;align-items:center;gap:8px;padding-block:10px;color:var(--ie-ink);font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.9rem;font-weight:600;text-decoration:none;border-bottom:1px solid var(--ie-border)}
+.ie-gz__text-link:hover,.ie-gz__text-link:focus-visible{border-color:var(--ie-ink)}
+.ie-gz__summary{padding-top:18px;border-top:1px solid var(--ie-ink)}
+.ie-gz__summary-title{margin:0 0 12px;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.9rem;font-weight:600}
+.ie-gz__summary ol{list-style:none;margin:0;padding:0}
+.ie-gz__summary li{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:baseline;padding:11px 0;border-top:1px solid var(--ie-border);font-family:Manrope,var(--font-body--family),Arial,sans-serif}
+.ie-gz__summary span{font-size:.7rem;color:var(--ie-muted)}
+.ie-gz__summary strong{font-size:.92rem;font-weight:500;line-height:1.42}
+.ie-gz--guide .ie-gz__inner{padding-block:76px 18px}
+.ie-gz__guide-head,.ie-gz__faq-head{display:grid;grid-template-columns:minmax(330px,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,72px);align-items:start;margin-bottom:32px}
+.ie-gz__guide-copy,.ie-gz__faq-head>p{padding-top:18px;margin:0;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:1rem;line-height:1.62;color:var(--ie-muted)}
+.ie-gz__guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ie-ink);border-bottom:1px solid var(--ie-border)}
+.ie-gz__guide-grid article{min-width:0;padding:24px 28px 30px 0;border-right:1px solid var(--ie-border)}
+.ie-gz__guide-grid article+article{padding-left:28px}
+.ie-gz__guide-grid article:last-child{border-right:0}
+.ie-gz__index{margin:0 0 22px!important;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.72rem!important;font-weight:600;color:var(--ie-forest)!important}
+.ie-gz__guide-grid h3{margin:0 0 10px;font-family:"Source Serif 4",Georgia,serif;font-size:1.18rem;font-weight:500;line-height:1.18}
+.ie-gz__guide-grid article>p{margin:0;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.92rem;line-height:1.58;color:var(--ie-muted)}
+.ie-gz__related{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:24px;border-top:1px solid var(--ie-border)}
+.ie-gz__related a{display:flex;justify-content:space-between;gap:16px;padding:18px 22px 18px 0;border-bottom:1px solid var(--ie-border);color:var(--ie-ink);font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.9rem;font-weight:600;text-decoration:none}
+.ie-gz__related a+a{padding-left:22px;border-left:1px solid var(--ie-border)}
+.ie-gz__related a:hover,.ie-gz__related a:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.ie-gz--faq .ie-gz__inner{padding-block:74px 0}
+.ie-gz__faq-list{border-top:1px solid var(--ie-ink)}
+.ie-gz__faq-list details{border-bottom:1px solid var(--ie-border)}
+.ie-gz__faq-list summary{cursor:pointer;list-style:none;padding:22px 42px 22px 0;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:1rem;font-weight:600;position:relative}
+.ie-gz__faq-list summary::-webkit-details-marker{display:none}
+.ie-gz__faq-list summary::after{content:"+";position:absolute;right:4px;top:18px;font-size:1.45rem;font-weight:400}
+.ie-gz__faq-list details[open] summary::after{content:"−"}
+.ie-gz__faq-list details div{max-width:980px;padding:0 0 24px}
+.ie-gz__faq-list details p{margin:0;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.96rem;line-height:1.62;color:var(--ie-muted)}
+.ie-gz--cta .ie-gz__inner{padding-block:72px 96px}
+.ie-gz__cta{display:flex;justify-content:space-between;align-items:end;gap:40px;padding-top:28px;border-top:1px solid var(--ie-border)}
+.ie-gz__cta>div:first-child>p:last-child{max-width:900px;margin:14px 0 0;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:1rem;line-height:1.62;color:var(--ie-muted)}
+.ie-gz__actions--cta{flex:0 0 auto;margin-top:0}
+.collection-wooden-gazebos .content-for-layout{background:var(--ie-bone,#f9f8f6)}
+.collection-wooden-gazebos .lux-breadcrumb-box{display:none}
+.collection-wooden-gazebos .product-grid-container{--color-background:249,248,246;background:var(--ie-bone,#f9f8f6)}
+.collection-wooden-gazebos .collection-wrapper{padding-top:18px}
+.collection-wooden-gazebos .facets-block-wrapper{border-top:1px solid rgba(31,35,30,.14);border-bottom:1px solid rgba(31,35,30,.14)}
+.collection-wooden-gazebos .product-grid{row-gap:34px}
+.collection-wooden-gazebos .product-card,.collection-wooden-gazebos .product-card__content{height:100%}
+.collection-wooden-gazebos .card-gallery{overflow:hidden;background:#f1f0ec}
+.collection-wooden-gazebos .card-gallery img{transition:transform .45s ease}
+.collection-wooden-gazebos .product-card .group-block{align-items:flex-start;text-align:left}
+.collection-wooden-gazebos .product-card .group-block .text-block,.collection-wooden-gazebos .product-card .group-block .price{text-align:left}
+.collection-wooden-gazebos .ie-gz__card-cta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;padding-top:12px;border-top:1px solid rgba(31,35,30,.14);font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.86rem;font-weight:600;color:#1f231e}
+.collection-wooden-gazebos .ie-gz__card-cta span{transition:transform .2s ease}
+.collection-wooden-gazebos #ResultsList{scroll-margin-top:110px}
+.ie-gz a:focus-visible,.ie-gz summary:focus-visible{outline:2px solid var(--ie-forest);outline-offset:4px}
+@media (hover:hover){
+  .collection-wooden-gazebos .product-card:hover .card-gallery img{transform:scale(1.018)}
+  .collection-wooden-gazebos .product-card:hover .ie-gz__card-cta span{transform:translateX(3px)}
+}
+@media screen and (min-width:750px){
+  .ie-gz__lead,.ie-gz__guide-copy,.ie-gz__guide-grid article>p,.ie-gz__faq-head>p,.ie-gz__faq-list details p,.ie-gz__cta>div:first-child>p:last-child{text-align:justify;text-justify:inter-word;hyphens:none;-webkit-hyphens:none;word-break:normal;overflow-wrap:normal}
+}
+@media screen and (max-width:989px){
+  .ie-gz__inner{width:min(calc(100% - 48px),1600px)}
+  .ie-gz__hero-grid,.ie-gz__guide-head,.ie-gz__faq-head{grid-template-columns:1fr;gap:20px}
+  .ie-gz__summary{max-width:620px}
+  .ie-gz__guide-copy,.ie-gz__faq-head>p{padding-top:0}
+  .ie-gz__guide-grid,.ie-gz__related{grid-template-columns:1fr}
+  .ie-gz__guide-grid article,.ie-gz__guide-grid article+article{padding:22px 0;border-right:0;border-top:1px solid var(--ie-border)}
+  .ie-gz__guide-grid article:first-child{border-top:0}
+  .ie-gz__related a,.ie-gz__related a+a{padding:16px 0;border-left:0}
+  .ie-gz__cta{align-items:flex-start;flex-direction:column}
+}
+@media screen and (max-width:749px){
+  .ie-gz__inner{width:calc(100% - 32px)}
+  .ie-gz--hero .ie-gz__inner{padding-block:18px 24px}
+  .ie-gz__breadcrumb{margin-bottom:20px;font-size:.74rem}
+  .ie-gz h1{font-size:clamp(2.1rem,10vw,3rem)}
+  .ie-gz h2{font-size:clamp(1.9rem,8vw,2.5rem)}
+  .ie-gz__lead,.ie-gz__guide-copy,.ie-gz__guide-grid article>p,.ie-gz__faq-head>p,.ie-gz__faq-list details p,.ie-gz__cta>div:first-child>p:last-child{text-align:left;line-height:1.55;overflow-wrap:break-word}
+  .ie-gz__actions{display:grid;grid-template-columns:1fr;width:100%;gap:8px}
+  .ie-gz__button{width:100%}
+  .ie-gz__text-link{width:max-content}
+  .ie-gz--guide .ie-gz__inner{padding-top:54px}
+  .ie-gz--faq .ie-gz__inner{padding-top:56px}
+  .ie-gz--cta .ie-gz__inner{padding-block:56px 72px}
+  .collection-wooden-gazebos .product-grid{row-gap:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  .ie-gz__button,.collection-wooden-gazebos .card-gallery img,.collection-wooden-gazebos .ie-gz__card-cta span{transition:none!important}
+}
