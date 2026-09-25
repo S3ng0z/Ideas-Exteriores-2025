@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -47,7 +56,7 @@
         "design": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/porche_001.png",
+            "image": "shopify://shop_images/Mediterranean_Villa_Pergola_Retreat.webp",
             "image_alt": "Porche de madera a medida adosado a vivienda",
             "media_position": "left",
             "index": "01 · Diseño y encaje",
@@ -61,7 +70,7 @@
         "roof": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/Mediterranean_Pergola_Patio_Retreat.webp",
             "image_alt": "",
             "media_position": "right",
             "index": "02 · Cubierta y confort",
@@ -75,9 +84,9 @@
         "structure": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/porche_002.png",
+            "image": "shopify://shop_images/Modern_Timber_Pergola_with_Wind_and_Snow_Indicators.webp",
             "image_alt": "Estructura de madera dimensionada para un porche a medida",
-            "media_position": "right",
+            "media_position": "left",
             "index": "03 · Estructura",
             "heading": "Una estructura proporcionada a la cubierta y al uso previsto",
             "text": "<p>Definimos pilares, vigas, correas o cerchas según luces, geometría y tipo de cubierta. Cuando el proyecto incorpora laterales, elementos suspendidos o una exposición más exigente, esas condiciones se consideran antes de fabricar y montar.</p>",
@@ -89,9 +98,9 @@
         "anchors": {
           "type": "feature",
           "settings": {
-            "image": "",
+            "image": "shopify://shop_images/Modern_Pergola_Patio_with_Drainage_Details.webp",
             "image_alt": "",
-            "media_position": "left",
+            "media_position": "right",
             "index": "04 · Base, agua y anclajes",
             "heading": "La durabilidad empieza donde la madera se encuentra con suelo y fachada",
             "text": "<p>Revisamos si el porche se apoya sobre una base existente o necesita preparación específica. Buscamos mantener la madera alejada de humedad permanente y ordenar fijaciones, pendientes y drenajes para reducir puntos críticos con el paso del tiempo.</p>",
@@ -103,7 +112,7 @@
         "finishes": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/porche_003.png",
+            "image": "shopify://shop_images/Golden-Hour_Glass_Patio_Retreat.webp",
             "image_alt": "Porche de madera con acabado exterior y opciones de cerramiento",
             "media_position": "left",
             "index": "05 · Acabados y cerramientos",

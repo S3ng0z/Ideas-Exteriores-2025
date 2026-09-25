@@ -1,9 +1,29 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "ie_light_frame_intro": {
       "type": "ie-light-frame-collection",
       "settings": {
         "mode": "intro"
+      }
+    },
+    "custom_liquid_WMRJ7B": {
+      "type": "custom-liquid",
+      "name": "IE · Breadcrumb global",
+      "settings": {
+        "custom_liquid": "{% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: collection.title, class_name: 'lux-breadcrumb' %}\n<h3 class=\"lux-title\">{{ collection.title }}</h3>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "main": {
@@ -207,6 +227,7 @@
   },
   "order": [
     "ie_light_frame_intro",
+    "custom_liquid_WMRJ7B",
     "main",
     "ie_light_frame_outro"
   ]

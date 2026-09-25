@@ -1,14 +1,23 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "custom_liquid_nxCcxc": {
-      "type": "custom-liquid",
+      "type": "ie-breadcrumb",
       "name": "IE · Breadcrumb global",
       "settings": {
-        "custom_liquid": "{% render 'ie-breadcrumb', breadcrumb_object: page, current_title: page.title, class_name: 'lux-breadcrumb' %}\n<h1 class=\"lux-title\">{{ page.title }}</h1>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "aria_label": "Migas de pan",
+        "home_label": "Inicio",
+        "current_label": "",
+        "show_title": true,
+        "title_level": "h1"
       }
     },
     "main": {
