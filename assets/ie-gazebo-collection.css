@@ -65,11 +65,12 @@
 .collection-wooden-gazebos .content-for-layout{background:var(--ie-bone,#f9f8f6)}
 .collection-wooden-gazebos .lux-breadcrumb-box{display:none}
 .collection-wooden-gazebos .product-grid-container{--color-background:249,248,246;background:var(--ie-bone,#f9f8f6)}
-.collection-wooden-gazebos .collection-wrapper{padding-top:18px}
+.collection-wooden-gazebos .collection-wrapper{width:min(calc(100% - 64px),1600px);max-width:1600px;margin-inline:auto;padding-top:18px}
 .collection-wooden-gazebos .facets-block-wrapper{border-top:1px solid rgba(31,35,30,.14);border-bottom:1px solid rgba(31,35,30,.14)}
 .collection-wooden-gazebos .product-grid{row-gap:34px}
 .collection-wooden-gazebos .product-card,.collection-wooden-gazebos .product-card__content{height:100%}
-.collection-wooden-gazebos .card-gallery{overflow:hidden;background:#f1f0ec}
+.collection-wooden-gazebos .card-gallery{overflow:hidden;aspect-ratio:4/3;background:#f1f0ec}
+.collection-wooden-gazebos .card-gallery img{width:100%;height:100%;object-fit:cover}
 .collection-wooden-gazebos .card-gallery img{transition:transform .45s ease}
 .collection-wooden-gazebos .product-card .group-block{align-items:flex-start;text-align:left}
 .collection-wooden-gazebos .product-card .group-block .text-block,.collection-wooden-gazebos .product-card .group-block .price{text-align:left}
@@ -86,6 +87,7 @@
 }
 @media screen and (max-width:989px){
   .ie-gz__inner{width:min(calc(100% - 48px),1600px)}
+  .collection-wooden-gazebos .collection-wrapper{width:min(calc(100% - 48px),1600px)}
   .ie-gz__hero-grid,.ie-gz__guide-head,.ie-gz__faq-head{grid-template-columns:1fr;gap:20px}
   .ie-gz__summary{max-width:620px}
   .ie-gz__guide-copy,.ie-gz__faq-head>p{padding-top:0}
@@ -97,6 +99,7 @@
 }
 @media screen and (max-width:749px){
   .ie-gz__inner{width:calc(100% - 32px)}
+  .collection-wooden-gazebos .collection-wrapper{width:calc(100% - 32px)}
   .ie-gz--hero .ie-gz__inner{padding-block:18px 24px}
   .ie-gz__breadcrumb{margin-bottom:20px;font-size:.74rem}
   .ie-gz h1{font-size:clamp(2.1rem,10vw,3rem)}
