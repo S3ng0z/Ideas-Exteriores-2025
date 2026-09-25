@@ -4711,3 +4711,13 @@ text-component {
 .cta {
   padding: 1rem 0;
 }
+/* IE global breadcrumb architecture */
+.ie-breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.78rem;line-height:1.4;color:rgba(31,35,30,.68)}
+.ie-breadcrumb a{color:inherit;text-decoration:none}
+.ie-breadcrumb a:hover,.ie-breadcrumb a:focus-visible{color:#1f231e;text-decoration:underline;text-underline-offset:3px}
+.ie-breadcrumb__separator{color:rgba(31,35,30,.36)}
+.ie-breadcrumb__current{color:#1f231e;font-weight:500}
+.ie-global-breadcrumb{padding-block:16px 8px}
+.ie-global-breadcrumb__inner{display:grid;gap:10px}
+.ie-global-breadcrumb .lux-title{margin:0}
+@media screen and (max-width:749px){.ie-breadcrumb{gap:6px;font-size:.72rem}}
