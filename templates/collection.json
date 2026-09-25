@@ -19,7 +19,7 @@
       "type": "custom-liquid",
       "name": "IE · Breadcrumb global",
       "settings": {
-        "custom_liquid": "{% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: collection.title, class_name: 'lux-breadcrumb' %}\n<h3 class=\"lux-title\">{{ collection.title }}</h3>",
+        "custom_liquid": "{% unless collection.handle == 'wooden-gazebos' %}{% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: collection.title, class_name: 'lux-breadcrumb' %}\\n<h3 class=\"lux-title\">{{ collection.title }}</h3>{% endunless %}",
         "color_scheme": "",
         "section_width": "page-width",
         "padding-block-start": 0,
