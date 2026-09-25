@@ -9,15 +9,7 @@
 
 <section class="ie-hc ie-hc--hero" aria-labelledby="ie-hc-title-{{ section.id }}">
   <div class="ie-hc__inner">
-    <nav class="ie-hc__breadcrumb" aria-label="{{ section.settings.breadcrumb_label | escape }}">
-      <a href="{{ routes.root_url }}">{{ section.settings.home_label }}</a>
-      <span aria-hidden="true">/</span>
-      {% if section.settings.parent_label != blank and section.settings.parent_link != blank %}
-        <a href="{{ section.settings.parent_link }}">{{ section.settings.parent_label }}</a>
-        <span aria-hidden="true">/</span>
-      {% endif %}
-      <span aria-current="page">{{ ie_heading }}</span>
-    </nav>
+    {% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: ie_heading, class_name: 'ie-hc__breadcrumb', aria_label: section.settings.breadcrumb_label, home_label: section.settings.home_label, fallback_1_label: section.settings.parent_label, fallback_1_link: section.settings.parent_link %}
 
     <div class="ie-hc__hero-grid">
       <div>
