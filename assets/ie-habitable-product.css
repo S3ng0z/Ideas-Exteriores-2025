@@ -461,3 +461,25 @@ body:has(.ie-hab-pdp--hero) .product-information .product-details .rte,body:has(
     font-size:1.15rem!important;
   }
 }
+
+
+/* Habitable PDP: canonical product breadcrumb */
+.ie-hab-pdp__breadcrumb{
+  row-gap:6px;
+}
+
+.ie-hab-pdp__breadcrumb [aria-current="page"]{
+  color:var(--ie-hab-ink);
+  font-weight:500;
+}
+
+.ie-hab-pdp__breadcrumb > span[aria-hidden="true"]{
+  color:rgba(31,35,30,.38);
+}
+
+@media screen and (max-width:749px){
+  .ie-hab-pdp__breadcrumb{
+    gap:6px;
+    font-size:.72rem;
+  }
+}

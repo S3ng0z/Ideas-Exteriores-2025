@@ -1,14 +1,46 @@
 {{ 'ie-habitable-product.css' | asset_url | stylesheet_tag }}
 
+{% liquid
+  assign ie_breadcrumb_1_label = product.metafields.custom.n1.value | default: section.settings.breadcrumb_1_label
+  assign ie_breadcrumb_2_label = product.metafields.custom.n2.value | default: section.settings.breadcrumb_2_label
+  assign ie_breadcrumb_3_label = product.metafields.custom.n3.value | default: section.settings.breadcrumb_3_label
+
+  assign ie_breadcrumb_1_link = section.settings.breadcrumb_1_link
+  assign ie_breadcrumb_2_link = section.settings.breadcrumb_2_link
+  assign ie_breadcrumb_3_link = section.settings.breadcrumb_3_link
+
+  if ie_breadcrumb_1_link == blank
+    assign ie_breadcrumb_1_link = product.metafields.custom.n1_url.value
+  endif
+  if ie_breadcrumb_2_link == blank
+    assign ie_breadcrumb_2_link = product.metafields.custom.n2_url.value
+  endif
+  if ie_breadcrumb_3_link == blank
+    assign ie_breadcrumb_3_link = product.metafields.custom.n3_url.value
+  endif
+%}
+
 <section class="ie-hab-pdp ie-hab-pdp--hero" aria-labelledby="ie-hab-product-title-{{ section.id }}">
   <div class="ie-hab-pdp__inner">
     <nav class="ie-hab-pdp__breadcrumb" aria-label="{{ section.settings.breadcrumb_label | escape }}">
       <a href="{{ routes.root_url }}">{{ section.settings.home_label }}</a>
-      <span aria-hidden="true">/</span>
-      {% if section.settings.collection_link != blank %}
-        <a href="{{ section.settings.collection_link }}">{{ section.settings.collection_label }}</a>
+
+      {% if ie_breadcrumb_1_label != blank and ie_breadcrumb_1_link != blank %}
         <span aria-hidden="true">/</span>
+        <a href="{{ ie_breadcrumb_1_link }}">{{ ie_breadcrumb_1_label }}</a>
       {% endif %}
+
+      {% if ie_breadcrumb_2_label != blank and ie_breadcrumb_2_link != blank %}
+        <span aria-hidden="true">/</span>
+        <a href="{{ ie_breadcrumb_2_link }}">{{ ie_breadcrumb_2_label }}</a>
+      {% endif %}
+
+      {% if ie_breadcrumb_3_label != blank and ie_breadcrumb_3_link != blank %}
+        <span aria-hidden="true">/</span>
+        <a href="{{ ie_breadcrumb_3_link }}">{{ ie_breadcrumb_3_label }}</a>
+      {% endif %}
+
+      <span aria-hidden="true">/</span>
       <span aria-current="page">{{ product.title }}</span>
     </nav>
 
@@ -53,8 +85,12 @@
   "settings": [
     {"type":"text","id":"breadcrumb_label","label":"Etiqueta breadcrumb","default":"Migas de pan"},
     {"type":"text","id":"home_label","label":"Inicio","default":"Inicio"},
-    {"type":"text","id":"collection_label","label":"Colección","default":"Viviendas en madera"},
-    {"type":"url","id":"collection_link","label":"Enlace colección"},
+    {"type":"text","id":"breadcrumb_1_label","label":"Nivel 1 · texto","default":"Productos"},
+    {"type":"url","id":"breadcrumb_1_link","label":"Nivel 1 · enlace"},
+    {"type":"text","id":"breadcrumb_2_label","label":"Nivel 2 · texto","default":"Viviendas en madera"},
+    {"type":"url","id":"breadcrumb_2_link","label":"Nivel 2 · enlace"},
+    {"type":"text","id":"breadcrumb_3_label","label":"Nivel 3 · texto","default":"Casas de entramado ligero"},
+    {"type":"url","id":"breadcrumb_3_link","label":"Nivel 3 · enlace"},
     {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Modelo de vivienda"},
     {"type":"richtext","id":"lead","label":"Introducción","default":"<p>Revisa el modelo, compara el alcance de sus configuraciones y valida las condiciones del proyecto antes de solicitar presupuesto.</p>"},
     {"type":"text","id":"primary_label","label":"CTA principal","default":"Comparar configuraciones"},

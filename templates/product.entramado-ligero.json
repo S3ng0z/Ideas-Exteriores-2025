@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
@@ -42,15 +33,19 @@
       "settings": {
         "breadcrumb_label": "Migas de pan",
         "home_label": "Inicio",
-        "collection_label": "Casas de entramado ligero",
-        "collection_link": "/collections/light-frame-houses",
         "eyebrow": "Modelo de vivienda · Entramado ligero",
         "lead": "<p>Revisa el modelo, compara el alcance de sus configuraciones y valida las condiciones de parcela, base, logística y montaje antes de solicitar presupuesto.</p>",
         "primary_label": "Comparar configuraciones",
         "secondary_label": "Entender el entramado ligero",
         "secondary_link": "/pages/light-timber-building-system-overview",
         "summary_title": "Antes de pedir presupuesto",
-        "summary_aria_label": "Pasos antes de pedir presupuesto"
+        "summary_aria_label": "Pasos antes de pedir presupuesto",
+        "breadcrumb_1_label": "Productos",
+        "breadcrumb_1_link": "/pages/timber-products",
+        "breadcrumb_2_label": "Viviendas en madera",
+        "breadcrumb_2_link": "/pages/timber-homes-and-modules",
+        "breadcrumb_3_label": "Casas de entramado ligero",
+        "breadcrumb_3_link": "/collections/light-frame-houses"
       }
     },
     "main": {
