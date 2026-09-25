@@ -1,4 +1,5 @@
 {{ 'ie-sip-product.css' | asset_url | stylesheet_tag }}
+{% comment %}IE breadcrumb renderer synced{% endcomment %}
 
 {% liquid
   assign ie_collection_url = collections['sip-panel-houses'].url | default: '/collections/sip-panel-houses'
