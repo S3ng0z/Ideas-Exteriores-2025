@@ -1,12 +1,92 @@
-/*
- * ------------------------------------------------------------
- * IDEAS EXTERIORES · Dedicated CASAS PANEL SIP collection template
- * Source-controlled in GitHub main. Keep independent from studios-sip
- * and from the light-frame-houses collection template.
- * ------------------------------------------------------------
- */
 {
   "sections": {
+    "hero": {
+      "type": "ie-habitable-collection-hero",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "label": "Selecciona un modelo base por superficie y distribución"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "label": "Revisa el precio “desde” y el alcance indicado en la ficha"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "label": "Valida parcela, accesos, acabados y condiciones de montaje"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "breadcrumb_label": "Migas de pan",
+        "home_label": "Inicio",
+        "parent_label": "Productos",
+        "parent_link": "/pages/timber-products",
+        "eyebrow": "Viviendas en madera · Panel SIP",
+        "heading": "Casas con panel SIP",
+        "lead": "<p>Compara modelos de vivienda con panel SIP por superficie, distribución y precio de partida. El sistema SIP aporta una envolvente industrializada; el alcance final depende del modelo, la parcela, los acabados y las condiciones de montaje.</p>",
+        "models_prefix": "Ver",
+        "models_suffix": "modelos",
+        "secondary_label": "Cómo trabajamos",
+        "secondary_link": "/pages/services",
+        "summary_title": "Antes de pedir presupuesto",
+        "summary_aria_label": "Pasos antes de pedir presupuesto"
+      }
+    },
+    "guide": {
+      "type": "ie-habitable-collection-guide",
+      "blocks": {
+        "criterion_1": {
+          "type": "criterion",
+          "settings": {
+            "number": "01 · MODELO",
+            "heading": "Empieza por superficie y distribución",
+            "text": "Compara tamaños y organización interior para reducir opciones antes de entrar en el detalle técnico."
+          }
+        },
+        "criterion_2": {
+          "type": "criterion",
+          "settings": {
+            "number": "02 · ALCANCE",
+            "heading": "Interpreta correctamente el “desde”",
+            "text": "El precio mostrado es una referencia inicial del modelo. La ficha debe concretar qué incluye y qué necesita validación."
+          }
+        },
+        "criterion_3": {
+          "type": "criterion",
+          "settings": {
+            "number": "03 · VIABILIDAD",
+            "heading": "Confirma las condiciones del proyecto",
+            "text": "Parcela, accesos, base o solera, logística, montaje, acabados y requisitos técnicos se revisan antes de preparar una propuesta definitiva."
+          }
+        }
+      },
+      "block_order": [
+        "criterion_1",
+        "criterion_2",
+        "criterion_3"
+      ],
+      "settings": {
+        "eyebrow": "Elegir con criterio",
+        "heading": "Del modelo al presupuesto: qué comparar",
+        "intro": "<p>Los modelos permiten filtrar la vivienda por tamaño y planteamiento. El panel SIP describe el sistema constructivo; el presupuesto definitivo exige confirmar alcance, base, logística, acabados y condiciones del proyecto.</p>",
+        "link_label": "Entender el sistema panel SIP",
+        "link": "/pages/sip-panels-system"
+      }
+    },
     "main": {
       "type": "main-collection",
       "blocks": {
@@ -140,7 +220,7 @@
                     "show_tax_info": false,
                     "type_preset": "paragraph",
                     "width": "100%",
-                    "alignment": "center",
+                    "alignment": "left",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -159,7 +239,7 @@
                   "name": "t:names.swatches",
                   "settings": {
                     "product": "{{ closest.product }}",
-                    "product_swatches_alignment": "center",
+                    "product_swatches_alignment": "flex-start",
                     "product_swatches_alignment_mobile": "flex-start",
                     "hide_padding": false,
                     "product_swatches_padding_top": 4,
@@ -200,22 +280,23 @@
         "padding_block_end": 64
       }
     },
-    "ie_sip_intro": {
-      "type": "ie-sip-panel-houses-collection",
+    "cta": {
+      "type": "ie-habitable-collection-cta",
       "settings": {
-        "mode": "intro"
-      }
-    },
-    "ie_sip_outro": {
-      "type": "ie-sip-panel-houses-collection",
-      "settings": {
-        "mode": "outro"
+        "eyebrow": "Siguiente paso",
+        "heading": "¿Ya tienes un modelo en mente?",
+        "text": "<p>Entra en su ficha para revisar superficie, distribución y alcance. Si necesitas orientación previa, consulta cómo trabajamos o habla con el equipo antes de solicitar presupuesto.</p>",
+        "primary_label": "Cómo trabajamos",
+        "primary_link": "/pages/services",
+        "secondary_label": "Hablar con el equipo",
+        "secondary_link": "/pages/contact-ideas-exteriores"
       }
     }
   },
   "order": [
-    "ie_sip_intro",
+    "hero",
+    "guide",
     "main",
-    "ie_sip_outro"
+    "cta"
   ]
 }

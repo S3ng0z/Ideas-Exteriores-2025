@@ -37,3 +37,81 @@
 .ie-hc__guide-link{margin-top:8px!important}
 .ie-hc__guide-link a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .ie-hc__guide-link a:hover,.ie-hc__guide-link a:focus-visible{text-decoration-thickness:2px}
+
+.ie-hc__lead > *,
+.ie-hc__guide-copy .rte > *,
+.ie-hc__cta-text > * {
+  margin: 0;
+}
+
+.ie-hc__cta-text {
+  max-width: 900px;
+  margin-top: 14px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.62;
+  color: var(--muted);
+}
+
+.ie-hc__button {
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.ie-hc__button--primary:hover,
+.ie-hc__button--primary:focus-visible {
+  background: #414c28;
+  border-color: #414c28;
+}
+
+.ie-hc__button--secondary:hover,
+.ie-hc__button--secondary:focus-visible {
+  color: #fff;
+  background: var(--ink);
+}
+
+.ie-hc a:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 4px;
+}
+
+.collection-sip-panel-houses #ResultsList {
+  scroll-margin-top: 110px;
+}
+
+@media screen and (min-width: 750px) {
+  .ie-hc__lead,
+  .ie-hc__guide-copy,
+  .ie-hc__guide-grid article > p,
+  .ie-hc__cta-text {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: none;
+    -webkit-hyphens: none;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .ie-hc__summary {
+    max-width: 620px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .ie-hc__lead,
+  .ie-hc__guide-copy,
+  .ie-hc__guide-grid article > p,
+  .ie-hc__cta-text {
+    text-align: left;
+    text-justify: auto;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ie-hc__button,
+  .ie-hc__guide-link a {
+    transition: none !important;
+  }
+}
