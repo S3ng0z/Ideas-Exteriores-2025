@@ -1,14 +1,14 @@
 {
   "sections": {
     "custom_liquid_hcAGbg": {
-      "type": "ie-breadcrumb",
+      "type": "custom-liquid",
       "name": "IE · Breadcrumb global",
       "settings": {
-        "aria_label": "Migas de pan",
-        "home_label": "Inicio",
-        "current_label": "Colecciones",
-        "show_title": true,
-        "title_level": "h2"
+        "custom_liquid": "{% render 'ie-breadcrumb', current_title: 'Colecciones', class_name: 'lux-breadcrumb' %}\n<h2 class=\"lux-title\">Colecciones</h2>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "collection_list_Y66Rtq": {
