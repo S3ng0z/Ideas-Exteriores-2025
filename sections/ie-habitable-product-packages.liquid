@@ -1,0 +1,65 @@
+<section id="ie-habitable-packages" class="ie-hab-pdp ie-hab-pdp--packages" aria-labelledby="ie-hab-packages-title-{{ section.id }}">
+  <div class="ie-hab-pdp__inner">
+    <div class="ie-hab-pdp__section-head">
+      <div>
+        {% if section.settings.eyebrow != blank %}<p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-hab-packages-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}<div class="ie-hab-pdp__section-intro rte">{{ section.settings.intro }}</div>{% endif %}
+    </div>
+
+    {% if section.settings.note != blank %}<div class="ie-hab-pdp__technical-note rte">{{ section.settings.note }}</div>{% endif %}
+
+    <div class="ie-hab-pdp__package-columns">
+      {% for block in section.blocks %}
+        {% liquid
+          assign tier_price = blank
+          case block.settings.price_source
+            when 'basic'
+              assign tier_price = product.metafields.custom.price_basic.value
+            when 'standard'
+              assign tier_price = product.metafields.custom.price_standard.value
+            when 'passive'
+              assign tier_price = product.metafields.custom.price_passive.value
+          endcase
+        %}
+        <article class="ie-hab-pdp__package-card ie-hab-pdp__package-card--{{ block.settings.tone }}" {{ block.shopify_attributes }}>
+          <header class="ie-hab-pdp__package-head">
+            <p class="ie-hab-pdp__package-label">{{ block.settings.label }}</p>
+            {% if tier_price != blank %}<p class="ie-hab-pdp__package-price">{{ tier_price | money }}</p>{% endif %}
+            {% if block.settings.tax_note != blank %}<p class="ie-hab-pdp__package-tax">{{ block.settings.tax_note }}</p>{% endif %}
+            {% if block.settings.summary != blank %}<p class="ie-hab-pdp__package-summary">{{ block.settings.summary }}</p>{% endif %}
+          </header>
+          {% if block.settings.details != blank %}<div class="ie-hab-pdp__package-body rte">{{ block.settings.details }}</div>{% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"IE · Habitable · Paquetes",
+  "enabled_on":{"templates":["product"]},
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Configuraciones"},
+    {"type":"text","id":"heading","label":"Título","default":"Compara precio y alcance antes de decidir"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Los niveles cambian el alcance del suministro, la envolvente, el montaje y los trabajos que deben coordinarse fuera del paquete.</p>"},
+    {"type":"richtext","id":"note","label":"Nota técnica","default":"<p><strong>Importante:</strong> los nombres comerciales de las configuraciones no equivalen por sí solos a una certificación del edificio. Las prestaciones y la justificación normativa dependen de la solución validada, el emplazamiento y el proyecto.</p>"}
+  ],
+  "blocks":[{"type":"tier","name":"Configuración","settings":[
+    {"type":"text","id":"label","label":"Nombre","default":"BASIC"},
+    {"type":"select","id":"price_source","label":"Precio","options":[
+      {"value":"basic","label":"Precio BASIC"},{"value":"standard","label":"Precio STANDARD"},{"value":"passive","label":"Precio PASSIVE"}
+    ],"default":"basic"},
+    {"type":"select","id":"tone","label":"Tono","options":[
+      {"value":"light","label":"Claro"},{"value":"mid","label":"Medio"},{"value":"deep","label":"Profundo"}
+    ],"default":"light"},
+    {"type":"text","id":"tax_note","label":"Nota de precio","default":"IVA incluido · precio de referencia"},
+    {"type":"textarea","id":"summary","label":"Resumen","default":"Revisa incluidos, excluidos y trabajos que requieren validación antes de presupuestar."},
+    {"type":"richtext","id":"details","label":"Descripción completa"}
+  ]}],
+  "max_blocks":3,
+  "presets":[{"name":"IE · Habitable · Paquetes"}]
+}
+{% endschema %}

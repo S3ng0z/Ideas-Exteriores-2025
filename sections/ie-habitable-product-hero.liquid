@@ -1,0 +1,73 @@
+{{ 'ie-habitable-product.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-hab-pdp ie-hab-pdp--hero" aria-labelledby="ie-hab-product-title-{{ section.id }}">
+  <div class="ie-hab-pdp__inner">
+    <nav class="ie-hab-pdp__breadcrumb" aria-label="{{ section.settings.breadcrumb_label | escape }}">
+      <a href="{{ routes.root_url }}">{{ section.settings.home_label }}</a>
+      <span aria-hidden="true">/</span>
+      {% if section.settings.collection_link != blank %}
+        <a href="{{ section.settings.collection_link }}">{{ section.settings.collection_label }}</a>
+        <span aria-hidden="true">/</span>
+      {% endif %}
+      <span aria-current="page">{{ product.title }}</span>
+    </nav>
+
+    <div class="ie-hab-pdp__hero-grid">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h1 id="ie-hab-product-title-{{ section.id }}">{{ product.title }}</h1>
+        {% if section.settings.lead != blank %}
+          <div class="ie-hab-pdp__lead rte">{{ section.settings.lead }}</div>
+        {% endif %}
+        <div class="ie-hab-pdp__actions">
+          <a class="ie-hab-pdp__button ie-hab-pdp__button--primary" href="#ie-habitable-packages">{{ section.settings.primary_label }}</a>
+          {% if section.settings.secondary_link != blank and section.settings.secondary_label != blank %}
+            <a class="ie-hab-pdp__button ie-hab-pdp__button--secondary" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label }}</a>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if section.blocks.size > 0 %}
+        <aside class="ie-hab-pdp__summary" aria-label="{{ section.settings.summary_aria_label | escape }}">
+          <p class="ie-hab-pdp__summary-title">{{ section.settings.summary_title }}</p>
+          <ol>
+            {% for block in section.blocks %}
+              <li {{ block.shopify_attributes }}>
+                <span>{{ block.settings.number }}</span>
+                <strong>{{ block.settings.label }}</strong>
+              </li>
+            {% endfor %}
+          </ol>
+        </aside>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IE · Habitable · Hero",
+  "enabled_on": {"templates": ["product"]},
+  "settings": [
+    {"type":"text","id":"breadcrumb_label","label":"Etiqueta breadcrumb","default":"Migas de pan"},
+    {"type":"text","id":"home_label","label":"Inicio","default":"Inicio"},
+    {"type":"text","id":"collection_label","label":"Colección","default":"Viviendas en madera"},
+    {"type":"url","id":"collection_link","label":"Enlace colección"},
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Modelo de vivienda"},
+    {"type":"richtext","id":"lead","label":"Introducción","default":"<p>Revisa el modelo, compara el alcance de sus configuraciones y valida las condiciones del proyecto antes de solicitar presupuesto.</p>"},
+    {"type":"text","id":"primary_label","label":"CTA principal","default":"Comparar configuraciones"},
+    {"type":"text","id":"secondary_label","label":"CTA secundario","default":"Entender el sistema constructivo"},
+    {"type":"url","id":"secondary_link","label":"Enlace CTA secundario"},
+    {"type":"text","id":"summary_title","label":"Título resumen","default":"Antes de pedir presupuesto"},
+    {"type":"text","id":"summary_aria_label","label":"Etiqueta accesible resumen","default":"Pasos antes de pedir presupuesto"}
+  ],
+  "blocks":[{"type":"step","name":"Paso","settings":[
+    {"type":"text","id":"number","label":"Número","default":"01"},
+    {"type":"text","id":"label","label":"Texto","default":"Revisa el modelo y su distribución"}
+  ]}],
+  "max_blocks":4,
+  "presets":[{"name":"IE · Habitable · Hero"}]
+}
+{% endschema %}

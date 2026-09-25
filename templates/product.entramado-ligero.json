@@ -1,24 +1,47 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "custom_liquid_JViiDQ": {
-      "type": "custom-liquid",
-      "custom_css": [],
-      "name": "t:names.custom_liquid",
+    "hero": {
+      "type": "ie-habitable-product-hero",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "label": "Revisa superficie, distribución y encaje del modelo"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "label": "Compara BASIC, STANDARD y PASSIVE por alcance"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "label": "Valida parcela, base, accesos, logística y montaje"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
       "settings": {
-        "custom_liquid": "<style> \n  .lux-breadcrumb-box {\n    padding: 1rem 0;\n  }\n\n  .lux-breadcrumb-inner {\n    display: flex;\n    flex-direction: column;\n    gap: 0.5rem;\n  }\n\n  .lux-breadcrumb {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    font-size: 0.875rem;\n    line-height: 1.4;\n  }\n\n  .lux-breadcrumb a {\n    text-decoration: none;\n  }\n\n  .lux-breadcrumb a:hover {\n    text-decoration: underline;\n  }\n\n  .lux-breadcrumb-separator {\n    margin: 0 0.35rem;\n  }\n\n  .lux-breadcrumb .current {\n    font-weight: 600;\n  }\n\n  .lux-title {\n    font-size: 1.8rem;\n    line-height: 1.2;\n  }\n\n  /* Tablet */\n  @media (max-width: 1024px) {\n    .lux-title {\n      font-size: 1.5rem;\n    }\n\n    .lux-breadcrumb {\n      font-size: 0.8rem;\n    }\n  }\n\n  /* Smartphone */\n  @media (max-width: 640px) {\n    .lux-breadcrumb-inner {\n      gap: 0.25rem;\n    }\n\n    .lux-breadcrumb {\n      font-size: 0.75rem;\n    }\n\n    .lux-title {\n      font-size: 1.25rem;\n    }\n\n    .lux-breadcrumb .current {\n      white-space: nowrap;\n      overflow: hidden;\n      text-overflow: ellipsis;\n      max-width: 100%;\n    }\n  }\n</style>\n\n{%- comment -%}\n  Contexto:\n  - En plantilla de producto: \"product\" existe.\n  - Si este bloque se usa fuera (por error), hacemos fallback a \"page\" para evitar roturas.\n{%- endcomment -%}\n{%- assign ctx = product -%}\n{%- if ctx == blank -%}\n  {%- assign ctx = page -%}\n{%- endif -%}\n\n<div class=\"lux-breadcrumb-box page-width-content\">\n  <div class=\"lux-breadcrumb-inner\">\n    <nav class=\"lux-breadcrumb\" aria-label=\"breadcrumbs\">\n      {%- comment -%} Enlace a INICIO {%- endcomment -%}\n      <a href=\"{{ routes.root_url }}\">INICIO</a>\n\n      {%- comment -%}\n        Metafields (ajusta \"custom\" si usas otro namespace)\n        Se leen desde ctx (product si existe; si no, page).\n      {%- endcomment -%}\n      {% assign n1      = ctx.metafields.custom.n1      | default: ctx.metafields.custom.N1 %}\n      {% assign n1_url  = ctx.metafields.custom.n1_url  | default: ctx.metafields.custom.N1_URL %}\n      {% assign n2      = ctx.metafields.custom.n2      | default: ctx.metafields.custom.N2 %}\n      {% assign n2_url  = ctx.metafields.custom.n2_url  | default: ctx.metafields.custom.N2_URL %}\n      {% assign n3      = ctx.metafields.custom.n3      | default: ctx.metafields.custom.N3 %}\n      {% assign n3_url  = ctx.metafields.custom.n3_url  | default: ctx.metafields.custom.N3_URL %}\n\n      {%- comment -%}\n        Función “manual” para extraer solo el path de una URL:\n        - Quita http:// y https://\n        - Separa por \"/\"\n        - Ignora el primer elemento (dominio) y reconstruye /lo/que/sea\n      {%- endcomment -%}\n\n      {%- assign n1_path = '' -%}\n      {%- if n1_url != blank -%}\n        {% assign n1_clean = n1_url | remove: 'https://' | remove: 'http://' %}\n        {% assign n1_parts = n1_clean | split: '/' %}\n        {% assign n1_path = '' %}\n        {% for part in n1_parts %}\n          {% if forloop.first %}\n          {% else %}\n            {% if part != blank %}\n              {% assign n1_path = n1_path | append: '/' | append: part %}\n            {% endif %}\n          {% endif %}\n        {% endfor %}\n      {%- endif -%}\n\n      {%- assign n2_path = '' -%}\n      {%- if n2_url != blank -%}\n        {% assign n2_clean = n2_url | remove: 'https://' | remove: 'http://' %}\n        {% assign n2_parts = n2_clean | split: '/' %}\n        {% assign n2_path = '' %}\n        {% for part in n2_parts %}\n          {% if forloop.first %}\n          {% else %}\n            {% if part != blank %}\n              {% assign n2_path = n2_path | append: '/' | append: part %}\n            {% endif %}\n          {% endif %}\n        {% endfor %}\n      {%- endif -%}\n\n      {%- assign n3_path = '' -%}\n      {%- if n3_url != blank -%}\n        {% assign n3_clean = n3_url | remove: 'https://' | remove: 'http://' %}\n        {% assign n3_parts = n3_clean | split: '/' %}\n        {% assign n3_path = '' %}\n        {% for part in n3_parts %}\n          {% if forloop.first %}\n          {% else %}\n            {% if part != blank %}\n              {% assign n3_path = n3_path | append: '/' | append: part %}\n            {% endif %}\n          {% endif %}\n        {% endfor %}\n      {%- endif -%}\n\n      {%- comment -%} N1 {%- endcomment -%}\n      {% if n1 != blank %}\n        <span class=\"lux-breadcrumb-separator\">/</span>\n        {% if n1_path != blank %}\n          <a href=\"{{ n1_path }}\">{{ n1 }}</a>\n        {% else %}\n          <span>{{ n1 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N2 {%- endcomment -%}\n      {% if n2 != blank %}\n        <span class=\"lux-breadcrumb-separator\">/</span>\n        {% if n2_path != blank %}\n          <a href=\"{{ n2_path }}\">{{ n2 }}</a>\n        {% else %}\n          <span>{{ n2 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} N3 {%- endcomment -%}\n      {% if n3 != blank %}\n        <span class=\"lux-breadcrumb-separator\">/</span>\n        {% if n3_path != blank %}\n          <a href=\"{{ n3_path }}\">{{ n3 }}</a>\n        {% else %}\n          <span>{{ n3 }}</span>\n        {% endif %}\n      {% endif %}\n\n      {%- comment -%} Actual (producto o página, según el contexto) {%- endcomment -%}\n      <span class=\"lux-breadcrumb-separator\">/</span>\n      <span class=\"current\">{{ ctx.title }}</span>\n    </nav>\n\n    <h1 class=\"lux-title\">{{ ctx.title }}</h1>\n  </div>\n</div>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "breadcrumb_label": "Migas de pan",
+        "home_label": "Inicio",
+        "collection_label": "Casas de entramado ligero",
+        "collection_link": "/collections/light-frame-houses",
+        "eyebrow": "Modelo de vivienda · Entramado ligero",
+        "lead": "<p>Revisa el modelo, compara el alcance de sus configuraciones y valida las condiciones de parcela, base, logística y montaje antes de solicitar presupuesto.</p>",
+        "primary_label": "Comparar configuraciones",
+        "secondary_label": "Entender el entramado ligero",
+        "secondary_link": "/pages/light-timber-building-system-overview",
+        "summary_title": "Antes de pedir presupuesto",
+        "summary_aria_label": "Pasos antes de pedir presupuesto"
       }
     },
     "main": {
@@ -56,10 +79,10 @@
           "type": "_product-details",
           "static": true,
           "settings": {
-            "gap": 20,
-            "sticky_details_desktop": true,
+            "gap": 18,
+            "sticky_details_desktop": false,
             "width": "fill",
-            "custom_width": 75,
+            "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "inherit_color_scheme": true,
@@ -71,236 +94,110 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "padding-block-start": 18,
-            "padding-block-end": 48,
+            "padding-block-start": 0,
+            "padding-block-end": 28,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_JtXipy": {
-              "type": "group",
-              "name": "t:names.group",
+            "features_heading": {
+              "type": "text",
+              "name": "Características del producto",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 65,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 12,
+                "text": "<h2>Características y planteamiento</h2>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 4,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_description": {
+              "type": "product-description",
+              "name": "Características del producto",
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 6,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "scope_note": {
+              "type": "text",
+              "name": "Alcance y configuraciones",
+              "settings": {
+                "text": "<p><strong>Precio de partida.</strong> Compara BASIC, STANDARD y PASSIVE por alcance antes de solicitar presupuesto. El importe final depende de la configuración y de las condiciones reales del proyecto.</p><p><a href=\"#ie-habitable-packages\">Comparar configuraciones →</a></p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {
-                "group_xr9GGL": {
-                  "type": "group",
-                  "name": "Header",
-                  "settings": {
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "content_direction": "column",
-                    "vertical_on_mobile": true,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "flex-start",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 8,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {
-                    "group_K8TE9x": {
-                      "type": "group",
-                      "name": "Price & Rating",
-                      "settings": {
-                        "link": "",
-                        "open_in_new_tab": false,
-                        "content_direction": "row",
-                        "vertical_on_mobile": true,
-                        "horizontal_alignment": "flex-start",
-                        "vertical_alignment": "flex-start",
-                        "align_baseline": false,
-                        "horizontal_alignment_flex_direction_column": "flex-start",
-                        "vertical_alignment_flex_direction_column": "center",
-                        "gap": 24,
-                        "width": "fill",
-                        "custom_width": 100,
-                        "width_mobile": "fill",
-                        "custom_width_mobile": 100,
-                        "height": "fit",
-                        "custom_height": 100,
-                        "inherit_color_scheme": true,
-                        "color_scheme": "",
-                        "background_media": "none",
-                        "video_position": "cover",
-                        "background_image_position": "cover",
-                        "border": "none",
-                        "border_width": 1,
-                        "border_opacity": 100,
-                        "border_radius": 0,
-                        "toggle_overlay": false,
-                        "overlay_color": "#00000026",
-                        "overlay_style": "solid",
-                        "gradient_direction": "to top",
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {
-                        "price_WRfkDh": {
-                          "type": "price",
-                          "disabled": true,
-                          "settings": {
-                            "product": "{{ closest.product }}",
-                            "show_sale_price_first": false,
-                            "show_installments": false,
-                            "show_tax_info": true,
-                            "type_preset": "h4",
-                            "width": "100%",
-                            "alignment": "left",
-                            "font": "var(--font-body--family)",
-                            "font_size": "1rem",
-                            "line_height": "normal",
-                            "letter_spacing": "normal",
-                            "case": "none",
-                            "color": "var(--color-foreground)",
-                            "padding-block-start": 4,
-                            "padding-block-end": 0,
-                            "padding-inline-start": 0,
-                            "padding-inline-end": 0
-                          },
-                          "blocks": {}
-                        },
-                        "review_m3RVcq": {
-                          "type": "review",
-                          "disabled": true,
-                          "settings": {
-                            "product": "{{ closest.product }}",
-                            "stars_style": "shaded",
-                            "show_number": true,
-                            "rating_color": "primary",
-                            "type_preset": "paragraph",
-                            "alignment": "left"
-                          },
-                          "blocks": {}
-                        }
-                      },
-                      "block_order": [
-                        "price_WRfkDh",
-                        "review_m3RVcq"
-                      ]
-                    }
-                  },
-                  "block_order": [
-                    "group_K8TE9x"
-                  ]
-                },
-                "custom_liquid_wYfRkd": {
-                  "type": "custom-liquid",
-                  "name": "t:names.custom_liquid",
-                  "settings": {
-                    "custom_liquid": "<style>\n/*====================\n  PRECIOS (PRICING BOXES)\n======================*/\n.pricing-section {\n  display: flex;\n  justify-content: center;\n  margin: 0 auto .5rem;\n}\n\n.pricing-boxes {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  gap: 1.5rem;\n  max-width: 960px;\n}\n\n.pricing-box {\n  background-color: #d9d9d9;\n  padding: .5rem;\n  text-align: center;\n  min-width: 200px;\n  border-radius: 8px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.1);\n  flex: 1 1 200px;\n}\n\n.pricing-basic{\nbackground: #F0EAE0;\n}\n.pricing-standard{\nbackground: #DDD2C0;\n}\n.pricing-passive{\nbackground: #C4B49A;\n}\n\n.pricing-box h4 {\n  margin: 0;\n  margin-bottom: 0.5rem;\n  text-transform: uppercase;\n}\n\n.pricing-box p {\n  margin: 0;\n}\n</style>\n\n<!-- PRECIOS -->\n<div class=\"pricing-section\">\n  <div class=\"pricing-boxes\">\n    <div class=\"pricing-box pricing-basic\">\n      <h4>BASIC</h4>\n      <p class=\"pricing-price\">{{ product.metafields.custom.price_basic.value | money }}</p>\n    </div>\n    <div class=\"pricing-box pricing-standard\">\n      <h4>STANDARD</h4>\n      <p class=\"pricing-price\">{{ product.metafields.custom.price_standard.value | money }}</p>\n    </div>\n    <div class=\"pricing-box pricing-passive\">\n      <h4>PASSIVE</h4>\n      <p class=\"pricing-price\">{{ product.metafields.custom.price_passive.value | money }}</p>\n    </div>\n  </div>\n</div>"
-                  },
-                  "blocks": {}
-                },
-                "product_description_8gHdXj": {
-                  "type": "product-description",
-                  "name": "Product description",
-                  "settings": {
-                    "text": "{{ closest.product.description }}",
-                    "width": "100%",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "variant_picker_nhbWcG": {
-                  "type": "variant-picker",
-                  "settings": {
-                    "product": "{{ closest.product }}",
-                    "variant_style": "buttons",
-                    "show_swatches": true,
-                    "alignment": "left",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
+              "blocks": {}
+            },
+            "variant_picker": {
+              "type": "variant-picker",
+              "settings": {
+                "product": "{{ closest.product }}",
+                "variant_style": "buttons",
+                "show_swatches": true,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "block_order": [
-                "group_xr9GGL",
-                "custom_liquid_wYfRkd",
-                "product_description_8gHdXj",
-                "variant_picker_nhbWcG"
-              ]
+              "blocks": {}
             }
           },
           "block_order": [
-            "group_JtXipy"
+            "features_heading",
+            "product_description",
+            "scope_note",
+            "variant_picker"
           ]
         }
       },
@@ -310,52 +207,192 @@
         "desktop_media_position": "left",
         "equal_columns": true,
         "limit_details_width": false,
-        "gap": 20,
+        "gap": 24,
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
-        "padding-block-end": 20
+        "padding-block-end": 32
       }
     },
-    "divider_VdaAeR": {
-      "type": "divider",
-      "name": "t:names.divider_section",
+    "packages": {
+      "type": "ie-habitable-product-packages",
+      "blocks": {
+        "basic": {
+          "type": "tier",
+          "settings": {
+            "label": "BASIC",
+            "price_source": "basic",
+            "tone": "light",
+            "tax_note": "IVA incluido · precio de referencia",
+            "summary": "Configuración de partida centrada en estructura y envolvente base. Revisa montaje, cimentación, instalaciones y acabados que quedan fuera.",
+            "details": "<h2><strong>Concepto comercial</strong></h2><p>La forma más accesible de arrancar una vivienda en entramado ligero de madera con un alcance claro: estructura portante y envolvente exterior preparada para cumplir normativa en España, sin añadir partidas que no necesitas al inicio.</p><h2><strong>¿Qué es?</strong></h2><p>Un kit prefabricado de entramado ligero con madera estructural + arriostramiento + capas principales de envolvente para que tu vivienda pueda avanzar con base técnica, lista para integrarse en un proyecto de arquitectura conforme a CTE y cálculo.</p><h2><strong>Para quién es</strong></h2><ul><li>Autopromotores que quieren controlar presupuesto y avanzar por fases.</li><li>Promotores, constructoras y estudios que buscan un sistema industrializado con alcance delimitado.</li><li>Clientes que priorizan rapidez de ejecución, y dejan instalaciones y acabados para una etapa posterior.</li></ul><h2><strong>Qué te entregamos</strong></h2><ul><li>Kit estructural mecanizado (piezas cortadas y preparadas) para montaje en obra.</li><li>Carpinterías exteriores básicas y puerta de entrada según alcance indicado.</li><li>Capas de envolvente para cumplimiento CTE en proyecto (según zona climática y definición del técnico).</li><li>Preinstalaciones incluidas (pasos y previsión técnica para instalaciones).</li><li>Transporte en Península incluido (entrega y descarga).<br/></li></ul><h2><strong>Qué incluye</strong></h2><h2><strong>1) Estructura portante</strong></h2><ul><li>Madera estructural C24 (o C16 si el cálculo lo permite), seca en cámara (humedad aprox. ≤ 18%), cepillada/calibrada y con marcado CE.<br/></li><li>Entramado vertical habitual con montantes tipo 45×120 / 45×140 mm, modulación 400/600 mm (según cálculo y diseño).<br/></li><li>Forjados y estructura base de cubierta con viguetas/elementos dimensionables según luces y sobrecargas.<br/></li><li>Arriostramiento con tablero OSB/3 (uso estructural), espesores habituales 11–15 mm según función.<br/></li><li>Uniones con tornillería y herrajes estándar de uso estructural (escuadras/conectores y fijaciones adecuadas a cálculo).<br/></li></ul><h2><strong>2. Envolvente térmica</strong></h2><p>Solución de fachada optimizada coste / prestaciones, lista para definir acabado en proyecto:</p><ul><li>Capa interior continua de control de aire y vapor (lámina o solución equivalente, solapada y sellada).<br/></li><li>Aislamiento en cavidad dentro del entramado (lana mineral o equivalente), espesor orientativo 120–140 mm (ajustable por clima).<br/></li><li>Tablero estructural exterior OSB/3.<br/></li><li>Preparación para remate exterior definido en proyecto: SATE o revestimiento ligero con cámara ventilada.<br/></li></ul><h2><strong>3. Cubierta </strong></h2><ul><li>Sistema estructural de cubierta con vigas y correas dimensionables según cálculo.<br/></li><li>Láminas de protección frente a agua/condensaciones previstas en solución.<br/></li><li>Sin teja / chapa / impermeabilización vista ni acabado exterior final (se define y contrata aparte).<br/></li></ul><h2><strong>4. Carpinterías y vidrio</strong></h2><ul><li>Ventanas de PVC multicámara con rotura de puente térmico, doble acristalamiento 4/16/4 con gas argón, prestaciones declaradas según UNE-EN 14351-1.<br/></li><li>Sin persianas incluidos.<br/></li><li>Puerta de entrada blindada RC2 con cierre multipunto.<br/></li><li>Puertas interiores estándar (acabado básico).<br/></li></ul><h2><strong>5. Salubridad, humedad y radón</strong></h2><ul><li>Detalles tipo para arranques, zócalos, huecos, remates y solapes de láminas.<br/></li><li>Preparación para ventilación HS3 mediante solución mecánica sencilla (definible en proyecto).<br/></li><li>Previsión para solución anti-radón bajo solera cuando el municipio lo exija (definición en proyecto).<br/></li></ul><h2><strong>6. Acústica e incendio</strong></h2><ul><li>Base compatible con soluciones de aislamiento en cavidad y sellados perimetrales justificables en proyecto.<br/></li><li>Preparación para revestimientos interiores y pasos de instalaciones con criterio de sectorización y reacción al fuego según proyecto.<br/></li></ul><h2><strong>7. Preinstalaciones incluidas</strong></h2><ul><li>Previsión de pasos y registros para instalaciones (electricidad, fontanería, ventilación) para facilitar ejecución posterior sin improvisación en obra.<br/></li></ul><h2><strong>8. Transporte</strong></h2><ul><li>Entrega del kit con planificación logística y descarga incluida en Península (según accesos).<br/></li></ul><h2><strong>Qué NO incluye</strong></h2><ul><li>Proyecto visado, cálculo, dirección de obra, licencias, coordinación de seguridad y salud.<br/></li><li>Estudio geotécnico, movimiento de tierras, cimentación/solera.<br/></li><li>Montaje de estructura (disponible como servicio adicional si lo necesitas).<br/></li><li>Instalaciones completas (electricidad, fontanería, saneamiento, climatización) y sus equipos.<br/></li><li>Acabados interiores (pintura, suelos, falsos techos, carpintería decorativa).<br/></li><li>Acabados exteriores finales (SATE/ventilada definitiva, canalones, remates decorativos).<br/></li><li>Cocina, baños, armarios y mobiliario.<br/></li></ul><h2><strong>Fases constructivas paso a paso</strong></h2><ol><li><strong>Definición de necesidades</strong>: superficie, distribución, tipología de cubierta y nivel de prestaciones esperado.<br/></li><li><strong>Coordinación con tu técnico</strong>: el sistema se integra en el proyecto para justificar CTE y cálculo.<br/></li><li><strong>Cierre de alcance</strong>: se fijan dimensiones, composición de fachada y huecos de carpintería.<br/></li><li><strong>Fabricación del kit</strong>: mecanizado, preparación y embalaje para obra.<br/></li><li><strong>Preparación de parcela</strong>: cimentación y replanteo por tu equipo (o empresa contratada).<br/></li><li><strong>Entrega en obra</strong> y acopio.<br/></li><li><strong>Montaje</strong> por tu equipo o servicio de montaje adicional.<br/></li><li><strong>Cierre de envolvente</strong> y continuación por fases: instalaciones, acabados, equipamiento.<br/></li></ol><h2><strong>Llamada a la acción</strong></h2><p>Pide tu propuesta BASIC con alcance cerrado, medición orientativa y una composición de cerramiento adaptada a tu zona climática. Cuéntanos ubicación, m² aproximados y número de habitaciones, y te respondemos con una solución lista para proyecto.</p>"
+          }
+        },
+        "standard": {
+          "type": "tier",
+          "settings": {
+            "label": "STANDARD",
+            "price_source": "standard",
+            "tone": "mid",
+            "tax_note": "IVA incluido · precio de referencia",
+            "summary": "Configuración intermedia con mayor alcance de envolvente, aislamiento y control de hermeticidad. Confirma incluidos, exclusiones y montaje.",
+            "details": "<h2><strong>Concepto comercial</strong></h2><p>Una vivienda en madera para vivir todo el año con sensación de solidez: menos corrientes, temperatura más estable, mejor comportamiento acústico y una envolvente que reduce consumos, preparada para el clima real de España (invierno y verano).</p><h2><strong>¿Qué es?</strong></h2><p>Un kit prefabricado de entramado ligero con estructura + envolvente de doble capa + hermeticidad trabajada + cubierta completa, incorporando mejoras que se notan en el uso diario: continuidad térmica, sellados, paquete acústico y carpinterías con instalación correcta.</p><h2><strong>Para quién es</strong></h2><ul><li>Vivienda habitual o segunda residencia de uso intensivo.<br/></li><li>Autopromotores que quieren un sistema “para entrar a vivir” sin ir a lo mínimo.<br/></li><li>Promotores y técnicos que buscan un estándar alto de confort sin depender de soluciones improvisadas en obra.<br/></li></ul><h2><strong>Qué te entregamos</strong></h2><ul><li>Kit estructural mecanizado listo para montaje.<br/></li><li>Sistema de envolvente con aislamiento en cavidad + aislamiento continuo exterior.<br/></li><li>Sistema completo de hermeticidad (cintas, sellados y previsión de pasamuros).<br/></li><li>Cubierta completa con aislamiento y acabado exterior incluido según alcance indicado.<br/></li><li>Carpinterías exteriores y vidrio de mayor nivel, con criterio de instalación estanca.<br/></li><li>Preinstalaciones incluidas.<br/></li><li>Transporte en Península incluido (entrega y descarga).<br/></li></ul><h2><strong>Qué incluye</strong></h2><h2><strong>1. Estructura portante</strong></h2><ul><li>Madera estructural C24 (o C16 cuando proceda), con marcado CE, secado controlado y mecanizado.<br/></li><li>Entramado habitual con montantes tipo 45×140 / 45×160 mm (según cálculo y diseño), modulación 400/600.<br/></li><li>OSB/3 estructural en muros/diafragmas (11–15 mm según función).<br/></li><li>Uniones con tornillería y herrajes metálicos adecuados a uso estructural y verificables en cálculo.<br/></li></ul><h2><strong>2. Envolvente superior de doble capa</strong></h2><p>Composición orientativa (ajustable por clima y proyecto):</p><ul><li>Capa interior continua de control de aire y vapor, sellada.<br/></li><li>Aislamiento en cavidad en el entramado (aprox. 140–160 mm).<br/></li><li>OSB/3 estructural.<br/></li><li>Membrana exterior transpirable y cortaviento, con solapes y sellados coherentes.<br/></li><li>Aislamiento continuo exterior para reducir puentes térmicos (aprox. 40–80 mm).<br/></li><li>Soporte preparado para acabado exterior final a definir: SATE o fachada ventilada ligera.<br/></li></ul><h2><strong>3. Hermeticidad completa (confort sin corrientes)</strong></h2><ul><li>Cintas y sellados en encuentros de paneles, juntas y puntos singulares.<br/></li><li>Previsión de pasamuros y tratamiento de penetraciones para instalaciones.<br/></li><li>Encuentros estancos con carpinterías mediante sellado interior/exterior.<br/></li></ul><h2><strong>4. Cubierta completa (estructura + aislamiento + acabado exterior)</strong></h2><ul><li>Vigas y correas dimensionadas según cálculo.<br/></li><li>Aislamiento superior en cubierta de alto rendimiento (orientativo <strong>200 mm</strong> según solución).<br/></li><li>Acabado exterior incluido: <strong>tégola asfáltica</strong> sobre soporte estructural OSB/3 (según alcance).<br/></li><li>Acabado interior: friso de madera cepillada (según alcance).<br/></li></ul><h2><strong>5. Carpinterías y vidrio (mejor percepción de calidad)</strong></h2><ul><li>Ventanas con prestaciones declaradas UNE-EN 14351-1 y doble acristalamiento bajo emisivo de altas prestaciones; triple vidrio opcional según zona climática/orientación.<br/></li><li>Criterio de instalación: precerco, sellado interior/exterior y remates para lluvia/viento.<br/></li><li>Vidrios de seguridad donde corresponda (grandes paños, proximidad a suelo), y opciones de control solar/acústico según proyecto.<br/></li><li>Puerta de entrada blindada RC2 con cierre multipunto.<br/></li></ul><h2><strong>6. Acústica reforzada</strong></h2><ul><li>Soluciones tipo con lana mineral en particiones, sellados perimetrales y mejoras en tabiques objetivo (doble placa donde aporte).<br/></li><li>Atención a encuentros y cajas técnicas para reducir transmisión de ruido.<br/></li></ul><h2><strong>7. Salubridad, humedad, ventilación y radón</strong></h2><ul><li>Detalles constructivos para arranques, zócalos, huecos y solapes de membranas.<br/></li><li>Preparación para ventilación mecánica bien planteada en proyecto (opción de doble flujo con recuperador si se define en instalaciones).<br/></li><li>Previsión de solución anti-radón bajo solera cuando aplique por municipio.<br/></li></ul><h2><strong>8. Preinstalaciones incluidas</strong></h2><ul><li>Pasos y previsión técnica para electricidad, fontanería, ventilación y climatización (para ejecutar instalaciones con orden, sin perforaciones improvisadas).<br/></li></ul><h2><strong>9. Transporte</strong></h2><ul><li>Entrega planificada con descarga incluida en Península (según accesos).<br/></li></ul><h2><strong>Qué NO incluye</strong></h2><ul><li>Proyecto visado, dirección de obra, licencias, coordinación de seguridad y salud.<br/></li><li>Geotécnico, movimiento de tierras, cimentación/solera.<br/></li><li>Montaje de estructura (servicio adicional disponible).<br/></li><li>Instalaciones completas y equipos (electricidad, fontanería, saneamiento, climatización, ventilación con máquina).<br/></li><li>Pintura, suelos, falsos techos, carpintería decorativa, mobiliario.<br/></li><li>Cocina, sanitarios, armarios y equipamiento interior.<br/></li></ul><h2><strong>Fases constructivas paso a paso</strong></h2><ol><li><strong>Definición de programa</strong>: m², distribución, orientación, huecos y prioridades de confort.<br/></li><li><strong>Coordinación con tu técnico</strong>: composición de cerramientos y justificación CTE en proyecto.<br/></li><li><strong>Cierre de alcance</strong>: fachada, carpinterías, cubierta y nivel acústico objetivo.<br/></li><li><strong>Fabricación</strong> del kit y preparación logística.<br/></li><li><strong>Preparación de parcela</strong>: cimentación y replanteo por empresa contratada.<br/></li><li><strong>Entrega y acopio</strong> en obra.<br/></li><li><strong>Montaje</strong> por tu equipo o servicio adicional.<br/></li><li><strong>Cierre de envolvente</strong> y ejecución de instalaciones (aprovechando preinstalaciones).<br/></li><li><strong>Acabados interiores</strong> y puesta en marcha.<br/></li></ol><h2><strong>Llamada a la acción</strong></h2><p>Solicita tu STANDARD con una propuesta de cerramiento adaptada a tu zona climática y un alcance claro. Indica ubicación, m² aproximados, número de estancias y tipo de cubierta, y te preparamos una solución lista para proyecto y obra.</p>"
+          }
+        },
+        "passive": {
+          "type": "tier",
+          "settings": {
+            "label": "PASSIVE",
+            "price_source": "passive",
+            "tone": "deep",
+            "tax_note": "IVA incluido · precio de referencia",
+            "summary": "Configuración de mayor alcance con envolvente avanzada y más partidas de ejecución. Las prestaciones finales dependen del proyecto y la obra.",
+            "details": "<h2><strong>Concepto comercial</strong></h2><p>Una vivienda premium en madera pensada para máxima estabilidad térmica, silencio real y calidad de aire interior. Envolvente de alto rendimiento con detalle y control, diseñada para objetivos de muy baja demanda energética cuando el proyecto y la ejecución se plantean para ello.</p><h2><strong>¿Qué es?</strong></h2><p>Un paquete premium que integra estructura + envolvente avanzada + carpinterías de alto rendimiento, y añade cimentación y montaje completo por equipos cualificados, con instalaciones interiores incluidas según alcance indicado. Preparado para ensayos y verificación en obra cuando se contraten.</p><h2><strong>Para quién es</strong></h2><ul><li>Vivienda principal exigente y uso intensivo (familias, teletrabajo, estancias largas).<br/></li><li>Clientes sensibles a humedad, moho o alérgenos que priorizan aire interior controlado.<br/></li><li>Promotores y técnicos que buscan un producto industrializado con ejecución guiada y resultado consistente.<br/></li></ul><h2><strong>Qué te entregamos</strong></h2><ul><li>Cimentación estructural según diseño (losa/zapatas/pilotes, según proyecto).<br/></li><li>Montaje completo de estructura, cubierta y fachada por equipo especializado.<br/></li><li>Envolvente premium con gran continuidad térmica, hermeticidad avanzada y control de condensaciones.<br/></li><li>Carpinterías y vidrio de nivel alto con criterio de instalación en plano de aislamiento.<br/></li><li>Instalaciones interiores incluidas según alcance: electricidad y fontanería/saneamiento dentro de la vivienda.<br/></li><li>Preinstalaciones incluidas (ventilación, climatización y pasos técnicos).<br/></li><li>Transporte en Península incluido.<br/></li></ul><h2><strong>Qué incluye</strong></h2><p><strong>1. Estructura portante</strong></p><ul><li>Madera estructural C24 o superior (según definición), con marcado CE, secado controlado, mecanizado y tratamiento según clase de uso/exposición.<br/></li><li>Entramado premium con secciones habituales 45×160 / 45×200 mm (según cargas y objetivo térmico), modulación 400/600.<br/></li><li>OSB/3 estructural 12–15 mm y uniones con herrajes profesionales y tornillería estructural.<br/></li></ul><p><strong>2. Envolvente premium</strong><br/>Composición orientativa (ajustable por clima y proyecto), espesor total habitual 320–420 mm:</p><ul><li>Membrana interior avanzada de control de vapor/aire (tipo variable o equivalente) con sellado continuo.<br/></li><li>Aislamiento en cavidad de alto espesor 160–200 mm (lana mineral, fibra de madera u otro con prestaciones declaradas).<br/></li><li>OSB/3 estructural.<br/></li><li>Membrana exterior transpirable de altas prestaciones (cortaviento/agua) con solapes y sellados definidos.<br/></li><li>Aislamiento continuo exterior premium 80–140 mm para minimizar puentes térmicos.<br/></li><li>Preparación para acabado exterior robusto a definir: SATE premium o fachada ventilada de calidad.<br/></li></ul><p><strong>3. Cubierta de alto rendimiento</strong></p><ul><li>Estructura portante incluida y ejecutada.<br/></li><li>Aislamiento alto espesor orientativo 240–360 mm según clima/solución.<br/></li><li>Láminas y sellados de altas prestaciones para control de condensaciones y estanqueidad.<br/></li><li>Encuentros fachada–cubierta resueltos para continuidad térmica.<br/></li></ul><p><strong>4. Hermeticidad avanzada preparada para ensayo</strong></p><ul><li>Sistema completo de cintas, adhesivos, selladores y pasamuros para penetraciones.<br/></li><li>Detalle de encuentro con carpinterías para continuidad de la capa estanca.<br/></li><li>Preparación para blower door cuando se contrate como verificación en obra (el resultado depende de proyecto, ejecución y ensayo).<br/></li></ul><p><strong>5. Puentes térmicos</strong></p><ul><li>Huecos instalados en plano de aislamiento.<br/></li><li>Arranques y zócalos con continuidad térmica y control de humedad.<br/></li><li>Encuentros fachada–forjado, esquinas, pasos de instalaciones y remates.<br/></li></ul><p><strong>6. Carpinterías y vidrio premium</strong></p><ul><li>Ventanas de altas prestaciones con triple acristalamiento (o solución equivalente definida por clima/orientación), prestaciones declaradas UNE-EN 14351-1.<br/></li><li>Instalación estanca y térmicamente coherente: precerco, sellado interior/exterior y remates completos.<br/></li><li>Opciones de vidrio muy útiles en España: control solar por orientación, laminado acústico, seguridad en grandes paños.<br/></li><li>Puerta de entrada RC2 con cierre multipunto y alta estanqueidad.<br/></li></ul><p><strong>7. Confort acústico premium</strong></p><ul><li>Desacoples en particiones críticas, dobles placas donde aporte, lanas de mayor densidad y sellados exigentes.<br/></li><li>Tratamiento cuidadoso de cajas técnicas y pasos para evitar transmisión de ruido.<br/></li></ul><p><strong>8. Ventilación y salud interior</strong></p><ul><li>Previsión para ventilación mecánica de doble flujo con recuperación (si se define en proyecto de instalaciones).<br/></li><li>Espacios y pasos técnicos para ejecución ordenada de conductos y registros.<br/></li><li>Preparación para filtración y sensores (CO₂/humedad) si se desea.<br/></li></ul><p><strong>9. Radón y humedad</strong></p><ul><li>Solución prevista bajo solera cuando aplique por municipio (definición y ejecución asociada a la obra).<br/></li><li>Detalles de impermeabilización, drenaje y control de encuentros para durabilidad.<br/></li></ul><p><strong>10. Instalaciones interiores incluidas</strong></p><ul><li>Instalación eléctrica interior (canalizaciones, mecanismos y cuadro).<br/></li><li>Fontanería interior de ACS/AF y evacuación dentro de la vivienda conforme a CTE.<br/></li><li>Previsión para cocina/baños y climatización según diseño.<br/></li><li>No incluye acometidas exteriores ni equipos especiales salvo contratación aparte.<br/></li></ul><p><strong>11. Cimentación y montaje completo</strong></p><ul><li>Ejecución de cimentación estructural según proyecto.<br/></li><li>Montaje integral de estructura, cubierta y fachada por equipos cualificados.<br/></li></ul><p><strong>12. Transporte</strong></p><ul><li>Entrega y logística coordinada en Península.<br/></li></ul><h2><strong>Qué NO incluye</strong></h2><ul><li>Proyecto visado, dirección facultativa, licencias, coordinación de seguridad y salud (contratables aparte).<br/></li><li>Movimiento de tierras previo, nivelación general de parcela y gestión exterior del terreno.<br/></li><li>Acometidas exteriores (saneamiento a red/fosa, agua, electricidad) y urbanización exterior.<br/></li><li>Equipos de climatización, máquina de ventilación, fotovoltaica y domótica (opcionales).<br/></li><li>Acabados decorativos: pintura, suelos finales, mobiliario, cocina, sanitarios, armarios.<br/></li></ul><h2><strong>Fases constructivas paso a paso</strong></h2><ol><li><strong>Definición del programa</strong>: uso, m², orientación, grandes huecos, control solar y objetivos de confort.<br/></li><li><strong>Coordinación técnica</strong>: el proyecto define cerramientos, instalaciones y justificación normativa.<br/></li><li><strong>Planificación de obra</strong>: replanteo, accesos, logística, fechas y secuencia de montaje.<br/></li><li><strong>Cimentación</strong> según proyecto.<br/></li><li><strong>Montaje integral</strong> de estructura, cubierta y fachada.<br/></li><li><strong>Cierre de envolvente</strong> con sellados, control de puntos singulares y carpinterías.<br/></li><li><strong>Instalaciones interiores</strong> y preinstalaciones previstas.<br/></li><li><strong>Acabados interiores</strong> y puesta en marcha de equipos si se contratan.<br/></li><li><strong>Verificación en obra</strong> (ensayos y mediciones) si se contrata.<br/></li></ol><h2><strong>Llamada a la acción</strong></h2><p>Solicita PASSIVE si buscas una vivienda premium con ejecución guiada, envolvente avanzada y confort alto. Envíanos ubicación, m², número de estancias, tipo de parcela y una idea de distribución, y preparamos una propuesta con alcance claro y criterios técnicos para tu proyecto.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "basic",
+        "standard",
+        "passive"
+      ],
       "settings": {
-        "color_scheme": "",
-        "section_width": "full-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 16,
-        "padding-block-end": 16
+        "eyebrow": "Configuraciones",
+        "heading": "Compara precio y alcance antes de decidir",
+        "intro": "<p>BASIC, STANDARD y PASSIVE no son solo tres precios: cambian la composición, el nivel de suministro, el montaje y los trabajos que deben coordinarse dentro o fuera del paquete.</p>",
+        "note": "<p><strong>Importante:</strong> los nombres comerciales de las configuraciones no equivalen por sí solos a una certificación energética o del edificio. Las prestaciones y la justificación normativa dependen de la composición validada, el emplazamiento, el proyecto y la ejecución.</p>"
       }
     },
-    "custom_liquid_qhhcp9": {
-      "type": "custom-liquid",
-      "name": "t:names.custom_liquid",
+    "process": {
+      "type": "ie-habitable-product-process",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Modelo",
+            "text": "Confirma superficie, distribución, porches y encaje con el uso previsto."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Configuración",
+            "text": "Elige BASIC, STANDARD o PASSIVE según el alcance de estructura, envolvente, montaje e instalaciones que necesitas."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Validación",
+            "text": "Revisamos ubicación, parcela, base, accesos, logística, montaje y condicionantes técnicos antes de cerrar la propuesta."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
       "settings": {
-        "custom_liquid": "{%- comment -%}\nTabla comparativa (responsive) — pegar en una sección \"Custom liquid\"\n- Desktop/Tablet: tabla normal\n- Móvil: filas tipo “tarjeta” con etiquetas\n{%- endcomment -%}\n\n<section class=\"cmp-compare color-{{ section.settings.color_scheme | default: 'background-1' }}\">\n  <div class=\"page-width\">\n    <div class=\"cmp-compare__header\">\n      <h4 class=\"cmp-compare__title\">Comparativa de niveles</h4>\n      <p class=\"cmp-compare__subtitle\">Checklist rápido (BASIC / STANDARD / PASSIVE)</p>\n    </div>\n\n    <div class=\"cmp-compare__table-wrap\" role=\"region\" aria-label=\"Tabla comparativa\" tabindex=\"0\">\n      <table class=\"cmp-compare__table\">\n        <thead>\n          <tr>\n            <th scope=\"col\" class=\"cmp-compare__q\">Pregunta</th>\n            <th scope=\"col\" class=\"cmp-compare__plan\">BASIC</th>\n            <th scope=\"col\" class=\"cmp-compare__plan\">STANDARD</th>\n            <th scope=\"col\" class=\"cmp-compare__plan\">PASSIVE</th>\n          </tr>\n        </thead>\n\n        <tbody>\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿El kit de entramado ligero llega mecanizado y listo para montar (piezas cortadas/preparadas) para ahorrar tiempo en obra?\n            </th>\n            <td data-label=\"BASIC\">{{ '✓' | escape }}</td>\n            <td data-label=\"STANDARD\">{{ '✓' | escape }}</td>\n            <td data-label=\"PASSIVE\">{{ '✓' | escape }}</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La madera es estructural (C24/C16 según cálculo), seca y con documentación/CE apta para vivienda en España (CTE)?\n            </th>\n            <td data-label=\"BASIC\">✓</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La estructura incorpora rigidización anti-deformaciones (tableros estructurales tipo OSB/3 y arriostramiento)?\n            </th>\n            <td data-label=\"BASIC\">✓</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La envolvente deja la fachada preparada para elegir después SATE o fachada ventilada sin rehacer nada?\n            </th>\n            <td data-label=\"BASIC\">✓</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye previsión técnica para instalaciones (pasos de electricidad/fontanería/ventilación) y transporte+descarga en Península?\n            </th>\n            <td data-label=\"BASIC\">✓</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye aislamiento continuo exterior (además del aislamiento interior) para reducir puentes térmicos y estabilizar la temperatura?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Viene con hermeticidad “de verdad” (cintas y sellados en juntas/esquinas) para evitar corrientes con el tiempo?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye lámina exterior transpirable cortaviento/impermeable para proteger el aislamiento y gestionar la humedad?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Las ventanas están planteadas con instalación estanca (precerco + sellado interior/exterior) para evitar agua/aire alrededor del hueco?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La cubierta viene “completa” (aislamiento potente + acabado exterior instalado + opción de acabado interior tipo madera vista)?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">✓</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye la cimentación estructural (losa/zapatas según proyecto) para empezar a montar sin contratar esa parte aparte?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye el montaje completo de estructura + cubierta + fachada por equipo especializado (no solo suministro del kit)?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿La madera llega con tratamiento según clase de uso/exposición para máxima durabilidad en zonas sensibles?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Incluye instalaciones interiores dentro de la vivienda (electricidad + fontanería/desagües) sin subcontratarlo aparte?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n\n          <tr>\n            <th scope=\"row\" class=\"cmp-compare__q\">\n              ¿Deja preparada la casa para calidad de aire premium (preparación para filtros y sensores CO₂/humedad) y puerta de entrada muy estanca “cero corrientes”?\n            </th>\n            <td data-label=\"BASIC\">—</td>\n            <td data-label=\"STANDARD\">—</td>\n            <td data-label=\"PASSIVE\">✓</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <style>\n    .cmp-compare { padding: 1.25rem 0; }\n    .cmp-compare__header { margin-bottom: .75rem; }\n    .cmp-compare__title {\n      margin: 0 0 .15rem 0;\n      font-family: var(--font-heading-family, inherit);\n      letter-spacing: .01em;\n      line-height: 1.2;\n    }\n    .cmp-compare__subtitle {\n      margin: 0;\n      opacity: .75;\n      font-size: .95em;\n    }\n\n    .cmp-compare__table-wrap{\n      border: 1px solid rgba(var(--color-foreground), .12);\n      border-radius: 14px;\n      background: rgb(var(--color-background));\n      overflow: hidden;\n    }\n\n    /* Desktop/tablet: tabla limpia */\n    .cmp-compare__table{\n      width: 100%;\n      border-collapse: separate;\n      border-spacing: 0;\n      font-size: .98em;\n    }\n    .cmp-compare__table thead th{\n      position: sticky;\n      top: 0;\n      z-index: 2;\n      background: rgb(var(--color-background));\n      border-bottom: 1px solid rgba(var(--color-foreground), .12);\n      padding: .8rem .9rem;\n      text-align: left;\n      font-weight: 600;\n      white-space: nowrap;\n    }\n    .cmp-compare__table thead th.cmp-compare__plan{ text-align: center; }\n\n    .cmp-compare__table tbody th,\n    .cmp-compare__table tbody td{\n      padding: .75rem .9rem;\n      border-bottom: 1px solid rgba(var(--color-foreground), .08);\n      vertical-align: top;\n    }\n\n    .cmp-compare__table tbody tr:nth-child(even) th,\n    .cmp-compare__table tbody tr:nth-child(even) td{\n      background: rgba(var(--color-foreground), .02);\n    }\n\n    .cmp-compare__q{\n      width: 55%;\n      font-weight: 500;\ntext-align: left;\n    }\n\n    .cmp-compare__table tbody td{\n      text-align: center;\n      width: 15%;\n      font-weight: 700;\n      letter-spacing: .02em;\n    }\n\n    /* Sí / No con look minimal */\n    .cmp-compare__table tbody td:where(:contains(\"✓\")) { }\n    .cmp-compare__table tbody td{\n      color: rgb(var(--color-foreground));\n    }\n    .cmp-compare__table tbody td[data-label]:where(:contains(\"—\")) { }\n    .cmp-compare__table tbody td{\n      font-variant-numeric: tabular-nums;\n    }\n    .cmp-compare__table tbody td:empty::before{\n      content: \"—\";\n      opacity: .55;\n    }\n    .cmp-compare__table tbody td{\n      line-height: 1.1;\n    }\n    .cmp-compare__table tbody td{\n      /* Atenúa el “—” */\n    }\n    .cmp-compare__table tbody td{\n      /* (sin colores hardcodeados; se integra con el tema) */\n    }\n    .cmp-compare__table tbody td{\n      /* Ajuste fino: “—” más suave */\n    }\n    .cmp-compare__table tbody td:where(:not(:contains(\"✓\"))){\n      /* no-op */\n    }\n    .cmp-compare__table tbody td{\n      /* fallback */\n    }\n    .cmp-compare__table tbody td{\n      /* Si usas “—”, queda más discreto */\n    }\n    .cmp-compare__table tbody td{\n      /* (no usamos verde/rojo para mantener look premium) */\n    }\n    .cmp-compare__table tbody td{\n      /* Detectar “—” con clase sería ideal, pero lo mantenemos simple */\n    }\n    .cmp-compare__table tbody td{\n      /* Alternativa: cambia los “—” por <span class=\"is-no\">—</span> si quieres aún más control */\n    }\n\n    /* Mobile: tarjetas por fila */\n    @media (max-width: 749px){\n      .cmp-compare__table thead{ display:none; }\n      .cmp-compare__table, .cmp-compare__table tbody, .cmp-compare__table tr,\n      .cmp-compare__table th, .cmp-compare__table td{ display:block; width:100%; }\n\n      .cmp-compare__table tr{\n        border-bottom: 1px solid rgba(var(--color-foreground), .10);\n      }\n\n      .cmp-compare__table tbody th.cmp-compare__q{\n        padding: .85rem .9rem .75rem;\n        background: rgba(var(--color-foreground), .02);\n        font-weight: 600;\n      }\n\n      .cmp-compare__table tbody td{\n        padding: .65rem .9rem;\n        text-align: right;\n        font-weight: 700;\n      }\n\n      .cmp-compare__table tbody td::before{\n        content: attr(data-label);\n        float: left;\n        opacity: .75;\n        font-weight: 600;\n      }\n\n      .cmp-compare__table tbody tr:last-child{\n        border-bottom: 0;\n      }\n    }\n  </style>\n</section>",
-        "color_scheme": "",
+        "eyebrow": "Cómo avanzar",
+        "heading": "Del modelo al presupuesto",
+        "intro": "<p>Partimos de un modelo reconocible, elegimos un nivel de alcance y validamos las condiciones reales que afectan a fabricación y ejecución.</p>",
+        "link_label": "Ver cómo trabajamos",
+        "link": "/pages/services"
+      }
+    },
+    "quote_intro": {
+      "type": "section",
+      "blocks": {
+        "quote_heading": {
+          "type": "text",
+          "name": "Presupuesto",
+          "settings": {
+            "text": "<h2>Solicita presupuesto para este modelo</h2>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "quote_text": {
+          "type": "text",
+          "name": "Introducción",
+          "settings": {
+            "text": "<p>Indica el modelo que estás revisando, la ubicación de la parcela y la configuración que mejor encaja contigo. Con esa información podremos validar alcance, logística y siguientes pasos.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "quote_heading",
+        "quote_text"
+      ],
+      "name": "Solicitud de presupuesto",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 10,
         "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "divider_e7dGcf": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
+        "section_height": "",
+        "section_height_custom": 50,
         "color_scheme": "",
-        "section_width": "full-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 16,
-        "padding-block-end": 16
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 56,
+        "padding-block-end": 12
       }
     },
-    "176805135143cd7128": {
+    "quote_form": {
       "type": "_blocks",
       "blocks": {
         "powerful_form_builder_app_block_Qncarh": {
@@ -393,408 +430,6 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "divider_98i4bF": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "",
-        "section_width": "full-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 16,
-        "padding-block-end": 16
-      }
-    },
-    "section_DjM3tc": {
-      "type": "section",
-      "blocks": {
-        "text_6GYn4n": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h2>PARA MÁS INFORMACIÓN </h2>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_6GYn4n"
-      ],
-      "name": "t:names.custom_section",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "section_AczQVi": {
-      "type": "section",
-      "blocks": {
-        "group_AXhEUM": {
-          "type": "group",
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_LgHFAV": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>BASIC</h2><h2>{{ closest.product.metafields.custom.price_basic | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h2>",
-                "width": "100%",
-                "max_width": "none",
-                "alignment": "center",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#f0eae0",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_t97rHE": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<h2><strong>Concepto comercial</strong></h2><p>La forma más accesible de arrancar una vivienda en entramado ligero de madera con un alcance claro: estructura portante y envolvente exterior preparada para cumplir normativa en España, sin añadir partidas que no necesitas al inicio.</p><h2><strong>¿Qué es?</strong></h2><p>Un kit prefabricado de entramado ligero con madera estructural + arriostramiento + capas principales de envolvente para que tu vivienda pueda avanzar con base técnica, lista para integrarse en un proyecto de arquitectura conforme a CTE y cálculo.</p><h2><strong>Para quién es</strong></h2><ul><li>Autopromotores que quieren controlar presupuesto y avanzar por fases.</li><li>Promotores, constructoras y estudios que buscan un sistema industrializado con alcance delimitado.</li><li>Clientes que priorizan rapidez de ejecución, y dejan instalaciones y acabados para una etapa posterior.</li></ul><h2><strong>Qué te entregamos</strong></h2><ul><li>Kit estructural mecanizado (piezas cortadas y preparadas) para montaje en obra.</li><li>Carpinterías exteriores básicas y puerta de entrada según alcance indicado.</li><li>Capas de envolvente para cumplimiento CTE en proyecto (según zona climática y definición del técnico).</li><li>Preinstalaciones incluidas (pasos y previsión técnica para instalaciones).</li><li>Transporte en Península incluido (entrega y descarga).<br/></li></ul><h2><strong>Qué incluye</strong></h2><h2><strong>1) Estructura portante</strong></h2><ul><li>Madera estructural C24 (o C16 si el cálculo lo permite), seca en cámara (humedad aprox. ≤ 18%), cepillada/calibrada y con marcado CE.<br/></li><li>Entramado vertical habitual con montantes tipo 45×120 / 45×140 mm, modulación 400/600 mm (según cálculo y diseño).<br/></li><li>Forjados y estructura base de cubierta con viguetas/elementos dimensionables según luces y sobrecargas.<br/></li><li>Arriostramiento con tablero OSB/3 (uso estructural), espesores habituales 11–15 mm según función.<br/></li><li>Uniones con tornillería y herrajes estándar de uso estructural (escuadras/conectores y fijaciones adecuadas a cálculo).<br/></li></ul><h2><strong>2. Envolvente térmica</strong></h2><p>Solución de fachada optimizada coste / prestaciones, lista para definir acabado en proyecto:</p><ul><li>Capa interior continua de control de aire y vapor (lámina o solución equivalente, solapada y sellada).<br/></li><li>Aislamiento en cavidad dentro del entramado (lana mineral o equivalente), espesor orientativo 120–140 mm (ajustable por clima).<br/></li><li>Tablero estructural exterior OSB/3.<br/></li><li>Preparación para remate exterior definido en proyecto: SATE o revestimiento ligero con cámara ventilada.<br/></li></ul><h2><strong>3. Cubierta </strong></h2><ul><li>Sistema estructural de cubierta con vigas y correas dimensionables según cálculo.<br/></li><li>Láminas de protección frente a agua/condensaciones previstas en solución.<br/></li><li>Sin teja / chapa / impermeabilización vista ni acabado exterior final (se define y contrata aparte).<br/></li></ul><h2><strong>4. Carpinterías y vidrio</strong></h2><ul><li>Ventanas de PVC multicámara con rotura de puente térmico, doble acristalamiento 4/16/4 con gas argón, prestaciones declaradas según UNE-EN 14351-1.<br/></li><li>Sin persianas incluidos.<br/></li><li>Puerta de entrada blindada RC2 con cierre multipunto.<br/></li><li>Puertas interiores estándar (acabado básico).<br/></li></ul><h2><strong>5. Salubridad, humedad y radón</strong></h2><ul><li>Detalles tipo para arranques, zócalos, huecos, remates y solapes de láminas.<br/></li><li>Preparación para ventilación HS3 mediante solución mecánica sencilla (definible en proyecto).<br/></li><li>Previsión para solución anti-radón bajo solera cuando el municipio lo exija (definición en proyecto).<br/></li></ul><h2><strong>6. Acústica e incendio</strong></h2><ul><li>Base compatible con soluciones de aislamiento en cavidad y sellados perimetrales justificables en proyecto.<br/></li><li>Preparación para revestimientos interiores y pasos de instalaciones con criterio de sectorización y reacción al fuego según proyecto.<br/></li></ul><h2><strong>7. Preinstalaciones incluidas</strong></h2><ul><li>Previsión de pasos y registros para instalaciones (electricidad, fontanería, ventilación) para facilitar ejecución posterior sin improvisación en obra.<br/></li></ul><h2><strong>8. Transporte</strong></h2><ul><li>Entrega del kit con planificación logística y descarga incluida en Península (según accesos).<br/></li></ul><h2><strong>Qué NO incluye</strong></h2><ul><li>Proyecto visado, cálculo, dirección de obra, licencias, coordinación de seguridad y salud.<br/></li><li>Estudio geotécnico, movimiento de tierras, cimentación/solera.<br/></li><li>Montaje de estructura (disponible como servicio adicional si lo necesitas).<br/></li><li>Instalaciones completas (electricidad, fontanería, saneamiento, climatización) y sus equipos.<br/></li><li>Acabados interiores (pintura, suelos, falsos techos, carpintería decorativa).<br/></li><li>Acabados exteriores finales (SATE/ventilada definitiva, canalones, remates decorativos).<br/></li><li>Cocina, baños, armarios y mobiliario.<br/></li></ul><h2><strong>Fases constructivas paso a paso</strong></h2><ol><li><strong>Definición de necesidades</strong>: superficie, distribución, tipología de cubierta y nivel de prestaciones esperado.<br/></li><li><strong>Coordinación con tu técnico</strong>: el sistema se integra en el proyecto para justificar CTE y cálculo.<br/></li><li><strong>Cierre de alcance</strong>: se fijan dimensiones, composición de fachada y huecos de carpintería.<br/></li><li><strong>Fabricación del kit</strong>: mecanizado, preparación y embalaje para obra.<br/></li><li><strong>Preparación de parcela</strong>: cimentación y replanteo por tu equipo (o empresa contratada).<br/></li><li><strong>Entrega en obra</strong> y acopio.<br/></li><li><strong>Montaje</strong> por tu equipo o servicio de montaje adicional.<br/></li><li><strong>Cierre de envolvente</strong> y continuación por fases: instalaciones, acabados, equipamiento.<br/></li></ol><h2><strong>Llamada a la acción</strong></h2><p>Pide tu propuesta BASIC con alcance cerrado, medición orientativa y una composición de cerramiento adaptada a tu zona climática. Cuéntanos ubicación, m² aproximados y número de habitaciones, y te respondemos con una solución lista para proyecto.</p>",
-                "width": "100%",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "paragraph",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#f0eae0",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_LgHFAV",
-            "text_t97rHE"
-          ]
-        },
-        "group_EHMRTr": {
-          "type": "group",
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_czYbPY": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>STANDARD</h2><h2>{{ closest.product.metafields.custom.price_standard | metafield_tag }}<strong> (IVA INCLUIDO) </strong></h2>",
-                "width": "100%",
-                "max_width": "none",
-                "alignment": "center",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#ddd2c0",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_HXt33e": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<h2><strong>Concepto comercial</strong></h2><p>Una vivienda en madera para vivir todo el año con sensación de solidez: menos corrientes, temperatura más estable, mejor comportamiento acústico y una envolvente que reduce consumos, preparada para el clima real de España (invierno y verano).</p><h2><strong>¿Qué es?</strong></h2><p>Un kit prefabricado de entramado ligero con estructura + envolvente de doble capa + hermeticidad trabajada + cubierta completa, incorporando mejoras que se notan en el uso diario: continuidad térmica, sellados, paquete acústico y carpinterías con instalación correcta.</p><h2><strong>Para quién es</strong></h2><ul><li>Vivienda habitual o segunda residencia de uso intensivo.<br/></li><li>Autopromotores que quieren un sistema “para entrar a vivir” sin ir a lo mínimo.<br/></li><li>Promotores y técnicos que buscan un estándar alto de confort sin depender de soluciones improvisadas en obra.<br/></li></ul><h2><strong>Qué te entregamos</strong></h2><ul><li>Kit estructural mecanizado listo para montaje.<br/></li><li>Sistema de envolvente con aislamiento en cavidad + aislamiento continuo exterior.<br/></li><li>Sistema completo de hermeticidad (cintas, sellados y previsión de pasamuros).<br/></li><li>Cubierta completa con aislamiento y acabado exterior incluido según alcance indicado.<br/></li><li>Carpinterías exteriores y vidrio de mayor nivel, con criterio de instalación estanca.<br/></li><li>Preinstalaciones incluidas.<br/></li><li>Transporte en Península incluido (entrega y descarga).<br/></li></ul><h2><strong>Qué incluye</strong></h2><h2><strong>1. Estructura portante</strong></h2><ul><li>Madera estructural C24 (o C16 cuando proceda), con marcado CE, secado controlado y mecanizado.<br/></li><li>Entramado habitual con montantes tipo 45×140 / 45×160 mm (según cálculo y diseño), modulación 400/600.<br/></li><li>OSB/3 estructural en muros/diafragmas (11–15 mm según función).<br/></li><li>Uniones con tornillería y herrajes metálicos adecuados a uso estructural y verificables en cálculo.<br/></li></ul><h2><strong>2. Envolvente superior de doble capa</strong></h2><p>Composición orientativa (ajustable por clima y proyecto):</p><ul><li>Capa interior continua de control de aire y vapor, sellada.<br/></li><li>Aislamiento en cavidad en el entramado (aprox. 140–160 mm).<br/></li><li>OSB/3 estructural.<br/></li><li>Membrana exterior transpirable y cortaviento, con solapes y sellados coherentes.<br/></li><li>Aislamiento continuo exterior para reducir puentes térmicos (aprox. 40–80 mm).<br/></li><li>Soporte preparado para acabado exterior final a definir: SATE o fachada ventilada ligera.<br/></li></ul><h2><strong>3. Hermeticidad completa (confort sin corrientes)</strong></h2><ul><li>Cintas y sellados en encuentros de paneles, juntas y puntos singulares.<br/></li><li>Previsión de pasamuros y tratamiento de penetraciones para instalaciones.<br/></li><li>Encuentros estancos con carpinterías mediante sellado interior/exterior.<br/></li></ul><h2><strong>4. Cubierta completa (estructura + aislamiento + acabado exterior)</strong></h2><ul><li>Vigas y correas dimensionadas según cálculo.<br/></li><li>Aislamiento superior en cubierta de alto rendimiento (orientativo <strong>200 mm</strong> según solución).<br/></li><li>Acabado exterior incluido: <strong>tégola asfáltica</strong> sobre soporte estructural OSB/3 (según alcance).<br/></li><li>Acabado interior: friso de madera cepillada (según alcance).<br/></li></ul><h2><strong>5. Carpinterías y vidrio (mejor percepción de calidad)</strong></h2><ul><li>Ventanas con prestaciones declaradas UNE-EN 14351-1 y doble acristalamiento bajo emisivo de altas prestaciones; triple vidrio opcional según zona climática/orientación.<br/></li><li>Criterio de instalación: precerco, sellado interior/exterior y remates para lluvia/viento.<br/></li><li>Vidrios de seguridad donde corresponda (grandes paños, proximidad a suelo), y opciones de control solar/acústico según proyecto.<br/></li><li>Puerta de entrada blindada RC2 con cierre multipunto.<br/></li></ul><h2><strong>6. Acústica reforzada</strong></h2><ul><li>Soluciones tipo con lana mineral en particiones, sellados perimetrales y mejoras en tabiques objetivo (doble placa donde aporte).<br/></li><li>Atención a encuentros y cajas técnicas para reducir transmisión de ruido.<br/></li></ul><h2><strong>7. Salubridad, humedad, ventilación y radón</strong></h2><ul><li>Detalles constructivos para arranques, zócalos, huecos y solapes de membranas.<br/></li><li>Preparación para ventilación mecánica bien planteada en proyecto (opción de doble flujo con recuperador si se define en instalaciones).<br/></li><li>Previsión de solución anti-radón bajo solera cuando aplique por municipio.<br/></li></ul><h2><strong>8. Preinstalaciones incluidas</strong></h2><ul><li>Pasos y previsión técnica para electricidad, fontanería, ventilación y climatización (para ejecutar instalaciones con orden, sin perforaciones improvisadas).<br/></li></ul><h2><strong>9. Transporte</strong></h2><ul><li>Entrega planificada con descarga incluida en Península (según accesos).<br/></li></ul><h2><strong>Qué NO incluye</strong></h2><ul><li>Proyecto visado, dirección de obra, licencias, coordinación de seguridad y salud.<br/></li><li>Geotécnico, movimiento de tierras, cimentación/solera.<br/></li><li>Montaje de estructura (servicio adicional disponible).<br/></li><li>Instalaciones completas y equipos (electricidad, fontanería, saneamiento, climatización, ventilación con máquina).<br/></li><li>Pintura, suelos, falsos techos, carpintería decorativa, mobiliario.<br/></li><li>Cocina, sanitarios, armarios y equipamiento interior.<br/></li></ul><h2><strong>Fases constructivas paso a paso</strong></h2><ol><li><strong>Definición de programa</strong>: m², distribución, orientación, huecos y prioridades de confort.<br/></li><li><strong>Coordinación con tu técnico</strong>: composición de cerramientos y justificación CTE en proyecto.<br/></li><li><strong>Cierre de alcance</strong>: fachada, carpinterías, cubierta y nivel acústico objetivo.<br/></li><li><strong>Fabricación</strong> del kit y preparación logística.<br/></li><li><strong>Preparación de parcela</strong>: cimentación y replanteo por empresa contratada.<br/></li><li><strong>Entrega y acopio</strong> en obra.<br/></li><li><strong>Montaje</strong> por tu equipo o servicio adicional.<br/></li><li><strong>Cierre de envolvente</strong> y ejecución de instalaciones (aprovechando preinstalaciones).<br/></li><li><strong>Acabados interiores</strong> y puesta en marcha.<br/></li></ol><h2><strong>Llamada a la acción</strong></h2><p>Solicita tu STANDARD con una propuesta de cerramiento adaptada a tu zona climática y un alcance claro. Indica ubicación, m² aproximados, número de estancias y tipo de cubierta, y te preparamos una solución lista para proyecto y obra.</p>",
-                "width": "100%",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "paragraph",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#ddd2c0",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_czYbPY",
-            "text_HXt33e"
-          ]
-        },
-        "group_BTGVVY": {
-          "type": "group",
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_VpUawP": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h4>PASSIVE</h4><h4>{{ closest.product.metafields.custom.price_passive | metafield_tag }}<strong> (IVA INCLUIDO)</strong></h4>",
-                "width": "100%",
-                "max_width": "none",
-                "alignment": "center",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#c4b49a",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_9qD6WY": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<h2><strong>Concepto comercial</strong></h2><p>Una vivienda premium en madera pensada para máxima estabilidad térmica, silencio real y calidad de aire interior. Envolvente de alto rendimiento con detalle y control, diseñada para objetivos de muy baja demanda energética cuando el proyecto y la ejecución se plantean para ello.</p><h2><strong>¿Qué es?</strong></h2><p>Un paquete premium que integra estructura + envolvente avanzada + carpinterías de alto rendimiento, y añade cimentación y montaje completo por equipos cualificados, con instalaciones interiores incluidas según alcance indicado. Preparado para ensayos y verificación en obra cuando se contraten.</p><h2><strong>Para quién es</strong></h2><ul><li>Vivienda principal exigente y uso intensivo (familias, teletrabajo, estancias largas).<br/></li><li>Clientes sensibles a humedad, moho o alérgenos que priorizan aire interior controlado.<br/></li><li>Promotores y técnicos que buscan un producto industrializado con ejecución guiada y resultado consistente.<br/></li></ul><h2><strong>Qué te entregamos</strong></h2><ul><li>Cimentación estructural según diseño (losa/zapatas/pilotes, según proyecto).<br/></li><li>Montaje completo de estructura, cubierta y fachada por equipo especializado.<br/></li><li>Envolvente premium con gran continuidad térmica, hermeticidad avanzada y control de condensaciones.<br/></li><li>Carpinterías y vidrio de nivel alto con criterio de instalación en plano de aislamiento.<br/></li><li>Instalaciones interiores incluidas según alcance: electricidad y fontanería/saneamiento dentro de la vivienda.<br/></li><li>Preinstalaciones incluidas (ventilación, climatización y pasos técnicos).<br/></li><li>Transporte en Península incluido.<br/></li></ul><h2><strong>Qué incluye</strong></h2><p><strong>1. Estructura portante</strong></p><ul><li>Madera estructural C24 o superior (según definición), con marcado CE, secado controlado, mecanizado y tratamiento según clase de uso/exposición.<br/></li><li>Entramado premium con secciones habituales 45×160 / 45×200 mm (según cargas y objetivo térmico), modulación 400/600.<br/></li><li>OSB/3 estructural 12–15 mm y uniones con herrajes profesionales y tornillería estructural.<br/></li></ul><p><strong>2. Envolvente premium</strong><br/>Composición orientativa (ajustable por clima y proyecto), espesor total habitual 320–420 mm:</p><ul><li>Membrana interior avanzada de control de vapor/aire (tipo variable o equivalente) con sellado continuo.<br/></li><li>Aislamiento en cavidad de alto espesor 160–200 mm (lana mineral, fibra de madera u otro con prestaciones declaradas).<br/></li><li>OSB/3 estructural.<br/></li><li>Membrana exterior transpirable de altas prestaciones (cortaviento/agua) con solapes y sellados definidos.<br/></li><li>Aislamiento continuo exterior premium 80–140 mm para minimizar puentes térmicos.<br/></li><li>Preparación para acabado exterior robusto a definir: SATE premium o fachada ventilada de calidad.<br/></li></ul><p><strong>3. Cubierta de alto rendimiento</strong></p><ul><li>Estructura portante incluida y ejecutada.<br/></li><li>Aislamiento alto espesor orientativo 240–360 mm según clima/solución.<br/></li><li>Láminas y sellados de altas prestaciones para control de condensaciones y estanqueidad.<br/></li><li>Encuentros fachada–cubierta resueltos para continuidad térmica.<br/></li></ul><p><strong>4. Hermeticidad avanzada preparada para ensayo</strong></p><ul><li>Sistema completo de cintas, adhesivos, selladores y pasamuros para penetraciones.<br/></li><li>Detalle de encuentro con carpinterías para continuidad de la capa estanca.<br/></li><li>Preparación para blower door cuando se contrate como verificación en obra (el resultado depende de proyecto, ejecución y ensayo).<br/></li></ul><p><strong>5. Puentes térmicos</strong></p><ul><li>Huecos instalados en plano de aislamiento.<br/></li><li>Arranques y zócalos con continuidad térmica y control de humedad.<br/></li><li>Encuentros fachada–forjado, esquinas, pasos de instalaciones y remates.<br/></li></ul><p><strong>6. Carpinterías y vidrio premium</strong></p><ul><li>Ventanas de altas prestaciones con triple acristalamiento (o solución equivalente definida por clima/orientación), prestaciones declaradas UNE-EN 14351-1.<br/></li><li>Instalación estanca y térmicamente coherente: precerco, sellado interior/exterior y remates completos.<br/></li><li>Opciones de vidrio muy útiles en España: control solar por orientación, laminado acústico, seguridad en grandes paños.<br/></li><li>Puerta de entrada RC2 con cierre multipunto y alta estanqueidad.<br/></li></ul><p><strong>7. Confort acústico premium</strong></p><ul><li>Desacoples en particiones críticas, dobles placas donde aporte, lanas de mayor densidad y sellados exigentes.<br/></li><li>Tratamiento cuidadoso de cajas técnicas y pasos para evitar transmisión de ruido.<br/></li></ul><p><strong>8. Ventilación y salud interior</strong></p><ul><li>Previsión para ventilación mecánica de doble flujo con recuperación (si se define en proyecto de instalaciones).<br/></li><li>Espacios y pasos técnicos para ejecución ordenada de conductos y registros.<br/></li><li>Preparación para filtración y sensores (CO₂/humedad) si se desea.<br/></li></ul><p><strong>9. Radón y humedad</strong></p><ul><li>Solución prevista bajo solera cuando aplique por municipio (definición y ejecución asociada a la obra).<br/></li><li>Detalles de impermeabilización, drenaje y control de encuentros para durabilidad.<br/></li></ul><p><strong>10. Instalaciones interiores incluidas</strong></p><ul><li>Instalación eléctrica interior (canalizaciones, mecanismos y cuadro).<br/></li><li>Fontanería interior de ACS/AF y evacuación dentro de la vivienda conforme a CTE.<br/></li><li>Previsión para cocina/baños y climatización según diseño.<br/></li><li>No incluye acometidas exteriores ni equipos especiales salvo contratación aparte.<br/></li></ul><p><strong>11. Cimentación y montaje completo</strong></p><ul><li>Ejecución de cimentación estructural según proyecto.<br/></li><li>Montaje integral de estructura, cubierta y fachada por equipos cualificados.<br/></li></ul><p><strong>12. Transporte</strong></p><ul><li>Entrega y logística coordinada en Península.<br/></li></ul><h2><strong>Qué NO incluye</strong></h2><ul><li>Proyecto visado, dirección facultativa, licencias, coordinación de seguridad y salud (contratables aparte).<br/></li><li>Movimiento de tierras previo, nivelación general de parcela y gestión exterior del terreno.<br/></li><li>Acometidas exteriores (saneamiento a red/fosa, agua, electricidad) y urbanización exterior.<br/></li><li>Equipos de climatización, máquina de ventilación, fotovoltaica y domótica (opcionales).<br/></li><li>Acabados decorativos: pintura, suelos finales, mobiliario, cocina, sanitarios, armarios.<br/></li></ul><h2><strong>Fases constructivas paso a paso</strong></h2><ol><li><strong>Definición del programa</strong>: uso, m², orientación, grandes huecos, control solar y objetivos de confort.<br/></li><li><strong>Coordinación técnica</strong>: el proyecto define cerramientos, instalaciones y justificación normativa.<br/></li><li><strong>Planificación de obra</strong>: replanteo, accesos, logística, fechas y secuencia de montaje.<br/></li><li><strong>Cimentación</strong> según proyecto.<br/></li><li><strong>Montaje integral</strong> de estructura, cubierta y fachada.<br/></li><li><strong>Cierre de envolvente</strong> con sellados, control de puntos singulares y carpinterías.<br/></li><li><strong>Instalaciones interiores</strong> y preinstalaciones previstas.<br/></li><li><strong>Acabados interiores</strong> y puesta en marcha de equipos si se contratan.<br/></li><li><strong>Verificación en obra</strong> (ensayos y mediciones) si se contrata.<br/></li></ol><h2><strong>Llamada a la acción</strong></h2><p>Solicita PASSIVE si buscas una vivienda premium con ejecución guiada, envolvente avanzada y confort alto. Envíanos ubicación, m², número de estancias, tipo de parcela y una idea de distribución, y preparamos una propuesta con alcance claro y criterios técnicos para tu proyecto.</p>",
-                "width": "100%",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "paragraph",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#c4b49a",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_VpUawP",
-            "text_9qD6WY"
-          ]
-        }
-      },
-      "block_order": [
-        "group_AXhEUM",
-        "group_EHMRTr",
-        "group_BTGVVY"
-      ],
-      "name": "t:names.icons_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "flex-start",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 20,
         "padding-block-end": 48
       }
     },
@@ -805,10 +440,10 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<p><strong>Recomendado para ti</strong></p>",
+            "text": "<p><strong>Otros modelos de entramado ligero</strong></p>",
             "width": "100%",
             "max_width": "none",
-            "alignment": "center",
+            "alignment": "left",
             "type_preset": "h3",
             "font": "var(--font-primary--family)",
             "font_size": "",
@@ -873,7 +508,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 4,
                 "width": "fill",
@@ -936,7 +571,7 @@
                     "show_tax_info": false,
                     "type_preset": "paragraph",
                     "width": "100%",
-                    "alignment": "center",
+                    "alignment": "left",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -978,24 +613,34 @@
         "rows_gap": 36,
         "icons_style": "arrow",
         "icons_shape": "none",
-        "section_width": "full-width",
+        "section_width": "page-width",
         "gap": 28,
         "color_scheme": "scheme-1",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 56,
+        "padding-block-end": 56
+      }
+    },
+    "cta": {
+      "type": "ie-habitable-product-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "¿Quieres revisar este modelo con el equipo?",
+        "text": "<p>Si aún no vas a completar el formulario, puedes consultar cómo trabajamos o hablar con nosotros para aclarar alcance, sistema y condiciones previas.</p>",
+        "primary_label": "Hablar con el equipo",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Cómo trabajamos",
+        "secondary_link": "/pages/services"
       }
     }
   },
   "order": [
-    "custom_liquid_JViiDQ",
+    "hero",
     "main",
-    "divider_VdaAeR",
-    "custom_liquid_qhhcp9",
-    "divider_e7dGcf",
-    "176805135143cd7128",
-    "divider_98i4bF",
-    "section_DjM3tc",
-    "section_AczQVi",
-    "product-recommendations"
+    "packages",
+    "process",
+    "quote_intro",
+    "quote_form",
+    "product-recommendations",
+    "cta"
   ]
 }
