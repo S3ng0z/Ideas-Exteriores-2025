@@ -1,0 +1,50 @@
+{{ 'ie-porch-page.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-porch ie-porch--scope" aria-labelledby="ie-porch-scope-title-{{ section.id }}">
+  <div class="ie-porch__inner">
+    <div class="ie-porch__section-head">
+      <div>
+        {% if section.settings.eyebrow != blank %}<p class="ie-porch__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-porch-scope-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}<div class="ie-porch__intro rte">{{ section.settings.intro }}</div>{% endif %}
+    </div>
+
+    <div class="ie-porch__scope-grid">
+      {% for block in section.blocks %}
+        <article class="ie-porch__scope-item" {{ block.shopify_attributes }}>
+          <span class="ie-porch__scope-number">{{ block.settings.number }}</span>
+          <h3>{{ block.settings.heading }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.note != blank %}<div class="ie-porch__scope-note rte">{{ section.settings.note }}</div>{% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Porche · Alcance",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Precio y alcance"},
+    {"type":"text","id":"heading","label":"Título","default":"Qué define el precio de un porche a medida"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Dimensiones, cubierta, estructura, madera, apoyos y montaje determinan el alcance real de la propuesta.</p>"},
+    {"type":"richtext","id":"note","label":"Nota","default":"<p>Los condicionantes administrativos y de parcela dependen del municipio y del proyecto.</p>"}
+  ],
+  "blocks":[
+    {
+      "type":"item",
+      "name":"Factor de alcance",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Dimensiones y geometría"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Ancho, fondo, altura, relación con fachada y grado de personalización."}
+      ]
+    }
+  ],
+  "max_blocks":6,
+  "presets":[{"name":"Porche · Alcance"}]
+}
+{% endschema %}

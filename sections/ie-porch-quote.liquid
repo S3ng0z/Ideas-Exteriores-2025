@@ -1,0 +1,54 @@
+{{ 'ie-porch-page.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-porch ie-porch--quote" id="ie-porch-quote" aria-labelledby="ie-porch-quote-title-{{ section.id }}">
+  <div class="ie-porch__inner">
+    <div class="ie-porch__quote-layout">
+      <div class="ie-porch__quote-copy">
+        {% if section.settings.eyebrow != blank %}<p class="ie-porch__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-porch-quote-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}<div class="rte">{{ section.settings.intro }}</div>{% endif %}
+
+        <ul class="ie-porch__quote-checklist" role="list">
+          {% if section.settings.item_1 != blank %}<li><span>01</span><strong>{{ section.settings.item_1 }}</strong></li>{% endif %}
+          {% if section.settings.item_2 != blank %}<li><span>02</span><strong>{{ section.settings.item_2 }}</strong></li>{% endif %}
+          {% if section.settings.item_3 != blank %}<li><span>03</span><strong>{{ section.settings.item_3 }}</strong></li>{% endif %}
+          {% if section.settings.item_4 != blank %}<li><span>04</span><strong>{{ section.settings.item_4 }}</strong></li>{% endif %}
+        </ul>
+
+        <div class="ie-porch__quote-contact">
+          {% if section.settings.phone != blank %}<span>Tel. <a href="tel:{{ section.settings.phone | replace: ' ', '' }}">{{ section.settings.phone }}</a></span>{% endif %}
+          {% if section.settings.email != blank %}<span><a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a></span>{% endif %}
+        </div>
+      </div>
+
+      <div class="ie-porch__form-panel">
+        {% if section.blocks.size > 0 %}
+          {% content_for 'blocks' %}
+        {% else %}
+          {% render 'ie-contact-native-form', section: section %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Porche · Presupuesto",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Tu proyecto"},
+    {"type":"text","id":"heading","label":"Título","default":"Cuéntanos cómo quieres utilizar tu porche"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Con fotos, medidas aproximadas, ubicación y uso previsto podemos hacer una primera lectura del proyecto.</p>"},
+    {"type":"text","id":"item_1","label":"Dato útil 1","default":"Fotos y ubicación del espacio"},
+    {"type":"text","id":"item_2","label":"Dato útil 2","default":"Medidas aproximadas y altura disponible"},
+    {"type":"text","id":"item_3","label":"Dato útil 3","default":"Tipo de cubierta o nivel de protección buscado"},
+    {"type":"text","id":"item_4","label":"Dato útil 4","default":"Cerramientos, iluminación, suelo u otros extras"},
+    {"type":"text","id":"phone","label":"Teléfono","default":"+34 916 99 60 93"},
+    {"type":"text","id":"email","label":"Email","default":"info@ideas-exteriores.com"},
+    {"type":"text","id":"submit_label","label":"Botón formulario nativo","default":"Quiero valorar mi porche"},
+    {"type":"url","id":"privacy_link","label":"Política de privacidad"}
+  ],
+  "blocks":[{"type":"@app"}],
+  "presets":[{"name":"Porche · Presupuesto"}]
+}
+{% endschema %}

@@ -1,0 +1,317 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Encaje arquitectónico y cubierta resueltos"
+          }
+        },
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Estructura, apoyos y drenaje definidos"
+          }
+        },
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Montaje y opciones futuras dentro del alcance"
+          }
+        }
+      },
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
+      "settings": {
+        "eyebrow": "Diseño · cubierta · montaje",
+        "heading": "Porches de madera a medida con cubierta y montaje",
+        "lead": "<p>Diseñamos porches de madera a medida para vivienda, jardín y terraza, adaptados a la arquitectura existente y al uso que buscas: sombra, protección frente a lluvia, comedor exterior o un espacio semi-cerrado que puedas disfrutar más meses al año. Definimos cubierta, estructura, drenaje, acabados y montaje antes de fabricar.</p>",
+        "primary_label": "Quiero valorar mi porche",
+        "primary_link": "#ie-porch-quote",
+        "secondary_label": "Ver proyectos realizados",
+        "secondary_link": "/pages/wood-project-gallery",
+        "summary_title": "Un porche pensado como parte de la casa"
+      }
+    },
+    "details": {
+      "type": "ie-porch-details",
+      "blocks": {
+        "design": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/porche_001.png",
+            "image_alt": "Porche de madera a medida adosado a vivienda",
+            "media_position": "left",
+            "index": "01 · Diseño y encaje",
+            "heading": "El porche se diseña desde la vivienda, no como un añadido",
+            "text": "<p>Estudiamos fachada, huecos, aleros, vistas, pasos y altura útil para que el nuevo espacio mantenga proporción con la casa. Definimos si conviene una solución adosada o independiente y cómo debe relacionarse con el exterior.</p>",
+            "point_1": "Geometría adaptada a fachada, jardín o terraza",
+            "point_2": "Altura útil y aleros pensados para el uso diario",
+            "point_3": "Encuentros y remates previstos desde el proyecto"
+          }
+        },
+        "roof": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "image_alt": "",
+            "media_position": "right",
+            "index": "02 · Cubierta y confort",
+            "heading": "La cubierta define cuánto y cómo vas a utilizar el porche",
+            "text": "<p>Panel sándwich, policarbonato, vidrio laminado, teja o tégola ofrecen sensaciones y prestaciones distintas. Elegimos la solución en función de luz, protección frente a lluvia, aislamiento, estética y mantenimiento, y resolvemos pendiente, canalón y evacuación desde el inicio.</p>",
+            "point_1": "Panel sándwich cuando buscas mayor protección y confort",
+            "point_2": "Policarbonato o vidrio cuando priorizas entrada de luz",
+            "point_3": "Teja o tégola cuando la integración con la vivienda es protagonista"
+          }
+        },
+        "structure": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/porche_002.png",
+            "image_alt": "Estructura de madera dimensionada para un porche a medida",
+            "media_position": "right",
+            "index": "03 · Estructura",
+            "heading": "Una estructura proporcionada a la cubierta y al uso previsto",
+            "text": "<p>Definimos pilares, vigas, correas o cerchas según luces, geometría y tipo de cubierta. Cuando el proyecto incorpora laterales, elementos suspendidos o una exposición más exigente, esas condiciones se consideran antes de fabricar y montar.</p>",
+            "point_1": "Secciones y luces coherentes con la geometría",
+            "point_2": "Rigidez y arriostramiento según el proyecto",
+            "point_3": "Uniones y herrajes adecuados para exterior"
+          }
+        },
+        "anchors": {
+          "type": "feature",
+          "settings": {
+            "image": "",
+            "image_alt": "",
+            "media_position": "left",
+            "index": "04 · Base, agua y anclajes",
+            "heading": "La durabilidad empieza donde la madera se encuentra con suelo y fachada",
+            "text": "<p>Revisamos si el porche se apoya sobre una base existente o necesita preparación específica. Buscamos mantener la madera alejada de humedad permanente y ordenar fijaciones, pendientes y drenajes para reducir puntos críticos con el paso del tiempo.</p>",
+            "point_1": "Bases elevadas y apoyos compatibles con el soporte",
+            "point_2": "Fijaciones adecuadas al entorno y a la madera",
+            "point_3": "Drenaje y encuentros pensados para evitar retenciones de agua"
+          }
+        },
+        "finishes": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/porche_003.png",
+            "image_alt": "Porche de madera con acabado exterior y opciones de cerramiento",
+            "media_position": "left",
+            "index": "05 · Acabados y cerramientos",
+            "heading": "Más protección, más confort y más meses de uso",
+            "text": "<p>Madera, lasur, iluminación, suelo y posibles cerramientos forman parte de la experiencia final. Si quieres celosías, screens, cortinas de cristal, ventilador o tarima, preverlos desde el diseño permite integrarlos mejor y evita improvisaciones durante el montaje.</p>",
+            "point_1": "Protección y acabado según exposición",
+            "point_2": "Iluminación y pasos técnicos previstos",
+            "point_3": "Preparación para cerramientos, screens o tarima"
+          }
+        }
+      },
+      "block_order": [
+        "design",
+        "roof",
+        "structure",
+        "anchors",
+        "finishes"
+      ],
+      "settings": {
+        "eyebrow": "Porches de madera a medida",
+        "heading": "Cubierta, estructura y detalles para disfrutar más del exterior",
+        "intro": "<p>Un porche bien resuelto amplía la casa hacia el jardín o la terraza. La diferencia está en cómo se integran cubierta, estructura, agua, apoyos y acabados dentro de una misma solución.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Más protección",
+            "text": "La cubierta y los remates se diseñan según el nivel de sombra, lluvia y confort que quieres conseguir en el espacio exterior."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Más integración",
+            "text": "Proporciones, materiales y encuentros se plantean para que el porche dialogue con la vivienda y no parezca una estructura añadida después."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Más uso",
+            "text": "Iluminación, cerramientos, tarima o elementos de climatización pueden preverse desde el proyecto para aprovechar el porche más meses al año."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "eyebrow": "Un espacio exterior más habitable",
+        "heading": "Un porche bien resuelto amplía la casa sin perder relación con el jardín"
+      }
+    },
+    "scope": {
+      "type": "ie-porch-scope",
+      "blocks": {
+        "s1": {
+          "type": "item",
+          "settings": {
+            "number": "01",
+            "heading": "Dimensiones y geometría",
+            "text": "Ancho, fondo, altura útil, solución adosada o independiente y adaptación a la arquitectura existente."
+          }
+        },
+        "s2": {
+          "type": "item",
+          "settings": {
+            "number": "02",
+            "heading": "Tipo de cubierta",
+            "text": "Panel sándwich, policarbonato, vidrio, teja u otra solución; pendiente, remates, canalón y evacuación."
+          }
+        },
+        "s3": {
+          "type": "item",
+          "settings": {
+            "number": "03",
+            "heading": "Estructura de madera",
+            "text": "Luces, secciones, modulación, uniones y exigencias asociadas a cubierta, viento o futuros cerramientos."
+          }
+        },
+        "s4": {
+          "type": "item",
+          "settings": {
+            "number": "04",
+            "heading": "Madera y acabado",
+            "text": "Solución estructural, protección exterior, tono, mantenimiento esperado y nivel de terminación visible."
+          }
+        },
+        "s5": {
+          "type": "item",
+          "settings": {
+            "number": "05",
+            "heading": "Base y anclajes",
+            "text": "Soporte existente, preparación previa, placas, fijaciones, drenaje y encuentros con fachada o pavimento."
+          }
+        },
+        "s6": {
+          "type": "item",
+          "settings": {
+            "number": "06",
+            "heading": "Montaje y personalización",
+            "text": "Accesos, logística, cerramientos, iluminación, suelo, ventiladores u otros elementos integrados en el alcance."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "settings": {
+        "eyebrow": "Precio y alcance",
+        "heading": "Qué define el precio de un porche de madera a medida",
+        "intro": "<p>El precio depende de mucho más que los metros cuadrados. Dimensiones, cubierta, estructura, madera, apoyos, montaje y nivel de personalización cambian el alcance real del proyecto y conviene definirlos antes de comparar propuestas.</p>",
+        "note": "<p>Licencias, comunicaciones previas, comunidad y condicionantes de parcela dependen del municipio y del proyecto. Los tratamos como condicionantes del encargo y te indicamos qué conviene verificar en tu caso.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "p1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Cuéntanos el espacio",
+            "text": "Nos envías ubicación, fotografías, medidas aproximadas y cómo quieres utilizar el nuevo porche."
+          }
+        },
+        "p2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Diseñamos cubierta y estructura",
+            "text": "Definimos geometría, cubierta, apoyos, madera, acabados y posibles cerramientos según la vivienda y el uso."
+          }
+        },
+        "p3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Cerramos alcance y presupuesto",
+            "text": "Concretamos incluidos, trabajos previos, condicionantes y opciones para que la propuesta sea fácil de entender."
+          }
+        },
+        "p4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Fabricamos y montamos",
+            "text": "Organizamos fabricación, logística y montaje conforme a la solución acordada y a las condiciones reales del proyecto."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "eyebrow": "De la idea al montaje",
+        "heading": "Cómo hacemos un porche de madera a medida",
+        "intro": "<p>Ordenamos las decisiones antes de fabricar para que cubierta, estructura, apoyos y acabados lleguen a obra con un alcance claro.</p>"
+      }
+    },
+    "quote": {
+      "type": "ie-porch-quote",
+      "blocks": {
+        "powerful_form_builder": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder"
+      ],
+      "settings": {
+        "eyebrow": "Tu proyecto",
+        "heading": "¿Tienes una terraza o jardín? Cuéntanos qué porche quieres conseguir",
+        "intro": "<p>Para una primera valoración no necesitas tener el proyecto cerrado. Con fotos, medidas aproximadas, ubicación y el nivel de protección que buscas podemos orientarte sobre la solución y los siguientes pasos.</p>",
+        "item_1": "Fotos y ubicación del espacio",
+        "item_2": "Medidas aproximadas y altura disponible",
+        "item_3": "Cubierta o nivel de protección que te gustaría",
+        "item_4": "Cerramientos, iluminación, suelo u otros extras",
+        "phone": "+34 916 99 60 93",
+        "email": "info@ideas-exteriores.com",
+        "submit_label": "Quiero valorar mi porche",
+        "privacy_link": "/policies/privacy-policy"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "details",
+    "confidence",
+    "scope",
+    "process",
+    "quote"
+  ]
+}
