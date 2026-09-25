@@ -1,4 +1,5 @@
 {% liquid
+{% comment %}IE breadcrumb renderer synced{% endcomment %}
   assign ie_products_url = pages['timber-products'].url | default: '/pages/timber-products'
   assign ie_services_url = pages['services'].url | default: '/pages/services'
   assign ie_contact_url = pages['contact'].url | default: '/pages/contact'
