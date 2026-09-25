@@ -2,11 +2,7 @@
 
 <section class="ie-contact ie-contact--hero" aria-labelledby="ie-contact-title-{{ section.id }}">
   <div class="ie-contact__inner">
-    <nav class="ie-contact__breadcrumb" aria-label="Migas de pan">
-      <a href="{{ routes.root_url }}">Inicio</a>
-      <span aria-hidden="true">/</span>
-      <span aria-current="page">{{ page.title }}</span>
-    </nav>
+    {% render 'ie-breadcrumb', breadcrumb_object: page, current_title: page.title, class_name: 'ie-contact__breadcrumb' %}
 
     <div class="ie-contact__hero">
       <div class="ie-contact__hero-copy">
