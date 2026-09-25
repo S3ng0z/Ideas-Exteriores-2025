@@ -7,13 +7,19 @@
 
 <section class="ie-sip-pdp ie-sip-pdp--hero" aria-labelledby="ie-sip-product-title-{{ section.id }}">
   <div class="ie-sip-pdp__inner">
-    <nav class="ie-sip-pdp__breadcrumb" aria-label="{{ section.settings.breadcrumb_label | escape }}">
-      <a href="{{ routes.root_url }}">{{ section.settings.home_label }}</a>
-      <span aria-hidden="true">/</span>
-      <a href="{{ ie_collection_url }}">{{ section.settings.collection_label }}</a>
-      <span aria-hidden="true">/</span>
-      <span aria-current="page">{{ product.title }}</span>
-    </nav>
+    {% render 'ie-breadcrumb',
+  breadcrumb_object: product,
+  current_title: product.title,
+  class_name: 'ie-sip-pdp__breadcrumb',
+  aria_label: section.settings.breadcrumb_label,
+  home_label: section.settings.home_label,
+  fallback_1_label: 'Productos',
+  fallback_1_link: '/pages/timber-products',
+  fallback_2_label: 'Viviendas en madera',
+  fallback_2_link: '/pages/timber-homes-and-modules',
+  fallback_3_label: section.settings.collection_label,
+  fallback_3_link: ie_collection_url
+%}
 
     <div class="ie-sip-pdp__hero-grid">
       <div>
