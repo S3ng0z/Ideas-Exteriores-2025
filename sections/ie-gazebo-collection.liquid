@@ -9,9 +9,8 @@
 %}
 
 {% if collection.handle == 'wooden-gazebos' %}
-  {{ 'ie-gazebo-collection.css' | asset_url | stylesheet_tag }}
-
   {% if section.settings.mode == 'intro' %}
+    {{ 'ie-gazebo-collection.css' | asset_url | stylesheet_tag }}
     <section class="ie-gz ie-gz--hero" aria-labelledby="ie-gz-title">
       <div class="ie-gz__inner">
         {% render 'ie-breadcrumb',
