@@ -1,7 +1,7 @@
 {
   "sections": {
     "ie_light_frame_intro": {
-      "type": "ie-habitable-system-collection",
+      "type": "ie-light-frame-collection",
       "settings": {
         "mode": "intro"
       }
@@ -198,14 +198,26 @@
       }
     },
     "ie_light_frame_outro": {
-      "type": "ie-habitable-system-collection",
+      "type": "ie-light-frame-collection",
       "settings": {
         "mode": "outro"
+      }
+    },
+    "custom_liquid_jYa6g6": {
+      "type": "custom-liquid",
+      "name": "IE · Breadcrumb global",
+      "settings": {
+        "custom_liquid": "{% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: collection.title, class_name: 'lux-breadcrumb' %}\n<h1 class=\"lux-title\">{{ collection.title }}</h1>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     }
   },
   "order": [
     "ie_light_frame_intro",
+    "custom_liquid_jYa6g6",
     "main",
     "ie_light_frame_outro"
   ]
