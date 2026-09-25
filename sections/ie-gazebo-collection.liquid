@@ -1,0 +1,163 @@
+{% liquid
+  assign ie_products_url = pages['timber-products'].url | default: '/pages/timber-products'
+  assign ie_structures_url = pages['garden-structures'].url | default: '/pages/garden-structures'
+  assign ie_services_url = pages['services'].url | default: '/pages/services'
+  assign ie_contact_url = pages['contact'].url | default: '/pages/contact'
+  assign ie_bases_url = pages['timber-bases-and-foundations'].url | default: '/pages/timber-bases-and-foundations'
+  assign ie_treatment_url = pages['wood-treatment-protection'].url | default: '/pages/wood-treatment-protection'
+  assign ie_delivery_url = pages['warranty-delivery-payment-options'].url | default: '/pages/warranty-delivery-payment-options'
+%}
+
+{% if collection.handle == 'wooden-gazebos' %}
+  {{ 'ie-gazebo-collection.css' | asset_url | stylesheet_tag }}
+
+  {% if section.settings.mode == 'intro' %}
+    <section class="ie-gz ie-gz--hero" aria-labelledby="ie-gz-title">
+      <div class="ie-gz__inner">
+        {% render 'ie-breadcrumb',
+          breadcrumb_object: collection,
+          current_title: collection.title,
+          class_name: 'ie-gz__breadcrumb',
+          fallback_1_label: 'Productos',
+          fallback_1_link: ie_products_url,
+          fallback_2_label: 'Estructuras de jardín',
+          fallback_2_link: ie_structures_url
+        %}
+
+        <div class="ie-gz__hero-grid">
+          <div>
+            <p class="ie-gz__eyebrow">Exterior · Cenadores y gazebos</p>
+            <h1 id="ie-gz-title">Cenadores de madera para jardín</h1>
+            <div class="ie-gz__lead">
+              <p>Compara modelos de cenador de madera por tamaño, proporción y precio de partida. También encontrarás esta tipología como <strong>gazebo de madera</strong>: en esta colección ambos términos describen la misma familia de estructuras independientes para jardín, terraza o patio.</p>
+            </div>
+            <div class="ie-gz__actions">
+              <a class="ie-gz__button ie-gz__button--primary" href="#ResultsList">Ver {{ collection.products_count }} modelos</a>
+              <a class="ie-gz__text-link" href="{{ ie_services_url }}">Cómo trabajamos <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <aside class="ie-gz__summary" aria-label="Qué revisar antes de elegir un cenador">
+            <p class="ie-gz__summary-title">Antes de elegir</p>
+            <ol>
+              <li><span>01</span><strong>Define el espacio útil y las medidas disponibles</strong></li>
+              <li><span>02</span><strong>Revisa qué incluye el precio de la estructura base</strong></li>
+              <li><span>03</span><strong>Valida cubierta, base, anclaje, transporte y montaje</strong></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="ie-gz ie-gz--guide" aria-labelledby="ie-gz-guide-title">
+      <div class="ie-gz__inner">
+        <div class="ie-gz__guide-head">
+          <div>
+            <p class="ie-gz__eyebrow">Elegir con criterio</p>
+            <h2 id="ie-gz-guide-title">Un modelo claro antes de personalizar</h2>
+          </div>
+          <div class="ie-gz__guide-copy">
+            <p>La colección parte de modelos definidos para que puedas comparar sin empezar desde cero. Después se concreta la configuración compatible de cubierta, acabado, accesorios e instalación según el emplazamiento.</p>
+          </div>
+        </div>
+
+        <div class="ie-gz__guide-grid">
+          <article>
+            <p class="ie-gz__index">01 · USO Y MEDIDAS</p>
+            <h3>Empieza por el espacio que quieres cubrir</h3>
+            <p>Compara ancho, fondo y proporción del modelo con la zona real de jardín, patio o terraza y con el uso previsto: sombra, comedor exterior, descanso o acceso protegido.</p>
+          </article>
+          <article>
+            <p class="ie-gz__index">02 · ALCANCE</p>
+            <h3>Lee el precio como punto de partida</h3>
+            <p>Salvo indicación expresa en la ficha, el importe mostrado corresponde a una estructura base. Cubierta final, transporte, descarga, montaje, cimentación, anclajes y extras se revisan aparte.</p>
+          </article>
+          <article>
+            <p class="ie-gz__index">03 · IMPLANTACIÓN</p>
+            <h3>La base y el anclaje forman parte de la decisión</h3>
+            <p>Una superficie firme, nivelada y apta para anclaje es esencial. En terrazas elevadas, zonas expuestas o emplazamientos con condicionantes conviene una valoración previa.</p>
+          </article>
+        </div>
+
+        <nav class="ie-gz__related" aria-label="Información relacionada con cenadores de madera">
+          <a href="{{ ie_bases_url }}">Bases y soleras <span aria-hidden="true">→</span></a>
+          <a href="{{ ie_treatment_url }}">Protección de la madera <span aria-hidden="true">→</span></a>
+          <a href="{{ ie_delivery_url }}">Entrega y formas de pago <span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </section>
+  {% else %}
+    <section class="ie-gz ie-gz--faq" aria-labelledby="ie-gz-faq-title">
+      <div class="ie-gz__inner">
+        <div class="ie-gz__faq-head">
+          <div>
+            <p class="ie-gz__eyebrow">Antes de solicitar presupuesto</p>
+            <h2 id="ie-gz-faq-title">Dudas habituales sobre cenadores de madera</h2>
+          </div>
+          <p>Estas respuestas resumen el criterio general de la colección. La ficha de cada modelo prevalece cuando detalla un alcance concreto.</p>
+        </div>
+
+        <div class="ie-gz__faq-list">
+          <details>
+            <summary>¿Cenador y gazebo de madera son lo mismo?</summary>
+            <div><p>En esta colección sí se agrupan como una misma familia comercial: estructuras independientes de madera para crear una zona exterior cubierta o protegida. La forma, dimensiones y tipo de cubierta dependen de cada modelo.</p></div>
+          </details>
+          <details>
+            <summary>¿El precio incluye montaje y cubierta?</summary>
+            <div><p>No debe darse por supuesto. Los precios se presentan como referencia del modelo y la ficha concreta qué incluye. Transporte, descarga, montaje, base, anclajes, cubierta final y accesorios pueden presupuestarse por separado.</p></div>
+          </details>
+          <details>
+            <summary>¿Qué base necesita un cenador?</summary>
+            <div><p>Debe apoyarse sobre una superficie resistente, estable, nivelada y adecuada para el sistema de anclaje. La solución depende del soporte existente, cargas, exposición y condiciones del emplazamiento.</p></div>
+          </details>
+          <details>
+            <summary>¿La madera exterior necesita mantenimiento?</summary>
+            <div><p>Sí. Incluso con madera tratada conviene revisar periódicamente acabado, uniones y anclajes, y renovar la protección superficial cuando pierda repelencia, color o capacidad protectora.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="ie-gz ie-gz--cta" aria-labelledby="ie-gz-cta-title">
+      <div class="ie-gz__inner">
+        <div class="ie-gz__cta">
+          <div>
+            <p class="ie-gz__eyebrow">Siguiente paso</p>
+            <h2 id="ie-gz-cta-title">¿Ya tienes un modelo en mente?</h2>
+            <p>Entra en su ficha para revisar medidas, estructura, opciones y alcance. Si necesitas ayuda para elegir, indícanos el espacio disponible, el tipo de suelo y el uso que buscas.</p>
+          </div>
+          <div class="ie-gz__actions ie-gz__actions--cta">
+            <a class="ie-gz__button ie-gz__button--primary" href="{{ ie_contact_url }}">Solicitar orientación</a>
+            <a class="ie-gz__button ie-gz__button--secondary" href="{{ ie_services_url }}">Cómo trabajamos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "IE · Cenadores",
+  "enabled_on": {
+    "templates": ["collection"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "Posición",
+      "options": [
+        { "value": "intro", "label": "Introducción" },
+        { "value": "outro", "label": "Cierre" }
+      ],
+      "default": "intro"
+    }
+  ],
+  "presets": [
+    {
+      "name": "IE · Cenadores"
+    }
+  ]
+}
+{% endschema %}
