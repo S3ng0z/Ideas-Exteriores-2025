@@ -93,7 +93,7 @@
             "border_opacity": 100,
             "border_radius": 0,
             "padding-block-start": 18,
-            "padding-block-end": 48,
+            "padding-block-end": 32,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -113,7 +113,7 @@
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "fill",
-                "custom_width": 65,
+                "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
@@ -131,7 +131,7 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 12,
+                "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
@@ -302,10 +302,63 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "features_heading": {
+                  "type": "text",
+                  "name": "Características del producto",
+                  "settings": {
+                    "text": "<h2>Características del producto</h2>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "product_description_8gHdXj": {
+                  "type": "product-description",
+                  "name": "Product description",
+                  "settings": {
+                    "text": "{{ closest.product.description }}",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
-                "group_xr9GGL",
+                "features_heading",
+                "product_description_8gHdXj",
                 "scope_note",
                 "variant_picker_nhbWcG"
               ]
@@ -325,15 +378,7 @@
         "gap": 24,
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
-        "padding-block-end": 36
-      }
-    },
-    "description": {
-      "type": "ie-sip-product-description",
-      "settings": {
-        "eyebrow": "El modelo",
-        "heading": "Características y planteamiento",
-        "intro": "<p>La ficha del modelo describe su superficie, distribución y elementos propios. El alcance constructivo se compara por configuración en el siguiente bloque.</p>"
+        "padding-block-end": 24
       }
     },
     "packages": {
@@ -628,7 +673,6 @@
   "order": [
     "hero",
     "main",
-    "description",
     "packages",
     "process",
     "product-recommendations",

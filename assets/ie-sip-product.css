@@ -678,3 +678,47 @@ body:has(.ie-sip-pdp--hero) .product-information .product-details .text-block a{
     transition:none!important;
   }
 }
+
+
+/* SIP PDP: characteristics beside media */
+body:has(.ie-sip-pdp--hero) .product-information__grid{
+  align-items:start;
+}
+
+body:has(.ie-sip-pdp--hero) .product-information .product-details{
+  min-width:0;
+}
+
+body:has(.ie-sip-pdp--hero) .product-information .product-details h2{
+  margin:0 0 16px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:clamp(1.75rem,2vw,2.25rem);
+  font-weight:500;
+  line-height:1.08;
+  letter-spacing:-.015em;
+  text-transform:none;
+}
+
+body:has(.ie-sip-pdp--hero) .product-information .product-description,
+body:has(.ie-sip-pdp--hero) .product-information [data-product-description]{
+  max-width:none;
+}
+
+body:has(.ie-sip-pdp--hero) .product-information .product-details .rte,
+body:has(.ie-sip-pdp--hero) .product-information .product-details .text-block{
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  line-height:1.6;
+}
+
+@media screen and (min-width:750px){
+  body:has(.ie-sip-pdp--hero) .product-information .product-details .rte,
+  body:has(.ie-sip-pdp--hero) .product-information .product-details .text-block{
+    text-align:left;
+  }
+}
+
+@media screen and (max-width:749px){
+  body:has(.ie-sip-pdp--hero) .product-information .product-details h2{
+    font-size:1.8rem;
+  }
+}
