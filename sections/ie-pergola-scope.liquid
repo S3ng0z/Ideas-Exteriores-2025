@@ -1,0 +1,56 @@
+{{ 'ie-pergola-page.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-pergola ie-pergola--scope" aria-labelledby="ie-pergola-scope-title-{{ section.id }}">
+  <div class="ie-pergola__inner">
+    <div class="ie-pergola__section-head">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-pergola__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-pergola-scope-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}
+        <div class="ie-pergola__intro rte">{{ section.settings.intro }}</div>
+      {% endif %}
+    </div>
+
+    <div class="ie-pergola__scope-grid">
+      {% for block in section.blocks %}
+        <article class="ie-pergola__scope-item" {{ block.shopify_attributes }}>
+          <span class="ie-pergola__scope-number">{{ block.settings.number }}</span>
+          <h3>{{ block.settings.heading }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.note != blank %}
+      <div class="ie-pergola__scope-note rte">{{ section.settings.note }}</div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Pérgola · Alcance",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Antes del presupuesto"},
+    {"type":"text","id":"heading","label":"Título","default":"Nueve decisiones que conviene cerrar antes de fabricar"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Un presupuesto útil necesita algo más que largo × ancho. Estas decisiones reducen cambios, improvisaciones y partidas ambiguas durante la preparación y el montaje.</p>"},
+    {"type":"richtext","id":"note","label":"Nota","default":"<p>Licencias, comunicaciones previas y condicionantes de comunidad o parcela dependen del municipio y del proyecto. Los revisamos como condicionantes del encargo; no los presentamos como un trámite idéntico para todos los casos.</p>"}
+  ],
+  "blocks":[
+    {
+      "type":"item",
+      "name":"Decisión",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Medidas y encaje"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Dimensiones, altura útil, adosada o exenta, obstáculos, tolerancias y accesos."}
+      ]
+    }
+  ],
+  "max_blocks":9,
+  "presets":[{"name":"Pérgola · Alcance"}]
+}
+{% endschema %}

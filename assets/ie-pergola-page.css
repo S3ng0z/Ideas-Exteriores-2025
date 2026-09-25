@@ -1,0 +1,424 @@
+/* IE · Pérgolas a medida — Natural Precision */
+.ie-pergola{
+  --ie-pg-ink:#1f231e;
+  --ie-pg-forest:#566236;
+  --ie-pg-bone:#f9f8f6;
+  --ie-pg-soft:#efeee8;
+  --ie-pg-line:rgba(31,35,30,.15);
+  --ie-pg-muted:rgba(31,35,30,.72);
+  color:var(--ie-pg-ink);
+}
+
+.ie-pergola__inner{
+  width:min(calc(100% - 64px),1440px);
+  margin-inline:auto;
+}
+
+.ie-pergola__section-head{
+  display:grid;
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:clamp(36px,6vw,88px);
+  align-items:end;
+  padding-bottom:clamp(28px,4vw,48px);
+  border-bottom:1px solid var(--ie-pg-line);
+}
+
+.ie-pergola__eyebrow{
+  margin:0 0 10px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.74rem;
+  font-weight:700;
+  letter-spacing:.09em;
+  line-height:1.35;
+  text-transform:uppercase;
+  color:var(--ie-pg-forest);
+}
+
+.ie-pergola__section-head h2,
+.ie-pergola__quote-copy h2{
+  margin:0;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:clamp(2rem,3.6vw,3.35rem);
+  font-weight:500;
+  letter-spacing:-.025em;
+  line-height:1.02;
+  text-transform:none;
+  color:var(--ie-pg-ink);
+}
+
+.ie-pergola__intro{
+  max-width:720px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:clamp(.98rem,1.25vw,1.08rem);
+  line-height:1.7;
+  color:var(--ie-pg-muted);
+}
+
+.ie-pergola__intro p{margin:0}
+
+.ie-pergola--details{
+  padding-block:clamp(56px,7vw,104px);
+  background:var(--ie-pg-bone);
+}
+
+.ie-pergola__features{
+  display:grid;
+}
+
+.ie-pergola__feature{
+  display:grid;
+  grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);
+  gap:clamp(32px,6vw,88px);
+  align-items:center;
+  padding-block:clamp(42px,6vw,78px);
+  border-bottom:1px solid var(--ie-pg-line);
+}
+
+.ie-pergola__feature:last-child{border-bottom:0;padding-bottom:0}
+
+.ie-pergola__feature--media-right .ie-pergola__feature-media{order:2}
+.ie-pergola__feature--media-right .ie-pergola__feature-copy{order:1}
+
+.ie-pergola__feature-media{
+  min-width:0;
+  overflow:hidden;
+  background:#e9e7df;
+}
+
+.ie-pergola__feature-media img{
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  height:auto;
+  object-fit:cover;
+}
+
+.ie-pergola__feature-copy{
+  max-width:650px;
+}
+
+.ie-pergola__feature-index{
+  margin:0 0 12px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.73rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  line-height:1.35;
+  text-transform:uppercase;
+  color:var(--ie-pg-forest);
+}
+
+.ie-pergola__feature-copy h3{
+  margin:0 0 18px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:clamp(1.75rem,2.6vw,2.55rem);
+  font-weight:500;
+  line-height:1.08;
+  letter-spacing:-.02em;
+  color:var(--ie-pg-ink);
+}
+
+.ie-pergola__feature-text{
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.98rem;
+  line-height:1.7;
+  color:var(--ie-pg-muted);
+}
+
+.ie-pergola__feature-text p{margin:0}
+
+.ie-pergola__points{
+  margin:26px 0 0;
+  padding:0;
+  list-style:none;
+  border-top:1px solid var(--ie-pg-line);
+}
+
+.ie-pergola__points li{
+  display:grid;
+  grid-template-columns:18px 1fr;
+  gap:10px;
+  align-items:start;
+  padding:11px 0;
+  border-bottom:1px solid var(--ie-pg-line);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.9rem;
+  line-height:1.45;
+  color:var(--ie-pg-ink);
+}
+
+.ie-pergola__points li::before{
+  content:"→";
+  color:var(--ie-pg-forest);
+}
+
+.ie-pergola--scope{
+  padding-block:clamp(56px,7vw,104px);
+  background:var(--ie-pg-soft);
+}
+
+.ie-pergola__scope-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  margin-top:clamp(32px,5vw,58px);
+  border-top:1px solid var(--ie-pg-line);
+  border-left:1px solid var(--ie-pg-line);
+}
+
+.ie-pergola__scope-item{
+  min-height:210px;
+  padding:clamp(22px,3vw,34px);
+  border-right:1px solid var(--ie-pg-line);
+  border-bottom:1px solid var(--ie-pg-line);
+}
+
+.ie-pergola__scope-number{
+  display:block;
+  margin-bottom:28px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:var(--ie-pg-forest);
+}
+
+.ie-pergola__scope-item h3{
+  margin:0 0 10px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:1rem;
+  font-weight:700;
+  line-height:1.35;
+  color:var(--ie-pg-ink);
+}
+
+.ie-pergola__scope-item p{
+  margin:0;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.9rem;
+  line-height:1.55;
+  color:var(--ie-pg-muted);
+}
+
+.ie-pergola__scope-note{
+  max-width:920px;
+  margin:28px 0 0;
+  padding-left:18px;
+  border-left:2px solid var(--ie-pg-forest);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.88rem;
+  line-height:1.6;
+  color:var(--ie-pg-muted);
+}
+
+.ie-pergola--quote{
+  padding-block:clamp(64px,8vw,112px);
+  background:var(--ie-pg-bone);
+}
+
+.ie-pergola__quote-layout{
+  display:grid;
+  grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);
+  gap:clamp(40px,7vw,96px);
+  align-items:start;
+}
+
+.ie-pergola__quote-copy{
+  position:sticky;
+  top:112px;
+}
+
+.ie-pergola__quote-copy h2{margin-bottom:22px}
+
+.ie-pergola__quote-copy > .rte{
+  max-width:560px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.98rem;
+  line-height:1.7;
+  color:var(--ie-pg-muted);
+}
+
+.ie-pergola__quote-checklist{
+  margin:30px 0 0;
+  padding:0;
+  list-style:none;
+  border-top:1px solid var(--ie-pg-line);
+}
+
+.ie-pergola__quote-checklist li{
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:12px;
+  padding:13px 0;
+  border-bottom:1px solid var(--ie-pg-line);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.9rem;
+  line-height:1.45;
+}
+
+.ie-pergola__quote-checklist span{
+  color:var(--ie-pg-forest);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.06em;
+}
+
+.ie-pergola__quote-contact{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 20px;
+  margin-top:26px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.84rem;
+  color:var(--ie-pg-muted);
+}
+
+.ie-pergola__quote-contact a{
+  color:var(--ie-pg-ink);
+  text-underline-offset:3px;
+}
+
+.ie-pergola__form-panel{
+  min-width:0;
+  padding:clamp(24px,4vw,44px);
+  border:1px solid var(--ie-pg-line);
+  background:#fff;
+}
+
+.ie-pergola__form-panel .shopify-block,
+.ie-pergola__form-panel .globo-formbuilder{
+  width:100%;
+  max-width:none;
+  margin:0;
+}
+
+.ie-pergola__form-panel .ie-contact__native-form{
+  display:grid;
+  gap:22px;
+}
+
+.ie-pergola__form-panel .ie-contact__form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.ie-pergola__form-panel .ie-contact__field{
+  display:grid;
+  gap:7px;
+}
+
+.ie-pergola__form-panel .ie-contact__field--full{
+  grid-column:1/-1;
+}
+
+.ie-pergola__form-panel .ie-contact__field label,
+.ie-pergola__form-panel .ie-contact__privacy{
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.82rem;
+  line-height:1.4;
+  color:var(--ie-pg-ink);
+}
+
+.ie-pergola__form-panel input,
+.ie-pergola__form-panel select,
+.ie-pergola__form-panel textarea{
+  width:100%;
+  border:1px solid var(--ie-pg-line);
+  border-radius:0;
+  padding:12px 13px;
+  background:#fff;
+  color:var(--ie-pg-ink);
+  font:inherit;
+}
+
+.ie-pergola__form-panel textarea{min-height:150px;resize:vertical}
+
+.ie-pergola__form-panel input:focus,
+.ie-pergola__form-panel select:focus,
+.ie-pergola__form-panel textarea:focus{
+  outline:2px solid rgba(86,98,54,.24);
+  outline-offset:1px;
+  border-color:var(--ie-pg-forest);
+}
+
+.ie-pergola__form-panel .ie-contact__privacy{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+
+.ie-pergola__form-panel .ie-contact__privacy input{
+  width:auto;
+  margin-top:3px;
+}
+
+.ie-pergola__form-panel .ie-contact__button{
+  display:inline-flex;
+  width:auto;
+  min-height:46px;
+  align-items:center;
+  justify-content:center;
+  padding:12px 22px;
+  border:1px solid var(--ie-pg-forest);
+  border-radius:0;
+  background:var(--ie-pg-forest);
+  color:#fff;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.88rem;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.ie-pergola__form-panel .ie-contact__form-status{
+  padding:12px 14px;
+  border:1px solid var(--ie-pg-line);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.88rem;
+}
+
+@media screen and (max-width:989px){
+  .ie-pergola__section-head,
+  .ie-pergola__feature,
+  .ie-pergola__quote-layout{
+    grid-template-columns:1fr;
+  }
+
+  .ie-pergola__feature--media-right .ie-pergola__feature-media,
+  .ie-pergola__feature--media-right .ie-pergola__feature-copy{
+    order:initial;
+  }
+
+  .ie-pergola__scope-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .ie-pergola__quote-copy{
+    position:static;
+  }
+}
+
+@media screen and (max-width:749px){
+  .ie-pergola__inner{
+    width:min(calc(100% - 32px),1440px);
+  }
+
+  .ie-pergola__scope-grid{
+    grid-template-columns:1fr;
+  }
+
+  .ie-pergola__scope-item{
+    min-height:0;
+  }
+
+  .ie-pergola__form-panel{
+    padding:20px;
+  }
+
+  .ie-pergola__form-panel .ie-contact__form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .ie-pergola__form-panel .ie-contact__field--full{
+    grid-column:auto;
+  }
+}
