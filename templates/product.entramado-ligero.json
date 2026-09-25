@@ -126,37 +126,11 @@
               },
               "blocks": {}
             },
-            "product_description": {
-              "type": "product-description",
-              "name": "Características del producto",
-              "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 6,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "scope_note": {
               "type": "text",
               "name": "Alcance y configuraciones",
               "settings": {
-                "text": "<p><strong>Precio de partida.</strong> Compara BASIC, STANDARD y PASSIVE por alcance antes de solicitar presupuesto. El importe final depende de la configuración y de las condiciones reales del proyecto.</p><p><a href=\"#ie-habitable-packages\">Comparar configuraciones →</a></p>",
+                "text": "<p><strong>Precio de partida.</strong> Compara BASIC, STANDARD y PASSIVE por alcance antes de solicitar presupuesto. El importe final depende de la configuración y de las condiciones reales del proyecto.</p><p><a href=\"#ie-habitable-packages\">Comparar configuraciones →</a> · <a href=\"#ie-habitable-quote\">Pedir presupuesto →</a></p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -191,11 +165,20 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "model_description": {
+              "type": "ie-product-model-description",
+              "name": "Características del modelo",
+              "settings": {
+                "strip_legacy_style": true,
+                "hide_legacy_contact": true
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "features_heading",
-            "product_description",
+            "model_description",
             "scope_note",
             "variant_picker"
           ]
@@ -301,136 +284,6 @@
         "intro": "<p>Partimos de un modelo reconocible, elegimos un nivel de alcance y validamos las condiciones reales que afectan a fabricación y ejecución.</p>",
         "link_label": "Ver cómo trabajamos",
         "link": "/pages/services"
-      }
-    },
-    "quote_intro": {
-      "type": "section",
-      "blocks": {
-        "quote_heading": {
-          "type": "text",
-          "name": "Presupuesto",
-          "settings": {
-            "text": "<h2>Solicita presupuesto para este modelo</h2>",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "quote_text": {
-          "type": "text",
-          "name": "Introducción",
-          "settings": {
-            "text": "<p>Indica el modelo que estás revisando, la ubicación de la parcela y la configuración que mejor encaja contigo. Con esa información podremos validar alcance, logística y siguientes pasos.</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "paragraph",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "quote_heading",
-        "quote_text"
-      ],
-      "name": "Solicitud de presupuesto",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 10,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 56,
-        "padding-block-end": 12
-      }
-    },
-    "quote_form": {
-      "type": "_blocks",
-      "blocks": {
-        "powerful_form_builder_app_block_Qncarh": {
-          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-          "settings": {
-            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
-          }
-        }
-      },
-      "block_order": [
-        "powerful_form_builder_app_block_Qncarh"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 48
       }
     },
     "product-recommendations": {
@@ -624,12 +477,31 @@
       "type": "ie-habitable-product-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "¿Quieres revisar este modelo con el equipo?",
-        "text": "<p>Si aún no vas a completar el formulario, puedes consultar cómo trabajamos o hablar con nosotros para aclarar alcance, sistema y condiciones previas.</p>",
+        "heading": "¿Necesitas aclarar algo antes de enviar la solicitud?",
+        "text": "<p>Consulta cómo trabajamos o habla con el equipo si necesitas confirmar el sistema, el alcance o las condiciones previas antes de completar el presupuesto.</p>",
         "primary_label": "Hablar con el equipo",
         "primary_link": "/pages/contact-ideas-exteriores",
         "secondary_label": "Cómo trabajamos",
         "secondary_link": "/pages/services"
+      }
+    },
+    "quote": {
+      "type": "ie-habitable-product-quote",
+      "blocks": {
+        "powerful_form_builder_app_block_Qncarh": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_Qncarh"
+      ],
+      "settings": {
+        "eyebrow": "Presupuesto",
+        "heading": "Solicita presupuesto para este modelo",
+        "intro": "<p>Indica el modelo que estás revisando, la ubicación de la parcela y la configuración que mejor encaja contigo. Con esa información podremos validar alcance, logística y siguientes pasos.</p>"
       }
     }
   },
@@ -638,8 +510,7 @@
     "main",
     "packages",
     "process",
-    "quote_intro",
-    "quote_form",
+    "quote",
     "product-recommendations",
     "cta"
   ]

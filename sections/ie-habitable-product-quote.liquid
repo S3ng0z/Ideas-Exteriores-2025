@@ -1,0 +1,59 @@
+<section id="ie-habitable-quote" class="ie-hab-pdp ie-hab-pdp--quote" aria-labelledby="ie-hab-quote-title-{{ section.id }}">
+  <div class="ie-hab-pdp__inner">
+    <div class="ie-hab-pdp__quote-shell">
+      <div class="ie-hab-pdp__quote-head">
+        <div>
+          {% if section.settings.eyebrow != blank %}
+            <p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
+          {% endif %}
+          <h2 id="ie-hab-quote-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        </div>
+
+        {% if section.settings.intro != blank %}
+          <div class="ie-hab-pdp__quote-intro rte">{{ section.settings.intro }}</div>
+        {% endif %}
+      </div>
+
+      <div class="ie-hab-pdp__quote-form">
+        {% content_for 'blocks' %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IE · Habitable · Presupuesto",
+  "enabled_on": {"templates": ["product"]},
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Antetítulo",
+      "default": "Presupuesto"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "Solicita presupuesto para este modelo"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Introducción",
+      "default": "<p>Indica el modelo que estás revisando, la ubicación de la parcela y la configuración que mejor encaja contigo. Con esa información podremos validar alcance, logística y siguientes pasos.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "IE · Habitable · Presupuesto"
+    }
+  ]
+}
+{% endschema %}

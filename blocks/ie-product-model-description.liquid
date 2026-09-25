@@ -1,0 +1,44 @@
+{% liquid
+  assign ie_product = closest.product | default: product
+  assign ie_description = ie_product.description
+
+  if block.settings.strip_legacy_style and ie_description contains '</style>'
+    assign ie_description = ie_description | split: '</style>' | last
+  endif
+
+  if block.settings.hide_legacy_contact and ie_description contains '<!-- CONTACTO -->'
+    assign ie_description = ie_description | split: '<!-- CONTACTO -->' | first
+  endif
+%}
+
+{% if ie_description != blank %}
+  <div class="ie-hab-pdp__model-description rte" {{ block.shopify_attributes }}>
+    {{ ie_description }}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "IE · Descripción modelo",
+  "tag": null,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "strip_legacy_style",
+      "label": "Eliminar CSS heredado de la descripción",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_legacy_contact",
+      "label": "Ocultar contacto heredado de la descripción",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "IE · Descripción modelo"
+    }
+  ]
+}
+{% endschema %}
