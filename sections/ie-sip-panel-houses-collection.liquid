@@ -11,13 +11,7 @@
   {% if section.settings.mode == 'intro' %}
     <section class="ie-sip ie-sip--hero" aria-labelledby="ie-sip-title">
       <div class="ie-sip__inner">
-        <nav class="ie-sip__breadcrumb" aria-label="Migas de pan">
-          <a href="{{ routes.root_url }}">Inicio</a>
-          <span aria-hidden="true">/</span>
-          <a href="{{ ie_products_url }}">Productos</a>
-          <span aria-hidden="true">/</span>
-          <span aria-current="page">Casas con panel SIP</span>
-        </nav>
+        {% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: collection.title, class_name: 'ie-sip__breadcrumb', fallback_1_label: 'Productos', fallback_1_link: ie_products_url, fallback_2_label: 'Viviendas en madera', fallback_2_link: '/pages/timber-homes-and-modules' %}
 
         <div class="ie-sip__hero-grid">
           <div>
