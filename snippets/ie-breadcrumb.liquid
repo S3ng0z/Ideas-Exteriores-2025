@@ -40,9 +40,9 @@
   assign ie_n2_url = ie_n2_url | default: fallback_2_link
   assign ie_n3_url = ie_n3_url | default: fallback_3_link
 
-  assign ie_n1_href = ie_n1_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', '' | replace: 'https://9qmnma-zm.myshopify.com', '' | replace: 'http://9qmnma-zm.myshopify.com', ''
-  assign ie_n2_href = ie_n2_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', '' | replace: 'https://9qmnma-zm.myshopify.com', '' | replace: 'http://9qmnma-zm.myshopify.com', ''
-  assign ie_n3_href = ie_n3_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', '' | replace: 'https://9qmnma-zm.myshopify.com', '' | replace: 'http://9qmnma-zm.myshopify.com', ''
+  assign ie_n1_href = ie_n1_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', ''
+  assign ie_n2_href = ie_n2_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', ''
+  assign ie_n3_href = ie_n3_url | replace: 'https://www.ideas-exteriores.com', '' | replace: 'http://www.ideas-exteriores.com', ''
 
   assign ie_class = class_name | default: 'ie-breadcrumb'
 %}
@@ -67,3 +67,59 @@
     <span class="ie-breadcrumb__current" aria-current="page">{{ ie_title }}</span>
   {% endif %}
 </nav>
+
+
+{% if ie_title != blank %}
+  {% liquid
+    assign ie_position = 1
+    assign ie_home_url = shop.url | append: routes.root_url
+  %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": {{ ie_position }},
+        "name": {{ ie_home_label | json }},
+        "item": {{ ie_home_url | json }}
+      }
+      {% if ie_n1 != blank and ie_n1_href != blank %}
+        {% assign ie_position = ie_position | plus: 1 %}
+        ,{
+          "@type": "ListItem",
+          "position": {{ ie_position }},
+          "name": {{ ie_n1 | json }},
+          "item": {{ shop.url | append: ie_n1_href | json }}
+        }
+      {% endif %}
+      {% if ie_n2 != blank and ie_n2_href != blank %}
+        {% assign ie_position = ie_position | plus: 1 %}
+        ,{
+          "@type": "ListItem",
+          "position": {{ ie_position }},
+          "name": {{ ie_n2 | json }},
+          "item": {{ shop.url | append: ie_n2_href | json }}
+        }
+      {% endif %}
+      {% if ie_n3 != blank and ie_n3_href != blank %}
+        {% assign ie_position = ie_position | plus: 1 %}
+        ,{
+          "@type": "ListItem",
+          "position": {{ ie_position }},
+          "name": {{ ie_n3 | json }},
+          "item": {{ shop.url | append: ie_n3_href | json }}
+        }
+      {% endif %}
+      {% assign ie_position = ie_position | plus: 1 %}
+      ,{
+        "@type": "ListItem",
+        "position": {{ ie_position }},
+        "name": {{ ie_title | json }},
+        "item": {{ canonical_url | json }}
+      }
+    ]
+  }
+  </script>
+{% endif %}
