@@ -722,3 +722,43 @@ body:has(.ie-sip-pdp--hero) .product-information .product-details .text-block{
     font-size:1.8rem;
   }
 }
+
+
+/* SIP PDP: direct characteristics column */
+body:has(.ie-sip-pdp--hero) .product-information__grid{
+  align-items:start;
+}
+
+body:has(.ie-sip-pdp--hero) .product-information__media,
+body:has(.ie-sip-pdp--hero) .product-information .product-details{
+  align-self:start;
+}
+
+body:has(.ie-sip-pdp--hero) .product-information .product-details{
+  justify-content:flex-start;
+}
+
+body:has(.ie-sip-pdp--hero) .product-information .product-details > .group-block{
+  width:100%;
+  max-width:none;
+}
+
+body:has(.ie-sip-pdp--hero) .product-information .product-details > .text-block,
+body:has(.ie-sip-pdp--hero) .product-information .product-details > .rte,
+body:has(.ie-sip-pdp--hero) .product-information .product-details > *{
+  min-width:0;
+}
+
+@media screen and (width >= 750px){
+  body:has(.ie-sip-pdp--hero) .product-information__grid.product-information__grid--half.product-information--media-left{
+    grid-template-columns:
+      var(--full-page-grid-margin)
+      calc(var(--full-page-grid-central-column-width) * .52)
+      calc(var(--full-page-grid-central-column-width) * .48)
+      var(--full-page-grid-margin);
+  }
+
+  body:has(.ie-sip-pdp--hero) .product-information .product-details{
+    padding-top:0;
+  }
+}
