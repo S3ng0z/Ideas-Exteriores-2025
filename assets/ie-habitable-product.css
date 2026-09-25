@@ -279,3 +279,66 @@ body:has(.ie-hab-pdp--hero) .product-information .product-details .rte,body:has(
     grid-template-columns:1fr;
   }
 }
+
+
+/* Habitable packages: refined editorial headings */
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h3{
+  margin:1.75rem 0 .6rem!important;
+  padding-top:1.05rem;
+  border-top:1px solid rgba(31,35,30,.12);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif!important;
+  font-size:1rem!important;
+  font-weight:650!important;
+  line-height:1.35!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+  color:var(--ie-hab-ink)!important;
+}
+
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h3:first-child{
+  margin-top:0!important;
+  padding-top:0;
+  border-top:0;
+  color:var(--ie-hab-forest)!important;
+}
+
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h4{
+  margin:1.15rem 0 .42rem!important;
+  padding:0!important;
+  border:0!important;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif!important;
+  font-size:.9rem!important;
+  font-weight:700!important;
+  line-height:1.4!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+  color:var(--ie-hab-ink)!important;
+}
+
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h3 strong,
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h4 strong{
+  font:inherit!important;
+  color:inherit!important;
+}
+
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h3 + p,
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h4 + p{
+  margin-top:0;
+}
+
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h3 + ul,
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h4 + ul,
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h3 + ol,
+.ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h4 + ol{
+  margin-top:.45rem;
+}
+
+@media screen and (max-width:749px){
+  .ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h3{
+    font-size:.98rem!important;
+  }
+
+  .ie-hab-pdp__package-card .ie-hab-pdp__package-body.rte h4{
+    font-size:.88rem!important;
+  }
+}
