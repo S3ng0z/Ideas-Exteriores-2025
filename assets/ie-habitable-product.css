@@ -342,3 +342,122 @@ body:has(.ie-hab-pdp--hero) .product-information .product-details .rte,body:has(
     font-size:.88rem!important;
   }
 }
+
+
+/* Habitable PDP: Elisa-like characteristics order */
+.ie-hab-pdp__model-description .bloque-info{
+  display:flex;
+  flex-direction:column;
+}
+
+.ie-hab-pdp__model-description .subtitulo-seccion{
+  order:1;
+  display:none;
+}
+
+.ie-hab-pdp__model-description .lista-datos{
+  order:2;
+  margin:0 0 14px;
+  padding:16px;
+  gap:0 14px;
+  background:#f9f9f9;
+  border:1px solid rgba(31,35,30,.08);
+  border-radius:10px;
+  box-shadow:0 1px 4px rgba(0,0,0,.08);
+}
+
+.ie-hab-pdp__model-description .dato{
+  min-height:74px;
+  padding:12px 10px;
+  background:transparent;
+  border-bottom:1px solid rgba(31,35,30,.14);
+}
+
+.ie-hab-pdp__model-description .dato:nth-last-child(-n+3){
+  border-bottom:0;
+}
+
+.ie-hab-pdp__model-description .dato strong{
+  margin:0;
+  font-size:.82rem;
+  font-weight:600;
+  color:var(--ie-hab-ink);
+}
+
+.ie-hab-pdp__model-description .dato span{
+  font-size:.9rem;
+  font-weight:500;
+}
+
+.ie-hab-pdp__model-description .nota{
+  order:3;
+  margin:0 0 20px;
+  padding:14px 0 0;
+  border-top:0;
+  font-size:.84rem;
+  line-height:1.55;
+  color:var(--ie-hab-muted);
+}
+
+.ie-hab-pdp__model-description .titulo-seccion{
+  order:4;
+  margin:8px 0 8px!important;
+  padding-top:18px;
+  border-top:1px solid var(--ie-hab-border);
+  font-family:"Source Serif 4",Georgia,serif!important;
+  font-size:1.25rem!important;
+  font-weight:500!important;
+  line-height:1.2!important;
+  letter-spacing:-.01em!important;
+  text-transform:none!important;
+  color:var(--ie-hab-ink)!important;
+}
+
+.ie-hab-pdp__model-description .descripcion{
+  order:5;
+  margin:0;
+  font-size:.94rem;
+  line-height:1.6;
+  color:var(--ie-hab-muted);
+}
+
+.ie-hab-pdp__model-description .texto-legal{
+  margin:0 0 18px;
+  font-size:.9rem;
+  line-height:1.55;
+  color:var(--ie-hab-ink);
+}
+
+.ie-hab-pdp__model-description .texto-legal strong{
+  font-weight:700;
+}
+
+@media screen and (max-width:1199px){
+  .ie-hab-pdp__model-description .dato:nth-last-child(-n+3){
+    border-bottom:1px solid rgba(31,35,30,.14);
+  }
+
+  .ie-hab-pdp__model-description .dato:nth-last-child(-n+2){
+    border-bottom:0;
+  }
+}
+
+@media screen and (max-width:430px){
+  .ie-hab-pdp__model-description .lista-datos{
+    padding:14px;
+    gap:0;
+  }
+
+  .ie-hab-pdp__model-description .dato,
+  .ie-hab-pdp__model-description .dato:nth-last-child(-n+2){
+    border-bottom:1px solid rgba(31,35,30,.14);
+  }
+
+  .ie-hab-pdp__model-description .dato:last-child{
+    border-bottom:0;
+  }
+
+  .ie-hab-pdp__model-description .titulo-seccion{
+    font-size:1.15rem!important;
+  }
+}
