@@ -1,0 +1,59 @@
+<section class="ie-sip-pdp ie-sip-pdp--process" aria-labelledby="ie-sip-process-title-{{ section.id }}">
+  <div class="ie-sip-pdp__inner">
+    <div class="ie-sip-pdp__process-box">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-sip-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-sip-process-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}
+          <div class="ie-sip-pdp__process-intro rte">{{ section.settings.intro }}</div>
+        {% endif %}
+        {% if section.settings.link_label != blank and section.settings.link != blank %}
+          <a class="ie-sip-pdp__process-link" href="{{ section.settings.link }}">
+            {{ section.settings.link_label }} <span aria-hidden="true">→</span>
+          </a>
+        {% endif %}
+      </div>
+
+      <ol class="ie-sip-pdp__process-list">
+        {% for block in section.blocks %}
+          <li {{ block.shopify_attributes }}>
+            <span>{{ block.settings.number }}</span>
+            <div>
+              <h3>{{ block.settings.heading }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IE · Casa SIP · Proceso",
+  "enabled_on": {"templates": ["product"]},
+  "settings": [
+    {"type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Cómo avanzar"},
+    {"type": "text", "id": "heading", "label": "Título", "default": "Del modelo al presupuesto"},
+    {"type": "richtext", "id": "intro", "label": "Introducción", "default": "<p>La vivienda parte de un modelo reconocible. Después se selecciona el nivel de alcance y se validan las condiciones reales que afectan a fabricación, logística y montaje.</p>"},
+    {"type": "text", "id": "link_label", "label": "Texto enlace", "default": "Ver cómo trabajamos"},
+    {"type": "url", "id": "link", "label": "Enlace"}
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Paso",
+      "settings": [
+        {"type": "text", "id": "number", "label": "Número", "default": "01"},
+        {"type": "text", "id": "heading", "label": "Título", "default": "Modelo"},
+        {"type": "textarea", "id": "text", "label": "Texto", "default": "Confirma superficie, distribución y encaje con el uso previsto."}
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{"name": "IE · Casa SIP · Proceso"}]
+}
+{% endschema %}

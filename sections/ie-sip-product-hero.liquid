@@ -1,0 +1,84 @@
+{{ 'ie-sip-product.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign ie_collection_url = collections['sip-panel-houses'].url | default: '/collections/sip-panel-houses'
+  assign ie_system_url = pages['sip-panels-system'].url | default: '/pages/sip-panels-system'
+%}
+
+<section class="ie-sip-pdp ie-sip-pdp--hero" aria-labelledby="ie-sip-product-title-{{ section.id }}">
+  <div class="ie-sip-pdp__inner">
+    <nav class="ie-sip-pdp__breadcrumb" aria-label="{{ section.settings.breadcrumb_label | escape }}">
+      <a href="{{ routes.root_url }}">{{ section.settings.home_label }}</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ ie_collection_url }}">{{ section.settings.collection_label }}</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{{ product.title }}</span>
+    </nav>
+
+    <div class="ie-sip-pdp__hero-grid">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-sip-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h1 id="ie-sip-product-title-{{ section.id }}">{{ product.title }}</h1>
+        {% if section.settings.lead != blank %}
+          <div class="ie-sip-pdp__lead rte">{{ section.settings.lead }}</div>
+        {% endif %}
+        <div class="ie-sip-pdp__actions">
+          <a class="ie-sip-pdp__button ie-sip-pdp__button--primary" href="#ie-sip-packages">
+            {{ section.settings.primary_label }}
+          </a>
+          <a class="ie-sip-pdp__button ie-sip-pdp__button--secondary" href="{{ ie_system_url }}">
+            {{ section.settings.secondary_label }}
+          </a>
+        </div>
+      </div>
+
+      {% if section.blocks.size > 0 %}
+        <aside class="ie-sip-pdp__summary" aria-label="{{ section.settings.summary_aria_label | escape }}">
+          {% if section.settings.summary_title != blank %}
+            <p class="ie-sip-pdp__summary-title">{{ section.settings.summary_title }}</p>
+          {% endif %}
+          <ol>
+            {% for block in section.blocks %}
+              <li {{ block.shopify_attributes }}>
+                <span>{{ block.settings.number }}</span>
+                <strong>{{ block.settings.label }}</strong>
+              </li>
+            {% endfor %}
+          </ol>
+        </aside>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IE · Casa SIP · Hero",
+  "enabled_on": {"templates": ["product"]},
+  "settings": [
+    {"type": "text", "id": "breadcrumb_label", "label": "Etiqueta breadcrumb", "default": "Migas de pan"},
+    {"type": "text", "id": "home_label", "label": "Inicio", "default": "Inicio"},
+    {"type": "text", "id": "collection_label", "label": "Colección", "default": "Casas con panel SIP"},
+    {"type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Modelo de vivienda · Panel SIP"},
+    {"type": "richtext", "id": "lead", "label": "Introducción", "default": "<p>Revisa el modelo, compara el alcance de sus configuraciones y valida las condiciones de parcela y montaje antes de solicitar presupuesto.</p>"},
+    {"type": "text", "id": "primary_label", "label": "CTA principal", "default": "Comparar configuraciones"},
+    {"type": "text", "id": "secondary_label", "label": "CTA secundario", "default": "Entender el sistema SIP"},
+    {"type": "text", "id": "summary_title", "label": "Título resumen", "default": "Antes de pedir presupuesto"},
+    {"type": "text", "id": "summary_aria_label", "label": "Etiqueta accesible resumen", "default": "Pasos antes de pedir presupuesto"}
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Paso",
+      "settings": [
+        {"type": "text", "id": "number", "label": "Número", "default": "01"},
+        {"type": "text", "id": "label", "label": "Texto", "default": "Revisa el modelo y su distribución"}
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{"name": "IE · Casa SIP · Hero"}]
+}
+{% endschema %}
