@@ -1,5 +1,4 @@
 {% liquid
-{% comment %}IE breadcrumb renderer synced{% endcomment %}
   assign ie_products_url = pages['timber-products'].url | default: '/pages/timber-products'
   assign ie_services_url = pages['services'].url | default: '/pages/services'
   assign ie_contact_url = pages['contact'].url | default: '/pages/contact'
@@ -72,7 +71,7 @@
 
 {% schema %}
 {
-  "name": "IE · Viviendas por sistema",
+  "name": "IE · Viviendas sistema",
   "enabled_on": {"templates": ["collection"]},
   "settings": [{"type":"select","id":"mode","label":"Posición","options":[{"value":"intro","label":"Introducción"},{"value":"outro","label":"Cierre"}],"default":"intro"}],
   "presets": [{"name":"IE · Viviendas por sistema"}]
