@@ -22,27 +22,19 @@
 
 <section class="ie-hab-pdp ie-hab-pdp--hero" aria-labelledby="ie-hab-product-title-{{ section.id }}">
   <div class="ie-hab-pdp__inner">
-    <nav class="ie-hab-pdp__breadcrumb" aria-label="{{ section.settings.breadcrumb_label | escape }}">
-      <a href="{{ routes.root_url }}">{{ section.settings.home_label }}</a>
-
-      {% if ie_breadcrumb_1_label != blank and ie_breadcrumb_1_link != blank %}
-        <span aria-hidden="true">/</span>
-        <a href="{{ ie_breadcrumb_1_link }}">{{ ie_breadcrumb_1_label }}</a>
-      {% endif %}
-
-      {% if ie_breadcrumb_2_label != blank and ie_breadcrumb_2_link != blank %}
-        <span aria-hidden="true">/</span>
-        <a href="{{ ie_breadcrumb_2_link }}">{{ ie_breadcrumb_2_label }}</a>
-      {% endif %}
-
-      {% if ie_breadcrumb_3_label != blank and ie_breadcrumb_3_link != blank %}
-        <span aria-hidden="true">/</span>
-        <a href="{{ ie_breadcrumb_3_link }}">{{ ie_breadcrumb_3_label }}</a>
-      {% endif %}
-
-      <span aria-hidden="true">/</span>
-      <span aria-current="page">{{ product.title }}</span>
-    </nav>
+    {% render 'ie-breadcrumb',
+  breadcrumb_object: product,
+  current_title: product.title,
+  class_name: 'ie-hab-pdp__breadcrumb',
+  aria_label: section.settings.breadcrumb_label,
+  home_label: section.settings.home_label,
+  fallback_1_label: section.settings.breadcrumb_1_label,
+  fallback_1_link: section.settings.breadcrumb_1_link,
+  fallback_2_label: section.settings.breadcrumb_2_label,
+  fallback_2_link: section.settings.breadcrumb_2_link,
+  fallback_3_label: section.settings.breadcrumb_3_label,
+  fallback_3_link: section.settings.breadcrumb_3_link
+%}
 
     <div class="ie-hab-pdp__hero-grid">
       <div>
