@@ -1,0 +1,47 @@
+{% liquid
+  assign ie_object = blank
+  assign ie_title = section.settings.current_label
+  if product
+    assign ie_object = product
+    if ie_title == blank
+      assign ie_title = product.title
+    endif
+  elsif collection
+    assign ie_object = collection
+    if ie_title == blank
+      assign ie_title = collection.title
+    endif
+  elsif page
+    assign ie_object = page
+    if ie_title == blank
+      assign ie_title = page.title
+    endif
+  endif
+%}
+<section class="ie-global-breadcrumb page-width-content">
+  <div class="ie-global-breadcrumb__inner">
+    {% render 'ie-breadcrumb', breadcrumb_object: ie_object, current_title: ie_title, class_name: 'lux-breadcrumb', aria_label: section.settings.aria_label, home_label: section.settings.home_label %}
+    {% if section.settings.show_title and ie_title != blank %}
+      {% case section.settings.title_level %}
+        {% when 'h1' %}<h1 class="lux-title">{{ ie_title }}</h1>
+        {% when 'h2' %}<h2 class="lux-title">{{ ie_title }}</h2>
+        {% else %}<h3 class="lux-title">{{ ie_title }}</h3>
+      {% endcase %}
+    {% endif %}
+  </div>
+</section>
+{% schema %}
+{
+  "name":"IE · Breadcrumb global",
+  "settings":[
+    {"type":"text","id":"aria_label","label":"Etiqueta accesible","default":"Migas de pan"},
+    {"type":"text","id":"home_label","label":"Texto inicio","default":"Inicio"},
+    {"type":"text","id":"current_label","label":"Texto actual (opcional)"},
+    {"type":"checkbox","id":"show_title","label":"Mostrar título bajo el path","default":false},
+    {"type":"select","id":"title_level","label":"Nivel del título","options":[
+      {"value":"h1","label":"H1"},{"value":"h2","label":"H2"},{"value":"h3","label":"H3"}
+    ],"default":"h2"}
+  ],
+  "presets":[{"name":"IE · Breadcrumb global"}]
+}
+{% endschema %}
