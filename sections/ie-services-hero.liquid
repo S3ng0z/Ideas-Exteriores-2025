@@ -2,11 +2,7 @@
 
 <section class="ie-services ie-services--hero" aria-labelledby="ie-services-title-{{ section.id }}">
   <div class="ie-services__inner">
-    <nav class="ie-services__breadcrumb" aria-label="Migas de pan">
-      <a href="{{ routes.root_url }}">Inicio</a>
-      <span aria-hidden="true">/</span>
-      <span aria-current="page">{{ page.title }}</span>
-    </nav>
+    {% render 'ie-breadcrumb', breadcrumb_object: page, current_title: page.title, class_name: 'ie-services__breadcrumb' %}
 
     <div class="ie-services__hero">
       <div class="ie-services__hero-copy">
