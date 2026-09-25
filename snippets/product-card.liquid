@@ -20,7 +20,7 @@
 
 {% liquid
   assign has_quick_add = false
-  if settings.quick_add and product.available and collection.handle != 'light-frame-houses' and collection.handle != 'sip-panel-houses'
+  if settings.quick_add and product.available and collection.handle != 'light-frame-houses' and collection.handle != 'sip-panel-houses' and collection.handle != 'wooden-gazebos'
     assign has_quick_add = true
   endif
 
@@ -92,6 +92,8 @@
     {{ children }}
     {% if collection.handle == 'light-frame-houses' or collection.handle == 'sip-panel-houses' %}
       <span class="ie-hc__card-cta" aria-hidden="true">Ver modelo <span>→</span></span>
+    {% elsif collection.handle == 'wooden-gazebos' %}
+      <span class="ie-gz__card-cta" aria-hidden="true">Ver modelo <span>→</span></span>
     {% endif %}
   </a>
 </product-card>
