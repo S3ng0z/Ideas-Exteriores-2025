@@ -25,6 +25,11 @@
     assign seo_description = 'Diseñamos soluciones de madera para exterior y espacios habitables: casetas, pérgolas, tarimas, estudios y estructuras, con asesoramiento técnico y montaje.'
   endif
 
+  if request.page_type == 'collection' and collection.handle == 'wooden-gazebos'
+    assign seo_title = 'Cenadores de madera para jardín y gazebos'
+    assign seo_description = 'Compara cenadores y gazebos de madera para jardín por tamaño y precio de partida. Revisa estructura, cubierta, base, anclaje, transporte y montaje.'
+  endif
+
   assign og_title = seo_title
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
