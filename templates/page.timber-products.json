@@ -1,0 +1,116 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "summary_1": {"type":"summary","settings":{"number":"01","label":"Viviendas y espacios habitables"}},
+        "summary_2": {"type":"summary","settings":{"number":"02","label":"Casetas, estudios y espacios auxiliares"}},
+        "summary_3": {"type":"summary","settings":{"number":"03","label":"Pérgolas, porches, cenadores y tarimas"}}
+      },
+      "block_order": ["summary_1","summary_2","summary_3"],
+      "settings": {
+        "eyebrow": "Productos de madera",
+        "heading": "Casas, casetas y estructuras de madera para vivir y disfrutar el exterior",
+        "lead": "<p>Explora nuestras familias de producto según el uso que necesitas resolver. Reunimos viviendas, espacios auxiliares y soluciones de jardín en madera con información clara sobre sistema constructivo, alcance, montaje y siguientes pasos.</p>",
+        "primary_label": "Ver todas las soluciones",
+        "primary_link": "/collections/all",
+        "secondary_label": "Solicitar asesoramiento",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Empieza por tu necesidad"
+      }
+    },
+    "families": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "family_homes": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Habitar",
+            "heading": "Viviendas en madera",
+            "text": "<p>Casas industrializadas para uso residencial, con modelos en entramado ligero y panel SIP. Compara superficies, distribución y precio de partida antes de entrar en el detalle técnico del sistema.</p>",
+            "link_1_label": "Casas de entramado ligero",
+            "link_1": "/collections/light-frame-houses",
+            "link_2_label": "Casas con panel SIP",
+            "link_2": "/collections/sip-panel-houses",
+            "link_3_label": "Estudios y oficinas SIP",
+            "link_3": "/collections/sip-offices-and-studios"
+          }
+        },
+        "family_sheds": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Ampliar",
+            "heading": "Casetas, estudios y espacios auxiliares",
+            "text": "<p>Soluciones para jardín, almacenaje, trabajo, ocio o apoyo a piscina. Elige entre formatos compactos, módulos aislados y proyectos a medida según uso, tamaño, acabado y nivel de instalación.</p>",
+            "link_1_label": "SIP Smart Fit",
+            "link_1": "/collections/sip-smartfit-sheds",
+            "link_2_label": "SIP Compact Kit",
+            "link_2": "/collections/sip-compactkit-sheds",
+            "link_3_label": "Casetas a medida",
+            "link_3": "/pages/bespoke-wooden-sheds"
+          }
+        },
+        "family_garden": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Exterior",
+            "heading": "Estructuras de jardín y tarimas",
+            "text": "<p>Pérgolas, porches, cenadores y pavimentos exteriores para crear sombra, protección, estancia y continuidad entre vivienda y jardín. La elección depende de uso, exposición, cubierta, base y mantenimiento.</p>",
+            "link_1_label": "Pérgolas de madera",
+            "link_1": "/pages/bespoke-wooden-pergolas",
+            "link_2_label": "Porches de madera",
+            "link_2": "/pages/bespoke-wooden-porches",
+            "link_3_label": "Cenadores y gazebos",
+            "link_3": "/collections/wooden-gazebos"
+          }
+        }
+      },
+      "block_order": ["family_homes","family_sheds","family_garden"],
+      "settings": {
+        "eyebrow": "Familias de producto",
+        "heading": "Elige primero qué espacio quieres crear",
+        "intro": "<p>La tecnología constructiva es importante, pero llega después de definir la necesidad. Por eso organizamos el catálogo por uso y familia, y conectamos cada opción con el sistema, el montaje y los servicios que necesita.</p>"
+      }
+    },
+    "decision": {
+      "type": "ie-services-process",
+      "blocks": {
+        "step_1": {"type":"step","settings":{"number":"01","heading":"Define el uso","text":"Vivienda, trabajo, almacenaje, piscina, sombra, estancia exterior o pavimento."}},
+        "step_2": {"type":"step","settings":{"number":"02","heading":"Compara la familia","text":"Revisa tamaño, distribución, nivel de aislamiento, precio de partida y alcance de suministro o montaje."}},
+        "step_3": {"type":"step","settings":{"number":"03","heading":"Valida el sistema","text":"Entramado ligero, panel SIP o carpintería estructural se eligen según prestaciones, proyecto y solución concreta."}},
+        "step_4": {"type":"step","settings":{"number":"04","heading":"Cierra el alcance","text":"Base, transporte, montaje, protección, licencias y acabados deben quedar definidos antes de contratar."}}
+      },
+      "block_order": ["step_1","step_2","step_3","step_4"],
+      "settings": {
+        "eyebrow": "Cómo elegir",
+        "heading": "Del uso al producto, y del producto al proyecto",
+        "intro": "<p>Una buena elección no empieza comparando tecnologías aisladas. Empieza por el uso, continúa con la familia de producto y termina concretando sistema, configuración y alcance real.</p>"
+      }
+    },
+    "criteria": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "principle_1": {"type":"principle","settings":{"heading":"Alcance visible","text":"Diferenciamos producto, suministro, montaje y trabajos auxiliares para que sepas qué estás comparando."}},
+        "principle_2": {"type":"principle","settings":{"heading":"Precio contextualizado","text":"El precio de partida sirve para comparar modelos; base, transporte, instalación, acabados y proyecto pueden modificar el total."}},
+        "principle_3": {"type":"principle","settings":{"heading":"Sistema adecuado","text":"Entramado ligero, SIP y soluciones estructurales se relacionan con el uso y las prestaciones, no como categorías desconectadas."}},
+        "principle_4": {"type":"principle","settings":{"heading":"Proyecto coordinado","text":"Diseño, licencias, base, montaje, protección y mantenimiento se integran cuando el producto o la parcela lo requieren."}}
+      },
+      "block_order": ["principle_1","principle_2","principle_3","principle_4"],
+      "settings": {
+        "eyebrow": "Criterios de compra",
+        "heading": "Compara productos con el alcance completo en mente"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Cuéntanos qué espacio necesitas y dónde quieres instalarlo",
+        "text": "<p>Con el uso previsto, ubicación, medidas aproximadas y algunas fotografías podemos orientarte hacia la familia de producto, el sistema y el nivel de servicio más adecuados.</p>",
+        "label": "Hablar con el equipo",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": ["hero","families","decision","criteria","cta"]
+}
