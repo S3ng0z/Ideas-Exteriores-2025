@@ -35,6 +35,11 @@
     assign seo_description = 'Protección técnica de madera según uso, humedad y exposición: tratamiento preventivo, lasures, aceites, sellado de puntos críticos y mantenimiento.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'timber-structure-installation'
+    assign seo_title = 'Montaje de estructuras de madera | Ideas Exteriores'
+    assign seo_description = 'Montaje profesional de estructuras de madera con base, accesos, logística, medios, alcance y hito de entrega definidos antes de ejecutar la obra.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'timber-bases-and-foundations'
     assign seo_title = 'Bases y soleras para estructuras de madera'
     assign seo_description = 'Soluciones de base para estructuras de madera según terreno, uso y cargas: losas, zapatas, pilotes, drenaje, barreras antihumedad y anclajes.'
