@@ -1,0 +1,173 @@
+{{ 'ie-warranty-delivery-page.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-wdp ie-wdp--hero" aria-labelledby="ie-wdp-page-title">
+  <div class="ie-wdp__inner">
+    {% render 'ie-breadcrumb',
+      breadcrumb_object: page,
+      current_title: page.title,
+      class_name: 'ie-wdp__breadcrumb',
+      fallback_1_label: 'Servicios',
+      fallback_1_link: '/pages/services'
+    %}
+
+    <div class="ie-wdp__hero-grid">
+      <div class="ie-wdp__hero-copy">
+        <p class="ie-wdp__eyebrow">Servicio y garantías</p>
+        <h1 id="ie-wdp-page-title">Garantía, entrega y formas de pago para proyectos en madera</h1>
+        <div class="ie-wdp__lead rte">
+          <p>Define antes de contratar cómo se cubre la garantía, qué incluye la entrega, cómo se gestionan las incidencias y qué hitos de pago aplican a tu pedido. Las condiciones concretas dependen del producto, la configuración y los servicios contratados, y deben quedar reflejadas en la documentación comercial o contractual de cada proyecto.</p>
+        </div>
+        <div class="ie-wdp__actions">
+          <a class="ie-wdp__button ie-wdp__button--primary" href="#consulta-condiciones">Consultar condiciones de mi proyecto</a>
+          <a class="ie-wdp__button ie-wdp__button--secondary" href="/pages/secure-shipping-logistics-spain">Ver logística de entrega</a>
+        </div>
+      </div>
+
+      <aside class="ie-wdp__hero-summary" aria-label="Qué debe quedar definido">
+        <p class="ie-wdp__summary-title">Qué debe quedar definido</p>
+        <ul class="ie-wdp__summary-list" role="list">
+          <li>
+            <span>01</span>
+            <div>
+              <strong>Garantía documentada</strong>
+              <p>Cobertura, condiciones y exclusiones vinculadas al producto y al alcance contratado.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <strong>Entrega planificada</strong>
+              <p>Ubicación, accesos, modalidad de transporte y responsabilidades confirmadas antes de expedición.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <strong>Pagos por hitos</strong>
+              <p>Importes, medios aceptados y vencimientos definidos en la propuesta o pedido correspondiente.</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="ie-wdp ie-wdp--detail" aria-labelledby="ie-wdp-detail-title">
+  <div class="ie-wdp__inner">
+    <div class="ie-wdp__section-head">
+      <div>
+        <p class="ie-wdp__eyebrow">Lo que debe quedar por escrito</p>
+        <h2 id="ie-wdp-detail-title">Cuatro bloques que condicionan la compra y la entrega</h2>
+      </div>
+      <div class="ie-wdp__section-intro rte">
+        <p>La información útil no es una promesa genérica. Cada pedido debe identificar qué producto o servicio se contrata, qué cobertura aplica, cómo se entrega, cómo se revisa la recepción y qué hitos activan cada pago.</p>
+      </div>
+    </div>
+
+    <div class="ie-wdp__detail-grid">
+      <article class="ie-wdp__detail-card">
+        <span class="ie-wdp__detail-index">01</span>
+        <h3>Garantía y posventa</h3>
+        <div class="rte"><p>La cobertura debe identificar el producto o servicio, su alcance, condiciones de instalación y uso, requisitos de mantenimiento y exclusiones aplicables. Si aparece una incidencia, la revisión debe determinar su origen antes de definir la actuación.</p></div>
+        <a class="ie-wdp__text-link" href="/pages/wood-maintenance-repair">Mantenimiento y reparación <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="ie-wdp__detail-card">
+        <span class="ie-wdp__detail-index">02</span>
+        <h3>Entrega, transporte y accesos</h3>
+        <div class="rte"><p>La logística se confirma según ubicación, volumen, peso, accesos, medios de descarga y modalidad contratada. En proyectos con montaje, la preparación de base y la coordinación de obra forman parte del análisis previo.</p></div>
+        <a class="ie-wdp__text-link" href="/pages/secure-shipping-logistics-spain">Envío y logística <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="ie-wdp__detail-card">
+        <span class="ie-wdp__detail-index">03</span>
+        <h3>Recepción e incidencias</h3>
+        <div class="rte"><p>En la recepción conviene comprobar bultos, daños visibles, documentación y correspondencia con el pedido. Cualquier incidencia debe comunicarse con la evidencia y dentro de los plazos que figuren en la documentación aplicable.</p></div>
+        <a class="ie-wdp__text-link" href="/pages/timber-structure-installation">Consultar montaje profesional <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="ie-wdp__detail-card">
+        <span class="ie-wdp__detail-index">04</span>
+        <h3>Formas y calendario de pago</h3>
+        <div class="rte"><p>Los medios aceptados, importes y vencimientos se concretan en la oferta o pedido. En trabajos con fabricación, transporte o montaje pueden existir hitos de pago asociados a la confirmación, producción, expedición o ejecución.</p></div>
+        <a class="ie-wdp__text-link" href="/pages/contact-ideas-exteriores">Consultar una propuesta <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+
+    <div class="ie-wdp__note rte">
+      <p><strong>Referencia contractual:</strong> ante cualquier diferencia entre esta página y un presupuesto, pedido, ficha técnica o documento contractual aceptado, prevalecen las condiciones específicas de ese documento y los derechos legales que resulten aplicables.</p>
+    </div>
+  </div>
+</section>
+
+<section class="ie-wdp ie-wdp--process" id="proceso-entrega" aria-labelledby="ie-wdp-process-title">
+  <div class="ie-wdp__inner">
+    <div class="ie-wdp__process">
+      <div class="ie-wdp__process-intro">
+        <p class="ie-wdp__eyebrow">De la confirmación a la posventa</p>
+        <h2 id="ie-wdp-process-title">Un proceso verificable en cada hito</h2>
+        <div class="rte"><p>Ordenamos la documentación y la comunicación para que cada fase tenga un responsable, una condición de avance y una evidencia clara: pedido confirmado, producción, expedición, recepción y seguimiento posterior.</p></div>
+      </div>
+      <ol class="ie-wdp__process-list">
+        <li class="ie-wdp__process-step"><span>01</span><div><h3>Confirmar alcance y condiciones</h3><p>Revisamos producto, configuración, servicios, ubicación, logística, pagos y documentos aplicables antes de activar el pedido.</p></div></li>
+        <li class="ie-wdp__process-step"><span>02</span><div><h3>Validar datos de entrega</h3><p>Confirmamos dirección, accesos, restricciones, medios de descarga y persona de contacto para reducir incidencias logísticas.</p></div></li>
+        <li class="ie-wdp__process-step"><span>03</span><div><h3>Comunicar el hito de expedición</h3><p>Antes de la salida se coordinan la ventana prevista, la documentación disponible y las condiciones necesarias para la recepción.</p></div></li>
+        <li class="ie-wdp__process-step"><span>04</span><div><h3>Revisar la recepción</h3><p>Se comprueba el estado visible, la correspondencia con el pedido y cualquier incidencia que deba documentarse.</p></div></li>
+        <li class="ie-wdp__process-step"><span>05</span><div><h3>Activar posventa cuando corresponda</h3><p>Ante una incidencia, recopilamos la información necesaria para diferenciar transporte, montaje, mantenimiento, ajuste o garantía.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="ie-wdp ie-wdp--faq" aria-labelledby="ie-wdp-faq-title">
+  <div class="ie-wdp__inner">
+    <div class="ie-wdp__section-head ie-wdp__section-head--faq">
+      <div>
+        <p class="ie-wdp__eyebrow">Preguntas frecuentes</p>
+        <h2 id="ie-wdp-faq-title">Qué conviene revisar antes de aceptar el pedido</h2>
+      </div>
+      <div class="ie-wdp__section-intro rte"><p>Estas respuestas sirven como guía operativa. Las condiciones específicas de cada compra se concretan en el presupuesto, pedido y documentación que corresponda.</p></div>
+    </div>
+
+    <div class="ie-wdp__faq-list">
+      <details class="ie-wdp__faq-item"><summary><span>¿La garantía es igual para todos los productos y servicios?</span><span class="ie-wdp__faq-icon" aria-hidden="true"></span></summary><div class="ie-wdp__faq-answer rte"><p>No necesariamente. El alcance depende del producto, sus componentes, el servicio contratado y las condiciones específicas de instalación, uso y mantenimiento. Debe quedar identificado en la documentación aplicable a tu proyecto.</p></div></details>
+      <details class="ie-wdp__faq-item"><summary><span>¿Cómo se confirma el plazo de entrega?</span><span class="ie-wdp__faq-icon" aria-hidden="true"></span></summary><div class="ie-wdp__faq-answer rte"><p>El plazo debe confirmarse para cada pedido teniendo en cuenta disponibilidad, fabricación, configuración, transporte, ubicación y, cuando aplique, montaje. Una estimación comercial no sustituye la fecha o ventana que finalmente se confirme para el pedido.</p></div></details>
+      <details class="ie-wdp__faq-item"><summary><span>¿Qué debo revisar cuando recibo el material?</span><span class="ie-wdp__faq-icon" aria-hidden="true"></span></summary><div class="ie-wdp__faq-answer rte"><p>Comprueba el estado visible, número de bultos o elementos, documentación y correspondencia con el pedido. Si detectas daños o faltas, documenta la incidencia y comunícala por el canal indicado en la documentación de entrega.</p></div></details>
+      <details class="ie-wdp__faq-item"><summary><span>¿Qué ocurre si aparece una incidencia después del montaje?</span><span class="ie-wdp__faq-icon" aria-hidden="true"></span></summary><div class="ie-wdp__faq-answer rte"><p>La incidencia debe revisarse para identificar su origen. Según el caso puede requerir un ajuste, una reparación, mantenimiento, intervención sobre la base o una actuación cubierta por las condiciones de garantía.</p></div></details>
+      <details class="ie-wdp__faq-item"><summary><span>¿Qué formas de pago están disponibles?</span><span class="ie-wdp__faq-icon" aria-hidden="true"></span></summary><div class="ie-wdp__faq-answer rte"><p>Los medios de pago y el calendario aplicable se indican en la propuesta o pedido correspondiente. Cuando existe fabricación, transporte o montaje, el pago puede organizarse por hitos definidos antes de contratar.</p></div></details>
+      <details class="ie-wdp__faq-item"><summary><span>¿El mantenimiento puede afectar a la garantía?</span><span class="ie-wdp__faq-icon" aria-hidden="true"></span></summary><div class="ie-wdp__faq-answer rte"><p>Determinados productos, acabados o soluciones pueden requerir pautas de mantenimiento para conservar sus prestaciones y estado. Si esas condiciones son relevantes para la cobertura, deben quedar indicadas en la documentación aplicable.</p></div></details>
+    </div>
+  </div>
+
+  <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"¿La garantía es igual para todos los productos y servicios?","acceptedAnswer":{"@type":"Answer","text":"No necesariamente. El alcance depende del producto, sus componentes, el servicio contratado y las condiciones específicas de instalación, uso y mantenimiento. Debe quedar identificado en la documentación aplicable a tu proyecto."}},
+        {"@type":"Question","name":"¿Cómo se confirma el plazo de entrega?","acceptedAnswer":{"@type":"Answer","text":"El plazo debe confirmarse para cada pedido teniendo en cuenta disponibilidad, fabricación, configuración, transporte, ubicación y, cuando aplique, montaje. Una estimación comercial no sustituye la fecha o ventana que finalmente se confirme para el pedido."}},
+        {"@type":"Question","name":"¿Qué debo revisar cuando recibo el material?","acceptedAnswer":{"@type":"Answer","text":"Comprueba el estado visible, número de bultos o elementos, documentación y correspondencia con el pedido. Si detectas daños o faltas, documenta la incidencia y comunícala por el canal indicado en la documentación de entrega."}},
+        {"@type":"Question","name":"¿Qué ocurre si aparece una incidencia después del montaje?","acceptedAnswer":{"@type":"Answer","text":"La incidencia debe revisarse para identificar su origen. Según el caso puede requerir un ajuste, una reparación, mantenimiento, intervención sobre la base o una actuación cubierta por las condiciones de garantía."}},
+        {"@type":"Question","name":"¿Qué formas de pago están disponibles?","acceptedAnswer":{"@type":"Answer","text":"Los medios de pago y el calendario aplicable se indican en la propuesta o pedido correspondiente. Cuando existe fabricación, transporte o montaje, el pago puede organizarse por hitos definidos antes de contratar."}},
+        {"@type":"Question","name":"¿El mantenimiento puede afectar a la garantía?","acceptedAnswer":{"@type":"Answer","text":"Determinados productos, acabados o soluciones pueden requerir pautas de mantenimiento para conservar sus prestaciones y estado. Si esas condiciones son relevantes para la cobertura, deben quedar indicadas en la documentación aplicable."}}
+      ]
+    }
+  </script>
+</section>
+
+<section class="ie-wdp ie-wdp--cta" id="consulta-condiciones" aria-labelledby="ie-wdp-cta-title">
+  <div class="ie-wdp__inner">
+    <div class="ie-wdp__closing">
+      <div>
+        <p class="ie-wdp__eyebrow">Antes de contratar</p>
+        <h2 id="ie-wdp-cta-title">Pide las condiciones aplicables a tu proyecto</h2>
+        <div class="rte"><p>Indícanos el producto o solución, la ubicación y si necesitas suministro, transporte, montaje u otros servicios. Te ayudaremos a revisar el alcance y la documentación que debe quedar definida antes de confirmar.</p></div>
+      </div>
+      <div class="ie-wdp__closing-actions">
+        <a class="ie-wdp__button ie-wdp__button--primary" href="/pages/contact-ideas-exteriores">Hablar con el equipo</a>
+        <a class="ie-wdp__button ie-wdp__button--secondary" href="/pages/wood-maintenance-repair">Ver mantenimiento y reparación</a>
+      </div>
+    </div>
+  </div>
+</section>
