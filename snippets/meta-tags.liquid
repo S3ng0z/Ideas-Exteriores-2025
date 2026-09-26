@@ -35,6 +35,11 @@
     assign seo_description = 'Protección técnica de madera según uso, humedad y exposición: tratamiento preventivo, lasures, aceites, sellado de puntos críticos y mantenimiento.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'wood-3d-design-consulting'
+    assign seo_title = 'Diseño 3D en madera y asesoría técnica'
+    assign seo_description = 'Diseño 3D y asesoría técnica para definir medidas, distribución, sistema constructivo y alcance antes de presupuestar, fabricar o tramitar el proyecto.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'timber-structure-installation'
     assign seo_title = 'Montaje de estructuras de madera | Ideas Exteriores'
     assign seo_description = 'Montaje profesional de estructuras de madera con base, accesos, logística, medios, alcance y hito de entrega definidos antes de ejecutar la obra.'
