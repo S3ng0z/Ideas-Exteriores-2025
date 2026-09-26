@@ -1,0 +1,101 @@
+<section class="ie-project ie-project--inquiry" id="consulta-viabilidad" aria-labelledby="ie-project-inquiry-title-{{ section.id }}">
+  <div class="ie-project__inner">
+    <div class="ie-project__inquiry-grid">
+      <div class="ie-project__inquiry-copy">
+        {% if section.settings.eyebrow != blank %}<p class="ie-project__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-project-inquiry-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}<div class="ie-project__inquiry-intro rte">{{ section.settings.intro }}</div>{% endif %}
+        <ul class="ie-project__checklist" role="list">
+          {% for block in section.blocks %}<li {{ block.shopify_attributes }}><span>{{ block.settings.number }}</span><div><strong>{{ block.settings.heading }}</strong><p>{{ block.settings.text }}</p></div></li>{% endfor %}
+        </ul>
+      </div>
+
+      <div class="ie-project__form-panel">
+        {% assign form_id = 'IEProjectPermitForm-' | append: section.id %}
+        {% form 'contact', id: form_id, class: 'ie-project__form' %}
+          {% if form.posted_successfully? %}
+            <div class="ie-project__form-status ie-project__form-status--success" tabindex="-1">Hemos recibido tu consulta de viabilidad. Revisaremos el contexto para indicarte el siguiente paso.</div>
+          {% endif %}
+          {% if form.errors %}
+            <div class="ie-project__form-status ie-project__form-status--error" tabindex="-1">{{ form.errors | default_errors }}</div>
+          {% endif %}
+          <input type="hidden" name="contact[Origen]" value="{{ canonical_url }}">
+          <input type="hidden" name="contact[Motivo]" value="Gestión de proyectos y licencias">
+
+          <div class="ie-project__form-grid">
+            <div class="ie-project__field">
+              <label for="{{ form_id }}-name">Nombre</label>
+              <input id="{{ form_id }}-name" type="text" name="contact[name]" autocomplete="name" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+            </div>
+            <div class="ie-project__field">
+              <label for="{{ form_id }}-email">Email *</label>
+              <input id="{{ form_id }}-email" type="email" name="contact[email]" autocomplete="email" required aria-required="true" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+            </div>
+            <div class="ie-project__field">
+              <label for="{{ form_id }}-phone">Teléfono</label>
+              <input id="{{ form_id }}-phone" type="tel" name="contact[phone]" autocomplete="tel" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+            </div>
+            <div class="ie-project__field">
+              <label for="{{ form_id }}-municipality">Municipio / código postal *</label>
+              <input id="{{ form_id }}-municipality" type="text" name="contact[Municipio]" autocomplete="postal-code" required aria-required="true">
+            </div>
+            <div class="ie-project__field">
+              <label for="{{ form_id }}-use">Uso previsto *</label>
+              <select id="{{ form_id }}-use" name="contact[Uso previsto]" required aria-required="true">
+                <option value="">Selecciona una opción</option>
+                <option value="Almacenaje o caseta">Almacenaje o caseta</option>
+                <option value="Estudio u oficina">Estudio u oficina</option>
+                <option value="Uso habitable">Uso habitable</option>
+                <option value="Porche, pérgola o cerramiento">Porche, pérgola o cerramiento</option>
+                <option value="Ampliación">Ampliación</option>
+                <option value="Otra solución">Otra solución</option>
+              </select>
+            </div>
+            <div class="ie-project__field">
+              <label for="{{ form_id }}-stage">Punto de partida</label>
+              <select id="{{ form_id }}-stage" name="contact[Estado del proyecto]">
+                <option value="">Selecciona una opción</option>
+                <option value="Idea inicial">Idea inicial</option>
+                <option value="Tengo medidas o croquis">Tengo medidas o croquis</option>
+                <option value="Tengo diseño 3D">Tengo diseño 3D</option>
+                <option value="Tengo proyecto técnico">Tengo proyecto técnico</option>
+                <option value="Expediente ya iniciado">Expediente ya iniciado</option>
+              </select>
+            </div>
+            <div class="ie-project__field ie-project__field--full">
+              <label for="{{ form_id }}-body">Cuéntanos lo esencial *</label>
+              <textarea id="{{ form_id }}-body" name="contact[body]" required aria-required="true" placeholder="Parcela o inmueble, dimensiones aproximadas, uso, qué documentación tienes y qué necesitas resolver.">{{ form.body }}</textarea>
+            </div>
+          </div>
+
+          <label class="ie-project__privacy">
+            <input type="checkbox" name="contact[Privacidad]" value="Aceptada" required>
+            <span>He leído y acepto la <a href="{{ section.settings.privacy_link | default: '/policies/privacy-policy' }}">política de privacidad</a>.</span>
+          </label>
+          <button class="ie-project__button ie-project__button--primary ie-project__submit" type="submit">{{ section.settings.submit_label }}</button>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name":"Proyectos y licencias · Consulta",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Revisión inicial"},
+    {"type":"text","id":"heading","label":"Título","default":"Danos el contexto necesario para revisar la viabilidad"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>No necesitas tener el expediente cerrado. Con ubicación, uso, dimensiones y el material que ya tengas podemos identificar qué conviene comprobar antes de avanzar.</p>"},
+    {"type":"text","id":"submit_label","label":"Texto del botón","default":"Solicitar revisión de viabilidad"},
+    {"type":"url","id":"privacy_link","label":"Política de privacidad"}
+  ],
+  "blocks":[
+    {"type":"item","name":"Dato recomendado","settings":[
+      {"type":"text","id":"number","label":"Número","default":"01"},
+      {"type":"text","id":"heading","label":"Título","default":"Ubicación"},
+      {"type":"textarea","id":"text","label":"Texto","default":"Municipio, código postal y, si la tienes, referencia o información básica de la parcela."}
+    ]}
+  ],
+  "max_blocks":5,
+  "presets":[{"name":"Proyectos y licencias · Consulta"}]
+}
+{% endschema %}
