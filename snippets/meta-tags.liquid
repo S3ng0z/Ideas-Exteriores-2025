@@ -30,6 +30,11 @@
     assign seo_description = 'Compara cenadores y gazebos de madera para jardín por tamaño y precio de partida. Revisa estructura, cubierta, base, anclaje, transporte y montaje.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'wood-maintenance-repair'
+    assign seo_title = 'Mantenimiento y reparación de madera exterior'
+    assign seo_description = 'Mantenimiento y reparación de madera exterior con diagnóstico previo, saneado, reparación localizada, renovación de protección y plan de mantenimiento.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'wood-treatment-protection'
     assign seo_title = 'Tratamiento y protección de la madera exterior'
     assign seo_description = 'Protección técnica de madera según uso, humedad y exposición: tratamiento preventivo, lasures, aceites, sellado de puntos críticos y mantenimiento.'
