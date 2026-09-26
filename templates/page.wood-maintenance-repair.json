@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "summary_1": {"type":"summary","settings":{"number":"01","label":"Diagnóstico del estado y del origen del deterioro"}},
+        "summary_2": {"type":"summary","settings":{"number":"02","label":"Actuación ajustada a madera, exposición y acabado"}},
+        "summary_3": {"type":"summary","settings":{"number":"03","label":"Criterio de mantenimiento para prolongar la vida útil"}}
+      },
+      "block_order": ["summary_1","summary_2","summary_3"],
+      "settings": {
+        "eyebrow": "Mantenimiento · reparación · protección",
+        "heading": "Mantenimiento y reparación de madera exterior con diagnóstico previo",
+        "lead": "<p>Revisamos estructuras, revestimientos, tarimas y elementos de madera para identificar el origen del deterioro y definir una actuación proporcionada. El objetivo no es ocultar el problema con un acabado nuevo, sino recuperar protección, corregir puntos críticos cuando sea posible y dejar un criterio claro de mantenimiento posterior.</p>",
+        "primary_label": "Solicitar valoración",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Ver tratamiento y protección",
+        "secondary_link": "/pages/wood-treatment-protection",
+        "summary_title": "Intervenir con criterio"
+      }
+    },
+    "detail": {
+      "type": "ie-service-detail",
+      "blocks": {
+        "d1": {"type":"item","settings":{"number":"01","heading":"Estado de la superficie y del acabado","text":"<p>Comprobamos desgaste, pérdida de protección, decoloración, fisuras superficiales y adherencia del acabado existente para distinguir mantenimiento ordinario de una reparación.</p>","point_1":"Desgaste por sol, lluvia y uso","point_2":"Estado de lasur, aceite, pintura u otro acabado","point_3":"Compatibilidad antes de aplicar un nuevo sistema"}},
+        "d2": {"type":"item","settings":{"number":"02","heading":"Humedad, agua y puntos de encuentro","text":"<p>La presencia repetida de agua puede acelerar el deterioro. Revisamos apoyos, encuentros, drenaje y zonas con ventilación insuficiente para localizar causas que conviene corregir antes de volver a proteger.</p>","point_1":"Contactos con suelo y zonas de salpicadura","point_2":"Retenciones de agua y drenajes deficientes","point_3":"Encuentros con fachada, cubierta o pavimento"}},
+        "d3": {"type":"item","settings":{"number":"03","heading":"Daños y piezas que requieren reparación","text":"<p>Cuando existen daños localizados valoramos si pueden sanearse, ajustarse o sustituirse. En elementos estructurales, la decisión depende del alcance real del daño y puede requerir una valoración técnica específica.</p>","point_1":"Piezas deterioradas o deformadas","point_2":"Herrajes, uniones y fijaciones visibles","point_3":"Sustituciones localizadas cuando procede"}},
+        "d4": {"type":"item","settings":{"number":"04","heading":"Preparación antes del tratamiento","text":"<p>Una intervención duradera necesita una base adecuada. Definimos limpieza, lijado, retirada de acabados incompatibles y preparación de la madera según su estado y el sistema de protección elegido.</p>","point_1":"Limpieza y saneado de superficie","point_2":"Lijado o decapado solo cuando es necesario","point_3":"Preparación compatible con el acabado posterior"}},
+        "d5": {"type":"item","settings":{"number":"05","heading":"Protección y acabado","text":"<p>Seleccionamos la solución de acabado según especie de madera, exposición, aspecto buscado y mantenimiento asumible. No todos los productos son adecuados para todas las situaciones.</p>","point_1":"Protección frente a intemperie y radiación solar","point_2":"Acabado coherente con el uso y la exposición","point_3":"Sistema mantenible en futuras revisiones"}},
+        "d6": {"type":"item","settings":{"number":"06","heading":"Plan de mantenimiento posterior","text":"<p>Tras la actuación dejamos claro qué conviene revisar y con qué frecuencia orientativa. La periodicidad real cambia con la orientación, el clima, el diseño constructivo, el uso y el acabado.</p>","point_1":"Revisión visual periódica","point_2":"Actuar antes de que el acabado se degrade por completo","point_3":"Atención especial a agua, apoyos y caras más expuestas"}}
+      },
+      "block_order": ["d1","d2","d3","d4","d5","d6"],
+      "settings": {
+        "eyebrow": "Diagnóstico antes de actuar",
+        "heading": "Qué revisamos en una intervención de mantenimiento o reparación",
+        "intro": "<p>La misma señal visible puede tener causas distintas. Por eso ordenamos la revisión desde la superficie hasta los puntos constructivos que condicionan la durabilidad y definimos el alcance antes de aplicar tratamientos o sustituir piezas.</p>",
+        "note": "<p>Una revisión visual no sustituye un informe estructural o pericial cuando existen daños relevantes, patologías complejas o dudas sobre la capacidad resistente. En esos casos indicamos la necesidad de una valoración técnica específica.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {"type":"principle","settings":{"heading":"Diagnóstico antes que producto","text":"No partimos de un tratamiento concreto. Primero identificamos el estado, la exposición y la causa probable del deterioro."}},
+        "c2": {"type":"principle","settings":{"heading":"Reparar solo lo necesario","text":"Priorizamos actuaciones proporcionadas: mantenimiento, saneado, ajuste o sustitución localizada según el estado real de cada zona."}},
+        "c3": {"type":"principle","settings":{"heading":"Mantenimiento entendible","text":"La entrega debe incluir un criterio práctico de revisión posterior para evitar que pequeñas incidencias se conviertan en reparaciones mayores."}}
+      },
+      "block_order": ["c1","c2","c3"],
+      "settings": {
+        "eyebrow": "Criterio de intervención",
+        "heading": "Proteger la madera empieza por entender por qué se está deteriorando"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "p1": {"type":"step","settings":{"number":"01","heading":"Recibimos información","text":"Fotos, ubicación, antigüedad aproximada, acabado conocido y descripción de la incidencia nos permiten hacer una primera lectura."}},
+        "p2": {"type":"step","settings":{"number":"02","heading":"Valoramos el estado","text":"Cuando procede revisamos la madera y los puntos constructivos que pueden estar provocando humedad, desgaste o daño localizado."}},
+        "p3": {"type":"step","settings":{"number":"03","heading":"Definimos la actuación","text":"Concretamos preparación, reparación, sustituciones necesarias y sistema de protección, dejando claro qué incluye el alcance."}},
+        "p4": {"type":"step","settings":{"number":"04","heading":"Ejecutamos y dejamos criterio de cuidado","text":"Realizamos la intervención acordada y explicamos qué conviene revisar después según exposición, uso y acabado."}}
+      },
+      "block_order": ["p1","p2","p3","p4"],
+      "settings": {
+        "eyebrow": "Cómo trabajamos",
+        "heading": "De la incidencia a una actuación definida",
+        "intro": "<p>Separar diagnóstico, preparación y ejecución reduce tratamientos innecesarios y ayuda a que el resultado sea mantenible con el tiempo.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Solicitar valoración",
+        "heading": "Cuéntanos qué le ocurre a la madera",
+        "text": "<p>Envíanos fotografías generales y de detalle, ubicación, medidas aproximadas y cualquier información que tengas sobre el acabado o intervenciones anteriores. Con ese contexto podremos orientarte sobre el siguiente paso.</p>",
+        "label": "Contactar con el equipo",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": ["hero","detail","confidence","process","cta"]
+}

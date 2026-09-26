@@ -1,0 +1,54 @@
+/* Reusable technical detail section for service pages · Ideas Exteriores */
+.ie-service-detail{
+  --ie-detail-ink:#1f231e;
+  --ie-detail-forest:#566236;
+  --ie-detail-bone:#f9f8f6;
+  --ie-detail-line:rgba(31,35,30,.14);
+  --ie-detail-muted:rgba(31,35,30,.72);
+  color:var(--ie-detail-ink);
+  background:#fbfaf7;
+}
+.ie-service-detail__inner{width:min(calc(100% - 64px),1600px);margin-inline:auto;padding-block:88px}
+.ie-service-detail__head{display:grid;grid-template-columns:minmax(360px,.86fr) minmax(0,1.14fr);gap:clamp(36px,5vw,72px);align-items:start;padding-bottom:38px;border-bottom:1px solid var(--ie-detail-line)}
+.ie-service-detail__eyebrow{margin:0 0 12px;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.78rem;font-weight:700;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:var(--ie-detail-forest)}
+.ie-service-detail__head h2{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:clamp(2rem,2.65vw,3.15rem);font-weight:500;line-height:1.04;letter-spacing:-.02em;text-transform:none;text-wrap:pretty}
+.ie-service-detail__intro{padding-top:24px;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:1.05rem;line-height:1.65;color:var(--ie-detail-muted)}
+.ie-service-detail__intro>*{margin:0}
+.ie-service-detail__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--ie-detail-line)}
+.ie-service-detail__item{min-width:0;padding:34px 32px 38px 0;border-right:1px solid var(--ie-detail-line)}
+.ie-service-detail__item+article{padding-left:32px}
+.ie-service-detail__item:nth-child(3n){border-right:0}
+.ie-service-detail__item:nth-child(n+4){border-top:1px solid var(--ie-detail-line)}
+.ie-service-detail__number{display:block;margin-bottom:30px;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.08em;color:var(--ie-detail-forest)}
+.ie-service-detail__item h3{margin:0 0 12px;font-family:"Source Serif 4",Georgia,serif;font-size:1.4rem;font-weight:500;line-height:1.15;letter-spacing:-.01em;text-wrap:pretty}
+.ie-service-detail__text{font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.94rem;line-height:1.62;color:var(--ie-detail-muted)}
+.ie-service-detail__text>*{margin:0}
+.ie-service-detail__points{margin:22px 0 0;padding:0;list-style:none;border-top:1px solid var(--ie-detail-line)}
+.ie-service-detail__points li{display:grid;grid-template-columns:8px 1fr;gap:10px;padding:11px 0;border-bottom:1px solid var(--ie-detail-line);font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.86rem;line-height:1.5;color:var(--ie-detail-muted)}
+.ie-service-detail__points li::before{content:"";width:4px;height:4px;margin-top:.62em;border-radius:50%;background:var(--ie-detail-forest)}
+.ie-service-detail__note{max-width:980px;margin-top:32px;padding:18px 20px;border-left:2px solid var(--ie-detail-forest);background:#efede5;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.9rem;line-height:1.62;color:var(--ie-detail-muted)}
+.ie-service-detail__note>*{margin:0}
+.ie-service-detail :focus-visible{outline:2px solid var(--ie-detail-forest);outline-offset:4px}
+@media screen and (min-width:750px){
+  .ie-service-detail__intro,.ie-service-detail__text,.ie-service-detail__note{text-align:justify;text-justify:inter-word;hyphens:none;-webkit-hyphens:none}
+}
+@media screen and (max-width:989px){
+  .ie-service-detail__inner{width:min(calc(100% - 48px),1600px);padding-block:72px}
+  .ie-service-detail__head{grid-template-columns:1fr;gap:20px}
+  .ie-service-detail__intro{padding-top:0}
+  .ie-service-detail__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ie-service-detail__item:nth-child(3n){border-right:1px solid var(--ie-detail-line)}
+  .ie-service-detail__item:nth-child(2n){border-right:0}
+  .ie-service-detail__item:nth-child(n+3){border-top:1px solid var(--ie-detail-line)}
+}
+@media screen and (max-width:749px){
+  .ie-service-detail__inner{width:calc(100% - 32px);padding-block:58px}
+  .ie-service-detail__head{padding-bottom:28px}
+  .ie-service-detail__head h2{font-size:clamp(1.9rem,8vw,2.55rem)}
+  .ie-service-detail__intro,.ie-service-detail__text,.ie-service-detail__note{text-align:left}
+  .ie-service-detail__grid{grid-template-columns:1fr}
+  .ie-service-detail__item,.ie-service-detail__item+article{padding:28px 0;border-right:0!important;border-top:1px solid var(--ie-detail-line)}
+  .ie-service-detail__item:first-child{border-top:0}
+  .ie-service-detail__item:nth-child(n+3){border-top:1px solid var(--ie-detail-line)}
+  .ie-service-detail__number{margin-bottom:20px}
+}

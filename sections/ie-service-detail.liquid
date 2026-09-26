@@ -1,0 +1,70 @@
+{{ 'ie-service-detail-page.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-service-detail" aria-labelledby="ie-service-detail-title-{{ section.id }}">
+  <div class="ie-service-detail__inner">
+    <div class="ie-service-detail__head">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-service-detail__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-service-detail-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}
+        <div class="ie-service-detail__intro rte">{{ section.settings.intro }}</div>
+      {% endif %}
+    </div>
+
+    <div class="ie-service-detail__grid">
+      {% for block in section.blocks %}
+        <article class="ie-service-detail__item" {{ block.shopify_attributes }}>
+          {% if block.settings.number != blank %}
+            <span class="ie-service-detail__number">{{ block.settings.number }}</span>
+          {% endif %}
+          <h3>{{ block.settings.heading }}</h3>
+          {% if block.settings.text != blank %}
+            <div class="ie-service-detail__text rte">{{ block.settings.text }}</div>
+          {% endif %}
+          {% if block.settings.point_1 != blank or block.settings.point_2 != blank or block.settings.point_3 != blank %}
+            <ul class="ie-service-detail__points" role="list">
+              {% if block.settings.point_1 != blank %}<li>{{ block.settings.point_1 }}</li>{% endif %}
+              {% if block.settings.point_2 != blank %}<li>{{ block.settings.point_2 }}</li>{% endif %}
+              {% if block.settings.point_3 != blank %}<li>{{ block.settings.point_3 }}</li>{% endif %}
+            </ul>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.note != blank %}
+      <div class="ie-service-detail__note rte">{{ section.settings.note }}</div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Servicio · Detalle técnico",
+  "settings": [
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Qué revisamos"},
+    {"type":"text","id":"heading","label":"Título","default":"Un diagnóstico antes de intervenir"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>La actuación correcta depende del origen del deterioro, de la exposición de la madera y del acabado existente.</p>"},
+    {"type":"richtext","id":"note","label":"Nota final"}
+  ],
+  "blocks": [
+    {
+      "type":"item",
+      "name":"Bloque técnico",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Estado de la madera"},
+        {"type":"richtext","id":"text","label":"Texto","default":"<p>Revisamos el estado visible y los puntos que pueden explicar el deterioro antes de proponer una actuación.</p>"},
+        {"type":"text","id":"point_1","label":"Punto 1"},
+        {"type":"text","id":"point_2","label":"Punto 2"},
+        {"type":"text","id":"point_3","label":"Punto 3"}
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets":[{"name":"Servicio · Detalle técnico"}]
+}
+{% endschema %}
