@@ -1,0 +1,7 @@
+<section class="ie-project ie-project--faq" aria-labelledby="ie-project-faq-title-{{ section.id }}"><div class="ie-project__inner"><div class="ie-project__faq-grid">
+  <div>{% if section.settings.eyebrow != blank %}<p class="ie-project__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}<h2 id="ie-project-faq-title-{{ section.id }}">{{ section.settings.heading }}</h2></div>
+  <div class="ie-project__faq-list">{% for block in section.blocks %}<details class="ie-project__faq-item" {{ block.shopify_attributes }}><summary>{{ block.settings.question }}</summary><div class="ie-project__faq-answer rte">{{ block.settings.answer }}</div></details>{% endfor %}</div>
+</div></div></section>
+{% schema %}
+{"name":"Proyectos y licencias · FAQ","settings":[{"type":"text","id":"eyebrow","label":"Antetítulo","default":"Preguntas frecuentes"},{"type":"text","id":"heading","label":"Título","default":"Lo que conviene saber antes de iniciar la tramitación"}],"blocks":[{"type":"faq","name":"Pregunta","settings":[{"type":"text","id":"question","label":"Pregunta","default":"¿Es obra menor u obra mayor?"},{"type":"richtext","id":"answer","label":"Respuesta","default":"<p>Depende del uso, la superficie, la altura, la afección estructural y la normativa municipal. Lo definimos después de revisar el caso y su encaje urbanístico.</p>"}]}],"max_blocks":8,"presets":[{"name":"Proyectos y licencias · FAQ"}]}
+{% endschema %}
