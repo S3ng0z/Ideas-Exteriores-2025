@@ -1,0 +1,259 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-wood-3d-hero",
+      "blocks": {
+        "outcome_1": {
+          "type": "outcome",
+          "settings": {
+            "number": "01",
+            "heading": "Una solución definida",
+            "text": "Uso, dimensiones y condicionantes principales ordenados antes de avanzar."
+          }
+        },
+        "outcome_2": {
+          "type": "outcome",
+          "settings": {
+            "number": "02",
+            "heading": "Una propuesta visual",
+            "text": "Volumen, distribución, huecos y proporciones para validar el encaje general."
+          }
+        },
+        "outcome_3": {
+          "type": "outcome",
+          "settings": {
+            "number": "03",
+            "heading": "Criterio para el siguiente paso",
+            "text": "Alcance técnico y decisiones pendientes identificados para presupuestar, documentar o fabricar."
+          }
+        }
+      },
+      "block_order": [
+        "outcome_1",
+        "outcome_2",
+        "outcome_3"
+      ],
+      "settings": {
+        "eyebrow": "Diseño 3D y asesoría técnica",
+        "heading": "Define tu proyecto en madera antes de fabricar",
+        "lead": "<p>Convertimos una necesidad, unas medidas o una idea inicial en una propuesta visual y técnica que permite decidir con más claridad antes de presupuestar, fabricar o iniciar trámites. El objetivo no es decorar un render: es ordenar el proyecto y reducir decisiones abiertas.</p>",
+        "primary_label": "Solicitar orientación técnica",
+        "primary_link": "#consulta-tecnica",
+        "secondary_label": "Ver cómo trabajamos",
+        "secondary_link": "#proceso",
+        "summary_title": "Qué obtienes"
+      }
+    },
+    "detail": {
+      "type": "ie-wood-3d-detail",
+      "blocks": {
+        "scope_1": {
+          "type": "scope",
+          "settings": {
+            "number": "01",
+            "heading": "Encaje y distribución",
+            "text": "<p>Revisamos uso previsto, dimensiones, accesos, orientación, huecos, circulaciones y relación con el espacio disponible.</p>"
+          }
+        },
+        "scope_2": {
+          "type": "scope",
+          "settings": {
+            "number": "02",
+            "heading": "Volumetría y aspecto",
+            "text": "<p>Definimos proporciones, alturas, cubierta y una lectura coherente de materiales y acabados para validar el conjunto antes de fabricar.</p>"
+          }
+        },
+        "scope_3": {
+          "type": "scope",
+          "settings": {
+            "number": "03",
+            "heading": "Sistema constructivo",
+            "text": "<p>Orientamos la solución hacia entramado ligero, panel SIP u otra composición adecuada según uso, prestaciones y nivel de industrialización requerido.</p>"
+          }
+        },
+        "scope_4": {
+          "type": "scope",
+          "settings": {
+            "number": "04",
+            "heading": "Puntos técnicos críticos",
+            "text": "<p>Identificamos apoyos, encuentros, huecos, aislamiento, humedad, ventilación, instalaciones y otros condicionantes que deben resolverse en la fase correspondiente.</p>"
+          }
+        },
+        "scope_5": {
+          "type": "scope",
+          "settings": {
+            "number": "05",
+            "heading": "Alcance y documentación",
+            "text": "<p>Separamos lo que queda definido con la asesoría de lo que requiere planos técnicos, cálculo, memoria, licencia o intervención de un técnico competente.</p>"
+          }
+        },
+        "scope_6": {
+          "type": "scope",
+          "settings": {
+            "number": "06",
+            "heading": "Base para presupuesto",
+            "text": "<p>La definición obtenida permite pedir una valoración con un alcance más claro y reduce comparaciones entre propuestas que en realidad incluyen cosas distintas.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "scope_1",
+        "scope_2",
+        "scope_3",
+        "scope_4",
+        "scope_5",
+        "scope_6"
+      ],
+      "settings": {
+        "eyebrow": "Alcance del servicio",
+        "heading": "Diseño para decidir, no solo para visualizar",
+        "intro": "<p>El servicio se adapta al punto de partida del proyecto. Priorizamos las decisiones que condicionan viabilidad, coste, fabricación y montaje, evitando abrir opciones que no aportan valor a la siguiente fase.</p>",
+        "note": "<p><strong>Importante:</strong> el diseño 3D y la asesoría técnica no sustituyen por sí solos un proyecto técnico visado, cálculo estructural, licencia o documentación administrativa cuando sean exigibles. Si el alcance lo requiere, te indicamos qué documentación adicional debes prever.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-wood-3d-process",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Recoger el contexto",
+            "text": "Uso, ubicación, medidas, fotografías, condicionantes y referencias existentes."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Ordenar las decisiones",
+            "text": "Separamos requisitos imprescindibles, preferencias y cuestiones todavía abiertas."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Definir la propuesta",
+            "text": "Planteamos encaje, volumetría, distribución y criterios técnicos compatibles con el alcance."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Revisar y ajustar",
+            "text": "Validamos la propuesta y cerramos los cambios necesarios antes de pasar a documentación, presupuesto o fabricación."
+          }
+        },
+        "step_5": {
+          "type": "step",
+          "settings": {
+            "number": "05",
+            "heading": "Preparar el siguiente hito",
+            "text": "Dejamos claro qué está definido, qué falta y qué servicio o documentación debe intervenir después."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5"
+      ],
+      "settings": {
+        "eyebrow": "Cómo trabajamos",
+        "heading": "De la información inicial a una definición útil",
+        "intro": "<p>Trabajamos por hitos. Cada fase reduce incertidumbre y prepara la siguiente decisión, sin confundir una visualización comercial con documentación técnica que todavía no corresponda.</p>"
+      }
+    },
+    "fit": {
+      "type": "ie-wood-3d-fit",
+      "blocks": {
+        "fit_1": {
+          "type": "fit",
+          "settings": {
+            "label": "Antes de presupuestar",
+            "heading": "Tienes una idea, pero faltan decisiones",
+            "text": "Necesitas ordenar dimensiones, distribución, sistema o nivel de acabado antes de pedir una valoración comparable."
+          }
+        },
+        "fit_2": {
+          "type": "fit",
+          "settings": {
+            "label": "Antes de fabricar",
+            "heading": "Quieres validar el encaje general",
+            "text": "Necesitas comprobar proporciones, huecos, circulaciones o relación con la parcela antes de cerrar producción y montaje."
+          }
+        },
+        "fit_3": {
+          "type": "fit",
+          "settings": {
+            "label": "Antes de tramitar",
+            "heading": "No sabes qué documentación necesitas",
+            "text": "Quieres separar la definición comercial de los planos, cálculos, memoria o licencias que puedan ser exigibles."
+          }
+        },
+        "fit_4": {
+          "type": "fit",
+          "settings": {
+            "label": "Proyecto existente",
+            "heading": "Tienes croquis o planos y quieres revisarlos",
+            "text": "Podemos contrastar el planteamiento desde la lógica constructiva en madera y detectar decisiones que conviene cerrar antes de avanzar."
+          }
+        },
+        "fit_5": {
+          "type": "fit",
+          "settings": {
+            "label": "Cambio de sistema",
+            "heading": "Estás comparando entramado ligero y SIP",
+            "text": "La asesoría ayuda a valorar qué sistema encaja mejor con uso, prestaciones, instalaciones, montaje y nivel de industrialización."
+          }
+        },
+        "fit_6": {
+          "type": "fit",
+          "settings": {
+            "label": "Alcance de obra",
+            "heading": "Necesitas saber qué incluye cada fase",
+            "text": "Ordenamos responsabilidades entre diseño, base, fabricación, transporte, montaje, acabados y documentación para evitar solapes."
+          }
+        }
+      },
+      "block_order": [
+        "fit_1",
+        "fit_2",
+        "fit_3",
+        "fit_4",
+        "fit_5",
+        "fit_6"
+      ],
+      "settings": {
+        "eyebrow": "Cuándo aporta más valor",
+        "heading": "Un servicio útil cuando hay decisiones que cerrar",
+        "intro": "<p>No todos los proyectos necesitan el mismo nivel de definición. Estas son situaciones habituales en las que una revisión 3D y técnica evita avanzar con supuestos poco claros.</p>"
+      }
+    },
+    "quote": {
+      "type": "ie-wood-3d-quote",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Cuéntanos qué necesitas definir",
+        "intro": "<p>Para una primera orientación no necesitas tener el proyecto cerrado. Con la ubicación, unas medidas, fotografías y el uso previsto podemos valorar qué nivel de definición tiene sentido y qué información falta.</p>",
+        "item_1": "Ubicación o código postal",
+        "item_2": "Medidas aproximadas o croquis",
+        "item_3": "Fotografías del espacio o parcela",
+        "item_4": "Uso previsto y decisión que necesitas cerrar",
+        "submit_label": "Solicitar orientación técnica",
+        "privacy_link": "/policies/privacy-policy"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "detail",
+    "process",
+    "fit",
+    "quote"
+  ]
+}
