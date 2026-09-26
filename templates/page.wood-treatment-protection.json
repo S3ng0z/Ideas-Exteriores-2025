@@ -1,0 +1,116 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "summary_1": {"type": "summary", "settings": {"number": "01", "label": "Diagnóstico por exposición, uso y humedad"}},
+        "summary_2": {"type": "summary", "settings": {"number": "02", "label": "Sistema completo: fondo, acabado y sellado"}},
+        "summary_3": {"type": "summary", "settings": {"number": "03", "label": "Plan de mantenimiento y coordinación en obra"}}
+      },
+      "block_order": ["summary_1", "summary_2", "summary_3"],
+      "settings": {
+        "eyebrow": "Construcción y protección",
+        "heading": "Tratamiento y protección de la madera para prolongar su vida útil",
+        "lead": "<p>Definimos la protección según el clima, la exposición, el uso y el tipo de elemento. No se trata de aplicar un único producto, sino de coordinar tratamiento preventivo, acabado visible, sellado de puntos críticos y mantenimiento.</p>",
+        "primary_label": "Pedir recomendación técnica",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Ver mantenimiento y reparación",
+        "secondary_link": "/pages/wood-maintenance-repair",
+        "summary_title": "Qué resolvemos"
+      }
+    },
+    "systems": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "system_1": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Diagnosticar",
+            "heading": "Exposición, humedad y uso real",
+            "text": "<p>Analizamos si la madera estará en interior, exterior protegido o intemperie; la orientación, el clima, el contacto con humedad, el desgaste y el tipo de elemento. Ese diagnóstico define la solución técnica y evita sobredimensionar tratamientos.</p>",
+            "link_1_label": "Ver bases y soleras",
+            "link_1": "/pages/timber-bases-and-foundations",
+            "link_2_label": "Ver montaje profesional",
+            "link_2": "/pages/timber-structure-installation",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "system_2": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Proteger",
+            "heading": "Tratamiento preventivo y acabado visible",
+            "text": "<p>Combinamos protección de fondo frente a agentes biológicos y humedad con lasures, aceites o barnices técnicos seleccionados por exposición, mantenimiento esperado, abrasión y resultado estético.</p>",
+            "link_1_label": "Ver entramado ligero",
+            "link_1": "/pages/timber-building-systems",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "system_3": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Sellar",
+            "heading": "Encuentros, arranques y puntos críticos",
+            "text": "<p>Revisamos juntas, remates, pasos de instalaciones y apoyos cercanos a soleras. La durabilidad depende tanto del acabado como de impedir entradas de agua y resolver correctamente los puntos sensibles de la envolvente.</p>",
+            "link_1_label": "Gestión integral de proyectos",
+            "link_1": "/pages/project-management-permits",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": ["system_1", "system_2", "system_3"],
+      "settings": {
+        "eyebrow": "Sistema de protección",
+        "heading": "Una solución definida por condiciones reales, no por catálogo",
+        "intro": "<p>El mismo acabado no funciona igual en una fachada orientada al sur, una tarima junto a piscina o una estructura bajo cubierta. Priorizamos compatibilidad, durabilidad y mantenimiento asumible.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "step_1": {"type": "step", "settings": {"number": "01", "heading": "Diagnosticar", "text": "Identificamos exposición, humedad, orientación, tránsito, tipo de madera y estado del soporte."}},
+        "step_2": {"type": "step", "settings": {"number": "02", "heading": "Definir el sistema", "text": "Seleccionamos tratamiento de fondo, acabado visible, selladores y preparación previa compatibles entre sí."}},
+        "step_3": {"type": "step", "settings": {"number": "03", "heading": "Aplicar y proteger detalles", "text": "Ejecutamos capas, tiempos de secado y sellado de encuentros con criterio de obra y del fabricante."}},
+        "step_4": {"type": "step", "settings": {"number": "04", "heading": "Entregar un plan de mantenimiento", "text": "Dejamos pautas de limpieza, revisión e indicadores de repaso según exposición y producto aplicado."}}
+      },
+      "block_order": ["step_1", "step_2", "step_3", "step_4"],
+      "settings": {
+        "eyebrow": "Cómo trabajamos",
+        "heading": "Protección coordinada desde el diagnóstico hasta el mantenimiento",
+        "intro": "<p>El tratamiento se integra con la preparación de la base, el montaje y el comportamiento de la envolvente. Así reducimos patologías por humedad, degradación prematura y repasos innecesarios.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "principle_1": {"type": "principle", "settings": {"heading": "Exterior e intemperie", "text": "Priorizamos resistencia a UV y agua, facilidad de renovación y detalle correcto de encuentros expuestos."}},
+        "principle_2": {"type": "principle", "settings": {"heading": "Tarimas y zonas húmedas", "text": "Valoramos desgaste, salinidad, proximidad a piscina, limpieza y estabilidad superficial antes de elegir el acabado."}},
+        "principle_3": {"type": "principle", "settings": {"heading": "Interior y espacios habitables", "text": "Buscamos acabados compatibles con el uso, de mantenimiento sencillo y adecuados al nivel de exigencia del espacio."}},
+        "principle_4": {"type": "principle", "settings": {"heading": "Requisitos específicos", "text": "Cuando el proyecto lo exige, estudiamos soluciones certificadas y su compatibilidad con el soporte y la documentación técnica."}}
+      },
+      "block_order": ["principle_1", "principle_2", "principle_3", "principle_4"],
+      "settings": {
+        "eyebrow": "Criterios de selección",
+        "heading": "El acabado correcto depende del uso y de la exposición"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Cuéntanos dónde estará la madera y qué necesitas proteger",
+        "text": "<p>Con fotos, ubicación, tipo de elemento y estado actual podemos orientarte sobre el sistema de protección y el alcance adecuado. Si el trabajo forma parte de una obra nueva, coordinamos el tratamiento con base, montaje y mantenimiento.</p>",
+        "label": "Solicitar valoración",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": ["hero", "systems", "process", "confidence", "cta"]
+}
