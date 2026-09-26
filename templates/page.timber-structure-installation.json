@@ -12,285 +12,145 @@
     "hero": {
       "type": "ie-services-hero",
       "blocks": {
-        "summary_1": {
-          "type": "summary",
-          "settings": {
-            "number": "01",
-            "label": "Base, accesos y alcance revisados antes de obra"
-          }
-        },
-        "summary_2": {
-          "type": "summary",
-          "settings": {
-            "number": "02",
-            "label": "Montaje por fases con controles definidos"
-          }
-        },
-        "summary_3": {
-          "type": "summary",
-          "settings": {
-            "number": "03",
-            "label": "Hito de entrega y exclusiones por escrito"
-          }
-        }
+        "summary_1": {"type":"summary","settings":{"number":"01","label":"Base, accesos y logística revisados antes de obra"}},
+        "summary_2": {"type":"summary","settings":{"number":"02","label":"Secuencia de montaje y controles definidos"}},
+        "summary_3": {"type":"summary","settings":{"number":"03","label":"Hito de entrega, incluidos y exclusiones por escrito"}}
       },
-      "block_order": [
-        "summary_1",
-        "summary_2",
-        "summary_3"
-      ],
+      "block_order": ["summary_1","summary_2","summary_3"],
       "settings": {
-        "eyebrow": "Servicio opcional de instalación",
-        "heading": "Montaje profesional de estructuras de madera con alcance claro desde el presupuesto",
-        "lead": "<p>Instalamos estructuras de madera cuando el suministro, la ubicación y las condiciones de obra permiten definir una ejecución controlada. Antes de confirmar el servicio revisamos base, accesos, logística, medios necesarios y el hito exacto de entrega para que sepas qué incluye el montaje y qué debe estar preparado previamente.</p>",
+        "eyebrow": "Montaje profesional de estructuras de madera",
+        "heading": "Montaje profesional de estructuras de madera con alcance y coordinación definidos",
+        "lead": "<p>Coordinamos el montaje como una fase técnica del proyecto: comprobamos base, accesos, suministro, descarga, medios auxiliares y secuencia de ejecución antes de movilizar el equipo. El presupuesto deja claro qué se monta, qué debe estar preparado y cuál es el hito de entrega.</p>",
         "primary_label": "Solicitar valoración de montaje",
         "primary_link": "#ie-installation-quote",
         "secondary_label": "Ver bases y soleras",
         "secondary_link": "/pages/timber-bases-and-foundations",
-        "summary_title": "Antes de movilizar el montaje"
+        "summary_title": "Antes de empezar en obra"
       }
     },
     "details": {
       "type": "ie-installation-details",
       "blocks": {
         "prepare": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
-            "image_alt": "Preparación de base y montaje de una estructura de madera",
-            "media_position": "left",
-            "index": "01 · Preparación",
-            "heading": "Comprobamos el punto de partida antes de llegar a obra",
-            "text": "<p>Una instalación fiable empieza antes del primer anclaje. Revisamos el tipo de estructura, las medidas disponibles, el estado de la base y los accesos para detectar condicionantes que puedan afectar a descarga, replanteo o secuencia de trabajo.</p>",
-            "point_1": "Base o apoyo ejecutado conforme al alcance acordado",
-            "point_2": "Accesos y espacio de trabajo compatibles con la descarga y el montaje",
-            "point_3": "Documentación, medidas y fecha objetivo suficientemente definidas"
+          "type":"feature",
+          "settings":{
+            "image":"shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt":"Preparación de base y replanteo antes del montaje de una estructura de madera",
+            "media_position":"left",
+            "index":"01 · Preparar",
+            "heading":"La calidad del montaje empieza con una base y un replanteo compatibles",
+            "text":"<p>Antes de fijar una fecha revisamos el soporte, las cotas, los puntos de anclaje, el acceso de vehículos y la zona disponible para descarga y acopio. Si la base todavía no está resuelta, se coordina previamente como un alcance independiente.</p>",
+            "point_1":"Cotas, nivelación y geometría de apoyo verificables",
+            "point_2":"Accesos y espacio de trabajo compatibles con la operación",
+            "point_3":"Condiciones previas identificadas antes de movilizar recursos"
           }
         },
         "execute": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
-            "image_alt": "Ejecución por fases del montaje de una estructura de madera",
-            "media_position": "right",
-            "index": "02 · Ejecución",
-            "heading": "Montamos por una secuencia definida, no por improvisación en parcela",
-            "text": "<p>La ejecución se organiza según el sistema y el despiece: apoyos y anclajes, estructura principal, rigidización y los elementos incluidos en el alcance contratado. Durante el montaje verificamos geometría y encuentros para coordinar correctamente la siguiente fase de obra.</p>",
-            "point_1": "Replanteo, niveles, plomos y alineaciones en los hitos acordados",
-            "point_2": "Fijaciones y herrajes según la solución técnica definida",
-            "point_3": "Coordinación del avance con los elementos que deban ejecutarse después"
+          "type":"feature",
+          "settings":{
+            "image":"shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt":"Montaje por fases de una estructura de madera con control de alineaciones y fijaciones",
+            "media_position":"right",
+            "index":"02 · Ejecutar",
+            "heading":"Montamos por fases y verificamos geometría, uniones y encuentros",
+            "text":"<p>La secuencia depende del sistema y del grado de prefabricación. Organizamos apoyos, anclajes, estructura principal, rigidización y elementos incluidos en el servicio para que cada fase quede preparada para la siguiente sin mezclar responsabilidades con otros oficios.</p>",
+            "point_1":"Plomos, niveles y alineaciones revisados en los hitos acordados",
+            "point_2":"Fijaciones y herrajes conforme a la solución técnica definida",
+            "point_3":"Coordinación con cerramientos, cubierta, carpinterías o instalaciones cuando aplica"
           }
         },
         "handover": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
-            "image_alt": "Estructura de madera montada y preparada para la siguiente fase de obra",
-            "media_position": "left",
-            "index": "03 · Entrega",
-            "heading": "Cerramos el servicio contra un hito de entrega comprensible",
-            "text": "<p>El presupuesto indica qué debe quedar terminado: estructura montada, cerramiento estructural u otro hito definido para el proyecto. Así se separa con claridad el montaje de partidas como cimentación, acabados, instalaciones o tratamientos que no formen parte del servicio.</p>",
-            "point_1": "Incluidos y exclusiones expresados antes de contratar",
-            "point_2": "Trabajos adicionales sujetos a valoración si aparecen nuevos condicionantes",
-            "point_3": "Siguiente fase identificada para facilitar la coordinación de oficios"
+          "type":"feature",
+          "settings":{
+            "image":"shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt":"Estructura de madera montada y preparada para la siguiente fase de obra",
+            "media_position":"left",
+            "index":"03 · Entregar",
+            "heading":"Terminamos contra un hito de obra definido y comprensible",
+            "text":"<p>El alcance debe indicar qué queda terminado: estructura montada, cerramiento estructural u otro hito específico. Transporte, descarga, base, medios, tratamientos, acabados o instalaciones solo forman parte del servicio cuando aparecen expresamente en la propuesta.</p>",
+            "point_1":"Incluidos y exclusiones visibles antes de contratar",
+            "point_2":"Incidencias o trabajos adicionales sujetos a valoración",
+            "point_3":"Siguiente fase identificada para facilitar la coordinación"
           }
         }
       },
-      "block_order": [
-        "prepare",
-        "execute",
-        "handover"
-      ],
-      "settings": {
-        "eyebrow": "Qué aporta el servicio",
-        "heading": "Preparación, ejecución y entrega dentro de un mismo alcance",
-        "intro": "<p>La calidad del montaje depende tanto de la estructura como de las condiciones que la rodean. Por eso conectamos el servicio con la base, la logística y el punto de entrega previsto, evitando presentar la instalación como una partida aislada.</p>"
+      "block_order":["prepare","execute","handover"],
+      "settings":{
+        "eyebrow":"Alcance de montaje",
+        "heading":"Preparación, ejecución y entrega conectadas en una sola secuencia",
+        "intro":"<p>El montaje funciona mejor cuando base, logística, estructura y hito de entrega se plantean como partes del mismo proceso. Esta lectura reduce improvisaciones y permite separar con claridad suministro, instalación y trabajos posteriores.</p>"
       }
     },
     "scope": {
-      "type": "ie-installation-scope",
-      "blocks": {
-        "s1": {
-          "type": "item",
-          "settings": {
-            "number": "01",
-            "heading": "Ubicación y accesos",
-            "text": "Dirección, acceso de vehículos, zona de descarga, recorrido hasta la obra, restricciones y espacio disponible para trabajar."
-          }
-        },
-        "s2": {
-          "type": "item",
-          "settings": {
-            "number": "02",
-            "heading": "Estructura y sistema",
-            "text": "Modelo, tipología, dimensiones, peso, grado de prefabricación y documentación disponible para preparar la secuencia."
-          }
-        },
-        "s3": {
-          "type": "item",
-          "settings": {
-            "number": "03",
-            "heading": "Base y replanteo",
-            "text": "Estado de la solera, cimentación o apoyos, cotas, nivelación y puntos de anclaje que deben existir antes del montaje."
-          }
-        },
-        "s4": {
-          "type": "item",
-          "settings": {
-            "number": "04",
-            "heading": "Logística y descarga",
-            "text": "Forma de entrega, acopio, medios de descarga y coordinación entre suministro y equipo de instalación."
-          }
-        },
-        "s5": {
-          "type": "item",
-          "settings": {
-            "number": "05",
-            "heading": "Medios auxiliares",
-            "text": "Necesidad de elevación, andamios, protecciones, cortes o medios específicos según altura, peso y configuración."
-          }
-        },
-        "s6": {
-          "type": "item",
-          "settings": {
-            "number": "06",
-            "heading": "Hito de entrega",
-            "text": "Definición de qué debe quedar terminado y qué trabajos posteriores corresponden a otros oficios o a servicios adicionales."
-          }
-        }
+      "type":"ie-installation-scope",
+      "blocks":{
+        "s1":{"type":"item","settings":{"number":"01","heading":"Ubicación y accesos","text":"Dirección, código postal, acceso de camión, recorrido hasta la obra, restricciones y espacio disponible para descarga y trabajo."}},
+        "s2":{"type":"item","settings":{"number":"02","heading":"Estructura y sistema","text":"Modelo, tipología, dimensiones, peso, grado de prefabricación y documentación disponible para preparar la secuencia de montaje."}},
+        "s3":{"type":"item","settings":{"number":"03","heading":"Base y replanteo","text":"Estado de solera, cimentación o apoyos; cotas, nivelación y puntos de anclaje que deben estar resueltos antes de la instalación."}},
+        "s4":{"type":"item","settings":{"number":"04","heading":"Suministro, descarga y acopio","text":"Cómo llega la estructura, qué medios requiere la descarga y dónde puede ordenarse el material según la secuencia de montaje."}},
+        "s5":{"type":"item","settings":{"number":"05","heading":"Medios auxiliares y seguridad","text":"Necesidad de elevación, andamios, protecciones u otros medios según altura, peso, geometría y condiciones reales de la obra."}},
+        "s6":{"type":"item","settings":{"number":"06","heading":"Hito de entrega","text":"Definición de lo que debe quedar ejecutado y de qué partidas corresponden a fases posteriores, otros oficios o servicios adicionales."}}
       },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4",
-        "s5",
-        "s6"
-      ],
-      "settings": {
-        "eyebrow": "Precio y condiciones",
-        "heading": "Qué cambia el alcance y el precio de un montaje",
-        "intro": "<p>El montaje es un servicio complementario al suministro y se valora según las condiciones reales de ejecución. Cuanto mejor definido esté el punto de partida, más claro puede ser el presupuesto y la planificación.</p>",
-        "note": "<p>Transporte, descarga, medios auxiliares, base, tratamientos, acabados, licencias y otros trabajos solo se consideran incluidos cuando figuran expresamente en la propuesta. La cobertura geográfica y las condiciones logísticas se confirman para cada presupuesto.</p>"
+      "block_order":["s1","s2","s3","s4","s5","s6"],
+      "settings":{
+        "eyebrow":"Precio y condiciones reales",
+        "heading":"Qué necesitamos conocer para valorar el montaje",
+        "intro":"<p>La misma estructura puede requerir medios y logística muy diferentes según la parcela y el grado de preparación. Cuanto mejor definido esté el punto de partida, más claro puede ser el alcance técnico y económico.</p>",
+        "note":"<p>La cobertura geográfica, el transporte, la descarga, los medios auxiliares y cualquier trabajo complementario se confirman para cada presupuesto. No se consideran incluidos por defecto si no figuran expresamente en la propuesta.</p>"
       }
     },
     "process": {
-      "type": "ie-services-process",
-      "blocks": {
-        "p1": {
-          "type": "step",
-          "settings": {
-            "number": "01",
-            "heading": "Revisamos la solicitud",
-            "text": "Ubicación, estructura, medidas, documentación, accesos y estado de la base."
-          }
-        },
-        "p2": {
-          "type": "step",
-          "settings": {
-            "number": "02",
-            "heading": "Definimos el alcance",
-            "text": "Concretamos incluidos, exclusiones, medios necesarios, logística y hito de entrega."
-          }
-        },
-        "p3": {
-          "type": "step",
-          "settings": {
-            "number": "03",
-            "heading": "Coordinamos suministro y obra",
-            "text": "Alineamos fecha, descarga, acopio y condiciones previas para que el montaje pueda comenzar."
-          }
-        },
-        "p4": {
-          "type": "step",
-          "settings": {
-            "number": "04",
-            "heading": "Ejecutamos y verificamos",
-            "text": "Montamos por fases y comprobamos los puntos de control definidos para entregar el hito acordado."
-          }
-        }
+      "type":"ie-services-process",
+      "blocks":{
+        "p1":{"type":"step","settings":{"number":"01","heading":"Revisar el contexto","text":"Analizamos ubicación, estructura, documentación, accesos, base y fecha objetivo disponible."}},
+        "p2":{"type":"step","settings":{"number":"02","heading":"Cerrar alcance y responsabilidades","text":"Definimos incluidos, exclusiones, medios, logística y el hito que debe quedar terminado."}},
+        "p3":{"type":"step","settings":{"number":"03","heading":"Coordinar suministro y obra","text":"Alineamos entrega, descarga, acopio y condiciones previas para que el montaje pueda comenzar sin paradas evitables."}},
+        "p4":{"type":"step","settings":{"number":"04","heading":"Montar, verificar y entregar","text":"Ejecutamos por fases y comprobamos los puntos de control acordados antes de liberar la estructura a la siguiente fase."}}
       },
-      "block_order": [
-        "p1",
-        "p2",
-        "p3",
-        "p4"
-      ],
-      "settings": {
-        "eyebrow": "Cómo trabajamos",
-        "heading": "Del presupuesto al montaje sin mezclar responsabilidades",
-        "intro": "<p>El objetivo es que cada parte sepa qué debe estar preparada, cuándo interviene el equipo de montaje y qué queda listo al finalizar. Si la base también forma parte de la necesidad, puede valorarse por separado antes de programar la instalación.</p>"
+      "block_order":["p1","p2","p3","p4"],
+      "settings":{
+        "eyebrow":"Cómo trabajamos",
+        "heading":"Del presupuesto a la entrega sin mezclar responsabilidades",
+        "intro":"<p>El proceso separa preparación, logística, montaje y trabajos posteriores. Así cada participante sabe qué debe estar listo, cuándo interviene el equipo y qué se considera terminado.</p>"
       }
     },
     "confidence": {
-      "type": "ie-services-confidence",
-      "blocks": {
-        "c1": {
-          "type": "principle",
-          "settings": {
-            "heading": "Alcance trazable",
-            "text": "El presupuesto identifica el hito contratado y evita dar por incluidos transporte, base, medios, acabados o tratamientos que no estén descritos."
-          }
-        },
-        "c2": {
-          "type": "principle",
-          "settings": {
-            "heading": "Condiciones previas",
-            "text": "Accesos, apoyo, replanteo y logística se revisan antes de movilizar recursos para reducir incidencias evitables en obra."
-          }
-        },
-        "c3": {
-          "type": "principle",
-          "settings": {
-            "heading": "Control en ejecución",
-            "text": "La instalación sigue una secuencia y unos puntos de comprobación coherentes con la estructura y el alcance acordado."
-          }
-        }
+      "type":"ie-services-confidence",
+      "blocks":{
+        "c1":{"type":"principle","settings":{"heading":"Alcance trazable","text":"El presupuesto identifica el hito contratado y qué partidas quedan fuera, evitando asumir como incluidos trabajos que no estén descritos."}},
+        "c2":{"type":"principle","settings":{"heading":"Condiciones previas verificables","text":"Base, accesos, replanteo y logística se revisan antes de movilizar el equipo para reducir incidencias evitables."}},
+        "c3":{"type":"principle","settings":{"heading":"Control durante la ejecución","text":"El montaje sigue una secuencia y puntos de comprobación coherentes con el sistema, la geometría y la solución técnica."}},
+        "c4":{"type":"principle","settings":{"heading":"Coordinación con otros oficios","text":"Cuando intervienen cubierta, carpinterías, instalaciones o acabados, dejamos claro qué interfaces condicionan el avance y quién asume cada fase."}}
       },
-      "block_order": [
-        "c1",
-        "c2",
-        "c3"
-      ],
-      "settings": {
-        "eyebrow": "Criterio de montaje",
-        "heading": "Control de alcance antes, durante y al entregar"
+      "block_order":["c1","c2","c3","c4"],
+      "settings":{
+        "eyebrow":"Criterio de montaje",
+        "heading":"Control antes, durante y al entregar"
       }
     },
     "quote": {
-      "type": "ie-installation-quote",
-      "blocks": {
-        "powerful_form_builder": {
-          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-          "settings": {
-            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
-          }
+      "type":"ie-installation-quote",
+      "blocks":{
+        "powerful_form_builder":{
+          "type":"shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings":{"shortcode":"<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"}
         }
       },
-      "block_order": [
-        "powerful_form_builder"
-      ],
-      "settings": {
-        "eyebrow": "Solicitar montaje",
-        "heading": "Cuéntanos qué hay que montar y en qué condiciones",
-        "intro": "<p>No necesitas tener toda la documentación cerrada para una primera valoración. Envíanos el contexto disponible y te indicaremos si el servicio encaja y qué información debemos completar antes de presupuestar.</p>",
-        "item_1": "Ubicación o código postal y accesos",
-        "item_2": "Modelo, sistema o descripción de la estructura",
-        "item_3": "Medidas, planos o fotografías disponibles",
-        "item_4": "Estado de la base y fecha objetivo",
-        "phone": "+34 916 99 60 93",
-        "email": "info@ideas-exteriores.com",
-        "submit_label": "Solicitar valoración de montaje",
-        "privacy_link": "/policies/privacy-policy"
+      "block_order":["powerful_form_builder"],
+      "settings":{
+        "eyebrow":"Solicitar montaje",
+        "heading":"Cuéntanos qué estructura hay que montar y en qué condiciones",
+        "intro":"<p>Para una primera valoración necesitamos contexto de obra, no una memoria cerrada. Con ubicación, accesos, sistema, medidas, estado de la base y fecha objetivo podemos confirmar si el servicio encaja y qué información falta.</p>",
+        "item_1":"Ubicación o código postal y accesos",
+        "item_2":"Modelo, sistema o descripción de la estructura",
+        "item_3":"Medidas, planos o fotografías disponibles",
+        "item_4":"Estado de la base y fecha objetivo",
+        "phone":"+34 916 99 60 93",
+        "email":"info@ideas-exteriores.com",
+        "submit_label":"Solicitar valoración de montaje",
+        "privacy_link":"/policies/privacy-policy"
       }
     }
   },
-  "order": [
-    "hero",
-    "details",
-    "scope",
-    "process",
-    "confidence",
-    "quote"
-  ]
+  "order":["hero","details","scope","process","confidence","quote"]
 }
