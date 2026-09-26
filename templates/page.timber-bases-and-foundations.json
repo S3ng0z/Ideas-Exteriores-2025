@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "main": {
+      "type": "ie-foundations-page",
+      "blocks": {
+        "criterion_1": {
+          "type": "criterion",
+          "settings": {
+            "number": "01",
+            "heading": "Terreno y agua",
+            "text": "Capacidad portante, rellenos, pendiente, drenaje y exposición a humedad o heladas."
+          }
+        },
+        "criterion_2": {
+          "type": "criterion",
+          "settings": {
+            "number": "02",
+            "heading": "Uso y cargas",
+            "text": "Peso de la estructura, ocupación, viento, geometría, apoyos y posibles ampliaciones."
+          }
+        },
+        "criterion_3": {
+          "type": "criterion",
+          "settings": {
+            "number": "03",
+            "heading": "Acceso y montaje",
+            "text": "Entrada de maquinaria, replanteo, cotas, logística y secuencia de montaje."
+          }
+        },
+        "system_1": {
+          "type": "system",
+          "settings": {
+            "index": "01 · Superficie continua",
+            "heading": "Losa o solera de hormigón armado",
+            "text": "<p>Una base continua permite repartir cargas, controlar nivelación y coordinar pasos o encuentros antes del montaje. Su composición, armado, espesores y juntas deben responder al terreno, al uso y al proyecto.</p>",
+            "best_for": "Usos habitables, superficies medias o grandes y proyectos donde se necesita una plataforma continua y precisa."
+          }
+        },
+        "system_2": {
+          "type": "system",
+          "settings": {
+            "index": "02 · Apoyos puntuales",
+            "heading": "Zapatas aisladas y vigas de atado",
+            "text": "<p>Cuando la estructura descarga en pilares o apoyos definidos, una solución puntual puede concentrar el hormigón donde trabaja y mantener mayor ventilación bajo la construcción. El número, tamaño, unión y anclaje de los apoyos se dimensionan para cada caso.</p>",
+            "best_for": "Porches, pérgolas, estructuras elevadas y proyectos donde interesa limitar la superficie de obra húmeda."
+          }
+        },
+        "system_3": {
+          "type": "system",
+          "settings": {
+            "index": "03 · Solución sobreelevada",
+            "heading": "Pilotes, micropilotes y apoyos modulares",
+            "text": "<p>En terrenos con pendiente, rellenos, acceso condicionado o necesidad de reducir excavación pueden estudiarse soluciones profundas o modulares. No son intercambiables: la elección depende de la estratigrafía, las cargas, la estabilidad lateral y la durabilidad del sistema.</p>",
+            "best_for": "Parcelas complejas, implantaciones sobreelevadas y determinados proyectos modulares, siempre sujetos a validación técnica."
+          }
+        },
+        "detail_1": {
+          "type": "detail",
+          "settings": {
+            "number": "01",
+            "heading": "Corte capilar",
+            "text": "Separamos madera y soporte mineral con el detalle adecuado para limitar la transferencia de humedad."
+          }
+        },
+        "detail_2": {
+          "type": "detail",
+          "settings": {
+            "number": "02",
+            "heading": "Drenaje",
+            "text": "La evacuación del agua se plantea según pendiente, terreno, escorrentías y configuración de la parcela."
+          }
+        },
+        "detail_3": {
+          "type": "detail",
+          "settings": {
+            "number": "03",
+            "heading": "Ventilación",
+            "text": "En soluciones elevadas se preserva el paso de aire y se evitan encuentros que retengan humedad bajo la estructura."
+          }
+        },
+        "detail_4": {
+          "type": "detail",
+          "settings": {
+            "number": "04",
+            "heading": "Anclaje",
+            "text": "Cotas y fijaciones se coordinan con la estructura para transmitir acciones y facilitar un montaje preciso."
+          }
+        },
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Toma de datos",
+            "text": "Revisamos uso, dimensiones, terreno, accesos, pendiente, agua y condicionantes de montaje."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Definición de solución",
+            "text": "Seleccionamos el sistema de apoyo y señalamos qué datos deben verificarse mediante estudio, cálculo o proyecto."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Preparación y ejecución",
+            "text": "Se replantean cotas, se prepara el terreno y se ejecuta la base con los encuentros y previsiones acordados."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Control previo al montaje",
+            "text": "Comprobamos nivelación, alineación, puntos de apoyo, anclajes y condiciones necesarias antes de recibir la estructura."
+          }
+        }
+      },
+      "block_order": [
+        "criterion_1",
+        "criterion_2",
+        "criterion_3",
+        "system_1",
+        "system_2",
+        "system_3",
+        "detail_1",
+        "detail_2",
+        "detail_3",
+        "detail_4",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

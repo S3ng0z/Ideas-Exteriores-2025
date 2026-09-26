@@ -35,6 +35,11 @@
     assign seo_description = 'Protección técnica de madera según uso, humedad y exposición: tratamiento preventivo, lasures, aceites, sellado de puntos críticos y mantenimiento.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'timber-bases-and-foundations'
+    assign seo_title = 'Bases y soleras para estructuras de madera'
+    assign seo_description = 'Soluciones de base para estructuras de madera según terreno, uso y cargas: losas, zapatas, pilotes, drenaje, barreras antihumedad y anclajes.'
+  endif
+
   assign og_title = seo_title
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'

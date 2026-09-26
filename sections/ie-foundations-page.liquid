@@ -1,0 +1,241 @@
+{% liquid
+  assign ie_contact_url = pages['contact-ideas-exteriores'].url | default: '/pages/contact-ideas-exteriores'
+  assign ie_services_url = pages['services'].url | default: '/pages/services'
+  assign ie_installation_url = pages['timber-structure-installation'].url | default: '/pages/timber-structure-installation'
+  assign ie_permits_url = pages['project-management-permits'].url | default: '/pages/project-management-permits'
+%}
+
+{{ 'ie-foundations-page.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-foundations" aria-labelledby="ie-foundations-title-{{ section.id }}">
+  <div class="ie-foundations__inner">
+    {% render 'ie-breadcrumb',
+      breadcrumb_object: page,
+      current_title: page.title,
+      class_name: 'ie-foundations__breadcrumb',
+      fallback_1_label: 'Servicios',
+      fallback_1_link: ie_services_url
+    %}
+
+    <div class="ie-foundations__hero">
+      <div class="ie-foundations__hero-copy">
+        <p class="ie-foundations__eyebrow">{{ section.settings.eyebrow }}</p>
+        <h1 id="ie-foundations-title-{{ section.id }}">{{ section.settings.heading }}</h1>
+        <div class="ie-foundations__lead rte">{{ section.settings.lead }}</div>
+        <div class="ie-foundations__actions">
+          <a class="ie-foundations__button ie-foundations__button--primary" href="{{ ie_contact_url }}">{{ section.settings.primary_label }}</a>
+          <a class="ie-foundations__button ie-foundations__button--secondary" href="#ie-foundations-systems-{{ section.id }}">{{ section.settings.secondary_label }}</a>
+        </div>
+        <p class="ie-foundations__quick-note">{{ section.settings.quick_note }}</p>
+      </div>
+
+      <aside class="ie-foundations__decision" aria-label="{{ section.settings.decision_title | escape }}">
+        <p class="ie-foundations__decision-title">{{ section.settings.decision_title }}</p>
+        <ol>
+          {% for block in section.blocks %}
+            {% if block.type == 'criterion' %}
+              <li {{ block.shopify_attributes }}>
+                <span>{{ block.settings.number }}</span>
+                <div>
+                  <strong>{{ block.settings.heading }}</strong>
+                  <p>{{ block.settings.text }}</p>
+                </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </aside>
+    </div>
+
+    <div class="ie-foundations__intro">
+      <div>
+        <p class="ie-foundations__eyebrow">{{ section.settings.intro_eyebrow }}</p>
+        <h2>{{ section.settings.intro_heading }}</h2>
+      </div>
+      <div class="ie-foundations__intro-copy rte">{{ section.settings.intro_text }}</div>
+    </div>
+
+    <div class="ie-foundations__systems" id="ie-foundations-systems-{{ section.id }}">
+      {% for block in section.blocks %}
+        {% if block.type == 'system' %}
+          <article class="ie-foundations__system" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+              <div class="ie-foundations__system-media">
+                {{
+                  block.settings.image
+                  | image_url: width: 1400
+                  | image_tag:
+                    widths: '480, 720, 960, 1200, 1400',
+                    sizes: '(min-width: 990px) 50vw, 100vw',
+                    loading: 'lazy',
+                    alt: block.settings.image_alt
+                }}
+              </div>
+            {% endif %}
+            <div class="ie-foundations__system-body">
+              <p class="ie-foundations__system-index">{{ block.settings.index }}</p>
+              <h3>{{ block.settings.heading }}</h3>
+              <div class="rte">{{ block.settings.text }}</div>
+              {% if block.settings.best_for != blank %}
+                <div class="ie-foundations__best-for">
+                  <span>{{ section.settings.best_for_label }}</span>
+                  <p>{{ block.settings.best_for }}</p>
+                </div>
+              {% endif %}
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <section class="ie-foundations__moisture" aria-labelledby="ie-foundations-moisture-title-{{ section.id }}">
+      <div>
+        <p class="ie-foundations__eyebrow">{{ section.settings.moisture_eyebrow }}</p>
+        <h2 id="ie-foundations-moisture-title-{{ section.id }}">{{ section.settings.moisture_heading }}</h2>
+        <div class="rte">{{ section.settings.moisture_text }}</div>
+      </div>
+      <div class="ie-foundations__detail-grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'detail' %}
+            <article {{ block.shopify_attributes }}>
+              <span>{{ block.settings.number }}</span>
+              <h3>{{ block.settings.heading }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="ie-foundations__workflow" aria-labelledby="ie-foundations-workflow-title-{{ section.id }}">
+      <div class="ie-foundations__workflow-copy">
+        <p class="ie-foundations__eyebrow">{{ section.settings.workflow_eyebrow }}</p>
+        <h2 id="ie-foundations-workflow-title-{{ section.id }}">{{ section.settings.workflow_heading }}</h2>
+        <div class="rte">{{ section.settings.workflow_text }}</div>
+      </div>
+      <ol class="ie-foundations__workflow-list">
+        {% for block in section.blocks %}
+          {% if block.type == 'step' %}
+            <li {{ block.shopify_attributes }}>
+              <span>{{ block.settings.number }}</span>
+              <div>
+                <h3>{{ block.settings.heading }}</h3>
+                <p>{{ block.settings.text }}</p>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="ie-foundations__scope" aria-labelledby="ie-foundations-scope-title-{{ section.id }}">
+      <div>
+        <p class="ie-foundations__eyebrow">{{ section.settings.scope_eyebrow }}</p>
+        <h2 id="ie-foundations-scope-title-{{ section.id }}">{{ section.settings.scope_heading }}</h2>
+      </div>
+      <div class="ie-foundations__scope-grid">
+        <article>
+          <h3>{{ section.settings.scope_in_heading }}</h3>
+          <div class="rte">{{ section.settings.scope_in_text }}</div>
+        </article>
+        <article>
+          <h3>{{ section.settings.scope_project_heading }}</h3>
+          <div class="rte">{{ section.settings.scope_project_text }}</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ie-foundations__cta" aria-labelledby="ie-foundations-cta-title-{{ section.id }}">
+      <div>
+        <p class="ie-foundations__eyebrow">{{ section.settings.cta_eyebrow }}</p>
+        <h2 id="ie-foundations-cta-title-{{ section.id }}">{{ section.settings.cta_heading }}</h2>
+        <div class="rte">{{ section.settings.cta_text }}</div>
+      </div>
+      <div class="ie-foundations__cta-actions">
+        <a class="ie-foundations__button ie-foundations__button--primary" href="{{ ie_contact_url }}">{{ section.settings.cta_primary_label }}</a>
+        <a class="ie-foundations__button ie-foundations__button--secondary" href="{{ ie_installation_url }}">{{ section.settings.cta_secondary_label }}</a>
+        <a class="ie-foundations__text-link" href="{{ ie_permits_url }}">{{ section.settings.cta_tertiary_label }} <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IE · Bases y soleras",
+  "settings": [
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Bases y soleras para estructuras de madera"},
+    {"type":"text","id":"heading","label":"Título","default":"La base correcta empieza antes de verter hormigón"},
+    {"type":"richtext","id":"lead","label":"Introducción","default":"<p>Definimos la solución de apoyo según uso, geometría, terreno, humedad, cargas y condiciones de obra. El objetivo es que la estructura arranque nivelada, anclada y protegida frente al agua, con una base preparada para el montaje.</p>"},
+    {"type":"text","id":"primary_label","label":"CTA principal","default":"Evaluar mi terreno"},
+    {"type":"text","id":"secondary_label","label":"CTA secundario","default":"Comparar soluciones"},
+    {"type":"textarea","id":"quick_note","label":"Nota rápida","default":"Para una primera valoración envíanos ubicación, medidas aproximadas y 3–5 fotos del terreno: accesos, pendiente y zona de implantación."},
+    {"type":"text","id":"decision_title","label":"Título criterios","default":"Qué condiciona la solución"},
+    {"type":"text","id":"intro_eyebrow","label":"Antetítulo introducción","default":"Cimentación especializada"},
+    {"type":"text","id":"intro_heading","label":"Título introducción","default":"No existe una base universal para una estructura de madera"},
+    {"type":"richtext","id":"intro_text","label":"Texto introducción","default":"<p>Una caseta ligera, un porche, una oficina de jardín y una vivienda no transmiten las mismas cargas ni exigen la misma relación con el terreno. Elegimos entre superficies continuas, apoyos puntuales o soluciones sobreelevadas en función de la información disponible y, cuando corresponde, del proyecto y el cálculo.</p>"},
+    {"type":"text","id":"best_for_label","label":"Etiqueta recomendado para","default":"Suele encajar en"},
+    {"type":"text","id":"moisture_eyebrow","label":"Antetítulo humedad","default":"Detalle antihumedad"},
+    {"type":"text","id":"moisture_heading","label":"Título humedad","default":"La durabilidad se decide en el encuentro entre terreno, base y madera"},
+    {"type":"richtext","id":"moisture_text","label":"Texto humedad","default":"<p>El tipo de cimentación es solo una parte. La continuidad de las barreras, el drenaje, la ventilación y los anclajes determinan cómo envejece el arranque y cuánto mantenimiento correctivo puede evitarse.</p>"},
+    {"type":"text","id":"workflow_eyebrow","label":"Antetítulo proceso","default":"Ejecución coordinada"},
+    {"type":"text","id":"workflow_heading","label":"Título proceso","default":"De la parcela a una base lista para montar"},
+    {"type":"richtext","id":"workflow_text","label":"Texto proceso","default":"<p>Ordenamos la preparación y la ejecución para controlar cotas, apoyos, pasos previstos y encuentros antes de que llegue la estructura de madera.</p>"},
+    {"type":"text","id":"scope_eyebrow","label":"Antetítulo alcance","default":"Alcance técnico"},
+    {"type":"text","id":"scope_heading","label":"Título alcance","default":"Qué podemos definir y qué debe cerrarse en proyecto"},
+    {"type":"text","id":"scope_in_heading","label":"Título columna servicio","default":"En el servicio de base"},
+    {"type":"richtext","id":"scope_in_text","label":"Texto columna servicio","default":"<ul><li>Levantamiento de condicionantes y accesos.</li><li>Selección del sistema de apoyo adecuado al alcance.</li><li>Preparación, nivelación y ejecución contratada.</li><li>Barreras, anclajes y control de cotas para montaje.</li></ul>"},
+    {"type":"text","id":"scope_project_heading","label":"Título columna proyecto","default":"Sujeto a estudio o proyecto"},
+    {"type":"richtext","id":"scope_project_text","label":"Texto columna proyecto","default":"<ul><li>Capacidad portante y comportamiento geotécnico del terreno.</li><li>Dimensionado estructural de cimentaciones y anclajes.</li><li>Requisitos urbanísticos, CTE y documentación aplicable.</li><li>Soluciones especiales por agua, heladas, rellenos o cargas singulares.</li></ul>"},
+    {"type":"text","id":"cta_eyebrow","label":"Antetítulo CTA","default":"Siguiente paso"},
+    {"type":"text","id":"cta_heading","label":"Título CTA","default":"Envíanos el terreno antes de cerrar la estructura"},
+    {"type":"richtext","id":"cta_text","label":"Texto CTA","default":"<p>Con ubicación, dimensiones, uso previsto, accesos y fotografías podemos orientar la solución y detectar qué información adicional hará falta antes de presupuestar o ejecutar.</p>"},
+    {"type":"text","id":"cta_primary_label","label":"CTA final principal","default":"Enviar ubicación y fotos"},
+    {"type":"text","id":"cta_secondary_label","label":"CTA final secundario","default":"Ver montaje profesional"},
+    {"type":"text","id":"cta_tertiary_label","label":"CTA final terciario","default":"Ver proyectos y licencias"}
+  ],
+  "blocks": [
+    {
+      "type":"criterion",
+      "name":"Criterio de decisión",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Terreno y agua"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Capacidad portante, rellenos, pendiente, drenaje y exposición a humedad o heladas."}
+      ]
+    },
+    {
+      "type":"system",
+      "name":"Sistema de base",
+      "settings":[
+        {"type":"image_picker","id":"image","label":"Imagen"},
+        {"type":"text","id":"image_alt","label":"Texto alternativo"},
+        {"type":"text","id":"index","label":"Índice","default":"01 · Superficie continua"},
+        {"type":"text","id":"heading","label":"Título","default":"Losa o solera de hormigón armado"},
+        {"type":"richtext","id":"text","label":"Descripción","default":"<p>Una base continua permite repartir cargas, controlar nivelación y coordinar pasos o encuentros antes del montaje. Su composición y dimensionado se definen según el proyecto, el terreno y el uso.</p>"},
+        {"type":"textarea","id":"best_for","label":"Suele encajar en","default":"Usos habitables, superficies medias o grandes y proyectos donde se necesita una plataforma continua y precisa."}
+      ]
+    },
+    {
+      "type":"detail",
+      "name":"Detalle antihumedad",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Corte capilar"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Separación efectiva entre soporte mineral y madera mediante la solución definida para el encuentro."}
+      ]
+    },
+    {
+      "type":"step",
+      "name":"Paso de ejecución",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Toma de datos"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Revisamos uso, dimensiones, terreno, accesos, pendiente, agua y condicionantes de montaje."}
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets":[{"name":"IE · Bases y soleras"}]
+}
+{% endschema %}
