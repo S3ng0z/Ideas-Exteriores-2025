@@ -1,0 +1,215 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Ubicación, accesos y punto de descarga revisados"
+          }
+        },
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Volumen, peso, vehículo y medios definidos"
+          }
+        },
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Recepción y coordinación de obra planificadas"
+          }
+        }
+      },
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
+      "settings": {
+        "eyebrow": "Envío seguro y logística nacional",
+        "heading": "Planificamos la entrega antes de que el transporte llegue a obra",
+        "lead": "<p>Coordinamos el suministro de estructuras de madera, paneles y kits según el destino real, el volumen y peso de la carga, los accesos, los medios de descarga y la relación con el montaje. El objetivo es que la logística quede definida antes de confirmar fecha y coste.</p>",
+        "primary_label": "Calcular logística para mi ubicación",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Ver garantía y condiciones de entrega",
+        "secondary_link": "/pages/warranty-delivery-payment-options",
+        "summary_title": "Antes de expedición"
+      }
+    },
+    "scope": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "service_route": {
+          "type": "service",
+          "settings": {
+            "image_alt": "",
+            "index": "01 · Planificar",
+            "heading": "Carga, ruta y transporte",
+            "text": "<p>La expedición se dimensiona según el tipo de estructura, longitudes, número de bultos, volumen, peso y destino. La modalidad de transporte y el coste deben quedar vinculados al alcance real del pedido.</p>",
+            "link_1_label": "Garantía, entrega y pago",
+            "link_1": "/pages/warranty-delivery-payment-options",
+            "link_2_label": "Ver servicios",
+            "link_2": "/pages/services",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "service_access": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt": "Preparación y accesos de obra para una estructura de madera",
+            "index": "02 · Descargar",
+            "heading": "Accesos, maniobra y medios de descarga",
+            "text": "<p>Revisamos ancho de acceso, radios de giro, pendiente, obstáculos y punto disponible para descarga o acopio. Si hacen falta grúa, carretilla, plataforma u otros medios, deben identificarse antes de programar la entrega.</p>",
+            "link_1_label": "Bases y soleras",
+            "link_1": "/pages/timber-bases-and-foundations",
+            "link_2_label": "Montaje profesional",
+            "link_2": "/pages/timber-structure-installation",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "service_receive": {
+          "type": "service",
+          "settings": {
+            "image_alt": "",
+            "index": "03 · Recibir",
+            "heading": "Recepción, control y coordinación",
+            "text": "<p>La llegada a obra se coordina con la persona responsable y con el momento real del proyecto. La recepción debe permitir comprobar el estado visible de la carga, identificar los elementos y gestionar cualquier incidencia según las condiciones pactadas.</p>",
+            "link_1_label": "Montaje profesional",
+            "link_1": "/pages/timber-structure-installation",
+            "link_2_label": "Contactar con el equipo",
+            "link_2": "/pages/contact-ideas-exteriores",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_route",
+        "service_access",
+        "service_receive"
+      ],
+      "settings": {
+        "eyebrow": "Qué condiciona una entrega",
+        "heading": "La logística empieza antes del camión",
+        "intro": "<p>Una misma solución puede requerir una operativa muy distinta según destino y obra. Por eso separamos claramente el transporte, la descarga, los medios auxiliares y la coordinación con el montaje.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Localizar",
+            "text": "Partimos del código postal, municipio y punto exacto previsto de entrega."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Revisar accesos",
+            "text": "Comprobamos calle, entrada, giros, pendiente, obstáculos y espacio para maniobra o descarga."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Dimensionar medios",
+            "text": "Relacionamos carga, vehículo, descarga y medios auxiliares con las condiciones reales del proyecto."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Coordinar la entrega",
+            "text": "Confirmamos alcance, coste y ventana de entrega y la alineamos con base, acopio o montaje cuando proceda."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "eyebrow": "Información necesaria",
+        "heading": "Qué necesitamos para valorar la logística",
+        "intro": "<p>Con ubicación, imágenes del acceso, tipo de material y necesidades de descarga podemos detectar condicionantes antes de que se conviertan en incidencias de obra.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "principle_1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Coste definido por alcance",
+            "text": "El transporte se valora según destino, volumen, peso, accesos y servicios necesarios; no se da por incluido si no figura expresamente en la propuesta."
+          }
+        },
+        "principle_2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Responsabilidades claras",
+            "text": "Punto de entrega, medios auxiliares, disponibilidad de acceso y coordinación de descarga deben quedar identificados antes de expedición."
+          }
+        },
+        "principle_3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Logística conectada con obra",
+            "text": "Cuando hay base o montaje, la entrega se plantea dentro de la secuencia de ejecución para evitar acopios, esperas o medios incompatibles."
+          }
+        }
+      },
+      "block_order": [
+        "principle_1",
+        "principle_2",
+        "principle_3"
+      ],
+      "settings": {
+        "eyebrow": "Criterio logístico",
+        "heading": "Definir antes de transportar"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Envíanos la ubicación y el acceso de tu proyecto",
+        "text": "<p>Indica código postal y municipio, tipo de estructura o material y, si puedes, adjunta fotos del acceso y del punto de descarga. Con esa información podremos revisar viabilidad, medios necesarios y alcance logístico.</p>",
+        "label": "Consultar transporte y entrega",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "scope",
+    "process",
+    "confidence",
+    "cta"
+  ]
+}
