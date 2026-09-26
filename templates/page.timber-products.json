@@ -3,11 +3,33 @@
     "hero": {
       "type": "ie-services-hero",
       "blocks": {
-        "summary_1": {"type":"summary","settings":{"number":"01","label":"Viviendas y espacios habitables"}},
-        "summary_2": {"type":"summary","settings":{"number":"02","label":"Casetas, estudios y espacios auxiliares"}},
-        "summary_3": {"type":"summary","settings":{"number":"03","label":"Pérgolas, porches, cenadores y tarimas"}}
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Viviendas y espacios habitables"
+          }
+        },
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Casetas, estudios y espacios auxiliares"
+          }
+        },
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Pérgolas, porches, cenadores y tarimas"
+          }
+        }
       },
-      "block_order": ["summary_1","summary_2","summary_3"],
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
       "settings": {
         "eyebrow": "Productos de madera",
         "heading": "Casas, casetas y estructuras de madera para vivir y disfrutar el exterior",
@@ -54,8 +76,8 @@
           "type": "service",
           "settings": {
             "index": "03 · Exterior",
-            "heading": "Estructuras de jardín y tarimas",
-            "text": "<p>Pérgolas, porches, cenadores y pavimentos exteriores para crear sombra, protección, estancia y continuidad entre vivienda y jardín. La elección depende de uso, exposición, cubierta, base y mantenimiento.</p>",
+            "heading": "Pérgolas, porches y cenadores",
+            "text": "<p>Estructuras de madera para crear sombra, protección y nuevas zonas de estancia exterior. Compara solución, cubierta, dimensiones, apoyo, anclaje y nivel de personalización.</p>",
             "link_1_label": "Pérgolas de madera",
             "link_1": "/pages/bespoke-wooden-pergolas",
             "link_2_label": "Porches de madera",
@@ -63,9 +85,28 @@
             "link_3_label": "Cenadores y gazebos",
             "link_3": "/collections/wooden-gazebos"
           }
+        },
+        "family_decking": {
+          "type": "service",
+          "settings": {
+            "index": "04 · Pavimentar",
+            "heading": "Tarimas exteriores",
+            "text": "<p>Pavimentos para terrazas, porches, piscinas y jardines. Elige entre madera natural, por su tacto y carácter, o tarima tecnológica WPC, orientada a reducir mantenimiento y aportar estabilidad en exterior.</p>",
+            "link_1_label": "Tarima de madera natural",
+            "link_1": "/collections/natural-wood-decking",
+            "link_2_label": "Tarima tecnológica WPC Protech",
+            "link_2": "/collections/wpc-protech-decking",
+            "link_3_label": "",
+            "link_3": ""
+          }
         }
       },
-      "block_order": ["family_homes","family_sheds","family_garden"],
+      "block_order": [
+        "family_homes",
+        "family_sheds",
+        "family_garden",
+        "family_decking"
+      ],
       "settings": {
         "eyebrow": "Familias de producto",
         "heading": "Elige primero qué espacio quieres crear",
@@ -75,12 +116,45 @@
     "decision": {
       "type": "ie-services-process",
       "blocks": {
-        "step_1": {"type":"step","settings":{"number":"01","heading":"Define el uso","text":"Vivienda, trabajo, almacenaje, piscina, sombra, estancia exterior o pavimento."}},
-        "step_2": {"type":"step","settings":{"number":"02","heading":"Compara la familia","text":"Revisa tamaño, distribución, nivel de aislamiento, precio de partida y alcance de suministro o montaje."}},
-        "step_3": {"type":"step","settings":{"number":"03","heading":"Valida el sistema","text":"Entramado ligero, panel SIP o carpintería estructural se eligen según prestaciones, proyecto y solución concreta."}},
-        "step_4": {"type":"step","settings":{"number":"04","heading":"Cierra el alcance","text":"Base, transporte, montaje, protección, licencias y acabados deben quedar definidos antes de contratar."}}
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Define el uso",
+            "text": "Vivienda, trabajo, almacenaje, piscina, sombra, estancia exterior o pavimento."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Compara la familia",
+            "text": "Revisa tamaño, distribución, nivel de aislamiento, precio de partida y alcance de suministro o montaje."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Valida el sistema",
+            "text": "Entramado ligero, panel SIP o carpintería estructural se eligen según prestaciones, proyecto y solución concreta."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Cierra el alcance",
+            "text": "Base, transporte, montaje, protección, licencias y acabados deben quedar definidos antes de contratar."
+          }
+        }
       },
-      "block_order": ["step_1","step_2","step_3","step_4"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
       "settings": {
         "eyebrow": "Cómo elegir",
         "heading": "Del uso al producto, y del producto al proyecto",
@@ -90,12 +164,41 @@
     "criteria": {
       "type": "ie-services-confidence",
       "blocks": {
-        "principle_1": {"type":"principle","settings":{"heading":"Alcance visible","text":"Diferenciamos producto, suministro, montaje y trabajos auxiliares para que sepas qué estás comparando."}},
-        "principle_2": {"type":"principle","settings":{"heading":"Precio contextualizado","text":"El precio de partida sirve para comparar modelos; base, transporte, instalación, acabados y proyecto pueden modificar el total."}},
-        "principle_3": {"type":"principle","settings":{"heading":"Sistema adecuado","text":"Entramado ligero, SIP y soluciones estructurales se relacionan con el uso y las prestaciones, no como categorías desconectadas."}},
-        "principle_4": {"type":"principle","settings":{"heading":"Proyecto coordinado","text":"Diseño, licencias, base, montaje, protección y mantenimiento se integran cuando el producto o la parcela lo requieren."}}
+        "principle_1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Alcance visible",
+            "text": "Diferenciamos producto, suministro, montaje y trabajos auxiliares para que sepas qué estás comparando."
+          }
+        },
+        "principle_2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Precio contextualizado",
+            "text": "El precio de partida sirve para comparar modelos; base, transporte, instalación, acabados y proyecto pueden modificar el total."
+          }
+        },
+        "principle_3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Sistema adecuado",
+            "text": "Entramado ligero, SIP y soluciones estructurales se relacionan con el uso y las prestaciones, no como categorías desconectadas."
+          }
+        },
+        "principle_4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Proyecto coordinado",
+            "text": "Diseño, licencias, base, montaje, protección y mantenimiento se integran cuando el producto o la parcela lo requieren."
+          }
+        }
       },
-      "block_order": ["principle_1","principle_2","principle_3","principle_4"],
+      "block_order": [
+        "principle_1",
+        "principle_2",
+        "principle_3",
+        "principle_4"
+      ],
       "settings": {
         "eyebrow": "Criterios de compra",
         "heading": "Compara productos con el alcance completo en mente"
@@ -112,5 +215,11 @@
       }
     }
   },
-  "order": ["hero","families","decision","criteria","cta"]
+  "order": [
+    "hero",
+    "families",
+    "decision",
+    "criteria",
+    "cta"
+  ]
 }
