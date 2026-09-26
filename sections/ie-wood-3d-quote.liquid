@@ -1,0 +1,103 @@
+<section class="ie-wood3d ie-wood3d--quote" id="consulta-tecnica" aria-labelledby="ie-wood3d-quote-title-{{ section.id }}">
+  <div class="ie-wood3d__inner">
+    <div class="ie-wood3d__quote-layout">
+      <div class="ie-wood3d__quote-copy">
+        {% if section.settings.eyebrow != blank %}<p class="ie-wood3d__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-wood3d-quote-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}<div class="rte">{{ section.settings.intro }}</div>{% endif %}
+
+        <ul class="ie-wood3d__quote-checklist" role="list">
+          {% if section.settings.item_1 != blank %}<li><span>01</span><strong>{{ section.settings.item_1 }}</strong></li>{% endif %}
+          {% if section.settings.item_2 != blank %}<li><span>02</span><strong>{{ section.settings.item_2 }}</strong></li>{% endif %}
+          {% if section.settings.item_3 != blank %}<li><span>03</span><strong>{{ section.settings.item_3 }}</strong></li>{% endif %}
+          {% if section.settings.item_4 != blank %}<li><span>04</span><strong>{{ section.settings.item_4 }}</strong></li>{% endif %}
+        </ul>
+      </div>
+
+      <div class="ie-wood3d__form-panel">
+        {% assign form_id = 'IEWood3DForm-' | append: section.id %}
+        {% form 'contact', id: form_id, class: 'ie-wood3d__form' %}
+          {% if form.posted_successfully? %}
+            <div class="ie-wood3d__form-status" tabindex="-1">Hemos recibido tu consulta. Revisaremos el punto de partida para indicarte el siguiente paso.</div>
+          {% endif %}
+          {% if form.errors %}
+            <div class="ie-wood3d__form-status ie-wood3d__form-status--error" tabindex="-1">{{ form.errors | default_errors }}</div>
+          {% endif %}
+
+          <input type="hidden" name="contact[Origen]" value="{{ canonical_url }}">
+          <input type="hidden" name="contact[Servicio]" value="Diseño 3D en madera y asesoría técnica">
+
+          <div class="ie-wood3d__form-grid">
+            <div class="ie-wood3d__field">
+              <label for="{{ form_id }}-name">Nombre</label>
+              <input id="{{ form_id }}-name" type="text" name="contact[name]" autocomplete="name" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+            </div>
+            <div class="ie-wood3d__field">
+              <label for="{{ form_id }}-email">Email *</label>
+              <input id="{{ form_id }}-email" type="email" name="contact[email]" autocomplete="email" required aria-required="true" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+            </div>
+            <div class="ie-wood3d__field">
+              <label for="{{ form_id }}-phone">Teléfono</label>
+              <input id="{{ form_id }}-phone" type="tel" name="contact[phone]" autocomplete="tel" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+            </div>
+            <div class="ie-wood3d__field">
+              <label for="{{ form_id }}-type">Tipo de solución</label>
+              <select id="{{ form_id }}-type" name="contact[Tipo de solución]">
+                <option value="">Selecciona una opción</option>
+                <option value="Casa o módulo habitable">Casa o módulo habitable</option>
+                <option value="Caseta, oficina o estudio">Caseta, oficina o estudio</option>
+                <option value="Pérgola, porche o cenador">Pérgola, porche o cenador</option>
+                <option value="Estructura o cubierta">Estructura o cubierta</option>
+                <option value="Otra solución">Otra solución</option>
+              </select>
+            </div>
+            <div class="ie-wood3d__field">
+              <label for="{{ form_id }}-location">Ubicación / código postal</label>
+              <input id="{{ form_id }}-location" type="text" name="contact[Ubicación]" autocomplete="postal-code">
+            </div>
+            <div class="ie-wood3d__field">
+              <label for="{{ form_id }}-stage">Punto de partida</label>
+              <select id="{{ form_id }}-stage" name="contact[Punto de partida]">
+                <option value="">Selecciona una opción</option>
+                <option value="Idea inicial">Solo tengo una idea inicial</option>
+                <option value="Medidas aproximadas">Tengo medidas aproximadas</option>
+                <option value="Fotos y ubicación">Tengo fotos y ubicación definidas</option>
+                <option value="Croquis o planos">Tengo croquis o planos</option>
+                <option value="Necesito revisar una propuesta">Quiero revisar una propuesta existente</option>
+              </select>
+            </div>
+            <div class="ie-wood3d__field ie-wood3d__field--full">
+              <label for="{{ form_id }}-body">Cuéntanos lo esencial *</label>
+              <textarea id="{{ form_id }}-body" name="contact[body]" required aria-required="true" placeholder="Uso previsto, medidas aproximadas, condicionantes, sistema si lo conoces y qué decisión necesitas cerrar.">{{ form.body }}</textarea>
+            </div>
+          </div>
+
+          <label class="ie-wood3d__privacy">
+            <input type="checkbox" name="contact[Privacidad]" value="Aceptada" required>
+            <span>He leído y acepto la <a href="{{ section.settings.privacy_link | default: '/policies/privacy-policy' }}">política de privacidad</a>.</span>
+          </label>
+
+          <button class="ie-wood3d__button ie-wood3d__button--primary ie-wood3d__submit" type="submit">{{ section.settings.submit_label }}</button>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Diseño 3D · Consulta",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Siguiente paso"},
+    {"type":"text","id":"heading","label":"Título","default":"Cuéntanos qué necesitas definir"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Para una primera orientación no necesitas tener el proyecto cerrado. Con la ubicación, unas medidas, fotografías y el uso previsto podemos valorar qué nivel de definición tiene sentido y qué información falta.</p>"},
+    {"type":"text","id":"item_1","label":"Dato útil 1","default":"Ubicación o código postal"},
+    {"type":"text","id":"item_2","label":"Dato útil 2","default":"Medidas aproximadas o croquis"},
+    {"type":"text","id":"item_3","label":"Dato útil 3","default":"Fotografías del espacio o parcela"},
+    {"type":"text","id":"item_4","label":"Dato útil 4","default":"Uso previsto y decisión que necesitas cerrar"},
+    {"type":"text","id":"submit_label","label":"Texto botón","default":"Solicitar orientación técnica"},
+    {"type":"url","id":"privacy_link","label":"Política de privacidad"}
+  ],
+  "presets":[{"name":"Diseño 3D · Consulta"}]
+}
+{% endschema %}
