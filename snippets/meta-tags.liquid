@@ -50,6 +50,11 @@
     assign seo_description = 'Soluciones de base para estructuras de madera según terreno, uso y cargas: losas, zapatas, pilotes, drenaje, barreras antihumedad y anclajes.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'project-management-permits'
+    assign seo_title = 'Gestión de proyectos y licencias para construcciones de madera'
+    assign seo_description = 'Viabilidad urbanística, proyecto técnico y apoyo en licencias para construcciones de madera, con alcance y documentación adaptados al municipio y al proyecto.'
+  endif
+
   assign og_title = seo_title
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
