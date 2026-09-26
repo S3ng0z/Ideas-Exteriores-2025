@@ -1,0 +1,35 @@
+<section class="ie-wdp ie-wdp--cta" id="consulta-condiciones" aria-labelledby="ie-wdp-cta-title-{{ section.id }}">
+  <div class="ie-wdp__inner">
+    <div class="ie-wdp__closing">
+      <div>
+        {% if section.settings.eyebrow != blank %}<p class="ie-wdp__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-wdp-cta-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.text != blank %}<div class="rte">{{ section.settings.text }}</div>{% endif %}
+      </div>
+      <div class="ie-wdp__closing-actions">
+        {% if section.settings.primary_label != blank and section.settings.primary_link != blank %}
+          <a class="ie-wdp__button ie-wdp__button--primary" href="{{ section.settings.primary_link }}">{{ section.settings.primary_label }}</a>
+        {% endif %}
+        {% if section.settings.secondary_label != blank and section.settings.secondary_link != blank %}
+          <a class="ie-wdp__button ie-wdp__button--secondary" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Garantía · CTA",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Antes de contratar"},
+    {"type":"text","id":"heading","label":"Título","default":"Pide las condiciones aplicables a tu proyecto"},
+    {"type":"richtext","id":"text","label":"Texto","default":"<p>Indícanos el producto o solución, la ubicación y si necesitas suministro, transporte, montaje u otros servicios. Te ayudaremos a revisar el alcance y la documentación que debe quedar definida antes de confirmar.</p>"},
+    {"type":"text","id":"primary_label","label":"CTA principal","default":"Hablar con el equipo"},
+    {"type":"url","id":"primary_link","label":"Enlace CTA principal"},
+    {"type":"text","id":"secondary_label","label":"CTA secundario","default":"Ver mantenimiento y reparación"},
+    {"type":"url","id":"secondary_link","label":"Enlace CTA secundario"}
+  ],
+  "presets":[{"name":"Garantía · CTA"}]
+}
+{% endschema %}
