@@ -1,7 +1,0 @@
-<section class="ie-project ie-project--audience" aria-labelledby="ie-project-audience-title-{{ section.id }}"><div class="ie-project__inner"><div class="ie-project__audience">
-  <div>{% if section.settings.eyebrow != blank %}<p class="ie-project__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}<h2 id="ie-project-audience-title-{{ section.id }}">{{ section.settings.heading }}</h2></div>
-  <div class="ie-project__audience-grid">{% for block in section.blocks %}<article {{ block.shopify_attributes }}><h3>{{ block.settings.heading }}</h3><p>{{ block.settings.text }}</p></article>{% endfor %}</div>
-</div></div></section>
-{% schema %}
-{"name":"Licencias · Perfiles","settings":[{"type":"text","id":"eyebrow","label":"Antetítulo","default":"Para quién es"},{"type":"text","id":"heading","label":"Título","default":"Un mismo expediente, distinto nivel de acompañamiento"}],"blocks":[{"type":"profile","name":"Perfil","settings":[{"type":"text","id":"heading","label":"Título","default":"Particular"},{"type":"textarea","id":"text","label":"Texto","default":"Acompañamiento para entender el trámite, preparar la documentación y responder a requerimientos sin convertir la gestión municipal en tu trabajo."}]}],"max_blocks":4,"presets":[{"name":"Licencias · Perfiles"}]}
-{% endschema %}
