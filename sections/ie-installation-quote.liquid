@@ -1,0 +1,58 @@
+{{ 'ie-installation-page.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-installation ie-installation--quote" id="ie-installation-quote" aria-labelledby="ie-installation-quote-title-{{ section.id }}">
+  <div class="ie-installation__inner">
+    <div class="ie-installation__quote-layout">
+      <div class="ie-installation__quote-copy">
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-installation__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-installation-quote-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}
+          <div class="rte">{{ section.settings.intro }}</div>
+        {% endif %}
+
+        <ul class="ie-installation__quote-checklist" role="list">
+          {% if section.settings.item_1 != blank %}<li><span>01</span><strong>{{ section.settings.item_1 }}</strong></li>{% endif %}
+          {% if section.settings.item_2 != blank %}<li><span>02</span><strong>{{ section.settings.item_2 }}</strong></li>{% endif %}
+          {% if section.settings.item_3 != blank %}<li><span>03</span><strong>{{ section.settings.item_3 }}</strong></li>{% endif %}
+          {% if section.settings.item_4 != blank %}<li><span>04</span><strong>{{ section.settings.item_4 }}</strong></li>{% endif %}
+        </ul>
+
+        <div class="ie-installation__quote-contact">
+          {% if section.settings.phone != blank %}<span>Tel. <a href="tel:{{ section.settings.phone | replace: ' ', '' }}">{{ section.settings.phone }}</a></span>{% endif %}
+          {% if section.settings.email != blank %}<span><a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a></span>{% endif %}
+        </div>
+      </div>
+
+      <div class="ie-installation__form-panel">
+        {% if section.blocks.size > 0 %}
+          {% content_for 'blocks' %}
+        {% else %}
+          {% render 'ie-contact-native-form', section: section %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Montaje · Solicitud",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Siguiente paso"},
+    {"type":"text","id":"heading","label":"Título","default":"Solicita una valoración de montaje con el contexto necesario"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Para orientarte necesitamos saber qué estructura quieres montar y en qué condiciones se ejecutará. Con esa información podemos confirmar si el servicio encaja y qué datos faltan para presupuestarlo.</p>"},
+    {"type":"text","id":"item_1","label":"Dato útil 1","default":"Ubicación o código postal y accesos"},
+    {"type":"text","id":"item_2","label":"Dato útil 2","default":"Modelo, sistema o descripción de la estructura"},
+    {"type":"text","id":"item_3","label":"Dato útil 3","default":"Medidas, planos o fotografías disponibles"},
+    {"type":"text","id":"item_4","label":"Dato útil 4","default":"Estado de la base y fecha objetivo"},
+    {"type":"text","id":"phone","label":"Teléfono","default":"+34 916 99 60 93"},
+    {"type":"text","id":"email","label":"Email","default":"info@ideas-exteriores.com"},
+    {"type":"text","id":"submit_label","label":"Botón formulario nativo","default":"Solicitar valoración de montaje"},
+    {"type":"url","id":"privacy_link","label":"Política de privacidad"}
+  ],
+  "blocks":[{"type":"@app"}],
+  "presets":[{"name":"Montaje · Solicitud"}]
+}
+{% endschema %}
