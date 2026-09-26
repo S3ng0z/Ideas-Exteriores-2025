@@ -60,6 +60,11 @@
     assign seo_description = 'Consulta cómo definimos garantía, entrega, recepción, incidencias y pagos en proyectos de madera, con condiciones específicas reflejadas por escrito.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'secure-shipping-logistics-spain'
+    assign seo_title = 'Envío seguro y logística nacional para estructuras de madera'
+    assign seo_description = 'Planificamos transporte y entrega según ubicación, volumen, peso, accesos, descarga y coordinación de montaje para proyectos de madera en España peninsular.'
+  endif
+
   assign og_title = seo_title
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
