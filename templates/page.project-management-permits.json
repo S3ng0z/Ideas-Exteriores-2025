@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-project-management-hero",
+      "blocks": {
+        "s1": {"type":"summary","settings":{"number":"01","label":"Comprobar el encaje urbanístico"}},
+        "s2": {"type":"summary","settings":{"number":"02","label":"Preparar el proyecto técnico"}},
+        "s3": {"type":"summary","settings":{"number":"03","label":"Tramitar y responder requerimientos"}}
+      },
+      "block_order":["s1","s2","s3"],
+      "settings":{
+        "eyebrow":"Gestión integral de proyectos y licencias",
+        "heading":"Viabilidad, proyecto técnico y licencia para construir con criterio",
+        "lead":"<p>Coordinamos la viabilidad urbanística, la documentación técnica y la tramitación de proyectos en madera para que sepas qué puede hacerse, qué exige tu municipio y cuál es el siguiente paso antes de ejecutar.</p>",
+        "primary_label":"Solicitar revisión de viabilidad",
+        "primary_link":"/pages/contact-ideas-exteriores",
+        "secondary_label":"Ver diseño 3D y asesoría técnica",
+        "secondary_link":"/pages/wood-3d-design-consulting",
+        "summary_title":"Qué resolvemos"
+      }
+    },
+    "scope": {
+      "type":"ie-project-management-scope",
+      "blocks":{
+        "a":{"type":"item","settings":{"index":"01 · Viabilidad","heading":"Saber qué se puede hacer antes de dibujar de más","text":"<p>Revisamos ocupación, edificabilidad, altura, retranqueos, alineaciones, uso y clasificación del suelo. Este filtro inicial evita rehacer una propuesta que no encaje con la parcela o el municipio.</p>","link_label":"Ver sistemas constructivos","link":"/pages/timber-building-systems"}},
+        "b":{"type":"item","settings":{"index":"02 · Proyecto técnico","heading":"Convertir la solución en documentación tramitable","text":"<p>Preparamos memoria, planos, mediciones y justificaciones aplicables con profesionales habilitados, adaptando el expediente al uso real y al término municipal.</p>","link_label":"Partir de un diseño previo","link":"/pages/wood-3d-design-consulting"}},
+        "c":{"type":"item","settings":{"index":"03 · Tramitación","heading":"Presentar, seguir y responder con contexto","text":"<p>Definimos el trámite que corresponda, presentamos la documentación y acompañamos la respuesta a requerimientos para que el expediente avance con trazabilidad.</p>","link_label":"Hablar con el equipo","link":"/pages/contact-ideas-exteriores"}}
+      },
+      "block_order":["a","b","c"],
+      "settings":{"eyebrow":"Antes de diseñar y construir","heading":"Tres frentes que conviene resolver en el orden correcto","intro":"<p>La licencia no es un trámite aislado al final del proyecto. El encaje urbanístico condiciona el diseño; el diseño condiciona la documentación; y la documentación debe corresponder con lo que realmente se ejecutará.</p>"}
+    },
+    "process": {
+      "type":"ie-project-management-process",
+      "blocks":{
+        "p1":{"type":"step","settings":{"number":"01","heading":"Viabilidad","text":"Revisión urbanística y encaje del uso, con un resumen de condicionantes."}},
+        "p2":{"type":"step","settings":{"number":"02","heading":"Definición","text":"Alcance, sistema, mediciones base y presupuesto orientativo para tomar decisiones."}},
+        "p3":{"type":"step","settings":{"number":"03","heading":"Proyecto","text":"Memoria, planos, mediciones y justificaciones técnicas aplicables."}},
+        "p4":{"type":"step","settings":{"number":"04","heading":"Tramitación","text":"Presentación, seguimiento del expediente y respuesta a requerimientos."}},
+        "p5":{"type":"step","settings":{"number":"05","heading":"Coordinación de ejecución","text":"Enlace con bases, montaje y protección para que lo proyectado llegue a obra con continuidad."}}
+      },
+      "block_order":["p1","p2","p3","p4","p5"],
+      "settings":{"eyebrow":"Proceso por fases","heading":"Cinco pasos, con entregables y decisiones claras","intro":"<p>Podemos incorporarnos desde el inicio o desde una fase avanzada si ya dispones de diseño o proyecto. El objetivo es que cada paso deje preparado el siguiente y reduzca retrabajos.</p>"}
+    },
+    "audience": {
+      "type":"ie-project-management-audience",
+      "blocks":{
+        "u1":{"type":"profile","settings":{"heading":"Particular","text":"Acompañamiento para entender el trámite, preparar la documentación y responder a requerimientos sin convertir la gestión municipal en tu trabajo."}},
+        "u2":{"type":"profile","settings":{"heading":"Promotor o constructora","text":"Documentación ordenada, coordinación técnica y continuidad entre expediente, presupuesto y ejecución."}},
+        "u3":{"type":"profile","settings":{"heading":"Arquitecto o estudio","text":"Apoyo especializado en construcción en madera para detalles, sistemas, documentación y enlace con fabricación y montaje."}}
+      },
+      "block_order":["u1","u2","u3"],
+      "settings":{"eyebrow":"Para quién es","heading":"Un mismo expediente, distinto nivel de acompañamiento"}
+    },
+    "faq": {
+      "type":"ie-project-management-faq",
+      "blocks":{
+        "f1":{"type":"faq","settings":{"question":"¿Es obra menor u obra mayor?","answer":"<p>Depende del uso, la superficie, la altura, la afección estructural y la normativa municipal. Lo definimos después de revisar el caso y su encaje urbanístico.</p>"}},
+        "f2":{"type":"faq","settings":{"question":"¿Una caseta de madera necesita licencia?","answer":"<p>No existe una respuesta única para todos los municipios. Influyen la implantación, el uso, la permanencia, la superficie, la cimentación y las ordenanzas locales; por eso revisamos el caso concreto antes de recomendar un trámite.</p>"}},
+        "f3":{"type":"faq","settings":{"question":"¿Puedo venir con un diseño o proyecto ya hecho?","answer":"<p>Sí. Podemos incorporarnos desde la documentación técnica o desde la tramitación, revisando antes que lo existente sea compatible con el alcance, la parcela y el sistema constructivo.</p>"}},
+        "f4":{"type":"faq","settings":{"question":"¿Gestionáis también la ejecución?","answer":"<p>Podemos coordinar el siguiente paso con servicios de bases y soleras, montaje profesional y tratamiento de la madera, según el alcance contratado.</p>"}},
+        "f5":{"type":"faq","settings":{"question":"¿Garantizáis que el ayuntamiento concederá la licencia?","answer":"<p>No. La resolución corresponde a la administración competente. Nuestro trabajo es preparar un expediente adaptado al caso, detectar condicionantes y acompañar la respuesta a requerimientos.</p>"}}
+      },
+      "block_order":["f1","f2","f3","f4","f5"],
+      "settings":{"eyebrow":"Preguntas frecuentes","heading":"Lo que conviene saber antes de iniciar la tramitación"}
+    },
+    "cta": {
+      "type":"ie-project-management-cta",
+      "settings":{"eyebrow":"Siguiente paso","heading":"Antes de invertir en planos, confirma el encaje de tu proyecto","text":"<p>Indícanos municipio, parcela, uso previsto, dimensiones aproximadas y la información que ya tengas. Te ayudaremos a identificar qué revisar y qué documentación necesitará el siguiente paso.</p>","label":"Solicitar revisión de viabilidad","link":"/pages/contact-ideas-exteriores"}
+    }
+  },
+  "order":["hero","scope","process","audience","faq","cta"]
+}
