@@ -1,0 +1,46 @@
+<section class="ie-wood3d ie-wood3d--process" id="proceso" aria-labelledby="ie-wood3d-process-title-{{ section.id }}">
+  <div class="ie-wood3d__inner">
+    <div class="ie-wood3d__process">
+      <div class="ie-wood3d__process-intro">
+        {% if section.settings.eyebrow != blank %}<p class="ie-wood3d__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-wood3d-process-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}<div class="rte">{{ section.settings.intro }}</div>{% endif %}
+      </div>
+      <ol class="ie-wood3d__process-list">
+        {% for block in section.blocks %}
+          <li class="ie-wood3d__process-step" {{ block.shopify_attributes }}>
+            <span>{{ block.settings.number }}</span>
+            <div>
+              <h3>{{ block.settings.heading }}</h3>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Diseño 3D · Proceso",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Cómo trabajamos"},
+    {"type":"text","id":"heading","label":"Título","default":"De la información inicial a una definición útil"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Trabajamos por hitos. Cada fase reduce incertidumbre y prepara la siguiente decisión, sin confundir una visualización comercial con documentación técnica que todavía no corresponda.</p>"}
+  ],
+  "blocks":[
+    {
+      "type":"step",
+      "name":"Paso",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Recoger el contexto"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Uso, ubicación, medidas, fotografías, condicionantes y referencias existentes."}
+      ]
+    }
+  ],
+  "max_blocks":6,
+  "presets":[{"name":"Diseño 3D · Proceso"}]
+}
+{% endschema %}
