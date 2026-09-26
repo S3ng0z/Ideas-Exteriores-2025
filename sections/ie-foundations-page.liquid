@@ -58,7 +58,7 @@
     <div class="ie-foundations__systems" id="ie-foundations-systems-{{ section.id }}">
       {% for block in section.blocks %}
         {% if block.type == 'system' %}
-          <article class="ie-foundations__system" {{ block.shopify_attributes }}>
+          <article class="ie-foundations__system{% if block.settings.image == blank %} ie-foundations__system--no-media{% endif %}" {{ block.shopify_attributes }}>
             {% if block.settings.image != blank %}
               <div class="ie-foundations__system-media">
                 {{
