@@ -70,7 +70,11 @@
       data-product-transition="{{ settings.transition_to_main_product }}"
       data-template="{{ template }}"
     >
-      {{ content_for_layout }}
+      {% if request.page_type == 'page' and page.handle == 'warranty-delivery-payment-options' %}
+        {% render 'ie-warranty-delivery-page' %}
+      {% else %}
+        {{ content_for_layout }}
+      {% endif %}
     </main>
 
     {% sections 'footer-group' %}
