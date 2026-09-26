@@ -239,6 +239,15 @@
   order: 2;
 }
 
+.ie-foundations__system--no-media {
+  grid-template-columns: 1fr;
+  min-height: 0;
+}
+
+.ie-foundations__system--no-media .ie-foundations__system-body {
+  max-width: 920px;
+}
+
 .ie-foundations__system-media {
   min-height: 360px;
   background: var(--ie-stone);
