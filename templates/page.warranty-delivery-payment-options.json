@@ -1,0 +1,213 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-warranty-delivery-hero",
+      "blocks": {
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "heading": "Garantía documentada",
+            "text": "Cobertura, condiciones y exclusiones vinculadas al producto y al alcance contratado."
+          }
+        },
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "heading": "Entrega planificada",
+            "text": "Ubicación, accesos, modalidad de transporte y responsabilidades confirmadas antes de expedición."
+          }
+        },
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "heading": "Pagos por hitos",
+            "text": "Importes, medios aceptados y vencimientos definidos en la propuesta o pedido correspondiente."
+          }
+        }
+      },
+      "block_order": ["summary_1", "summary_2", "summary_3"],
+      "settings": {
+        "eyebrow": "Servicio y garantías",
+        "heading": "Garantía, entrega y pagos con condiciones claras desde el presupuesto",
+        "lead": "<p>Centralizamos las condiciones que conviene conocer antes de contratar: cobertura y mantenimiento, alcance logístico, protocolo de recepción y calendario de pagos. Las condiciones concretas dependen del producto, la configuración y los servicios incluidos, y deben quedar reflejadas en la documentación comercial o contractual de cada proyecto.</p>",
+        "primary_label": "Consultar condiciones de mi proyecto",
+        "primary_link": "#consulta-condiciones",
+        "secondary_label": "Ver logística de entrega",
+        "secondary_link": "/pages/secure-shipping-logistics-spain",
+        "summary_title": "Antes de confirmar"
+      }
+    },
+    "detail": {
+      "type": "ie-warranty-delivery-detail",
+      "blocks": {
+        "scope_1": {
+          "type": "scope",
+          "settings": {
+            "number": "01",
+            "heading": "Garantía y posventa",
+            "text": "<p>La cobertura debe identificar el producto o servicio, su alcance, condiciones de instalación y uso, requisitos de mantenimiento y exclusiones aplicables. Si aparece una incidencia, la revisión debe determinar su origen antes de definir la actuación.</p>",
+            "link_label": "Mantenimiento y reparación",
+            "link": "/pages/wood-maintenance-repair"
+          }
+        },
+        "scope_2": {
+          "type": "scope",
+          "settings": {
+            "number": "02",
+            "heading": "Entrega, transporte y accesos",
+            "text": "<p>La logística se confirma según ubicación, volumen, peso, accesos, medios de descarga y modalidad contratada. En proyectos con montaje, la preparación de base y la coordinación de obra forman parte del análisis previo.</p>",
+            "link_label": "Envío y logística",
+            "link": "/pages/secure-shipping-logistics-spain"
+          }
+        },
+        "scope_3": {
+          "type": "scope",
+          "settings": {
+            "number": "03",
+            "heading": "Recepción e incidencias",
+            "text": "<p>En la recepción conviene comprobar bultos, daños visibles, documentación y correspondencia con el pedido. Cualquier incidencia debe comunicarse con la evidencia y dentro de los plazos que figuren en la documentación aplicable.</p>",
+            "link_label": "Consultar montaje profesional",
+            "link": "/pages/timber-structure-installation"
+          }
+        },
+        "scope_4": {
+          "type": "scope",
+          "settings": {
+            "number": "04",
+            "heading": "Formas y calendario de pago",
+            "text": "<p>Los medios aceptados, importes y vencimientos se concretan en la oferta o pedido. En trabajos con fabricación, transporte o montaje pueden existir hitos de pago asociados a la confirmación, producción, expedición o ejecución.</p>",
+            "link_label": "Consultar una propuesta",
+            "link": "/pages/contact-ideas-exteriores"
+          }
+        }
+      },
+      "block_order": ["scope_1", "scope_2", "scope_3", "scope_4"],
+      "settings": {
+        "eyebrow": "Lo que debe quedar por escrito",
+        "heading": "Cuatro bloques que condicionan la compra y la entrega",
+        "intro": "<p>La información útil no es una promesa genérica. Cada pedido debe identificar qué producto o servicio se contrata, qué cobertura aplica, cómo se entrega, cómo se revisa la recepción y qué hitos activan cada pago.</p>",
+        "note": "<p><strong>Referencia contractual:</strong> ante cualquier diferencia entre esta página y un presupuesto, pedido, ficha técnica o documento contractual aceptado, prevalecen las condiciones específicas de ese documento y los derechos legales que resulten aplicables.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-warranty-delivery-process",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Confirmar alcance y condiciones",
+            "text": "Revisamos producto, configuración, servicios, ubicación, logística, pagos y documentos aplicables antes de activar el pedido."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Validar datos de entrega",
+            "text": "Confirmamos dirección, accesos, restricciones, medios de descarga y persona de contacto para reducir incidencias logísticas."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Comunicar el hito de expedición",
+            "text": "Antes de la salida se coordinan la ventana prevista, la documentación disponible y las condiciones necesarias para la recepción."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Revisar la recepción",
+            "text": "Se comprueba el estado visible, la correspondencia con el pedido y cualquier incidencia que deba documentarse."
+          }
+        },
+        "step_5": {
+          "type": "step",
+          "settings": {
+            "number": "05",
+            "heading": "Activar posventa cuando corresponda",
+            "text": "Ante una incidencia, recopilamos la información necesaria para diferenciar transporte, montaje, mantenimiento, ajuste o garantía."
+          }
+        }
+      },
+      "block_order": ["step_1", "step_2", "step_3", "step_4", "step_5"],
+      "settings": {
+        "eyebrow": "De la confirmación a la posventa",
+        "heading": "Un proceso verificable en cada hito",
+        "intro": "<p>Ordenamos la documentación y la comunicación para que cada fase tenga un responsable, una condición de avance y una evidencia clara: pedido confirmado, producción, expedición, recepción y seguimiento posterior.</p>"
+      }
+    },
+    "faq": {
+      "type": "ie-warranty-delivery-faq",
+      "blocks": {
+        "faq_1": {
+          "type": "question",
+          "settings": {
+            "question": "¿La garantía es igual para todos los productos y servicios?",
+            "answer": "<p>No necesariamente. El alcance depende del producto, sus componentes, el servicio contratado y las condiciones específicas de instalación, uso y mantenimiento. Debe quedar identificado en la documentación aplicable a tu proyecto.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo se confirma el plazo de entrega?",
+            "answer": "<p>El plazo debe confirmarse para cada pedido teniendo en cuenta disponibilidad, fabricación, configuración, transporte, ubicación y, cuando aplique, montaje. Una estimación comercial no sustituye la fecha o ventana que finalmente se confirme para el pedido.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué debo revisar cuando recibo el material?",
+            "answer": "<p>Comprueba el estado visible, número de bultos o elementos, documentación y correspondencia con el pedido. Si detectas daños o faltas, documenta la incidencia y comunícala por el canal indicado en la documentación de entrega.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué ocurre si aparece una incidencia después del montaje?",
+            "answer": "<p>La incidencia debe revisarse para identificar su origen. Según el caso puede requerir un ajuste, una reparación, mantenimiento, intervención sobre la base o una actuación cubierta por las condiciones de garantía.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué formas de pago están disponibles?",
+            "answer": "<p>Los medios de pago y el calendario aplicable se indican en la propuesta o pedido correspondiente. Cuando existe fabricación, transporte o montaje, el pago puede organizarse por hitos definidos antes de contratar.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "question",
+          "settings": {
+            "question": "¿El mantenimiento puede afectar a la garantía?",
+            "answer": "<p>Determinados productos, acabados o soluciones pueden requerir pautas de mantenimiento para conservar sus prestaciones y estado. Si esas condiciones son relevantes para la cobertura, deben quedar indicadas en la documentación aplicable.</p>"
+          }
+        }
+      },
+      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5", "faq_6"],
+      "settings": {
+        "eyebrow": "Preguntas frecuentes",
+        "heading": "Qué conviene revisar antes de aceptar el pedido",
+        "intro": "<p>Estas respuestas sirven como guía operativa. Las condiciones específicas de cada compra se concretan en el presupuesto, pedido y documentación que corresponda.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-warranty-delivery-cta",
+      "settings": {
+        "eyebrow": "Antes de contratar",
+        "heading": "Pide las condiciones aplicables a tu proyecto",
+        "text": "<p>Indícanos el producto o solución, la ubicación y si necesitas suministro, transporte, montaje u otros servicios. Te ayudaremos a revisar el alcance y la documentación que debe quedar definida antes de confirmar.</p>",
+        "primary_label": "Hablar con el equipo",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Ver mantenimiento y reparación",
+        "secondary_link": "/pages/wood-maintenance-repair"
+      }
+    }
+  },
+  "order": ["hero", "detail", "process", "faq", "cta"]
+}
