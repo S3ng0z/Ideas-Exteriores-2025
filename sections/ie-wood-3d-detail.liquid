@@ -1,0 +1,50 @@
+<section class="ie-wood3d ie-wood3d--detail" aria-labelledby="ie-wood3d-detail-title-{{ section.id }}">
+  <div class="ie-wood3d__inner">
+    <div class="ie-wood3d__section-head">
+      <div>
+        {% if section.settings.eyebrow != blank %}<p class="ie-wood3d__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-wood3d-detail-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}<div class="ie-wood3d__section-intro rte">{{ section.settings.intro }}</div>{% endif %}
+    </div>
+
+    <div class="ie-wood3d__detail-grid">
+      {% for block in section.blocks %}
+        <article class="ie-wood3d__detail-card" {{ block.shopify_attributes }}>
+          <span class="ie-wood3d__detail-index">{{ block.settings.number }}</span>
+          <h3>{{ block.settings.heading }}</h3>
+          {% if block.settings.text != blank %}<div class="rte">{{ block.settings.text }}</div>{% endif %}
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.note != blank %}
+      <div class="ie-wood3d__note rte">{{ section.settings.note }}</div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Diseño 3D · Alcance",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Alcance del servicio"},
+    {"type":"text","id":"heading","label":"Título","default":"Diseño para decidir, no solo para visualizar"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>El servicio se adapta al punto de partida del proyecto. Priorizamos las decisiones que condicionan viabilidad, coste, fabricación y montaje, evitando abrir opciones que no aportan valor a la siguiente fase.</p>"},
+    {"type":"richtext","id":"note","label":"Nota","default":"<p><strong>Importante:</strong> el diseño 3D y la asesoría técnica no sustituyen por sí solos un proyecto técnico visado, cálculo estructural, licencia o documentación administrativa cuando sean exigibles. Si el alcance lo requiere, te indicamos qué documentación adicional debes prever.</p>"}
+  ],
+  "blocks":[
+    {
+      "type":"scope",
+      "name":"Elemento de alcance",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Encaje y distribución"},
+        {"type":"richtext","id":"text","label":"Texto","default":"<p>Revisamos uso previsto, dimensiones, accesos, orientación, huecos, circulaciones y relación con el espacio disponible.</p>"}
+      ]
+    }
+  ],
+  "max_blocks":6,
+  "presets":[{"name":"Diseño 3D · Alcance"}]
+}
+{% endschema %}
