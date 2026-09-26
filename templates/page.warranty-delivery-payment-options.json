@@ -28,16 +28,20 @@
           }
         }
       },
-      "block_order": ["summary_1", "summary_2", "summary_3"],
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
       "settings": {
         "eyebrow": "Servicio y garantías",
-        "heading": "Garantía, entrega y pagos con condiciones claras desde el presupuesto",
-        "lead": "<p>Centralizamos las condiciones que conviene conocer antes de contratar: cobertura y mantenimiento, alcance logístico, protocolo de recepción y calendario de pagos. Las condiciones concretas dependen del producto, la configuración y los servicios incluidos, y deben quedar reflejadas en la documentación comercial o contractual de cada proyecto.</p>",
+        "heading": "Garantía, entrega y formas de pago para proyectos en madera",
+        "lead": "<p>Define antes de contratar cómo se cubre la garantía, qué incluye la entrega, cómo se gestionan las incidencias y qué hitos de pago aplican a tu pedido. Las condiciones concretas dependen del producto, la configuración y los servicios contratados, y deben quedar reflejadas en la documentación comercial o contractual de cada proyecto.</p>",
         "primary_label": "Consultar condiciones de mi proyecto",
         "primary_link": "#consulta-condiciones",
         "secondary_label": "Ver logística de entrega",
         "secondary_link": "/pages/secure-shipping-logistics-spain",
-        "summary_title": "Antes de confirmar"
+        "summary_title": "Qué debe quedar definido"
       }
     },
     "detail": {
@@ -84,7 +88,12 @@
           }
         }
       },
-      "block_order": ["scope_1", "scope_2", "scope_3", "scope_4"],
+      "block_order": [
+        "scope_1",
+        "scope_2",
+        "scope_3",
+        "scope_4"
+      ],
       "settings": {
         "eyebrow": "Lo que debe quedar por escrito",
         "heading": "Cuatro bloques que condicionan la compra y la entrega",
@@ -136,7 +145,13 @@
           }
         }
       },
-      "block_order": ["step_1", "step_2", "step_3", "step_4", "step_5"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5"
+      ],
       "settings": {
         "eyebrow": "De la confirmación a la posventa",
         "heading": "Un proceso verificable en cada hito",
@@ -189,7 +204,14 @@
           }
         }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5", "faq_6"],
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ],
       "settings": {
         "eyebrow": "Preguntas frecuentes",
         "heading": "Qué conviene revisar antes de aceptar el pedido",
@@ -209,5 +231,11 @@
       }
     }
   },
-  "order": ["hero", "detail", "process", "faq", "cta"]
+  "order": [
+    "hero",
+    "detail",
+    "process",
+    "faq",
+    "cta"
+  ]
 }
