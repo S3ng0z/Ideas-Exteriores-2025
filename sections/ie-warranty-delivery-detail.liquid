@@ -1,0 +1,55 @@
+<section class="ie-wdp ie-wdp--detail" aria-labelledby="ie-wdp-detail-title-{{ section.id }}">
+  <div class="ie-wdp__inner">
+    <div class="ie-wdp__section-head">
+      <div>
+        {% if section.settings.eyebrow != blank %}<p class="ie-wdp__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
+        <h2 id="ie-wdp-detail-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}<div class="ie-wdp__section-intro rte">{{ section.settings.intro }}</div>{% endif %}
+    </div>
+
+    <div class="ie-wdp__detail-grid">
+      {% for block in section.blocks %}
+        <article class="ie-wdp__detail-card" {{ block.shopify_attributes }}>
+          <span class="ie-wdp__detail-index">{{ block.settings.number }}</span>
+          <h3>{{ block.settings.heading }}</h3>
+          {% if block.settings.text != blank %}<div class="rte">{{ block.settings.text }}</div>{% endif %}
+          {% if block.settings.link_label != blank and block.settings.link != blank %}
+            <a class="ie-wdp__text-link" href="{{ block.settings.link }}">{{ block.settings.link_label }} <span aria-hidden="true">→</span></a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if section.settings.note != blank %}
+      <div class="ie-wdp__note rte">{{ section.settings.note }}</div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name":"Garantía · Alcance",
+  "settings":[
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Lo que debe quedar por escrito"},
+    {"type":"text","id":"heading","label":"Título","default":"Cuatro bloques que condicionan la compra y la entrega"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>La información útil no es una promesa genérica. Cada pedido debe identificar qué producto o servicio se contrata, qué cobertura aplica, cómo se entrega, cómo se revisa la recepción y qué hitos activan cada pago.</p>"},
+    {"type":"richtext","id":"note","label":"Nota","default":"<p><strong>Referencia contractual:</strong> ante cualquier diferencia entre esta página y un presupuesto, pedido, ficha técnica o documento contractual aceptado, prevalecen las condiciones específicas de ese documento y los derechos legales que resulten aplicables.</p>"}
+  ],
+  "blocks":[
+    {
+      "type":"scope",
+      "name":"Bloque de condiciones",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Título","default":"Garantía y mantenimiento"},
+        {"type":"richtext","id":"text","label":"Texto","default":"<p>La cobertura debe identificar el producto o servicio, su alcance, condiciones de instalación y uso, requisitos de mantenimiento y exclusiones aplicables.</p>"},
+        {"type":"text","id":"link_label","label":"Enlace · texto"},
+        {"type":"url","id":"link","label":"Enlace"}
+      ]
+    }
+  ],
+  "max_blocks":6,
+  "presets":[{"name":"Garantía · Alcance"}]
+}
+{% endschema %}
