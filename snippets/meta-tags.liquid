@@ -30,6 +30,11 @@
     assign seo_description = 'Compara cenadores y gazebos de madera para jardín por tamaño y precio de partida. Revisa estructura, cubierta, base, anclaje, transporte y montaje.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'timber-products'
+    assign seo_title = 'Productos de madera: casas, casetas y estructuras'
+    assign seo_description = 'Explora casas, casetas, estudios, pérgolas, porches, cenadores y tarimas. Compara familias de producto, sistemas, alcance, montaje y precio de partida.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'wood-maintenance-repair'
     assign seo_title = 'Mantenimiento y reparación de madera exterior'
     assign seo_description = 'Mantenimiento y reparación de madera exterior con diagnóstico previo, saneado, reparación localizada, renovación de protección y plan de mantenimiento.'
