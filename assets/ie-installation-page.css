@@ -1,0 +1,443 @@
+.ie-installation{
+  --ie-in-ink:#1f231e;
+  --ie-in-forest:#566236;
+  --ie-in-bone:#f9f8f6;
+  --ie-in-soft:#efeee8;
+  --ie-in-line:rgba(31,35,30,.15);
+  --ie-in-muted:rgba(31,35,30,.72);
+  color:var(--ie-in-ink);
+}
+
+.ie-installation__inner{
+  width:min(calc(100% - 64px),1440px);
+  margin-inline:auto;
+}
+
+.ie-installation__section-head{
+  display:grid;
+  grid-template-columns:minmax(340px,.9fr) minmax(0,1.1fr);
+  gap:clamp(36px,6vw,88px);
+  align-items:start;
+  padding-bottom:clamp(34px,4vw,54px);
+  border-bottom:1px solid var(--ie-in-line);
+}
+
+.ie-installation__eyebrow{
+  margin:0 0 10px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.74rem;
+  font-weight:700;
+  letter-spacing:.09em;
+  line-height:1.35;
+  text-transform:uppercase;
+  color:var(--ie-in-forest);
+}
+
+.ie-installation__section-head h2,
+.ie-installation__quote-copy h2{
+  margin:0;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:clamp(2.2rem,3.45vw,3.55rem);
+  font-weight:500;
+  letter-spacing:-.025em;
+  line-height:1.01;
+  text-transform:none;
+  color:var(--ie-in-ink);
+}
+
+.ie-installation__intro{
+  max-width:680px;
+  padding-top:5px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:1.02rem;
+  line-height:1.7;
+  color:var(--ie-in-muted);
+}
+
+.ie-installation__intro p{margin:0}
+
+.ie-installation--details{
+  padding-block:clamp(72px,8vw,116px);
+  background:#fbfaf7;
+}
+
+.ie-installation__features{display:grid}
+
+.ie-installation__feature{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:clamp(44px,7vw,104px);
+  align-items:center;
+  padding-block:clamp(58px,7vw,92px);
+  border-bottom:1px solid var(--ie-in-line);
+}
+
+.ie-installation__feature:last-child{border-bottom:0;padding-bottom:0}
+.ie-installation__feature--media-right .ie-installation__feature-media{order:2}
+.ie-installation__feature--media-right .ie-installation__feature-copy{order:1}
+
+.ie-installation__feature-media{
+  min-width:0;
+  overflow:hidden;
+  background:#ebe8df;
+  box-shadow:0 18px 50px rgba(31,35,30,.07);
+}
+
+.ie-installation__feature-media img{
+  display:block;
+  width:100%;
+  aspect-ratio:16/11;
+  height:auto;
+  object-fit:cover;
+}
+
+.ie-installation__feature-copy{max-width:620px}
+
+.ie-installation__feature-index{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 15px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.11em;
+  line-height:1.35;
+  text-transform:uppercase;
+  color:var(--ie-in-forest);
+}
+
+.ie-installation__feature-index::before{
+  content:"";
+  width:34px;
+  height:1px;
+  flex:0 0 auto;
+  background:var(--ie-in-forest);
+}
+
+.ie-installation__feature-copy h3{
+  margin:0 0 20px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:clamp(2rem,2.65vw,2.75rem);
+  font-weight:500;
+  line-height:1.04;
+  letter-spacing:-.02em;
+  color:var(--ie-in-ink);
+}
+
+.ie-installation__feature-text{
+  max-width:580px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:1rem;
+  line-height:1.72;
+  color:var(--ie-in-muted);
+}
+
+.ie-installation__feature-text p{margin:0}
+
+.ie-installation__points{
+  max-width:580px;
+  margin:30px 0 0;
+  padding:0;
+  list-style:none;
+  border-top:1px solid var(--ie-in-line);
+}
+
+.ie-installation__points li{
+  display:grid;
+  grid-template-columns:10px 1fr;
+  gap:10px;
+  align-items:start;
+  padding:13px 0;
+  border-bottom:1px solid var(--ie-in-line);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.88rem;
+  line-height:1.48;
+  color:var(--ie-in-muted);
+}
+
+.ie-installation__points li::before{
+  content:"";
+  width:4px;
+  height:4px;
+  margin-top:.62em;
+  border-radius:50%;
+  background:var(--ie-in-forest);
+}
+
+.ie-installation--scope{
+  padding-block:clamp(72px,8vw,112px);
+  background:var(--ie-in-soft);
+}
+
+.ie-installation__scope-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  margin-top:clamp(38px,5vw,62px);
+}
+
+.ie-installation__scope-item{
+  min-height:230px;
+  padding:30px 28px;
+  border:1px solid rgba(31,35,30,.12);
+  background:#fff;
+}
+
+.ie-installation__scope-number{
+  display:block;
+  margin-bottom:34px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:2.15rem;
+  font-weight:400;
+  line-height:1;
+  letter-spacing:-.035em;
+  color:rgba(86,98,54,.58);
+}
+
+.ie-installation__scope-item h3{
+  margin:0 0 12px;
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:1.34rem;
+  font-weight:500;
+  line-height:1.12;
+  letter-spacing:-.012em;
+  color:var(--ie-in-ink);
+}
+
+.ie-installation__scope-item p{
+  margin:0;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.9rem;
+  line-height:1.62;
+  color:var(--ie-in-muted);
+}
+
+.ie-installation__scope-note{
+  max-width:960px;
+  margin-top:32px;
+  padding:18px 20px;
+  border-left:2px solid var(--ie-in-forest);
+  background:#e5e2d8;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.88rem;
+  line-height:1.62;
+  color:var(--ie-in-muted);
+}
+
+.ie-installation__scope-note p{margin:0}
+
+.ie-installation--quote{
+  padding-block:clamp(78px,9vw,128px);
+  background:#f4f1e9;
+}
+
+.ie-installation__quote-layout{
+  display:grid;
+  grid-template-columns:minmax(0,.78fr) minmax(520px,1.22fr);
+  gap:clamp(54px,8vw,112px);
+  align-items:start;
+}
+
+.ie-installation__quote-copy{
+  position:sticky;
+  top:112px;
+}
+
+.ie-installation__quote-copy h2{
+  max-width:620px;
+  margin-bottom:22px;
+  font-size:clamp(2.55rem,4vw,4.35rem);
+  line-height:.99;
+}
+
+.ie-installation__quote-copy > .rte{
+  max-width:560px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:1rem;
+  line-height:1.7;
+  color:var(--ie-in-muted);
+}
+
+.ie-installation__quote-checklist{
+  margin:34px 0 0;
+  padding:0;
+  list-style:none;
+  border-top:1px solid var(--ie-in-line);
+}
+
+.ie-installation__quote-checklist li{
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:12px;
+  padding:15px 0;
+  border-bottom:1px solid var(--ie-in-line);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.9rem;
+  line-height:1.45;
+}
+
+.ie-installation__quote-checklist span{
+  color:var(--ie-in-forest);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.06em;
+}
+
+.ie-installation__quote-contact{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 20px;
+  margin-top:26px;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.84rem;
+  color:var(--ie-in-muted);
+}
+
+.ie-installation__quote-contact a{
+  color:var(--ie-in-ink);
+  text-underline-offset:3px;
+}
+
+.ie-installation__form-panel{
+  min-width:0;
+  padding:clamp(28px,4vw,48px);
+  border:1px solid rgba(31,35,30,.11);
+  background:#fff;
+  box-shadow:0 24px 70px rgba(31,35,30,.07);
+}
+
+.ie-installation__form-panel .shopify-block,
+.ie-installation__form-panel .globo-formbuilder{
+  width:100%;
+  max-width:none;
+  margin:0;
+}
+
+.ie-installation__form-panel .ie-contact__native-form{
+  display:grid;
+  gap:22px;
+}
+
+.ie-installation__form-panel .ie-contact__form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.ie-installation__form-panel .ie-contact__field{display:grid;gap:7px}
+.ie-installation__form-panel .ie-contact__field--full{grid-column:1/-1}
+
+.ie-installation__form-panel .ie-contact__field label,
+.ie-installation__form-panel .ie-contact__privacy{
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.82rem;
+  line-height:1.4;
+  color:var(--ie-in-ink);
+}
+
+.ie-installation__form-panel input,
+.ie-installation__form-panel select,
+.ie-installation__form-panel textarea{
+  width:100%;
+  border:1px solid var(--ie-in-line);
+  border-radius:0;
+  padding:12px 13px;
+  background:#fff;
+  color:var(--ie-in-ink);
+  font:inherit;
+}
+
+.ie-installation__form-panel textarea{min-height:150px;resize:vertical}
+
+.ie-installation__form-panel input:focus,
+.ie-installation__form-panel select:focus,
+.ie-installation__form-panel textarea:focus{
+  outline:2px solid rgba(86,98,54,.24);
+  outline-offset:1px;
+  border-color:var(--ie-in-forest);
+}
+
+.ie-installation__form-panel .ie-contact__privacy{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+
+.ie-installation__form-panel .ie-contact__privacy input{
+  width:auto;
+  margin-top:3px;
+}
+
+.ie-installation__form-panel .ie-contact__button{
+  display:inline-flex;
+  width:auto;
+  min-height:46px;
+  align-items:center;
+  justify-content:center;
+  padding:12px 22px;
+  border:1px solid var(--ie-in-forest);
+  border-radius:0;
+  background:var(--ie-in-forest);
+  color:#fff;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.88rem;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.ie-installation__form-panel .ie-contact__form-status{
+  padding:12px 14px;
+  border:1px solid var(--ie-in-line);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  font-size:.88rem;
+}
+
+@media screen and (max-width:989px){
+  .ie-installation__section-head,
+  .ie-installation__feature,
+  .ie-installation__quote-layout{
+    grid-template-columns:1fr;
+  }
+
+  .ie-installation__feature--media-right .ie-installation__feature-media,
+  .ie-installation__feature--media-right .ie-installation__feature-copy{
+    order:initial;
+  }
+
+  .ie-installation__scope-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .ie-installation__quote-copy{position:static}
+}
+
+@media screen and (max-width:749px){
+  .ie-installation__inner{
+    width:min(calc(100% - 32px),1440px);
+  }
+
+  .ie-installation--details{padding-block:56px 70px}
+  .ie-installation__feature{padding-block:44px}
+  .ie-installation__feature-copy h3{font-size:clamp(1.8rem,8vw,2.35rem)}
+
+  .ie-installation__scope-grid{
+    grid-template-columns:1fr;
+  }
+
+  .ie-installation__scope-item{min-height:0}
+
+  .ie-installation__quote-copy h2{
+    font-size:clamp(2.2rem,10vw,3.25rem);
+  }
+
+  .ie-installation__form-panel{padding:20px}
+
+  .ie-installation__form-panel .ie-contact__form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .ie-installation__form-panel .ie-contact__field--full{
+    grid-column:auto;
+  }
+}
