@@ -55,6 +55,11 @@
     assign seo_description = 'Viabilidad urbanística, proyecto técnico y apoyo en licencias para construcciones de madera, con alcance y documentación adaptados al municipio y al proyecto.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'warranty-delivery-payment-options'
+    assign seo_title = 'Garantía, entrega y formas de pago | Ideas Exteriores'
+    assign seo_description = 'Consulta cómo definimos garantía, entrega, recepción, incidencias y pagos en proyectos de madera, con condiciones específicas reflejadas por escrito.'
+  endif
+
   assign og_title = seo_title
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
