@@ -1,0 +1,341 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Estructura y capas del muro"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Aislamiento, aire y humedad"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Espesores y confort térmico"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Comprobaciones y proyecto"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "settings": {
+        "eyebrow": "Entramado ligero · Envolvente y eficiencia",
+        "heading": "Capas, materiales y confort térmico en entramado ligero de madera",
+        "lead": "<p>Un muro eficiente no depende de una única capa: estructura, tableros, aislamiento, control del aire y del vapor, protección exterior y acabados deben trabajar juntos. Descubre cómo se compone la envolvente y qué decisiones influyen en el bienestar interior durante todo el año.</p>",
+        "primary_label": "Ver casas de entramado ligero",
+        "primary_link": "/collections/light-frame-houses",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "En esta guía"
+      }
+    },
+    "principles": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "structure": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_003.png",
+            "image_alt": "Bastidor de madera con montantes y soleras",
+            "index": "01 · Estructura",
+            "heading": "Bastidor portante y modulación",
+            "text": "<p>Montantes, soleras, cargaderos y vigas transmiten cargas a cimentación. Se dimensionan y arriostran según proyecto; la modulación ayuda a integrar tableros, aislamiento e instalaciones.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "board": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_002.png",
+            "image_alt": "Tablero estructural de rigidización sobre entramado ligero",
+            "index": "02 · Rigidización",
+            "heading": "Tableros OSB o contrachapado",
+            "text": "<p>Los tableros estructurales colaboran con el bastidor para estabilizar muros, forjados y cubiertas. Su fijación y continuidad se justifican por cálculo, no solo por espesor.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "isolation": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_007.png",
+            "image_alt": "Aislamiento integrado entre montantes de madera",
+            "index": "03 · Aislamiento",
+            "heading": "Aislamiento entre montantes y continuo",
+            "text": "<p>Lana mineral, fibra de madera u otros productos documentados pueden disponerse entre montantes y, cuando procede, también por el exterior. Importan continuidad, compatibilidad y prestaciones declaradas.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "structure",
+        "board",
+        "isolation"
+      ],
+      "settings": {
+        "eyebrow": "01 · De dentro hacia fuera",
+        "heading": "Las capas del cerramiento tienen funciones distintas",
+        "intro": "<p>El entramado ligero integra estructura y aislamiento en un conjunto industrializable. La continuidad entre capas y sus encuentros es tan importante como el material elegido.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "step1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Definir uso y clima",
+            "text": "Vivienda, oficina o anexo requieren soluciones adaptadas a uso, zona climática, orientación y exigencias aplicables."
+          }
+        },
+        "step2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Dimensionar el paquete",
+            "text": "Estructura, aislamiento, tableros y revestimientos se eligen como composición completa, sin convertir el espesor en una promesa universal de eficiencia."
+          }
+        },
+        "step3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Resolver aire y humedad",
+            "text": "Se define la continuidad de la hermeticidad, control de vapor, estanquidad frente al agua y posibilidad de secado del cerramiento."
+          }
+        },
+        "step4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Comprobar los encuentros",
+            "text": "Se revisan zócalos, huecos, forjados, cubiertas, instalaciones y puentes térmicos antes de cerrar los acabados."
+          }
+        }
+      },
+      "block_order": [
+        "step1",
+        "step2",
+        "step3",
+        "step4"
+      ],
+      "settings": {
+        "eyebrow": "02 · Cómo se resuelve",
+        "heading": "Cuatro decisiones que mejoran el rendimiento real",
+        "intro": "<p>El espesor no puede separarse de la humedad, la hermeticidad ni de los detalles constructivos. Estas cuatro decisiones deben coordinarse desde el diseño y comprobarse en ejecución.</p>"
+      }
+    },
+    "criteria": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "a": {
+          "type": "principle",
+          "settings": {
+            "heading": "Espesor según proyecto",
+            "text": "Las soluciones de muro pueden variar ampliamente en espesor y distribución de capas. No existe un espesor estándar suficiente para todos los usos, climas y objetivos."
+          }
+        },
+        "b": {
+          "type": "principle",
+          "settings": {
+            "heading": "Transmitancia U y puentes térmicos",
+            "text": "El valor U del cerramiento completo no equivale a la resistencia R de un aislante aislado. Hay que incluir heterogeneidades y analizar puentes térmicos y huecos."
+          }
+        },
+        "c": {
+          "type": "principle",
+          "settings": {
+            "heading": "CTE y condensaciones",
+            "text": "La composición se valida para el emplazamiento y uso previstos mediante las exigencias aplicables del CTE y comprobaciones higrotérmicas cuando correspondan."
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "settings": {
+        "eyebrow": "03 · Espesores y prestaciones",
+        "heading": "La eficiencia se justifica sobre el conjunto del edificio"
+      }
+    },
+    "faq": {
+      "type": "ie-light-timber-faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué capas suele tener un muro de entramado ligero?",
+            "answer": "<p>Habitualmente incorpora estructura de madera, rigidización, aislamiento térmico y acústico, control del aire y del vapor, protección frente al agua y revestimientos interior y exterior. El orden y las propiedades de las capas dependen de la composición proyectada.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué espesor debe tener un muro?",
+            "answer": "<p>No hay un espesor universal. Se define según cargas, uso previsto, zona climática, aislamiento, instalaciones y acabados. Los rangos genéricos solo sirven para una orientación preliminar y nunca sustituyen el proyecto.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo mejora el confort térmico?",
+            "answer": "<p>Mediante aislamiento continuo, reducción de puentes térmicos y juntas bien selladas. La temperatura y la calidad ambiental interior también dependen de ventilación, carpinterías, protección solar y climatización.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿La fibra de madera es siempre mejor en verano?",
+            "answer": "<p>No necesariamente. Su comportamiento depende de la solución completa, capacidad térmica, orientación, protección solar y ventilación. No debe prometerse confort estival por el nombre de un material aislante.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Se puede calcular el ahorro energético?",
+            "answer": "<p>Sí, sobre un edificio y unas hipótesis concretas, mediante evaluación energética. No existe un porcentaje fijo de ahorro que pueda atribuirse a todas las construcciones de entramado ligero.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué implica el CTE?",
+            "answer": "<p>El proyecto debe justificar las exigencias aplicables de seguridad estructural, energía, salubridad, acústica y seguridad en caso de incendio. La conformidad no depende de un único espesor ni de una sola capa.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Preguntas frecuentes",
+        "heading": "Espesores, aislamiento y ahorro energético",
+        "intro": "<p>Respuestas prácticas para evaluar el sistema sin confundir valores orientativos con prestaciones garantizadas.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Asesoramiento técnico",
+        "heading": "Define la composición adecuada para tu proyecto",
+        "text": "<p>Indícanos el uso, ubicación y superficie aproximada. Te orientaremos sobre espesores, materiales, soluciones de envolvente y el alcance de proyecto necesario, sin promesas genéricas de ahorro.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    },
+    "comfort": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "04 · Bienestar interior",
+        "heading": "Confort térmico en invierno y verano",
+        "intro": "<p>Una envolvente correctamente ejecutada ayuda a reducir pérdidas de calor y ganancias no deseadas, pero el confort también depende de huecos, protección solar, ventilación, instalaciones y hábitos de uso.</p>"
+      },
+      "blocks": {
+        "a": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-thermal-comfort-energy-savings_003.png",
+            "image_alt": "Detalle de continuidad de aislamiento y reducción de puentes térmicos",
+            "index": "01 · Continuidad",
+            "heading": "Menos puentes térmicos y fugas de aire",
+            "text": "<p>Resolver juntas, contornos de ventanas, esquinas y encuentros evita puntos fríos e infiltraciones no controladas. La hermeticidad no sustituye la ventilación prevista.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "b": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-thermal-comfort-energy-savings_005.png",
+            "image_alt": "Espacio interior confortable en vivienda de entramado ligero",
+            "index": "02 · Uso cotidiano",
+            "heading": "Estabilidad térmica y confort de verano",
+            "text": "<p>El aislamiento aporta resistencia térmica; la orientación, el sombreado, la ventilación y las cargas internas condicionan especialmente el comportamiento estival.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "c": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_001.png",
+            "image_alt": "Láminas de protección de agua y regulación de vapor",
+            "index": "03 · Durabilidad",
+            "heading": "Agua y vapor bajo control",
+            "text": "<p>La estanquidad exterior, la correcta posición de las capas de control de vapor y la capacidad de secado ayudan a limitar condensaciones y preservar la madera.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "principles",
+    "process",
+    "criteria",
+    "comfort",
+    "faq",
+    "cta"
+  ]
+}
