@@ -1,0 +1,102 @@
+{% comment %}
+  Entramado ligero · FAQ
+  Reuses the services visual system to keep technical pages aligned with /pages/services.
+{% endcomment %}
+
+<section class="ie-services ie-services--faq" aria-labelledby="ie-services-faq-title-{{ section.id }}">
+  <div class="ie-services__inner">
+    <div class="ie-services__faq">
+      <div class="ie-services__faq-head">
+        <div>
+          {% if section.settings.eyebrow != blank %}
+            <p class="ie-services__eyebrow">{{ section.settings.eyebrow }}</p>
+          {% endif %}
+          <h2 id="ie-services-faq-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        </div>
+
+        {% if section.settings.intro != blank %}
+          <div class="ie-services__section-intro rte">{{ section.settings.intro }}</div>
+        {% endif %}
+      </div>
+
+      {% if section.blocks.size > 0 %}
+        <div class="ie-services__faq-list" itemscope itemtype="https://schema.org/FAQPage">
+          {% for block in section.blocks %}
+            <details
+              class="ie-services__faq-item"
+              itemscope
+              itemprop="mainEntity"
+              itemtype="https://schema.org/Question"
+              {{ block.shopify_attributes }}
+            >
+              <summary>
+                <span itemprop="name">{{ block.settings.question }}</span>
+                <span class="ie-services__faq-icon" aria-hidden="true"></span>
+              </summary>
+              <div
+                class="ie-services__faq-answer rte"
+                itemscope
+                itemprop="acceptedAnswer"
+                itemtype="https://schema.org/Answer"
+              >
+                <div itemprop="text">{{ block.settings.answer }}</div>
+              </div>
+            </details>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sistema · FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Antetítulo",
+      "default": "Preguntas frecuentes"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "Dudas habituales antes de elegir el sistema"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Introducción",
+      "default": "<p>La solución final depende del uso, la geometría, la parcela, el clima y las prestaciones exigidas. Estas respuestas resumen criterios generales.</p>"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Pregunta",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Pregunta",
+          "default": "¿Qué es el entramado ligero de madera?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Respuesta",
+          "default": "<p>Es un sistema estructural en seco formado por montantes, soleras y vigas de madera que trabajan junto con tableros, anclajes y el resto de capas de la envolvente.</p>"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Sistema · FAQ"
+    }
+  ]
+}
+{% endschema %}
