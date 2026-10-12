@@ -40,6 +40,11 @@
     assign seo_description = 'Guía del sistema europeo de madera: muro exterior perfilado, capa técnica interior, aislamiento, uniones, humedad y criterios de proyecto en España.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'european-timber-system-assembly-finishes'
+    assign seo_title = 'Sistema europeo: montaje, durabilidad y acabados'
+    assign seo_description = 'Montaje del sistema europeo de madera: base, juntas, movimientos, humedad, aislamiento, acabados, mantenimiento y criterios de sostenibilidad.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'european-timber-system-components-joints-materials'
     assign seo_title = 'Sistema europeo: componentes, uniones y materiales'
     assign seo_description = 'Perfiles de madera, uniones, anclajes, aislamiento, capas de control y acabados: cómo definir la sección real del sistema europeo para cada proyecto.'
