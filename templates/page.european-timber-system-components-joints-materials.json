@@ -1,0 +1,295 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Perfil exterior y función del muro"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Uniones, esquinas y anclajes"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Aislamiento, aire y humedad"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Materiales y documentación"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "settings": {
+        "eyebrow": "Sistema europeo · 02",
+        "heading": "Componentes, uniones y materiales del sistema europeo de madera",
+        "lead": "<p>La sección del sistema no se define por un único «tronco» ni por un espesor genérico. Perfil exterior, uniones, anclajes, capa técnica, aislamiento, sellados, fijaciones y acabado interior deben funcionar como un conjunto documentado. Aquí explicamos qué aporta cada componente y qué debe verificarse antes de cerrar una configuración.</p>",
+        "primary_label": "Ver sistema europeo",
+        "primary_link": "/pages/european-timber-construction-system",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Qué define realmente el muro"
+      }
+    },
+    "composition": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Composición",
+        "heading": "Tres grupos de componentes que deben coordinarse",
+        "intro": "<p>La solución comercial de referencia combina madera exterior perfilada con una zona interior capaz de alojar aislamiento, instalaciones y acabado. La función estructural y las prestaciones de cada pieza no deben suponerse por su apariencia: se confirman en la documentación y el proyecto del sistema real.</p>"
+      },
+      "blocks": {
+        "c1": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Madera exterior",
+            "heading": "Perfil, geometría de junta y condición de servicio",
+            "text": "<p>Las piezas exteriores pueden ser de madera maciza o laminada según el sistema. Especie, sección, humedad de suministro, mecanizado longitudinal, encuentros de esquina, protección y función estructural deben corresponder a la configuración documentada. Un machihembrado ayuda a ordenar el encuentro, pero no sustituye el cálculo, el sellado ni el control de agua.</p>",
+            "link_1_label": "Qué es y cómo funciona",
+            "link_1": "/pages/european-timber-system-how-it-works",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "c2": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Capa técnica interior",
+            "heading": "Subestructura, aislamiento, instalaciones y acabado",
+            "text": "<p>La zona interior puede incorporar rastreles o bastidor secundario, aislamiento, cámara de instalaciones, capas de control de aire y humedad y revestimiento final. Material, espesor y orden de las capas se definen como una sección única: cambiar una de ellas puede modificar comportamiento térmico, higrotérmico, acústico o frente al fuego.</p>",
+            "link_1_label": "Montaje y acabados",
+            "link_1": "/pages/european-timber-system-assembly-finishes",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "c3": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Uniones y fijaciones",
+            "heading": "Base, esquinas, huecos y cubierta concentran las decisiones críticas",
+            "text": "<p>Anclajes a la base, uniones entre piezas, esquinas, dinteles y jambas, encuentros con forjados y cubierta, sellados y fijaciones metálicas forman parte del sistema. Deben transmitir las acciones previstas, mantener continuidad de las capas y admitir los movimientos de la madera que correspondan sin bloquear carpinterías, instalaciones o acabados.</p>",
+            "link_1_label": "Aplicaciones y modelos compatibles",
+            "link_1": "/pages/european-timber-system-applications-models",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    },
+    "specification": {
+      "type": "ie-services-process",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Identificar el sistema real",
+            "text": "Confirmar fabricante o proveedor, referencia, sección de muro, planos, materiales, función de cada componente y documentación técnica aplicable."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Asignar una función a cada capa",
+            "text": "Distinguir estructura, aislamiento, hermeticidad, control de vapor y agua, cámara de instalaciones y acabado para evitar funciones implícitas o contradictorias."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Resolver uniones y movimientos",
+            "text": "Definir arranque, barrera capilar, anclajes, esquinas, huecos, juntas, penetraciones, cubierta y tolerancias compatibles con humedad y movimientos dimensionales."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Verificar la solución completa",
+            "text": "Comprobar estructura, energía, humedad, incendio y acústica cuando sean exigibles, usando la configuración realmente proyectada y la evidencia que corresponda."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "02 · Especificación",
+        "heading": "Cómo pasar de una descripción comercial a una sección verificable",
+        "intro": "<p>Un nombre de sistema no define por sí solo sus prestaciones. La comparación útil empieza cuando cada oferta identifica materiales, espesores, uniones, sellados, documentación y alcance con el mismo nivel de detalle.</p>"
+      }
+    },
+    "criteria": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "k1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Madera y productos estructurales",
+            "text": "Especie, producto, clase resistente y condición de servicio deben declararse cuando sean relevantes. Madera maciza, laminada y otros productos no son intercambiables por defecto."
+          }
+        },
+        "k2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Sellado y control de humedad",
+            "text": "La geometría de la junta no garantiza por sí sola hermeticidad ni estanqueidad. Base, sellos, capas de agua y vapor, drenaje y secado deben formar una estrategia continua."
+          }
+        },
+        "k3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Fijaciones y elementos metálicos",
+            "text": "Tornillos, pernos, conectores y anclajes se dimensionan para las acciones, geometría, madera y exposición previstas. También debe comprobarse su protección frente a corrosión y su compatibilidad con el sistema."
+          }
+        },
+        "k4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Prestaciones y CTE",
+            "text": "En España, las verificaciones estructurales y de envolvente corresponden a la solución concreta y al edificio. Una denominación comercial, un material aislado o una certificación de otro sistema no sustituyen la justificación del proyecto."
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2",
+        "k3",
+        "k4"
+      ],
+      "settings": {
+        "eyebrow": "03 · Criterios técnicos",
+        "heading": "Qué conviene exigir a materiales, uniones y documentación"
+      }
+    },
+    "faq": {
+      "type": "ie-light-timber-faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué madera utiliza el sistema europeo?",
+            "answer": "<p>No existe una especie universal asociada a esta denominación. Los sistemas de troncos o perfiles industrializados pueden emplear distintas coníferas y productos macizos o laminados. En Ideas Exteriores debe identificarse la madera y la documentación del suministro concreto antes de atribuirle prestaciones.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿El doble machihembrado garantiza que el muro sea estanco?",
+            "answer": "<p>No. Una geometría mecanizada puede mejorar ajuste y repetibilidad, pero la hermeticidad al aire y la protección frente al agua dependen del detalle completo: juntas, sellos, esquinas, huecos, encuentros y ejecución. Si se declara una prestación, debe corresponder a la solución documentada.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿La pieza exterior de madera es siempre portante?",
+            "answer": "<p>No debe darse por supuesto. Su función depende del sistema, la sección, las uniones, los elementos de arriostramiento y el esquema estructural del edificio. El proyecto y la documentación técnica deben indicar qué piezas reciben y transmiten cargas.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué aislamiento debe colocarse en la capa interior?",
+            "answer": "<p>No hay un aislante único. La elección depende de la composición, conductividad declarada, comportamiento frente a humedad y fuego, disponibilidad, espesor y objetivos del proyecto. La prestación térmica se calcula para el cerramiento completo, no a partir del nombre del material.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Hace falta siempre una barrera de vapor?",
+            "answer": "<p>No existe una respuesta universal. La estrategia de control de vapor depende del clima, uso interior, materiales, permeabilidad de las capas y posición del aislamiento. Debe definirse con criterio higrotérmico para evitar condensaciones y permitir el secado previsto.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Dónde se integran electricidad y fontanería?",
+            "answer": "<p>La capa técnica interior puede reservar recorridos para instalaciones y registros. Conviene coordinar trazados y penetraciones antes del cierre para no cortar elementos estructurales ni comprometer sellados, capas de control o capacidad de movimiento del sistema.</p>"
+          }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo se protege el arranque del muro frente a humedad?",
+            "answer": "<p>El encuentro con la base debe evitar aporte capilar y acumulación de agua mediante cota, drenaje, barrera o banda de separación, sellados y anclajes compatibles. La solución exacta depende de la cimentación, exposición y detalle constructivo del proyecto.</p>"
+          }
+        },
+        "q8": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué documentación debería acompañar a la configuración?",
+            "answer": "<p>Como mínimo: sección y materiales identificados, función estructural de los elementos, detalles de uniones y anclajes, instrucciones de montaje y mantenimiento y evidencia de las prestaciones que se publiquen. Para vivienda, esa información se integra en las justificaciones del proyecto técnico y del CTE aplicable.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "heading": "Preguntas sobre materiales, juntas y composición del muro",
+        "intro": "<p>Estas respuestas explican principios de especificación. La sección definitiva debe corresponder al sistema, proveedor, ubicación y uso realmente contratados.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Cierra la sección del muro antes de comparar presupuestos",
+        "text": "<p>Indícanos uso, ubicación, superficie y nivel de acabado. Podemos ayudarte a definir qué componentes, uniones y capas necesita la configuración, qué documentación debe acompañarla y qué aspectos quedan sujetos al proyecto.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "composition",
+    "specification",
+    "criteria",
+    "faq",
+    "cta"
+  ]
+}
