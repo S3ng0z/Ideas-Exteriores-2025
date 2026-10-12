@@ -44,6 +44,11 @@
     assign seo_description = 'Descubre qué son los paneles SIP, cómo funcionan y sus ventajas y limitaciones frente a la obra tradicional. Aplicaciones, aislamiento, costes y montaje.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'structural-insulated-panel-manufacturing-and-assembly'
+    assign seo_title = 'Paneles SIP: montaje, durabilidad y sostenibilidad'
+    assign seo_description = 'Fabricación y montaje de paneles SIP: fases de obra, vida útil, mantenimiento, garantías y sostenibilidad. Certificaciones, humedad y ciclo de vida.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'wood-maintenance-repair'
     assign seo_title = 'Mantenimiento y reparación de madera exterior'
     assign seo_description = 'Mantenimiento y reparación de madera exterior con diagnóstico previo, saneado, reparación localizada, renovación de protección y plan de mantenimiento.'
