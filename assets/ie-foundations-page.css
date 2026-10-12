@@ -413,22 +413,22 @@
   border: 1px solid var(--ie-border);
 }
 
-/* Compact editorial hierarchy for technical scope cards. */
+/* Compact, uppercase and readable card headings. */
 .ie-foundations .ie-foundations__scope-grid article h3 {
   margin: 0 0 16px;
   font-family: Manrope, var(--font-body--family), Arial, sans-serif;
-  font-size: clamp(1.05rem, 1.15vw, 1.22rem);
-  font-weight: 650;
-  line-height: 1.35;
-  letter-spacing: -.015em;
-  text-transform: none;
-  text-wrap: pretty;
+  font-size: clamp(.95rem, 1.05vw, 1.12rem);
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .015em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .ie-foundations .ie-foundations__scope-grid .rte,
 .ie-foundations .ie-foundations__scope-grid .rte li {
   text-align: left;
-  text-justify: auto;
   hyphens: none;
 }
 
@@ -490,20 +490,6 @@
 .ie-foundations a:focus-visible {
   outline: 2px solid var(--ie-forest);
   outline-offset: 4px;
-}
-
-@media screen and (min-width: 750px) {
-  .ie-foundations__lead,
-  .ie-foundations__intro-copy,
-  .ie-foundations__system .rte,
-  .ie-foundations__moisture .rte,
-  .ie-foundations__workflow-copy .rte,
-  .ie-foundations__scope-grid .rte,
-  .ie-foundations__cta .rte {
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: none;
-  }
 }
 
 @media screen and (max-width: 989px) {
@@ -633,4 +619,64 @@
   .ie-foundations__button {
     transition: none !important;
   }
+}
+/* Page-wide editorial hierarchy: controlled line lengths on every viewport. */
+.ie-foundations h1,
+.ie-foundations h2,
+.ie-foundations__system h3 {
+  text-transform: uppercase;
+  letter-spacing: -.012em;
+  line-height: 1.16;
+  overflow-wrap: break-word;
+}
+
+.ie-foundations h1 {
+  max-width: 900px;
+  font-size: clamp(2rem, 3.5vw, 3.6rem);
+}
+
+.ie-foundations h2 {
+  font-size: clamp(1.65rem, 2.25vw, 2.6rem);
+}
+
+.ie-foundations__system h3 {
+  font-size: clamp(1.45rem, 1.75vw, 2.05rem);
+}
+
+.ie-foundations__scope {
+  grid-template-columns: minmax(230px, .6fr) minmax(0, 1.4fr);
+  gap: clamp(24px, 3vw, 48px);
+}
+
+.ie-foundations__scope-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ie-foundations__scope-grid article {
+  min-width: 0;
+  padding: clamp(20px, 1.8vw, 28px);
+}
+
+.ie-foundations__lead,
+.ie-foundations__intro-copy,
+.ie-foundations__system .rte,
+.ie-foundations__moisture .rte,
+.ie-foundations__workflow-copy .rte,
+.ie-foundations__scope-grid .rte,
+.ie-foundations__cta .rte {
+  text-align: left;
+  text-justify: auto;
+  hyphens: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .ie-foundations__scope { grid-template-columns: 1fr; }
+}
+
+@media screen and (max-width: 749px) {
+  .ie-foundations h1 { font-size: clamp(1.9rem, 8vw, 2.7rem); }
+  .ie-foundations h2 { font-size: clamp(1.6rem, 6.5vw, 2.15rem); }
+  .ie-foundations__system h3 { font-size: clamp(1.35rem, 5.5vw, 1.8rem); }
+  .ie-foundations__scope-grid { grid-template-columns: 1fr; }
 }
