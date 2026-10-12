@@ -167,7 +167,7 @@
           "type": "principle",
           "settings": {
             "heading": "Estructura y CTE",
-            "text": "La madera estructural, las uniones y la estabilidad se justifican para el edificio concreto. El DB-SE-M distingue, entre otros parámetros, clases de servicio ligadas a las condiciones de humedad que afectan al cálculo."
+            "text": "En España, la madera estructural, las uniones, el arriostramiento y los anclajes se justifican para el edificio concreto conforme al CTE y al cálculo. El DB-SE-M utiliza clases de servicio ligadas a las condiciones de humedad; no deben confundirse con las clases de uso que orientan la durabilidad frente al riesgo biológico."
           }
         },
         "criterion_2": {
@@ -237,7 +237,7 @@
           "type": "question",
           "settings": {
             "question": "¿El sistema «cumple el CTE» por sí mismo?",
-            "answer": "<p>No. El cumplimiento corresponde al edificio y a su proyecto para un uso y emplazamiento concretos. El sistema y sus productos aportan datos y soluciones que deben justificarse dentro de las exigencias aplicables del CTE.</p>"
+            "answer": "<p>No. El cumplimiento corresponde al edificio y a su proyecto para un uso y emplazamiento concretos. El sistema y sus productos aportan datos y soluciones que deben justificarse dentro de las exigencias aplicables del CTE —estructura, energía, salubridad, acústica y fuego, según corresponda—.</p>"
           }
         }
       },
