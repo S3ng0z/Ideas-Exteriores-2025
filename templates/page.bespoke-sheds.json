@@ -1,0 +1,363 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Uso, superficie y distribución definidos"
+          }
+        },
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Envolvente y sistema según prestaciones"
+          }
+        },
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Base, montaje y acabados dentro del alcance"
+          }
+        }
+      },
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
+      "settings": {
+        "eyebrow": "Casetas · oficinas · estudios de jardín",
+        "heading": "Casetas de madera a medida con alcance claro",
+        "lead": "<p>Configuramos casetas de madera para jardín, trabajo, estudio, almacenaje o espacio auxiliar a partir del uso, las medidas y la parcela. Definimos distribución, huecos, envolvente, base, instalaciones, acabados y montaje antes de fabricar. El sistema —entramado ligero, panel SIP o solución híbrida— se selecciona después, según las prestaciones y la viabilidad del caso.</p>",
+        "primary_label": "Solicitar valoración",
+        "primary_link": "#ie-pergola-quote",
+        "secondary_label": "Ver otras soluciones de casetas",
+        "secondary_link": "/pages/timber-products",
+        "summary_title": "Define primero el uso"
+      }
+    },
+    "details": {
+      "type": "ie-pergola-details",
+      "blocks": {
+        "use": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sips-prep-3D.webp",
+            "image_alt": "Visualización 3D de una caseta de madera antes de fabricar",
+            "media_position": "left",
+            "index": "01 · Uso y distribución",
+            "heading": "Una oficina, un trastero y un estudio no se diseñan igual",
+            "text": "<p>El punto de partida es cómo vas a utilizar el espacio y durante cuánto tiempo. A partir de ahí ordenamos superficie, circulación, altura útil, almacenaje, orientación y huecos para que la propuesta responda al uso real antes de entrar en el sistema constructivo.</p>",
+            "point_1": "Uso principal y frecuencia de ocupación",
+            "point_2": "Superficie, distribución y altura útil",
+            "point_3": "Puertas, ventanas, mobiliario y recorridos"
+          }
+        },
+        "envelope": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_002.png",
+            "image_alt": "Estudio u oficina de jardín con cerramiento aislado",
+            "media_position": "right",
+            "index": "02 · Confort y envolvente",
+            "heading": "El nivel de confort se define según clima, uso y horas de ocupación",
+            "text": "<p>Para trabajo habitual o estancias prolongadas importan el aislamiento, el control solar, la ventilación, la acústica, la carpintería y las instalaciones. No equiparamos automáticamente una caseta de almacenaje con un espacio pensado para permanecer muchas horas.</p>",
+            "point_1": "Aislamiento y capas de la envolvente según objetivo",
+            "point_2": "Ventilación, control solar y gestión de humedad",
+            "point_3": "Carpinterías e instalaciones coordinadas desde el diseño"
+          }
+        },
+        "system": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_003.png",
+            "image_alt": "Caseta auxiliar construida con sistema industrializado de madera",
+            "media_position": "left",
+            "index": "03 · Sistema constructivo",
+            "heading": "SIP, entramado ligero o solución híbrida: el sistema llega después del objetivo",
+            "text": "<p>El panel SIP puede aportar un alto grado de prefabricación y continuidad de envolvente; el entramado ligero ofrece flexibilidad para resolver geometrías, huecos y capas específicas. En algunos casos tiene sentido combinarlos. La elección final depende de geometría, acciones, prestaciones, documentación del sistema y alcance de montaje.</p>",
+            "point_1": "Sistema seleccionado por prestaciones y geometría",
+            "point_2": "Composición y detalles definidos antes de fabricar",
+            "point_3": "Sin prometer valores térmicos o estructurales sin una solución concreta"
+          }
+        },
+        "base": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sips-complete.webp",
+            "image_alt": "Caseta de madera terminada sobre una base preparada",
+            "media_position": "right",
+            "index": "04 · Base, humedad y montaje",
+            "heading": "La durabilidad empieza en la base y en cómo se evacúa el agua",
+            "text": "<p>La base debe responder al terreno, las cargas y la geometría de la caseta. Además de nivel y apoyo, resolvemos separación de la madera respecto a humedad persistente, encuentros, ventilación y drenaje para evitar retenciones de agua y puntos críticos durante la vida útil.</p>",
+            "point_1": "Base o cimentación coherente con terreno y cargas",
+            "point_2": "Madera separada de humedad permanente",
+            "point_3": "Drenaje, encuentros y accesos de montaje previstos"
+          }
+        }
+      },
+      "block_order": [
+        "use",
+        "envelope",
+        "system",
+        "base"
+      ],
+      "settings": {
+        "eyebrow": "Casetas de madera configuradas",
+        "heading": "Del uso y la parcela a una solución fabricable",
+        "intro": "<p>Una buena propuesta no empieza preguntando si quieres SIP o entramado ligero. Empieza por el uso, el espacio disponible y las prestaciones que necesitas; después convierte esas decisiones en una solución constructiva, un alcance y un presupuesto comparables.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Uso claro",
+            "text": "Definimos primero para qué servirá la caseta y cuánto tiempo se ocupará, evitando sobredimensionar una solución sencilla o infradimensionar un espacio de trabajo habitual."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Prestaciones definidas",
+            "text": "Aislamiento, ventilación, huecos, humedad y sistema constructivo se plantean sobre una composición concreta, sin convertir claims genéricos en promesas de proyecto."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Alcance comparable",
+            "text": "Separamos estructura, envolvente, base, transporte, montaje, instalaciones y acabados para que sepas qué incluye la propuesta y qué queda fuera."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "eyebrow": "Antes de fabricar",
+        "heading": "Más claridad para decidir, presupuestar y montar"
+      }
+    },
+    "scope": {
+      "type": "ie-pergola-scope",
+      "blocks": {
+        "s1": {
+          "type": "item",
+          "settings": {
+            "number": "01",
+            "heading": "Uso y dimensiones",
+            "text": "Almacenaje, oficina, estudio, gimnasio o espacio auxiliar; superficie, altura, distribución y nivel de ocupación."
+          }
+        },
+        "s2": {
+          "type": "item",
+          "settings": {
+            "number": "02",
+            "heading": "Envolvente y confort",
+            "text": "Aislamiento, ventilación, control solar, acústica y nivel de acondicionamiento necesario para el uso previsto."
+          }
+        },
+        "s3": {
+          "type": "item",
+          "settings": {
+            "number": "03",
+            "heading": "Sistema y estructura",
+            "text": "Entramado ligero, SIP o solución híbrida, geometría, huecos, cargas y composición documentada del cerramiento."
+          }
+        },
+        "s4": {
+          "type": "item",
+          "settings": {
+            "number": "04",
+            "heading": "Carpinterías e instalaciones",
+            "text": "Puertas, ventanas, electricidad, iluminación, climatización prevista y pasos técnicos que deben coordinarse."
+          }
+        },
+        "s5": {
+          "type": "item",
+          "settings": {
+            "number": "05",
+            "heading": "Base y parcela",
+            "text": "Terreno, soporte existente, nivelación, drenaje, accesos, separaciones, trabajos previos y condicionantes de implantación."
+          }
+        },
+        "s6": {
+          "type": "item",
+          "settings": {
+            "number": "06",
+            "heading": "Acabados, logística y montaje",
+            "text": "Revestimientos, protección exterior, nivel de terminación, transporte, medios de descarga, montaje y remates."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "settings": {
+        "eyebrow": "Precio y alcance",
+        "heading": "Qué define el alcance y el precio de una caseta de madera",
+        "intro": "<p>Los metros cuadrados ayudan a orientarse, pero no explican por sí solos el coste. El uso, la envolvente, el sistema, los huecos, la base, las instalaciones, los acabados y la logística cambian de forma relevante el alcance real.</p>",
+        "note": "<p>Licencias, comunicaciones previas, condiciones de parcela y requisitos técnicos dependen del municipio, el uso y el proyecto. Conviene verificarlos antes de fabricar o instalar; no existe una regla única aplicable a todas las casetas.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "p1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Cuéntanos el uso y la parcela",
+            "text": "Ubicación, fotografías, medidas aproximadas, uso previsto, accesos y cualquier condicionante que ya conozcas."
+          }
+        },
+        "p2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Definimos la solución",
+            "text": "Ordenamos distribución, envolvente, huecos, base, sistema constructivo, instalaciones y nivel de acabado."
+          }
+        },
+        "p3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Cerramos alcance y presupuesto",
+            "text": "Concretamos incluidos, exclusiones, trabajos previos, transporte, montaje y documentación necesaria para el caso."
+          }
+        },
+        "p4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Fabricamos y coordinamos el montaje",
+            "text": "Preparamos fabricación y logística conforme a la solución acordada y a las condiciones reales de acceso e implantación."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "eyebrow": "De la necesidad al montaje",
+        "heading": "Cómo pasamos de la idea a una caseta definida",
+        "intro": "<p>El objetivo es tomar las decisiones importantes antes de fabricar, para que la propuesta llegue al montaje con menos ambigüedad y con un alcance comprensible.</p>"
+      }
+    },
+    "faq": {
+      "type": "ie-light-timber-faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Puede utilizarse como oficina de jardín durante todo el año?",
+            "answer": "<p>Puede plantearse para uso habitual, pero el resultado depende de la envolvente concreta, el clima, la orientación, las carpinterías, la ventilación, el control solar y las instalaciones. Por eso diferenciamos una oficina o estudio de una caseta destinada principalmente a almacenaje.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Es mejor panel SIP o entramado ligero?",
+            "answer": "<p>No existe una respuesta universal. SIP puede aportar un alto grado de prefabricación y continuidad de envolvente; el entramado ligero ofrece flexibilidad para geometrías, huecos y composiciones específicas. La elección se hace después de fijar uso, prestaciones, geometría y alcance.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué base necesita una caseta de madera?",
+            "answer": "<p>Depende del terreno, las cargas, el tamaño, la geometría y el sistema. Puede requerirse una plataforma continua, apoyos puntuales u otra solución justificada. No conviene tratar una solera convencional como cimentación estructural sin comprobar su función y capacidad.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Necesito licencia o autorización municipal?",
+            "answer": "<p>Puede ser necesaria. El procedimiento depende del uso, las dimensiones, la ubicación, la base o cimentación y la normativa municipal. Antes de fabricar o instalar conviene confirmar la situación urbanística y el trámite aplicable al caso concreto.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué debe quedar claro en el presupuesto?",
+            "answer": "<p>Como mínimo, dimensiones y configuración, estructura y envolvente, carpinterías, acabados, transporte, montaje y qué ocurre con la base, instalaciones y trabajos auxiliares. El objetivo es poder distinguir con claridad lo incluido de lo que debe resolver el cliente o un tercero.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Una caseta puede utilizarse como vivienda?",
+            "answer": "<p>No debe suponerse. Los requisitos urbanísticos, de uso, habitabilidad, proyecto, instalaciones y autorizaciones pueden ser diferentes. Que una construcción sea de madera o esté bien aislada no cambia por sí solo su clasificación ni habilita un uso residencial.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "settings": {
+        "eyebrow": "Preguntas frecuentes",
+        "heading": "Dudas habituales antes de pedir presupuesto",
+        "intro": "<p>Estas respuestas sirven como orientación general. La solución final depende del uso, la parcela, el municipio y la composición técnica que se defina para el proyecto.</p>"
+      }
+    },
+    "quote": {
+      "type": "ie-pergola-quote",
+      "blocks": {
+        "powerful_form_builder": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder"
+      ],
+      "settings": {
+        "eyebrow": "Tu proyecto",
+        "heading": "Cuéntanos qué espacio necesitas y dónde debe instalarse",
+        "intro": "<p>Para una primera valoración no necesitas tener la solución cerrada. Con el uso, unas medidas aproximadas, la ubicación y fotografías del espacio podemos orientar la configuración y detectar qué información técnica falta.</p>",
+        "item_1": "Uso principal y superficie o medidas aproximadas",
+        "item_2": "Ubicación, fotos de la parcela y accesos",
+        "item_3": "Nivel de aislamiento, huecos y acabado que buscas",
+        "item_4": "Base existente, instalación y montaje que quieres valorar",
+        "phone": "+34 916 99 60 93",
+        "email": "info@ideas-exteriores.com",
+        "submit_label": "Solicitar valoración",
+        "privacy_link": "/policies/privacy-policy"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "details",
+    "confidence",
+    "scope",
+    "process",
+    "faq",
+    "quote"
+  ]
+}
