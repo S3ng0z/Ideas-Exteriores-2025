@@ -1,0 +1,302 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Vivienda habitual"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Segunda residencia"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Anexos y espacios auxiliares"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Modelos sujetos a validación"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "settings": {
+        "eyebrow": "Sistema europeo · 03",
+        "heading": "Aplicaciones y modelos compatibles con el sistema europeo de madera",
+        "lead": "<p>El sistema europeo descrito aquí combina piezas exteriores de madera perfilada con una capa interior técnica de aislamiento, instalaciones y acabado. Puede estudiarse para viviendas y otras construcciones, siempre que cada uso, modelo y emplazamiento cuenten con una solución documentada. Esta guía distingue las aplicaciones viables de las compatibilidades todavía no acreditadas.</p>",
+        "primary_label": "Conocer el sistema europeo",
+        "primary_link": "/pages/european-timber-construction-system",
+        "secondary_label": "Consultar compatibilidad",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Decide según tu proyecto"
+      }
+    },
+    "principles": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Aplicaciones",
+        "heading": "El uso del edificio determina la solución, no solo el aspecto de madera",
+        "intro": "<p>El mismo acabado de tronco recto no garantiza iguales prestaciones ni convierte automáticamente una caseta en vivienda. La solución debe ajustarse al uso, las cargas, el clima, el mantenimiento y las exigencias administrativas.</p>"
+      },
+      "blocks": {
+        "home": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Vivienda habitual",
+            "heading": "Viviendas permanentes: envolvente y proyecto completos",
+            "text": "<p>Una casa para residencia habitual necesita resolver cimentación, estabilidad, aislamiento, estanqueidad, protección frente al fuego, acústica, ventilación, instalaciones y normativa urbanística. La madera exterior y el aislamiento interior forman parte del edificio, pero no acreditan por sí solos las prestaciones finales.</p>",
+            "link_1_label": "Qué es y cómo funciona",
+            "link_1": "/pages/european-timber-system-how-it-works",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "secondary": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Segunda residencia",
+            "heading": "Viviendas vacacionales y refugios: el uso real sigue contando",
+            "text": "<p>La ocupación estacional no elimina los requisitos legales de vivienda cuando el uso es residencial. La solución debe adaptarse al clima, al tiempo de desocupación, a la humedad, a la protección de las instalaciones y al mantenimiento previsto.</p>",
+            "link_1_label": "Revisar componentes y materiales",
+            "link_1": "/pages/european-timber-system-components-joints-materials",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "annex": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Anexos",
+            "heading": "Estudios, oficinas y anexos: viabilidad caso por caso",
+            "text": "<p>Un estudio climatizado, un despacho de jardín o un anexo pueden requerir prestaciones y permisos diferentes de un almacén auxiliar. Deben definirse uso autorizado, habitabilidad cuando proceda, protección frente a humedad, instalaciones y encuentros con edificaciones existentes.</p>",
+            "link_1_label": "Consultar el proyecto",
+            "link_1": "/pages/contact-ideas-exteriores",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "models": {
+          "type": "service",
+          "settings": {
+            "index": "04 · Modelos",
+            "heading": "Compatibilidad con catálogo: solo modelos verificados",
+            "text": "<p>Un modelo de entramado ligero o panel SIP no puede anunciarse como compatible con sistema europeo por compartir la madera como material. La compatibilidad exige ficha técnica específica, estructura validada, detalles de uniones, presupuesto y alcance de suministro confirmados.</p>",
+            "link_1_label": "Ver sistemas y alternativas",
+            "link_1": "/pages/european-timber-construction-system",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "home",
+        "secondary",
+        "annex",
+        "models"
+      ]
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Definir uso y ubicación",
+            "text": "Concretar vivienda habitual, segunda residencia, oficina o anexo; municipio, parcela, superficie, ocupación y condiciones urbanísticas."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Validar el sistema y la estructura",
+            "text": "Solicitar documentación del fabricante: perfiles, función portante, uniones, anclajes, movimientos de madera, cubierta, huecos y solución de cimentación."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Comprobar prestaciones y alcance",
+            "text": "Justificar en proyecto las exigencias aplicables de DB-SE, DB-HE, DB-HS, DB-SI y DB-HR; definir acabados, instalaciones, transporte, montaje y exclusiones."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Confirmar modelo y presupuesto",
+            "text": "Presentar solo referencias con configuración técnica viable, condiciones de ejecución y alcance económico explícitos. Si falta evidencia, tramitar consulta técnica, no compra directa."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "02 · Selección del modelo",
+        "heading": "De la necesidad a una configuración documentada",
+        "intro": "<p>La recomendación comercial debe partir de la función del edificio y terminar en una configuración verificable, no en una equivalencia genérica entre sistemas.</p>"
+      }
+    },
+    "criteria": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Denominación comercial",
+            "text": "«Sistema europeo» identifica aquí una configuración comercial de tronco recto y capa técnica interior; no es una norma europea universal ni acredita por sí misma certificación o rendimiento."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Compatibilidad verificable",
+            "text": "La existencia de un modelo comercial o una imagen similar no implica disponibilidad en este sistema. Exigir ficha del modelo, detalles de montaje y confirmación escrita del proveedor."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Edificio y normativa",
+            "text": "Las prestaciones se justifican para el producto, el cerramiento y el edificio según corresponda; el CTE se verifica en el proyecto, no con un claim genérico."
+          }
+        },
+        "c4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Presupuesto comparable",
+            "text": "Distinguir kit, transporte, montaje, cimentación, aislamiento, carpinterías, cubierta, instalaciones, licencias, impuestos, acabados y mantenimiento. No comparar importes con alcances distintos."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "eyebrow": "03 · Compatibilidad y suministro",
+        "heading": "Qué debe quedar claro antes de elegir o comparar precios"
+      }
+    },
+    "faq": {
+      "type": "ie-light-timber-faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué construcciones pueden estudiarse con sistema europeo?",
+            "answer": "<p>Viviendas de uso permanente o estacional y determinados estudios o anexos, siempre que el proyecto, el producto y la normativa permitan la solución. No significa que exista actualmente un modelo comercial para cada uso.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Existe un catálogo de modelos europeos confirmados?",
+            "answer": "<p>La disponibilidad debe confirmarse por cada referencia. Esta guía no asigna compatibilidad a productos concretos sin ficha y validación de proveedor; solicita una consulta indicando uso, superficie y ubicación.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Puedo convertir una caseta de jardín en vivienda?",
+            "answer": "<p>No debe suponerse. Los requisitos de uso, habitabilidad, proyecto, instalaciones y autorizaciones pueden ser distintos; el material de los muros no cambia por sí solo la clasificación del edificio.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Es intercambiable con entramado ligero o panel SIP?",
+            "answer": "<p>No. Son configuraciones constructivas diferentes; cambiar de sistema puede modificar cálculo estructural, secciones, espesores, encuentros, logística y presupuesto.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿La solución garantiza aislamiento o eficiencia energética?",
+            "answer": "<p>No existe una prestación única. Deben evaluarse composición real de muros, cubierta, suelo, puentes térmicos, hermeticidad, carpinterías, clima e instalaciones.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué debo enviar para estudiar la compatibilidad?",
+            "answer": "<p>Uso y ubicación de la parcela, superficies, distribución deseada, planos disponibles, acabados, nivel de suministro y plazo previsto. Se revisarán las restricciones antes de confirmar un modelo.</p>"
+          }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué documentos debo solicitar antes de contratar?",
+            "answer": "<p>Ficha técnica versionada, detalle de muros y juntas, características declaradas, justificaciones aplicables, inclusiones y exclusiones, mantenimiento y condiciones de montaje y garantía.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "heading": "Dudas frecuentes sobre aplicaciones y modelos compatibles",
+        "intro": "<p>La compatibilidad se demuestra con documentación técnica y comercial específica, no solo con la apariencia del producto.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Verifiquemos qué modelo encaja con tu proyecto",
+        "text": "<p>Indícanos ubicación, uso, metros cuadrados y nivel de acabado. Revisaremos si existe una solución de sistema europeo documentada y qué alternativas del catálogo pueden ajustarse mejor. Sin prometer compatibilidades no verificadas.</p>",
+        "label": "Solicitar valoración técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "principles",
+    "process",
+    "criteria",
+    "faq",
+    "cta"
+  ]
+}
