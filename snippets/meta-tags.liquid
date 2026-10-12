@@ -79,6 +79,11 @@
     assign seo_title = 'Entramado ligero: aplicaciones y modelos compatibles'
     assign seo_description = 'Aplicaciones del timber frame en viviendas, ampliaciones, oficinas y anexos. Cómo comprobar compatibilidad técnica y pasar del sistema al modelo.'
   endif
+  if request.page_type == 'page' and page.handle == 'sip-panels-system'
+    assign seo_title = 'Paneles SIP: construcción, aislamiento y montaje'
+    assign seo_description = 'Guía de paneles SIP para construcción en madera: funcionamiento, aislamiento, montaje, durabilidad, aplicaciones, modelos y criterios de presupuesto.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'what-are-sip-panels-how-they-work'
     assign seo_title = 'Paneles SIP: qué son y cómo funciona el sistema'
     assign seo_description = 'Guía sobre paneles SIP: composición, funcionamiento estructural, prefabricación, aplicaciones y criterios técnicos para proyectos de madera en España.'
