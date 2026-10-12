@@ -42,12 +42,17 @@
 
   if request.page_type == 'page' and page.handle == 'european-timber-system-assembly-finishes'
     assign seo_title = 'Sistema europeo: montaje, durabilidad y acabados'
-    assign seo_description = 'Montaje del sistema europeo de madera: base, juntas, movimientos, humedad, aislamiento, acabados, mantenimiento y criterios de sostenibilidad.'
+    assign seo_description = 'Montaje del sistema europeo de madera: base, juntas, movimientos, humedad, capa técnica, acabados, mantenimiento y sostenibilidad verificable.'
   endif
 
   if request.page_type == 'page' and page.handle == 'european-timber-system-components-joints-materials'
     assign seo_title = 'Sistema europeo: componentes, uniones y materiales'
-    assign seo_description = 'Perfiles de madera, uniones, anclajes, aislamiento, capas de control y acabados: cómo definir la sección real del sistema europeo para cada proyecto.'
+    assign seo_description = 'Madera perfilada, uniones, anclajes, aislamiento y capas de control: cómo especificar y documentar la sección real del sistema europeo.'
+  endif
+
+  if request.page_type == 'page' and page.handle == 'european-timber-system-applications-models'
+    assign seo_title = 'Sistema europeo: aplicaciones y modelos compatibles'
+    assign seo_description = 'Usos del sistema europeo de madera en viviendas y anexos, criterios de compatibilidad, alcance, proyecto y validación técnica de cada modelo.'
   endif
 
   if request.page_type == 'page' and page.handle == 'what-is-light-timber-frame-construction'
