@@ -1,0 +1,403 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Base, replanteo y logística"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Hiladas, uniones y movimientos"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Humedad, capa técnica y acabados"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Mantenimiento y sostenibilidad"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "settings": {
+        "eyebrow": "Sistema europeo · 03",
+        "heading": "Montaje, durabilidad y acabados del sistema europeo de madera",
+        "lead": "<p>El resultado de este sistema depende de una base correctamente resuelta, de la secuencia de montaje, del sellado de juntas y encuentros, del control de los movimientos de la madera y de cómo se integran aislamiento, instalaciones y acabados. Esta guía reúne los puntos que deben quedar definidos antes de fabricar, montar y cerrar la envolvente.</p>",
+        "primary_label": "Ver sistema europeo",
+        "primary_link": "/pages/european-timber-construction-system",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Del apoyo al acabado final"
+      }
+    },
+    "mounting_overview": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Preparación",
+        "heading": "La precisión del montaje empieza en la base y en los detalles",
+        "intro": "<p>En una solución de madera perfilada con capa técnica interior, cimentación, barrera capilar, replanteo, anclajes, logística y encuentros deben coordinarse antes de colocar la primera hilada. La rapidez de obra no sustituye a la definición previa.</p>"
+      },
+      "blocks": {
+        "m1": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Arranque",
+            "heading": "Base nivelada, seca y separada de la humedad del terreno",
+            "text": "<p>El apoyo debe verificarse en cotas, nivel y dimensiones. Entre hormigón y madera se resuelve la separación frente a humedad ascendente y se colocan soleras, bandas, sellados y anclajes conforme al detalle de proyecto y al sistema suministrado.</p>",
+            "link_1_label": "Componentes, uniones y materiales",
+            "link_1": "/pages/european-timber-system-components-joints-materials",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "m2": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Muros",
+            "heading": "Montar por secuencia, controlar juntas y mantener la geometría",
+            "text": "<p>Las piezas perfiladas se ensamblan según la geometría de junta prevista. Durante el montaje se controlan alineación, aplomado, esquinas, fijaciones, posibles elementos de cosido y continuidad del sellado. No debe suponerse que una junta mecanizada resuelve por sí sola aire, agua o estabilidad.</p>",
+            "link_1_label": "Qué es y cómo funciona",
+            "link_1": "/pages/european-timber-system-how-it-works",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "m3": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Encuentros",
+            "heading": "Huecos, cubierta y elementos rígidos deben admitir los movimientos previstos",
+            "text": "<p>Ventanas, puertas, particiones, instalaciones, pilares y cubierta se detallan para que los movimientos higroscópicos o el posible asentamiento del muro no generen bloqueos, fisuras ni pérdida de estanqueidad. La magnitud y el tipo de movimiento dependen del perfil y del fabricante.</p>",
+            "link_1_label": "Aplicaciones y modelos compatibles",
+            "link_1": "/pages/european-timber-system-applications-models",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "m1",
+        "m2",
+        "m3"
+      ]
+    },
+    "mounting_process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Verificar soporte y logística",
+            "text": "Comprobar cotas, nivel, drenaje, separación frente a humedad, accesos, descarga, identificación de piezas y secuencia antes de iniciar el montaje."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Montar, alinear y estabilizar",
+            "text": "Colocar perfiles o hiladas, resolver esquinas y uniones, controlar aplomado y geometría y ejecutar fijaciones, anclajes y estabilización según documentación técnica."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Resolver huecos y capa técnica",
+            "text": "Coordinar carpinterías, cubierta, pasos de instalaciones, aislamiento, membranas y subestructura interior sin bloquear movimientos ni interrumpir las capas de control."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Proteger, acabar y documentar",
+            "text": "Completar protección exterior, sellados, revestimientos y acabados interiores; revisar puntos críticos y dejar instrucciones de mantenimiento y documentación del sistema."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "02 · Secuencia de obra",
+        "heading": "Cuatro controles para pasar de las piezas al edificio terminado",
+        "intro": "<p>Las instrucciones del fabricante, el cálculo y los detalles específicos del proyecto prevalecen sobre cualquier secuencia genérica. Especial atención merecen los encuentros entre elementos que pueden moverse de forma diferente.</p>"
+      }
+    },
+    "durability": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "d1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Agua fuera de la madera",
+            "text": "La protección empieza en el arranque: barrera capilar, zócalo, pendientes, drenaje y separación respecto al terreno. Cubierta, aleros, canalones, bajantes y remates deben limitar lluvia, salpicaduras y agua retenida."
+          }
+        },
+        "d2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Movimientos previstos, no improvisados",
+            "text": "La madera cambia de dimensión con la humedad y algunos sistemas de tronco o perfil horizontal pueden asentarse. Huecos, pilares, tabiques, instalaciones y cubierta deben utilizar detalles compatibles con el comportamiento declarado del producto."
+          }
+        },
+        "d3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Juntas que puedan sellar y secar",
+            "text": "Las uniones exteriores no deben crear bolsas de agua. Sellos, cintas, masillas, membranas y cámaras se especifican según exposición y compatibilidad, evitando cerrar humedad dentro de la construcción."
+          }
+        },
+        "d4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Inspección y mantenimiento",
+            "text": "Revisar periódicamente acabados de madera vista, sellados, carpinterías, zócalos y evacuación de pluviales permite intervenir antes de que la humedad afecte a juntas o elementos estructurales."
+          }
+        }
+      },
+      "block_order": [
+        "d1",
+        "d2",
+        "d3",
+        "d4"
+      ],
+      "settings": {
+        "eyebrow": "03 · Durabilidad",
+        "heading": "Mantener seca la madera y permitir sus movimientos es más importante que prometer una vida útil genérica"
+      }
+    },
+    "finishes": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "04 · Acabados",
+        "heading": "El acabado forma parte del sistema, no se añade al final",
+        "intro": "<p>Acabados exteriores, cámara técnica, revestimientos interiores y pasos de instalaciones deben definirse con la misma lógica que estructura y aislamiento. La compatibilidad entre capas condiciona humedad, mantenimiento, estética y facilidad de reparación.</p>"
+      },
+      "blocks": {
+        "f1": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Exterior",
+            "heading": "Madera vista: protección compatible con exposición y mantenimiento",
+            "text": "<p>El tipo de acabado se selecciona según especie, mecanizado, orientación, lluvia, radiación solar y aspecto deseado. El producto de protección y su ciclo de renovación deben seguir las indicaciones del fabricante y permitir inspeccionar juntas y zonas de agua.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "f2": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Interior",
+            "heading": "Aislamiento, instalaciones y revestimiento se coordinan en la capa técnica",
+            "text": "<p>La subestructura interior puede alojar aislamiento complementario, capas de control de aire o vapor cuando proceda, instalaciones y acabado de madera, placa u otra solución compatible. El orden exacto se define mediante cálculo higrotérmico y detalle de proyecto.</p>",
+            "link_1_label": "Componentes, uniones y materiales",
+            "link_1": "/pages/european-timber-system-components-joints-materials",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "f3": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Encuentros",
+            "heading": "Los acabados no deben puentear elementos con movimientos diferentes",
+            "text": "<p>Revestimientos, rodapiés, falsos techos, encuentros con carpinterías y pasos de instalaciones deben conservar las holguras, fijaciones deslizantes o juntas previstas. Un acabado rígido mal conectado puede convertir un movimiento normal de la madera en una fisura o deformación.</p>",
+            "link_1_label": "Aplicaciones y modelos compatibles",
+            "link_1": "/pages/european-timber-system-applications-models",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3"
+      ]
+    },
+    "sustainability": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "05 · Sostenibilidad",
+        "heading": "Comparar documentación y ciclo de vida, no solo el material principal",
+        "intro": "<p>La madera puede almacenar carbono biogénico durante su vida en servicio y la prefabricación puede optimizar material, pero el impacto del edificio depende también de procedencia, adhesivos y tratamientos, aislamiento, transporte, energía de uso, mantenimiento y fin de vida.</p>"
+      },
+      "blocks": {
+        "e1": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Trazabilidad",
+            "heading": "Pedir origen, prestaciones y documentación del producto",
+            "text": "<p>Conviene disponer de fichas técnicas, declaraciones de prestaciones cuando correspondan, identificación de especies y productos, documentación de tratamientos y certificaciones de cadena de custodia cuando formen parte de la especificación o del contrato.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "e2": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Proceso",
+            "heading": "Prefabricar puede reducir recortes, pero el transporte también cuenta",
+            "text": "<p>El mecanizado y la preparación en taller pueden ordenar el montaje y aprovechar mejor el material. Para comparar alternativas deben incluirse embalaje, distancias de transporte, medios de elevación, residuos y futuras renovaciones de acabados.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "e3": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Uso",
+            "heading": "La envolvente completa determina el comportamiento energético",
+            "text": "<p>Añadir aislamiento interior puede mejorar prestaciones, pero el resultado depende de transmitancias, puentes térmicos, hermeticidad, huecos, control solar, ventilación e instalaciones. La sostenibilidad no se deduce de un espesor aislante ni del uso de madera por separado.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "e1",
+        "e2",
+        "e3"
+      ]
+    },
+    "faq": {
+      "type": "ie-light-timber-faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Se puede montar directamente sobre una losa de hormigón?",
+            "answer": "<p>El apoyo debe resolverse mediante el detalle previsto para el sistema: nivelación, separación frente a humedad ascendente, sellado y anclaje. No conviene apoyar madera directamente sobre un soporte húmedo ni sustituir el detalle de arranque por una solución improvisada.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿El doble machihembrado garantiza por sí solo la estanqueidad?",
+            "answer": "<p>No. La geometría de la junta contribuye al encaje, pero la estanqueidad del edificio depende también de sellos, esquinas, huecos, penetraciones, encuentros con cubierta y base y de la ejecución completa de la envolvente.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Todos los muros de madera perfilada se asientan igual?",
+            "answer": "<p>No. El movimiento depende de humedad, geometría, si la pieza es maciza o laminada, orientación de las láminas, fabricación, altura del muro y sistema concreto. Existen soluciones de asentamiento reducido. El proyecto debe utilizar los valores y detalles del fabricante seleccionado.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cuándo se colocan aislamiento e instalaciones interiores?",
+            "answer": "<p>La secuencia depende del proyecto, pero deben coordinarse cuando estructura, huecos y encuentros están definidos y antes de cerrar revestimientos. Las penetraciones no deben interrumpir sin control las capas de aire, vapor o humedad ni impedir movimientos previstos.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué acabado exterior necesita la madera?",
+            "answer": "<p>No existe un único acabado válido. Se elige según madera, exposición, estética y producto de protección. La documentación debe indicar preparación de superficie, compatibilidades, aplicación y cuándo inspeccionar o renovar el tratamiento.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Puedo fijar directamente un acabado rígido a un muro que se mueve?",
+            "answer": "<p>No debe suponerse. Si el sistema prevé asentamiento o cambios dimensionales relevantes, subestructuras, fijaciones y juntas deben permitir ese movimiento. El mismo criterio se aplica a tabiques, escaleras, instalaciones y encuentros con elementos que no se asientan.</p>"
+          }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué documentación debería quedar al terminar?",
+            "answer": "<p>Planos y detalles aplicables, especificación de perfiles y uniones, anclajes, productos de sellado y protección, capas interiores, instrucciones de montaje, fichas técnicas, garantías acordadas y plan de inspección y mantenimiento.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "heading": "Montaje y acabados: decisiones que conviene cerrar antes de obra",
+        "intro": "<p>El objetivo no es memorizar una secuencia universal, sino exigir que cada unión, capa y acabado sea compatible con el sistema realmente suministrado.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Define montaje y acabados antes de cerrar el presupuesto",
+        "text": "<p>Cuéntanos ubicación, uso, superficie, configuración, accesos y nivel de acabado. Revisaremos contigo base, logística, encuentros, aislamiento, instalaciones, protección exterior y documentación para comparar el alcance real del sistema.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "mounting_overview",
+    "mounting_process",
+    "durability",
+    "finishes",
+    "sustainability",
+    "faq",
+    "cta"
+  ]
+}
