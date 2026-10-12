@@ -62,8 +62,8 @@
             "text": "<p>Una vivienda exige justificar estructura, energía, salubridad, acústica, fuego, ventilación e instalaciones para su ubicación. El modelo base organiza la propuesta, pero las prestaciones se validan en el proyecto concreto.</p>",
             "link_1_label": "Ver modelos de entramado ligero",
             "link_1": "/collections/light-frame-houses",
-            "link_2_label": "",
-            "link_2": "",
+            "link_2_label": "Qué es y cómo funciona",
+            "link_2": "/pages/what-is-light-timber-frame-construction",
             "link_3_label": "",
             "link_3": ""
           }
@@ -183,8 +183,8 @@
         "a": {
           "type": "principle",
           "settings": {
-            "heading": "Sistema constructivo definido",
-            "text": "La compatibilidad debe constar en la solución o ficha técnica del modelo. No se deduce porque el edificio sea prefabricado, ligero o tenga acabado de madera."
+            "heading": "Compatibilidad declarada, no inferida",
+            "text": "El sistema constructivo debe constar como relación técnica del modelo o de su configuración. No se deduce porque el edificio sea prefabricado, ligero o tenga acabado de madera, ni obliga a duplicar el mismo modelo en catálogos paralelos."
           }
         },
         "b": {
