@@ -53,15 +53,6 @@
             "best_for": "Pérgolas, porches, cenadores, garajes ligeros y estructuras elevadas con puntos de apoyo claramente definidos."
           }
         },
-        "system_3": {
-          "type": "system",
-          "settings": {
-            "index": "03 · Cimentación en seco",
-            "heading": "Tornillos de cimentación",
-            "text": "<p>Los tornillos de cimentación transfieren las cargas al terreno mediante elementos metálicos atornillados y permiten ejecutar apoyos con poca obra húmeda. Existen soluciones para vigas de madera, pequeños edificios, construcción modular y aplicaciones de mayor carga. La elección no se hace por diámetro de forma aislada: deben comprobarse suelo, cargas, profundidad, corrosión, estabilidad lateral, unión superior y procedimiento de instalación del sistema especificado.</p>",
-            "best_for": "Casetas, terrazas, pérgolas, módulos y determinadas viviendas o ampliaciones cuando el terreno y la documentación técnica del sistema permiten una solución rápida, ajustable y con menor excavación."
-          }
-        },
         "system_4": {
           "type": "system",
           "settings": {
@@ -160,7 +151,6 @@
         "criterion_4",
         "system_1",
         "system_2",
-        "system_3",
         "system_4",
         "system_5",
         "detail_1",
