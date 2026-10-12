@@ -41,7 +41,7 @@
       "settings": {
         "eyebrow": "Sistema europeo · 02",
         "heading": "Componentes, uniones y materiales del sistema europeo de madera",
-        "lead": "<p>La sección del sistema no se define por un único «tronco» ni por un espesor genérico. Perfil exterior, uniones, anclajes, capa técnica, aislamiento, sellados, fijaciones y acabado interior deben funcionar como un conjunto documentado. Aquí explicamos qué aporta cada componente y qué debe verificarse antes de cerrar una configuración.</p>",
+        "lead": "<p>La sección real del sistema europeo se define por materiales, funciones y detalles, no por la palabra «tronco» ni por un espesor genérico. Perfil exterior, clasificación de la madera, uniones, anclajes, aislamiento, capas de aire y humedad, instalaciones, fijaciones y acabado interior deben quedar coordinados y documentados.</p>",
         "primary_label": "Ver sistema europeo",
         "primary_link": "/pages/european-timber-construction-system",
         "secondary_label": "Solicitar asesoría técnica",
@@ -62,7 +62,7 @@
           "settings": {
             "index": "01 · Madera exterior",
             "heading": "Perfil, geometría de junta y condición de servicio",
-            "text": "<p>Las piezas exteriores pueden ser de madera maciza o laminada según el sistema. Especie, sección, humedad de suministro, mecanizado longitudinal, encuentros de esquina, protección y función estructural deben corresponder a la configuración documentada. Un machihembrado ayuda a ordenar el encuentro, pero no sustituye el cálculo, el sellado ni el control de agua.</p>",
+            "text": "<p>Las piezas exteriores pueden ser macizas o laminadas según el sistema. Deben identificarse especie, clase resistente o documentación equivalente, sección, humedad de suministro, mecanizado y clase de servicio prevista. Un doble machihembrado organiza el contacto entre piezas, pero no demuestra por sí solo resistencia, estanqueidad al aire ni protección frente al agua.</p>",
             "link_1_label": "Qué es y cómo funciona",
             "link_1": "/pages/european-timber-system-how-it-works",
             "link_2_label": "",
@@ -76,7 +76,7 @@
           "settings": {
             "index": "02 · Capa técnica interior",
             "heading": "Subestructura, aislamiento, instalaciones y acabado",
-            "text": "<p>La zona interior puede incorporar rastreles o bastidor secundario, aislamiento, cámara de instalaciones, capas de control de aire y humedad y revestimiento final. Material, espesor y orden de las capas se definen como una sección única: cambiar una de ellas puede modificar comportamiento térmico, higrotérmico, acústico o frente al fuego.</p>",
+            "text": "<p>La subestructura interior permite alojar aislamiento e instalaciones y recibir el acabado. La elección de aislante y de capas de control depende de la composición higrotérmica completa; no conviene copiar soluciones de «triple aislante» o barrera de vapor sin comprobar clima, materiales y riesgo de condensación.</p>",
             "link_1_label": "Montaje y acabados",
             "link_1": "/pages/european-timber-system-assembly-finishes",
             "link_2_label": "",
@@ -90,7 +90,7 @@
           "settings": {
             "index": "03 · Uniones y fijaciones",
             "heading": "Base, esquinas, huecos y cubierta concentran las decisiones críticas",
-            "text": "<p>Anclajes a la base, uniones entre piezas, esquinas, dinteles y jambas, encuentros con forjados y cubierta, sellados y fijaciones metálicas forman parte del sistema. Deben transmitir las acciones previstas, mantener continuidad de las capas y admitir los movimientos de la madera que correspondan sin bloquear carpinterías, instalaciones o acabados.</p>",
+            "text": "<p>Arranque sobre cimentación, barrera capilar, esquinas, uniones longitudinales, huecos y encuentro con cubierta concentran los riesgos de agua, infiltración, deformación y puente térmico. En sistemas con movimiento vertical previsto, carpinterías y elementos rígidos deben disponer de detalles compatibles.</p>",
             "link_1_label": "Aplicaciones y modelos compatibles",
             "link_1": "/pages/european-timber-system-applications-models",
             "link_2_label": "",
@@ -114,7 +114,7 @@
           "settings": {
             "number": "01",
             "heading": "Identificar el sistema real",
-            "text": "Confirmar fabricante o proveedor, referencia, sección de muro, planos, materiales, función de cada componente y documentación técnica aplicable."
+            "text": "Identificar fabricante o sistema, geometría del perfil, especie y clasificación de madera, sección, contenido de humedad, tratamiento si procede y documentación de producto."
           }
         },
         "s2": {
@@ -130,7 +130,7 @@
           "settings": {
             "number": "03",
             "heading": "Resolver uniones y movimientos",
-            "text": "Definir arranque, barrera capilar, anclajes, esquinas, huecos, juntas, penetraciones, cubierta y tolerancias compatibles con humedad y movimientos dimensionales."
+            "text": "Definir juntas, sellados, fijaciones, anclajes y compatibilidad con variaciones dimensionales. Distinguir entre sistemas tradicionales con asentamiento y productos industrializados diseñados para minimizarlo."
           }
         },
         "s4": {
@@ -161,28 +161,28 @@
           "type": "principle",
           "settings": {
             "heading": "Madera y productos estructurales",
-            "text": "Especie, producto, clase resistente y condición de servicio deben declararse cuando sean relevantes. Madera maciza, laminada y otros productos no son intercambiables por defecto."
+            "text": "El DB-SE-M exige asignar clases de servicio según las condiciones ambientales y relaciona la durabilidad con diseño constructivo, humedad, especie, producto y protección. La madera debe especificarse para su uso real."
           }
         },
         "k2": {
           "type": "principle",
           "settings": {
             "heading": "Sellado y control de humedad",
-            "text": "La geometría de la junta no garantiza por sí sola hermeticidad ni estanqueidad. Base, sellos, capas de agua y vapor, drenaje y secado deben formar una estrategia continua."
+            "text": "La estanqueidad y la durabilidad dependen de detalles continuos. Sellantes, juntas, membranas y drenajes deben impedir entrada persistente de agua y permitir el secado previsto; una junta mecanizada no sustituye estas funciones."
           }
         },
         "k3": {
           "type": "principle",
           "settings": {
             "heading": "Fijaciones y elementos metálicos",
-            "text": "Tornillos, pernos, conectores y anclajes se dimensionan para las acciones, geometría, madera y exposición previstas. También debe comprobarse su protección frente a corrosión y su compatibilidad con el sistema."
+            "text": "Tornillos, conectores y anclajes deben dimensionarse y protegerse según cargas, clase de servicio y riesgo de corrosión. Las uniones múltiples no se justifican sumando sin más la capacidad individual de cada fijación."
           }
         },
         "k4": {
           "type": "principle",
           "settings": {
             "heading": "Prestaciones y CTE",
-            "text": "En España, las verificaciones estructurales y de envolvente corresponden a la solución concreta y al edificio. Una denominación comercial, un material aislado o una certificación de otro sistema no sustituyen la justificación del proyecto."
+            "text": "Prestaciones estructurales, térmicas, de fuego y acústicas se atribuyen a productos y soluciones documentadas. Los Documentos de Evaluación Europeos sirven de base para evaluar determinados productos cuando les resultan aplicables; no certifican de forma genérica esta denominación comercial."
           }
         }
       },
@@ -211,7 +211,7 @@
           "type": "question",
           "settings": {
             "question": "¿El doble machihembrado garantiza que el muro sea estanco?",
-            "answer": "<p>No. Una geometría mecanizada puede mejorar ajuste y repetibilidad, pero la hermeticidad al aire y la protección frente al agua dependen del detalle completo: juntas, sellos, esquinas, huecos, encuentros y ejecución. Si se declara una prestación, debe corresponder a la solución documentada.</p>"
+            "answer": "<p>No. El machihembrado define una geometría de encuentro, pero la estanqueidad depende también de tolerancias, compresión, sellantes o juntas previstas, continuidad con huecos y encuentros, y comportamiento dimensional de la madera.</p>"
           }
         },
         "q3": {
@@ -232,7 +232,7 @@
           "type": "question",
           "settings": {
             "question": "¿Hace falta siempre una barrera de vapor?",
-            "answer": "<p>No existe una respuesta universal. La estrategia de control de vapor depende del clima, uso interior, materiales, permeabilidad de las capas y posición del aislamiento. Debe definirse con criterio higrotérmico para evitar condensaciones y permitir el secado previsto.</p>"
+            "answer": "<p>No. La estrategia de control de vapor depende de clima, uso interior, permeabilidad y posición de todas las capas. Debe comprobarse la solución higrotérmica completa y el riesgo de condensación, no aplicar una membrana por regla fija.</p>"
           }
         },
         "q6": {
@@ -253,7 +253,7 @@
           "type": "question",
           "settings": {
             "question": "¿Qué documentación debería acompañar a la configuración?",
-            "answer": "<p>Como mínimo: sección y materiales identificados, función estructural de los elementos, detalles de uniones y anclajes, instrucciones de montaje y mantenimiento y evidencia de las prestaciones que se publiquen. Para vivienda, esa información se integra en las justificaciones del proyecto técnico y del CTE aplicable.</p>"
+            "answer": "<p>Ficha de la madera y productos, sección completa del muro, clasificación o prestaciones estructurales, detalles de unión, anclajes, sellados, instrucciones de montaje, acabados compatibles, mantenimiento y base documental de cualquier prestación declarada.</p>"
           }
         }
       },

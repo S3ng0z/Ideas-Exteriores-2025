@@ -40,8 +40,8 @@
       ],
       "settings": {
         "eyebrow": "Sistema europeo · 03",
-        "heading": "Montaje, durabilidad y acabados del sistema europeo de madera",
-        "lead": "<p>El resultado de este sistema depende de una base correctamente resuelta, de la secuencia de montaje, del sellado de juntas y encuentros, del control de los movimientos de la madera y de cómo se integran aislamiento, instalaciones y acabados. Esta guía reúne los puntos que deben quedar definidos antes de fabricar, montar y cerrar la envolvente.</p>",
+        "heading": "Montaje y acabados del sistema europeo de madera",
+        "lead": "<p>En este sistema, montaje y acabado no son fases independientes: la base, el contenido de humedad, la secuencia de hiladas, los sellados, los movimientos de la madera, la capa técnica interior y la protección exterior deben coordinarse para conservar estructura, estanqueidad y durabilidad.</p>",
         "primary_label": "Ver sistema europeo",
         "primary_link": "/pages/european-timber-construction-system",
         "secondary_label": "Solicitar asesoría técnica",
@@ -62,7 +62,7 @@
           "settings": {
             "index": "01 · Arranque",
             "heading": "Base nivelada, seca y separada de la humedad del terreno",
-            "text": "<p>El apoyo debe verificarse en cotas, nivel y dimensiones. Entre hormigón y madera se resuelve la separación frente a humedad ascendente y se colocan soleras, bandas, sellados y anclajes conforme al detalle de proyecto y al sistema suministrado.</p>",
+            "text": "<p>La base debe llegar nivelada y dentro de tolerancias, con arranque separado de humedad capilar y agua de salpicadura. Puuinfo recomienda una solera o durmiente bien fijado y sellado sobre una capa que corte la capilaridad; la solución concreta debe responder al proyecto.</p>",
             "link_1_label": "Componentes, uniones y materiales",
             "link_1": "/pages/european-timber-system-components-joints-materials",
             "link_2_label": "",
@@ -76,7 +76,7 @@
           "settings": {
             "index": "02 · Muros",
             "heading": "Montar por secuencia, controlar juntas y mantener la geometría",
-            "text": "<p>Las piezas perfiladas se ensamblan según la geometría de junta prevista. Durante el montaje se controlan alineación, aplomado, esquinas, fijaciones, posibles elementos de cosido y continuidad del sellado. No debe suponerse que una junta mecanizada resuelve por sí sola aire, agua o estabilidad.</p>",
+            "text": "<p>Las piezas se montan según planos y secuencia, verificando alineación, compresión de juntas, fijaciones y estabilidad temporal. La humedad de la madera durante el montaje debe ser compatible con el producto y, si es elevada, debe asegurarse que pueda secar antes de quedar encerrada.</p>",
             "link_1_label": "Qué es y cómo funciona",
             "link_1": "/pages/european-timber-system-how-it-works",
             "link_2_label": "",
@@ -90,7 +90,7 @@
           "settings": {
             "index": "03 · Encuentros",
             "heading": "Huecos, cubierta y elementos rígidos deben admitir los movimientos previstos",
-            "text": "<p>Ventanas, puertas, particiones, instalaciones, pilares y cubierta se detallan para que los movimientos higroscópicos o el posible asentamiento del muro no generen bloqueos, fisuras ni pérdida de estanqueidad. La magnitud y el tipo de movimiento dependen del perfil y del fabricante.</p>",
+            "text": "<p>En sistemas derivados del tronco, Puuinfo exige compatibilizar huecos y encuentros de cubierta con el asentamiento. Los troncos laminados modernos no asentables muestran que existen soluciones distintas, pero esa prestación debe pertenecer al producto especificado y no asumirse por el nombre «sistema europeo».</p>",
             "link_1_label": "Aplicaciones y modelos compatibles",
             "link_1": "/pages/european-timber-system-applications-models",
             "link_2_label": "",
@@ -130,7 +130,7 @@
           "settings": {
             "number": "03",
             "heading": "Resolver huecos y capa técnica",
-            "text": "Coordinar carpinterías, cubierta, pasos de instalaciones, aislamiento, membranas y subestructura interior sin bloquear movimientos ni interrumpir las capas de control."
+            "text": "Coordinar carpinterías, pasos técnicos, aislamiento, capas de aire o vapor y revestimientos. Evitar perforaciones o fijaciones que comprometan estructura, sellado o capacidad de movimiento."
           }
         },
         "s4": {
@@ -161,21 +161,21 @@
           "type": "principle",
           "settings": {
             "heading": "Agua fuera de la madera",
-            "text": "La protección empieza en el arranque: barrera capilar, zócalo, pendientes, drenaje y separación respecto al terreno. Cubierta, aleros, canalones, bajantes y remates deben limitar lluvia, salpicaduras y agua retenida."
+            "text": "Cubierta, vierteaguas, zócalos, testas y encuentros deben impedir agua persistente. El DB-SE-M señala que la durabilidad depende en gran medida del diseño constructivo y de las condiciones de uso."
           }
         },
         "d2": {
           "type": "principle",
           "settings": {
             "heading": "Movimientos previstos, no improvisados",
-            "text": "La madera cambia de dimensión con la humedad y algunos sistemas de tronco o perfil horizontal pueden asentarse. Huecos, pilares, tabiques, instalaciones y cubierta deben utilizar detalles compatibles con el comportamiento declarado del producto."
+            "text": "La madera cambia de dimensión con su humedad. Los detalles deben absorber los movimientos previstos; bloquearlos con tabiques, carpinterías o revestimientos incompatibles puede generar fisuras o deformaciones."
           }
         },
         "d3": {
           "type": "principle",
           "settings": {
             "heading": "Juntas que puedan sellar y secar",
-            "text": "Las uniones exteriores no deben crear bolsas de agua. Sellos, cintas, masillas, membranas y cámaras se especifican según exposición y compatibilidad, evitando cerrar humedad dentro de la construcción."
+            "text": "Las juntas deben conservar su función frente a cambios dimensionales, lluvia y viento. Además de sellar, la solución debe gestionar el agua y permitir secado cuando sea necesario."
           }
         },
         "d4": {
@@ -194,7 +194,7 @@
       ],
       "settings": {
         "eyebrow": "03 · Durabilidad",
-        "heading": "Mantener seca la madera y permitir sus movimientos es más importante que prometer una vida útil genérica"
+        "heading": "Durabilidad: diseño constructivo, humedad y mantenimiento"
       }
     },
     "finishes": {
@@ -224,7 +224,7 @@
           "settings": {
             "index": "02 · Interior",
             "heading": "Aislamiento, instalaciones y revestimiento se coordinan en la capa técnica",
-            "text": "<p>La subestructura interior puede alojar aislamiento complementario, capas de control de aire o vapor cuando proceda, instalaciones y acabado de madera, placa u otra solución compatible. El orden exacto se define mediante cálculo higrotérmico y detalle de proyecto.</p>",
+            "text": "<p>La capa técnica interior debe coordinar aislante, instalaciones, registros y revestimiento sin perforar innecesariamente las capas de control. Yeso, madera u otros acabados pueden modificar prestaciones de fuego, acústica y comportamiento higrotérmico.</p>",
             "link_1_label": "Componentes, uniones y materiales",
             "link_1": "/pages/european-timber-system-components-joints-materials",
             "link_2_label": "",
@@ -238,7 +238,7 @@
           "settings": {
             "index": "03 · Encuentros",
             "heading": "Los acabados no deben puentear elementos con movimientos diferentes",
-            "text": "<p>Revestimientos, rodapiés, falsos techos, encuentros con carpinterías y pasos de instalaciones deben conservar las holguras, fijaciones deslizantes o juntas previstas. Un acabado rígido mal conectado puede convertir un movimiento normal de la madera en una fisura o deformación.</p>",
+            "text": "<p>Revestimientos rígidos, carpinterías, instalaciones verticales y elementos anclados a estructuras con comportamiento dimensional diferente necesitan juntas o fijaciones compatibles. El acabado no debe inmovilizar un muro diseñado para moverse.</p>",
             "link_1_label": "Aplicaciones y modelos compatibles",
             "link_1": "/pages/european-timber-system-applications-models",
             "link_2_label": "",
@@ -259,7 +259,7 @@
       "settings": {
         "eyebrow": "05 · Sostenibilidad",
         "heading": "Comparar documentación y ciclo de vida, no solo el material principal",
-        "intro": "<p>La madera puede almacenar carbono biogénico durante su vida en servicio y la prefabricación puede optimizar material, pero el impacto del edificio depende también de procedencia, adhesivos y tratamientos, aislamiento, transporte, energía de uso, mantenimiento y fin de vida.</p>"
+        "intro": "<p>La madera puede aportar carbono biogénico almacenado y la prefabricación puede reducir desperdicios, pero ninguna de esas ventajas convierte automáticamente el edificio en «sostenible». Conviene comparar origen, certificaciones, adhesivos, tratamientos, transporte, energía de uso, mantenimiento y fin de vida.</p>"
       },
       "blocks": {
         "e1": {
@@ -332,7 +332,7 @@
           "type": "question",
           "settings": {
             "question": "¿Todos los muros de madera perfilada se asientan igual?",
-            "answer": "<p>No. El movimiento depende de humedad, geometría, si la pieza es maciza o laminada, orientación de las láminas, fabricación, altura del muro y sistema concreto. Existen soluciones de asentamiento reducido. El proyecto debe utilizar los valores y detalles del fabricante seleccionado.</p>"
+            "answer": "<p>No. El asentamiento depende de especie, humedad, geometría, laminación y tecnología. Puuinfo documenta la necesidad de preverlo en construcción tradicional de troncos, mientras fabricantes actuales ofrecen troncos laminados diseñados específicamente para minimizarlo.</p>"
           }
         },
         "q4": {
@@ -360,7 +360,7 @@
           "type": "question",
           "settings": {
             "question": "¿Qué documentación debería quedar al terminar?",
-            "answer": "<p>Planos y detalles aplicables, especificación de perfiles y uniones, anclajes, productos de sellado y protección, capas interiores, instrucciones de montaje, fichas técnicas, garantías acordadas y plan de inspección y mantenimiento.</p>"
+            "answer": "<p>Planos finales y detalles, fichas de productos y acabados, instrucciones de mantenimiento, garantías aplicables y registros de comprobaciones acordados. La documentación debe permitir distinguir qué prestaciones pertenecen al producto y cuáles se justifican en el proyecto.</p>"
           }
         }
       },
