@@ -7,28 +7,28 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Estructura y capas del muro"
+            "label": "Bastidor y rigidización"
           }
         },
         "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Aislamiento, aire y humedad"
+            "label": "Aislamiento y puentes térmicos"
           }
         },
         "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Espesores y confort térmico"
+            "label": "Aire, vapor, agua y secado"
           }
         },
         "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Comprobaciones y proyecto"
+            "label": "Espesores y prestaciones"
           }
         }
       },
@@ -39,11 +39,11 @@
         "d"
       ],
       "settings": {
-        "eyebrow": "Entramado ligero · Envolvente y eficiencia",
-        "heading": "Capas, materiales y confort térmico en entramado ligero de madera",
-        "lead": "<p>Un muro eficiente no depende de una única capa: estructura, tableros, aislamiento, control del aire y del vapor, protección exterior y acabados deben trabajar juntos. Descubre cómo se compone la envolvente y qué decisiones influyen en el bienestar interior durante todo el año.</p>",
-        "primary_label": "Ver casas de entramado ligero",
-        "primary_link": "/collections/light-frame-houses",
+        "eyebrow": "Entramado ligero · Estructura, capas y aislamiento",
+        "heading": "Estructura, capas y aislamiento del entramado ligero de madera",
+        "lead": "<p>Un cerramiento de entramado ligero no se define por un espesor único ni por una «capa milagro». Bastidor, rigidización, aislamiento, hermeticidad, control de vapor, protección frente al agua, cámaras y revestimientos deben cumplir funciones compatibles y mantener su continuidad en zócalos, huecos, forjados, cubierta y pasos de instalaciones.</p>",
+        "primary_label": "Ver aplicaciones y modelos compatibles",
+        "primary_link": "/pages/timber-frame-applications-compatible-models",
         "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "En esta guía"
@@ -58,10 +58,10 @@
             "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_003.png",
             "image_alt": "Bastidor de madera con montantes y soleras",
             "index": "01 · Estructura",
-            "heading": "Bastidor portante y modulación",
-            "text": "<p>Montantes, soleras, cargaderos y vigas transmiten cargas a cimentación. Se dimensionan y arriostran según proyecto; la modulación ayuda a integrar tableros, aislamiento e instalaciones.</p>",
-            "link_1_label": "",
-            "link_1": "",
+            "heading": "Bastidor portante: geometría, cargas y huecos",
+            "text": "<p>Montantes, soleras, vigas y cargaderos forman la retícula resistente. Sus secciones, separaciones, refuerzos y apoyos se dimensionan para el proyecto y condicionan huecos, instalaciones y modulación del cerramiento.</p>",
+            "link_1_label": "Qué es y cómo funciona",
+            "link_1": "/pages/what-is-light-timber-frame-construction",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
@@ -74,8 +74,8 @@
             "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_002.png",
             "image_alt": "Tablero estructural de rigidización sobre entramado ligero",
             "index": "02 · Rigidización",
-            "heading": "Tableros OSB o contrachapado",
-            "text": "<p>Los tableros estructurales colaboran con el bastidor para estabilizar muros, forjados y cubiertas. Su fijación y continuidad se justifican por cálculo, no solo por espesor.</p>",
+            "heading": "Rigidización: tablero, fijaciones y continuidad",
+            "text": "<p>Los tableros estructurales pueden colaborar en la estabilidad frente a acciones horizontales. Tipo, espesor, juntas, patrón de fijación y conexión con el bastidor forman parte del cálculo: no basta con especificar «OSB» de manera genérica.</p>",
             "link_1_label": "",
             "link_1": "",
             "link_2_label": "",
@@ -90,10 +90,10 @@
             "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_007.png",
             "image_alt": "Aislamiento integrado entre montantes de madera",
             "index": "03 · Aislamiento",
-            "heading": "Aislamiento entre montantes y continuo",
-            "text": "<p>Lana mineral, fibra de madera u otros productos documentados pueden disponerse entre montantes y, cuando procede, también por el exterior. Importan continuidad, compatibilidad y prestaciones declaradas.</p>",
-            "link_1_label": "",
-            "link_1": "",
+            "heading": "Aislamiento: entre montantes y, cuando procede, en capa continua",
+            "text": "<p>Lana mineral, fibra de madera u otros aislantes con prestaciones declaradas pueden integrarse en el bastidor y complementarse con aislamiento continuo. La solución debe limitar puentes térmicos sin comprometer humedad, fuego, acústica o fijación de acabados.</p>",
+            "link_1_label": "Montaje y durabilidad",
+            "link_1": "/pages/timber-frame-assembly-durability-sustainability",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
@@ -107,9 +107,9 @@
         "isolation"
       ],
       "settings": {
-        "eyebrow": "01 · De dentro hacia fuera",
-        "heading": "Las capas del cerramiento tienen funciones distintas",
-        "intro": "<p>El entramado ligero integra estructura y aislamiento en un conjunto industrializable. La continuidad entre capas y sus encuentros es tan importante como el material elegido.</p>"
+        "eyebrow": "01 · Función de cada capa",
+        "heading": "El cerramiento funciona por continuidad, no por acumular materiales",
+        "intro": "<p>La posición y el orden exacto de las capas varían con clima, uso, acabado y estrategia higrotérmica. Lo importante es que cada material tenga una función definida y que los encuentros mantengan estructura, aislamiento y control de humedad sin interrupciones críticas.</p>"
       }
     },
     "process": {
@@ -119,32 +119,32 @@
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Definir uso y clima",
-            "text": "Vivienda, oficina o anexo requieren soluciones adaptadas a uso, zona climática, orientación y exigencias aplicables."
+            "heading": "Partir de uso, clima y exposición",
+            "text": "Vivienda, oficina o anexo no tienen por qué exigir la misma envolvente. Zona climática, orientación, lluvia, viento y condiciones interiores guían la solución."
           }
         },
         "step2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Dimensionar el paquete",
-            "text": "Estructura, aislamiento, tableros y revestimientos se eligen como composición completa, sin convertir el espesor en una promesa universal de eficiencia."
+            "heading": "Dimensionar estructura y prestación térmica",
+            "text": "Se coordinan secciones del bastidor, aislamiento, revestimientos y posibles capas continuas para alcanzar las prestaciones del cerramiento completo, no un espesor prefijado."
           }
         },
         "step3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Resolver aire y humedad",
-            "text": "Se define la continuidad de la hermeticidad, control de vapor, estanquidad frente al agua y posibilidad de secado del cerramiento."
+            "heading": "Asignar funciones a aire, vapor y agua",
+            "text": "Se define qué capa controla infiltraciones de aire, cómo se gestiona el vapor, cómo se detiene la lluvia y cómo puede secar la composición si entra humedad accidental."
           }
         },
         "step4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Comprobar los encuentros",
-            "text": "Se revisan zócalos, huecos, forjados, cubiertas, instalaciones y puentes térmicos antes de cerrar los acabados."
+            "heading": "Resolver los puntos singulares",
+            "text": "Zócalos, ventanas, puertas, esquinas, encuentros con forjados y cubierta y pasos de instalaciones se detallan antes de cerrar la envolvente."
           }
         }
       },
@@ -155,9 +155,9 @@
         "step4"
       ],
       "settings": {
-        "eyebrow": "02 · Cómo se resuelve",
-        "heading": "Cuatro decisiones que mejoran el rendimiento real",
-        "intro": "<p>El espesor no puede separarse de la humedad, la hermeticidad ni de los detalles constructivos. Estas cuatro decisiones deben coordinarse desde el diseño y comprobarse en ejecución.</p>"
+        "eyebrow": "02 · Diseño de la envolvente",
+        "heading": "Cuatro decisiones antes de fijar materiales y espesores",
+        "intro": "<p>La composición se define desde prestaciones y condiciones de uso. Un mismo material puede funcionar de manera distinta si cambian la continuidad, los huecos, el clima o la posición de las capas.</p>"
       }
     },
     "criteria": {
@@ -166,22 +166,22 @@
         "a": {
           "type": "principle",
           "settings": {
-            "heading": "Espesor según proyecto",
-            "text": "Las soluciones de muro pueden variar ampliamente en espesor y distribución de capas. No existe un espesor estándar suficiente para todos los usos, climas y objetivos."
+            "heading": "Transmitancia y puentes térmicos",
+            "text": "La transmitancia U depende del conjunto de capas y de las heterogeneidades del muro. Montantes, encuentros y huecos pueden crear puentes térmicos que deben analizarse junto con el aislamiento."
           }
         },
         "b": {
           "type": "principle",
           "settings": {
-            "heading": "Transmitancia U y puentes térmicos",
-            "text": "El valor U del cerramiento completo no equivale a la resistencia R de un aislante aislado. Hay que incluir heterogeneidades y analizar puentes térmicos y huecos."
+            "heading": "Hermeticidad y ventilación",
+            "text": "Controlar infiltraciones no significa eliminar la ventilación. La capa de hermeticidad debe ser continua y la renovación de aire debe resolverse mediante la estrategia de ventilación prevista para el edificio."
           }
         },
         "c": {
           "type": "principle",
           "settings": {
-            "heading": "CTE y condensaciones",
-            "text": "La composición se valida para el emplazamiento y uso previstos mediante las exigencias aplicables del CTE y comprobaciones higrotérmicas cuando correspondan."
+            "heading": "Vapor, condensaciones y capacidad de secado",
+            "text": "La estrategia higrotérmica debe limitar condensaciones y humedad persistente. La posición de las capas de control no se universaliza: se comprueba para clima, uso, materiales y condiciones de contorno."
           }
         }
       },
@@ -191,8 +191,8 @@
         "c"
       ],
       "settings": {
-        "eyebrow": "03 · Espesores y prestaciones",
-        "heading": "La eficiencia se justifica sobre el conjunto del edificio"
+        "eyebrow": "03 · Prestaciones",
+        "heading": "El proyecto verifica el cerramiento completo"
       }
     },
     "faq": {
@@ -202,42 +202,42 @@
           "type": "question",
           "settings": {
             "question": "¿Qué capas suele tener un muro de entramado ligero?",
-            "answer": "<p>Habitualmente incorpora estructura de madera, rigidización, aislamiento térmico y acústico, control del aire y del vapor, protección frente al agua y revestimientos interior y exterior. El orden y las propiedades de las capas dependen de la composición proyectada.</p>"
+            "answer": "<p>Suele combinar estructura de madera, rigidización, aislamiento, capas de control de aire y humedad y revestimientos. Según el sistema pueden añadirse cámaras técnicas, aislamiento continuo o fachada ventilada. El orden exacto se define en el proyecto.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "¿Qué espesor debe tener un muro?",
-            "answer": "<p>No hay un espesor universal. Se define según cargas, uso previsto, zona climática, aislamiento, instalaciones y acabados. Los rangos genéricos solo sirven para una orientación preliminar y nunca sustituyen el proyecto.</p>"
+            "question": "¿Existe un orden fijo de capas válido para cualquier clima?",
+            "answer": "<p>No. La posición de las capas de control de vapor, la ventilación de cámaras y otras decisiones higrotérmicas dependen del clima, el uso interior, los materiales y la solución exterior. Copiar una sección tipo sin verificarla puede generar problemas.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿Cómo mejora el confort térmico?",
-            "answer": "<p>Mediante aislamiento continuo, reducción de puentes térmicos y juntas bien selladas. La temperatura y la calidad ambiental interior también dependen de ventilación, carpinterías, protección solar y climatización.</p>"
+            "question": "¿Qué espesor debe tener un muro?",
+            "answer": "<p>No hay un espesor universal. Se dimensiona según estructura, zona climática, objetivos térmicos y acústicos, instalaciones, acabados y detalles. El espesor es una consecuencia de la solución, no una prestación por sí mismo.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "¿La fibra de madera es siempre mejor en verano?",
-            "answer": "<p>No necesariamente. Su comportamiento depende de la solución completa, capacidad térmica, orientación, protección solar y ventilación. No debe prometerse confort estival por el nombre de un material aislante.</p>"
+            "question": "¿Qué aislamiento es mejor para entramado ligero?",
+            "answer": "<p>No existe una respuesta única. Deben compararse prestaciones térmicas, acústicas, comportamiento frente al fuego y humedad, densidad, formato, compatibilidad con la composición, documentación del producto y requisitos del proyecto.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "¿Se puede calcular el ahorro energético?",
-            "answer": "<p>Sí, sobre un edificio y unas hipótesis concretas, mediante evaluación energética. No existe un porcentaje fijo de ahorro que pueda atribuirse a todas las construcciones de entramado ligero.</p>"
+            "question": "¿Una casa hermética necesita ventilación?",
+            "answer": "<p>Sí. Reducir infiltraciones involuntarias permite controlar mejor la envolvente, pero la calidad del aire interior exige una ventilación prevista y dimensionada. Hermeticidad y ventilación son funciones distintas y complementarias.</p>"
           }
         },
         "q6": {
           "type": "question",
           "settings": {
-            "question": "¿Qué implica el CTE?",
-            "answer": "<p>El proyecto debe justificar las exigencias aplicables de seguridad estructural, energía, salubridad, acústica y seguridad en caso de incendio. La conformidad no depende de un único espesor ni de una sola capa.</p>"
+            "question": "¿Cómo se justifica el cumplimiento del CTE?",
+            "answer": "<p>Sobre el edificio concreto. Estructura, energía, salubridad, acústica y seguridad frente al fuego se comprueban con las soluciones y prestaciones del proyecto; no se justifican por declarar un espesor o un material aislante de forma aislada.</p>"
           }
         }
       },
@@ -251,26 +251,26 @@
       ],
       "settings": {
         "eyebrow": "Preguntas frecuentes",
-        "heading": "Espesores, aislamiento y ahorro energético",
-        "intro": "<p>Respuestas prácticas para evaluar el sistema sin confundir valores orientativos con prestaciones garantizadas.</p>"
+        "heading": "Capas, aislamiento y espesores: dudas habituales",
+        "intro": "<p>Respuestas para separar una composición de proyecto de una receta constructiva universal.</p>"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
-        "eyebrow": "Asesoramiento técnico",
-        "heading": "Define la composición adecuada para tu proyecto",
-        "text": "<p>Indícanos el uso, ubicación y superficie aproximada. Te orientaremos sobre espesores, materiales, soluciones de envolvente y el alcance de proyecto necesario, sin promesas genéricas de ahorro.</p>",
-        "label": "Solicitar asesoría técnica",
-        "link": "/pages/contact-ideas-exteriores"
+        "eyebrow": "Siguiente paso",
+        "heading": "Relaciona la envolvente con el uso y el modelo",
+        "text": "<p>Una vez entendidas las capas y sus funciones, revisa qué aplicaciones encajan con el sistema y cómo se define la compatibilidad de los modelos de entramado ligero.</p>",
+        "label": "Ver aplicaciones y modelos compatibles",
+        "link": "/pages/timber-frame-applications-compatible-models"
       }
     },
     "comfort": {
       "type": "ie-services-cards",
       "settings": {
-        "eyebrow": "04 · Bienestar interior",
-        "heading": "Confort térmico en invierno y verano",
-        "intro": "<p>Una envolvente correctamente ejecutada ayuda a reducir pérdidas de calor y ganancias no deseadas, pero el confort también depende de huecos, protección solar, ventilación, instalaciones y hábitos de uso.</p>"
+        "eyebrow": "04 · Confort y durabilidad",
+        "heading": "Una buena envolvente trabaja en invierno, en verano y frente a la humedad",
+        "intro": "<p>Aislar bien es solo una parte. El bienestar interior y la conservación de la estructura dependen también de continuidad, control solar, ventilación, huecos, instalaciones y una estrategia de agua y vapor coherente.</p>"
       },
       "blocks": {
         "a": {
@@ -279,8 +279,8 @@
             "image": "shopify://shop_images/light-timber-building-thermal-comfort-energy-savings_003.png",
             "image_alt": "Detalle de continuidad de aislamiento y reducción de puentes térmicos",
             "index": "01 · Continuidad",
-            "heading": "Menos puentes térmicos y fugas de aire",
-            "text": "<p>Resolver juntas, contornos de ventanas, esquinas y encuentros evita puntos fríos e infiltraciones no controladas. La hermeticidad no sustituye la ventilación prevista.</p>",
+            "heading": "Continuidad térmica y de hermeticidad",
+            "text": "<p>Juntas, contornos de huecos, esquinas y encuentros concentran buena parte del riesgo de pérdidas e infiltraciones. Diseñarlos y sellarlos con continuidad reduce puntos fríos y corrientes no controladas.</p>",
             "link_1_label": "",
             "link_1": "",
             "link_2_label": "",
@@ -295,8 +295,8 @@
             "image": "shopify://shop_images/light-timber-building-thermal-comfort-energy-savings_005.png",
             "image_alt": "Espacio interior confortable en vivienda de entramado ligero",
             "index": "02 · Uso cotidiano",
-            "heading": "Estabilidad térmica y confort de verano",
-            "text": "<p>El aislamiento aporta resistencia térmica; la orientación, el sombreado, la ventilación y las cargas internas condicionan especialmente el comportamiento estival.</p>",
+            "heading": "Verano: sombreado, huecos y ventilación importan tanto como el aislante",
+            "text": "<p>La protección solar, la orientación, el tamaño y prestaciones de las carpinterías, la ventilación y las cargas internas condicionan el sobrecalentamiento. Ningún aislante garantiza por sí solo el confort estival.</p>",
             "link_1_label": "",
             "link_1": "",
             "link_2_label": "",
@@ -311,8 +311,8 @@
             "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_001.png",
             "image_alt": "Láminas de protección de agua y regulación de vapor",
             "index": "03 · Durabilidad",
-            "heading": "Agua y vapor bajo control",
-            "text": "<p>La estanquidad exterior, la correcta posición de las capas de control de vapor y la capacidad de secado ayudan a limitar condensaciones y preservar la madera.</p>",
+            "heading": "Agua fuera; vapor controlado; secado posible",
+            "text": "<p>La protección frente a lluvia y salpicaduras debe coordinarse con la gestión del vapor y con vías de drenaje o ventilación cuando sean necesarias. La prioridad es evitar que la madera permanezca húmeda.</p>",
             "link_1_label": "",
             "link_1": "",
             "link_2_label": "",

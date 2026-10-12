@@ -7,28 +7,28 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Viviendas habituales"
+            "label": "Viviendas"
           }
         },
         "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Ampliaciones y rehabilitación"
+            "label": "Ampliaciones y anexos"
           }
         },
         "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Oficinas y estudios de jardín"
+            "label": "Oficinas y estudios"
           }
         },
         "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Anexos y módulos de uso específico"
+            "label": "Cómo elegir un modelo compatible"
           }
         }
       },
@@ -39,14 +39,14 @@
         "d"
       ],
       "settings": {
-        "eyebrow": "Entramado ligero · Aplicaciones",
-        "heading": "Aplicaciones del entramado ligero: viviendas, ampliaciones y espacios de jardín",
-        "lead": "<p>El entramado ligero de madera permite proyectar viviendas, ampliaciones, oficinas de jardín y anexos habitables con estructura modular y envolvente adaptable. La elección depende del uso, las condiciones de la parcela y las prestaciones requeridas: no todas las tipologías necesitan la misma solución.</p>",
-        "primary_label": "Ver casas de entramado ligero",
+        "eyebrow": "Entramado ligero · Aplicaciones y modelos",
+        "heading": "Aplicaciones y modelos compatibles con entramado ligero de madera",
+        "lead": "<p>El sistema puede resolver viviendas, ampliaciones, oficinas y anexos, pero la compatibilidad no se deduce solo por el aspecto o la superficie. Un modelo compatible debe estar definido para entramado ligero y adaptarse al uso, emplazamiento, prestaciones, cimentación, logística y alcance comercial del proyecto.</p>",
+        "primary_label": "Ver modelos de entramado ligero",
         "primary_link": "/collections/light-frame-houses",
         "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Qué vas a descubrir"
+        "summary_title": "Cómo orientarte"
       }
     },
     "principles": {
@@ -58,9 +58,9 @@
             "image": "shopify://shop_images/light-timber-building-common-applications_001.png",
             "image_alt": "Vivienda contemporánea construida con entramado ligero de madera",
             "index": "01 · Viviendas",
-            "heading": "Viviendas de entramado ligero",
-            "text": "<p>Adecuado para vivienda habitual cuando estructura, fuego, acústica, ventilación y eficiencia energética se justifican conforme al proyecto y la normativa aplicable.</p>",
-            "link_1_label": "Ver casas de entramado ligero",
+            "heading": "Vivienda habitual: el sistema debe resolver el edificio completo",
+            "text": "<p>Una vivienda exige justificar estructura, energía, salubridad, acústica, fuego, ventilación e instalaciones para su ubicación. El modelo base organiza la propuesta, pero las prestaciones se validan en el proyecto concreto.</p>",
+            "link_1_label": "Ver modelos de entramado ligero",
             "link_1": "/collections/light-frame-houses",
             "link_2_label": "",
             "link_2": "",
@@ -74,8 +74,8 @@
             "image": "shopify://shop_images/light-timber-building-common-applications_002.png",
             "image_alt": "Ampliación contemporánea de vivienda mediante estructura de madera",
             "index": "02 · Ampliaciones",
-            "heading": "Ampliaciones y rehabilitación",
-            "text": "<p>Su menor peso propio y la fabricación previa pueden ser útiles en determinadas ampliaciones. Es imprescindible comprobar la capacidad de la estructura existente, los apoyos, los encuentros y la viabilidad urbanística.</p>",
+            "heading": "Ampliaciones: menor peso puede ayudar, pero primero se comprueba el soporte",
+            "text": "<p>La construcción en seco y el peso propio relativamente bajo pueden ser ventajosos en ciertas ampliaciones. Deben verificarse estructura existente, cimentación, encuentros, impermeabilización, movimientos diferenciales y viabilidad urbanística.</p>",
             "link_1_label": "Ver diseño y asesoría",
             "link_1": "/pages/wood-3d-design-consulting",
             "link_2_label": "",
@@ -90,8 +90,8 @@
             "image": "shopify://shop_images/light-timber-building-common-applications_003.png",
             "image_alt": "Oficina independiente de madera junto al jardín",
             "index": "03 · Trabajo",
-            "heading": "Oficinas y estudios de jardín",
-            "text": "<p>Espacios de trabajo con aislamiento, luz natural, control solar, acústica e instalaciones definidos desde el diseño. Uso y permanencia determinan las exigencias del cerramiento.</p>",
+            "heading": "Oficinas y estudios: confort de uso, no solo cerramiento ligero",
+            "text": "<p>Un espacio de trabajo necesita aislamiento, control solar, ventilación, acústica, iluminación e instalaciones acordes con su ocupación. El tiempo de permanencia y el uso real determinan el nivel de prestación.</p>",
             "link_1_label": "Consultar el proyecto",
             "link_1": "/pages/contact-ideas-exteriores",
             "link_2_label": "",
@@ -106,8 +106,8 @@
             "image": "shopify://shop_images/light-timber-building-common-applications_004.png",
             "image_alt": "Anexo habitable independiente de entramado ligero",
             "index": "04 · Auxiliares",
-            "heading": "Anexos y estancias auxiliares",
-            "text": "<p>Una habitación extra, estudio o módulo vinculado a una vivienda puede ejecutarse mediante entramado ligero. Que sea auxiliar no elimina automáticamente las exigencias de licencia o edificación.</p>",
+            "heading": "Anexos habitables: «auxiliar» no significa exento de requisitos",
+            "text": "<p>Habitaciones, estudios o módulos vinculados a una vivienda pueden resolverse con entramado ligero. Licencia, habitabilidad, instalaciones y seguridad dependen de las características y de la normativa aplicable en cada emplazamiento.</p>",
             "link_1_label": "Solicitar asesoría técnica",
             "link_1": "/pages/contact-ideas-exteriores",
             "link_2_label": "",
@@ -124,9 +124,9 @@
         "annex"
       ],
       "settings": {
-        "eyebrow": "01 · Dónde encaja",
-        "heading": "Cuatro aplicaciones con necesidades distintas",
-        "intro": "<p>La versatilidad del sistema reside en adaptar el bastidor y la envolvente al proyecto, no en repetir la misma solución constructiva para todos los usos.</p>"
+        "eyebrow": "01 · Aplicaciones",
+        "heading": "El uso define las prestaciones antes que el catálogo",
+        "intro": "<p>El entramado ligero es versátil porque permite ajustar estructura y envolvente. Esa flexibilidad no significa que la misma solución sirva para todo: habitabilidad, ocupación, exposición, normativa e instalaciones cambian las exigencias.</p>"
       }
     },
     "process": {
@@ -136,32 +136,32 @@
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Uso y condiciones de la parcela",
-            "text": "Definimos ocupación, permanencia, superficie, accesos, orientación y requisitos urbanísticos del emplazamiento."
+            "heading": "Definir uso y condicionantes urbanísticos",
+            "text": "Se concreta vivienda, ampliación, trabajo o anexo, nivel de ocupación, ubicación, superficie deseada y condicionantes de licencia o parcela."
           }
         },
         "p2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Estructura y cimentación",
-            "text": "Se revisan cargas, modulación, anclajes, soporte existente cuando proceda y condicionantes de transporte y montaje."
+            "heading": "Comparar superficie, distribución y geometría",
+            "text": "Se filtran modelos por programa, número de estancias, dimensiones, huecos, cubierta y posibilidades de configuración dentro de una gama controlada."
           }
         },
         "p3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Envolvente e instalaciones",
-            "text": "Aislamiento, hermeticidad, humedad, carpinterías, acústica, instalaciones y protección solar se coordinan según uso."
+            "heading": "Comprobar prestaciones y envolvente",
+            "text": "Se revisan estructura, aislamiento, hermeticidad, humedad, fuego, acústica, carpinterías e instalaciones requeridas para el uso y clima."
           }
         },
         "p4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Proyecto, fabricación y montaje",
-            "text": "Definimos documentación, prestaciones verificables, fases de obra, acabados y alcance real de suministro o instalación."
+            "heading": "Cerrar base, logística y alcance comercial",
+            "text": "Cimentación, accesos, transporte, montaje, nivel de acabado, documentación y partidas incluidas o excluidas deben quedar claros antes de presupuestar."
           }
         }
       },
@@ -172,9 +172,9 @@
         "p4"
       ],
       "settings": {
-        "eyebrow": "02 · Del uso a la solución",
-        "heading": "Cómo valoramos cada aplicación antes de fabricar",
-        "intro": "<p>El alcance se define antes de escoger espesores, acabados y grado de prefabricación. El objetivo es ofrecer una propuesta técnicamente proporcionada y comercialmente clara.</p>"
+        "eyebrow": "02 · Cómo elegir",
+        "heading": "Del uso al modelo: cuatro filtros antes de pedir presupuesto",
+        "intro": "<p>La selección comercial debe conservar el contexto técnico. Primero se define para qué se necesita el espacio; después se comprueba qué modelo y configuración pueden responder a ese uso y a la parcela.</p>"
       }
     },
     "criteria": {
@@ -183,22 +183,22 @@
         "a": {
           "type": "principle",
           "settings": {
-            "heading": "Porches y pérgolas",
-            "text": "Son estructuras exteriores con funciones diferentes; una pérgola no es una vivienda de entramado ligero ni debe presentarse como el mismo paquete constructivo."
+            "heading": "Sistema constructivo definido",
+            "text": "La compatibilidad debe constar en la solución o ficha técnica del modelo. No se deduce porque el edificio sea prefabricado, ligero o tenga acabado de madera."
           }
         },
         "b": {
           "type": "principle",
           "settings": {
-            "heading": "Tarimas y pasarelas",
-            "text": "Utilizan subestructuras y detalles de drenaje propios, pero no equivalen a cerramientos portantes de entramado ligero."
+            "heading": "Prestaciones adaptables al proyecto",
+            "text": "Un modelo base organiza geometría y configuración, pero estructura y envolvente deben poder ajustarse y justificarse para uso, ubicación y exigencias reales sin desvirtuar el sistema."
           }
         },
         "c": {
           "type": "principle",
           "settings": {
-            "heading": "Módulos turísticos y comerciales",
-            "text": "Pueden ser viables mediante un sistema repetible, pero dependen de uso, licencia, evacuación, accesibilidad, salubridad y exigencias específicas."
+            "heading": "Alcance comercial trazable",
+            "text": "Debe quedar claro qué incluye el modelo —estructura, envolvente, acabados, transporte, montaje o documentación— y qué requiere validación, obra previa u oferta específica."
           }
         }
       },
@@ -208,8 +208,8 @@
         "c"
       ],
       "settings": {
-        "eyebrow": "03 · Límites y condiciones",
-        "heading": "No todas las estructuras ligeras son entramado ligero habitacional"
+        "eyebrow": "03 · Compatibilidad real",
+        "heading": "Qué significa que un modelo sea compatible con entramado ligero"
       }
     },
     "faq": {
@@ -218,50 +218,50 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "¿Sirve el entramado ligero para una vivienda principal?",
-            "answer": "<p>Sí, siempre que el edificio se proyecte y ejecute con las prestaciones y autorizaciones que correspondan a su uso y ubicación.</p>"
+            "question": "¿Cualquier modelo de madera puede ejecutarse con entramado ligero?",
+            "answer": "<p>No. Un modelo puede pertenecer a otro sistema estructural o requerir geometrías y luces que cambien su solución. La compatibilidad debe formar parte de la definición técnica del modelo, no inferirse por la estética.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "¿Se puede ampliar una vivienda existente con madera?",
-            "answer": "<p>En muchos casos es posible, pero deben verificarse las cargas, la cimentación o estructura de apoyo, las uniones y la viabilidad urbanística.</p>"
+            "question": "¿Dónde puedo ver los modelos compatibles de Ideas Exteriores?",
+            "answer": "<p>La colección de casas de entramado ligero reúne los modelos comercializados bajo este sistema. La configuración definitiva, las prestaciones y el alcance se revisan para el uso y emplazamiento concretos antes de cerrar presupuesto.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿Una oficina de jardín necesita licencia?",
-            "answer": "<p>Depende del municipio, características, superficie, instalaciones y uso. No debe asumirse que un módulo ligero o prefabricado está exento.</p>"
+            "question": "¿Sirve para una vivienda principal?",
+            "answer": "<p>Sí, cuando el proyecto y la ejecución justifican las prestaciones exigibles a una vivienda permanente y la solución elegida es compatible con el programa, la parcela y la normativa.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "¿Qué diferencia una caseta de un anexo habitable?",
-            "answer": "<p>El uso y los requisitos de habitabilidad, instalaciones y seguridad pueden ser muy distintos. El proyecto define qué solución es adecuada.</p>"
+            "question": "¿Se puede usar en una ampliación de una vivienda existente?",
+            "answer": "<p>En muchos casos sí, pero debe comprobarse la capacidad del soporte existente, la cimentación, los movimientos entre partes, las uniones, la impermeabilización y la viabilidad urbanística.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "¿Es un sistema adecuado para alojamientos turísticos?",
-            "answer": "<p>Puede utilizarse, pero las exigencias del uso turístico o comercial deben estudiarse específicamente; no basta con trasladar una solución de caseta de jardín.</p>"
+            "question": "¿Una oficina o estudio de jardín necesita licencia?",
+            "answer": "<p>Depende del municipio, superficie, instalaciones, permanencia y uso. Ser prefabricado o ligero no implica automáticamente quedar exento de licencia, comunicación u otras autorizaciones.</p>"
           }
         },
         "q6": {
           "type": "question",
           "settings": {
-            "question": "¿Las pérgolas y tarimas son entramado ligero?",
-            "answer": "<p>No necesariamente. Aunque compartan el uso de madera, sus sistemas resistentes y requisitos funcionales son distintos de los cerramientos de entramado ligero.</p>"
+            "question": "¿Pérgolas, porches y tarimas son modelos de entramado ligero?",
+            "answer": "<p>No por el mero hecho de ser de madera. Son soluciones con funciones, exposición y sistemas resistentes distintos. Pueden compartir materiales o proveedores, pero no deben presentarse como el mismo sistema habitacional.</p>"
           }
         },
         "q7": {
           "type": "question",
           "settings": {
-            "question": "¿Puedo elegir los mismos acabados en todas las aplicaciones?",
-            "answer": "<p>Hay opciones comunes, pero exposición, mantenimiento, protección contra humedad y fuego, acústica y uso previsto condicionan los materiales admisibles.</p>"
+            "question": "¿Puedo elegir cualquier acabado sobre un modelo compatible?",
+            "answer": "<p>No necesariamente. Peso, fijaciones, ventilación de fachada, comportamiento frente al fuego, humedad, mantenimiento y compatibilidad con las capas del cerramiento condicionan qué acabados pueden incorporarse sin revisar la solución.</p>"
           }
         }
       },
@@ -276,18 +276,18 @@
       ],
       "settings": {
         "eyebrow": "FAQ",
-        "heading": "Preguntas frecuentes sobre aplicaciones del entramado ligero",
-        "intro": "<p>Qué puede construirse y qué es necesario validar antes de elegir este sistema.</p>"
+        "heading": "Aplicaciones y modelos compatibles: preguntas frecuentes",
+        "intro": "<p>Cómo pasar de «quiero construir en madera» a una solución y un modelo que puedan presupuestarse con criterio.</p>"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
-        "eyebrow": "Asesoramiento técnico",
-        "heading": "Cuéntanos qué quieres construir y dónde",
-        "text": "<p>Indícanos el uso previsto, ubicación, medidas aproximadas y nivel de acabado. Te ayudaremos a valorar si el entramado ligero es la solución apropiada y qué pasos técnicos requiere.</p>",
-        "label": "Solicitar asesoría técnica",
-        "link": "/pages/contact-ideas-exteriores"
+        "eyebrow": "Modelos compatibles",
+        "heading": "Empieza por una referencia definida y configura desde ahí",
+        "text": "<p>Consulta la colección de entramado ligero y parte de un modelo identificable. Con superficie, uso, ubicación y nivel de acabado podremos contextualizar el presupuesto y las validaciones técnicas necesarias.</p>",
+        "label": "Ver modelos de entramado ligero",
+        "link": "/collections/light-frame-houses"
       }
     }
   },
