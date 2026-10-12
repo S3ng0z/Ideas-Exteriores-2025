@@ -8,7 +8,7 @@
           "settings": {
             "number": "01",
             "heading": "Terreno y agua",
-            "text": "Capacidad portante, rellenos, pendiente, drenaje y exposición a humedad o heladas."
+            "text": "Capacidad portante, rellenos, pendiente, nivel freático, escorrentías, drenaje y exposición a heladas."
           }
         },
         "criterion_2": {
@@ -16,42 +16,68 @@
           "settings": {
             "number": "02",
             "heading": "Uso y cargas",
-            "text": "Peso de la estructura, ocupación, viento, geometría, apoyos y posibles ampliaciones."
+            "text": "Peso propio, ocupación, viento, geometría, puntos de apoyo, acciones horizontales y posibles ampliaciones."
           }
         },
         "criterion_3": {
           "type": "criterion",
           "settings": {
             "number": "03",
-            "heading": "Acceso y montaje",
-            "text": "Entrada de maquinaria, replanteo, cotas, logística y secuencia de montaje."
+            "heading": "Obra y reversibilidad",
+            "text": "Excavación, hormigón, acceso de maquinaria, velocidad de ejecución y conveniencia de una solución desmontable o en seco."
+          }
+        },
+        "criterion_4": {
+          "type": "criterion",
+          "settings": {
+            "number": "04",
+            "heading": "Arranque de la madera",
+            "text": "Separación del terreno, salpicaduras, ventilación, corte capilar, corrosión de herrajes y detalle de anclaje."
           }
         },
         "system_1": {
           "type": "system",
           "settings": {
             "index": "01 · Superficie continua",
-            "heading": "Losa o solera de hormigón armado",
-            "text": "<p>Una base continua permite repartir cargas, controlar nivelación y coordinar pasos o encuentros antes del montaje. Su composición, armado, espesores y juntas deben responder al terreno, al uso y al proyecto.</p>",
-            "best_for": "Usos habitables, superficies medias o grandes y proyectos donde se necesita una plataforma continua y precisa."
+            "heading": "Losa de cimentación o base continua de hormigón",
+            "text": "<p>Cuando el proyecto necesita una plataforma continua, una losa de cimentación o una base de hormigón diseñada para las cargas permite repartir esfuerzos, controlar cotas y coordinar instalaciones y encuentros antes del montaje. Una solera convencional no debe confundirse automáticamente con una cimentación estructural: su función, espesor, armado, juntas y apoyo deben quedar definidos para el caso real.</p>",
+            "best_for": "Viviendas, módulos habitables, oficinas de jardín y estructuras cerradas de superficie media o grande cuando se requiere una plataforma continua y precisa."
           }
         },
         "system_2": {
           "type": "system",
           "settings": {
             "index": "02 · Apoyos puntuales",
-            "heading": "Zapatas aisladas y vigas de atado",
-            "text": "<p>Cuando la estructura descarga en pilares o apoyos definidos, una solución puntual puede concentrar el hormigón donde trabaja y mantener mayor ventilación bajo la construcción. El número, tamaño, unión y anclaje de los apoyos se dimensionan para cada caso.</p>",
-            "best_for": "Porches, pérgolas, estructuras elevadas y proyectos donde interesa limitar la superficie de obra húmeda."
+            "heading": "Zapatas aisladas, dados y vigas de atado",
+            "text": "<p>Si la estructura transmite las cargas mediante pilares o apoyos localizados, pueden plantearse zapatas o dados de hormigón, con vigas de atado o riostras cuando el cálculo y la geometría lo requieren. La solución reduce la superficie de hormigón respecto a una base continua y facilita mantener la madera elevada, pero cada apoyo debe dimensionarse según terreno y acciones.</p>",
+            "best_for": "Pérgolas, porches, cenadores, garajes ligeros y estructuras elevadas con puntos de apoyo claramente definidos."
           }
         },
         "system_3": {
           "type": "system",
           "settings": {
-            "index": "03 · Solución sobreelevada",
-            "heading": "Pilotes, micropilotes y apoyos modulares",
-            "text": "<p>En terrenos con pendiente, rellenos, acceso condicionado o necesidad de reducir excavación pueden estudiarse soluciones profundas o modulares. No son intercambiables: la elección depende de la estratigrafía, las cargas, la estabilidad lateral y la durabilidad del sistema.</p>",
-            "best_for": "Parcelas complejas, implantaciones sobreelevadas y determinados proyectos modulares, siempre sujetos a validación técnica."
+            "index": "03 · Cimentación en seco",
+            "heading": "Tornillos de cimentación",
+            "text": "<p>Los tornillos de cimentación transfieren las cargas al terreno mediante elementos metálicos atornillados y permiten ejecutar apoyos con poca obra húmeda. Existen soluciones para vigas de madera, pequeños edificios, construcción modular y aplicaciones de mayor carga. La elección no se hace por diámetro de forma aislada: deben comprobarse suelo, cargas, profundidad, corrosión, estabilidad lateral, unión superior y procedimiento de instalación del sistema especificado.</p>",
+            "best_for": "Casetas, terrazas, pérgolas, módulos y determinadas viviendas o ampliaciones cuando el terreno y la documentación técnica del sistema permiten una solución rápida, ajustable y con menor excavación."
+          }
+        },
+        "system_4": {
+          "type": "system",
+          "settings": {
+            "index": "04 · Sistema industrializado",
+            "heading": "Cimentación superficial prefabricada",
+            "text": "<p>Para estructuras ligeras pueden estudiarse sistemas prefabricados reutilizables que concentran el apoyo en piezas industrializadas y reducen la obra húmeda en parcela. Algunas soluciones disponen de Evaluación Técnica Europea específica para usos definidos. La selección debe respetar las prestaciones, geometrías, condiciones de terreno y procedimientos de instalación declarados para el sistema concreto.</p>",
+            "best_for": "Estructuras ligeras, módulos y actuaciones donde se valore una solución industrializada, desmontable o reutilizable, siempre dentro del campo de uso documentado."
+          }
+        },
+        "system_5": {
+          "type": "system",
+          "settings": {
+            "index": "05 · Cimentación profunda",
+            "heading": "Pilotes y micropilotes",
+            "text": "<p>Cuando las capas superficiales no ofrecen una respuesta adecuada o existen condicionantes geotécnicos relevantes, el proyecto puede requerir cimentaciones profundas que transmitan las cargas a estratos más competentes. No son una alternativa comercial equivalente a una zapata o a un tornillo de cimentación: requieren estudio geotécnico, cálculo, medios de ejecución y control específicos.</p>",
+            "best_for": "Terrenos complejos, rellenos de espesor relevante, cargas elevadas o situaciones en las que el proyecto justifique transmitir esfuerzos a mayor profundidad."
           }
         },
         "detail_1": {
@@ -59,31 +85,39 @@
           "settings": {
             "number": "01",
             "heading": "Corte capilar",
-            "text": "Separamos madera y soporte mineral con el detalle adecuado para limitar la transferencia de humedad."
+            "text": "El encuentro debe limitar la transferencia de humedad entre soportes minerales y elementos de madera mediante la solución de separación prevista."
           }
         },
         "detail_2": {
           "type": "detail",
           "settings": {
             "number": "02",
-            "heading": "Drenaje",
-            "text": "La evacuación del agua se plantea según pendiente, terreno, escorrentías y configuración de la parcela."
+            "heading": "Drenaje y escorrentías",
+            "text": "La base debe convivir con el agua real de la parcela: pendientes, evacuación, salpicaduras, acumulaciones y posibles cambios estacionales."
           }
         },
         "detail_3": {
           "type": "detail",
           "settings": {
             "number": "03",
-            "heading": "Ventilación",
-            "text": "En soluciones elevadas se preserva el paso de aire y se evitan encuentros que retengan humedad bajo la estructura."
+            "heading": "Ventilación y separación",
+            "text": "En soluciones elevadas preservamos el paso de aire y una distancia eficaz respecto al terreno para reducir humedad persistente en el arranque."
           }
         },
         "detail_4": {
           "type": "detail",
           "settings": {
             "number": "04",
-            "heading": "Anclaje",
-            "text": "Cotas y fijaciones se coordinan con la estructura para transmitir acciones y facilitar un montaje preciso."
+            "heading": "Bases metálicas regulables",
+            "text": "Soportes de poste regulables pueden elevar el pilar, facilitar el ajuste de cota y proteger frente a salpicaduras. Son elementos de conexión y apoyo: no sustituyen por sí solos la cimentación o el soporte resistente que los recibe."
+          }
+        },
+        "detail_5": {
+          "type": "detail",
+          "settings": {
+            "number": "05",
+            "heading": "Anclaje y acciones horizontales",
+            "text": "La unión madera-base debe transmitir compresión, tracción y cortante según el proyecto, además de ser compatible con el ambiente y la durabilidad exigida."
           }
         },
         "step_1": {
@@ -91,31 +125,31 @@
           "settings": {
             "number": "01",
             "heading": "Toma de datos",
-            "text": "Revisamos uso, dimensiones, terreno, accesos, pendiente, agua y condicionantes de montaje."
+            "text": "Reunimos uso, dimensiones, sistema de madera, parcela, accesos, pendiente, agua, fotografías y documentación disponible."
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Definición de solución",
-            "text": "Seleccionamos el sistema de apoyo y señalamos qué datos deben verificarse mediante estudio, cálculo o proyecto."
+            "heading": "Cribado de alternativas",
+            "text": "Comparamos base continua, apoyos de hormigón, cimentación en seco, sistemas prefabricados o cimentación profunda según restricciones reales."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Preparación y ejecución",
-            "text": "Se replantean cotas, se prepara el terreno y se ejecuta la base con los encuentros y previsiones acordados."
+            "heading": "Validación técnica",
+            "text": "Se identifican los datos que deben cerrarse mediante estudio geotécnico, cálculo estructural, documentación del sistema y proyecto cuando sean exigibles."
           }
         },
         "step_4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Control previo al montaje",
-            "text": "Comprobamos nivelación, alineación, puntos de apoyo, anclajes y condiciones necesarias antes de recibir la estructura."
+            "heading": "Ejecución y control para montaje",
+            "text": "Se replantean y verifican cotas, nivelación, apoyos, anclajes, drenaje y encuentros antes de recibir la estructura de madera."
           }
         }
       },
@@ -123,20 +157,56 @@
         "criterion_1",
         "criterion_2",
         "criterion_3",
+        "criterion_4",
         "system_1",
         "system_2",
         "system_3",
+        "system_4",
+        "system_5",
         "detail_1",
         "detail_2",
         "detail_3",
         "detail_4",
+        "detail_5",
         "step_1",
         "step_2",
         "step_3",
         "step_4"
       ],
-      "settings": {}
+      "settings": {
+        "eyebrow": "Bases, cimentaciones y apoyos para estructuras de madera",
+        "heading": "La solución de apoyo se elige por terreno, cargas, humedad y tipo de estructura",
+        "lead": "<p>No hay una base universal para una casa, una caseta, una pérgola o un módulo de madera. Comparamos soluciones de hormigón, cimentaciones en seco, sistemas prefabricados y apoyos especiales para definir una propuesta compatible con el terreno y con la estructura que realmente va a recibir.</p>",
+        "primary_label": "Evaluar mi terreno",
+        "secondary_label": "Comparar soluciones",
+        "quick_note": "Para una primera valoración envíanos ubicación, uso previsto, medidas aproximadas y 3–5 fotos de accesos, pendiente y zona de implantación. Si el proyecto lo exige, la solución final se cerrará con estudio geotécnico, cálculo y documentación técnica.",
+        "decision_title": "Qué condiciona la solución",
+        "intro_eyebrow": "Criterio antes que producto",
+        "intro_heading": "Cimentación, apoyo y base de poste no son lo mismo",
+        "intro_text": "<p>La cimentación transmite las acciones de la estructura al terreno. Sobre ella puede existir una losa, un dado, un cabezal o un elemento metálico que conecta con la madera. Los tornillos de cimentación y determinados sistemas prefabricados pueden formar parte de la propia cimentación; una base metálica regulable para un pilar, en cambio, es normalmente el elemento de conexión sobre un soporte resistente previamente resuelto. Separar estas funciones evita comparar soluciones que no hacen el mismo trabajo.</p>",
+        "best_for_label": "Suele encajar en",
+        "moisture_eyebrow": "Arranque y durabilidad",
+        "moisture_heading": "Separar la madera del agua es parte del sistema estructural",
+        "moisture_text": "<p>El DB-SE-M relaciona la durabilidad con el diseño constructivo y la exposición a humedad. Por eso el arranque no se resuelve solo con un herraje: drenaje, separación, ventilación, protección frente a salpicaduras, compatibilidad de materiales y anclajes deben trabajar como un conjunto.</p>",
+        "workflow_eyebrow": "Proceso de decisión",
+        "workflow_heading": "De la parcela a una base lista para montar",
+        "workflow_text": "<p>La secuencia correcta reduce improvisaciones: primero se entiende el terreno y la estructura; después se comparan alternativas; finalmente se validan y ejecutan los apoyos con las tolerancias que necesita el montaje.</p>",
+        "scope_eyebrow": "Alcance técnico",
+        "scope_heading": "Qué podemos orientar y qué debe quedar validado en proyecto",
+        "scope_in_heading": "En la valoración de la base",
+        "scope_in_text": "<ul><li>Identificación de alternativas viables según uso, geometría y parcela.</li><li>Coordinación entre base, estructura de madera, accesos y montaje.</li><li>Criterios de drenaje, separación del terreno, apoyos y encuentros.</li><li>Definición del alcance comercial y de la información necesaria para presupuestar.</li></ul>",
+        "scope_project_heading": "Sujeto a estudio, cálculo o documentación específica",
+        "scope_project_text": "<ul><li>Caracterización geotécnica y capacidad portante del terreno cuando sea exigible.</li><li>Dimensionado de losas, zapatas, pilotes, tornillos, anclajes y acciones laterales.</li><li>Prestaciones y límites de uso de sistemas con ETA, DoP o documentación del fabricante.</li><li>CTE, Código Estructural, normativa local, licencias y condiciones particulares del proyecto.</li></ul>",
+        "cta_eyebrow": "Siguiente paso",
+        "cta_heading": "Primero entendemos el terreno; después elegimos la base",
+        "cta_text": "<p>Envíanos ubicación, uso, dimensiones y fotografías. Te indicaremos qué alternativas merece la pena estudiar y qué datos adicionales harán falta antes de cerrar precio, proyecto o ejecución.</p>",
+        "cta_primary_label": "Enviar ubicación y fotos",
+        "cta_secondary_label": "Ver montaje profesional",
+        "cta_tertiary_label": "Ver proyectos y licencias"
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
