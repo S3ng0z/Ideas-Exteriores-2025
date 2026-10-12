@@ -1,0 +1,287 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Qué significa aquí “sistema europeo”"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Cómo se organiza el muro"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Cómo se resuelven uniones y movimientos"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Qué debe justificar el proyecto"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "settings": {
+        "eyebrow": "Sistema europeo · 01",
+        "heading": "Sistema europeo de madera: qué es y cómo funciona",
+        "lead": "<p>En esta guía, «sistema europeo» describe la solución comercial de muro de madera con pieza exterior perfilada y una capa técnica interior destinada a aislamiento, instalaciones y acabado. No es una categoría normativa europea universal: su comportamiento depende de la sección real del muro, las uniones, el control de humedad, los movimientos de la madera y el proyecto completo.</p>",
+        "primary_label": "Ver sistema europeo",
+        "primary_link": "/pages/european-timber-construction-system",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Claves para entender el sistema"
+      }
+    },
+    "principles": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Fundamentos",
+        "heading": "Un muro híbrido: madera exterior y capa técnica interior",
+        "intro": "<p>La lógica de esta solución combina una cara exterior de madera perfilada con una segunda zona interior capaz de alojar aislamiento, instalaciones y acabado. La configuración concreta debe leerse como un sistema completo, no como la suma de materiales independientes.</p>"
+      },
+      "blocks": {
+        "p1": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Composición",
+            "heading": "La madera exterior define imagen, geometría y parte del cerramiento",
+            "text": "<p>El perfil exterior puede resolverse con piezas rectas de madera maciza o laminada y juntas mecanizadas. Espesor, geometría de machihembrado, sellado y función estructural no son universales: deben corresponder al producto y al proyecto seleccionados.</p>",
+            "link_1_label": "Componentes, uniones y materiales",
+            "link_1": "/pages/european-timber-system-components-joints-materials",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "p2": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Capa técnica",
+            "heading": "Aislamiento e instalaciones se coordinan dentro del muro",
+            "text": "<p>La zona interior puede incorporar subestructura, aislamiento, capas de control de aire y humedad, pasos de instalaciones y revestimiento interior. El orden, los materiales y la continuidad de cada capa se definen según clima, uso y prestaciones exigidas.</p>",
+            "link_1_label": "Montaje y acabados",
+            "link_1": "/pages/european-timber-system-assembly-finishes",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "p3": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Sistema completo",
+            "heading": "Juntas, base, huecos y cubierta son tan importantes como el muro",
+            "text": "<p>Esquinas, arranque sobre cimentación, anclajes, ventanas, forjados y cubierta deben mantener estabilidad, estanqueidad y control de humedad. Los movimientos dimensionales previstos de la madera también condicionan encuentros y fijaciones.</p>",
+            "link_1_label": "Aplicaciones y modelos compatibles",
+            "link_1": "/pages/european-timber-system-applications-models",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ]
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Definir uso y prestaciones",
+            "text": "Establecer uso, geometría, clima, estructura, energía, humedad, acústica, fuego, instalaciones y nivel de acabado del edificio."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Definir la sección real del sistema",
+            "text": "Concretar perfil exterior, función estructural, aislamiento, subestructura, capas de control, cámara técnica, revestimientos y documentación del fabricante."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Resolver encuentros y movimientos",
+            "text": "Detallar cimentación, barrera capilar, anclajes, esquinas, huecos, forjados, cubierta, sellados y tolerancias o movimientos previstos de la madera."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Montar y verificar",
+            "text": "Controlar soporte, humedad, aplomado, fijaciones, continuidad de juntas y capas, penetraciones de instalaciones y protección antes de cerrar acabados."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "02 · De sistema a edificio",
+        "heading": "La precisión del montaje empieza en el detalle previo",
+        "intro": "<p>La prefabricación puede simplificar operaciones en parcela, pero solo cuando la sección, los encuentros, la logística y las instalaciones están definidos antes de fabricar y montar.</p>"
+      }
+    },
+    "criteria": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Denominación comercial",
+            "text": "«Sistema europeo» se utiliza aquí para identificar esta solución concreta de Ideas Exteriores y sus proveedores. No debe confundirse con una norma, certificación o tipología constructiva única de la Unión Europea."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "CTE y proyecto",
+            "text": "En España, el edificio debe justificar las exigencias aplicables de estructura, energía, salubridad, incendio y acústica. El sistema por sí solo no equivale a cumplimiento normativo."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Humedad y movimientos",
+            "text": "Protección frente a agua, barrera capilar, sellado de juntas, ventilación cuando proceda y movimientos higroscópicos de la madera deben resolverse de forma compatible con materiales y exposición."
+          }
+        },
+        "c4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Alcance comparable",
+            "text": "Antes de comparar ofertas, confirmar qué incluye el suministro: estructura, aislamiento, membranas, acabados, carpinterías, cubierta, base, transporte, montaje, instalaciones, proyecto y trámites pueden variar."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "eyebrow": "03 · Criterios de decisión",
+        "heading": "Qué conviene comprobar antes de elegir el sistema europeo"
+      }
+    },
+    "faq": {
+      "type": "ie-light-timber-faq",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué significa «sistema europeo» en Ideas Exteriores?",
+            "answer": "<p>Es la denominación comercial que usamos para una solución prefabricada de madera basada en un cerramiento exterior de piezas perfiladas y una capa técnica interior donde pueden integrarse aislamiento, instalaciones y acabado. No es una categoría normativa europea universal.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Es lo mismo que una casa nórdica de tronco macizo?",
+            "answer": "<p>No necesariamente. En una construcción de tronco macizo el propio muro de troncos puede constituir gran parte del cerramiento. En la solución descrita aquí se combina la madera exterior con una capa interior técnica. Además, los sistemas nórdicos industrializados utilizan perfiles, laminaciones y soluciones de asentamiento diferentes según fabricante.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿La pieza exterior de madera es siempre estructural?",
+            "answer": "<p>No debe suponerse. Su función depende de la configuración concreta, de la sección de las piezas, de los encuentros y de la solución estructural del edificio. La documentación técnica y el cálculo deben indicar qué elementos reciben y transmiten las cargas.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿El aislamiento interior garantiza el cumplimiento energético?",
+            "answer": "<p>No. El cumplimiento depende de la envolvente completa, la zona climática, los huecos, puentes térmicos, hermeticidad, instalaciones y demás parámetros del edificio. El espesor de una capa aislante aislada no demuestra por sí solo el cumplimiento del DB-HE.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo se integran las instalaciones?",
+            "answer": "<p>La capa interior puede reservar una cámara o subestructura para conducciones y registros, reduciendo intervenciones sobre la cara exterior. Los recorridos y penetraciones deben coordinarse antes del cierre para no comprometer estructura, estanqueidad o capas de control.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Hay que prever asentamientos o movimientos de la madera?",
+            "answer": "<p>Sí deben evaluarse los movimientos esperables, pero su magnitud no es universal. Depende de humedad, especie, geometría, tipo de pieza y fabricación. Los detalles de huecos, tabiques, instalaciones y encuentros deben ser compatibles con el sistema concreto.</p>"
+          }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué documentación debo pedir antes de comprar?",
+            "answer": "<p>Sección del muro y materiales, función estructural de cada elemento, detalles de juntas y anclajes, prestaciones declaradas, criterios de humedad y montaje, mantenimiento y alcance exacto del suministro. Para vivienda, además, debe coordinarse con el proyecto técnico y las justificaciones CTE aplicables.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "eyebrow": "FAQ",
+        "heading": "Preguntas básicas antes de pasar a componentes y montaje",
+        "intro": "<p>La clave es distinguir la lógica general del sistema de las prestaciones que solo pueden atribuirse a una configuración, un fabricante y un proyecto concretos.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Comprueba si el sistema europeo encaja con tu proyecto",
+        "text": "<p>Cuéntanos uso, ubicación, superficie, distribución y nivel de acabado. Podemos ayudarte a revisar la configuración compatible, el alcance de suministro y las comprobaciones técnicas necesarias antes de presupuestar.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "principles",
+    "process",
+    "criteria",
+    "faq",
+    "cta"
+  ]
+}
