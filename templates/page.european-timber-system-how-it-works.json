@@ -41,7 +41,7 @@
       "settings": {
         "eyebrow": "Sistema europeo · 01",
         "heading": "Sistema europeo de madera: qué es y cómo funciona",
-        "lead": "<p>En esta guía, «sistema europeo» describe la solución comercial de muro de madera con pieza exterior perfilada y una capa técnica interior destinada a aislamiento, instalaciones y acabado. No es una categoría normativa europea universal: su comportamiento depende de la sección real del muro, las uniones, el control de humedad, los movimientos de la madera y el proyecto completo.</p>",
+        "lead": "<p>En Ideas Exteriores, «sistema europeo» identifica una solución comercial de muro de madera con pieza exterior recta y perfilada más una capa técnica interior para aislamiento, instalaciones y acabado. No es una categoría normativa universal de la Unión Europea ni equivale automáticamente a cualquier casa de troncos: sus prestaciones dependen de la composición real, las uniones, el control de humedad, los movimientos de la madera y el proyecto completo.</p>",
         "primary_label": "Ver sistema europeo",
         "primary_link": "/pages/european-timber-construction-system",
         "secondary_label": "Solicitar asesoría técnica",
@@ -53,7 +53,7 @@
       "type": "ie-services-cards",
       "settings": {
         "eyebrow": "01 · Fundamentos",
-        "heading": "Un muro híbrido: madera exterior y capa técnica interior",
+        "heading": "Madera perfilada exterior + capa técnica interior: la lógica del sistema",
         "intro": "<p>La lógica de esta solución combina una cara exterior de madera perfilada con una segunda zona interior capaz de alojar aislamiento, instalaciones y acabado. La configuración concreta debe leerse como un sistema completo, no como la suma de materiales independientes.</p>"
       },
       "blocks": {
@@ -61,8 +61,8 @@
           "type": "service",
           "settings": {
             "index": "01 · Composición",
-            "heading": "La madera exterior define imagen, geometría y parte del cerramiento",
-            "text": "<p>El perfil exterior puede resolverse con piezas rectas de madera maciza o laminada y juntas mecanizadas. Espesor, geometría de machihembrado, sellado y función estructural no son universales: deben corresponder al producto y al proyecto seleccionados.</p>",
+            "heading": "La pieza exterior aporta geometría, acabado y una función que debe documentarse",
+            "text": "<p>La solución de referencia utiliza piezas rectas de madera perfilada, normalmente de conífera. La especie, clasificación resistente, sección, humedad, mecanizado y eventual función portante no se deducen del aspecto ni del nombre comercial: deben corresponder al sistema y al cálculo del proyecto.</p>",
             "link_1_label": "Componentes, uniones y materiales",
             "link_1": "/pages/european-timber-system-components-joints-materials",
             "link_2_label": "",
@@ -76,7 +76,7 @@
           "settings": {
             "index": "02 · Capa técnica",
             "heading": "Aislamiento e instalaciones se coordinan dentro del muro",
-            "text": "<p>La zona interior puede incorporar subestructura, aislamiento, capas de control de aire y humedad, pasos de instalaciones y revestimiento interior. El orden, los materiales y la continuidad de cada capa se definen según clima, uso y prestaciones exigidas.</p>",
+            "text": "<p>La zona interior permite incorporar subestructura, aislamiento, capas de control de aire y vapor cuando proceda, instalaciones y revestimiento. No existe una «cantidad de aislante» universal: la composición se define según clima, uso, prestaciones térmicas, humedad, fuego y acústica.</p>",
             "link_1_label": "Montaje y acabados",
             "link_1": "/pages/european-timber-system-assembly-finishes",
             "link_2_label": "",
@@ -89,8 +89,8 @@
           "type": "service",
           "settings": {
             "index": "03 · Sistema completo",
-            "heading": "Juntas, base, huecos y cubierta son tan importantes como el muro",
-            "text": "<p>Esquinas, arranque sobre cimentación, anclajes, ventanas, forjados y cubierta deben mantener estabilidad, estanqueidad y control de humedad. Los movimientos dimensionales previstos de la madera también condicionan encuentros y fijaciones.</p>",
+            "heading": "Juntas, huecos y cubierta deben admitir el comportamiento higroscópico de la madera",
+            "text": "<p>En construcciones derivadas del tronco, los encuentros deben mantener estabilidad y estanqueidad aunque cambien las dimensiones de la madera. Los sistemas nórdicos tradicionales contemplan asentamientos; existen productos industrializados no asentables, pero son tecnologías específicas y no deben atribuirse por defecto a esta solución comercial.</p>",
             "link_1_label": "Aplicaciones y modelos compatibles",
             "link_1": "/pages/european-timber-system-applications-models",
             "link_2_label": "",
@@ -130,7 +130,7 @@
           "settings": {
             "number": "03",
             "heading": "Resolver encuentros y movimientos",
-            "text": "Detallar cimentación, barrera capilar, anclajes, esquinas, huecos, forjados, cubierta, sellados y tolerancias o movimientos previstos de la madera."
+            "text": "Detallar cimentación, barrera capilar, anclajes, esquinas, huecos, forjados y cubierta; definir tolerancias y movimientos esperables del sistema real y evitar fijaciones rígidas incompatibles."
           }
         },
         "s4": {
@@ -161,28 +161,28 @@
           "type": "principle",
           "settings": {
             "heading": "Denominación comercial",
-            "text": "«Sistema europeo» se utiliza aquí para identificar esta solución concreta de Ideas Exteriores y sus proveedores. No debe confundirse con una norma, certificación o tipología constructiva única de la Unión Europea."
+            "text": "«Sistema europeo» se usa aquí como denominación comercial de esta familia de solución. No constituye una norma, un sello UE ni una tipología técnica única reconocida en toda Europa."
           }
         },
         "c2": {
           "type": "principle",
           "settings": {
             "heading": "CTE y proyecto",
-            "text": "En España, el edificio debe justificar las exigencias aplicables de estructura, energía, salubridad, incendio y acústica. El sistema por sí solo no equivale a cumplimiento normativo."
+            "text": "En España, el proyecto del edificio debe justificar las exigencias aplicables del CTE: estructura (DB-SE y DB-SE-M), energía (DB-HE), salubridad (DB-HS), incendio (DB-SI) y acústica (DB-HR)."
           }
         },
         "c3": {
           "type": "principle",
           "settings": {
             "heading": "Humedad y movimientos",
-            "text": "Protección frente a agua, barrera capilar, sellado de juntas, ventilación cuando proceda y movimientos higroscópicos de la madera deben resolverse de forma compatible con materiales y exposición."
+            "text": "El DB-SE-M vincula resistencia, durabilidad y detalles a las condiciones ambientales y clases de servicio. Agua, capilaridad, sellados y variaciones dimensionales deben resolverse antes de cerrar el sistema."
           }
         },
         "c4": {
           "type": "principle",
           "settings": {
             "heading": "Alcance comparable",
-            "text": "Antes de comparar ofertas, confirmar qué incluye el suministro: estructura, aislamiento, membranas, acabados, carpinterías, cubierta, base, transporte, montaje, instalaciones, proyecto y trámites pueden variar."
+            "text": "No comparar únicamente precio por m² de muro o de kit. Estructura, aislamiento, membranas, carpinterías, cubierta, cimentación, transporte, montaje, instalaciones, proyecto y acabados pueden tener alcances distintos."
           }
         }
       },
@@ -211,7 +211,7 @@
           "type": "question",
           "settings": {
             "question": "¿Es lo mismo que una casa nórdica de tronco macizo?",
-            "answer": "<p>No necesariamente. En una construcción de tronco macizo el propio muro de troncos puede constituir gran parte del cerramiento. En la solución descrita aquí se combina la madera exterior con una capa interior técnica. Además, los sistemas nórdicos industrializados utilizan perfiles, laminaciones y soluciones de asentamiento diferentes según fabricante.</p>"
+            "answer": "<p>No. La construcción nórdica de tronco puede utilizar muros macizos o laminados con detalles específicos de asentamiento. El sistema descrito aquí combina madera exterior perfilada con una capa técnica interior. Además, fabricantes nórdicos actuales ofrecen troncos laminados no asentables, que constituyen tecnologías propias.</p>"
           }
         },
         "q3": {
@@ -239,14 +239,14 @@
           "type": "question",
           "settings": {
             "question": "¿Hay que prever asentamientos o movimientos de la madera?",
-            "answer": "<p>Sí deben evaluarse los movimientos esperables, pero su magnitud no es universal. Depende de humedad, especie, geometría, tipo de pieza y fabricación. Los detalles de huecos, tabiques, instalaciones y encuentros deben ser compatibles con el sistema concreto.</p>"
+            "answer": "<p>Sí deben evaluarse. Puuinfo señala que en construcción de troncos los huecos, la cubierta y otras uniones deben admitir asentamientos y cambios dimensionales. La magnitud concreta depende del producto; si se emplea una tecnología no asentable debe acreditarse en su documentación.</p>"
           }
         },
         "q7": {
           "type": "question",
           "settings": {
             "question": "¿Qué documentación debo pedir antes de comprar?",
-            "answer": "<p>Sección del muro y materiales, función estructural de cada elemento, detalles de juntas y anclajes, prestaciones declaradas, criterios de humedad y montaje, mantenimiento y alcance exacto del suministro. Para vivienda, además, debe coordinarse con el proyecto técnico y las justificaciones CTE aplicables.</p>"
+            "answer": "<p>Sección completa del muro, especie y clasificación de la madera, función estructural de cada elemento, detalles de juntas y anclajes, prestaciones declaradas, instrucciones de montaje, criterios de humedad, mantenimiento y alcance de suministro. Una ETA/EAD o evaluación equivalente solo es relevante cuando corresponde al producto concreto; no es un certificado genérico del «sistema europeo».</p>"
           }
         }
       },
