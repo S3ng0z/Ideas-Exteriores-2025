@@ -1,0 +1,158 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {"type": "summary", "settings": {"number": "01", "label": "Qué es y cómo funciona"}},
+        "b": {"type": "summary", "settings": {"number": "02", "label": "Estructura, capas y aislamiento"}},
+        "c": {"type": "summary", "settings": {"number": "03", "label": "Montaje, durabilidad y sostenibilidad"}},
+        "d": {"type": "summary", "settings": {"number": "04", "label": "Aplicaciones y modelos compatibles"}}
+      },
+      "block_order": ["a", "b", "c", "d"],
+      "settings": {
+        "eyebrow": "Sistema constructivo · Paneles SIP",
+        "heading": "Paneles SIP para construir en madera: del sistema al proyecto",
+        "lead": "<p>Un panel SIP integra caras resistentes y un núcleo aislante en un elemento prefabricado. Para que el sistema funcione, paneles, uniones, apoyos, envolvente, instalaciones y montaje deben definirse como un conjunto. Esta guía ordena qué revisar, qué comparar y dónde profundizar antes de elegir un modelo o pedir presupuesto.</p>",
+        "primary_label": "Ver casas con paneles SIP",
+        "primary_link": "/collections/sip-panel-houses",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Recorrido técnico en 4 guías"
+      }
+    },
+    "guides": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Entender antes de comparar",
+        "heading": "Cuatro decisiones que definen un proyecto con paneles SIP",
+        "intro": "<p>El sistema no se reduce a «OSB + aislante» ni a una cifra de espesor. Conviene separar funcionamiento estructural, composición de la envolvente, ejecución y compatibilidad comercial para comparar soluciones equivalentes.</p>"
+      },
+      "blocks": {
+        "g1": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/structural-insulated-panel-system-how-it-works_001.png",
+            "image_alt": "Composición conceptual de un panel SIP para construcción en madera",
+            "index": "01 · Funcionamiento",
+            "heading": "Qué es un SIP y cómo trabaja",
+            "text": "<p>Entiende el comportamiento del panel compuesto, el papel de caras y núcleo, las uniones y por qué la capacidad final pertenece al sistema resistente completo, no a una capa aislada.</p>",
+            "link_1_label": "Qué es y cómo funciona",
+            "link_1": "/pages/what-are-sip-panels-how-they-work",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "g2": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/structural-insulated-panel-core-and-facings_002.png",
+            "image_alt": "Capas y encuentro de una envolvente construida con paneles SIP",
+            "index": "02 · Envolvente",
+            "heading": "Estructura, capas y aislamiento",
+            "text": "<p>Compara tableros, núcleo, adhesivos, espesores y capas complementarias junto con juntas, huecos y encuentros. La transmitancia, la hermeticidad y el riesgo de condensación se verifican sobre la solución completa.</p>",
+            "link_1_label": "Estructura, capas y aislamiento",
+            "link_1": "/pages/sip-panel-structure-layers-insulation",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "g3": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/structural-insulated-panel-manufacturing-and-assembly_003.png",
+            "image_alt": "Montaje de paneles SIP con control de juntas y protección frente a humedad",
+            "index": "03 · Ejecución",
+            "heading": "Montaje, durabilidad y sostenibilidad",
+            "text": "<p>La industrialización exige planos de fabricación, una base dentro de tolerancias, logística ordenada, protección frente al agua y sellado de juntas. La durabilidad y el impacto ambiental dependen del diseño, la ejecución y la evidencia disponible.</p>",
+            "link_1_label": "Montaje, durabilidad y sostenibilidad",
+            "link_1": "/pages/sip-panel-assembly-durability-sustainability",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "g4": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_001.png",
+            "image_alt": "Vivienda industrializada en madera compatible con sistema de paneles SIP",
+            "index": "04 · Aplicación",
+            "heading": "Aplicaciones y modelos compatibles",
+            "text": "<p>Relaciona el sistema con viviendas, estudios, oficinas o anexos y distingue compatibilidad técnica de alcance comercial. Kit, montaje, envolvente y llave en mano no son presupuestos equivalentes.</p>",
+            "link_1_label": "Aplicaciones y modelos compatibles",
+            "link_1": "/pages/sip-panel-applications-compatible-models",
+            "link_2_label": "Ver modelos SIP",
+            "link_2": "/collections/sip-panel-houses",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": ["g1", "g2", "g3", "g4"]
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "s1": {"type": "step", "settings": {"number": "01", "heading": "Definir uso y emplazamiento", "text": "Partir de uso, ubicación, geometría, cargas, clima, huecos y nivel de acabado para saber qué debe justificar el proyecto."}},
+        "s2": {"type": "step", "settings": {"number": "02", "heading": "Seleccionar un sistema documentado", "text": "Contrastar composición, capacidades, detalles de unión, prestaciones declaradas y limitaciones del fabricante, sin extrapolar datos de otro SIP."}},
+        "s3": {"type": "step", "settings": {"number": "03", "heading": "Coordinar interfaces antes de fabricar", "text": "Resolver base, apoyos, huecos, instalaciones, encuentros, transporte, almacenamiento y secuencia de montaje antes de cerrar el despiece."}},
+        "s4": {"type": "step", "settings": {"number": "04", "heading": "Comparar el mismo alcance", "text": "Normalizar qué incluye cada oferta: paneles o kit, montaje, cubierta, fachada, carpinterías, instalaciones, cimentación, transporte, proyecto y acabados."}}
+      },
+      "block_order": ["s1", "s2", "s3", "s4"],
+      "settings": {
+        "eyebrow": "02 · Del proyecto al presupuesto",
+        "heading": "La ventaja de industrializar empieza antes de llegar a obra",
+        "intro": "<p>La prefabricación puede concentrar trabajo en taller y reducir ajustes en parcela, pero exige más definición previa. El resultado depende de coordinar ingeniería, fabricación, logística y ejecución como un único proceso.</p>"
+      }
+    },
+    "criteria": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {"type": "principle", "settings": {"heading": "Prestación ≠ promesa comercial", "text": "Valor U, fuego, acústica, hermeticidad o resistencia estructural deben corresponder a la composición y al detalle realmente proyectados. Un dato de catálogo aislado no describe todo el edificio."}},
+        "c2": {"type": "principle", "settings": {"heading": "Rapidez ≠ plazo total", "text": "El montaje de paneles puede ser ágil, pero el calendario completo incluye proyecto, licencias, cimentación, fabricación, transporte, instalaciones, revestimientos, verificaciones y acabados."}},
+        "c3": {"type": "principle", "settings": {"heading": "Precio ≠ coste del panel", "text": "El €/m² del panel o del kit no es comparable con un presupuesto terminado. La referencia útil es el coste para un alcance equivalente y con inclusiones, exclusiones y condiciones de obra explícitas."}},
+        "c4": {"type": "principle", "settings": {"heading": "Sostenible ≠ automático", "text": "La eficiencia de uso, el origen de materiales, el carbono incorporado, la durabilidad, el mantenimiento y el fin de vida deben analizarse con datos del producto y del edificio, no por la etiqueta SIP."}}
+      },
+      "block_order": ["c1", "c2", "c3", "c4"],
+      "settings": {
+        "eyebrow": "03 · Criterio de compra",
+        "heading": "Cuatro atajos comerciales que conviene evitar"
+      }
+    },
+    "faq": {
+      "type": "ie-light-timber-faq",
+      "blocks": {
+        "q1": {"type": "question", "settings": {"question": "¿Qué es exactamente un panel SIP?", "answer": "<p>Es un panel estructural aislante prefabricado en el que dos caras resistentes trabajan unidas a un núcleo. La composición concreta varía según fabricante y sistema, por lo que no todos los SIP son iguales.</p>"}},
+        "q2": {"type": "question", "settings": {"question": "¿Todos los paneles SIP son OSB + EPS?", "answer": "<p>No. OSB y EPS forman una configuración habitual, pero existen otras caras y otros núcleos. Deben revisarse la ficha técnica, la documentación del sistema y su adecuación al uso previsto.</p>"}},
+        "q3": {"type": "question", "settings": {"question": "¿Se puede construir una vivienda habitual con SIP en España?", "answer": "<p>Sí, siempre que el edificio, el proyecto y la ejecución justifiquen las exigencias aplicables del CTE y la normativa urbanística correspondiente. Elegir SIP no sustituye esas comprobaciones.</p>"}},
+        "q4": {"type": "question", "settings": {"question": "¿Un sistema SIP aísla mejor por definición?", "answer": "<p>No existe una respuesta universal. El comportamiento térmico depende del núcleo, espesor, caras, capas adicionales y, sobre todo, de juntas, huecos, puentes térmicos y continuidad de la envolvente.</p>"}},
+        "q5": {"type": "question", "settings": {"question": "¿Construir con SIP es siempre más rápido?", "answer": "<p>La fabricación previa y el montaje en seco pueden reducir operaciones en parcela, pero el plazo total depende también de diseño, licencia, cimentación, fabricación, logística, instalaciones y acabados.</p>"}},
+        "q6": {"type": "question", "settings": {"question": "¿Es más barato construir con paneles SIP?", "answer": "<p>No necesariamente. Para comparar precios hay que igualar superficie, prestaciones y alcance: paneles, montaje, cubierta, fachada, carpinterías, instalaciones, cimentación, transporte, proyecto y acabados pueden estar incluidos o no.</p>"}},
+        "q7": {"type": "question", "settings": {"question": "¿Qué condiciona la durabilidad de un sistema SIP?", "answer": "<p>El diseño frente al agua, la protección durante transporte y montaje, el sellado de juntas, los detalles de fachada y cubierta, la posibilidad de secado, la ejecución y el mantenimiento son determinantes.</p>"}},
+        "q8": {"type": "question", "settings": {"question": "¿Cómo sé qué modelos de Ideas Exteriores son compatibles?", "answer": "<p>La compatibilidad debe estar declarada para el modelo y el alcance concretos; no se deduce solo por apariencia o tipología. Consulta la guía de aplicaciones y la colección SIP para relacionar sistema, modelo y modalidad de suministro.</p>"}}
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"],
+      "settings": {
+        "eyebrow": "FAQ",
+        "heading": "Preguntas clave antes de elegir paneles SIP",
+        "intro": "<p>Respuestas de primera decisión. Las cuatro guías técnicas desarrollan composición, cálculo, montaje, durabilidad, aplicaciones y alcance con mayor detalle.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Define sistema y alcance antes de pedir precio",
+        "text": "<p>Envíanos ubicación, uso, superficie aproximada, planos si existen y nivel de terminación esperado. Con esa base podemos orientar la solución, comprobar compatibilidad con nuestros modelos y preparar una comparación de alcance más útil.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": ["hero", "guides", "process", "criteria", "faq", "cta"]
+}
