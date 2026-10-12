@@ -1,0 +1,241 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Qué es y cómo funciona"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Estructura, capas y aislamiento"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Montaje, durabilidad y sostenibilidad"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Aplicaciones y modelos compatibles"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "settings": {
+        "eyebrow": "Sistema constructivo · Entramado ligero",
+        "heading": "Entramado ligero de madera para viviendas y espacios habitables",
+        "lead": "<p>El entramado ligero de madera —light timber frame— combina bastidores de montantes y soleras con tableros, fijaciones, aislamiento y capas de control para resolver estructura y envolvente de forma coordinada. La prefabricación puede trasladar trabajo al taller y ordenar el montaje, pero las prestaciones finales dependen de la composición, los encuentros, la ejecución y el proyecto concreto.</p>",
+        "primary_label": "Ver casas de entramado ligero",
+        "primary_link": "/collections/light-frame-houses",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Guía del sistema"
+      }
+    },
+    "guides": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "Entramado ligero · Guía completa",
+        "heading": "Cuatro decisiones para entender y especificar el sistema",
+        "intro": "<p>La página general concentra la intención del sistema y deriva cada cuestión a una guía específica. Así puedes avanzar desde los fundamentos hasta la elección de un modelo sin duplicar contenido ni confundir prestaciones potenciales con garantías universales.</p>"
+      },
+      "blocks": {
+        "guide_1": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-system-overview_001.png",
+            "image_alt": "Bastidor estructural de entramado ligero de madera",
+            "index": "01 · Fundamentos",
+            "heading": "Qué es y cómo funciona",
+            "text": "<p>Entiende cómo montantes, soleras, tableros, fijaciones, arriostramientos y anclajes trabajan como un conjunto estructural, y qué aporta la prefabricación cuando el proyecto llega correctamente definido.</p>",
+            "link_1_label": "Abrir guía",
+            "link_1": "/pages/what-is-light-timber-frame-construction",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "guide_2": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_003.png",
+            "image_alt": "Bastidor, tablero y capas de un cerramiento timber frame",
+            "index": "02 · Envolvente",
+            "heading": "Estructura, capas y aislamiento",
+            "text": "<p>Revisa bastidor, rigidización, aislamiento, hermeticidad, control de vapor, agua y revestimientos. La transmitancia, los puentes térmicos y el comportamiento higrotérmico pertenecen a la solución completa y a sus encuentros.</p>",
+            "link_1_label": "Abrir guía",
+            "link_1": "/pages/timber-frame-structure-layers-insulation",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "guide_3": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-installation-steps_003.png",
+            "image_alt": "Montaje de bastidores de entramado ligero en obra",
+            "index": "03 · Ejecución",
+            "heading": "Montaje, durabilidad y sostenibilidad",
+            "text": "<p>Conecta fabricación, logística, base, montaje y cierre de la envolvente con el control de humedad y el mantenimiento. La sostenibilidad se evalúa con origen, datos ambientales, vida útil y ciclo de vida, no con claims absolutos.</p>",
+            "link_1_label": "Abrir guía",
+            "link_1": "/pages/timber-frame-assembly-durability-sustainability",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "guide_4": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-common-applications_001.png",
+            "image_alt": "Vivienda contemporánea construida con entramado ligero de madera",
+            "index": "04 · Elección",
+            "heading": "Aplicaciones y modelos compatibles",
+            "text": "<p>Relaciona uso, prestaciones, parcela y alcance de suministro antes de pasar al catálogo. La compatibilidad con un modelo debe estar definida técnicamente; el sistema no debe convertirse en un catálogo duplicado.</p>",
+            "link_1_label": "Abrir guía",
+            "link_1": "/pages/timber-frame-applications-compatible-models",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "guide_1",
+        "guide_2",
+        "guide_3",
+        "guide_4"
+      ]
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Definir uso, ubicación y prestaciones",
+            "text": "Partir del uso real, clima, geometría, cargas, superficie y exigencias del edificio antes de decidir espesores, materiales o nivel de prefabricación."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Cerrar estructura y envolvente",
+            "text": "Coordinar bastidores, tableros, uniones, aislamiento, aire, vapor, agua, huecos e instalaciones como una solución calculada y documentada."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Preparar fabricación, base y montaje",
+            "text": "Resolver despiece, tolerancias, cimentación o apoyo, logística, protección frente a humedad, secuencia de montaje y comprobaciones antes de cerrar acabados."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Comparar modelo, alcance y presupuesto",
+            "text": "Validar compatibilidad del modelo y comparar incluidos equivalentes: estructura, envolvente, transporte, montaje, acabados, instalaciones, proyecto y trabajos previos."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "Del sistema al proyecto",
+        "heading": "La rapidez en obra empieza con decisiones cerradas antes de fabricar",
+        "intro": "<p>El valor de la construcción industrializada no está en acelerar una fase aislada, sino en trasladar decisiones al proyecto y coordinar fabricación, logística y montaje con menos improvisación en parcela.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Proyecto y CTE",
+            "text": "En España, el edificio debe justificar las exigencias aplicables de estructura, energía, salubridad, incendio y acústica. El DB-SE-M aporta criterios específicos para estructuras de madera; el sistema por sí solo no equivale a cumplimiento."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Prestaciones de la solución completa",
+            "text": "Aislamiento, hermeticidad, acústica y resistencia al fuego dependen de materiales, espesores, fijaciones, juntas y encuentros concretos. No deben inferirse por la etiqueta «entramado ligero»."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Humedad y durabilidad",
+            "text": "La durabilidad exige diseño constructivo frente al agua, separación del terreno cuando corresponda, drenaje, protección durante obra y capacidad de secado. Mantener la madera seca es un criterio de proyecto y ejecución."
+          }
+        },
+        "c4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Alcance comercial comparable",
+            "text": "Un precio solo es comparable cuando están claros cimentación o base, estructura, aislamiento, fachada, cubierta, carpinterías, transporte, montaje, instalaciones, proyecto, licencias y acabados incluidos o excluidos."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "eyebrow": "Criterios de decisión",
+        "heading": "Qué comprobar antes de elegir una solución timber frame"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Convierte el sistema en una solución concreta para tu proyecto",
+        "text": "<p>Indícanos uso, ubicación, superficie aproximada, estado del proyecto y alcance que necesitas. Te ayudamos a ordenar modelo, prestaciones, suministro, montaje y las validaciones técnicas previas al presupuesto.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "guides",
+    "process",
+    "confidence",
+    "cta"
+  ]
+}

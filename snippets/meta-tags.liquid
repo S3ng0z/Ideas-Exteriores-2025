@@ -55,6 +55,11 @@
     assign seo_description = 'Usos del sistema europeo de madera en viviendas y anexos, criterios de compatibilidad, alcance, proyecto y validación técnica de cada modelo.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'light-frame-construction-system'
+    assign seo_title = 'Entramado ligero de madera: sistema, capas y montaje'
+    assign seo_description = 'Guía del entramado ligero de madera: funcionamiento, estructura, aislamiento, montaje, durabilidad, aplicaciones y modelos compatibles para proyectos en España.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'what-is-light-timber-frame-construction'
     assign seo_title = 'Entramado ligero de madera: qué es y cómo funciona'
     assign seo_description = 'Guía del entramado ligero de madera: bastidores, tableros, uniones, aislamiento, montaje y criterios de proyecto para viviendas y anexos.'
