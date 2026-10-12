@@ -7,28 +7,28 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Viviendas y soluciones habitables"
+            "label": "Viviendas"
           }
         },
         "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Estudios y oficinas de jardín"
+            "label": "Estudios y oficinas"
           }
         },
         "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Casetas y módulos auxiliares"
+            "label": "Casetas y anexos"
           }
         },
         "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Modelos disponibles y validaciones"
+            "label": "Alcance, precio y compatibilidad"
           }
         }
       },
@@ -39,28 +39,33 @@
         "d"
       ],
       "settings": {
-        "eyebrow": "Paneles SIP · Aplicaciones y modelos",
+        "eyebrow": "Paneles SIP · 04",
         "heading": "Aplicaciones y modelos compatibles con paneles SIP",
-        "lead": "<p>Explora las aplicaciones habituales de los paneles estructurales aislados (SIP): viviendas, casetas, estudios y oficinas de jardín. Relacionamos cada uso con familias y modelos del catálogo, y explicamos qué debe comprobarse antes de elegir una solución. Los ejemplos de aplicación son orientativos, no obras ejecutadas acreditadas.</p>",
+        "lead": "<p>SIP puede utilizarse en viviendas y en construcciones auxiliares, pero el uso previsto determina exigencias, composición, instalaciones y documentación. Esta guía conecta cada aplicación con las familias reales del catálogo y explica cómo comparar alcance y prestaciones antes de elegir modelo.</p>",
         "primary_label": "Ver casas con paneles SIP",
         "primary_link": "/collections/sip-panel-houses",
         "secondary_label": "Solicitar asesoramiento",
         "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Contenido de la guía"
+        "summary_title": "Elige primero por uso"
       }
     },
     "principles": {
       "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Aplicaciones",
+        "heading": "El mismo sistema no convierte todos los edificios en el mismo producto",
+        "intro": "<p>Una vivienda permanente, una oficina climatizada y una caseta de almacenamiento pueden usar SIP, pero tienen requisitos funcionales y regulatorios muy distintos.</p>"
+      },
       "blocks": {
         "home": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_001.png",
-            "image_alt": "Ilustración de vivienda diseñada con envolvente SIP",
-            "index": "01 · Viviendas",
-            "heading": "Viviendas y casas prefabricadas",
-            "text": "<p>SIP puede emplearse en muros y cubiertas según un proyecto que justifique estructura, energía, salubridad, fuego, acústica y el resto de exigencias aplicables. Consulta los modelos publicados y su alcance de suministro.</p>",
-            "link_1_label": "Explorar casas SIP",
+            "image_alt": "Vivienda contemporánea diseñada con sistema SIP",
+            "index": "01 · Vivienda",
+            "heading": "Casas SIP: proyecto de edificio completo",
+            "text": "<p>La vivienda requiere justificar estructura, energía, salubridad, incendio, acústica, instalaciones y condiciones urbanísticas. El panel es una parte de la solución; cimentación, cubierta, fachada, carpinterías y sistemas técnicos completan el edificio.</p>",
+            "link_1_label": "Ver casas SIP",
             "link_1": "/collections/sip-panel-houses",
             "link_2_label": "",
             "link_2": "",
@@ -72,11 +77,11 @@
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_002.png",
-            "image_alt": "Ejemplo visual de estudio independiente con paneles SIP",
-            "index": "02 · Estudios",
-            "heading": "Oficinas y estudios de jardín",
-            "text": "<p>Espacios de trabajo independientes que requieren definir aislamiento, ventilación, control solar, instalaciones, acústica, acceso y uso previsto. Una caseta no adquiere habitabilidad solo por utilizar SIP.</p>",
-            "link_1_label": "Ver estudios y oficinas",
+            "image_alt": "Estudio u oficina de jardín con sistema SIP",
+            "index": "02 · Trabajo y estancia",
+            "heading": "Estudios y oficinas: confort durante muchas horas de uso",
+            "text": "<p>Para trabajo habitual importan aislamiento, control solar, ventilación, acústica, iluminación, instalaciones y uso urbanístico. No debe equipararse automáticamente con una caseta de jardín.</p>",
+            "link_1_label": "Ver estudios y oficinas SIP",
             "link_1": "/collections/sip-offices-and-studios",
             "link_2_label": "",
             "link_2": "",
@@ -88,14 +93,14 @@
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_003.png",
-            "image_alt": "Ejemplo visual de caseta auxiliar construida con paneles SIP",
-            "index": "03 · Casetas",
-            "heading": "Casetas, almacenamiento y espacios auxiliares",
-            "text": "<p>Para trasteros o recintos auxiliares pueden plantearse configuraciones distintas de las de una vivienda. Conviene comprobar cargas, humedad, anclajes y protección de los materiales.</p>",
-            "link_1_label": "Ver casetas SIP Smart Fit",
+            "image_alt": "Caseta auxiliar construida con paneles SIP",
+            "index": "03 · Uso auxiliar",
+            "heading": "Casetas y anexos: especificación proporcional al uso",
+            "text": "<p>Almacenamiento, taller o espacio ocasional pueden necesitar una solución diferente a la vivienda. Deben definirse cargas, humedad, ventilación, acabados, seguridad y permisos según el uso real.</p>",
+            "link_1_label": "Ver SIP Smart Fit",
             "link_1": "/collections/sip-smartfit-sheds",
-            "link_2_label": "",
-            "link_2": "",
+            "link_2_label": "Ver SIP Compact Kit",
+            "link_2": "/collections/sip-compactkit-sheds",
             "link_3_label": "",
             "link_3": ""
           }
@@ -105,94 +110,97 @@
         "home",
         "office",
         "shed"
-      ],
-      "settings": {
-        "eyebrow": "01 · Aplicaciones",
-        "heading": "Un sistema adaptable a distintos espacios y usos",
-        "intro": "<p>La utilidad de SIP depende del sistema de panel concreto, su función estructural, los encuentros, la envolvente completa y las necesidades del edificio. Estas son aplicaciones posibles, no garantías de compatibilidad automática.</p>"
-      }
+      ]
     },
     "process": {
       "type": "ie-services-process",
       "blocks": {
-        "a": {
+        "s1": {
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Determinar uso y emplazamiento",
-            "text": "Diferenciar vivienda, estudio, oficina, almacén o anexo; revisar suelo, clima, acceso y requerimientos urbanísticos."
+            "heading": "Definir el uso legal y real",
+            "text": "Determinar si será vivienda, oficina, estancia auxiliar, taller o almacenamiento y revisar las condiciones urbanísticas del emplazamiento."
           }
         },
-        "b": {
+        "s2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Elegir familia y modelo",
-            "text": "Comparar las referencias realmente publicadas: casas SIP, estudios/oficinas o casetas Smart Fit y Compact Kit."
+            "heading": "Comparar prestaciones necesarias",
+            "text": "Estructura, aislamiento, fuego, acústica, ventilación, humedad, instalaciones y acabados cambian según la ocupación y el clima."
           }
         },
-        "c": {
+        "s3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Verificar prestaciones y alcance",
-            "text": "Comprobar ficha de panel, estructura, aislamiento, encuentros, cubierta, carpinterías, montaje, acabados e instalaciones incluidos o excluidos."
+            "heading": "Comparar el alcance del suministro",
+            "text": "Distinguir paneles o kit, kit con montaje, cubierta y fachada, envolvente cerrada y solución llave en mano; no comparar precios con incluidos diferentes."
           }
         },
-        "d": {
+        "s4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Definir proyecto y presupuesto",
-            "text": "Ajustar cimentación, documentación técnica, licencias, transporte, ejecución y comprobaciones exigibles según el emplazamiento."
+            "heading": "Validar modelo, parcela y presupuesto",
+            "text": "Comprobar dimensiones, transporte, accesos, medios de descarga, cimentación, licencias, proyecto y partidas excluidas antes de contratar."
           }
         }
       },
       "block_order": [
-        "a",
-        "b",
-        "c",
-        "d"
+        "s1",
+        "s2",
+        "s3",
+        "s4"
       ],
       "settings": {
-        "eyebrow": "02 · Elección de modelo",
-        "heading": "Del uso previsto al sistema SIP adecuado",
-        "intro": "<p>Antes de seleccionar una referencia comercial, hay que alinear la aplicación con la documentación y los límites del sistema.</p>"
+        "eyebrow": "02 · Elección",
+        "heading": "Del uso a un modelo compatible, no al revés",
+        "intro": "<p>Los catálogos son un punto de partida. La compatibilidad final depende de emplazamiento, prestaciones, alcance y documentación.</p>"
       }
     },
     "criteria": {
       "type": "ie-services-confidence",
       "blocks": {
-        "a": {
+        "c1": {
           "type": "principle",
           "settings": {
-            "heading": "Casas SIP · HOME-SIP",
-            "text": "El catálogo incluye referencias publicadas como HOME-SIP ALICE (117 m² + terraza) y HOME-SIP LUNA (129 m² + terraza). Son productos de catálogo, no casos de obra terminada; las características y disponibilidad deben comprobarse en cada ficha."
+            "heading": "Panel o kit",
+            "text": "Puede incluir solo estructura y componentes del sistema. Confirmar transporte, herrajes, membranas, proyecto, montaje, cubierta y revestimientos."
           }
         },
-        "b": {
+        "c2": {
           "type": "principle",
           "settings": {
-            "heading": "Estudios y oficinas SIP",
-            "text": "La colección de estudios y oficinas SIP reúne las opciones disponibles para trabajar o disfrutar de un espacio independiente; deben verificarse individualmente dimensiones y prestaciones."
+            "heading": "Kit + montaje",
+            "text": "Añade mano de obra estructural, pero no implica necesariamente edificio terminado. Revisar qué trabajos previos y posteriores quedan a cargo del cliente."
           }
         },
-        "c": {
+        "c3": {
           "type": "principle",
           "settings": {
-            "heading": "Casetas SIP · Smart Fit / Compact Kit",
-            "text": "Las colecciones de casetas SIP son puntos de partida para usos auxiliares; no se presentan automáticamente como viviendas ni como espacios habitables."
+            "heading": "Envolvente terminada",
+            "text": "Puede incorporar cubierta, fachada o carpinterías según oferta. Aclarar nivel de estanqueidad, acabados, instalaciones y pruebas incluidas."
+          }
+        },
+        "c4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Llave en mano",
+            "text": "Debe describir de forma contractual cimentación, proyecto, licencias o gestión, instalaciones, acabados, transporte, impuestos, acometidas, dirección de obra y exclusiones."
           }
         }
       },
       "block_order": [
-        "a",
-        "b",
-        "c"
+        "c1",
+        "c2",
+        "c3",
+        "c4"
       ],
       "settings": {
-        "eyebrow": "03 · Catálogo compatible",
-        "heading": "Modelos SIP publicados y familias que puedes consultar"
+        "eyebrow": "03 · Alcance comercial",
+        "heading": "El precio solo es comparable cuando los incluidos también lo son"
       }
     },
     "faq": {
@@ -201,50 +209,43 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "¿Qué proyectos pueden construirse con paneles SIP?",
-            "answer": "<p>Viviendas, estudios, oficinas, casetas y algunos anexos pueden plantearse con sistemas SIP adecuados. El alcance depende del fabricante, la solución estructural y las exigencias del uso.</p>"
+            "question": "¿Qué aplicaciones SIP ofrece actualmente Ideas Exteriores?",
+            "answer": "<p>El catálogo incluye familias de casas SIP, estudios y oficinas SIP y casetas SIP. La disponibilidad concreta, medidas y características deben comprobarse en cada colección y ficha de producto.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "¿HOME-SIP ALICE y HOME-SIP LUNA son proyectos construidos?",
-            "answer": "<p>Son referencias publicadas en el catálogo de Ideas Exteriores. Su existencia como modelo comercial no acredita que se hayan ejecutado en una ubicación concreta.</p>"
+            "question": "¿Una caseta SIP puede convertirse en vivienda?",
+            "answer": "<p>No debe asumirse. El uso residencial exige proyecto, prestaciones, instalaciones y autorizaciones específicas; una referencia auxiliar puede no estar diseñada para ello.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿Las casetas SIP pueden utilizarse como vivienda?",
-            "answer": "<p>No debe asumirse. El uso habitable exige condiciones específicas de seguridad, salubridad, ventilación, instalaciones y autorizaciones.</p>"
+            "question": "¿Puedo personalizar un modelo?",
+            "answer": "<p>Depende de la referencia y del alcance comercial. Cualquier cambio de huecos, geometría o instalaciones debe revisarse antes de fabricación porque puede afectar estructura, despiece y precio.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "¿Un panel SIP garantiza un valor U o una calificación energética?",
-            "answer": "<p>No. El valor U depende de la composición completa; la calificación energética corresponde al edificio y debe verificarse para el proyecto concreto.</p>"
+            "question": "¿Por qué dos presupuestos SIP pueden tener precios muy diferentes?",
+            "answer": "<p>Porque pueden incluir alcances distintos: solo paneles, kit, transporte, montaje, cubierta, fachada, carpinterías, instalaciones, cimentación, proyecto o acabados. La comparación debe normalizar esas partidas.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "¿Qué diferencias hay entre un estudio y una caseta auxiliar?",
-            "answer": "<p>La ocupación, el nivel de acondicionamiento, el uso, las instalaciones y las exigencias normativas determinan la solución requerida.</p>"
+            "question": "¿Los precios publicados por otras empresas sirven como referencia?",
+            "answer": "<p>Solo como contexto comercial muy general. No deben trasladarse a otro proveedor o proyecto sin comprobar superficie, ubicación, calidad, sistema, incluidos, impuestos y fecha de la oferta.</p>"
           }
         },
         "q6": {
           "type": "question",
           "settings": {
-            "question": "¿Qué necesito para pedir un presupuesto?",
-            "answer": "<p>Uso previsto, ubicación, superficie aproximada, accesos, parcela, nivel de acabado y, si existe, documentación técnica o urbanística.</p>"
-          }
-        },
-        "q7": {
-          "type": "question",
-          "settings": {
-            "question": "¿Dónde puedo ver obras SIP realmente ejecutadas?",
-            "answer": "<p>Los proyectos ejecutados deben consultarse en la galería y comprobarse con documentación específica; las imágenes de esta guía ilustran aplicaciones y no son prueba de obra realizada.</p>"
+            "question": "¿Qué información facilita un presupuesto útil?",
+            "answer": "<p>Ubicación, uso, superficie, geometría o planos, estado de la parcela, accesos, nivel de acabado, instalaciones previstas y si necesitas kit, montaje, envolvente o solución completa.</p>"
           }
         }
       },
@@ -254,21 +255,20 @@
         "q3",
         "q4",
         "q5",
-        "q6",
-        "q7"
+        "q6"
       ],
       "settings": {
         "eyebrow": "FAQ",
-        "heading": "Preguntas habituales sobre usos y modelos SIP",
-        "intro": "<p>Información para elegir con criterio, sin confundir un proyecto tipo con una obra ejecutada.</p>"
+        "heading": "Aplicaciones y precios: comparar sin mezclar productos distintos",
+        "intro": "<p>La decisión comercial debe mantener el mismo rigor que la técnica: uso definido, alcance comparable y documentación clara.</p>"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Encuentra la solución SIP adecuada para tu proyecto",
-        "text": "<p>Indícanos el uso, ubicación, superficie y nivel de acabado. Te ayudaremos a identificar la familia o el modelo del catálogo más adecuado y las comprobaciones necesarias antes de presupuestar.</p>",
+        "heading": "Empieza por el uso, la parcela y el alcance",
+        "text": "<p>Indícanos qué quieres construir, dónde, qué superficie necesitas y hasta qué nivel quieres contratar. Te orientaremos hacia la familia SIP adecuada y las comprobaciones necesarias.</p>",
         "label": "Consultar mi proyecto",
         "link": "/pages/contact-ideas-exteriores"
       }
