@@ -1,18 +1,90 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "ie_light_frame_intro": {
-      "type": "ie-light-frame-collection",
+    "hero": {
+      "type": "ie-habitable-collection-hero",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "label": "Selecciona un modelo base por superficie y distribución"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "label": "Revisa el precio “desde” y el alcance indicado en la ficha"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "label": "Valida parcela, accesos, base, acabados y montaje"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
       "settings": {
-        "mode": "intro"
+        "breadcrumb_label": "Migas de pan",
+        "home_label": "Inicio",
+        "parent_label": "Productos",
+        "parent_link": "/pages/timber-products",
+        "eyebrow": "Viviendas en madera · Entramado ligero",
+        "heading": "Casas de entramado ligero",
+        "lead": "<p>Compara modelos de vivienda en madera por superficie, distribución y precio de partida. Elige un modelo base y revisa su alcance antes de validar parcela, acabados, logística y montaje.</p>",
+        "models_prefix": "Ver",
+        "models_suffix": "modelos",
+        "secondary_label": "Cómo trabajamos",
+        "secondary_link": "/pages/services",
+        "summary_title": "Antes de pedir presupuesto",
+        "summary_aria_label": "Pasos antes de pedir presupuesto"
+      }
+    },
+    "guide": {
+      "type": "ie-habitable-collection-guide",
+      "blocks": {
+        "criterion_1": {
+          "type": "criterion",
+          "settings": {
+            "number": "01 · MODELO",
+            "heading": "Empieza por superficie y distribución",
+            "text": "Compara tamaños y organización interior para reducir opciones antes de entrar en el detalle técnico del sistema."
+          }
+        },
+        "criterion_2": {
+          "type": "criterion",
+          "settings": {
+            "number": "02 · ALCANCE",
+            "heading": "Interpreta correctamente el “desde”",
+            "text": "El precio mostrado es una referencia inicial del modelo. La ficha debe concretar qué incluye y qué necesita validación para el proyecto."
+          }
+        },
+        "criterion_3": {
+          "type": "criterion",
+          "settings": {
+            "number": "03 · PROYECTO",
+            "heading": "Confirma las condiciones antes de cerrar",
+            "text": "Parcela, accesos, base o solera, logística, montaje, acabados y requisitos técnicos se revisan antes de preparar una propuesta definitiva."
+          }
+        }
+      },
+      "block_order": [
+        "criterion_1",
+        "criterion_2",
+        "criterion_3"
+      ],
+      "settings": {
+        "eyebrow": "Elegir con criterio",
+        "heading": "Del modelo al presupuesto: qué comparar",
+        "intro": "<p>Esta colección sirve para comparar viviendas reales. El entramado ligero explica cómo se construyen; el precio final y las prestaciones dependen del modelo, la configuración, la parcela y la justificación técnica del proyecto.</p>",
+        "link_label": "Entender el sistema de entramado ligero",
+        "link": "/pages/what-is-light-timber-frame-construction"
       }
     },
     "main": {
@@ -148,7 +220,7 @@
                     "show_tax_info": false,
                     "type_preset": "paragraph",
                     "width": "100%",
-                    "alignment": "center",
+                    "alignment": "left",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
@@ -167,7 +239,7 @@
                   "name": "t:names.swatches",
                   "settings": {
                     "product": "{{ closest.product }}",
-                    "product_swatches_alignment": "center",
+                    "product_swatches_alignment": "flex-start",
                     "product_swatches_alignment_mobile": "flex-start",
                     "hide_padding": false,
                     "product_swatches_padding_top": 4,
@@ -195,27 +267,36 @@
         "layout_type": "grid",
         "product_card_size": "large",
         "mobile_product_card_size": "large",
-        "product_grid_width": "full-width",
+        "product_grid_width": "centered",
         "full_width_on_mobile": true,
-        "columns_gap_horizontal": 16,
-        "columns_gap_vertical": 16,
+        "columns_gap_horizontal": 18,
+        "columns_gap_vertical": 28,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
         "color_scheme": "scheme-1",
         "padding-block-start": 20,
-        "padding-block-end": 48
+        "padding-block-end": 48,
+        "padding_block_start": 8,
+        "padding_block_end": 64
       }
     },
-    "ie_light_frame_outro": {
-      "type": "ie-light-frame-collection",
+    "cta": {
+      "type": "ie-habitable-collection-cta",
       "settings": {
-        "mode": "outro"
+        "eyebrow": "Siguiente paso",
+        "heading": "¿Ya tienes un modelo en mente?",
+        "text": "<p>Entra en su ficha para revisar superficie, distribución y alcance. Si necesitas orientación previa, consulta cómo trabajamos o habla con el equipo antes de solicitar presupuesto.</p>",
+        "primary_label": "Cómo trabajamos",
+        "primary_link": "/pages/services",
+        "secondary_label": "Hablar con el equipo",
+        "secondary_link": "/pages/contact-ideas-exteriores"
       }
     }
   },
   "order": [
-    "ie_light_frame_intro",
+    "hero",
+    "guide",
     "main",
-    "ie_light_frame_outro"
+    "cta"
   ]
 }
