@@ -35,6 +35,11 @@
     assign seo_description = 'Explora casas, casetas, estudios, pérgolas, porches, cenadores y tarimas. Compara familias de producto, sistemas, alcance, montaje y precio de partida.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'european-timber-construction-system'
+    assign seo_title = 'Sistema europeo de madera: guía de construcción y montaje'
+    assign seo_description = 'Guía del sistema europeo de madera: funcionamiento, componentes, uniones, aislamiento, montaje, acabados y aplicaciones con criterios técnicos para España.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'european-timber-system-how-it-works'
     assign seo_title = 'Sistema europeo de madera: qué es y cómo funciona'
     assign seo_description = 'Guía del sistema europeo de madera: muro exterior perfilado, capa técnica interior, aislamiento, uniones, humedad y criterios de proyecto en España.'
