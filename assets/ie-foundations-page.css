@@ -227,6 +227,12 @@
   gap: 18px;
 }
 
+.ie-foundations__systems > h2 {
+  margin: 0 0 18px;
+  max-width: 920px;
+}
+
+
 .ie-foundations__system {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(340px, .92fr);
