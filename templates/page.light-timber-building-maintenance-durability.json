@@ -59,7 +59,7 @@
             "image_alt": "Replanteo y preparación de la base para una construcción de entramado ligero",
             "index": "01 · Preparar",
             "heading": "Base, replanteo y logística deben estar cerrados antes del montaje",
-            "text": "<p>Se verifican cotas, nivelación, apoyos, anclajes, barreras capilares, drenaje, accesos y zonas de acopio o izado. Corregir la base después de recibir los paneles penaliza precisión y secuencia.</p>",
+            "text": "<p>Se verifican cotas, nivelación, apoyos, anclajes, barreras capilares, drenaje, accesos, zonas de acopio o izado y almacenamiento protegido. Corregir la base después de recibir los paneles, o exponer componentes a humedad innecesaria, penaliza precisión, secuencia y durabilidad.</p>",
             "link_1_label": "Bases y soleras",
             "link_1": "/pages/timber-bases-and-foundations",
             "link_2_label": "",
@@ -344,7 +344,7 @@
       "settings": {
         "eyebrow": "04 · Sostenibilidad",
         "heading": "Sostenibilidad verificable: origen, durabilidad, carbono y circularidad",
-        "intro": "<p>La madera puede formar parte de soluciones de menor impacto, pero la comparación debe considerar origen, cantidad de material, fabricación, transporte, energía de uso, mantenimiento, vida útil y fin de vida. La prioridad es conservar prestaciones durante mucho tiempo y evitar sustituciones innecesarias.</p>"
+        "intro": "<p>La madera puede formar parte de soluciones de menor impacto, pero la comparación debe considerar origen, cantidad de material, fabricación, transporte, energía de uso, mantenimiento, vida útil y fin de vida. Cuando haya que comparar alternativas, conviene utilizar datos equivalentes —por ejemplo EPD y análisis de ciclo de vida coherentes con el proyecto— y no una afirmación genérica asociada al material.</p>"
       }
     },
     "faq": {
