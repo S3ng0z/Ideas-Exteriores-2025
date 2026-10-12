@@ -3,102 +3,102 @@
     "hero": {
       "type": "ie-services-hero",
       "blocks": {
-        "summary_1": {
+        "a": {
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Ingeniería, fabricación y logística"
+            "label": "Despiece, fabricación y logística"
           }
         },
-        "summary_2": {
+        "b": {
           "type": "summary",
           "settings": {
             "number": "02",
             "label": "Montaje y control de juntas"
           }
         },
-        "summary_3": {
+        "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Durabilidad, mantenimiento y garantías"
+            "label": "Humedad, uso y mantenimiento"
           }
         },
-        "summary_4": {
+        "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Materiales, certificaciones y ciclo de vida"
+            "label": "Sostenibilidad demostrable"
           }
         }
       },
       "block_order": [
-        "summary_1",
-        "summary_2",
-        "summary_3",
-        "summary_4"
+        "a",
+        "b",
+        "c",
+        "d"
       ],
       "settings": {
-        "eyebrow": "Paneles SIP · Montaje, durabilidad y sostenibilidad",
+        "eyebrow": "Paneles SIP · 03",
         "heading": "Montaje, durabilidad y sostenibilidad de los paneles SIP",
-        "lead": "<p>Desde el despiece y la fabricación hasta la instalación, la vida útil y la evaluación ambiental: descubre cómo se ejecuta un sistema SIP, qué controles protegen su durabilidad y qué documentación permite valorar sus garantías y sostenibilidad. Todo depende del panel elegido, del proyecto y de la correcta resolución de los encuentros.</p>",
+        "lead": "<p>El rendimiento de un sistema SIP depende tanto de su fabricación como de la instalación y de cómo se mantiene seco y protegido durante su vida útil. Esta guía reúne planificación, manipulación, montaje, control de humedad, mantenimiento y criterios para evaluar sostenibilidad sin afirmaciones genéricas.</p>",
         "primary_label": "Ver casas con paneles SIP",
         "primary_link": "/collections/sip-panel-houses",
         "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Qué encontrarás"
+        "summary_title": "Del taller a la vida útil"
       }
     },
     "mounting_overview": {
       "type": "ie-services-cards",
       "settings": {
-        "eyebrow": "01 · Fabricación e instalación",
-        "heading": "Del modelo técnico al montaje controlado",
-        "intro": "<p>La industrialización exige definir geometría, componentes, uniones, documentación y logística antes de llegar a parcela. No elimina los controles estructurales ni de estanqueidad.</p>"
+        "eyebrow": "01 · Preparación",
+        "heading": "Un montaje rápido exige documentación y logística previas",
+        "intro": "<p>Los manuales profesionales de SIP insisten en planos de fabricación, instrucciones del sistema y control de almacenamiento. La velocidad en obra se gana resolviendo antes el despiece.</p>"
       },
       "blocks": {
-        "b0": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/structural-insulated-panel-manufacturing-and-assembly_002.png",
-            "image_alt": "Fabricación y mecanizado industrial de paneles SIP",
-            "index": "01 · Ingeniería",
-            "heading": "Diseño, despiece y fabricación en taller",
-            "text": "<p>El proyecto define paneles, huecos, uniones, anclajes y pasos previstos. La producción y mecanizado deben responder a las prestaciones y tolerancias documentadas del sistema.</p>",
-            "link_1_label": "Qué son los paneles SIP",
-            "link_1": "/pages/structural-insulated-panel-system-how-it-works",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        },
-        "b1": {
+        "m1": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/structural-insulated-panel-manufacturing-and-assembly_003.png",
-            "image_alt": "Montaje de paneles SIP sobre base preparada",
-            "index": "02 · Montaje",
-            "heading": "Logística, base y colocación de paneles",
-            "text": "<p>Se comprueban accesos, descarga, cimentación y nivelación; se ejecutan arranques protegidos de la humedad, se colocan muros y se resuelven forjados o cubierta según proyecto y capacidad del panel.</p>",
-            "link_1_label": "Bases y soleras",
-            "link_1": "/pages/timber-bases-and-foundations",
+            "image_alt": "Paneles SIP identificados y preparados para logística",
+            "index": "01 · Despiece",
+            "heading": "Planos de taller y piezas identificadas",
+            "text": "<p>Los shop drawings o planos de fabricación ordenan tamaños, huecos, apoyos, refuerzos, uniones y secuencia. Son la referencia para mecanizado y montaje, y deben coordinarse con estructura, arquitectura e instalaciones.</p>",
+            "link_1_label": "Estructura, capas y aislamiento",
+            "link_1": "/pages/sip-panel-structure-layers-insulation",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
             "link_3": ""
           }
         },
-        "b2": {
+        "m2": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/structural-insulated-panel-manufacturing-and-assembly_006.png",
+            "image_alt": "Control de montaje de paneles SIP en obra",
+            "index": "02 · Obra",
+            "heading": "Base, apoyos y fijaciones dentro de tolerancia",
+            "text": "<p>Antes de levantar paneles se comprueban nivel, dimensiones, humedad y condiciones del soporte. Aplomado, fijaciones y anclajes deben seguir planos e instrucciones del sistema; corregir una base deficiente durante el montaje genera retrabajo y riesgo.</p>",
+            "link_1_label": "Qué son y cómo funcionan",
+            "link_1": "/pages/what-are-sip-panels-how-they-work",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "m3": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/structural-insulated-panel-manufacturing-and-assembly_005.png",
-            "image_alt": "Detalles y ejecución de cerramientos con paneles SIP",
+            "image_alt": "Sellado de juntas y encuentros en sistema SIP",
             "index": "03 · Cierre",
-            "heading": "Juntas, hermeticidad, instalaciones y acabados",
-            "text": "<p>Las juntas y encuentros se sellan siguiendo el sistema aprobado. Los recorridos de instalaciones se coordinan sin comprometer caras resistentes ni núcleo, y se comprueban impermeabilización, vapor, fuego y acústica antes del acabado.</p>",
-            "link_1_label": "Capas y aislamiento SIP",
-            "link_1": "/pages/structural-insulated-panel-core-and-facings",
+            "heading": "Sellar, proteger y comprobar antes de tapar",
+            "text": "<p>Las juntas son críticas para aire, agua y durabilidad. Se revisan sellantes, cintas o membranas especificadas, encuentros con huecos y penetraciones, y protección exterior antes de ocultarlos con acabados.</p>",
+            "link_1_label": "Aplicaciones y modelos",
+            "link_1": "/pages/sip-panel-applications-compatible-models",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
@@ -107,199 +107,118 @@
         }
       },
       "block_order": [
-        "b0",
-        "b1",
-        "b2"
+        "m1",
+        "m2",
+        "m3"
       ]
     },
     "mounting_process": {
       "type": "ie-services-process",
       "blocks": {
-        "s0": {
-          "type": "step",
-          "settings": {
-            "number": "01",
-            "heading": "Proyecto técnico y despiece",
-            "text": "Se verifican cargas, prestaciones, huecos, detalles de unión, dimensiones, sistemas compatibles y exigencias del CTE."
-          }
-        },
         "s1": {
           "type": "step",
           "settings": {
-            "number": "02",
-            "heading": "Producción y control en taller",
-            "text": "Se preparan paneles y mecanizados, identificando piezas y comprobando el producto frente a su documentación técnica."
+            "number": "01",
+            "heading": "Fabricar según documentación",
+            "text": "Mecanizar paneles, huecos y uniones a partir del despiece aprobado y mantener trazabilidad de materiales y piezas."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
-            "number": "03",
-            "heading": "Transporte y preparación de parcela",
-            "text": "Se coordinan embalaje, almacenamiento protegido, medios de elevación, accesos, replanteo y estado de la cimentación."
+            "number": "02",
+            "heading": "Transportar y almacenar secos",
+            "text": "Proteger los paneles de lluvia, agua estancada, golpes y contacto inadecuado con el terreno; organizar descarga según la secuencia de montaje."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
-            "number": "04",
-            "heading": "Montaje de suelos, muros y cubierta",
-            "text": "Se fijan apoyos y anclajes, se alinean los paneles y se ejecutan uniones, estructura complementaria y cubierta según cálculo."
+            "number": "03",
+            "heading": "Montar y arriostrar",
+            "text": "Colocar paneles sobre soportes verificados, controlar aplomado y fijaciones y mantener estabilización temporal hasta completar el sistema resistente."
           }
         },
         "s4": {
           "type": "step",
           "settings": {
-            "number": "05",
-            "heading": "Juntas, instalaciones y acabados",
-            "text": "Se protegen bordes del agua, se controla hermeticidad y se integran instalaciones, fachadas y soluciones de seguridad contra incendios."
-          }
-        },
-        "s5": {
-          "type": "step",
-          "settings": {
-            "number": "06",
-            "heading": "Inspección, entrega y documentación",
-            "text": "Se revisan elementos sensibles, acabados, evacuación de agua y prestaciones; se entrega la documentación de uso y conservación aplicable."
+            "number": "04",
+            "heading": "Cerrar la envolvente y registrar",
+            "text": "Completar juntas, membranas, cubierta y fachada; revisar penetraciones y documentar incidencias y comprobaciones antes de cerrar acabados."
           }
         }
       },
       "block_order": [
-        "s0",
         "s1",
         "s2",
         "s3",
-        "s4",
-        "s5"
+        "s4"
       ],
       "settings": {
-        "eyebrow": "Secuencia de ejecución",
-        "heading": "Seis etapas para fabricar, montar y entregar",
-        "intro": "<p>El detalle de la secuencia y los medios de montaje varían según fabricante, tipología y documentación técnica; estos controles deben adaptarse al proyecto real.</p>"
+        "eyebrow": "02 · Secuencia de obra",
+        "heading": "Cuatro controles que protegen la calidad del sistema",
+        "intro": "<p>Las instrucciones del fabricante y los detalles específicos del proyecto prevalecen sobre cualquier esquema genérico de montaje.</p>"
       }
     },
     "durability": {
-      "type": "ie-services-cards",
-      "settings": {
-        "eyebrow": "02 · Vida útil y mantenimiento",
-        "heading": "La durabilidad depende de una envolvente seca y registrable",
-        "intro": "<p>Una estructura SIP protegida y mantenida puede prestar servicio durante décadas, sin que exista una cifra universal. El agua persistente, los encuentros inadecuados y los cambios sin comprobación técnica son riesgos críticos.</p>"
-      },
-      "blocks": {
-        "b0": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/structural-insulated-panel-durability-warranty-maintenance_002.png",
-            "image_alt": "Protección de paneles SIP frente a humedad en sus encuentros",
-            "index": "01 · Agua",
-            "heading": "Proteger núcleo, cantos y juntas frente a humedad persistente",
-            "text": "<p>El proyecto debe prever separación del terreno, drenajes, protecciones de fachada y cubierta, tapajuntas y detalles compatibles de difusión de vapor. Las filtraciones deben diagnosticarse y corregirse sin demora.</p>",
-            "link_1_label": "Tratamientos y protección",
-            "link_1": "/pages/wood-treatment-protection",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        },
-        "b1": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/structural-insulated-panel-durability-warranty-maintenance_004.png",
-            "image_alt": "Mantenimiento y revisión periódica de una construcción SIP",
-            "index": "02 · Revisión",
-            "heading": "Mantenimiento preventivo de cerramientos y acabados",
-            "text": "<p>Conviene revisar de forma periódica cubierta, canalones, bajantes, juntas, sellados, zócalos, carpinterías y revestimientos; la frecuencia depende de exposición y fabricante. Se renuevan los acabados cuando corresponde.</p>",
-            "link_1_label": "Mantenimiento y reparación",
-            "link_1": "/pages/wood-maintenance-repair",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        },
-        "b2": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/structural-insulated-panel-durability-warranty-maintenance_006.png",
-            "image_alt": "Detalles de mantenimiento y protección de paneles SIP",
-            "index": "03 · Garantías",
-            "heading": "Reparabilidad, garantías y documentación de entrega",
-            "text": "<p>Una incidencia requiere localizar la causa y comprobar el estado de caras, adhesivos, núcleo y conexiones antes de reparar o sustituir. Las garantías efectivas dependen de ley aplicable, contrato, producto, condiciones de uso y documentación entregada.</p>",
-            "link_1_label": "Garantías y entrega",
-            "link_1": "/pages/warranty-delivery-payment-options",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2"
-      ]
-    },
-    "durability_criteria": {
       "type": "ie-services-confidence",
       "blocks": {
-        "c0": {
+        "d1": {
           "type": "principle",
           "settings": {
-            "heading": "Humedad y condensaciones",
-            "text": "Proteger cantos, apoyos, huecos y penetraciones; comprobar agua líquida, vapor, secado y evacuación de pluviales."
+            "heading": "Agua fuera del sistema",
+            "text": "La durabilidad de tableros y madera depende en gran medida del diseño constructivo y del control de humedad. Cubierta, fachada, zócalos, drenajes y encuentros deben evitar agua persistente y permitir secado."
           }
         },
-        "c1": {
+        "d2": {
           "type": "principle",
           "settings": {
-            "heading": "Prestaciones acreditadas",
-            "text": "Exigir documentación del producto y justificar cargas, incendio, acústica y prestaciones térmicas del conjunto constructivo."
+            "heading": "Clases de servicio y uso",
+            "text": "Los productos derivados de la madera deben emplearse conforme a sus normas de producto y condiciones de servicio. Las zonas de alta humedad o exposición especial requieren soluciones específicas."
           }
         },
-        "c2": {
+        "d3": {
           "type": "principle",
           "settings": {
-            "heading": "Inspección y reparación",
-            "text": "Prever acceso a remates y juntas; ante daños ocultos, diagnosticar antes de intervenir y restituir la continuidad estructural y de la envolvente."
+            "heading": "Instalaciones y modificaciones",
+            "text": "Perforaciones, rozas o nuevos huecos no deben improvisarse. Las intervenciones posteriores pueden afectar caras, núcleo, uniones, hermeticidad y capacidad estructural."
           }
         },
-        "c3": {
+        "d4": {
           "type": "principle",
           "settings": {
-            "heading": "Garantías sin ambigüedades",
-            "text": "Distinguir garantías legales, contractuales y comerciales, con alcance, exclusiones, plazos y responsabilidades establecidos por escrito."
+            "heading": "Inspección y mantenimiento",
+            "text": "Revisar sellados, revestimientos, cubierta, puntos próximos al terreno y síntomas de entrada de agua permite intervenir antes de que la humedad alcance elementos estructurales."
           }
         }
       },
       "block_order": [
-        "c0",
-        "c1",
-        "c2",
-        "c3"
+        "d1",
+        "d2",
+        "d3",
+        "d4"
       ],
       "settings": {
-        "eyebrow": "03 · Criterios de durabilidad",
-        "heading": "Cuatro verificaciones esenciales durante toda la vida útil"
+        "eyebrow": "03 · Durabilidad",
+        "heading": "Mantener seco el sistema pesa más que prometer una vida útil genérica"
       }
     },
     "sustainability": {
       "type": "ie-services-cards",
       "settings": {
-        "eyebrow": "04 · Sostenibilidad y certificaciones",
-        "heading": "La sostenibilidad SIP se demuestra con datos, no con etiquetas genéricas",
-        "intro": "<p>Las caras de madera y el núcleo aislante tienen impactos diferentes. Para comparar alternativas es necesario considerar materiales, fabricación, transporte, energía de uso, mantenimiento y fin de vida.</p>"
+        "eyebrow": "04 · Sostenibilidad",
+        "heading": "Evaluar datos, no etiquetas",
+        "intro": "<p>Prefabricar puede reducir recortes y movimientos en obra, y una envolvente bien diseñada puede disminuir demanda energética. La sostenibilidad global depende además del origen de materiales, fabricación, transporte, uso, mantenimiento y fin de vida.</p>"
       },
       "blocks": {
-        "b0": {
+        "e1": {
           "type": "service",
           "settings": {
-            "image": "shopify://shop_images/structural-insulated-panel-sustainable-construction-certifications_001.png",
-            "image_alt": "Materiales certificados y procedencia de madera para paneles SIP",
-            "index": "01 · Origen",
-            "heading": "Trazabilidad de madera y componentes",
-            "text": "<p>FSC o PEFC pueden respaldar la procedencia y cadena de custodia forestal cuando el suministro específico está certificado. No son certificaciones automáticas del edificio completo ni de su comportamiento energético.</p>",
+            "image": "shopify://shop_images/structural-insulated-panel-manufacturing-and-assembly_001.png",
+            "image_alt": "Fabricación industrializada de paneles SIP",
+            "index": "01 · Materiales",
+            "heading": "Trazabilidad y documentación ambiental",
+            "text": "<p>Conviene solicitar procedencia de madera y tableros, certificaciones de cadena de custodia cuando existan, fichas de producto y, para comparar impactos, declaraciones ambientales verificadas o análisis de ciclo de vida equivalentes.</p>",
             "link_1_label": "",
             "link_1": "",
             "link_2_label": "",
@@ -308,30 +227,30 @@
             "link_3": ""
           }
         },
-        "b1": {
+        "e2": {
           "type": "service",
           "settings": {
-            "image": "shopify://shop_images/structural-insulated-panel-sustainable-construction-certifications_002.png",
-            "image_alt": "Envolvente de paneles SIP diseñada para eficiencia energética",
-            "index": "02 · Energía",
-            "heading": "Envolvente aislada y prestaciones justificadas",
-            "text": "<p>El aislamiento integrado puede favorecer continuidad, pero el resultado depende de juntas, carpinterías, infiltraciones, puentes térmicos y ventilación. La justificación de DB-HE corresponde al proyecto completo, no únicamente al panel.</p>",
-            "link_1_label": "Eficiencia energética SIP",
-            "link_1": "/pages/structural-insulated-panel-energy-efficiency-building-envelope",
+            "image": "shopify://shop_images/structural-insulated-panel-manufacturing-and-assembly_003.png",
+            "image_alt": "Paneles SIP prefabricados y organizados para transporte",
+            "index": "02 · Proceso",
+            "heading": "Menos residuo no significa impacto cero",
+            "text": "<p>El mecanizado en taller puede optimizar material y reducir recortes en parcela. El balance debe incluir residuos de fábrica, embalaje, distancias de transporte, medios de elevación y sustituciones durante la vida útil.</p>",
+            "link_1_label": "",
+            "link_1": "",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
             "link_3": ""
           }
         },
-        "b2": {
+        "e3": {
           "type": "service",
           "settings": {
-            "image": "shopify://shop_images/structural-insulated-panel-sustainable-construction-certifications_003.png",
-            "image_alt": "Construcción prefabricada SIP y gestión eficiente de materiales",
-            "index": "03 · Ciclo de vida",
-            "heading": "Reducir mermas y verificar el impacto ambiental",
-            "text": "<p>La prefabricación puede disminuir recortes, retrabajos y operaciones en obra. Declaraciones ambientales de producto y análisis de ciclo de vida permiten evaluar carbono, núcleo aislante, adhesivos, transporte, separación de materiales y gestión de residuos.</p>",
+            "image": "shopify://shop_images/structural-insulated-panel-energy-efficiency-building-envelope_003.png",
+            "image_alt": "Vivienda con envolvente térmica eficiente",
+            "index": "03 · Uso",
+            "heading": "El mayor impacto puede estar en décadas de funcionamiento",
+            "text": "<p>Una envolvente con baja demanda puede reducir energía de uso, pero debe demostrarse en el edificio mediante cálculo y ejecución. Orientación, huecos, ventilación, instalaciones y comportamiento de verano son tan relevantes como el panel.</p>",
             "link_1_label": "",
             "link_1": "",
             "link_2_label": "",
@@ -342,101 +261,77 @@
         }
       },
       "block_order": [
-        "b0",
-        "b1",
-        "b2"
+        "e1",
+        "e2",
+        "e3"
       ]
     },
     "faq": {
       "type": "ie-light-timber-faq",
       "blocks": {
-        "q0": {
-          "type": "question",
-          "settings": {
-            "question": "¿Cómo se fabrican los paneles SIP?",
-            "answer": "<p>El fabricante une caras resistentes y un núcleo aislante en condiciones controladas; el despiece y los mecanizados se preparan conforme al proyecto y documentación del sistema.</p>"
-          }
-        },
         "q1": {
           "type": "question",
           "settings": {
-            "question": "¿Qué incluye el montaje de una vivienda SIP?",
-            "answer": "<p>Depende del contrato. Se deben delimitar cimentación, transporte, medios auxiliares, colocación de paneles, anclajes, cubierta, juntas, carpinterías, instalaciones, revestimientos y pruebas.</p>"
+            "question": "¿Los paneles SIP pueden mojarse durante el montaje?",
+            "answer": "<p>Deben protegerse de exposición innecesaria y agua retenida. Si se humedecen, la actuación depende del producto, grado de mojado y posibilidad de secado; no conviene cerrar capas hasta comprobar condiciones adecuadas.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "¿Cuánto tarda la fabricación y el montaje?",
-            "answer": "<p>No hay plazo universal: influyen ingeniería, suministro, superficie, accesos, cimentación, climatología, instalaciones, permisos y acabados.</p>"
+            "question": "¿Qué detalle es más crítico para la durabilidad?",
+            "answer": "<p>No existe uno solo, pero los puntos de entrada y acumulación de agua —cubierta, huecos, zócalos, juntas y penetraciones— merecen especial atención.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿Cuánto duran los paneles SIP?",
-            "answer": "<p>La vida útil depende de diseño, producto, exposición, protección de juntas y mantenimiento. Una cifra genérica de años no equivale a una garantía contractual.</p>"
+            "question": "¿Puedo abrir nuevos huecos después?",
+            "answer": "<p>No sin comprobar el sistema. Un hueco puede cortar caras estructurales, núcleo, uniones o recorridos de carga y exigir refuerzo calculado.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "¿Qué mantenimiento necesita una casa SIP?",
-            "answer": "<p>Revisar periódicamente evacuación de agua, remates, cubierta, sellados, carpinterías y revestimientos, de acuerdo con exposición y recomendaciones del fabricante.</p>"
+            "question": "¿Los SIP necesitan mantenimiento?",
+            "answer": "<p>La estructura queda protegida, pero el edificio sí requiere mantenimiento de cubierta, fachada, sellados, carpinterías y puntos de agua para conservar las condiciones previstas.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "¿Cómo se repara una filtración?",
-            "answer": "<p>Primero se localiza y elimina la entrada de agua; después se evalúa el estado de caras, núcleo y conexiones y se repara o sustituye conforme al criterio técnico.</p>"
+            "question": "¿SIP es automáticamente sostenible?",
+            "answer": "<p>No. Deben valorarse materiales, certificaciones, energía incorporada, transporte, residuos, comportamiento en uso, mantenimiento y fin de vida.</p>"
           }
         },
         "q6": {
           "type": "question",
           "settings": {
-            "question": "¿Qué garantía tienen los paneles SIP?",
-            "answer": "<p>Las garantías dependen del producto, contrato y normativa aplicable. Conviene disponer de fichas técnicas, condiciones, alcance de cobertura y protocolo de incidencias por escrito.</p>"
-          }
-        },
-        "q7": {
-          "type": "question",
-          "settings": {
-            "question": "¿FSC, PEFC o una declaración ambiental certifican toda la vivienda?",
-            "answer": "<p>No. FSC y PEFC se refieren a aspectos de gestión forestal y cadena de custodia dentro de su alcance; una DAP proporciona información ambiental de producto. Las certificaciones del edificio requieren evaluación específica.</p>"
-          }
-        },
-        "q8": {
-          "type": "question",
-          "settings": {
-            "question": "¿Son los paneles SIP automáticamente sostenibles?",
-            "answer": "<p>No. La comparación ambiental debe incorporar el origen de materiales, núcleo, adhesivos, producción, transporte, energía de uso, reparaciones y fin de vida.</p>"
+            "question": "¿Qué documentación debería quedar al final?",
+            "answer": "<p>Como mínimo, la acordada en proyecto y contrato: planos finales o de montaje, fichas técnicas relevantes, instrucciones de mantenimiento, garantías aplicables y registros de comprobaciones cuando proceda.</p>"
           }
         }
       },
       "block_order": [
-        "q0",
         "q1",
         "q2",
         "q3",
         "q4",
         "q5",
-        "q6",
-        "q7",
-        "q8"
+        "q6"
       ],
       "settings": {
-        "eyebrow": "Preguntas frecuentes",
-        "heading": "Fabricación, instalación, garantías y sostenibilidad SIP",
-        "intro": "<p>Respuestas concretas sobre alcance de obra, duración, mantenimiento y criterios ambientales, sin promesas universales.</p>"
+        "eyebrow": "FAQ",
+        "heading": "Montaje y vida útil: los puntos que no deben improvisarse",
+        "intro": "<p>La durabilidad es una consecuencia de diseño, materiales, ejecución, protección y mantenimiento.</p>"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Planifica el montaje SIP con garantías técnicas claras",
-        "text": "<p>Cuéntanos ubicación, superficie, uso, estado de la parcela y nivel de acabados. Revisaremos contigo fabricación, logística, encuentros, documentación técnica, mantenimiento y alcance contractual antes de presupuestar.</p>",
+        "heading": "Planifica fabricación y montaje antes de llegar a parcela",
+        "text": "<p>Cuéntanos ubicación, uso, superficie, accesos y alcance previsto. Revisaremos contigo despiece, logística, montaje, encuentros, documentación y mantenimiento necesarios para presupuestar con claridad.</p>",
         "label": "Solicitar asesoría técnica",
         "link": "/pages/contact-ideas-exteriores"
       }
@@ -447,7 +342,6 @@
     "mounting_overview",
     "mounting_process",
     "durability",
-    "durability_criteria",
     "sustainability",
     "faq",
     "cta"
