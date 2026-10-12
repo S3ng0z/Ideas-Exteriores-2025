@@ -1,0 +1,210 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "ENTRAMADO LIGERO"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "PANELES SIP"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "SISTEMA EUROPEO"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "settings": {
+        "eyebrow": "Construcción en madera · Sistemas constructivos",
+        "heading": "Sistemas constructivos en madera: compara y elige con criterio",
+        "lead": "<p>Entramado ligero, paneles SIP y sistema europeo son soluciones con componentes, encuentros y procesos distintos. Te explicamos cómo funcionan, cuándo pueden encajar y qué verificar antes de pedir un presupuesto: uso, estructura, envolvente, ejecución y alcance de suministro. La elección definitiva debe justificarse para el proyecto y emplazamiento concretos.</p>",
+        "primary_label": "Explorar los tres sistemas",
+        "primary_link": "#sistemas-madera",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Tres soluciones, una decisión informada"
+      }
+    },
+    "systems": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Explora las alternativas",
+        "heading": "Tres formas de proyectar y construir en madera",
+        "intro": "<p>Cada solución se explica en su propia guía técnica, con enlaces a aplicaciones y modelos. Ningún nombre comercial garantiza por sí solo prestaciones, certificaciones o plazos.</p>"
+      },
+      "blocks": {
+        "frame": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Bastidores de madera",
+            "heading": "Entramado ligero",
+            "text": "<p>Estructura formada por montantes y soleras, tableros y arriostramiento. El aislamiento y las capas de control del aire, vapor y agua se coordinan dentro de la envolvente. Es una opción adaptable a diseños y proyectos de distinta complejidad.</p>",
+            "link_1_label": "Conocer el sistema",
+            "link_1": "/pages/light-frame-construction-system",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "sip": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Paneles estructurales aislados",
+            "heading": "Paneles SIP",
+            "text": "<p>Elementos prefabricados con caras resistentes adheridas a un núcleo aislante. Exigen calcular y resolver apoyos, uniones, juntas, huecos, instalaciones y protección frente a la humedad como un sistema completo.</p>",
+            "link_1_label": "Conocer el sistema",
+            "link_1": "/pages/sip-panels-system",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "european": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Madera perfilada y capa interior",
+            "heading": "Sistema europeo",
+            "text": "<p>Denominación comercial de Ideas Exteriores para una solución de piezas exteriores de madera perfilada con una capa técnica interior. No es una norma ni un sello europeo: hay que definir componentes, movimientos, uniones y prestaciones del proyecto.</p>",
+            "link_1_label": "Conocer el sistema",
+            "link_1": "/pages/european-timber-construction-system",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "frame",
+        "sip",
+        "european"
+      ]
+    },
+    "process": {
+      "type": "ie-services-process",
+      "settings": {
+        "eyebrow": "02 · Cómo decidir",
+        "heading": "De la necesidad al sistema adecuado",
+        "intro": "<p>El sistema es una decisión de proyecto, no una garantía aislada de ahorro, sostenibilidad o cumplimiento normativo.</p>"
+      },
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Definir el uso y la ubicación",
+            "text": "Vivienda, estudio o anexo; municipio, clima, superficie, geometría, cargas y requerimientos de habitabilidad."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Comparar estructuras y envolventes",
+            "text": "Revisar cálculo, espesores, puentes térmicos, acústica, comportamiento al fuego, hermeticidad, humedad, uniones y documentación disponible."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Planificar fabricación y montaje",
+            "text": "Confirmar cimentación, logística, accesos, tolerancias, protección durante obra, instalaciones, secuencia de ejecución y mantenimiento."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Homogeneizar presupuestos",
+            "text": "Comparar kits o soluciones terminadas con el mismo alcance: proyecto, transporte, estructura, envolvente, carpinterías, instalaciones, montaje y acabados."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "settings": {
+        "eyebrow": "03 · Validación técnica",
+        "heading": "Criterios para comparar soluciones de forma rigurosa"
+      },
+      "blocks": {
+        "p1": {
+          "type": "principle",
+          "settings": {
+            "heading": "CTE y cálculo de proyecto",
+            "text": "En España deben justificarse las exigencias aplicables del CTE, incluidas seguridad estructural y madera (DB-SE y DB-SE-M), energía (DB-HE), salubridad (DB-HS), incendio (DB-SI) y ruido (DB-HR) cuando proceda."
+          }
+        },
+        "p2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Prestaciones verificadas",
+            "text": "La transmitancia, el aislamiento acústico, el comportamiento al fuego y la resistencia dependen de la solución completa y de ensayos, cálculos y documentación aplicables; no son propiedades automáticas del nombre del sistema."
+          }
+        },
+        "p3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Humedad, movimiento y durabilidad",
+            "text": "Los detalles de encuentros, barreras capilares, drenaje, sellados, capacidad de secado y mantenimiento condicionan el resultado. Las piezas macizas perfiladas requieren atender a movimientos dimensionales."
+          }
+        },
+        "p4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Oferta transparente",
+            "text": "Los plazos y precios dependen del alcance real, licencias, base, prefabricación, transporte, montaje, instalaciones y acabados. Las alternativas solo son comparables con las mismas partidas incluidas."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ]
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "¿Qué sistema encaja con tu proyecto?",
+        "text": "<p>Cuéntanos dónde quieres construir, qué uso tendrá el espacio, la superficie aproximada y el nivel de acabado que necesitas. Te orientamos sobre alternativas, documentación y condiciones previas para obtener un presupuesto comparable.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "systems",
+    "process",
+    "confidence",
+    "cta"
+  ]
+}
