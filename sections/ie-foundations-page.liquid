@@ -55,8 +55,7 @@
       <div class="ie-foundations__intro-copy rte">{{ section.settings.intro_text }}</div>
     </div>
 
-    <section class="ie-foundations__systems" id="ie-foundations-systems-{{ section.id }}" aria-labelledby="ie-foundations-systems-title-{{ section.id }}">
-      <h2 id="ie-foundations-systems-title-{{ section.id }}">{{ section.settings.systems_heading }}</h2>
+    <div class="ie-foundations__systems" id="ie-foundations-systems-{{ section.id }}">
       {% for block in section.blocks %}
         {% if block.type == 'system' %}
           <article class="ie-foundations__system{% if block.settings.image == blank %} ie-foundations__system--no-media{% endif %}" {{ block.shopify_attributes }}>
@@ -87,7 +86,7 @@
           </article>
         {% endif %}
       {% endfor %}
-    </section>
+    </div>
 
     <section class="ie-foundations__moisture" aria-labelledby="ie-foundations-moisture-title-{{ section.id }}">
       <div>
@@ -163,9 +162,9 @@
 
 {% schema %}
 {
-  "name": "IE · Bases y cimentaciones",
+  "name": "IE · Bases y soleras",
   "settings": [
-    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Bases y cimentaciones para estructuras de madera"},
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Bases y soleras para estructuras de madera"},
     {"type":"text","id":"heading","label":"Título","default":"La base correcta empieza antes de verter hormigón"},
     {"type":"richtext","id":"lead","label":"Introducción","default":"<p>Definimos la solución de apoyo según uso, geometría, terreno, humedad, cargas y condiciones de obra. El objetivo es que la estructura arranque nivelada, anclada y protegida frente al agua, con una base preparada para el montaje.</p>"},
     {"type":"text","id":"primary_label","label":"CTA principal","default":"Evaluar mi terreno"},
@@ -175,7 +174,6 @@
     {"type":"text","id":"intro_eyebrow","label":"Antetítulo introducción","default":"Cimentación especializada"},
     {"type":"text","id":"intro_heading","label":"Título introducción","default":"No existe una base universal para una estructura de madera"},
     {"type":"richtext","id":"intro_text","label":"Texto introducción","default":"<p>Una caseta ligera, un porche, una oficina de jardín y una vivienda no transmiten las mismas cargas ni exigen la misma relación con el terreno. Elegimos entre superficies continuas, apoyos puntuales o soluciones sobreelevadas en función de la información disponible y, cuando corresponde, del proyecto y el cálculo.</p>"},
-    {"type":"text","id":"systems_heading","label":"Título sistemas","default":"Soluciones de cimentación y apoyo"},
     {"type":"text","id":"best_for_label","label":"Etiqueta recomendado para","default":"Suele encajar en"},
     {"type":"text","id":"moisture_eyebrow","label":"Antetítulo humedad","default":"Detalle antihumedad"},
     {"type":"text","id":"moisture_heading","label":"Título humedad","default":"La durabilidad se decide en el encuentro entre terreno, base y madera"},
@@ -213,7 +211,7 @@
         {"type":"image_picker","id":"image","label":"Imagen"},
         {"type":"text","id":"image_alt","label":"Texto alternativo"},
         {"type":"text","id":"index","label":"Índice","default":"01 · Superficie continua"},
-        {"type":"text","id":"heading","label":"Título","default":"Losa de cimentación o base continua de hormigón"},
+        {"type":"text","id":"heading","label":"Título","default":"Losa o solera de hormigón armado"},
         {"type":"richtext","id":"text","label":"Descripción","default":"<p>Una base continua permite repartir cargas, controlar nivelación y coordinar pasos o encuentros antes del montaje. Su composición y dimensionado se definen según el proyecto, el terreno y el uso.</p>"},
         {"type":"textarea","id":"best_for","label":"Suele encajar en","default":"Usos habitables, superficies medias o grandes y proyectos donde se necesita una plataforma continua y precisa."}
       ]
@@ -238,6 +236,6 @@
     }
   ],
   "max_blocks": 20,
-  "presets":[{"name":"IE · Bases y cimentaciones"}]
+  "presets":[{"name":"IE · Bases y soleras"}]
 }
 {% endschema %}

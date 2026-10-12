@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -38,6 +47,8 @@
         "system_1": {
           "type": "system",
           "settings": {
+            "image": "shopify://shop_images/Modern_Timber_Cabin_in_a_Mediterranean_Garden.webp",
+            "image_alt": "Modern Timber Cabin in a Mediterranean Garden",
             "index": "01 · Superficie continua",
             "heading": "Losa de cimentación o base continua de hormigón",
             "text": "<p>Cuando el proyecto necesita una plataforma continua, una losa de cimentación o una base de hormigón diseñada para las cargas permite repartir esfuerzos, controlar cotas y coordinar instalaciones y encuentros antes del montaje. Una solera convencional no debe confundirse automáticamente con una cimentación estructural: su función, espesor, armado, juntas y apoyo deben quedar definidos para el caso real.</p>",
@@ -47,6 +58,8 @@
         "system_2": {
           "type": "system",
           "settings": {
+            "image": "shopify://shop_images/Mediterranean_Garden_Studio_Retreat.webp",
+            "image_alt": "Mediterranean Garden Studio Retreat",
             "index": "02 · Apoyos puntuales",
             "heading": "Zapatas aisladas, dados y vigas de atado",
             "text": "<p>Si la estructura transmite las cargas mediante pilares o apoyos localizados, pueden plantearse zapatas o dados de hormigón, con vigas de atado o riostras cuando el cálculo y la geometría lo requieren. La solución reduce la superficie de hormigón respecto a una base continua y facilita mantener la madera elevada, pero cada apoyo debe dimensionarse según terreno y acciones.</p>",
@@ -56,6 +69,8 @@
         "system_5": {
           "type": "system",
           "settings": {
+            "image": "shopify://shop_images/Modern_Timber_Studio_on_Deep_Piles.webp",
+            "image_alt": "Modern Timber Studio on Deep Piles",
             "index": "03 · Cimentación profunda",
             "heading": "Pilotes y micropilotes",
             "text": "<p>Cuando las capas superficiales no ofrecen una respuesta adecuada o existen condicionantes geotécnicos relevantes, el proyecto puede requerir cimentaciones profundas que transmitan las cargas a estratos más competentes. No son una solución intercambiable con las cimentaciones superficiales: requieren estudio geotécnico, cálculo, medios de ejecución y control específicos.</p>",
@@ -182,8 +197,7 @@
         "cta_text": "<p>Envíanos ubicación, uso previsto, medidas y fotografías de la parcela. Podremos orientar las alternativas que conviene estudiar y señalar la documentación necesaria antes de presupuestar o ejecutar.</p>",
         "cta_primary_label": "Enviar ubicación y fotos",
         "cta_secondary_label": "Ver montaje profesional",
-        "cta_tertiary_label": "Ver proyectos y licencias",
-        "systems_heading": "Soluciones de cimentación y apoyo"
+        "cta_tertiary_label": "Ver proyectos y licencias"
       }
     }
   },
