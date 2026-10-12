@@ -1,0 +1,233 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Qué es y cómo funciona"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Componentes, uniones y materiales"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Montaje y acabados"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Aplicaciones y modelos compatibles"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "settings": {
+        "eyebrow": "Sistema constructivo · Sistema europeo",
+        "heading": "Sistema europeo de madera: construcción con perfil exterior y capa técnica interior",
+        "lead": "<p>En Ideas Exteriores, «sistema europeo» es la denominación comercial de una solución prefabricada que combina piezas exteriores de madera rectas y perfiladas con una capa técnica interior para integrar aislamiento, instalaciones y acabado. No es una norma ni una tipología técnica universal de la Unión Europea: estructura, uniones, humedad, movimientos y prestaciones deben definirse para la configuración y el proyecto reales.</p>",
+        "primary_label": "Entender cómo funciona",
+        "primary_link": "/pages/european-timber-system-how-it-works",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Guía del sistema"
+      }
+    },
+    "guides": {
+      "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "Sistema europeo · Guía completa",
+        "heading": "Cuatro guías para pasar de la denominación comercial a una solución verificable",
+        "intro": "<p>La página general ordena la decisión y deriva cada tema a una guía específica. El objetivo es distinguir la lógica del sistema de las prestaciones que solo pueden atribuirse a una composición, un fabricante, una documentación y un proyecto concretos.</p>"
+      },
+      "blocks": {
+        "guide_1": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Fundamentos",
+            "heading": "Qué es y cómo funciona",
+            "text": "<p>Comprende la relación entre la pieza exterior de madera, la capa técnica interior, el aislamiento y las instalaciones; qué función puede asumir cada elemento y por qué juntas, huecos y movimientos deben resolverse como parte del sistema completo.</p>",
+            "link_1_label": "Abrir guía",
+            "link_1": "/pages/european-timber-system-how-it-works",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "guide_2": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Definición técnica",
+            "heading": "Componentes, uniones y materiales",
+            "text": "<p>Revisa perfil exterior, clasificación y humedad de la madera, geometría de juntas, anclajes, esquinas, huecos, aislamiento, capas de aire y humedad, subestructura, instalaciones, fijaciones y acabado interior.</p>",
+            "link_1_label": "Abrir guía",
+            "link_1": "/pages/european-timber-system-components-joints-materials",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "guide_3": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Ejecución",
+            "heading": "Montaje y acabados",
+            "text": "<p>Conecta base, barrera capilar, secuencia de montaje, sellados, tolerancias, movimientos de la madera, instalaciones y acabados. La precisión en obra depende de decisiones y detalles cerrados antes de fabricar y montar.</p>",
+            "link_1_label": "Abrir guía",
+            "link_1": "/pages/european-timber-system-assembly-finishes",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "guide_4": {
+          "type": "service",
+          "settings": {
+            "index": "04 · Elección",
+            "heading": "Aplicaciones y modelos compatibles",
+            "text": "<p>Relaciona uso, geometría, clima, prestaciones, logística y alcance comercial antes de vincular un modelo al sistema. La compatibilidad debe validarse modelo a modelo y no se deduce por estética ni por similitud con otra casa de madera.</p>",
+            "link_1_label": "Abrir guía",
+            "link_1": "/pages/european-timber-system-applications-models",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "guide_1",
+        "guide_2",
+        "guide_3",
+        "guide_4"
+      ]
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Definir uso, ubicación y prestaciones",
+            "text": "Partir del uso real, municipio, clima, geometría, cargas, superficie, ocupación y nivel de acabado antes de elegir sección, aislamiento o sistema de montaje."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Cerrar la sección real del muro",
+            "text": "Documentar perfil exterior, función estructural, subestructura, aislamiento, capas de control, cámara de instalaciones, revestimientos y prestaciones aplicables."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Resolver encuentros, agua y movimientos",
+            "text": "Coordinar cimentación, barrera capilar, anclajes, esquinas, huecos, forjados y cubierta; prever tolerancias y movimientos de la madera según el producto y la tecnología reales."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Validar proyecto, montaje y alcance",
+            "text": "Comprobar exigencias del edificio, documentación del producto, secuencia de ejecución, transporte, montaje, instalaciones, acabados, incluidos y exclusiones antes de presupuestar."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "settings": {
+        "eyebrow": "Del sistema al proyecto",
+        "heading": "El sistema se decide con una composición y unos detalles concretos, no con una etiqueta",
+        "intro": "<p>La prefabricación puede ordenar la ejecución y reducir improvisación en parcela, pero no sustituye la definición previa del edificio. El valor está en coordinar proyecto, producto, logística y montaje antes de cerrar el presupuesto.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Denominación comercial, no norma europea",
+            "text": "«Sistema europeo» se usa aquí para identificar esta familia de solución comercial. No constituye un sello UE, una norma técnica única ni una certificación que permita trasladar prestaciones de un fabricante o sistema a otro."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Prestaciones de la solución completa",
+            "text": "Aislamiento, hermeticidad, acústica, fuego, estabilidad y durabilidad dependen de materiales, espesores, juntas, fijaciones, encuentros, humedad y ejecución. No deben inferirse por el nombre del sistema."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "CTE y documentación del producto",
+            "text": "En España, el proyecto debe justificar las exigencias aplicables de estructura, energía, salubridad, incendio y acústica. Una ETA, EAD u otra evaluación de un producto concreto no sustituye las comprobaciones del edificio."
+          }
+        },
+        "c4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Presupuesto y alcance comparables",
+            "text": "Comparar soluciones exige alinear estructura, aislamiento, carpinterías, cubierta, cimentación, transporte, montaje, instalaciones, proyecto y acabados. Un precio por m² o por kit sin alcance equivalente puede inducir a una decisión incorrecta."
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "eyebrow": "Criterios de decisión",
+        "heading": "Qué comprobar antes de elegir o comparar el sistema europeo"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Valida si el sistema europeo encaja con tu proyecto",
+        "text": "<p>Indícanos uso, ubicación, superficie aproximada, distribución, estado del proyecto y nivel de acabado. Revisaremos la compatibilidad técnica, el alcance de suministro y montaje y las alternativas del catálogo antes de presupuestar.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "guides",
+    "process",
+    "confidence",
+    "cta"
+  ]
+}
