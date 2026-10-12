@@ -3,63 +3,68 @@
     "hero": {
       "type": "ie-services-hero",
       "blocks": {
-        "summary_1": {
+        "a": {
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Sistema y funcionamiento"
+            "label": "Qué es el entramado ligero"
           }
         },
-        "summary_2": {
+        "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Estructura, capas y aislamiento"
+            "label": "Cómo trabaja estructuralmente"
           }
         },
-        "summary_3": {
+        "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Montaje, durabilidad y sostenibilidad"
+            "label": "Qué aporta la prefabricación"
           }
         },
-        "summary_4": {
+        "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Aplicaciones y modelos compatibles"
+            "label": "Qué debe justificar el proyecto"
           }
         }
       },
       "block_order": [
-        "summary_1",
-        "summary_2",
-        "summary_3",
-        "summary_4"
+        "a",
+        "b",
+        "c",
+        "d"
       ],
       "settings": {
-        "eyebrow": "Entramado ligero · Qué es y cómo funciona",
-        "heading": "Entramado ligero de madera: qué es y cómo funciona",
-        "lead": "<p>El entramado ligero es un sistema constructivo en seco formado por bastidores de madera estructural —montantes, soleras, vigas y cargaderos— que trabajan con tableros de rigidización, anclajes y uniones para formar muros, forjados y cubiertas. Su valor está en coordinar estructura, aislamiento, control del aire y la humedad, instalaciones y acabados desde el proyecto, no en una única pieza o material.</p>",
-        "primary_label": "Ver aplicaciones y modelos compatibles",
-        "primary_link": "/pages/timber-frame-applications-compatible-models",
+        "eyebrow": "Entramado ligero · 01",
+        "heading": "Qué es el entramado ligero de madera y cómo funciona",
+        "lead": "<p>El entramado ligero de madera —light timber frame— es un sistema estructural formado por bastidores de montantes y soleras que trabajan junto con tableros, fijaciones, arriostramientos y anclajes. Su ventaja no está en una pieza aislada, sino en coordinar estructura, envolvente, instalaciones y montaje como un sistema completo.</p>",
+        "primary_label": "Ver casas de entramado ligero",
+        "primary_link": "/collections/light-frame-houses",
         "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Recorrido de la guía"
+        "summary_title": "Claves para entender el sistema"
       }
     },
     "principles": {
       "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Fundamentos",
+        "heading": "Una estructura ligera que trabaja como un conjunto",
+        "intro": "<p>Montantes, soleras, tableros y uniones forman una retícula resistente. Secciones, modulación, fijaciones y encuentros deben pertenecer a una solución calculada para el edificio y sus cargas.</p>"
+      },
       "blocks": {
-        "system": {
+        "p1": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/light-timber-building-system-overview_001.png",
-            "image_alt": "Estructura de entramado ligero de madera durante el montaje",
-            "index": "01 · Sistema",
-            "heading": "Bastidores, tableros y uniones forman el sistema resistente",
-            "text": "<p>Los montantes y soleras reciben cargas y las transmiten hacia la cimentación; los tableros, fijaciones, arriostramientos y anclajes estabilizan el conjunto. Geometría, secciones y uniones se justifican por cálculo y proyecto.</p>",
+            "image_alt": "Bastidor estructural de entramado ligero de madera",
+            "index": "01 · Bastidor",
+            "heading": "Montantes y soleras distribuyen las cargas",
+            "text": "<p>Las piezas de sección relativamente reducida se disponen de forma repetitiva para formar muros, forjados y cubiertas. Su geometría, separación, apoyos y refuerzos se dimensionan según cálculo y proyecto.</p>",
             "link_1_label": "Estructura, capas y aislamiento",
             "link_1": "/pages/timber-frame-structure-layers-insulation",
             "link_2_label": "",
@@ -68,14 +73,14 @@
             "link_3": ""
           }
         },
-        "benefits": {
+        "p2": {
           "type": "service",
           "settings": {
-            "image": "shopify://shop_images/light-timber-building-benefits-homes-garden-rooms_001.png",
-            "image_alt": "Panelización y montaje en seco de entramado ligero de madera",
-            "index": "02 · Ventajas",
-            "heading": "Industrialización y montaje en seco aportan control, no atajos",
-            "text": "<p>La modulación, la prefabricación y el menor peso propio pueden mejorar la planificación, la logística y la precisión de obra. El resultado real depende del nivel de prefabricación, la base, los accesos, la coordinación de instalaciones y la calidad de ejecución.</p>",
+            "image": "shopify://shop_images/light-timber-building-layers-materials-thickness_002.png",
+            "image_alt": "Tablero estructural y fijaciones sobre bastidor de madera",
+            "index": "02 · Sistema resistente",
+            "heading": "El bastidor no trabaja solo",
+            "text": "<p>Tableros de rigidización, fijaciones, arriostramientos, dinteles, anclajes y encuentros con forjados y cubierta completan el sistema resistente. La estabilidad final se verifica para el edificio concreto.</p>",
             "link_1_label": "Montaje, durabilidad y sostenibilidad",
             "link_1": "/pages/timber-frame-assembly-durability-sustainability",
             "link_2_label": "",
@@ -84,14 +89,14 @@
             "link_3": ""
           }
         },
-        "applications": {
+        "p3": {
           "type": "service",
           "settings": {
-            "image": "shopify://shop_images/light-timber-building-system-overview_004.png",
-            "image_alt": "Vivienda contemporánea y anexo construidos con entramado ligero de madera",
-            "index": "03 · Aplicaciones",
-            "heading": "Viviendas y anexos sí; no toda estructura de madera es entramado ligero",
-            "text": "<p>El sistema puede emplearse en viviendas, ampliaciones, estudios y otros espacios habitables cuando se dimensiona para su uso y emplazamiento. Pérgolas, porches o tarimas pueden usar madera, pero responden a sistemas y requisitos distintos.</p>",
+            "image": "shopify://shop_images/light-timber-building-benefits-homes-garden-rooms_001.png",
+            "image_alt": "Panelización y prefabricación de entramado ligero de madera",
+            "index": "03 · Industrialización",
+            "heading": "Más decisiones antes de llegar a obra",
+            "text": "<p>La modulación y la panelización permiten resolver en taller parte del despiece, huecos y encuentros. Esto puede reducir ajustes en parcela, pero exige cerrar antes geometría, instalaciones, tolerancias, logística y secuencia de montaje.</p>",
             "link_1_label": "Aplicaciones y modelos compatibles",
             "link_1": "/pages/timber-frame-applications-compatible-models",
             "link_2_label": "",
@@ -102,97 +107,100 @@
         }
       },
       "block_order": [
-        "system",
-        "benefits",
-        "applications"
-      ],
-      "settings": {
-        "eyebrow": "01 · Fundamentos",
-        "heading": "Un sistema de piezas repetitivas que trabaja como un conjunto",
-        "intro": "<p>La ligereza no significa menor exigencia técnica. El comportamiento depende de cómo se dimensionan, arriostran, unen y anclan los elementos y de cómo se integra la envolvente alrededor de esa estructura.</p>"
-      }
+        "p1",
+        "p2",
+        "p3"
+      ]
     },
     "process": {
       "type": "ie-services-process",
       "blocks": {
-        "step_1": {
+        "s1": {
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Definir cargas, modulación y huecos",
-            "text": "Se dimensionan bastidores, vigas, cargaderos, arriostramientos, uniones y anclajes según geometría, uso, acciones y soporte."
+            "heading": "Definir uso y prestaciones",
+            "text": "Establecer cargas, geometría, clima, fuego, acústica, energía, humedad y acabado según el edificio y su emplazamiento."
           }
         },
-        "step_2": {
+        "s2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Diseñar cada capa por su función",
-            "text": "Aislamiento, rigidización, hermeticidad, control de vapor, protección frente al agua, acústica y fuego se coordinan como una composición compatible."
+            "heading": "Dimensionar estructura y envolvente",
+            "text": "Coordinar bastidores, tableros, uniones, aislamiento, hermeticidad, control de vapor, huecos e instalaciones como una solución única."
           }
         },
-        "step_3": {
+        "s3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Prefabricar y montar con control dimensional",
-            "text": "La estructura se replantea, eleva, fija, aploma y estabiliza siguiendo una secuencia compatible con logística, instalaciones y cierre de la envolvente."
+            "heading": "Convertir el proyecto en despiece",
+            "text": "Preparar paneles o bastidores, huecos, apoyos, anclajes y pasos previstos para fabricación, transporte y montaje."
           }
         },
-        "step_4": {
+        "s4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Verificar encuentros antes de ocultarlos",
-            "text": "Base, huecos, forjados, cubierta, pasos de instalaciones, sellados, fijaciones y evacuación de agua se comprueban antes de cerrar acabados."
+            "heading": "Montar y verificar",
+            "text": "Controlar soporte, humedad, aplomado, fijaciones, arriostramiento, juntas y continuidad de la envolvente antes de cerrar acabados."
           }
         }
       },
       "block_order": [
-        "step_1",
-        "step_2",
-        "step_3",
-        "step_4"
+        "s1",
+        "s2",
+        "s3",
+        "s4"
       ],
       "settings": {
-        "eyebrow": "02 · Cómo funciona",
-        "heading": "Del esquema estructural a una envolvente continua",
-        "intro": "<p>El entramado ligero funciona bien cuando estructura, física del edificio y ejecución se resuelven en la misma secuencia. La industrialización desplaza decisiones hacia el proyecto y reduce la dependencia de ajustes improvisados en obra.</p>"
+        "eyebrow": "02 · De proyecto a obra",
+        "heading": "La industrialización funciona cuando el detalle llega resuelto",
+        "intro": "<p>La rapidez de montaje es una consecuencia de la preparación previa; no sustituye cálculo, coordinación ni control de ejecución.</p>"
       }
     },
     "criteria": {
       "type": "ie-services-confidence",
       "blocks": {
-        "criterion_1": {
+        "c1": {
           "type": "principle",
           "settings": {
-            "heading": "Estructura y CTE",
-            "text": "En España, la madera estructural, las uniones, el arriostramiento y los anclajes se justifican para el edificio concreto conforme al CTE y al cálculo. El DB-SE-M utiliza clases de servicio ligadas a las condiciones de humedad; no deben confundirse con las clases de uso que orientan la durabilidad frente al riesgo biológico."
+            "heading": "CTE y cálculo",
+            "text": "En España, el proyecto debe justificar las exigencias aplicables de seguridad estructural, energía, incendio, salubridad y acústica. El DB-SE-M aporta criterios específicos para estructuras de madera."
           }
         },
-        "criterion_2": {
+        "c2": {
           "type": "principle",
           "settings": {
-            "heading": "Humedad y durabilidad",
-            "text": "La solución debe evitar humedad persistente, agua retenida y encuentros que no puedan drenar o secar. La protección se define según exposición, clase de uso, detalles constructivos y mantenimiento previsto."
+            "heading": "Plazo completo",
+            "text": "El montaje estructural puede ser rápido, pero el plazo total incluye proyecto, licencia, cimentación, fabricación, transporte, instalaciones, revestimientos, comprobaciones y acabados."
           }
         },
-        "criterion_3": {
+        "c3": {
           "type": "principle",
           "settings": {
-            "heading": "Envolvente y prestaciones",
-            "text": "Transmitancia, puentes térmicos, hermeticidad, ventilación, condensaciones, acústica y fuego se comprueban sobre el edificio y su composición completa, no sobre un material aislado."
+            "heading": "Coste comparable",
+            "text": "Comparar presupuestos por alcance equivalente: estructura o kit, aislamiento, montaje, cubierta, fachada, carpinterías, instalaciones, cimentación, proyecto y transporte pueden estar incluidos o no."
+          }
+        },
+        "c4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Prestaciones verificables",
+            "text": "No asumir que todo entramado ligero ofrece el mismo aislamiento, hermeticidad, resistencia al fuego, acústica o durabilidad. Depende de la composición, los detalles y la ejecución del edificio."
           }
         }
       },
       "block_order": [
-        "criterion_1",
-        "criterion_2",
-        "criterion_3"
+        "c1",
+        "c2",
+        "c3",
+        "c4"
       ],
       "settings": {
-        "eyebrow": "03 · Validaciones de proyecto",
-        "heading": "Tres comprobaciones pesan más que una lista de ventajas"
+        "eyebrow": "03 · Criterios de decisión",
+        "heading": "Qué conviene comprobar antes de elegir entramado ligero"
       }
     },
     "faq": {
@@ -202,42 +210,49 @@
           "type": "question",
           "settings": {
             "question": "¿Qué es exactamente el entramado ligero de madera?",
-            "answer": "<p>Es un sistema estructural formado por piezas de madera de sección relativamente reducida y disposición repetitiva que se organizan en bastidores. Junto con tableros, fijaciones, arriostramientos y anclajes forman muros, forjados y cubiertas; dentro del cerramiento se coordinan aislamiento, instalaciones y capas de control.</p>"
+            "answer": "<p>Es un sistema estructural de piezas de madera de sección relativamente reducida y disposición repetitiva que trabajan con tableros, fijaciones, arriostramientos y anclajes para formar muros, forjados y cubiertas.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "¿En qué se diferencia de una estructura de postes y vigas?",
-            "answer": "<p>En el entramado ligero muchas piezas próximas trabajan de forma conjunta con los tableros y las uniones. En los sistemas de postes y vigas la estructura se concentra en elementos de mayor sección y luces mayores. Ambos pueden ser de madera, pero su lógica resistente y sus detalles son distintos.</p>"
+            "question": "¿En qué se diferencia de postes y vigas?",
+            "answer": "<p>En entramado ligero muchas piezas próximas trabajan conjuntamente con tableros y uniones. En postes y vigas la estructura se concentra en elementos de mayor sección y normalmente mayores luces.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿Qué ventajas puede aportar frente a una obra tradicional?",
-            "answer": "<p>Puede facilitar prefabricación, montaje en seco, menor peso propio y una envolvente muy integrada. No implica por sí solo menor coste, un plazo fijo ni mejor eficiencia: esas prestaciones dependen del proyecto, la fabricación, la logística y la ejecución.</p>"
+            "question": "¿Puede utilizarse en vivienda habitual?",
+            "answer": "<p>Sí, siempre que el proyecto y la ejecución justifiquen las exigencias aplicables al uso residencial y al emplazamiento.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "¿Sirve para una vivienda habitual?",
-            "answer": "<p>Sí. Puede utilizarse en vivienda permanente cuando el edificio se proyecta y ejecuta para cumplir las exigencias estructurales, energéticas, de salubridad, acústicas y de seguridad frente al fuego que correspondan.</p>"
+            "question": "¿El entramado ligero elimina los puentes térmicos?",
+            "answer": "<p>No de forma absoluta. Permite integrar aislamiento con continuidad, pero montantes, forjados, esquinas, huecos, anclajes y otros encuentros siguen necesitando detalle térmico.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "¿El entramado ligero garantiza una casa eficiente?",
-            "answer": "<p>No por sí solo. Facilita integrar aislamiento y controlar la continuidad de la envolvente, pero el resultado energético depende también de puentes térmicos, hermeticidad, huecos, orientación, protección solar, ventilación, instalaciones y calidad de ejecución.</p>"
+            "question": "¿Es siempre más rápido que la obra convencional?",
+            "answer": "<p>La fabricación y el montaje en seco pueden acelerar determinadas fases, pero el plazo total depende del proyecto completo y del alcance contratado.</p>"
           }
         },
         "q6": {
           "type": "question",
           "settings": {
-            "question": "¿El sistema «cumple el CTE» por sí mismo?",
-            "answer": "<p>No. El cumplimiento corresponde al edificio y a su proyecto para un uso y emplazamiento concretos. El sistema y sus productos aportan datos y soluciones que deben justificarse dentro de las exigencias aplicables del CTE —estructura, energía, salubridad, acústica y fuego, según corresponda—.</p>"
+            "question": "¿Es siempre más barato?",
+            "answer": "<p>No. La comparación debe hacerse entre edificios equivalentes y presupuestos con el mismo alcance. El coste de la estructura por sí solo no representa el coste final.</p>"
+          }
+        },
+        "q7": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué debo pedir al proveedor?",
+            "answer": "<p>Definición estructural, composición de cerramientos, detalles de unión y anclaje, prestaciones declaradas de los productos, instrucciones de montaje, mantenimiento y alcance exacto del suministro.</p>"
           }
         }
       },
@@ -247,22 +262,23 @@
         "q3",
         "q4",
         "q5",
-        "q6"
+        "q6",
+        "q7"
       ],
       "settings": {
         "eyebrow": "FAQ",
-        "heading": "Preguntas frecuentes sobre entramado ligero de madera",
-        "intro": "<p>Conceptos básicos para entender el sistema antes de comparar modelos, espesores o soluciones comerciales.</p>"
+        "heading": "Preguntas básicas antes de pasar a capas y montaje",
+        "intro": "<p>El objetivo es entender el sistema sin confundir ventajas potenciales con garantías universales.</p>"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Pasa del sistema técnico al modelo que encaja con tu uso",
-        "text": "<p>Revisa las aplicaciones habituales y los criterios que utilizamos para hablar de modelos compatibles con entramado ligero antes de solicitar presupuesto.</p>",
-        "label": "Ver aplicaciones y modelos compatibles",
-        "link": "/pages/timber-frame-applications-compatible-models"
+        "heading": "Comprueba si el entramado ligero encaja con tu proyecto",
+        "text": "<p>Cuéntanos uso, ubicación, superficie, geometría y nivel de acabado. Podemos ayudarte a ordenar sistema, prestaciones, alcance y siguientes comprobaciones antes de presupuestar.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
       }
     }
   },
