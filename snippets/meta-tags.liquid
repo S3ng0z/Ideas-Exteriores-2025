@@ -35,6 +35,11 @@
     assign seo_description = 'Compara casas de entramado ligero por superficie, distribución y precio de partida. Revisa el alcance del modelo y solicita estudio para tu parcela.'
   endif
 
+  if request.page_type == 'collection' and collection.handle == 'sip-panel-houses'
+    assign seo_title = 'Casas con panel SIP: modelos y precios | Ideas Exteriores'
+    assign seo_description = 'Compara casas con panel SIP por superficie, distribución y precio de partida. Revisa alcance, montaje y parcela antes de solicitar un presupuesto.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'timber-products'
     assign seo_title = 'Productos de madera: casas, casetas y estructuras'
     assign seo_description = 'Explora casas, casetas, estudios, pérgolas, porches, cenadores y tarimas. Compara familias de producto, sistemas, alcance, montaje y precio de partida.'

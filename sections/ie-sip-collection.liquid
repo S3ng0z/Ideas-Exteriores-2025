@@ -1,0 +1,217 @@
+{% liquid
+  assign ie_products_url = pages['timber-products'].url | default: '/pages/timber-products'
+  assign ie_homes_url = pages['timber-homes-and-modules'].url | default: '/pages/timber-homes-and-modules'
+  assign ie_services_url = pages['services'].url | default: '/pages/services'
+  assign ie_contact_url = pages['contact-ideas-exteriores'].url | default: '/pages/contact-ideas-exteriores'
+  assign ie_system_url = pages['sip-panels-system'].url | default: '/pages/sip-panels-system'
+  assign ie_guide_1_url = pages['what-are-sip-panels-how-they-work'].url | default: '/pages/what-are-sip-panels-how-they-work'
+  assign ie_guide_2_url = pages['sip-panel-structure-layers-insulation'].url | default: '/pages/sip-panel-structure-layers-insulation'
+  assign ie_guide_3_url = pages['sip-panel-assembly-durability-sustainability'].url | default: '/pages/sip-panel-assembly-durability-sustainability'
+  assign ie_guide_4_url = pages['sip-panel-applications-compatible-models'].url | default: '/pages/sip-panel-applications-compatible-models'
+%}
+
+{% if collection.handle == 'sip-panel-houses' %}
+  {% if section.settings.mode == 'intro' %}
+    {{ 'ie-habitable-system-collection.css' | asset_url | stylesheet_tag }}
+    {{ 'ie-sip-collection.css' | asset_url | stylesheet_tag }}
+
+    <section class="ie-hc ie-hc--hero" aria-labelledby="ie-sip-title-{{ section.id }}">
+      <div class="ie-hc__inner">
+        {% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: 'Casas con panel SIP', class_name: 'ie-hc__breadcrumb', fallback_1_label: 'Productos', fallback_1_link: ie_products_url, fallback_2_label: 'Viviendas en madera', fallback_2_link: ie_homes_url %}
+
+        <div class="ie-hc__hero-grid">
+          <div>
+            <p class="ie-hc__eyebrow">Viviendas en madera · Panel SIP</p>
+            <h1 id="ie-sip-title-{{ section.id }}">Casas con panel SIP</h1>
+            <div class="ie-hc__lead">
+              <p>Compara nuestros modelos de vivienda con panel SIP por superficie, distribución y precio de partida. Un SIP es un elemento prefabricado que combina caras resistentes y un núcleo aislante, pero el resultado del edificio depende del sistema completo: composición, uniones, huecos, apoyos, capas exteriores, instalaciones y montaje. Por eso el precio «desde» sirve para seleccionar un modelo, no para sustituir el estudio del proyecto. Antes de cerrar una propuesta validamos alcance, parcela, accesos, base, logística, acabados y las exigencias técnicas aplicables.</p>
+            </div>
+            <div class="ie-hc__actions">
+              <a class="ie-hc__button ie-hc__button--primary" href="#ResultsList">Ver {{ collection.products_count }} modelos</a>
+              <a class="ie-hc__button ie-hc__button--secondary" href="{{ ie_system_url }}">Entender el sistema SIP</a>
+            </div>
+          </div>
+
+          <aside class="ie-hc__summary" aria-label="Pasos antes de solicitar presupuesto de una casa SIP">
+            <p class="ie-hc__summary-title">Antes de pedir presupuesto</p>
+            <ol>
+              <li><span>01</span><strong>Elige un modelo base por superficie y distribución</strong></li>
+              <li><span>02</span><strong>Comprueba qué incluye el precio y la modalidad de suministro</strong></li>
+              <li><span>03</span><strong>Valida parcela, proyecto, logística, montaje y acabados</strong></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="ie-hc ie-hc--guide" aria-labelledby="ie-sip-guide-title-{{ section.id }}">
+      <div class="ie-hc__inner">
+        <div class="ie-hc__guide-head">
+          <div>
+            <p class="ie-hc__eyebrow">Elegir con criterio</p>
+            <h2 id="ie-sip-guide-title-{{ section.id }}">Del catálogo al estudio de tu vivienda</h2>
+          </div>
+          <div class="ie-hc__guide-copy">
+            <div class="rte">
+              <p>La colección sirve para reducir opciones y comparar modelos reconocibles. El sistema SIP define cómo se resuelve la envolvente y parte de la estructura; el presupuesto final depende además del alcance contratado y de las condiciones reales del proyecto.</p>
+            </div>
+            <p class="ie-hc__guide-link"><a href="{{ ie_system_url }}">Ver la guía general del sistema SIP <span aria-hidden="true">→</span></a></p>
+          </div>
+        </div>
+
+        <div class="ie-hc__guide-grid">
+          <article>
+            <p class="ie-hc__index">01 · MODELO</p>
+            <h3>Empieza por superficie y distribución</h3>
+            <p>Compara primero tamaño, organización interior y uso previsto. Es la forma más rápida de descartar modelos que no encajan antes de entrar en especificaciones.</p>
+          </article>
+          <article>
+            <p class="ie-hc__index">02 · ALCANCE</p>
+            <h3>Compara ofertas con el mismo perímetro</h3>
+            <p>Kit, estructura montada, cubierta, fachada, instalaciones y llave en mano no son precios equivalentes. Revisa siempre inclusiones, exclusiones, transporte e impuestos.</p>
+          </article>
+          <article>
+            <p class="ie-hc__index">03 · VALIDACIÓN</p>
+            <h3>Confirma el proyecto antes de cerrar</h3>
+            <p>Parcela, base, accesos, huecos, instalaciones, logística, acabados y requisitos técnicos deben coordinarse antes de fabricar y presupuestar de forma definitiva.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  {% else %}
+    <section class="ie-hc ie-hc--system" aria-labelledby="ie-sip-system-title-{{ section.id }}">
+      <div class="ie-hc__inner">
+        <div class="ie-hc__system-head">
+          <div>
+            <p class="ie-hc__eyebrow">Después del catálogo</p>
+            <h2 id="ie-sip-system-title-{{ section.id }}">Para comparar casas SIP, separa sistema, prestación y alcance</h2>
+          </div>
+          <div class="ie-hc__system-copy">
+            <p>Una vivienda no se define únicamente por el espesor del panel. Para tomar una decisión útil hay que revisar cómo trabaja el sistema, qué composición se propone, cómo se resuelven juntas y encuentros, qué prestaciones están documentadas y qué partidas incluye realmente cada oferta.</p>
+          </div>
+        </div>
+
+        <nav class="ie-hc__resource-grid" aria-label="Guías sobre construcción con paneles SIP">
+          <a class="ie-hc__resource-card" href="{{ ie_guide_1_url }}">
+            <span class="ie-hc__resource-index">01 · FUNCIONAMIENTO</span>
+            <strong>Qué es y cómo funciona</strong>
+            <span>Comportamiento del panel compuesto, caras, núcleo, uniones y papel dentro del sistema resistente.</span>
+            <span class="ie-hc__resource-link">Abrir guía <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="ie-hc__resource-card" href="{{ ie_guide_2_url }}">
+            <span class="ie-hc__resource-index">02 · ENVOLVENTE</span>
+            <strong>Estructura, capas y aislamiento</strong>
+            <span>Tableros, núcleo, espesores, capas complementarias, juntas, huecos y continuidad térmica.</span>
+            <span class="ie-hc__resource-link">Abrir guía <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="ie-hc__resource-card" href="{{ ie_guide_3_url }}">
+            <span class="ie-hc__resource-index">03 · EJECUCIÓN</span>
+            <strong>Montaje, durabilidad y sostenibilidad</strong>
+            <span>Fabricación, tolerancias, sellado, control del agua, protección en obra, mantenimiento y evidencia ambiental.</span>
+            <span class="ie-hc__resource-link">Abrir guía <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="ie-hc__resource-card" href="{{ ie_guide_4_url }}">
+            <span class="ie-hc__resource-index">04 · APLICACIÓN</span>
+            <strong>Aplicaciones y modelos compatibles</strong>
+            <span>Qué tipologías pueden resolverse con SIP y cómo relacionar compatibilidad técnica con modalidad comercial.</span>
+            <span class="ie-hc__resource-link">Abrir guía <span aria-hidden="true">→</span></span>
+          </a>
+        </nav>
+
+        <div class="ie-hc__proof" aria-labelledby="ie-sip-proof-title-{{ section.id }}">
+          <div class="ie-hc__proof-head">
+            <p class="ie-hc__eyebrow">Criterio técnico</p>
+            <h2 id="ie-sip-proof-title-{{ section.id }}">Qué debe demostrarse antes de convertir una ventaja en promesa</h2>
+          </div>
+          <div class="ie-hc__proof-grid">
+            <article>
+              <p class="ie-hc__index">01 · PRESTACIÓN</p>
+              <h3>El dato pertenece a una solución concreta</h3>
+              <p>Transmitancia, resistencia al fuego, acústica o capacidad estructural deben corresponder a la composición y a los detalles realmente proyectados. No se deben extrapolar automáticamente de otro panel o sistema.</p>
+            </article>
+            <article>
+              <p class="ie-hc__index">02 · ENCUENTROS</p>
+              <h3>Las juntas forman parte del rendimiento</h3>
+              <p>Sellados, huecos, apoyos, cubierta, fachada y control del agua condicionan hermeticidad, comportamiento higrotérmico y durabilidad. La instalación debe seguir el diseño y la documentación del sistema.</p>
+            </article>
+            <article>
+              <p class="ie-hc__index">03 · PROYECTO</p>
+              <h3>El SIP no sustituye la justificación del edificio</h3>
+              <p>En España, el proyecto debe justificar las exigencias que correspondan del CTE. Elegir SIP no reemplaza las comprobaciones de seguridad estructural, energía, incendio, salubridad o acústica aplicables.</p>
+            </article>
+          </div>
+          <p class="ie-hc__proof-note">Por eso evitamos presentar una cifra genérica de aislamiento, fuego, plazo o vida útil como si describiera todas las casas SIP. La referencia válida es la solución documentada para el modelo y el proyecto concretos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ie-hc ie-hc--faq" aria-labelledby="ie-sip-faq-title-{{ section.id }}">
+      <div class="ie-hc__inner">
+        <div class="ie-hc__faq-head">
+          <p class="ie-hc__eyebrow">FAQ de compra</p>
+          <h2 id="ie-sip-faq-title-{{ section.id }}">Antes de solicitar presupuesto</h2>
+        </div>
+        <div class="ie-hc__faq-list">
+          <details>
+            <summary>¿Todos los paneles SIP son iguales?</summary>
+            <div><p>No. Cambian las caras, el núcleo, los adhesivos, los espesores, las uniones, la certificación y los detalles de ejecución. Compara siempre la solución concreta y su documentación, no solo la etiqueta “SIP”.</p></div>
+          </details>
+          <details>
+            <summary>¿El precio mostrado es un precio llave en mano?</summary>
+            <div><p>No debe suponerse. El “desde” sirve como referencia comercial del modelo. La ficha y la propuesta deben aclarar qué incluye: estructura o kit, montaje, cubierta, fachada, carpinterías, instalaciones, base, transporte, proyecto y acabados.</p></div>
+          </details>
+          <details>
+            <summary>¿Una casa SIP garantiza por sí sola una determinada eficiencia energética?</summary>
+            <div><p>No. El comportamiento energético depende de la envolvente completa, las juntas, los huecos, los puentes térmicos, la orientación, las instalaciones y el uso, además de la composición del panel.</p></div>
+          </details>
+          <details>
+            <summary>¿Qué información ayuda a preparar un presupuesto útil?</summary>
+            <div><p>Modelo o superficie aproximada, ubicación de la parcela, estado del proyecto, accesos, necesidad de base o cimentación, nivel de acabado, modalidad de suministro y cualquier plano o condicionante conocido.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="ie-hc ie-hc--cta" aria-labelledby="ie-sip-cta-title-{{ section.id }}">
+      <div class="ie-hc__inner">
+        <div class="ie-hc__cta">
+          <div>
+            <p class="ie-hc__eyebrow">Siguiente paso</p>
+            <h2 id="ie-sip-cta-title-{{ section.id }}">¿Ya tienes un modelo SIP en mente?</h2>
+            <div class="ie-hc__cta-text"><p>Indícanos el modelo, la ubicación y el nivel de terminación que buscas. Revisaremos el alcance, los condicionantes del proyecto y la información necesaria para preparar una propuesta comparable.</p></div>
+          </div>
+          <div class="ie-hc__actions">
+            <a class="ie-hc__button ie-hc__button--primary" href="{{ ie_contact_url }}">Solicitar estudio del modelo</a>
+            <a class="ie-hc__button ie-hc__button--secondary" href="{{ ie_services_url }}">Cómo trabajamos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "IE · Colección SIP",
+  "enabled_on": {
+    "templates": ["collection"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "Posición",
+      "options": [
+        { "value": "intro", "label": "Introducción" },
+        { "value": "outro", "label": "Contenido posterior" }
+      ],
+      "default": "intro"
+    }
+  ],
+  "presets": [
+    {
+      "name": "IE · Colección SIP"
+    }
+  ]
+}
+{% endschema %}
