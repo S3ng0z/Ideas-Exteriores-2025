@@ -3,36 +3,70 @@
     "hero": {
       "type": "ie-services-hero",
       "blocks": {
-        "a": {"type":"summary","settings":{"number":"01","label":"Composición estructural del panel"}},
-        "b": {"type":"summary","settings":{"number":"02","label":"Núcleo aislante y espesores"}},
-        "c": {"type":"summary","settings":{"number":"03","label":"Hermeticidad y puentes térmicos"}},
-        "d": {"type":"summary","settings":{"number":"04","label":"Prestaciones y validación en proyecto"}}
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Caras estructurales y núcleo"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Espesor y transmitancia U"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Juntas, aire y puentes térmicos"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Humedad, fuego y acústica"
+          }
+        }
       },
-      "block_order": ["a","b","c","d"],
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
       "settings": {
         "eyebrow": "Paneles SIP · 02",
-        "heading": "Estructura, capas y aislamiento en paneles SIP",
-        "lead": "<p>Un panel SIP combina caras estructurales y un núcleo aislante en un elemento tipo sándwich. En esta guía reunimos composición, materiales, espesores, aislamiento, continuidad de la envolvente, hermeticidad y prestaciones térmicas para entender qué debe definirse y verificarse antes de elegir una solución.</p>",
+        "heading": "Estructura, capas y aislamiento de un sistema SIP",
+        "lead": "<p>La prestación de un SIP depende de su composición y de cómo se integra en la envolvente. Esta guía explica caras, núcleos, espesores, valor U, juntas, hermeticidad, humedad y prestaciones que deben comprobarse sobre una solución concreta.</p>",
         "primary_label": "Ver casas con paneles SIP",
         "primary_link": "/collections/sip-panel-houses",
         "secondary_label": "Solicitar asesoramiento",
         "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Contenido de la guía"
+        "summary_title": "Qué se especifica realmente"
       }
     },
     "composition": {
       "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Composición",
+        "heading": "Caras, núcleo y unión forman un único elemento",
+        "intro": "<p>Las propiedades del panel no pueden deducirse solo del espesor. Dos SIP con el mismo grosor pueden utilizar materiales, densidades, adhesivos y detalles distintos.</p>"
+      },
       "blocks": {
         "faces": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/structural-insulated-panel-core-and-facings_002.png",
-            "image_alt": "Caras estructurales de un panel SIP con tableros técnicos",
-            "index": "01 · Caras estructurales",
-            "heading": "Tableros que rigidizan y protegen el conjunto",
-            "text": "<p>Las caras del panel aportan rigidez, estabilidad y soporte para las capas posteriores. OSB estructural es una solución habitual, aunque pueden especificarse otros tableros cuando el proyecto exige mayor resistencia superficial, compatibilidad con acabados concretos, exposición a humedad o prestaciones específicas frente al fuego.</p>",
-            "link_1_label": "Cómo funciona el sistema SIP",
-            "link_1": "/pages/structural-insulated-panel-system-how-it-works",
+            "image_alt": "Caras estructurales de un panel SIP",
+            "index": "01 · Caras",
+            "heading": "Tableros estructurales según sistema y exposición",
+            "text": "<p>OSB estructural es habitual, pero existen soluciones con otros tableros. Deben verificarse clase de servicio, resistencia, fijaciones, reacción o resistencia al fuego del conjunto y compatibilidad con revestimientos.</p>",
+            "link_1_label": "Qué son los paneles SIP",
+            "link_1": "/pages/what-are-sip-panels-how-they-work",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
@@ -43,28 +77,28 @@
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/structural-insulated-panel-core-and-facings_003.png",
-            "image_alt": "Núcleos aislantes EPS PUR y PIR utilizados en paneles SIP",
-            "index": "02 · Núcleo aislante",
-            "heading": "EPS, PUR o PIR según objetivo de espesor y prestación",
-            "text": "<p>El núcleo aislante aporta continuidad térmica y participa en el comportamiento del panel como sándwich. EPS suele priorizar equilibrio coste-prestación; PUR y PIR permiten alcanzar determinadas resistencias térmicas con menos espesor. La elección final depende de la ficha técnica del sistema, el uso, el clima, el espesor disponible y las exigencias del proyecto.</p>",
-            "link_1_label": "",
-            "link_1": "",
+            "image_alt": "Núcleos aislantes utilizados en sistemas SIP",
+            "index": "02 · Núcleo",
+            "heading": "EPS, PUR, PIR u otros núcleos: comparar prestaciones declaradas",
+            "text": "<p>La conductividad térmica, densidad, comportamiento frente a temperatura, fuego y humedad varían entre materiales y productos. El tipo de núcleo debe elegirse por documentación y objetivo de proyecto, no por una regla genérica.</p>",
+            "link_1_label": "Montaje y durabilidad",
+            "link_1": "/pages/sip-panel-assembly-durability-sustainability",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
             "link_3": ""
           }
         },
-        "envelope": {
+        "joints": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/structural-insulated-panel-energy-efficiency-building-envelope_005.png",
-            "image_alt": "Detalle de junta y sellado entre paneles SIP para continuidad de la envolvente",
-            "index": "03 · Envolvente",
-            "heading": "Aislamiento continuo y juntas correctamente selladas",
-            "text": "<p>La eficiencia no depende solo del aislante. Juntas, encuentros, pasos de instalaciones y conexiones con carpinterías, cimentación y cubierta condicionan la continuidad térmica y la hermeticidad. El detalle de unión debe formar parte del proyecto y de la ejecución controlada.</p>",
-            "link_1_label": "Fabricación y montaje",
-            "link_1": "/pages/structural-insulated-panel-manufacturing-and-assembly",
+            "image_alt": "Junta sellada entre paneles SIP",
+            "index": "03 · Juntas",
+            "heading": "La envolvente se decide en los encuentros",
+            "text": "<p>Los paneles pueden ofrecer gran continuidad de aislamiento, pero juntas, splines, fijaciones, esquinas, huecos y conexiones con suelo y cubierta concentran el riesgo de infiltración, puente térmico y entrada de agua.</p>",
+            "link_1_label": "Aplicaciones y modelos",
+            "link_1": "/pages/sip-panel-applications-compatible-models",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
@@ -72,70 +106,180 @@
           }
         }
       },
-      "block_order": ["faces","core","envelope"],
-      "settings": {
-        "eyebrow": "01 · Composición",
-        "heading": "El panel funciona como un conjunto, no como tres materiales independientes",
-        "intro": "<p>La prestación final surge de la interacción entre caras, núcleo, adhesión, juntas y uniones. Por eso no conviene elegir un panel solo por el nombre del aislante o por un espesor nominal.</p>"
-      }
+      "block_order": [
+        "faces",
+        "core",
+        "joints"
+      ]
     },
     "performance": {
       "type": "ie-services-process",
       "blocks": {
-        "s1": {"type":"step","settings":{"number":"01","heading":"Definir la composición","text":"Seleccionar caras, núcleo y espesor a partir del uso, geometría, exposición, acabados y requisitos del edificio."}},
-        "s2": {"type":"step","settings":{"number":"02","heading":"Calcular la prestación térmica","text":"La transmitancia U debe obtenerse para la composición concreta y comprobarse dentro del conjunto de la envolvente, no asumirse por familia de panel."}},
-        "s3": {"type":"step","settings":{"number":"03","heading":"Resolver juntas y encuentros","text":"Continuidad del aislamiento, sellado al aire, puentes térmicos y pasos de instalaciones deben detallarse antes del montaje."}},
-        "s4": {"type":"step","settings":{"number":"04","heading":"Verificar en obra","text":"La calidad de ejecución condiciona el resultado. Cuando el proyecto lo requiera, pueden emplearse ensayos de hermeticidad como Blower Door para comprobar el comportamiento real."}}
+        "s1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Fijar composición real",
+            "text": "Identificar tableros, núcleo, adhesión, elementos de unión, revestimientos y capas adicionales del cerramiento."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Calcular la transmitancia",
+            "text": "El valor U corresponde a una construcción concreta. Debe calcularse con sus materiales, espesores y puentes térmicos, no extrapolarse desde otro fabricante."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Diseñar aire, vapor y agua",
+            "text": "Definir continuidad de la capa de aire, sellados, control de vapor y protección exterior según clima, uso y composición higrotérmica."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Verificar la envolvente terminada",
+            "text": "Revisar juntas y pasos de instalaciones; cuando el proyecto lo requiera, el ensayo Blower Door permite medir la estanqueidad del edificio."
+          }
+        }
       },
-      "block_order": ["s1","s2","s3","s4"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
       "settings": {
-        "eyebrow": "02 · Prestación térmica",
-        "heading": "Del espesor del panel al comportamiento real de la envolvente",
-        "intro": "<p>Una baja transmitancia calculada es solo una parte del resultado. La demanda energética del edificio también depende de puentes térmicos, infiltraciones, carpinterías, orientación, protección solar, ventilación e instalaciones.</p>"
+        "eyebrow": "02 · Rendimiento térmico",
+        "heading": "Un valor U solo es válido para la solución calculada",
+        "intro": "<p>Las tablas de fabricantes son útiles cuando se reproduce exactamente la construcción indicada. Para un proyecto distinto debe realizarse el cálculo correspondiente y verificar el edificio completo.</p>"
       }
     },
     "criteria": {
       "type": "ie-services-confidence",
       "blocks": {
-        "c1": {"type":"principle","settings":{"heading":"Espesor según proyecto","text":"No existe un espesor universal. Debe relacionarse con el núcleo, la zona climática, el elemento —muro o cubierta— y las prestaciones objetivo."}},
-        "c2": {"type":"principle","settings":{"heading":"Hermeticidad diseñada","text":"Cintas, sellantes y soluciones de junta deben estar especificados y coordinados; el panel por sí solo no garantiza una envolvente estanca."}},
-        "c3": {"type":"principle","settings":{"heading":"CTE y edificio completo","text":"El cumplimiento energético se verifica sobre el edificio y su solución constructiva completa. SIP puede formar parte de una estrategia eficiente, pero no sustituye el cálculo ni la justificación del proyecto."}},
-        "c4": {"type":"principle","settings":{"heading":"Acabados compatibles","text":"Interior y exterior deben resolverse con capas y subestructuras compatibles con humedad, fuego, impacto, fijaciones y mantenimiento previstos."}}
+        "c1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Humedad y durabilidad",
+            "text": "La madera y los tableros derivados necesitan mantenerse dentro de condiciones compatibles con su clase de servicio. Detalles de drenaje, barreras, revestimientos y secado son parte del sistema."
+          }
+        },
+        "c2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Fuego",
+            "text": "La prestación frente al fuego depende del conjunto: caras, núcleo, revestimientos interiores, juntas, fijaciones y detalles. No debe deducirse solo del material del núcleo."
+          }
+        },
+        "c3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Acústica",
+            "text": "El aislamiento acústico depende de masa, desacoplamientos, revestimientos, juntas y encuentros. Un panel aislante térmico no garantiza por sí mismo una prestación acústica concreta."
+          }
+        },
+        "c4": {
+          "type": "principle",
+          "settings": {
+            "heading": "CTE DB-HE",
+            "text": "La eficiencia energética se comprueba sobre la envolvente y el edificio, considerando zona climática, puentes térmicos, huecos, control solar, ventilación e instalaciones."
+          }
+        }
       },
-      "block_order": ["c1","c2","c3","c4"],
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
       "settings": {
-        "eyebrow": "03 · Criterios de especificación",
-        "heading": "Qué conviene cerrar antes de comparar paneles"
+        "eyebrow": "03 · Más allá del aislamiento",
+        "heading": "Las prestaciones se justifican como sistema completo"
       }
     },
     "faq": {
       "type": "ie-light-timber-faq",
       "blocks": {
-        "q1": {"type":"question","settings":{"question":"¿De qué está compuesto un panel SIP?","answer":"<p>Habitualmente integra dos caras estructurales y un núcleo aislante rígido adherido entre ellas. La composición exacta depende del sistema y debe consultarse en su documentación técnica.</p>"}},
-        "q2": {"type":"question","settings":{"question":"¿Qué diferencia hay entre EPS, PUR y PIR?","answer":"<p>Son familias de aislantes con propiedades diferentes. EPS suele ofrecer un buen equilibrio coste-prestación; PUR y PIR pueden aportar mayor resistencia térmica con menor espesor. La decisión debe basarse en prestaciones declaradas, uso y proyecto.</p>"}},
-        "q3": {"type":"question","settings":{"question":"¿Qué espesor de panel SIP necesito?","answer":"<p>No puede fijarse de forma universal. Depende del núcleo, el elemento constructivo, la zona climática, el valor U objetivo, la geometría, los puentes térmicos y el resto de la envolvente.</p>"}},
-        "q4": {"type":"question","settings":{"question":"¿Un panel SIP elimina los puentes térmicos?","answer":"<p>No completamente. Su aislamiento continuo puede reducir discontinuidades, pero uniones, anclajes, huecos y encuentros siguen necesitando diseño específico para limitar los puentes térmicos.</p>"}},
-        "q5": {"type":"question","settings":{"question":"¿La hermeticidad depende del panel o de las juntas?","answer":"<p>De ambos y, especialmente, de cómo se resuelve el sistema completo. Las juntas, pasos de instalaciones y encuentros perimetrales deben sellarse y ejecutarse de acuerdo con el detalle definido.</p>"}},
-        "q6": {"type":"question","settings":{"question":"¿Qué significa el valor U?","answer":"<p>La transmitancia térmica U expresa el flujo de calor que atraviesa un cerramiento. Cuanto menor es, mayor es su resistencia al paso del calor, pero el valor debe calcularse para la composición real y no confundirse con la eficiencia energética total del edificio.</p>"}},
-        "q7": {"type":"question","settings":{"question":"¿Se puede comprobar la hermeticidad una vez montado?","answer":"<p>Sí. En proyectos donde se haya definido un objetivo de estanqueidad puede utilizarse un ensayo Blower Door para medir infiltraciones y localizar fugas antes o después de determinadas fases de acabado.</p>"}}
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué núcleo aísla mejor: EPS, PUR o PIR?",
+            "answer": "<p>No basta comparar el nombre del material. Deben compararse conductividad declarada, espesor, envejecimiento cuando proceda, comportamiento al fuego y documentación del producto dentro del sistema.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué espesor de SIP necesito?",
+            "answer": "<p>Depende del sistema, núcleo, zona climática, uso, elemento —muro o cubierta—, puentes térmicos y objetivo de proyecto. No existe un espesor universal.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "¿Puedo usar un valor U publicado por otro fabricante?",
+            "answer": "<p>No como valor de proyecto. Las tablas son válidas para las construcciones y supuestos indicados por quien las publica; una composición distinta requiere su propio cálculo.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "¿Qué es más importante: aislamiento o hermeticidad?",
+            "answer": "<p>Son prestaciones diferentes y complementarias. El aislamiento limita transmisión de calor; la hermeticidad controla flujos de aire no deseados. Ambas deben resolverse junto con humedad y ventilación.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "¿El SIP necesita barrera de vapor?",
+            "answer": "<p>No puede responderse de forma universal. La estrategia de control de vapor depende de clima, capas, materiales, uso interior y análisis higrotérmico del cerramiento.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "¿Cómo se limita el riesgo de condensaciones?",
+            "answer": "<p>Con una composición higrotérmicamente coherente, continuidad de capas, control de infiltraciones, protección frente a lluvia y ventilación adecuada. El CTE dispone de procedimientos de comprobación aplicables.</p>"
+          }
+        }
       },
-      "block_order": ["q1","q2","q3","q4","q5","q6","q7"],
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
       "settings": {
         "eyebrow": "FAQ",
-        "heading": "Preguntas frecuentes sobre capas, aislamiento y envolvente SIP",
-        "intro": "<p>Las prestaciones deben vincularse siempre a una composición concreta y a un proyecto completo, no a una cifra aislada del panel.</p>"
+        "heading": "Capas, espesores y prestaciones sin simplificaciones",
+        "intro": "<p>Las cifras solo son útiles cuando están ligadas a una composición y condiciones de cálculo identificables.</p>"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Define el panel según el uso y la prestación que necesitas",
-        "text": "<p>Indícanos tipo de proyecto, ubicación, uso, superficie y nivel de acabado. Podemos orientarte sobre la composición y las comprobaciones que deben cerrarse antes de presupuestar.</p>",
+        "heading": "Define la envolvente antes de cerrar el presupuesto",
+        "text": "<p>Indícanos ubicación, uso, geometría y prestaciones objetivo. Podemos ordenar qué composición, detalles y verificaciones deben quedar definidos para comparar soluciones SIP de forma equivalente.</p>",
         "label": "Consultar mi proyecto",
         "link": "/pages/contact-ideas-exteriores"
       }
     }
   },
-  "order": ["hero","composition","performance","criteria","faq","cta"]
+  "order": [
+    "hero",
+    "composition",
+    "performance",
+    "criteria",
+    "faq",
+    "cta"
+  ]
 }

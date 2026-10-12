@@ -39,14 +39,24 @@
     assign seo_title = 'Montaje y durabilidad del entramado ligero de madera'
     assign seo_description = 'Guía sobre montaje, mantenimiento, reparaciones y sostenibilidad del entramado ligero: control de humedad, vida útil, carbono y ciclo de vida.'
   endif
-  if request.page_type == 'page' and page.handle == 'structural-insulated-panel-system-how-it-works'
-    assign seo_title = 'Paneles SIP: qué son, funcionamiento y ventajas'
-    assign seo_description = 'Descubre qué son los paneles SIP, cómo funcionan y sus ventajas y limitaciones frente a la obra tradicional. Aplicaciones, aislamiento, costes y montaje.'
+  if request.page_type == 'page' and page.handle == 'what-are-sip-panels-how-they-work'
+    assign seo_title = 'Paneles SIP: qué son y cómo funciona el sistema'
+    assign seo_description = 'Guía sobre paneles SIP: composición, funcionamiento estructural, prefabricación, aplicaciones y criterios técnicos para proyectos de madera en España.'
   endif
 
-  if request.page_type == 'page' and page.handle == 'structural-insulated-panel-manufacturing-and-assembly'
+  if request.page_type == 'page' and page.handle == 'sip-panel-structure-layers-insulation'
+    assign seo_title = 'Paneles SIP: estructura, capas y aislamiento'
+    assign seo_description = 'Caras, núcleos, espesores, valor U, juntas, hermeticidad, humedad, fuego y acústica: cómo especificar correctamente una envolvente SIP.'
+  endif
+
+  if request.page_type == 'page' and page.handle == 'sip-panel-assembly-durability-sustainability'
     assign seo_title = 'Paneles SIP: montaje, durabilidad y sostenibilidad'
-    assign seo_description = 'Fabricación y montaje de paneles SIP: fases de obra, vida útil, mantenimiento, garantías y sostenibilidad. Certificaciones, humedad y ciclo de vida.'
+    assign seo_description = 'Planificación, fabricación, montaje, control de humedad, mantenimiento y sostenibilidad de sistemas SIP con criterios técnicos y de proyecto.'
+  endif
+
+  if request.page_type == 'page' and page.handle == 'sip-panel-applications-compatible-models'
+    assign seo_title = 'Paneles SIP: aplicaciones y modelos compatibles'
+    assign seo_description = 'Aplicaciones de paneles SIP en viviendas, estudios, oficinas y casetas. Compara modelos, alcance de suministro, prestaciones y criterios de presupuesto.'
   endif
 
 
