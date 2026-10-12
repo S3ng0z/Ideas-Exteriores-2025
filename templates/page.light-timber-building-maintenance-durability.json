@@ -331,7 +331,7 @@
       "settings": {
         "eyebrow": "Siguiente paso",
         "heading": "Planifica fabricación y montaje antes de llegar a parcela",
-        "text": "<p>Cuéntanos ubicación, uso, superficie, accesos y alcance previsto. Revisaremos contigo despiece, logística, montaje, encuentros, documentación y mantenimiento necesarios para presupuestar con claridad.</p>",
+        "text": "<p>Cuéntanos ubicación, uso, superficie, accesos y alcance previsto. Revisaremos contigo despiece, logística, montaje, encuentros, documentación y mantenimiento para presupuestar con el mismo nivel de definición que exigimos en el sistema SIP.</p>",
         "label": "Solicitar asesoría técnica",
         "link": "/pages/contact-ideas-exteriores"
       }
