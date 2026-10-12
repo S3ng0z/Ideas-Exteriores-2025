@@ -166,8 +166,8 @@
         "a": {
           "type": "principle",
           "settings": {
-            "heading": "Transmitancia y puentes térmicos",
-            "text": "La transmitancia U depende del conjunto de capas y de las heterogeneidades del muro. Montantes, encuentros y huecos pueden crear puentes térmicos que deben analizarse junto con el aislamiento."
+            "heading": "Transmitancia, puentes térmicos y DB-HE",
+            "text": "La transmitancia U depende del conjunto de capas y de las heterogeneidades del muro. Montantes, encuentros y huecos pueden crear puentes térmicos que deben analizarse junto con el aislamiento. En España, la justificación energética se realiza para el edificio y su zona climática conforme al DB-HE; no se deduce de un espesor aislante aislado."
           }
         },
         "b": {
@@ -237,7 +237,7 @@
           "type": "question",
           "settings": {
             "question": "¿Cómo se justifica el cumplimiento del CTE?",
-            "answer": "<p>Sobre el edificio concreto. Estructura, energía, salubridad, acústica y seguridad frente al fuego se comprueban con las soluciones y prestaciones del proyecto; no se justifican por declarar un espesor o un material aislante de forma aislada.</p>"
+            "answer": "<p>Sobre el edificio concreto. Estructura, energía, salubridad, acústica y seguridad frente al fuego se comprueban con las soluciones y prestaciones del proyecto. Para energía, el DB-HE obliga a verificar el comportamiento del edificio y su envolvente; declarar un espesor o un material aislante de forma aislada no demuestra cumplimiento.</p>"
           }
         }
       },
