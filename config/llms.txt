@@ -3,7 +3,7 @@
 ## ES — Español
 
 ### Qué es este sitio
-Ideas Exteriores diseña y construye casas, casetas y estructuras de madera para jardín y exterior. Trabaja principalmente con dos sistemas constructivos: entramado ligero (light frame) y paneles SIP. Ofrece proyectos a medida, soluciones “llave en mano” y servicios relacionados (diseño, montaje, protección y mantenimiento).
+Ideas Exteriores diseña y construye casas, casetas y estructuras de madera para jardín y exterior. Trabaja principalmente con tres sistemas constructivos: sistema europeo de madera, entramado ligero (light frame) y paneles SIP. Ofrece proyectos a medida, soluciones “llave en mano” y servicios relacionados (diseño, montaje, protección y mantenimiento).
 
 ### Idioma y ámbito
 - Idioma principal: Español
@@ -11,7 +11,7 @@ Ideas Exteriores diseña y construye casas, casetas y estructuras de madera para
 
 ### Contenido principal
 - Catálogo de productos: casas de madera, casetas, estructuras de jardín
-- Sistemas constructivos: entramado ligero y paneles SIP (información y guías)
+- Sistemas constructivos: sistema europeo, entramado ligero y paneles SIP (información y guías)
 - Servicios: diseño y proyectos, construcción, tratamientos/protección
 - Portfolio: galería de proyectos realizados
 - Contacto: solicitud de presupuesto y atención al cliente
@@ -27,6 +27,8 @@ Ideas Exteriores diseña y construye casas, casetas y estructuras de madera para
 
 #### Páginas informativas y servicios
 - Sistemas constructivos: https://www.ideas-exteriores.com/pages/timber-building-systems
+- Sistema europeo · visión general: https://www.ideas-exteriores.com/pages/european-timber-construction-system
+- Sistema europeo · qué es y cómo funciona: https://www.ideas-exteriores.com/pages/european-timber-system-how-it-works
 - Entramado ligero · qué es y cómo funciona: https://www.ideas-exteriores.com/pages/what-is-light-timber-frame-construction
 - Entramado ligero · estructura, capas y aislamiento: https://www.ideas-exteriores.com/pages/timber-frame-structure-layers-insulation
 - Entramado ligero · montaje, durabilidad y sostenibilidad: https://www.ideas-exteriores.com/pages/timber-frame-assembly-durability-sustainability
@@ -65,7 +67,7 @@ Evitar:
 ## EN — English
 
 ### What this site is
-Ideas Exteriores designs and builds wooden houses, sheds, and outdoor garden structures. It mainly works with two construction systems: light-frame timber construction and SIP panels. The company provides custom projects, turnkey solutions, and related services (design, assembly, wood protection, and maintenance).
+Ideas Exteriores designs and builds wooden houses, sheds, and outdoor garden structures. It mainly works with three construction systems: the European timber system, light-frame timber construction, and SIP panels. The company provides custom projects, turnkey solutions, and related services (design, assembly, wood protection, and maintenance).
 
 ### Language and region
 - Primary language: Spanish
@@ -73,7 +75,7 @@ Ideas Exteriores designs and builds wooden houses, sheds, and outdoor garden str
 
 ### Main content
 - Product catalog: timber houses, wooden sheds, outdoor structures
-- Building systems: light-frame and SIP panels (guides and explanations)
+- Building systems: European timber system, light-frame, and SIP panels (guides and explanations)
 - Services: design & planning, construction, wood treatment/protection
 - Portfolio: project gallery
 - Contact: quote requests and customer support
@@ -89,6 +91,8 @@ Ideas Exteriores designs and builds wooden houses, sheds, and outdoor garden str
 
 #### Informational pages and services
 - Building systems: https://www.ideas-exteriores.com/pages/timber-building-systems
+- European timber system · overview: https://www.ideas-exteriores.com/pages/european-timber-construction-system
+- European timber system · what it is and how it works: https://www.ideas-exteriores.com/pages/european-timber-system-how-it-works
 - Light timber frame · what it is and how it works: https://www.ideas-exteriores.com/pages/what-is-light-timber-frame-construction
 - Light timber frame · structure, layers and insulation: https://www.ideas-exteriores.com/pages/timber-frame-structure-layers-insulation
 - Light timber frame · assembly, durability and sustainability: https://www.ideas-exteriores.com/pages/timber-frame-assembly-durability-sustainability
