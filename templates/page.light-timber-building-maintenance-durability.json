@@ -3,95 +3,68 @@
     "hero": {
       "type": "ie-services-hero",
       "blocks": {
-        "summary_1": {
+        "a": {
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Base, anclajes y montaje"
+            "label": "Despiece, fabricación y logística"
           }
         },
-        "summary_2": {
+        "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Agua, secado y mantenimiento"
+            "label": "Montaje y control de encuentros"
           }
         },
-        "summary_3": {
+        "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Clase de servicio y clase de uso"
+            "label": "Humedad, uso y mantenimiento"
           }
         },
-        "summary_4": {
+        "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Origen, carbono y ciclo de vida"
+            "label": "Sostenibilidad demostrable"
           }
         }
       },
       "block_order": [
-        "summary_1",
-        "summary_2",
-        "summary_3",
-        "summary_4"
+        "a",
+        "b",
+        "c",
+        "d"
       ],
       "settings": {
-        "eyebrow": "Entramado ligero · Montaje, durabilidad y sostenibilidad",
+        "eyebrow": "Entramado ligero · 03",
         "heading": "Montaje, durabilidad y sostenibilidad del entramado ligero de madera",
-        "lead": "<p>La durabilidad empieza antes de levantar el primer panel: base, replanteo, anclajes, protección frente al agua y continuidad de la envolvente deben estar resueltos desde proyecto. Esta guía explica la secuencia de montaje, diferencia la clase de servicio de la clase de uso y sitúa la sostenibilidad en el ciclo de vida completo, no en una promesa automática asociada a la madera.</p>",
-        "primary_label": "Ver aplicaciones y modelos compatibles",
-        "primary_link": "/pages/timber-frame-applications-compatible-models",
+        "lead": "<p>El rendimiento de un sistema timber frame depende tanto del despiece y la fabricación como de la instalación y de cómo se mantiene seco y protegido durante su vida útil. Esta guía reúne planificación, logística, montaje, control de humedad, mantenimiento y criterios para evaluar sostenibilidad sin afirmaciones genéricas.</p>",
+        "primary_label": "Ver casas de entramado ligero",
+        "primary_link": "/collections/light-frame-houses",
         "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "En esta guía"
+        "summary_title": "Del taller a la vida útil"
       }
     },
     "mounting_overview": {
       "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "01 · Preparación",
+        "heading": "Un montaje rápido exige documentación y logística previas",
+        "intro": "<p>La panelización y el montaje en seco reducen trabajo en parcela cuando replanteo, despiece, apoyos, anclajes, encuentros e instalaciones están resueltos antes de fabricar.</p>"
+      },
       "blocks": {
-        "prepare": {
+        "m1": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/light-timber-building-installation-steps_001.png",
-            "image_alt": "Replanteo y preparación de la base para una construcción de entramado ligero",
-            "index": "01 · Preparar",
-            "heading": "Base, replanteo y logística deben estar cerrados antes del montaje",
-            "text": "<p>Se verifican cotas, nivelación, apoyos, anclajes, barreras capilares, drenaje, accesos, zonas de acopio o izado y almacenamiento protegido. Corregir la base después de recibir los paneles, o exponer componentes a humedad innecesaria, penaliza precisión, secuencia y durabilidad.</p>",
-            "link_1_label": "Bases y soleras",
-            "link_1": "/pages/timber-bases-and-foundations",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        },
-        "assemble": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/light-timber-building-installation-steps_003.png",
-            "image_alt": "Paneles y muros de entramado ligero durante el montaje",
-            "index": "02 · Montar",
-            "heading": "Montar es elevar, unir, aplomar, anclar y estabilizar",
-            "text": "<p>Los bastidores o paneles se colocan según replanteo, se conectan entre sí y con la base y se arriostran conforme al proyecto. Geometría, huecos, fijaciones y estabilidad temporal se controlan antes de avanzar.</p>",
-            "link_1_label": "Montaje profesional",
-            "link_1": "/pages/timber-structure-installation",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        },
-        "close": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/light-timber-building-installation-steps_009.png",
-            "image_alt": "Aislamiento y cierre técnico de una envolvente de entramado ligero",
-            "index": "03 · Cerrar",
-            "heading": "Cerrar la envolvente exige continuidad y revisión de encuentros",
-            "text": "<p>Aislamiento, hermeticidad, control de vapor, protección frente al agua, huecos e instalaciones se coordinan antes de ocultarlos. Los puntos singulares deben quedar inspeccionados y documentados.</p>",
+            "image_alt": "Replanteo y preparación para montaje de entramado ligero",
+            "index": "01 · Despiece",
+            "heading": "Planos, modulación y piezas identificadas",
+            "text": "<p>Los planos de fabricación y montaje ordenan bastidores, huecos, dinteles, apoyos, anclajes, refuerzos y secuencia. Deben coordinarse con arquitectura, estructura, instalaciones y logística.</p>",
             "link_1_label": "Estructura, capas y aislamiento",
             "link_1": "/pages/timber-frame-structure-layers-insulation",
             "link_2_label": "",
@@ -99,202 +72,153 @@
             "link_3_label": "",
             "link_3": ""
           }
+        },
+        "m2": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-installation-steps_003.png",
+            "image_alt": "Montaje de bastidores de entramado ligero en obra",
+            "index": "02 · Obra",
+            "heading": "Base, aplomado, anclajes y estabilidad temporal",
+            "text": "<p>Antes de levantar bastidores se comprueban nivel, dimensiones, humedad y soporte. Paneles o muros se elevan, unen, aploman, anclan y arriostran según proyecto, manteniendo estabilidad temporal hasta completar el sistema.</p>",
+            "link_1_label": "Qué es y cómo funciona",
+            "link_1": "/pages/what-is-light-timber-frame-construction",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "m3": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-installation-steps_009.png",
+            "image_alt": "Cierre técnico y revisión de envolvente timber frame",
+            "index": "03 · Cierre",
+            "heading": "Sellar, proteger y comprobar antes de tapar",
+            "text": "<p>Hermeticidad, control de vapor, aislamiento, membranas, huecos y penetraciones deben revisarse antes de ocultarlos. La prioridad es evitar entrada de agua y mantener continuidad en los encuentros.</p>",
+            "link_1_label": "Aplicaciones y modelos",
+            "link_1": "/pages/timber-frame-applications-compatible-models",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
         }
       },
       "block_order": [
-        "prepare",
-        "assemble",
-        "close"
-      ],
-      "settings": {
-        "eyebrow": "01 · Montaje",
-        "heading": "Industrializar reduce improvisación; no elimina el control de obra",
-        "intro": "<p>La prefabricación puede trasladar trabajo a un entorno controlado y acortar determinadas operaciones en parcela. Aun así, cimentación, tolerancias, accesos, clima, izado, arriostramiento, instalaciones y cierre de la envolvente siguen condicionando el plazo y la calidad final.</p>"
-      }
+        "m1",
+        "m2",
+        "m3"
+      ]
     },
     "mounting_process": {
       "type": "ie-services-process",
       "blocks": {
-        "step_1": {
+        "s1": {
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Recepcionar parcela y base",
-            "text": "Se verifican cotas, nivelación, resistencia y estado de la cimentación, apoyos, anclajes, drenajes y pasos previstos antes de colocar madera."
+            "heading": "Fabricar según documentación",
+            "text": "Preparar bastidores, paneles, huecos y refuerzos a partir del despiece aprobado y mantener identificación y trazabilidad de las piezas."
           }
         },
-        "step_2": {
+        "s2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Separar la madera de humedad persistente",
-            "text": "El arranque se detalla para limitar capilaridad, salpicaduras y agua retenida mediante barreras, cotas, drenaje y materiales compatibles con la exposición."
+            "heading": "Transportar y almacenar secos",
+            "text": "Proteger madera, tableros y aislantes frente a lluvia, agua estancada, golpes y contacto inadecuado con el terreno; descargar según secuencia de montaje."
           }
         },
-        "step_3": {
+        "s3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Levantar y estabilizar la estructura",
-            "text": "Muros y paneles se colocan, fijan, aploman y arriostran. Se controlan huecos, tolerancias, uniones y estabilidad temporal antes de cargar niveles superiores."
+            "heading": "Montar y arriostrar",
+            "text": "Colocar muros sobre soportes verificados, controlar aplomado, fijaciones y anclajes y mantener estabilización temporal hasta completar el sistema resistente."
           }
         },
-        "step_4": {
+        "s4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Completar forjados, cubierta y rigidización",
-            "text": "Tableros, uniones, refuerzos, forjados y cubierta convierten los bastidores montados en un sistema resistente continuo conforme al cálculo."
-          }
-        },
-        "step_5": {
-          "type": "step",
-          "settings": {
-            "number": "05",
-            "heading": "Integrar instalaciones y continuidad de la envolvente",
-            "text": "Se coordinan recorridos y registros y se completan aislamiento, sellados, control de vapor, protección exterior y detalles alrededor de huecos y penetraciones."
-          }
-        },
-        "step_6": {
-          "type": "step",
-          "settings": {
-            "number": "06",
-            "heading": "Inspeccionar antes de cerrar y entregar",
-            "text": "Se revisan fijaciones, juntas, drenajes, sellados, remates, instalaciones y acabados y se documentan las pautas de inspección y mantenimiento posteriores."
+            "heading": "Cerrar la envolvente y registrar",
+            "text": "Completar cubierta, fachada, membranas y sellados; revisar penetraciones y documentar incidencias y comprobaciones antes de cerrar acabados."
           }
         }
       },
       "block_order": [
-        "step_1",
-        "step_2",
-        "step_3",
-        "step_4",
-        "step_5",
-        "step_6"
+        "s1",
+        "s2",
+        "s3",
+        "s4"
       ],
       "settings": {
-        "eyebrow": "Secuencia de ejecución",
-        "heading": "Seis controles desde la base hasta el cierre",
-        "intro": "<p>El detalle cambia según el proyecto, pero la lógica debe conservarse: recibir una base apta, proteger el arranque, estabilizar la estructura, completar la envolvente sin discontinuidades y comprobar los puntos que después quedarán ocultos.</p>"
+        "eyebrow": "02 · Secuencia de obra",
+        "heading": "Cuatro controles que protegen la calidad del sistema",
+        "intro": "<p>El proyecto, los detalles constructivos y las instrucciones de los productos prevalecen sobre cualquier esquema genérico de montaje.</p>"
       }
     },
     "durability": {
-      "type": "ie-services-cards",
-      "blocks": {
-        "water": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/light-timber-building-maintenance-durability_004.png",
-            "image_alt": "Detalle constructivo para controlar agua y humedad en entramado ligero",
-            "index": "01 · Humedad",
-            "heading": "Evitar agua retenida y favorecer drenaje, ventilación y secado",
-            "text": "<p>En encuentros expuestos deben evitarse geometrías que acumulen agua. Zócalos, huecos, cubiertas, juntas, cámaras y remates se diseñan para evacuarla con rapidez y permitir el secado de los elementos cuando la solución lo requiere.</p>",
-            "link_1_label": "Tratamiento y protección",
-            "link_1": "/pages/wood-treatment-protection",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        },
-        "maintenance": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/light-timber-building-maintenance-durability_005.png",
-            "image_alt": "Revisión preventiva y mantenimiento de una vivienda de entramado ligero",
-            "index": "02 · Mantener",
-            "heading": "Inspeccionar puntos sensibles antes de que aparezca daño oculto",
-            "text": "<p>Canalones, bajantes, cubierta, juntas, sellados, encuentros con el terreno, carpinterías y revestimientos requieren revisiones proporcionadas a su exposición. El mantenimiento se basa en el sistema y acabado reales, no en un calendario universal.</p>",
-            "link_1_label": "Mantenimiento y reparación",
-            "link_1": "/pages/wood-maintenance-repair",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        },
-        "repair": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/light-timber-building-maintenance-durability_00001.png",
-            "image_alt": "Reparación localizada de un cerramiento de entramado ligero",
-            "index": "03 · Reparar",
-            "heading": "Reparar la causa, comprobar la madera y reconstruir la continuidad",
-            "text": "<p>Ante humedad persistente se identifica primero su origen y extensión. Después se comprueban los elementos afectados y se restituyen barreras, aislamientos, sellados y acabados necesarios para recuperar la función del cerramiento.</p>",
-            "link_1_label": "Solicitar revisión",
-            "link_1": "/pages/contact-ideas-exteriores",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "water",
-        "maintenance",
-        "repair"
-      ],
-      "settings": {
-        "eyebrow": "02 · Durabilidad y mantenimiento",
-        "heading": "La estrategia principal es mantener la madera fuera de humedad persistente",
-        "intro": "<p>La protección eficaz combina diseño, ejecución, ventilación o drenaje cuando proceden y mantenimiento. Un tratamiento superficial no compensa un detalle que retiene agua o una entrada de humedad que no puede secar.</p>"
-      }
-    },
-    "durability_criteria": {
       "type": "ie-services-confidence",
       "blocks": {
-        "criterion_1": {
+        "d1": {
           "type": "principle",
           "settings": {
-            "heading": "Clase de servicio: condición de humedad para el cálculo",
-            "text": "El DB-SE-M diferencia clases de servicio en función de las condiciones ambientales y del contenido de humedad esperado. Esta clasificación afecta al comportamiento resistente y a parámetros de cálculo de la madera."
+            "heading": "Agua fuera de la estructura",
+            "text": "La durabilidad de la madera depende en gran medida del diseño constructivo y del control de humedad. Cubierta, fachada, zócalos, drenajes y encuentros deben evitar agua persistente y favorecer el secado."
           }
         },
-        "criterion_2": {
+        "d2": {
           "type": "principle",
           "settings": {
-            "heading": "Clase de uso: riesgo biológico y protección",
-            "text": "La exposición del elemento determina el riesgo frente a organismos xilófagos y orienta la necesidad de durabilidad natural, tratamiento o medidas constructivas. No debe confundirse con la clase de servicio."
+            "heading": "Clases de servicio y uso",
+            "text": "La clase de servicio se relaciona con las condiciones de humedad consideradas en cálculo; la clase de uso orienta el riesgo biológico y la protección necesaria. No son conceptos equivalentes."
           }
         },
-        "criterion_3": {
+        "d3": {
           "type": "principle",
           "settings": {
-            "heading": "Detalles que no retienen agua",
-            "text": "Pendientes, goterones, separación del terreno, drenajes, cámaras y juntas deben conducir el agua hacia fuera y permitir ventilación o secado cuando corresponda."
+            "heading": "Instalaciones y modificaciones",
+            "text": "Perforaciones, rozas o nuevos huecos no deben improvisarse sobre elementos resistentes o capas de control. Las modificaciones pueden afectar recorridos de carga, hermeticidad, fuego y humedad."
           }
         },
-        "criterion_4": {
+        "d4": {
           "type": "principle",
           "settings": {
-            "heading": "Inspección y mantenimiento accesibles",
-            "text": "Los elementos expuestos y los puntos de evacuación de agua deben poder revisarse, limpiarse y repararse. Diseñar acceso y sustitución razonable aumenta la capacidad de conservar el edificio."
+            "heading": "Inspección y mantenimiento",
+            "text": "Revisar cubierta, fachada, sellados, carpinterías, puntos próximos al terreno y síntomas de entrada de agua permite intervenir antes de que la humedad alcance elementos estructurales."
           }
         }
       },
       "block_order": [
-        "criterion_1",
-        "criterion_2",
-        "criterion_3",
-        "criterion_4"
+        "d1",
+        "d2",
+        "d3",
+        "d4"
       ],
       "settings": {
-        "eyebrow": "03 · Exposición y vida útil",
-        "heading": "Clase de servicio y clase de uso no significan lo mismo"
+        "eyebrow": "03 · Durabilidad",
+        "heading": "Mantener seca la madera pesa más que prometer una vida útil genérica"
       }
     },
     "sustainability": {
       "type": "ie-services-cards",
+      "settings": {
+        "eyebrow": "04 · Sostenibilidad",
+        "heading": "Evaluar datos, no etiquetas",
+        "intro": "<p>La madera puede almacenar carbono biogénico durante su vida en servicio y la prefabricación puede reducir mermas, pero el impacto global depende también de origen, fabricación, transporte, otros materiales, energía de uso, mantenimiento y fin de vida.</p>"
+      },
       "blocks": {
-        "origin": {
+        "e1": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/light-timber-building-sustainability-carbon-footprint_001.png",
-            "image_alt": "Madera estructural procedente de cadenas de suministro responsables",
-            "index": "01 · Origen",
-            "heading": "Origen responsable y trazabilidad dentro de un alcance concreto",
-            "text": "<p>Certificaciones como FSC o PEFC pueden aportar evidencia sobre gestión forestal y cadena de custodia cuando el producto y proveedor están cubiertos por el certificado. No sustituyen la documentación estructural ni las prestaciones del edificio.</p>",
+            "image_alt": "Madera estructural y trazabilidad de materiales",
+            "index": "01 · Materiales",
+            "heading": "Origen responsable y documentación ambiental",
+            "text": "<p>Conviene solicitar documentación del producto, procedencia de la madera, certificaciones de cadena de custodia cuando existan y, para comparar impactos, EPD o análisis de ciclo de vida equivalentes.</p>",
             "link_1_label": "",
             "link_1": "",
             "link_2_label": "",
@@ -303,30 +227,30 @@
             "link_3": ""
           }
         },
-        "carbon": {
-          "type": "service",
-          "settings": {
-            "image": "shopify://shop_images/light-timber-building-sustainability-carbon-footprint_002.png",
-            "image_alt": "Evaluación del carbono incorporado y del ciclo de vida de una construcción en madera",
-            "index": "02 · Carbono",
-            "heading": "El carbono biogénico se evalúa dentro del ciclo de vida",
-            "text": "<p>Los productos de madera almacenan temporalmente carbono biogénico durante su vida en servicio, pero eso no equivale a neutralidad climática. Producción, transporte, otros materiales, uso, mantenimiento y fin de vida forman parte del balance.</p>",
-            "link_1_label": "",
-            "link_1": "",
-            "link_2_label": "",
-            "link_2": "",
-            "link_3_label": "",
-            "link_3": ""
-          }
-        },
-        "cycle": {
+        "e2": {
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/light-timber-building-sustainability-carbon-footprint_003.png",
-            "image_alt": "Montaje en seco y uso eficiente de materiales en entramado ligero",
-            "index": "03 · Ciclo de vida",
-            "heading": "Diseñar para durar, reparar y reutilizar cuando sea viable",
-            "text": "<p>La construcción circular prioriza durabilidad, adaptabilidad y reducción de residuos. La prefabricación puede limitar mermas; uniones y capas accesibles facilitan reparación, sustitución selectiva y, cuando el diseño y la normativa lo permiten, recuperación de componentes.</p>",
+            "image_alt": "Prefabricación en seco y aprovechamiento de materiales",
+            "index": "02 · Proceso",
+            "heading": "Menos residuo no significa impacto cero",
+            "text": "<p>El corte y panelizado en taller pueden optimizar material y reducir recortes en parcela. El balance debe incluir residuos de fábrica, embalaje, transporte, medios de elevación y sustituciones durante la vida útil.</p>",
+            "link_1_label": "",
+            "link_1": "",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "e3": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/light-timber-building-thermal-comfort-energy-savings_005.png",
+            "image_alt": "Interior confortable de vivienda de entramado ligero",
+            "index": "03 · Uso",
+            "heading": "El impacto de décadas de funcionamiento también cuenta",
+            "text": "<p>Una envolvente de baja demanda puede reducir energía de uso, pero debe demostrarse en el edificio mediante cálculo y ejecución. Orientación, huecos, control solar, ventilación e instalaciones son tan relevantes como el cerramiento.</p>",
             "link_1_label": "",
             "link_1": "",
             "link_2_label": "",
@@ -337,15 +261,10 @@
         }
       },
       "block_order": [
-        "origin",
-        "carbon",
-        "cycle"
-      ],
-      "settings": {
-        "eyebrow": "04 · Sostenibilidad",
-        "heading": "Sostenibilidad verificable: origen, durabilidad, carbono y circularidad",
-        "intro": "<p>La madera puede formar parte de soluciones de menor impacto, pero la comparación debe considerar origen, cantidad de material, fabricación, transporte, energía de uso, mantenimiento, vida útil y fin de vida. Cuando haya que comparar alternativas, conviene utilizar datos equivalentes —por ejemplo EPD y análisis de ciclo de vida coherentes con el proyecto— y no una afirmación genérica asociada al material.</p>"
-      }
+        "e1",
+        "e2",
+        "e3"
+      ]
     },
     "faq": {
       "type": "ie-light-timber-faq",
@@ -353,50 +272,43 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "¿Cuánto tarda el montaje de una casa de entramado ligero?",
-            "answer": "<p>No existe un plazo universal. La prefabricación puede reducir operaciones en parcela, pero el calendario depende de superficie, complejidad, cimentación, accesos, clima, nivel de prefabricación, instalaciones y acabados.</p>"
+            "question": "¿La madera puede mojarse durante el montaje?",
+            "answer": "<p>Debe protegerse de exposición innecesaria y agua retenida. Si se humedece, no conviene cerrar capas hasta comprobar que puede secar y que sus condiciones son adecuadas para continuar.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "¿Cuánto puede durar una construcción de entramado ligero?",
-            "answer": "<p>No hay una cifra única válida para cualquier edificio. Una solución bien proyectada para su exposición, correctamente ejecutada y mantenida puede prestar servicio durante décadas. El control de humedad y los detalles de agua son determinantes.</p>"
+            "question": "¿Qué detalle es más crítico para la durabilidad?",
+            "answer": "<p>No existe uno solo, pero cubierta, huecos, zócalos, juntas, penetraciones y cualquier punto donde pueda entrar o quedar retenida agua merecen especial atención.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿Qué diferencia hay entre clase de servicio y clase de uso?",
-            "answer": "<p>La clase de servicio describe condiciones de humedad relevantes para el cálculo estructural. La clase de uso clasifica la exposición que condiciona el riesgo biológico y las medidas de durabilidad. Se relacionan con la humedad, pero responden a objetivos distintos.</p>"
+            "question": "¿Puedo abrir nuevos huecos después?",
+            "answer": "<p>No sin comprobar la estructura. Un hueco puede cortar montantes, tableros de rigidización, cargaderos o recorridos de carga y exigir refuerzo calculado.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "¿Se pueden reparar daños localizados?",
-            "answer": "<p>Sí, pero primero hay que eliminar la causa. Sellados, remates, revestimientos y determinadas capas pueden repararse localmente; si hay humedad persistente o posible afección estructural, se inspecciona la madera antes de reconstruir el cerramiento.</p>"
+            "question": "¿El entramado ligero necesita mantenimiento?",
+            "answer": "<p>La estructura suele quedar protegida, pero el edificio requiere mantenimiento de cubierta, fachada, sellados, carpinterías y puntos de agua para conservar las condiciones previstas.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "¿La madera hace que el edificio sea automáticamente más sostenible?",
-            "answer": "<p>No. El impacto depende del origen, cantidades, otros materiales, fabricación, transporte, energía de uso, mantenimiento, vida útil y fin de vida. Para comparar soluciones conviene utilizar datos equivalentes y, cuando proceda, análisis de ciclo de vida.</p>"
+            "question": "¿La madera hace que el edificio sea automáticamente sostenible?",
+            "answer": "<p>No. Deben valorarse origen, cantidades, otros materiales, fabricación, transporte, comportamiento en uso, mantenimiento, vida útil y fin de vida.</p>"
           }
         },
         "q6": {
           "type": "question",
           "settings": {
-            "question": "¿Qué significa que la madera almacena carbono?",
-            "answer": "<p>Parte del carbono incorporado por el árbol permanece en el producto durante su vida en servicio. Su efecto climático debe evaluarse junto con la procedencia forestal, las emisiones del resto del ciclo de vida y el escenario de fin de vida.</p>"
-          }
-        },
-        "q7": {
-          "type": "question",
-          "settings": {
-            "question": "¿FSC o PEFC garantizan las prestaciones del edificio?",
-            "answer": "<p>No. Estas certificaciones se refieren a gestión forestal y trazabilidad dentro de su alcance. Resistencia, humedad, fuego, energía, acústica y demás prestaciones se justifican con proyecto, productos adecuados y correcta ejecución.</p>"
+            "question": "¿Qué documentación debería quedar al final?",
+            "answer": "<p>Como mínimo, la acordada en proyecto y contrato: planos finales o de montaje, fichas técnicas relevantes, instrucciones de mantenimiento, garantías aplicables y registros de comprobaciones cuando proceda.</p>"
           }
         }
       },
@@ -406,23 +318,22 @@
         "q3",
         "q4",
         "q5",
-        "q6",
-        "q7"
+        "q6"
       ],
       "settings": {
-        "eyebrow": "Preguntas frecuentes",
-        "heading": "Montaje, durabilidad y sostenibilidad: dudas habituales",
-        "intro": "<p>Respuestas para distinguir prestaciones de proyecto de cifras o claims que no pueden generalizarse.</p>"
+        "eyebrow": "FAQ",
+        "heading": "Montaje y vida útil: los puntos que no deben improvisarse",
+        "intro": "<p>La durabilidad es una consecuencia de diseño, materiales, ejecución, protección y mantenimiento.</p>"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Comprueba qué aplicaciones y modelos encajan con el sistema",
-        "text": "<p>Con la secuencia de montaje, la estrategia de durabilidad y el ciclo de vida claros, el siguiente paso es relacionar esas exigencias con el uso previsto y el catálogo compatible.</p>",
-        "label": "Ver aplicaciones y modelos compatibles",
-        "link": "/pages/timber-frame-applications-compatible-models"
+        "heading": "Planifica fabricación y montaje antes de llegar a parcela",
+        "text": "<p>Cuéntanos ubicación, uso, superficie, accesos y alcance previsto. Revisaremos contigo despiece, logística, montaje, encuentros, documentación y mantenimiento necesarios para presupuestar con claridad.</p>",
+        "label": "Solicitar asesoría técnica",
+        "link": "/pages/contact-ideas-exteriores"
       }
     }
   },
@@ -431,7 +342,6 @@
     "mounting_overview",
     "mounting_process",
     "durability",
-    "durability_criteria",
     "sustainability",
     "faq",
     "cta"
