@@ -1,6 +1,7 @@
 /* Home · criterio de proyecto
-   Bloque editorial compacto: diseño, sistema y ejecución. */
+   Server-rendered editorial block: design, system and execution. */
 
+#shopify-section-section_aAqjjb .text-block--text_nJefke,
 .ie-home-criteria .ie-home-criteria__heading {
   width: 100% !important;
   max-width: none !important;
@@ -16,6 +17,7 @@
   text-wrap: pretty;
 }
 
+#shopify-section-section_aAqjjb .text-block--text_nJefke p,
 .ie-home-criteria .ie-home-criteria__heading p {
   width: 100% !important;
   max-width: none !important;
@@ -23,6 +25,7 @@
   text-align: left !important;
 }
 
+#shopify-section-section_aAqjjb .text-block--text_JfGQpF,
 .ie-home-criteria .ie-home-criteria__body {
   width: 100% !important;
   max-width: none !important;
@@ -59,6 +62,7 @@
 }
 
 @media screen and (max-width: 749px) {
+  #shopify-section-section_aAqjjb .text-block--text_nJefke,
   .ie-home-criteria .ie-home-criteria__heading {
     max-width: 100% !important;
     margin-bottom: 14px !important;
