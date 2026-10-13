@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -43,15 +52,12 @@
     },
     "systems": {
       "type": "ie-services-cards",
-      "settings": {
-        "eyebrow": "01 · Explora las alternativas",
-        "heading": "Tres formas de proyectar y construir en madera",
-        "intro": "<p>Cada solución se explica en su propia guía técnica, con enlaces a aplicaciones y modelos. Ningún nombre comercial garantiza por sí solo prestaciones, certificaciones o plazos.</p>"
-      },
       "blocks": {
         "frame": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Modern_Timber_House_Under_Construction.webp",
+            "image_alt": "Modern Timber House Under Construction",
             "index": "01 · Bastidores de madera",
             "heading": "Entramado ligero",
             "text": "<p>Estructura formada por montantes y soleras, tableros y arriostramiento. El aislamiento y las capas de control del aire, vapor y agua se coordinan dentro de la envolvente. Es una opción adaptable a diseños y proyectos de distinta complejidad.</p>",
@@ -66,6 +72,8 @@
         "sip": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Modern_Timber_Frame_House_in_Countryside.webp",
+            "image_alt": "Modern Timber Frame House in Countryside",
             "index": "02 · Paneles estructurales aislados",
             "heading": "Paneles SIP",
             "text": "<p>Elementos prefabricados con caras resistentes adheridas a un núcleo aislante. Exigen calcular y resolver apoyos, uniones, juntas, huecos, instalaciones y protección frente a la humedad como un sistema completo.</p>",
@@ -80,6 +88,8 @@
         "european": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Timber_Wall_Assembly_in_Mediterranean_Light.webp",
+            "image_alt": "Timber Wall Assembly in Mediterranean Light",
             "index": "03 · Madera perfilada y capa interior",
             "heading": "Sistema europeo",
             "text": "<p>Denominación comercial de Ideas Exteriores para una solución de piezas exteriores de madera perfilada con una capa técnica interior. No es una norma ni un sello europeo: hay que definir componentes, movimientos, uniones y prestaciones del proyecto.</p>",
@@ -96,15 +106,15 @@
         "frame",
         "sip",
         "european"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "01 · Explora las alternativas",
+        "heading": "Tres formas de proyectar y construir en madera",
+        "intro": "<p>Cada solución se explica en su propia guía técnica, con enlaces a aplicaciones y modelos. Ningún nombre comercial garantiza por sí solo prestaciones, certificaciones o plazos.</p>"
+      }
     },
     "process": {
       "type": "ie-services-process",
-      "settings": {
-        "eyebrow": "02 · Cómo decidir",
-        "heading": "De la necesidad al sistema adecuado",
-        "intro": "<p>El sistema es una decisión de proyecto, no una garantía aislada de ahorro, sostenibilidad o cumplimiento normativo.</p>"
-      },
       "blocks": {
         "s1": {
           "type": "step",
@@ -144,14 +154,15 @@
         "s2",
         "s3",
         "s4"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "02 · Cómo decidir",
+        "heading": "De la necesidad al sistema adecuado",
+        "intro": "<p>El sistema es una decisión de proyecto, no una garantía aislada de ahorro, sostenibilidad o cumplimiento normativo.</p>"
+      }
     },
     "confidence": {
       "type": "ie-services-confidence",
-      "settings": {
-        "eyebrow": "03 · Validación técnica",
-        "heading": "Criterios para comparar soluciones de forma rigurosa"
-      },
       "blocks": {
         "p1": {
           "type": "principle",
@@ -187,7 +198,11 @@
         "p2",
         "p3",
         "p4"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "03 · Validación técnica",
+        "heading": "Criterios para comparar soluciones de forma rigurosa"
+      }
     },
     "cta": {
       "type": "ie-services-cta",
