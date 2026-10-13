@@ -1,6 +1,7 @@
 /* Home · Casas y casetas prefabricadas
-   Contenido comercial alineado con catálogo estandarizado y configuración controlada. */
+   Server-rendered content; selectors are anchored to stable Shopify block IDs. */
 
+#shopify-section-section_gcxq38 .text-block--text_f39tJ8 h2,
 .ie-home-solutions__section .ie-home-solutions__heading {
   width: 100% !important;
   max-width: 100% !important;
@@ -16,6 +17,7 @@
   text-wrap: pretty;
 }
 
+#shopify-section-section_gcxq38 .text-block--text_Dgm3TY,
 .ie-home-solutions__section .ie-home-solutions__copy {
   width: 100% !important;
   max-width: none !important;
@@ -27,29 +29,35 @@
   text-wrap: pretty;
 }
 
+#shopify-section-section_gcxq38 .text-block--text_Dgm3TY p,
 .ie-home-solutions__section .ie-home-solutions__copy p {
   margin: 0 0 14px !important;
 }
 
+#shopify-section-section_gcxq38 .text-block--text_Dgm3TY p:last-child,
 .ie-home-solutions__section .ie-home-solutions__copy p:last-child {
   margin-bottom: 0 !important;
 }
 
+#shopify-section-section_gcxq38 .text-block--text_Dgm3TY ul,
 .ie-home-solutions__section .ie-home-solutions__copy ul {
   margin: 0 0 12px !important;
   padding: 0 !important;
 }
 
+#shopify-section-section_gcxq38 .text-block--text_Dgm3TY li,
 .ie-home-solutions__section .ie-home-solutions__copy li {
   margin: 0 !important;
   padding: 9px 0 !important;
 }
 
+#shopify-section-section_gcxq38 .ie-home-solutions__systems,
 .ie-home-solutions__section .ie-home-solutions__systems {
   list-style: none !important;
   border-top: 1px solid rgba(31, 35, 30, 0.14);
 }
 
+#shopify-section-section_gcxq38 .ie-home-solutions__systems li,
 .ie-home-solutions__section .ie-home-solutions__systems li {
   display: grid;
   grid-template-columns: minmax(135px, 0.32fr) minmax(0, 1fr);
@@ -57,24 +65,29 @@
   border-bottom: 1px solid rgba(31, 35, 30, 0.14);
 }
 
+#shopify-section-section_gcxq38 .ie-home-solutions__systems strong,
 .ie-home-solutions__section .ie-home-solutions__systems strong {
   display: block;
   white-space: nowrap;
 }
 
+#shopify-section-section_gcxq38 .ie-home-solutions__systems span,
 .ie-home-solutions__section .ie-home-solutions__systems span {
   display: block;
 }
 
+#shopify-section-section_gcxq38 .text-block--text_Dgm3TY strong,
 .ie-home-solutions__section .ie-home-solutions__copy strong {
   font-weight: 600 !important;
 }
 
+#shopify-section-section_gcxq38 .ie-home-solutions__intro,
 .ie-home-solutions__section .ie-home-solutions__intro {
   max-width: 72ch;
   font-size: 1.02em;
 }
 
+#shopify-section-section_gcxq38 .ie-home-solutions__closing,
 .ie-home-solutions__section .ie-home-solutions__closing {
   max-width: 72ch;
   margin-top: 12px !important;
@@ -82,23 +95,27 @@
 }
 
 @media screen and (max-width: 749px) {
+  #shopify-section-section_gcxq38 .text-block--text_f39tJ8 h2,
   .ie-home-solutions__section .ie-home-solutions__heading {
     max-width: 100% !important;
     font-size: clamp(1.55rem, 7vw, 2rem) !important;
   }
 
+  #shopify-section-section_gcxq38 .text-block--text_Dgm3TY,
   .ie-home-solutions__section .ie-home-solutions__copy {
     max-width: 100% !important;
     font-size: 1rem !important;
     line-height: 1.5 !important;
   }
 
+  #shopify-section-section_gcxq38 .ie-home-solutions__systems li,
   .ie-home-solutions__section .ie-home-solutions__systems li {
     grid-template-columns: 1fr;
     gap: 3px;
     padding: 10px 0 !important;
   }
 
+  #shopify-section-section_gcxq38 .ie-home-solutions__systems strong,
   .ie-home-solutions__section .ie-home-solutions__systems strong {
     white-space: normal;
   }
