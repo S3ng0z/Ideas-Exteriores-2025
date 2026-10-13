@@ -4,14 +4,15 @@
    precios, etiquetas ni títulos. */
 
 #MainContent :where(
+  #shopify-section-hero_irjTFL .text-block--text_MggaYr p:last-of-type,
   .ie-home-hero__lead,
   .ie-home-solutions__intro,
   .ie-home-solutions__closing,
   .ie-home-solutions__systems span,
   .ie-home-benefit__copy p,
   .ie-home-criteria__item span,
-  .text-block:not(.ie-home-hero__message):not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading) p,
-  .text-block:not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading) li
+  .text-block:not(.ie-home-hero__message):not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading):not(.text-block--text_MggaYr):not(.text-block--text_KdHD74):not(.text-block--text_HyRmrt):not(.text-block--text_HMtCBh):not(.text-block--text_Pr7jPh):not(.text-block--text_nJefke):not(.text-block--text_f39tJ8) p,
+  .text-block:not(.ie-home-benefit__title):not(.ie-home-criteria__heading):not(.ie-home-solutions__heading):not(.text-block--text_KdHD74):not(.text-block--text_HyRmrt):not(.text-block--text_HMtCBh):not(.text-block--text_Pr7jPh):not(.text-block--text_nJefke):not(.text-block--text_f39tJ8) li
 ),
 .ie-footer__intro,
 .ie-footer__intro p {
@@ -195,6 +196,38 @@
   #MainContent .ie-home-benefit__copy {
     font-size: .95rem !important;
     line-height: 1.5 !important;
+  }
+
+  #shopify-section-section_g3xbzL :is(
+    .text-block--text_KdHD74,
+    .text-block--text_HyRmrt,
+    .text-block--text_HMtCBh,
+    .text-block--text_Pr7jPh,
+    .text-block--text_kUHHxm,
+    .text-block--text_zntnRd,
+    .text-block--text_GW7cCc,
+    .text-block--text_yHnhXa
+  ),
+  #shopify-section-section_g3xbzL :is(
+    .text-block--text_KdHD74,
+    .text-block--text_HyRmrt,
+    .text-block--text_HMtCBh,
+    .text-block--text_Pr7jPh,
+    .text-block--text_kUHHxm,
+    .text-block--text_zntnRd,
+    .text-block--text_GW7cCc,
+    .text-block--text_yHnhXa
+  ) p {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    text-wrap: pretty;
   }
 
   /* CABECERAS DE CATÁLOGO
