@@ -8,7 +8,38 @@
 {%- enddoc -%}
 
 {% liquid
-  assign plain_text = block.settings.text | strip_newlines | strip_html | strip
+  assign ie_home_text_override = blank
+  if request.page_type == 'index'
+    case block.id
+      when 'text_f39tJ8'
+        assign ie_home_text_override = '<h2>Casas y casetas prefabricadas de madera</h2>'
+      when 'text_Dgm3TY'
+        capture ie_home_text_override
+          echo '<p class="ie-home-solutions__intro">Trabajamos con tres sistemas constructivos para casas, casetas y espacios habitables, seleccionados según el uso, el nivel de acabado y el alcance de cada proyecto.</p>'
+          echo '<ul class="ie-home-solutions__systems">'
+          echo '<li><strong>Sistema europeo</strong><span>Solución prefabricada en madera basada en modelos definidos y configuraciones estandarizadas, con piezas preparadas para un montaje preciso y un acabado natural.</span></li>'
+          echo '<li><strong>Entramado ligero</strong><span>Sistema estructural ligero y versátil que permite resolver distintas tipologías con configuraciones y acabados definidos.</span></li>'
+          echo '<li><strong>Panel SIP</strong><span>Sistema prefabricado con paneles estructurales aislados, orientado a una ejecución precisa y una envolvente eficiente.</span></li>'
+          echo '</ul>'
+          echo '<p class="ie-home-solutions__closing">Te ayudamos a elegir la opción más adecuada y a definir suministro, acabado y montaje con un alcance claro desde el presupuesto.</p>'
+        endcapture
+      when 'text_JfGQpF'
+        capture ie_home_text_override
+          echo '<div class="ie-home-criteria__list">'
+          echo '<div class="ie-home-criteria__item"><strong>Diseño configurable</strong><span>Modelos definidos y opciones seleccionadas para adaptar la solución al uso, al espacio y al nivel de acabado.</span></div>'
+          echo '<div class="ie-home-criteria__item"><strong>Sistema adecuado</strong><span>Sistema europeo, entramado ligero o panel SIP según la tipología, las prestaciones y el proceso de montaje.</span></div>'
+          echo '<div class="ie-home-criteria__item"><strong>Ejecución controlada</strong><span>Materiales, detalles y alcance de suministro y montaje definidos desde el presupuesto para ejecutar con claridad.</span></div>'
+          echo '</div>'
+        endcapture
+    endcase
+  endif
+
+  assign ie_text_value = block.settings.text
+  if ie_home_text_override != blank
+    assign ie_text_value = ie_home_text_override
+  endif
+
+  assign plain_text = ie_text_value | strip_newlines | strip_html | strip
   assign text_width = width | default: block.settings.width
 
   if block.settings.font_size contains 'heading-lg' or block.settings.font_size contains 'heading-xl'
@@ -86,7 +117,7 @@
   </div>
 {% elsif plain_text != blank %}
   <{{ element }} {{ attributes }}>
-    {{ block.settings.text }}
+    {{ ie_text_value }}
   </{{ element }}>
 {% endif %}
 
