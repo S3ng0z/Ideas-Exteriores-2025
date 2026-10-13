@@ -1,6 +1,6 @@
 <!doctype html>
 <html
-  class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}"
+  class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}{% if request.page_type == 'index' %} ie-home-prep{% endif %}"
   lang="{{ request.locale.iso_code }}"
 >
   <head>
@@ -38,13 +38,9 @@
     {{ 'ie-header.css' | asset_url | stylesheet_tag }}
     {% if request.page_type == 'index' %}
       {{ 'ie-home-hero.css' | asset_url | stylesheet_tag }}
-      <script src="{{ 'ie-home-hero.js' | asset_url }}" defer></script>
       {{ 'ie-home-solutions.css' | asset_url | stylesheet_tag }}
-      <script src="{{ 'ie-home-solutions.js' | asset_url }}" defer></script>
       {{ 'ie-home-benefits.css' | asset_url | stylesheet_tag }}
-      <script src="{{ 'ie-home-benefits.js' | asset_url }}" defer></script>
       {{ 'ie-home-criteria.css' | asset_url | stylesheet_tag }}
-      <script src="{{ 'ie-home-criteria.js' | asset_url }}" defer></script>
       {{ 'ie-home-prose.css' | asset_url | stylesheet_tag }}
     {% endif %}
     {%- render 'color-schemes' -%}
@@ -71,6 +67,9 @@
       data-template="{{ template }}"
     >
       {{ content_for_layout }}
+      {% if request.page_type == 'index' %}
+        <script src="{{ 'ie-home-runtime.js' | asset_url }}"></script>
+      {% endif %}
     </main>
 
     {% sections 'footer-group' %}
