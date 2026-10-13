@@ -1,11 +1,18 @@
 /* Home · beneficios de marca
-   Copy compacto, técnico-comercial y sin claims ambientales/certificaciones no verificadas. */
+   Copy compacto, técnico-comercial y rendered directly from the homepage template. */
 
+#shopify-section-section_g3xbzL,
 .ie-home-benefits {
   --ie-benefit-title-size: clamp(1rem, 1.05vw, 1.12rem);
   --ie-benefit-copy-size: clamp(.9rem, .92vw, .98rem);
 }
 
+#shopify-section-section_g3xbzL :is(
+  .text-block--text_KdHD74,
+  .text-block--text_HyRmrt,
+  .text-block--text_HMtCBh,
+  .text-block--text_Pr7jPh
+),
 .ie-home-benefits .ie-home-benefit__title {
   margin: 0 0 6px !important;
   font-family: var(--font-body--family), Manrope, Arial, sans-serif !important;
@@ -18,6 +25,12 @@
   text-wrap: balance;
 }
 
+#shopify-section-section_g3xbzL :is(
+  .text-block--text_kUHHxm,
+  .text-block--text_zntnRd,
+  .text-block--text_GW7cCc,
+  .text-block--text_yHnhXa
+),
 .ie-home-benefits .ie-home-benefit__copy {
   width: 100% !important;
   max-width: 31ch !important;
@@ -33,17 +46,39 @@
   color: rgba(var(--color-foreground-rgb, 31, 35, 30), .82);
 }
 
+#shopify-section-section_g3xbzL :is(
+  .text-block--text_KdHD74,
+  .text-block--text_HyRmrt,
+  .text-block--text_HMtCBh,
+  .text-block--text_Pr7jPh,
+  .text-block--text_kUHHxm,
+  .text-block--text_zntnRd,
+  .text-block--text_GW7cCc,
+  .text-block--text_yHnhXa
+) p,
 .ie-home-benefits .ie-home-benefit__copy p,
 .ie-home-benefits .ie-home-benefit__title p {
   margin: 0 !important;
 }
 
 @media screen and (max-width: 749px) {
+  #shopify-section-section_g3xbzL :is(
+    .text-block--text_kUHHxm,
+    .text-block--text_zntnRd,
+    .text-block--text_GW7cCc,
+    .text-block--text_yHnhXa
+  ),
   .ie-home-benefits .ie-home-benefit__copy {
     max-width: 34ch !important;
     font-size: .95rem !important;
   }
 
+  #shopify-section-section_g3xbzL :is(
+    .text-block--text_KdHD74,
+    .text-block--text_HyRmrt,
+    .text-block--text_HMtCBh,
+    .text-block--text_Pr7jPh
+  ),
   .ie-home-benefits .ie-home-benefit__title {
     font-size: 1.05rem !important;
   }
