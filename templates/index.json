@@ -199,7 +199,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Sistemas constructivos en madera</h2>",
+                "text": "<h2>Casas y casetas prefabricadas de madera</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -224,7 +224,7 @@
             "text_Dgm3TY": {
               "type": "text",
               "settings": {
-                "text": "<p>Trabajamos con tres sistemas constructivos para casas, casetas y espacios habitables, seleccionados según el uso, el nivel de acabado y el alcance de cada proyecto.</p><ul><li><strong>Sistema europeo:</strong> solución prefabricada en madera basada en modelos definidos y configuraciones estandarizadas, con piezas preparadas para un montaje preciso y un acabado natural.</li><li><strong>Entramado ligero:</strong> sistema estructural ligero y versátil que permite resolver distintas tipologías con configuraciones y acabados definidos.</li><li><strong>Panel SIP:</strong> sistema prefabricado con paneles estructurales aislados, orientado a una ejecución precisa y una envolvente eficiente.</li></ul><p>Te ayudamos a elegir la opción más adecuada y a definir suministro, acabado y montaje con un alcance claro desde el presupuesto.</p>",
+                "text": "<p class="ie-home-solutions__intro">Trabajamos con tres sistemas constructivos para casas, casetas y espacios habitables, seleccionados según el uso, el nivel de acabado y el alcance de cada proyecto.</p><ul class="ie-home-solutions__systems"><li><strong>Sistema europeo</strong><span>Solución prefabricada en madera basada en modelos definidos y configuraciones estandarizadas, con piezas preparadas para un montaje preciso y un acabado natural.</span></li><li><strong>Entramado ligero</strong><span>Sistema estructural ligero y versátil que permite resolver distintas tipologías con configuraciones y acabados definidos.</span></li><li><strong>Panel SIP</strong><span>Sistema prefabricado con paneles estructurales aislados, orientado a una ejecución precisa y una envolvente eficiente.</span></li></ul><p class="ie-home-solutions__closing">Te ayudamos a elegir la opción más adecuada y a definir suministro, acabado y montaje con un alcance claro desde el presupuesto.</p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -1349,7 +1349,7 @@
             "text_JfGQpF": {
               "type": "text",
               "settings": {
-                "text": "<p><strong>Diseño configurable</strong><br/>Modelos definidos y opciones seleccionadas para adaptar la solución al uso, al espacio y al nivel de acabado.</p><p><strong>Sistema adecuado</strong><br/>Sistema europeo, entramado ligero o panel SIP según la tipología, las prestaciones y el proceso de montaje.</p><p><strong>Ejecución controlada</strong><br/>Materiales, detalles y alcance de suministro y montaje definidos desde el presupuesto para ejecutar con claridad.</p>",
+                "text": "<div class="ie-home-criteria__list"><div class="ie-home-criteria__item"><strong>Diseño configurable</strong><span>Modelos definidos y opciones seleccionadas para adaptar la solución al uso, al espacio y al nivel de acabado.</span></div><div class="ie-home-criteria__item"><strong>Sistema adecuado</strong><span>Sistema europeo, entramado ligero o panel SIP según la tipología, las prestaciones y el proceso de montaje.</span></div><div class="ie-home-criteria__item"><strong>Ejecución controlada</strong><span>Materiales, detalles y alcance de suministro y montaje definidos desde el presupuesto para ejecutar con claridad.</span></div></div>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
