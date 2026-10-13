@@ -1,3 +1,11 @@
+/* Prevent the legacy Theme Editor copy from flashing before the consolidated homepage runtime applies the existing customer-visible presentation. */
+.ie-home-prep #shopify-section-hero_irjTFL .text-block,
+.ie-home-prep #shopify-section-section_gcxq38 .text-block,
+.ie-home-prep #shopify-section-section_g3xbzL .text-block,
+.ie-home-prep #shopify-section-section_aAqjjb .text-block {
+  visibility: hidden;
+}
+
 /* Home hero presentation · Ideas Exteriores
    Server-rendered presentation: no client-side copy replacement is required. */
 
