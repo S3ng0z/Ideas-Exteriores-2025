@@ -38,9 +38,13 @@
     {{ 'ie-header.css' | asset_url | stylesheet_tag }}
     {% if request.page_type == 'index' %}
       {{ 'ie-home-hero.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'ie-home-hero.js' | asset_url }}" defer></script>
       {{ 'ie-home-solutions.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'ie-home-solutions.js' | asset_url }}" defer></script>
       {{ 'ie-home-benefits.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'ie-home-benefits.js' | asset_url }}" defer></script>
       {{ 'ie-home-criteria.css' | asset_url | stylesheet_tag }}
+      <script src="{{ 'ie-home-criteria.js' | asset_url }}" defer></script>
       {{ 'ie-home-prose.css' | asset_url | stylesheet_tag }}
     {% endif %}
     {%- render 'color-schemes' -%}
