@@ -1,0 +1,31 @@
+{% comment %}
+  AAVA TIMBER HOME 162: resumen comercial exclusivo.
+  Cifras verificadas en la descripción Shopify y el catálogo maestro.
+  No asumir que los 162 m² sean superficie útil ni que el precio incluya obra completa.
+{% endcomment %}
+{% if product.handle == 'aava-timber-home-162' %}
+  <section class="ie-aava-summary" aria-label="Resumen de la vivienda AAVA">
+    <p class="ie-aava-summary__eyebrow">AAVA · Vivienda de entramado ligero en dos plantas</p>
+    <ul class="ie-aava-summary__facts">
+      <li><strong>162 m²</strong><span>Superficie indicada en ficha</span></li>
+      <li><strong>96 m²</strong><span>Planta baja</span></li>
+      <li><strong>66 m²</strong><span>Planta alta</span></li>
+      <li><strong>3</strong><span>Dormitorios</span></li>
+      <li><strong>2</strong><span>Baños</span></li>
+    </ul>
+    <p class="ie-aava-summary__notice">Distribución de referencia: planta baja con zona de día abierta y lavadero; planta alta con dormitorio principal y mezanina para despacho o juegos. Las medidas, huecos y acabados pueden ajustarse al proyecto definitivo.</p>
+    <p class="ie-aava-summary__scope"><strong>Compara el alcance antes de decidir:</strong> BASIC, STANDARD y PASSIVE contemplan configuraciones diferentes. Revisa estructura, envolvente, cubierta, transporte, cimentación, montaje, instalaciones y acabados, tanto incluidos como excluidos. El precio final depende de la solución validada y de las condiciones de parcela; las prestaciones se justifican para cada proyecto.</p>
+    <a class="ie-aava-summary__link" href="#ie-habitable-packages">Comparar configuraciones y condiciones →</a>
+  </section>
+  <style>
+    .ie-aava-summary{margin-block:1.25rem;padding:clamp(1rem,2.5vw,1.4rem);border:1px solid #dce4dc;border-radius:12px;background:#f7faf7;color:#26362d}
+    .ie-aava-summary__eyebrow{margin:0 0 .85rem;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+    .ie-aava-summary__facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(108px,1fr));gap:.75rem;padding:0;margin:0 0 1rem;list-style:none}
+    .ie-aava-summary__facts li{display:flex;flex-direction:column;gap:.25rem}
+    .ie-aava-summary__facts strong{font-size:1.25rem;line-height:1.2}
+    .ie-aava-summary__facts span{font-size:.84rem;line-height:1.4}
+    .ie-aava-summary__notice,.ie-aava-summary__scope{margin:0 0 .75rem;font-size:.9rem;line-height:1.6}
+    .ie-aava-summary__link{font-weight:700;color:#284c3a;text-underline-offset:3px}
+    .ie-aava-summary__link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+  </style>
+{% endif %}
