@@ -1,0 +1,32 @@
+{% comment %}
+  Resumen SIGNE TIMBER HOME.
+  Datos de la ficha vigente en Shopify: 32 m² interiores, porche de 10 m²,
+  un dormitorio y un baño. No confundir ambas superficies.
+  Información de proyecto orientativa: sin atribuir prestaciones no verificadas.
+{% endcomment %}
+{% if product.handle == 'signe-timber-home-32' %}
+  <section class="ie-signe-summary" aria-label="Resumen de la casa SIGNE">
+    <p class="ie-signe-summary__eyebrow">SIGNE · Casa compacta de entramado ligero</p>
+    <ul class="ie-signe-summary__facts">
+      <li><strong>32 m²</strong><span>Superficie interior declarada</span></li>
+      <li><strong>10 m²</strong><span>Porche cubierto, por separado</span></li>
+      <li><strong>1</strong><span>Dormitorio</span></li>
+      <li><strong>1</strong><span>Baño</span></li>
+      <li><strong>1</strong><span>Salón, cocina y comedor integrados</span></li>
+    </ul>
+    <p class="ie-signe-summary__notice">Distribución de referencia con acceso al porche. Las medidas, el reparto de estancias, los huecos y los acabados se revisan para la parcela y el proyecto definitivos.</p>
+    <p class="ie-signe-summary__scope"><strong>Antes de comparar precios:</strong> BASIC, STANDARD y PASSIVE representan alcances distintos. Comprueba qué incluyen estructura, envolvente, cubierta, carpinterías, transporte, montaje, cimentación, instalaciones y acabados. El precio final y las prestaciones requieren una definición técnica y comercial del proyecto.</p>
+    <a class="ie-signe-summary__link" href="#ie-habitable-packages">Comparar configuraciones y alcance →</a>
+  </section>
+  <style>
+    .ie-signe-summary{margin-block:1.25rem;padding:clamp(1rem,2.5vw,1.4rem);border:1px solid #dce4dc;border-radius:12px;background:#f7faf7;color:#26362d}
+    .ie-signe-summary__eyebrow{margin:0 0 .85rem;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+    .ie-signe-summary__facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.75rem;padding:0;margin:0 0 1rem;list-style:none}
+    .ie-signe-summary__facts li{display:flex;flex-direction:column;gap:.25rem}
+    .ie-signe-summary__facts strong{font-size:1.25rem;line-height:1.2}
+    .ie-signe-summary__facts span{font-size:.84rem;line-height:1.4}
+    .ie-signe-summary__notice,.ie-signe-summary__scope{margin:0 0 .75rem;font-size:.9rem;line-height:1.6}
+    .ie-signe-summary__link{font-weight:700;color:#284c3a;text-underline-offset:3px}
+    .ie-signe-summary__link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+  </style>
+{% endif %}
