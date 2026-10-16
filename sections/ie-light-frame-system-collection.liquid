@@ -44,6 +44,68 @@
       </div>
     </section>
 
+    {% comment %}
+      Vista de comparación alimentada por datos vivos de Shopify. Solo en colección
+      light-frame-houses; sin sumar superficies, ni implicar precio llave en mano.
+      El listado usa los productos devueltos por la colección, no importes del Excel.
+    {% endcomment %}
+    {% if collection.products_count > 0 %}
+      <section class="ie-hc ie-lf-compare" aria-labelledby="ie-lf-compare-title-{{ section.id }}">
+        <div class="ie-hc__inner">
+          <div class="ie-lf-compare__header">
+            <div>
+              <p class="ie-hc__eyebrow">Vista rápida del catálogo</p>
+              <h2 id="ie-lf-compare-title-{{ section.id }}">Compara modelos antes de elegir</h2>
+            </div>
+            <p>Precios de partida procedentes de las fichas de Shopify. Pueden corresponder a alcances distintos: confirma superficies, partidas incluidas, IVA, cimentación, montaje y acabados en cada ficha.</p>
+          </div>
+          <details class="ie-lf-compare__details">
+            <summary>Consultar modelos y precios de partida <span aria-hidden="true">↓</span></summary>
+            <div class="ie-lf-compare__scroll" role="region" aria-label="Tabla comparativa de modelos" tabindex="0">
+              <table>
+                <thead><tr><th scope="col">Modelo</th><th scope="col">Precio de partida</th><th scope="col">Siguiente paso</th></tr></thead>
+                <tbody>
+                  {% for ie_model in collection.products %}
+                    <tr>
+                      <th scope="row">{{ ie_model.title | escape }}</th>
+                      <td>
+                        {% if ie_model.price_min > 0 %}
+                          <span class="ie-lf-compare__price">Desde {{ ie_model.price_min | money }}</span>
+                        {% else %}
+                          Consultar precio
+                        {% endif %}
+                      </td>
+                      <td><a href="{{ ie_model.url }}">Ver ficha y alcance <span aria-hidden="true">→</span></a></td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+            <p class="ie-lf-compare__footnote">Las superficies de las fichas pueden referirse a criterios de medición diferentes. No compares €/m² ni prestaciones hasta verificar una base homogénea.</p>
+          </details>
+        </div>
+      </section>
+      <style>
+        .ie-lf-compare{padding-block:clamp(1.4rem,3vw,2.5rem);background:#f9f8f6;color:#24352a}
+        .ie-lf-compare__header{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.9fr);gap:1.5rem;align-items:end;margin-bottom:1rem}
+        .ie-lf-compare__header h2{font-family:"Source Serif 4",Georgia,serif;font-weight:500;font-size:clamp(1.55rem,2.6vw,2.4rem);line-height:1.13;margin:0}
+        .ie-lf-compare__header>p{margin:0;color:#3b4a40;font-size:.93rem;line-height:1.6}
+        .ie-lf-compare__details{border:1px solid #cfd7cd;border-radius:12px;background:#fff;overflow:hidden}
+        .ie-lf-compare__details>summary{cursor:pointer;padding:1rem 1.15rem;font-size:.95rem;font-weight:700;display:flex;justify-content:space-between;gap:1rem}
+        .ie-lf-compare__details>summary:focus-visible,.ie-lf-compare a:focus-visible{outline:2px solid #284c3a;outline-offset:3px}
+        .ie-lf-compare__details[open]>summary{border-bottom:1px solid #e5e9e4}
+        .ie-lf-compare__scroll{overflow-x:auto;max-height:520px;overscroll-behavior:contain}
+        .ie-lf-compare table{border-collapse:collapse;width:100%;min-width:560px;font-size:.9rem}
+        .ie-lf-compare th,.ie-lf-compare td{text-align:left;padding:.75rem 1.1rem;border-bottom:1px solid #ecf0eb;vertical-align:middle}
+        .ie-lf-compare thead th{background:#f4f7f3;font-weight:700;position:sticky;top:0}
+        .ie-lf-compare tbody th{font-weight:600}
+        .ie-lf-compare__price{font-weight:700;white-space:nowrap}
+        .ie-lf-compare a{color:#284c3a;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+        .ie-lf-compare__footnote{margin:.7rem 1.1rem 1.1rem;font-size:.84rem;color:#3b4a40;line-height:1.55}
+        @media(max-width:720px){.ie-lf-compare__header{grid-template-columns:1fr;gap:.6rem}.ie-lf-compare th,.ie-lf-compare td{padding:.7rem .75rem}}
+      </style>
+    {% endif %}
+
     <section class="ie-hc ie-hc--guide" aria-labelledby="ie-lf-guide-title-{{ section.id }}">
       <div class="ie-hc__inner">
         <div class="ie-hc__guide-head">
