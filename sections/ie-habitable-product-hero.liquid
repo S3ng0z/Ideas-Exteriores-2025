@@ -42,6 +42,7 @@
           <p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
         {% endif %}
         <h1 id="ie-hab-product-title-{{ section.id }}">{{ product.title }}</h1>
+        {% render 'ie-freja-product-summary' %}
         {% if section.settings.lead != blank %}
           <div class="ie-hab-pdp__lead rte">{{ section.settings.lead }}</div>
         {% endif %}
