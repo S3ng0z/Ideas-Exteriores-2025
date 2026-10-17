@@ -1,0 +1,138 @@
+{{ 'ie-collections-page.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  Directory /collections. Collection records remain the source of truth.
+  Merchandising is managed with native collection picker blocks; this section
+  is deliberately separate from the shared collection-list component.
+{% endcomment %}
+<section class="ie-collections" aria-labelledby="ie-collections-title">
+  <div class="ie-collections__inner">
+    {% render 'ie-breadcrumb', current_title: 'Colecciones', class_name: 'ie-collections__breadcrumb' %}
+
+    <header class="ie-collections__hero">
+      <div class="ie-collections__hero-main">
+        <p class="ie-collections__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        <h1 id="ie-collections-title">{{ section.settings.heading | escape }}</h1>
+        <p class="ie-collections__lead">{{ section.settings.lead | escape }}</p>
+      </div>
+      <nav class="ie-collections__jump" aria-label="Explorar por tipo de solución">
+        <p class="ie-collections__jump-label">¿Qué espacio quieres crear?</p>
+        <a href="#ie-collections-exterior"><span>01</span> Exterior <span aria-hidden="true">↗</span></a>
+        <a href="#ie-collections-habitables"><span>02</span> Habitables <span aria-hidden="true">↗</span></a>
+        <a href="#ie-collections-estructuras"><span>03</span> Estructuras <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    {% assign ie_territories = 'exterior,habitables' | split: ',' %}
+    {% for ie_territory in ie_territories %}
+      {% assign ie_family_count = 0 %}
+      {% for block in section.blocks %}
+        {% if block.settings.territory == ie_territory and block.settings.collection != blank %}
+          {% assign ie_family_count = ie_family_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      {% if ie_family_count > 0 %}
+        <section id="ie-collections-{{ ie_territory }}" class="ie-collections__territory" aria-labelledby="ie-collections-{{ ie_territory }}-title">
+          <div class="ie-collections__section-head">
+            <div>
+              {% if ie_territory == 'exterior' %}
+                <p class="ie-collections__eyebrow">01 · Soluciones para exterior</p>
+                <h2 id="ie-collections-{{ ie_territory }}-title">Disfruta más de tu espacio exterior</h2>
+              {% else %}
+                <p class="ie-collections__eyebrow">02 · Espacios habitables</p>
+                <h2 id="ie-collections-{{ ie_territory }}-title">Espacios de madera para vivir y trabajar</h2>
+              {% endif %}
+            </div>
+            <p class="ie-collections__section-intro">
+              {% if ie_territory == 'exterior' %}
+                {{ section.settings.exterior_intro | escape }}
+              {% else %}
+                {{ section.settings.habitables_intro | escape }}
+              {% endif %}
+            </p>
+          </div>
+
+          <div class="ie-collections__grid">
+            {% for block in section.blocks %}
+              {% assign ie_family = block.settings.collection %}
+              {% if block.settings.territory == ie_territory and ie_family != blank %}
+                {% liquid
+                  assign ie_card_title = ie_family.title | downcase | capitalize | replace: 'Sip', 'SIP' | replace: 'Wpc', 'WPC'
+                  assign ie_card_image = ie_family.image | default: ie_family.products.first.featured_image
+                  assign ie_card_description = ie_family.description | strip_html | strip
+                %}
+                <article class="ie-collections__card" {{ block.shopify_attributes }}>
+                  <a href="{{ ie_family.url }}" class="ie-collections__card-link" aria-label="Explorar {{ ie_card_title | escape }}">
+                    <div class="ie-collections__media">
+                      {% if ie_card_image != blank %}
+                        {{ ie_card_image | image_url: width: 1100 | image_tag: loading: 'lazy', alt: ie_card_title, class: 'ie-collections__image', widths: '360, 540, 750, 900, 1100', sizes: '(max-width: 749px) 100vw, (max-width: 1100px) 50vw, 33vw' }}
+                      {% else %}
+                        <span class="ie-collections__media-fallback" aria-hidden="true">IDEAS EXTERIORES</span>
+                      {% endif %}
+                    </div>
+                    <div class="ie-collections__card-body">
+                      <h3>{{ ie_card_title | escape }}</h3>
+                      {% if ie_card_description != blank %}
+                        <p>{{ ie_card_description | truncate: 125 | escape }}</p>
+                      {% else %}
+                        <p>Descubre modelos, opciones y detalles de esta familia.</p>
+                      {% endif %}
+                      <span class="ie-collections__card-action">Explorar modelos <span aria-hidden="true">↗</span></span>
+                    </div>
+                  </a>
+                </article>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </section>
+      {% endif %}
+    {% endfor %}
+
+    <section id="ie-collections-estructuras" class="ie-collections__technical" aria-labelledby="ie-collections-estructuras-title">
+      <div>
+        <p class="ie-collections__eyebrow">03 · Estructuras y soporte técnico</p>
+        <h2 id="ie-collections-estructuras-title">{{ section.settings.structures_heading | escape }}</h2>
+      </div>
+      <div class="ie-collections__technical-content">
+        <p>{{ section.settings.structures_copy | escape }}</p>
+        <div class="ie-collections__technical-actions">
+          <a class="ie-collections__button ie-collections__button--primary" href="{{ section.settings.contact_link | default: '/pages/contact-ideas-exteriores' }}">Consultar una solución <span aria-hidden="true">↗</span></a>
+          <a class="ie-collections__button ie-collections__button--text" href="/pages/timber-building-systems">Conocer los sistemas constructivos <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IE · Directorio de colecciones",
+  "tag": "section",
+  "class": "ie-collections-directory",
+  "settings": [
+    {"type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Colecciones · Ideas Exteriores"},
+    {"type": "text", "id": "heading", "label": "Título principal", "default": "Soluciones de madera para cada espacio"},
+    {"type": "textarea", "id": "lead", "label": "Introducción", "default": "Explora nuestras colecciones de casas y casetas de madera, estudios de jardín, pérgolas, porches, cenadores y tarimas. Elige primero el uso, después compara los modelos disponibles."},
+    {"type": "textarea", "id": "exterior_intro", "label": "Texto exterior", "default": "Pérgolas, porches, cenadores y tarimas para transformar el jardín o la terraza con materiales y soluciones concretas."},
+    {"type": "textarea", "id": "habitables_intro", "label": "Texto habitables", "default": "Casas, casetas, estudios y oficinas de madera organizados por familias para encontrar un modelo adecuado a cada necesidad."},
+    {"type": "text", "id": "structures_heading", "label": "Título estructuras", "default": "¿Necesitas una estructura de madera?"},
+    {"type": "textarea", "id": "structures_copy", "label": "Texto estructuras", "default": "Algunas soluciones estructurales requieren revisar apoyos, cargas, ubicación, encuentros y alcance antes de seleccionar un producto. Te ayudamos a identificar el siguiente paso sin presentar como catálogo modelos que aún no están publicados."},
+    {"type": "url", "id": "contact_link", "label": "Enlace de contacto"}
+  ],
+  "blocks": [
+    {
+      "type": "family",
+      "name": "Colección comercial",
+      "settings": [
+        {"type": "collection", "id": "collection", "label": "Colección Shopify"},
+        {"type": "select", "id": "territory", "label": "Territorio", "options": [
+          {"value": "exterior", "label": "Exterior"},
+          {"value": "habitables", "label": "Habitables"}
+        ], "default": "exterior"}
+      ]
+    }
+  ],
+  "max_blocks": 24,
+  "presets": [{"name": "IE · Directorio de colecciones"}]
+}
+{% endschema %}
