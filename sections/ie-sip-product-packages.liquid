@@ -62,8 +62,9 @@
           </header>
 
           {% if ie_packages_on_hold %}
-            <p class="ie-sip-pdp__package-review">La composición, los componentes suministrados, el montaje y las prestaciones de esta configuración están pendientes de validación documental y presupuesto desglosado.</p>
-          {% elsif block.settings.details != blank %}
+            <p class="ie-sip-pdp__package-review">Referencia provisional: confirmar para este modelo la composición, los componentes suministrados, el montaje y las prestaciones mediante documentación y presupuesto desglosado. La descripción orientativa completa se conserva a continuación.</p>
+          {% endif %}
+          {% if block.settings.details != blank %}
             <section class="ie-sip-pdp__package-description" aria-label="Descripción completa de {{ block.settings.label | escape }}">
               <h3 class="ie-sip-pdp__package-description-title">Descripción completa de {{ block.settings.label }}</h3>
               <div class="ie-sip-pdp__package-body rte">
