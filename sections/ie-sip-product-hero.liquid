@@ -36,6 +36,11 @@
             <p><strong>Antes de comparar precios:</strong> verifica las superficies de vivienda y terraza por separado en planos acotados. Contrasta cada configuración con un presupuesto desglosado de cimentación, transporte, montaje, instalaciones y acabados. BASIC, STANDARD y PASSIVE son denominaciones comerciales; no acreditan por sí mismas una certificación energética.</p>
           </aside>
         {% endif %}
+        {% if product.metafields.custom.technical_status.value == 'review_required' %}
+          <div class="ie-sip-pdp__technical-note rte" role="status">
+            <p><strong>Información en revisión técnica y comercial.</strong> Las superficies, prestaciones y configuraciones de este modelo están sujetas a validación documental. Solicita un estudio personalizado antes de tomar decisiones sobre el alcance del suministro.</p>
+          </div>
+        {% endif %}
         <div class="ie-sip-pdp__actions">
           <a class="ie-sip-pdp__button ie-sip-pdp__button--primary" href="#ie-sip-packages">
             {{ section.settings.primary_label }}
