@@ -4,12 +4,8 @@
 {% liquid
   assign ie_collection_url = collections['sip-panel-houses'].url | default: '/collections/sip-panel-houses'
   assign ie_system_url = pages['sip-panels-system'].url | default: '/pages/sip-panels-system'
-  assign ie_display_title = product.title
-  assign ie_uppercase_breadcrumb = false
-  if product.id == 15218578587992
-    assign ie_display_title = 'HOME-SIP ALICE'
-    assign ie_uppercase_breadcrumb = true
-  endif
+  assign ie_display_title = product.title | split: '|' | first | strip
+  assign ie_uppercase_breadcrumb = true
 %}
 
 <section class="ie-sip-pdp ie-sip-pdp--hero" aria-labelledby="ie-sip-product-title-{{ section.id }}">
