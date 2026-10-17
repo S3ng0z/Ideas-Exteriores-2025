@@ -8,7 +8,7 @@
     {% for media in product.media %}
      {% if media.media_type == 'image' %}
       <figure class="ie-oasis__figure">
-       {{ media | image_url: width: 1500 | image_tag: loading: 'lazy', widths: '400, 750, 1100, 1500', sizes: '(max-width: 800px) 100vw, 58vw', alt: 'Poolhouse Oasis+ de madera y aluminio para jardín y piscina' }}
+       {{ media | image_url: width: 1500 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '400, 750, 1100, 1500', sizes: '(max-width: 800px) 100vw, 58vw', alt: 'Poolhouse Oasis+ de madera y aluminio para jardín y piscina' }}
       </figure>
      {% endif %}
     {% endfor %}
@@ -18,9 +18,9 @@
     <h1 id="ie-oasis-title">Poolhouse Oasis+</h1>
     <p class="ie-oasis__lead">Un espacio exterior protegido y luminoso para disfrutar junto a la piscina, en el jardín o en una terraza amplia.</p>
     <p class="ie-oasis__price-label">Precio de partida · Configuración básica</p>
-    <p class="ie-oasis__price">{{ product.price | money }}</p>
+    <p class="ie-oasis__price">{{ product.price_min | money }}</p>
     <p class="ie-oasis__subtle">Precio de referencia del producto. El transporte, la descarga, el montaje, la cimentación y los extras se presupuestan por separado.</p>
-    <a class="ie-oasis__button" href="#ie-oasis-presupuesto">Solicitar presupuesto <span aria-hidden="true">↗</span></a>
+    <a class="ie-oasis__button" href="https://wa.me/34687480356?text=Hola%2C%20quiero%20solicitar%20presupuesto%20para%20Poolhouse%20Oasis%2B" target="_blank" rel="noopener noreferrer">Solicitar presupuesto <span aria-hidden="true">↗</span></a>
     <p class="ie-oasis__micro">Revisaremos contigo ubicación, medidas, accesos y alcance antes de confirmar una oferta.</p>
     <div class="ie-oasis__facts">
      <div><strong>Estructura</strong><span>Madera exterior y aluminio</span></div>
