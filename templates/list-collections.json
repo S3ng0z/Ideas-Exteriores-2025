@@ -1,119 +1,116 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
+ * Plantilla /collections: las tarjetas usan selectores nativos de colección.
+ * La fuente de productos, imágenes y descripciones sigue siendo Shopify Admin.
  */
 {
   "sections": {
-    "custom_liquid_hcAGbg": {
-      "type": "ie-breadcrumb",
-      "name": "IE · Breadcrumb global",
-      "settings": {
-        "aria_label": "Migas de pan",
-        "home_label": "Inicio",
-        "current_label": "Colecciones",
-        "show_title": true,
-        "title_level": "h2"
-      }
-    },
-    "collection_list_Y66Rtq": {
-      "type": "collection-list",
+    "main": {
+      "type": "ie-collections-directory",
       "blocks": {
-        "static-collection-card": {
-          "type": "collection-card",
-          "name": "t:names.collection_card",
-          "static": true,
+        "family_01": {
+          "type": "family",
           "settings": {
-            "collection": "{{ closest.collection }}",
-            "placement": "on_image",
-            "horizontal_alignment": "center",
-            "vertical_alignment": "flex-end",
-            "collection_card_gap": 10,
-            "inherit_color_scheme": false,
-            "color_scheme": "scheme-6",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0
-          },
-          "blocks": {
-            "collection_title_HXbDAQ": {
-              "type": "collection-title",
-              "name": "t:names.collection_title",
-              "settings": {
-                "collection": "{{ closest.collection }}",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h4",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground-heading)",
-                "background": true,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "collection-card-image": {
-              "type": "_collection-card-image",
-              "name": "t:names.collection_card_image",
-              "static": true,
-              "settings": {
-                "collection": "{{ closest.collection }}",
-                "image_ratio": "landscape",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "collection_title_HXbDAQ"
-          ]
+            "collection": "classic-pergola",
+            "territory": "exterior"
+          }
+        },
+        "family_02": {
+          "type": "family",
+          "settings": {
+            "collection": "natura-porch",
+            "territory": "exterior"
+          }
+        },
+        "family_03": {
+          "type": "family",
+          "settings": {
+            "collection": "wooden-gazebos",
+            "territory": "exterior"
+          }
+        },
+        "family_04": {
+          "type": "family",
+          "settings": {
+            "collection": "natural-wood-decking",
+            "territory": "exterior"
+          }
+        },
+        "family_05": {
+          "type": "family",
+          "settings": {
+            "collection": "wpc-protech-decking",
+            "territory": "exterior"
+          }
+        },
+        "family_06": {
+          "type": "family",
+          "settings": {
+            "collection": "light-frame-houses",
+            "territory": "habitables"
+          }
+        },
+        "family_07": {
+          "type": "family",
+          "settings": {
+            "collection": "sip-panel-houses",
+            "territory": "habitables"
+          }
+        },
+        "family_08": {
+          "type": "family",
+          "settings": {
+            "collection": "casetas-de-entramado-ligero",
+            "territory": "habitables"
+          }
+        },
+        "family_09": {
+          "type": "family",
+          "settings": {
+            "collection": "sip-smartfit-sheds",
+            "territory": "habitables"
+          }
+        },
+        "family_10": {
+          "type": "family",
+          "settings": {
+            "collection": "sip-compactkit-sheds",
+            "territory": "habitables"
+          }
+        },
+        "family_11": {
+          "type": "family",
+          "settings": {
+            "collection": "sip-offices-and-studios",
+            "territory": "habitables"
+          }
         }
       },
-      "name": "t:names.collections_grid",
+      "block_order": [
+        "family_01",
+        "family_02",
+        "family_03",
+        "family_04",
+        "family_05",
+        "family_06",
+        "family_07",
+        "family_08",
+        "family_09",
+        "family_10",
+        "family_11"
+      ],
       "settings": {
-        "collection_list": [],
-        "layout_type": "grid",
-        "carousel_on_mobile": true,
-        "columns": 3,
-        "mobile_columns": "2",
-        "columns_gap": 15,
-        "bento_gap": 8,
-        "rows_gap": 15,
-        "max_collections": 4,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "gap": 11,
-        "color_scheme": "",
-        "padding-block-start": 24,
-        "padding-block-end": 24
+        "eyebrow": "Colecciones · Ideas Exteriores",
+        "heading": "Soluciones de madera para cada espacio",
+        "lead": "Explora nuestras colecciones de casas y casetas de madera, estudios de jardín, pérgolas, porches, cenadores y tarimas. Elige primero el uso, después compara los modelos disponibles.",
+        "exterior_intro": "Pérgolas, porches, cenadores y tarimas para transformar el jardín o la terraza con materiales y soluciones concretas.",
+        "habitables_intro": "Casas, casetas, estudios y oficinas de madera organizados por familias para encontrar un modelo adecuado a cada necesidad.",
+        "structures_heading": "¿Necesitas una estructura de madera?",
+        "structures_copy": "Algunas soluciones estructurales requieren revisar apoyos, cargas, ubicación, encuentros y alcance antes de seleccionar un producto. Te ayudamos a identificar el siguiente paso sin presentar como catálogo modelos que aún no están publicados.",
+        "contact_link": "/pages/contact-ideas-exteriores"
       }
     }
   },
   "order": [
-    "custom_liquid_hcAGbg",
-    "collection_list_Y66Rtq"
+    "main"
   ]
 }
