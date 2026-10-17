@@ -1,5 +1,9 @@
 {{ 'ie-poolhouse-oasis.css' | asset_url | stylesheet_tag }}
-{% if product.handle == 'poolhouse-oasis-cenador-madera-aluminio-jardin-piscina' %}
+{% assign ie_oasis_whatsapp_text = 'Hola, quiero solicitar un presupuesto para Poolhouse Oasis+: ' | append: shop.url | append: product.url | url_encode %}
+{% comment %}
+  This template is assigned through product.templateSuffix = 'poolhouse-oasis'.
+  Do not condition rendering on product.handle: it can change independently.
+{% endcomment %}
 <section class="ie-oasis" aria-labelledby="ie-oasis-title">
  <div class="ie-oasis__wrap">
   {% render 'ie-breadcrumb', breadcrumb_object: product, current_title: product.title, class_name: 'ie-oasis__breadcrumb' %}
@@ -20,7 +24,7 @@
     <p class="ie-oasis__price-label">Precio de partida · Configuración básica</p>
     <p class="ie-oasis__price">{{ product.price_min | money }}</p>
     <p class="ie-oasis__subtle">Precio de referencia del producto. El transporte, la descarga, el montaje, la cimentación y los extras se presupuestan por separado.</p>
-    <a class="ie-oasis__button" href="https://wa.me/34687480356?text=Hola%2C%20quiero%20solicitar%20presupuesto%20para%20Poolhouse%20Oasis%2B" target="_blank" rel="noopener noreferrer">Solicitar presupuesto <span aria-hidden="true">↗</span></a>
+    <a class="ie-oasis__button" href="https://wa.me/34687480356?text={{ ie_oasis_whatsapp_text }}" target="_blank" rel="noopener noreferrer">Solicitar presupuesto <span aria-hidden="true">↗</span></a>
     <p class="ie-oasis__micro">Revisaremos contigo ubicación, medidas, accesos y alcance antes de confirmar una oferta.</p>
     <div class="ie-oasis__facts">
      <div><strong>Estructura</strong><span>Madera exterior y aluminio</span></div>
@@ -65,14 +69,13 @@
    <div><p class="ie-oasis__eyebrow">Siguiente paso</p><h2 id="ie-oasis-contact-title">Estudiamos tu Poolhouse Oasis+</h2><p>Indícanos dónde se instalará y qué necesitas. La propuesta definirá el alcance, los trabajos adicionales y las condiciones de suministro.</p></div>
    <div class="ie-oasis__contact-links">
     <a class="ie-oasis__button ie-oasis__button--light" href="{{ routes.root_url }}pages/contact-ideas-exteriores?producto=poolhouse-oasis-plus">Solicitar presupuesto <span aria-hidden="true">↗</span></a>
-    <a class="ie-oasis__text-link" href="https://wa.me/34687480356?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto%20para%20Poolhouse%20Oasis%2B%3A%20https%3A%2F%2Fwww.ideas-exteriores.com%2Fproducts%2Fpoolhouse-oasis-cenador-madera-aluminio-jardin-piscina" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+    <a class="ie-oasis__text-link" href="https://wa.me/34687480356?text={{ ie_oasis_whatsapp_text }}" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
     <p class="ie-oasis__contact-note">También puedes completar el formulario de la página, situado a continuación.</p>
    </div>
   </section>
   <p class="ie-oasis__disclaimer">Las imágenes son orientativas y pueden mostrar elementos no incluidos. Las características, importes, medidas, suministros y condiciones definitivas deben recogerse en el presupuesto aceptado. La madera puede variar naturalmente de tono y aspecto.</p>
  </div>
 </section>
-{% endif %}
 {% schema %}
 {"name":"IE · Poolhouse Oasis","settings":[],"presets":[{"name":"IE · Poolhouse Oasis"}]}
 {% endschema %}
