@@ -60,7 +60,7 @@
           "settings": {
             "product": "{{ closest.product }}",
             "media_presentation": "grid",
-            "media_columns": "two",
+            "media_columns": "one",
             "image_gap": 10,
             "large_first_image": true,
             "icons_style": "arrows",
@@ -68,7 +68,7 @@
             "slideshow_mobile_controls_style": "hint",
             "thumbnail_position": "bottom",
             "thumbnail_width": 50,
-            "aspect_ratio": "2/1",
+            "aspect_ratio": "adapt",
             "media_radius": 10,
             "extend_media": false,
             "constrain_to_viewport": true,
@@ -107,91 +107,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_JtXipy": {
-              "type": "group",
-              "name": "t:names.group",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "variant_picker_nhbWcG": {
-                  "type": "variant-picker",
-                  "settings": {
-                    "product": "{{ closest.product }}",
-                    "variant_style": "buttons",
-                    "show_swatches": true,
-                    "alignment": "left",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "scope_note": {
-                  "type": "text",
-                  "name": "Alcance y presupuesto",
-                  "settings": {
-                    "text": "<p><strong>Precio de partida.</strong> Compara BASIC, STANDARD y PASSIVE antes de solicitar presupuesto. El importe final depende del alcance seleccionado y de las condiciones reales del proyecto.</p><p><a href=\"#ie-sip-packages\">Comparar configuraciones →</a></p>",
-                    "width": "100%",
-                    "max_width": "none",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "scope_note",
-                "variant_picker_nhbWcG"
-              ]
-            },
             "features_heading": {
               "type": "text",
               "name": "Características del producto",
@@ -243,6 +158,91 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "group_JtXipy": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "scope_note": {
+                  "type": "text",
+                  "name": "Alcance y presupuesto",
+                  "settings": {
+                    "text": "<p><strong>Precio de partida.</strong> Compara BASIC, STANDARD y PASSIVE antes de solicitar presupuesto. El importe final depende del alcance seleccionado y de las condiciones reales del proyecto.</p><p><a href=\"#ie-sip-packages\">Comparar configuraciones →</a></p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "variant_picker_nhbWcG": {
+                  "type": "variant-picker",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "variant_style": "buttons",
+                    "show_swatches": true,
+                    "alignment": "left",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "scope_note",
+                "variant_picker_nhbWcG"
+              ]
             }
           },
           "block_order": [
@@ -310,7 +310,6 @@
         "eyebrow": "Configuraciones",
         "heading": "Compara precio y alcance antes de decidir",
         "intro": "<p>Los tres niveles no representan solo un precio distinto: cambian el alcance del suministro, la envolvente, el montaje y los trabajos que deben coordinarse fuera del paquete.</p>",
-        "details_label": "Ver alcance completo",
         "note": "<p><strong>Importante:</strong> el nombre de una configuración no equivale por sí solo a una certificación energética o Passivhaus. Las prestaciones y la justificación normativa dependen de la composición validada, el emplazamiento y el proyecto.</p>"
       }
     },
