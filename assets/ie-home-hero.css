@@ -114,3 +114,10 @@
     -webkit-backdrop-filter: none;
   }
 }
+
+/* Acciones nativas de la portada: contraste y área táctil en el hero con vídeo. */
+#shopify-section-hero_irjTFL .button,
+#shopify-section-hero_irjTFL .button-secondary { min-height: 48px; border-radius: 7px; font-size: .9rem; font-weight: 700; text-transform: none; }
+#shopify-section-hero_irjTFL .button-secondary { color: #fff; background: rgba(24,28,22,.36); border: 1px solid rgba(255,255,255,.76); }
+#shopify-section-hero_irjTFL .button-secondary:hover { background: rgba(24,28,22,.65); }
+#shopify-section-hero_irjTFL :is(.button,.button-secondary):focus-visible { outline: 3px solid #e2c998; outline-offset: 3px; }
