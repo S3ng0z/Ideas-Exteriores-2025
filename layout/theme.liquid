@@ -1,6 +1,6 @@
 <!doctype html>
 <html
-  class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}{% if request.page_type == 'index' %} ie-home-prep{% endif %}"
+  class="no-js{% if request.design_mode %} shopify-design-mode{% endif %}"
   lang="{{ request.locale.iso_code }}"
 >
   <head>
@@ -68,9 +68,6 @@
       data-template="{{ template }}"
     >
       {{ content_for_layout }}
-      {% if request.page_type == 'index' %}
-        <script src="{{ 'ie-home-runtime.js' | asset_url }}"></script>
-      {% endif %}
     </main>
 
     {% sections 'footer-group' %}
