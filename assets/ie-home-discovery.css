@@ -1,0 +1,47 @@
+/* IDEAS EXTERIORES · Exploración comercial home. Scoped: no afecta a otras plantillas. */
+.ie-home-discovery { padding: clamp(54px, 6vw, 94px) 0; background: #f6f6f2; color: #243129; }
+.ie-home-discovery * { box-sizing: border-box; }
+.ie-home-discovery__intro { display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 30px; margin-bottom: 30px; }
+.ie-home-discovery__intro h2 { margin: 0; font-family: "Source Serif 4", Georgia, serif; font-weight: 500; letter-spacing: -.025em; line-height: 1.08; font-size: clamp(2rem, 3.1vw, 3.2rem); color: inherit; }
+.ie-home-discovery__eyebrow, .ie-home-discovery__category { margin: 0 0 10px; font-size: .73rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: #667a5e; }
+.ie-home-discovery__intro > p { margin: 0; max-width: 46ch; font-size: clamp(.97rem, 1vw, 1.1rem); line-height: 1.65; color: #536055; }
+.ie-home-discovery__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
+.ie-home-discovery__card { overflow: hidden; background: #fff; border: 1px solid #e5e7df; border-radius: 14px; min-width: 0; display: flex; flex-direction: column; box-shadow: 0 3px 18px rgba(24,36,23,.045); transition: transform .25s ease, box-shadow .25s ease; }
+.ie-home-discovery__card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(24,36,23,.10); }
+.ie-home-discovery__media { position: relative; width: 100%; aspect-ratio: 8/5; overflow: hidden; background: #e1e8df; }
+.ie-home-discovery__image { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ie-home-discovery__image-fallback { width: 100%; height: 100%; background: linear-gradient(135deg, #c4cfbe, #e8e8de); }
+.ie-home-discovery__media--structure { display: grid; place-items: center; color: #61745f; background: linear-gradient(145deg, #e9ede5, #d7e0d4); }
+.ie-home-discovery__drawing { width: min(82%, 420px); height: auto; }
+.ie-home-discovery__number { position: absolute; left: 18px; top: 18px; display: inline-grid; place-items: center; width: 33px; height: 33px; border-radius: 50%; background: rgba(255,255,255,.93); font-size: .7rem; font-weight: 700; color: #263a29; }
+.ie-home-discovery__card-body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: clamp(21px, 2vw, 28px); }
+.ie-home-discovery__card-body h3 { margin: 0 0 12px; font-family: "Source Serif 4", Georgia, serif; font-weight: 500; letter-spacing: -.02em; line-height: 1.1; color: #223027; font-size: clamp(1.65rem, 2vw, 2.2rem); }
+.ie-home-discovery__card-body > p:not(.ie-home-discovery__category) { margin: 0 0 24px; line-height: 1.6; color: #536055; font-size: .97rem; }
+.ie-home-discovery__card-link { margin-top: auto; display: inline-flex; gap: 12px; align-items: center; min-height: 44px; font-weight: 700; font-size: .91rem; text-decoration: none; color: #315e3c; border-bottom: 1px solid currentColor; }
+.ie-home-discovery__card-link:hover { color: #1b3f2a; }
+.ie-home-discovery__card-link span { font-size: 1.16rem; }
+.ie-home-discovery :is(a:focus-visible) { outline: 3px solid #a47a42; outline-offset: 4px; }
+.ie-home-discovery__quick { margin-top: 28px; display: flex; align-items: center; gap: 16px 25px; flex-wrap: wrap; }
+.ie-home-discovery__quick > p { flex-shrink: 0; margin: 0; font-size: .83rem; font-weight: 700; color: #536055; }
+.ie-home-discovery__quick-links { display: flex; flex-wrap: wrap; gap: 9px; }
+.ie-home-discovery__quick-links a { border: 1px solid #d6dcd2; border-radius: 99px; color: #2e4735; text-decoration: none; font-weight: 600; font-size: .85rem; padding: 9px 14px; background: #fff; min-height: 40px; display: inline-flex; align-items: center; }
+.ie-home-discovery__quick-links a:hover { border-color: #819982; background: #edf3ea; }
+@media (max-width: 989px) {
+  .ie-home-discovery__intro { grid-template-columns: 1fr; gap: 16px; }
+  .ie-home-discovery__grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .ie-home-discovery__card:last-child { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; }
+  .ie-home-discovery__card:last-child .ie-home-discovery__media { height: 100%; aspect-ratio: auto; }
+}
+@media (max-width: 749px) {
+  .ie-home-discovery { padding: 48px 0; }
+  .ie-home-discovery__grid { grid-template-columns: 1fr; gap: 16px; }
+  .ie-home-discovery__card:last-child { grid-column: auto; display: flex; }
+  .ie-home-discovery__card:last-child .ie-home-discovery__media { height: auto; aspect-ratio: 8/5; }
+  .ie-home-discovery__card-body { padding: 22px; }
+  .ie-home-discovery__intro { margin-bottom: 24px; }
+  .ie-home-discovery__quick { margin-top: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ie-home-discovery__card { transition: none; }
+  .ie-home-discovery__card:hover { transform: none; }
+}

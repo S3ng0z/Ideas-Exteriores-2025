@@ -21,8 +21,8 @@
   assign seo_description = page_description | default: shop.description | default: shop.name
 
   if request.page_type == 'index'
-    assign seo_title = 'Ideas Exteriores | Soluciones de madera para exterior'
-    assign seo_description = 'Diseñamos soluciones de madera para exterior y espacios habitables: casetas, pérgolas, tarimas, estudios y estructuras, con asesoramiento técnico y montaje.'
+    assign seo_title = 'Soluciones de madera para exterior y casas | Ideas Exteriores'
+    assign seo_description = 'Pérgolas, porches, cenadores, casetas, casas y estructuras de madera. Compara modelos y configuraciones y solicita presupuesto según tu proyecto.'
   endif
 
   if request.page_type == 'collection' and collection.handle == 'wooden-gazebos'

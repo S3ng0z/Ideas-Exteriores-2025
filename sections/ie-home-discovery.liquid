@@ -1,0 +1,95 @@
+{{ 'ie-home-discovery.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-home-discovery" aria-labelledby="ie-home-discovery-title">
+  <div class="page-width">
+    <div class="ie-home-discovery__intro">
+      <div>
+        <p class="ie-home-discovery__eyebrow">Encuentra tu solución</p>
+        <h2 id="ie-home-discovery-title">Madera para cada espacio</h2>
+      </div>
+      <p>Explora las familias de producto, compara modelos y elige las configuraciones disponibles antes de solicitar presupuesto.</p>
+    </div>
+
+    <div class="ie-home-discovery__grid">
+      <article class="ie-home-discovery__card">
+        <div class="ie-home-discovery__media">
+          {%- assign exterior_image = collections['wooden-gazebos'].featured_image -%}
+          {%- if exterior_image != blank -%}
+            {{ exterior_image | image_url: width: 960 | image_tag: class: 'ie-home-discovery__image', loading: 'lazy', widths: '360, 540, 720, 960', sizes: '(min-width: 990px) 31vw, (min-width: 750px) 47vw, 92vw', alt: 'Cenador de madera para espacio exterior' }}
+          {%- else -%}
+            <div class="ie-home-discovery__image-fallback" aria-hidden="true"></div>
+          {%- endif -%}
+          <span class="ie-home-discovery__number">01</span>
+        </div>
+        <div class="ie-home-discovery__card-body">
+          <p class="ie-home-discovery__category">Jardín y terraza</p>
+          <h3>Exterior</h3>
+          <p>Pérgolas, porches, cenadores y tarimas para disfrutar y proteger el espacio al aire libre.</p>
+          <a class="ie-home-discovery__card-link" href="/collections/wooden-gazebos" data-ie-territory="exterior">
+            Ver soluciones de exterior <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="ie-home-discovery__card">
+        <div class="ie-home-discovery__media">
+          {%- assign habitable_image = collections['sip-panel-houses'].featured_image -%}
+          {%- if habitable_image != blank -%}
+            {{ habitable_image | image_url: width: 960 | image_tag: class: 'ie-home-discovery__image', loading: 'lazy', widths: '360, 540, 720, 960', sizes: '(min-width: 990px) 31vw, (min-width: 750px) 47vw, 92vw', alt: 'Vivienda de madera con paneles SIP' }}
+          {%- else -%}
+            <div class="ie-home-discovery__image-fallback" aria-hidden="true"></div>
+          {%- endif -%}
+          <span class="ie-home-discovery__number">02</span>
+        </div>
+        <div class="ie-home-discovery__card-body">
+          <p class="ie-home-discovery__category">Vivienda y espacio adicional</p>
+          <h3>Habitables</h3>
+          <p>Casas, casetas, estudios y oficinas de jardín con soluciones y acabados definidos por modelo.</p>
+          <a class="ie-home-discovery__card-link" href="/collections/sip-panel-houses" data-ie-territory="habitables">
+            Comparar casas y modelos <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="ie-home-discovery__card">
+        <div class="ie-home-discovery__media ie-home-discovery__media--structure">
+          <svg class="ie-home-discovery__drawing" viewBox="0 0 440 240" fill="none" aria-hidden="true" focusable="false">
+            <path d="M60 101 200 30 378 98 236 170 60 101Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M60 101V192L236 229V170M378 98V184L236 229" stroke="currentColor" stroke-width="3"/>
+            <path d="M90 118V195M164 144V211M308 135V205M124 74 306 145M162 55 342 116M200 30V121M236 170 236 229" stroke="currentColor" stroke-width="2" opacity=".63"/>
+            <path d="M60 101 200 30 378 98M84 188 236 220 358 181" stroke="currentColor" stroke-width="7" opacity=".22"/>
+          </svg>
+          <span class="ie-home-discovery__number">03</span>
+        </div>
+        <div class="ie-home-discovery__card-body">
+          <p class="ie-home-discovery__category">Construcción en madera</p>
+          <h3>Estructuras</h3>
+          <p>Estructuras, cubiertas y soluciones técnicas para proyectos que requieren definir apoyos, cargas y montaje.</p>
+          <a class="ie-home-discovery__card-link" href="/pages/services" data-ie-territory="estructuras">
+            Conocer nuestros servicios <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <nav class="ie-home-discovery__quick" aria-label="Explorar por tipo de producto">
+      <p>Ir directamente a</p>
+      <div class="ie-home-discovery__quick-links">
+        <a href="/pages/bespoke-wooden-pergolas">Pérgolas</a>
+        <a href="/pages/bespoke-wooden-porches">Porches</a>
+        <a href="/collections/wooden-gazebos">Cenadores</a>
+        <a href="/collections/sip-panel-houses">Casas SIP</a>
+        <a href="/collections/light-frame-houses">Entramado ligero</a>
+        <a href="/pages/timber-products">Todos los productos</a>
+      </div>
+    </nav>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Inicio · Soluciones",
+  "settings": [],
+  "presets": [{ "name": "Inicio · Soluciones" }]
+}
+{% endschema %}
