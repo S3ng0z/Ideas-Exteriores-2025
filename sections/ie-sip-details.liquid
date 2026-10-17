@@ -38,6 +38,24 @@
       <p>Solicita el desglose de proyecto, licencias, cimentación, transporte, descarga, montaje, instalaciones, fachada, cubierta y acabados. No se presupone una entrega llave en mano.</p>
     </article>
   </div>
+  {% if p.handle == 'home-sip-alice-117-m-terraza' %}
+  <section class="ie-sip__tier-section" aria-labelledby="alice-tier-title">
+    <h3 id="alice-tier-title">BASIC, STANDARD y PASSIVE · Descripción completa</h3>
+    <div class="ie-sip__tier-grid">
+      {% assign tiers = 'basic,standard,passive' | split: ',' %}
+      {% for tier in tiers %}
+        <article class="ie-sip__tier-card">
+          <h4>{{ tier | upcase }} · Paneles SIP</h4>
+          {% case tier %}
+          {% when 'basic' %}{% if basic != blank %}<p class="ie-sip__tier-amount">{{ basic | money }}</p>{% endif %}<div class="ie-sip__tier-copy rte">{% render 'ie-sip-alice-basic-full' %}</div>
+          {% when 'standard' %}{% if standard != blank %}<p class="ie-sip__tier-amount">{{ standard | money }}</p>{% endif %}<div class="ie-sip__tier-copy rte">{% render 'ie-sip-alice-standard-full' %}</div>
+          {% when 'passive' %}{% if passive != blank %}<p class="ie-sip__tier-amount">{{ passive | money }}</p>{% endif %}<div class="ie-sip__tier-copy rte">{% render 'ie-sip-alice-passive-full' %}</div>
+          {% endcase %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
   <div class="ie-sip__cta">
     <h3>¿Quieres estudiar este modelo para tu parcela?</h3>
     <p>Cuéntanos dónde quieres construir y qué necesitas. Prepararemos una propuesta ajustada al proyecto.</p>
@@ -62,6 +80,7 @@
 .ie-sip__button{display:inline-block;margin-top:.6rem;padding:.9rem 1.4rem;border-radius:6px;background:#33312d;color:#fff;text-decoration:none}
 .ie-sip__button:hover,.ie-sip__button:focus-visible{background:#514b42;color:#fff}
 @media(max-width:749px){.ie-sip__grid{grid-template-columns:1fr}.ie-sip{padding-inline:18px}}
+.ie-sip__tier-section{margin:32px 0 42px}.ie-sip__tier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px;align-items:start}.ie-sip__tier-card{min-width:0;padding:24px;border:1px solid #d8d3c9;background:#faf8f4;border-radius:10px}.ie-sip__tier-card h4{font-size:1.15rem;margin:0 0 10px}.ie-sip__tier-amount{font-weight:700;font-size:1.35rem}.ie-sip__tier-copy{line-height:1.65;overflow-wrap:anywhere}.ie-sip__tier-copy p,.ie-sip__tier-copy ul{margin:.8rem 0}@media(max-width:1050px){.ie-sip__tier-grid{grid-template-columns:1fr}}
 </style>
 {% schema %}
 {"name":"IE · HOME SIP detalles","settings":[],"presets":[{"name":"IE · HOME SIP detalles"}]}
