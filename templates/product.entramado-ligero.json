@@ -117,7 +117,7 @@
               "type": "text",
               "name": "Características del producto",
               "settings": {
-                "text": "<h2>Características y planteamiento</h2>",
+                "text": "<h2>Características del modelo</h2>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
