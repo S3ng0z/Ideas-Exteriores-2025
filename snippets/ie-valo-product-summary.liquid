@@ -1,0 +1,31 @@
+{% comment %}
+  VALO Timber Home 97 · resumen específico y prudente.
+  Fuente: CAT-010 catálogo maestro (16/10/2026) y ficha Shopify.
+  CAT-010: precio sin aprobación; superficie de terraza no desglosada;
+  prohibido afirmar superficie interior/útil de 97 m² o precio llave en mano.
+{% endcomment %}
+{% if product.handle == 'valo-timber-home-97' %}
+  <section class="ie-valo-summary" aria-label="Resumen de la casa VALO">
+    <p class="ie-valo-summary__eyebrow">VALO · Casa de entramado ligero</p>
+    <ul class="ie-valo-summary__facts">
+      <li><strong>97 m²</strong><span>Superficie anunciada; alcance por confirmar</span></li>
+      <li><strong>1</strong><span>Planta</span></li>
+      <li><strong>2</strong><span>Dormitorios</span></li>
+      <li><strong>1</strong><span>Baño</span></li>
+    </ul>
+    <p class="ie-valo-summary__notice">Distribución de referencia con salón-comedor y cocina integrados, lavandería-almacenaje y salida a terraza perimetral. La superficie exacta de la terraza y su relación con los 97 m² anunciados deben verificarse en planos y mediciones del proyecto.</p>
+    <p class="ie-valo-summary__scope"><strong>Antes de comparar presupuestos:</strong> comprueba el alcance de cada configuración y sus inclusiones y exclusiones: estructura, envolvente, cubierta, transporte, cimentación, montaje, instalaciones y acabados. El importe mostrado es orientativo y precisa confirmación comercial; las prestaciones constructivas dependen de la solución definida y justificada para cada proyecto.</p>
+    <a class="ie-valo-summary__link" href="#ie-habitable-packages">Ver configuraciones y alcance →</a>
+  </section>
+  <style>
+    .ie-valo-summary{margin-block:1.25rem;padding:clamp(1rem,2.5vw,1.4rem);border:1px solid #dce4dc;border-radius:12px;background:#f7faf7;color:#26362d}
+    .ie-valo-summary__eyebrow{margin:0 0 .85rem;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+    .ie-valo-summary__facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.75rem;padding:0;margin:0 0 1rem;list-style:none}
+    .ie-valo-summary__facts li{display:flex;flex-direction:column;gap:.25rem}
+    .ie-valo-summary__facts strong{font-size:1.25rem;line-height:1.2}
+    .ie-valo-summary__facts span{font-size:.84rem;line-height:1.4}
+    .ie-valo-summary__notice,.ie-valo-summary__scope{margin:0 0 .75rem;font-size:.9rem;line-height:1.6}
+    .ie-valo-summary__link{font-weight:700;color:#284c3a;text-underline-offset:3px}
+    .ie-valo-summary__link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+  </style>
+{% endif %}
