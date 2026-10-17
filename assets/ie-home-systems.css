@@ -1,12 +1,20 @@
 /* Home · tres tecnologías, con diseño editorial coherente con servicios y catálogo. */
 .ie-home-systems { color:#243129; background:#fff; padding:clamp(52px,6vw,92px) 0; }
 .ie-home-systems * { box-sizing:border-box; }
+/* Interior editorial con margen real: el .page-width genérico no limita esta sección. */
+.ie-home-systems > .page-width {
+  box-sizing: border-box;
+  width: min(calc(100% - clamp(36px, 9vw, 144px)), 1480px);
+  max-width: 1480px;
+  margin-inline: auto;
+}
+
 .ie-home-systems__intro { display:grid; grid-template-columns:1.15fr .85fr; gap:30px; align-items:end; margin-bottom:32px; }
 .ie-home-systems__eyebrow, .ie-home-systems__number { display:block; margin:0 0 10px; font-size:.74rem; font-weight:700; letter-spacing:.095em; text-transform:uppercase; color:#687957; }
-.ie-home-systems__intro h2 { margin:0; font-family:"Source Serif 4",Georgia,serif; font-size:clamp(2rem,3.1vw,3.2rem); font-weight:500; letter-spacing:-.027em; line-height:1.1; color:#243129; }
+.ie-home-systems__intro h2 { margin:0; font-family:"Source Serif 4",Georgia,serif; font-size:clamp(2.1rem,3vw,3.3rem);text-transform:none !important; font-weight:500; letter-spacing:-.027em; line-height:1.1; color:#243129; }
 .ie-home-systems__intro>p { margin:0; max-width:50ch; font-size:1rem; line-height:1.7; color:#536055; }
-.ie-home-systems__grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(15px,2vw,23px); }
-.ie-home-systems__card { display:flex; min-width:0; flex-direction:column; overflow:hidden; border:1px solid #dfe5d9; border-radius:13px; background:#f9faf7; }
+.ie-home-systems__grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(18px,2vw,28px); }
+.ie-home-systems__card { display:flex; min-width:0; flex-direction:column; overflow:hidden; border:1px solid #dfe5d9; border-radius:16px; background:#f9faf7; }
 .ie-home-systems__visual { display:grid; place-items:center; min-height:168px; padding:15px; color:#6b8067; background:linear-gradient(135deg,#eef1e8,#e0e8da); }
 .ie-home-systems__visual--sip { background:linear-gradient(135deg,#e5ebe8,#eef1ee); color:#52776e; }
 .ie-home-systems__visual--european { background:linear-gradient(135deg,#efece4,#e3e5d8); color:#756e52; }
