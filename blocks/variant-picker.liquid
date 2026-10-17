@@ -8,14 +8,14 @@
 -%}
 
 {% comment %}
-  Alice: no presentar el selector de variantes en la ficha del modelo.
+  ALICE y VALERIA: no presentar el selector de variantes en sus fichas.
   El producto se identifica por ID estable tanto en el contexto de la página
   como en el recurso del bloque, para evitar dependencias del handle.
   Esta condición no elimina las variantes de Shopify ni su comparador comercial.
 {% endcomment %}
 {% liquid
   assign ie_show_variant_picker = true
-  if product.id == 15218578587992 or product_resource.id == 15218578587992
+  if product.id == 15218578587992 or product_resource.id == 15218578587992 or product.id == 15218583896408 or product_resource.id == 15218583896408
     assign ie_show_variant_picker = false
   endif
 %}
