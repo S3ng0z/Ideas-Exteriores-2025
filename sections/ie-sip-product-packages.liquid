@@ -1,3 +1,11 @@
+{% liquid
+  assign ie_technical_status = product.metafields.custom.technical_status.value | default: ''
+  assign ie_packages_on_hold = false
+  if ie_technical_status == 'review_required' or ie_technical_status == 'draft' or ie_technical_status == 'withdrawn'
+    assign ie_packages_on_hold = true
+  endif
+%}
+
 <section id="ie-sip-packages" class="ie-sip-pdp ie-sip-pdp--packages" aria-labelledby="ie-sip-packages-title-{{ section.id }}">
   <div class="ie-sip-pdp__inner">
     <div class="ie-sip-pdp__section-head">
@@ -5,10 +13,15 @@
         {% if section.settings.eyebrow != blank %}
           <p class="ie-sip-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
         {% endif %}
-        <h2 id="ie-sip-packages-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+        <h2 id="ie-sip-packages-title-{{ section.id }}">{% if ie_packages_on_hold %}Configuraciones pendientes de validación{% else %}{{ section.settings.heading }}{% endif %}</h2>
       </div>
 
-      {% if section.settings.intro != blank %}
+      {% if ie_packages_on_hold %}
+      <div class="ie-sip-pdp__technical-note rte" role="status">
+        <p><strong>Datos técnicos y comerciales en revisión.</strong> Las configuraciones y sus importes no están todavía homologados para este modelo. Solicita una propuesta personalizada con composición, alcance, superficies, transporte y montaje documentados.</p>
+      </div>
+    {% else %}
+    {% if section.settings.intro != blank %}
         <div class="ie-sip-pdp__section-intro rte">{{ section.settings.intro }}</div>
       {% endif %}
     </div>
@@ -56,6 +69,7 @@
         </article>
       {% endfor %}
     </div>
+    {% endif %}
   </div>
 </section>
 
