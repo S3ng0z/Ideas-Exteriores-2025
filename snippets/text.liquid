@@ -1,3 +1,6 @@
+{%- if request.page_type == 'index' and block.id == 'text_MggaYr' -%}
+  {%- capture ie_home_hero_text -%}<p><strong>IDEAS EXTERIORES · SOLUCIONES EN MADERA</strong></p><h1>Soluciones de madera para exterior, estructuras y espacios habitables</h1><p>Explora pérgolas, porches, cenadores, casas y casetas de madera. Trabajamos con entramado ligero, panel SIP y sistema europeo según el modelo y las necesidades de tu proyecto. Compara soluciones y solicita un presupuesto con el alcance definido.</p>{%- endcapture -%}
+{%- endif -%}
 {%- doc -%}
   Intended for use in a block similar to the text block.
 
@@ -8,7 +11,8 @@
 {%- enddoc -%}
 
 {% liquid
-  assign plain_text = block.settings.text | strip_newlines | strip_html | strip
+  assign ie_visible_text = ie_home_hero_text | default: block.settings.text
+  assign plain_text = ie_visible_text | strip_newlines | strip_html | strip
   assign text_width = width | default: block.settings.width
 
   if block.settings.font_size contains 'heading-lg' or block.settings.font_size contains 'heading-xl'
@@ -86,7 +90,7 @@
   </div>
 {% elsif plain_text != blank %}
   <{{ element }} {{ attributes }}>
-    {{ block.settings.text }}
+    {{ ie_visible_text }}
   </{{ element }}>
 {% endif %}
 
