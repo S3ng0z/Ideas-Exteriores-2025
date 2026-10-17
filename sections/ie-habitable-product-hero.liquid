@@ -42,23 +42,15 @@
           <p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
         {% endif %}
         <h1 id="ie-hab-product-title-{{ section.id }}">{{ product.title }}</h1>
-        {% render 'ie-freja-product-summary' %}
-        {% render 'ie-nordlys-product-summary' %}
-        {% render 'ie-lys-product-summary' %}
-        {% render 'ie-sisu-product-summary' %}
-        {% render 'ie-eira-product-summary' %}
-        {% render 'ie-signe-product-summary' %}
-        {% render 'ie-lumi-product-summary' %}
-        {% render 'ie-aava-product-summary' %}
-        {% render 'ie-rova-product-summary' %}
-        {% render 'ie-valo-product-summary' %}
-        {% render 'ie-brygge-product-summary' %}
-        {% render 'ie-maja-product-summary' %}
-        {% render 'ie-linnea-product-summary' %}
-        {% render 'ie-alva-product-summary' %}
-        {% render 'ie-saga-product-summary' %}
-        {% render 'ie-veranda-product-summary' %}
-        {% if section.settings.lead != blank %}
+        {%- comment -%}
+          Resumen universal: misma plantilla para todos los modelos.
+          El primer párrafo descriptivo es la única fuente editorial del resumen.
+          Se evita incluir snippets específicos por modelo y repetir información.
+        {%- endcomment -%}
+        {% assign ie_model_intro = product.description | split: '</h2>' | last | split: '</p>' | first | strip_html | strip %}
+        {% if ie_model_intro != blank %}
+          <div class="ie-hab-pdp__lead rte"><p>{{ ie_model_intro | escape }}</p></div>
+        {% elsif section.settings.lead != blank %}
           <div class="ie-hab-pdp__lead rte">{{ section.settings.lead }}</div>
         {% endif %}
         <div class="ie-hab-pdp__actions">
