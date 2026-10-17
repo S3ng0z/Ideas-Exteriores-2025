@@ -13,26 +13,30 @@
         {% if section.settings.eyebrow != blank %}
           <p class="ie-sip-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
         {% endif %}
-        <h2 id="ie-sip-packages-title-{{ section.id }}">{% if ie_packages_on_hold %}Configuraciones pendientes de validación{% else %}{{ section.settings.heading }}{% endif %}</h2>
-      </div>
-        {% unless ie_packages_on_hold %}
-          {% if section.settings.intro != blank %}
-            <div class="ie-sip-pdp__section-intro rte">{{ section.settings.intro }}</div>
+        <h2 id="ie-sip-packages-title-{{ section.id }}">
+          {% if ie_packages_on_hold %}
+            Configuraciones pendientes de validación
+          {% else %}
+            {{ section.settings.heading }}
           {% endif %}
-        {% endunless %}
+        </h2>
       </div>
 
       {% if ie_packages_on_hold %}
         <div class="ie-sip-pdp__technical-note rte" role="status">
-          <p><strong>Datos técnicos y comerciales en revisión.</strong> Las configuraciones y sus importes aún no están homologados para este modelo. Solicita una propuesta personalizada con composición, alcance, superficies, transporte y montaje documentados.</p>
-          <p><a href="/pages/contact-ideas-exteriores">Solicitar estudio del modelo →</a></p>
+          <p><strong>Datos técnicos y comerciales en revisión.</strong> Los importes publicados son referencias, no presupuestos cerrados. Para comparar BASIC, STANDARD y PASSIVE es necesario verificar la composición técnica, las superficies, los trabajos incluidos, el transporte y el montaje de este modelo.</p>
+          <p><a href="{{ pages['contact-ideas-exteriores'].url | default: '/pages/contact-ideas-exteriores' }}">Solicitar estudio de este modelo</a></p>
         </div>
-      {% else %}
-        {% if section.settings.note != blank %}
-          <div class="ie-sip-pdp__technical-note rte">{{ section.settings.note }}</div>
-        {% endif %}
+      {% elsif section.settings.intro != blank %}
+        <div class="ie-sip-pdp__section-intro rte">{{ section.settings.intro }}</div>
+      {% endif %}
+    </div>
 
-    <div class="ie-sip-pdp__package-columns">
+    {% unless ie_packages_on_hold %}
+      {% if section.settings.note != blank %}
+        <div class="ie-sip-pdp__technical-note rte">{{ section.settings.note }}</div>
+      {% endif %}
+      <div class="ie-sip-pdp__package-columns">
       {% for block in section.blocks %}
         {% liquid
           assign tier_price = blank
@@ -70,8 +74,8 @@
           {% endif %}
         </article>
       {% endfor %}
-    </div>
-    {% endif %}
+      </div>
+    {% endunless %}
   </div>
 </section>
 
