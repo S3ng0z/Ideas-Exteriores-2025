@@ -236,10 +236,6 @@
     </div>
   </div>
 </div>
-{% if request.page_type == 'index' and section.id == 'hero_irjTFL' and section.settings.ie_home_sections_native != true %}
-  {% render 'ie-home-discovery-content' %}
-  {% render 'ie-home-systems-content' %}
-{% endif %}
 
 {% stylesheet %}
   .hero-wrapper {
@@ -400,7 +396,13 @@
 
       &:last-child {
         right: 0;
-      {% schema %}
+        left: auto;
+      }
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
 {
   "name": "t:names.hero",
   "tag": "section",
@@ -432,9 +434,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [
-      "header"
-    ]
+    "groups": ["header"]
   },
   "settings": [
     {
@@ -805,12 +805,6 @@
       "step": 1,
       "unit": "px",
       "default": 0
-    },
-    {
-      "type": "checkbox",
-      "id": "ie_home_sections_native",
-      "label": "Secciones de inicio desde la plantilla",
-      "default": false
     }
   ],
   "presets": [
@@ -843,11 +837,7 @@
           }
         }
       },
-      "block_order": [
-        "text_1",
-        "text_2",
-        "button"
-      ],
+      "block_order": ["text_1", "text_2", "button"],
       "settings": {
         "horizontal_alignment_flex_direction_column": "center",
         "gap": 16,
@@ -881,9 +871,7 @@
               }
             }
           },
-          "block_order": [
-            "text"
-          ]
+          "block_order": ["text"]
         },
         "button": {
           "type": "button",
@@ -893,11 +881,7 @@
           }
         }
       },
-      "block_order": [
-        "spacer",
-        "marquee",
-        "button"
-      ],
+      "block_order": ["spacer", "marquee", "button"],
       "settings": {
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "space-between",
