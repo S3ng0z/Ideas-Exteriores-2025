@@ -1,0 +1,77 @@
+{{ 'ie-poolhouse-oasis.css' | asset_url | stylesheet_tag }}
+{% if product.handle == 'poolhouse-oasis-cenador-madera-aluminio-jardin-piscina' %}
+<section class="ie-oasis" aria-labelledby="ie-oasis-title">
+ <div class="ie-oasis__wrap">
+  {% render 'ie-breadcrumb', breadcrumb_object: product, current_title: product.title, class_name: 'ie-oasis__breadcrumb' %}
+  <div class="ie-oasis__hero">
+   <div class="ie-oasis__gallery">
+    {% for media in product.media %}
+     {% if media.media_type == 'image' %}
+      <figure class="ie-oasis__figure">
+       {{ media | image_url: width: 1500 | image_tag: loading: 'lazy', widths: '400, 750, 1100, 1500', sizes: '(max-width: 800px) 100vw, 58vw', alt: 'Poolhouse Oasis+ de madera y aluminio para jardín y piscina' }}
+      </figure>
+     {% endif %}
+    {% endfor %}
+   </div>
+   <div class="ie-oasis__summary">
+    <p class="ie-oasis__eyebrow">Exterior · Poolhouse</p>
+    <h1 id="ie-oasis-title">Poolhouse Oasis+</h1>
+    <p class="ie-oasis__lead">Un espacio exterior protegido y luminoso para disfrutar junto a la piscina, en el jardín o en una terraza amplia.</p>
+    <p class="ie-oasis__price-label">Precio de partida · Configuración básica</p>
+    <p class="ie-oasis__price">{{ product.price | money }}</p>
+    <p class="ie-oasis__subtle">Precio de referencia del producto. El transporte, la descarga, el montaje, la cimentación y los extras se presupuestan por separado.</p>
+    <a class="ie-oasis__button" href="#ie-oasis-presupuesto">Solicitar presupuesto <span aria-hidden="true">↗</span></a>
+    <p class="ie-oasis__micro">Revisaremos contigo ubicación, medidas, accesos y alcance antes de confirmar una oferta.</p>
+    <div class="ie-oasis__facts">
+     <div><strong>Estructura</strong><span>Madera exterior y aluminio</span></div>
+     <div><strong>Cerramiento</strong><span>Cristales según configuración base</span></div>
+     <div><strong>Cubierta</strong><span>Panel sándwich</span></div>
+     <div><strong>Acabados</strong><span>Interior y exterior básicos; protección inicial de madera</span></div>
+    </div>
+   </div>
+  </div>
+  <div class="ie-oasis__intro">
+   <div><p class="ie-oasis__eyebrow">El modelo</p><h2>Un espacio más completo que un cenador convencional</h2></div>
+   <p>Oasis+ combina madera, aluminio, acristalamiento y cubierta de panel sándwich para crear una estancia exterior con una imagen arquitectónica contemporánea. La configuración final depende de las medidas, la ubicación y la solución acordada.</p>
+  </div>
+  <div class="ie-oasis__scope">
+   <article><h2>Qué incluye el precio base</h2><ul>
+    <li>Carpintería exterior de madera y aluminio.</li>
+    <li>Cristales conforme a la configuración funcional básica.</li>
+    <li>Cubierta de panel sándwich.</li>
+    <li>Terminación interior y exterior básica.</li>
+    <li>Capa inicial de protección exterior de la madera.</li>
+   </ul></article>
+   <article><h2>Qué se presupuestará aparte</h2><ul>
+    <li>Transporte, descarga y montaje.</li>
+    <li>Cimentación, anclajes especiales y obra civil.</li>
+    <li>Proyecto técnico, licencias y tasas cuando procedan.</li>
+    <li>Instalaciones, iluminación, climatización, fontanería y mobiliario.</li>
+    <li>Acabados especiales, protección reforzada y otros extras.</li>
+   </ul></article>
+  </div>
+  <section class="ie-oasis__details" aria-labelledby="ie-oasis-details-title">
+   <div><p class="ie-oasis__eyebrow">Antes de elegir</p><h2 id="ie-oasis-details-title">Los detalles que importan</h2><p>El precio y la viabilidad dependen del alcance completo, no solo del modelo.</p></div>
+   <div class="ie-oasis__accordions">
+    <details><summary>Materiales y configuración</summary><div>La configuración básica combina carpintería de madera exterior, aluminio, cristales y cubierta de panel sándwich. Las medidas, cerramientos y acabados definitivos se especifican en el presupuesto.</div></details>
+    <details><summary>Preparación de la base e instalación</summary><div>Se requiere una base estable, nivelada y apta para anclaje. Hay que estudiar drenaje, viento, accesos, descarga y condiciones de montaje. No se recomienda apoyar directamente sobre tierra o césped sin una solución de cimentación adecuada.</div></details>
+    <details><summary>Opciones y extras</summary><div>Colores, acabados, iluminación, soluciones de protección, equipamiento y cerramientos adicionales pueden estudiarse como opciones, sujetos a compatibilidad técnica y presupuesto específico.</div></details>
+    <details><summary>Mantenimiento de la madera</summary><div>La madera exterior requiere inspección y renovación de su protección según la exposición. Conviene revisar sellados, uniones, cristales, carpinterías y evacuación de agua. La protección inicial incluida no equivale a un acabado decorativo completo.</div></details>
+    <details><summary>¿Necesita licencia?</summary><div>Depende de la normativa municipal, dimensiones, uso, ubicación y tipo de anclaje. Debe comprobarse con el ayuntamiento o técnico competente antes de ejecutar la obra.</div></details>
+   </div>
+  </section>
+  <section class="ie-oasis__contact" id="ie-oasis-presupuesto" aria-labelledby="ie-oasis-contact-title">
+   <div><p class="ie-oasis__eyebrow">Siguiente paso</p><h2 id="ie-oasis-contact-title">Estudiamos tu Poolhouse Oasis+</h2><p>Indícanos dónde se instalará y qué necesitas. La propuesta definirá el alcance, los trabajos adicionales y las condiciones de suministro.</p></div>
+   <div class="ie-oasis__contact-links">
+    <a class="ie-oasis__button ie-oasis__button--light" href="{{ routes.root_url }}pages/contact-ideas-exteriores?producto=poolhouse-oasis-plus">Solicitar presupuesto <span aria-hidden="true">↗</span></a>
+    <a class="ie-oasis__text-link" href="https://wa.me/34687480356?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto%20para%20Poolhouse%20Oasis%2B%3A%20https%3A%2F%2Fwww.ideas-exteriores.com%2Fproducts%2Fpoolhouse-oasis-cenador-madera-aluminio-jardin-piscina" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+    <p class="ie-oasis__contact-note">También puedes completar el formulario de la página, situado a continuación.</p>
+   </div>
+  </section>
+  <p class="ie-oasis__disclaimer">Las imágenes son orientativas y pueden mostrar elementos no incluidos. Las características, importes, medidas, suministros y condiciones definitivas deben recogerse en el presupuesto aceptado. La madera puede variar naturalmente de tono y aspecto.</p>
+ </div>
+</section>
+{% endif %}
+{% schema %}
+{"name":"IE · Poolhouse Oasis","settings":[],"presets":[{"name":"IE · Poolhouse Oasis"}]}
+{% endschema %}
