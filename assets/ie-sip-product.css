@@ -736,3 +736,83 @@ body:has(.ie-sip-pdp--hero) .product-information .product-details > *{
 .ie-sip-model-brief__note{color:var(--ie-sip-muted)}
 .ie-sip-pdp__package-review{font-size:.92rem;line-height:1.6;color:var(--ie-sip-muted)}
 @media(max-width:749px){.ie-sip-model-brief__facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}}
+
+
+/* SIP PDP · 2026-10-17 · densidad editorial comercial, escritorio y móvil.
+   Scope exclusivo al sistema de fichas SIP; no afecta entramado ni servicios. */
+.ie-sip-pdp__inner{width:min(calc(100% - 48px),1320px)}
+.ie-sip-pdp__breadcrumb{min-height:24px;margin-bottom:14px;font-size:.73rem}
+.ie-sip-pdp--hero .ie-sip-pdp__inner{padding-block:20px 22px}
+.ie-sip-pdp__hero-grid{gap:clamp(20px,3vw,44px);padding-bottom:22px;align-items:center}
+.ie-sip-pdp__eyebrow{font-size:.71rem;margin-bottom:7px;letter-spacing:.065em}
+.ie-sip-pdp h1{font-size:clamp(1.95rem,2.7vw,3.05rem);line-height:1.13;letter-spacing:-.022em;max-width:800px}
+.ie-sip-pdp h2{font-size:clamp(1.65rem,1.95vw,2.25rem);line-height:1.16;letter-spacing:-.015em}
+.ie-sip-pdp__lead{font-size:.92rem;line-height:1.52;margin-top:10px;max-width:740px}
+.ie-sip-pdp__actions{margin-top:16px;gap:8px}
+.ie-sip-pdp__button{min-height:42px;padding:10px 16px;font-size:.85rem}
+.ie-sip-pdp__summary{padding-top:11px}
+.ie-sip-pdp__summary-title{font-size:.82rem;margin-bottom:6px}
+.ie-sip-pdp__summary li{padding:7px 0;gap:8px;grid-template-columns:22px 1fr}
+.ie-sip-pdp__summary strong{font-size:.82rem;line-height:1.36}
+.ie-sip-pdp__section-head{gap:clamp(16px,2.8vw,40px);padding-bottom:17px}
+.ie-sip-pdp__section-intro{padding-top:6px;font-size:.91rem;line-height:1.5}
+.ie-sip-pdp--packages .ie-sip-pdp__inner{padding-block:38px 34px}
+.ie-sip-pdp--packages .ie-sip-pdp__section-head{padding-bottom:16px}
+.ie-sip-pdp__technical-note{font-size:.83rem;line-height:1.5;padding:12px 16px;margin-bottom:14px}
+.ie-sip-pdp__package-columns{gap:12px}
+.ie-sip-pdp__package-card{padding:18px 18px 20px}
+.ie-sip-pdp__package-head{min-height:175px;margin-bottom:16px;padding-bottom:16px}
+.ie-sip-pdp__package-label{margin-bottom:9px;font-size:.72rem}
+.ie-sip-pdp__package-price{font-size:clamp(1.45rem,1.65vw,1.85rem)}
+.ie-sip-pdp__package-summary{margin-top:12px;font-size:.85rem;line-height:1.46}
+.ie-sip-pdp__package-body{font-size:.85rem;line-height:1.5}
+.ie-sip-pdp__package-body h2,.ie-sip-pdp__package-body h3,.ie-sip-pdp__package-body h4{font-size:.9rem;margin:1.2em 0 .45em}
+.ie-sip-pdp__package-description{margin-top:16px;padding-top:16px}
+.ie-sip-pdp__package-description-title{font-size:.92rem;margin-bottom:12px}
+.ie-sip-pdp--process .ie-sip-pdp__inner{padding-block:40px}
+.ie-sip-pdp__process-box{padding:32px;gap:clamp(20px,3vw,42px)}
+.ie-sip-pdp__process-intro{margin-top:10px;font-size:.87rem;line-height:1.5}
+.ie-sip-pdp__process-link{margin-top:16px;font-size:.84rem}
+.ie-sip-pdp__process-list li{padding:12px 0;grid-template-columns:32px 1fr;gap:12px}
+.ie-sip-pdp__process-list h3{font-size:.91rem}
+.ie-sip-pdp__process-list p{font-size:.83rem;line-height:1.45}
+.ie-sip-pdp--cta .ie-sip-pdp__inner{padding-block:35px 56px}
+.ie-sip-pdp__closing{padding-top:18px;gap:22px}
+.ie-sip-pdp__closing-text{margin-top:9px;font-size:.9rem;line-height:1.5}
+.ie-sip-model-brief{margin-block:1rem;padding:.9rem 0}
+.ie-sip-model-brief__eyebrow{margin-bottom:.65rem;font-size:.72rem}
+.ie-sip-model-brief__facts{gap:.65rem;margin-bottom:.65rem}
+.ie-sip-model-brief__facts dt{font-size:.74rem}
+.ie-sip-model-brief__facts dd{margin-top:.2rem;font-size:.91rem}
+.ie-sip-model-brief__detail,.ie-sip-model-brief__note{font-size:.82rem;line-height:1.48;margin:.38rem 0}
+body:has(.ie-sip-pdp--hero) .product-information .product-details h2{font-size:clamp(1.45rem,1.7vw,1.85rem);line-height:1.2;margin-bottom:10px}
+body:has(.ie-sip-pdp--hero) .product-information .product-details .rte,
+body:has(.ie-sip-pdp--hero) .product-information .product-details .text-block{font-size:.9rem;line-height:1.5}
+@media screen and (min-width:750px){
+  .ie-sip-pdp__lead,.ie-sip-pdp__section-intro,.ie-sip-pdp__process-intro,
+  .ie-sip-pdp__process-list p,.ie-sip-pdp__closing-text{text-align:left}
+}
+@media screen and (max-width:989px){
+  .ie-sip-pdp__inner{width:min(calc(100% - 36px),1320px)}
+  .ie-sip-pdp__hero-grid{gap:18px}
+  .ie-sip-pdp__package-head{min-height:0}
+  .ie-sip-pdp__process-box{padding:28px}
+}
+@media screen and (max-width:749px){
+  .ie-sip-pdp__inner{width:calc(100% - 30px)}
+  .ie-sip-pdp--hero .ie-sip-pdp__inner{padding-block:14px 20px}
+  .ie-sip-pdp__breadcrumb{margin-bottom:12px}
+  .ie-sip-pdp h1{font-size:clamp(1.8rem,7vw,2.3rem);line-height:1.12}
+  .ie-sip-pdp h2{font-size:clamp(1.55rem,5.5vw,1.95rem)}
+  .ie-sip-pdp__lead{font-size:.88rem}
+  .ie-sip-pdp__actions{margin-top:13px}
+  .ie-sip-pdp__button{min-height:44px}
+  .ie-sip-pdp--packages .ie-sip-pdp__inner,
+  .ie-sip-pdp--process .ie-sip-pdp__inner,
+  .ie-sip-pdp--description .ie-sip-pdp__inner{padding-block:30px}
+  .ie-sip-pdp__process-box{padding:28px 20px}
+  .ie-sip-pdp__package-columns{gap:12px}
+  .ie-sip-pdp__package-card{padding:18px}
+  .ie-sip-pdp--cta .ie-sip-pdp__inner{padding-block:30px 48px}
+  body:has(.ie-sip-pdp--hero) .product-information .product-details h2{font-size:1.5rem}
+}
