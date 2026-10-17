@@ -1,0 +1,32 @@
+{% comment %}
+  HOME-SIP ALICE · Ficha resumida específica.
+  Paridad visual con los resúmenes de viviendas de entramado ligero.
+  Los m² son declaraciones comerciales; clasificación y cómputo sujetos a planos.
+  Sólo se presenta en el modelo con este handle.
+{% endcomment %}
+{% if product.handle == 'home-sip-alice-117-m-terraza' %}
+  <div class="ie-sip-alice-brief" aria-label="Datos principales y alcance de HOME-SIP ALICE">
+    <p class="ie-sip-alice-brief__eyebrow">ALICE · Vivienda con panel SIP</p>
+    <ul class="ie-sip-alice-brief__facts">
+      <li><strong>117 m²</strong><span>Superficie nominal del modelo</span></li>
+      <li><strong>60 m²</strong><span>Terraza declarada por separado</span></li>
+      <li><strong>3</strong><span>Dormitorios</span></li>
+      <li><strong>2</strong><span>Baños</span></li>
+      <li><strong>1 + altillo</strong><span>Planta baja y altillo</span></li>
+    </ul>
+    <p class="ie-sip-alice-brief__notice">Los 117 m² anunciados se desglosan comercialmente en 103 m² de planta baja y 14 m² de altillo. Debe verificarse en planos si corresponden a superficie útil o construida y el alcance exacto de la terraza.</p>
+    <p class="ie-sip-alice-brief__notice"><strong>Antes de comparar precios:</strong> BASIC, STANDARD y PASSIVE tienen alcances diferentes. La composición SIP, las partidas incluidas, la base, el transporte, el montaje, las instalaciones y el IVA aplicable deben quedar confirmados en presupuesto y documentación técnica. PASSIVE no equivale a certificación Passivhaus.</p>
+    <a class="ie-sip-alice-brief__link" href="#ie-sip-packages">Comparar alcance de las tres configuraciones →</a>
+  </div>
+  <style>
+    .ie-sip-alice-brief{margin-block:1.25rem;padding:clamp(1rem,2.5vw,1.4rem);border:1px solid #dce4dc;background:#f7faf7;border-radius:12px;color:#26362d}
+    .ie-sip-alice-brief__eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin:0 0 .8rem}
+    .ie-sip-alice-brief__facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.75rem;padding:0;margin:0 0 1rem;list-style:none}
+    .ie-sip-alice-brief__facts li{display:flex;flex-direction:column;gap:.25rem}
+    .ie-sip-alice-brief__facts strong{font-size:1.25rem;line-height:1.2}
+    .ie-sip-alice-brief__facts span{font-size:.84rem;line-height:1.4}
+    .ie-sip-alice-brief__notice{font-size:.89rem;line-height:1.6;margin:0 0 .7rem}
+    .ie-sip-alice-brief__link{color:#284c3a;font-weight:700;text-underline-offset:3px}
+    .ie-sip-alice-brief__link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+  </style>
+{% endif %}

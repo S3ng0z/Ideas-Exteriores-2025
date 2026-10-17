@@ -1,0 +1,81 @@
+{
+  "productId": "gid://shopify/Product/15218578587992",
+  "title": "HOME-SIP ALICE | Casa con panel SIP de 117 m² y terraza",
+  "status": "ACTIVE",
+  "productType": "Casas con panel SIP",
+  "descriptionHtml": "<p><strong>HOME-SIP ALICE</strong> es un modelo de casa prefabricada con paneles estructurales aislados (SIP), de una planta y altillo, con 3 dormitorios y 2 baños en su distribución comercial de referencia. El diseño puede adaptarse al proyecto.</p>\n<h3>Superficies y distribución</h3>\n<ul>\n<li>Superficie anunciada del modelo: 117 m², según ficha comercial; criterio de medición pendiente de confirmar.</li>\n<li>Planta baja: 103 m² de referencia.</li>\n<li>Altillo: 14 m² de referencia.</li>\n<li>Terraza: 60 m² indicados por separado.</li>\n<li>Distribución: una planta y altillo, 3 dormitorios y 2 baños.</li>\n</ul>\n<p>La superficie útil, la construida y el cómputo de espacios exteriores deberán acreditarse con planos acotados. Las imágenes y la distribución son orientativas.</p>\n<h3>Sistema constructivo y datos técnicos</h3>\n<p>El sistema SIP combina caras resistentes y un núcleo aislante. El tipo de tablero y núcleo, los espesores, las uniones, los apoyos, la cubierta, las juntas y los revestimientos deberán definirse en la memoria técnica del proyecto. No se atribuyen a este modelo valores de aislamiento, resistencia al fuego ni certificaciones sin documentación aplicable.</p>\n<p>Consulta <a href=\"/pages/sip-panels-system\">cómo funciona la construcción con paneles SIP</a>.</p>\n<h3>Configuraciones y precio</h3>\n<p><strong>Precio de referencia publicado: 65.122 €.</strong> Consulta el alcance de la configuración y confirma las partidas incluidas antes de contratar.</p>\n<p>BASIC, STANDARD y PASSIVE identifican configuraciones comerciales que deben compararse por su alcance real. PASSIVE no implica certificación Passivhaus. Los precios publicados son referencias con IVA indicado como incluido; no constituyen por sí solos una oferta cerrada ni garantizan una vivienda llave en mano.</p>\n<h3>Qué revisar antes de contratar</h3>\n<p>Solicita presupuesto desglosado de proyecto y licencias, cimentación, suministro, transporte, descarga, montaje, instalaciones, fachada, cubierta, acabados e impuestos aplicables. La viabilidad y las prestaciones se verifican según parcela, uso, zona climática y normativa de proyecto, incluido el CTE cuando corresponda.</p>\n<p><a href=\"/pages/contact-ideas-exteriores\">Solicitar estudio de HOME-SIP ALICE</a>.</p>",
+  "variants": [
+    {
+      "id": "gid://shopify/ProductVariant/55382577447256",
+      "title": "BASIC",
+      "sku": null,
+      "price": "65122.00",
+      "inventoryQuantity": 0
+    },
+    {
+      "id": "gid://shopify/ProductVariant/58827897667928",
+      "title": "STANDARD",
+      "sku": null,
+      "price": "102960.00",
+      "inventoryQuantity": 0
+    },
+    {
+      "id": "gid://shopify/ProductVariant/58827897700696",
+      "title": "PASSIVE",
+      "sku": null,
+      "price": "205920.00",
+      "inventoryQuantity": 0
+    }
+  ],
+  "images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/alice-1-7.webp?v=1753006383",
+      "mediaId": "gid://shopify/MediaImage/66853352997208",
+      "altText": ""
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/alice-2-7.webp?v=1753006399",
+      "mediaId": "gid://shopify/MediaImage/66853353193816",
+      "altText": ""
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/alice-3-7.webp?v=1753006399",
+      "mediaId": "gid://shopify/MediaImage/66853353161048",
+      "altText": ""
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/alice-4-7.webp?v=1753006399",
+      "mediaId": "gid://shopify/MediaImage/66853353128280",
+      "altText": ""
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/alice-5-7.webp?v=1753006399",
+      "mediaId": "gid://shopify/MediaImage/66853353095512",
+      "altText": ""
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/alice-6-7.webp?v=1753006399",
+      "mediaId": "gid://shopify/MediaImage/66853353062744",
+      "altText": ""
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/alice-7-7.webp?v=1753006399",
+      "mediaId": "gid://shopify/MediaImage/66853353029976",
+      "altText": ""
+    }
+  ],
+  "note": "SEO, templateSuffix y custom.metafields se verificaron independientemente mediante Shopify GraphQL antes de la intervención.",
+  "seoBefore": {
+    "title": "HOME-SIP ALICE 117 m² | Casa prefabricada con panel SIP",
+    "description": "Descubre HOME-SIP ALICE: casa con panel SIP de 117 m², 3 dormitorios y 2 baños. Consulta distribución, terrazas y alcance del precio de partida."
+  },
+  "templateSuffixBefore": "home-sip",
+  "customBefore": {
+    "technical_status": "review_required",
+    "commercial_mode": "quote",
+    "price_mode": "on_request",
+    "price_basic": "65122.00",
+    "price_standard": "102960.00",
+    "price_passive": "205920.00"
+  }
+}

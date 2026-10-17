@@ -28,6 +28,7 @@
           <p class="ie-sip-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
         {% endif %}
         <h1 id="ie-sip-product-title-{{ section.id }}">{{ product.title }}</h1>
+        {% render 'ie-sip-alice-product-summary' %}
         {% if section.settings.lead != blank %}
           <div class="ie-sip-pdp__lead rte">{{ section.settings.lead }}</div>
         {% endif %}

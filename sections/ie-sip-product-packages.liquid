@@ -60,7 +60,7 @@
             {% endif %}
 
             {% if block.settings.tax_note != blank %}
-              <p class="ie-sip-pdp__package-tax">{% if ie_is_alice %}Precio de referencia provisional · IVA aplicable pendiente de confirmación{% else %}{{ block.settings.tax_note }}{% endif %}</p>
+              <p class="ie-sip-pdp__package-tax">{% if ie_is_alice %}IVA incluido según precios publicados · alcance sujeto a presupuesto{% else %}{{ block.settings.tax_note }}{% endif %}</p>
             {% endif %}
 
             {% if block.settings.summary != blank %}
