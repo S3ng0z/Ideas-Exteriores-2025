@@ -1,58 +1,61 @@
 {{ 'ie-home-systems.css' | asset_url | stylesheet_tag }}
 
-<section class="ie-home-systems" id="sistemas-constructivos" aria-labelledby="ie-home-systems-title">
+<section
+  class="ie-home-systems"
+  id="sistemas-constructivos"
+  aria-labelledby="ie-home-systems-title-{{ section.id }}"
+  style="
+    --ie-systems-bg: {{ section.settings.background }};
+    --ie-systems-card-bg: {{ section.settings.card_background }};
+    --ie-systems-heading: {{ section.settings.heading_color }};
+    --ie-systems-accent: {{ section.settings.accent_color }};
+    --ie-systems-figure-bg: {{ section.settings.figure_background }};
+    --ie-systems-outro-bg: {{ section.settings.outro_background }};
+    --ie-systems-width: {{ section.settings.content_width }}px;
+    --ie-systems-gutter: {{ section.settings.side_margin }}px;
+    --ie-systems-mobile-gutter: {{ section.settings.mobile_margin }}px;
+    --ie-systems-spacing: {{ section.settings.vertical_spacing }}px;
+    --ie-systems-gap: {{ section.settings.card_gap }}px;
+    --ie-systems-padding: {{ section.settings.card_padding }}px;
+    --ie-systems-radius: {{ section.settings.card_radius }}px;
+    --ie-systems-columns: {{ section.settings.columns }};
+    --ie-systems-ratio: {{ section.settings.image_ratio }};
+  "
+>
   <div class="page-width">
     <div class="ie-home-systems__intro">
       <div>
-        <p class="ie-home-systems__eyebrow">Cómo construimos</p>
-        <h2 id="ie-home-systems-title">Tres sistemas constructivos en madera</h2>
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="ie-home-systems__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endif -%}
+        <h2 id="ie-home-systems-title-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
       </div>
-      <p>Elige primero el uso y el modelo. Después definimos la tecnología, la composición y el nivel de acabado compatible con las prestaciones y el alcance de tu proyecto.</p>
+      {%- if section.settings.intro != blank -%}
+        <p>{{ section.settings.intro | escape | newline_to_br }}</p>
+      {%- endif -%}
     </div>
 
-    <div class="ie-home-systems__grid">
-      <article class="ie-home-systems__card">
-        <div class="ie-home-systems__visual" aria-hidden="true">
-          <svg viewBox="0 0 320 170" fill="none" focusable="false">
-            <path d="M47 143V55L160 19L273 55V143" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
-            <path d="M47 55H273M47 143H273M81 55V143M126 55V143M172 55V143M218 55V143M259 55V143" stroke="currentColor" stroke-width="3"/>
-            <path d="M88 69 119 131M134 69 165 131M180 69 211 131M226 69 252 120" stroke="currentColor" stroke-width="2" opacity=".35"/>
-          </svg>
-        </div>
-        <div class="ie-home-systems__body">
-          <span class="ie-home-systems__number">01 / Bastidores de madera</span>
-          <h3>Entramado ligero</h3>
-          <p>Estructura de montantes y travesaños de madera, con rigidización y aislamiento definidos en el proyecto. Una solución versátil para viviendas y espacios habitables.</p>
-          <div class="ie-home-systems__actions">
-            <a href="/collections/light-frame-houses">Ver casas de entramado ligero <span aria-hidden="true">↗</span></a>
-            <a href="/pages/light-frame-construction-system">Conocer el sistema</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="ie-home-systems__card">
-        <div class="ie-home-systems__visual ie-home-systems__visual--sip" aria-hidden="true">
-          <svg viewBox="0 0 320 170" fill="none" focusable="false">
+    {%- if section.blocks.size > 0 -%}
+      <div class="ie-home-systems__grid">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'system' -%}
+            <article class="ie-home-systems__card" {{ block.shopify_attributes }}>
+              {%- if section.settings.show_illustrations -%}
+                <div class="ie-home-systems__visual ie-home-systems__visual--{{ block.settings.diagram | default: 'frame' }}">
+                  {%- if block.settings.image != blank -%}
+                    {%- assign sys_alt = block.settings.image_alt | default: block.settings.image.alt | default: block.settings.heading -%}
+                    {{ block.settings.image | image_url: width: 1200 | image_tag: class: 'ie-home-systems__image', loading: 'lazy', widths: '360, 540, 720, 960, 1200', sizes: '(min-width: 990px) 31vw, (min-width: 750px) 47vw, 92vw', alt: sys_alt }}
+                  {%- else -%}
+                    {%- case block.settings.diagram -%}
+                      {%- when 'sip' -%}
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 320 170" fill="none" focusable="false">
             <path d="M55 44 230 23 263 36 88 57 55 44Z" stroke="currentColor" stroke-width="3"/>
             <path d="M55 44V125L88 144V57M88 144 263 123V36" stroke="currentColor" stroke-width="3"/>
             <path d="M69 52V129M81 56V137M88 68 263 47M88 128 263 107M88 57 263 36" stroke="currentColor" stroke-width="2" opacity=".48"/>
             <path d="M113 65V127M134 63V125M155 61V123M176 58V120M197 56V118M218 53V114M239 49V111" stroke="currentColor" stroke-width="2" opacity=".2"/>
           </svg>
-        </div>
-        <div class="ie-home-systems__body">
-          <span class="ie-home-systems__number">02 / Panel prefabricado aislado</span>
-          <h3>Panel SIP</h3>
-          <p>Paneles con caras resistentes y núcleo aislante. Las juntas, apoyos, huecos y encuentros deben resolverse para conseguir las prestaciones del conjunto.</p>
-          <div class="ie-home-systems__actions">
-            <a href="/collections/sip-panel-houses">Ver casas con panel SIP <span aria-hidden="true">↗</span></a>
-            <a href="/pages/sip-panels-system">Conocer el sistema</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="ie-home-systems__card">
-        <div class="ie-home-systems__visual ie-home-systems__visual--european" aria-hidden="true">
-          <svg viewBox="0 0 320 170" fill="none" focusable="false">
+                      {%- when 'european' -%}
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 320 170" fill="none" focusable="false">
             <path d="M49 40H219V138H49V40Z" stroke="currentColor" stroke-width="3"/>
             <path d="M49 60H219M49 80H219M49 100H219M49 120H219" stroke="currentColor" stroke-width="3"/>
             <path d="M65 50H200M65 70H200M65 90H200M65 110H200M65 130H200" stroke="currentColor" stroke-width="1.5" opacity=".34"/>
@@ -60,30 +63,418 @@
             <path d="M267 40V138M281 40V138" stroke="currentColor" stroke-width="2" opacity=".45"/>
             <path d="M219 49H281M219 130H281" stroke="currentColor" stroke-width="2"/>
           </svg>
-        </div>
-        <div class="ie-home-systems__body">
-          <span class="ie-home-systems__number">03 / Madera perfilada</span>
-          <h3>Sistema europeo</h3>
-          <p>Familia comercial vinculada a soluciones tipo Blockhaus/Blockbau y madera apilada. Nuestra propuesta emplea madera exterior perfilada y una capa técnica interior; no equivale automáticamente a cualquier sistema nórdico o finlandés.</p>
-          <div class="ie-home-systems__actions">
-            <a href="/pages/european-timber-construction-system">Conocer el sistema europeo <span aria-hidden="true">↗</span></a>
-            <a href="/pages/contact-ideas-exteriores">Consultar compatibilidad</a>
-          </div>
-        </div>
-      </article>
-    </div>
+                      {%- when 'none' -%}
+                        <div class="ie-home-systems__visual-empty" aria-hidden="true"></div>
+                      {%- else -%}
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 320 170" fill="none" focusable="false">
+            <path d="M47 143V55L160 19L273 55V143" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M47 55H273M47 143H273M81 55V143M126 55V143M172 55V143M218 55V143M259 55V143" stroke="currentColor" stroke-width="3"/>
+            <path d="M88 69 119 131M134 69 165 131M180 69 211 131M226 69 252 120" stroke="currentColor" stroke-width="2" opacity=".35"/>
+          </svg>
+                    {%- endcase -%}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+              <div class="ie-home-systems__body">
+                {%- if section.settings.show_numbers and block.settings.number != blank -%}
+                  <span class="ie-home-systems__number">{{ block.settings.number | escape }}</span>
+                {%- endif -%}
+                {%- if block.settings.heading != blank -%}
+                  <h3>{{ block.settings.heading | escape }}</h3>
+                {%- endif -%}
+                {%- if block.settings.description != blank -%}
+                  <p>{{ block.settings.description | escape | newline_to_br }}</p>
+                {%- endif -%}
+                {%- if block.settings.primary_label != blank and block.settings.primary_link != blank or block.settings.secondary_label != blank and block.settings.secondary_link != blank -%}
+                  <div class="ie-home-systems__actions">
+                    {%- if block.settings.primary_label != blank and block.settings.primary_link != blank -%}
+                      <a href="{{ block.settings.primary_link }}">{{ block.settings.primary_label | escape }} <span aria-hidden="true">↗</span></a>
+                    {%- endif -%}
+                    {%- if block.settings.secondary_label != blank and block.settings.secondary_link != blank -%}
+                      <a href="{{ block.settings.secondary_link }}">{{ block.settings.secondary_label | escape }}</a>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+              </div>
+            </article>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
 
-    <div class="ie-home-systems__outro">
-      <p><strong>No hay un sistema universalmente mejor.</strong> La elección depende del uso, la ubicación, la envolvente, el proyecto, el montaje y el presupuesto. Las prestaciones se verifican para cada solución concreta.</p>
-      <a href="/pages/timber-building-systems">Cómo elegir sistema constructivo <span aria-hidden="true">↗</span></a>
-    </div>
+    {%- if section.settings.show_outro -%}
+      <div class="ie-home-systems__outro">
+        <p>
+          {%- if section.settings.outro_title != blank -%}
+            <strong>{{ section.settings.outro_title | escape }}</strong>{% if section.settings.outro_text != blank %} {% endif %}
+          {%- endif -%}
+          {{ section.settings.outro_text | escape | newline_to_br }}
+        </p>
+        {%- if section.settings.outro_link_label != blank and section.settings.outro_link != blank -%}
+          <a href="{{ section.settings.outro_link }}">{{ section.settings.outro_link_label | escape }} <span aria-hidden="true">↗</span></a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
   </div>
 </section>
 
 {% schema %}
 {
   "name": "Inicio · Tres sistemas",
-  "settings": [],
-  "presets": [{ "name": "Inicio · Tres sistemas" }]
+  "settings": [
+    {
+      "type": "header",
+      "content": "Cabecera"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Antetítulo",
+      "default": "Cómo construimos"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "Tres sistemas constructivos en madera"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Texto introductorio",
+      "default": "Elige primero el uso y el modelo. Después definimos la tecnología, la composición y el nivel de acabado compatible con las prestaciones y el alcance de tu proyecto."
+    },
+    {
+      "type": "header",
+      "content": "Tarjetas y visualización"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_illustrations",
+      "label": "Mostrar imágenes e ilustraciones",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_numbers",
+      "label": "Mostrar numeración",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Columnas en escritorio",
+      "options": [
+        {
+          "value": "2",
+          "label": "Dos"
+        },
+        {
+          "value": "3",
+          "label": "Tres"
+        }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Proporción de la imagen",
+      "options": [
+        {
+          "value": "8 / 5",
+          "label": "Horizontal 8:5"
+        },
+        {
+          "value": "16 / 9",
+          "label": "Panorámica 16:9"
+        },
+        {
+          "value": "4 / 3",
+          "label": "Clásica 4:3"
+        }
+      ],
+      "default": "8 / 5"
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Espacio interior tarjetas (px)",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Redondeo tarjetas (px)",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Separación entre tarjetas (px)",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Cierre informativo"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_outro",
+      "label": "Mostrar bloque final",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "outro_title",
+      "label": "Título del bloque final",
+      "default": "No hay un sistema universalmente mejor."
+    },
+    {
+      "type": "textarea",
+      "id": "outro_text",
+      "label": "Explicación del bloque final",
+      "default": "La elección depende del uso, la ubicación, la envolvente, el proyecto, el montaje y el presupuesto. Las prestaciones se verifican para cada solución concreta."
+    },
+    {
+      "type": "text",
+      "id": "outro_link_label",
+      "label": "Texto del enlace final",
+      "default": "Cómo elegir sistema constructivo"
+    },
+    {
+      "type": "url",
+      "id": "outro_link",
+      "label": "Enlace del bloque final"
+    },
+    {
+      "type": "header",
+      "content": "Anchura y márgenes"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "label": "Anchura máxima (px)",
+      "min": 1000,
+      "max": 1680,
+      "step": 20,
+      "default": 1480
+    },
+    {
+      "type": "range",
+      "id": "side_margin",
+      "label": "Margen lateral escritorio (px)",
+      "min": 20,
+      "max": 120,
+      "step": 4,
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "mobile_margin",
+      "label": "Margen lateral móvil (px)",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "vertical_spacing",
+      "label": "Espaciado vertical (px)",
+      "min": 40,
+      "max": 112,
+      "step": 4,
+      "default": 68
+    },
+    {
+      "type": "header",
+      "content": "Colores"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Fondo de la sección",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Fondo de las tarjetas",
+      "default": "#f9faf7"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color títulos",
+      "default": "#243129"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Color detalles y enlaces",
+      "default": "#566236"
+    },
+    {
+      "type": "color",
+      "id": "figure_background",
+      "label": "Fondo de ilustraciones",
+      "default": "#e7ede6"
+    },
+    {
+      "type": "color",
+      "id": "outro_background",
+      "label": "Fondo del bloque final",
+      "default": "#f3f5ee"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "system",
+      "name": "Sistema constructivo",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Numeración / característica",
+          "default": "01 / Bastidores de madera"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Nombre del sistema",
+          "default": "Entramado ligero"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Descripción del sistema",
+          "default": "Construcción en madera adaptada a las prestaciones y condiciones técnicas del proyecto."
+        },
+        {
+          "type": "header",
+          "content": "Imagen o ilustración"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen propia",
+          "info": "Si eliges una imagen, sustituirá la ilustración."
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Descripción accesible de imagen"
+        },
+        {
+          "type": "select",
+          "id": "diagram",
+          "label": "Ilustración de reserva",
+          "options": [
+            {
+              "value": "frame",
+              "label": "Entramado ligero"
+            },
+            {
+              "value": "sip",
+              "label": "Panel SIP"
+            },
+            {
+              "value": "european",
+              "label": "Sistema europeo"
+            },
+            {
+              "value": "none",
+              "label": "Sin ilustración"
+            }
+          ],
+          "default": "frame"
+        },
+        {
+          "type": "header",
+          "content": "Enlaces comerciales"
+        },
+        {
+          "type": "text",
+          "id": "primary_label",
+          "label": "Texto del enlace principal",
+          "default": "Ver modelos"
+        },
+        {
+          "type": "url",
+          "id": "primary_link",
+          "label": "Enlace principal"
+        },
+        {
+          "type": "text",
+          "id": "secondary_label",
+          "label": "Texto del enlace secundario",
+          "default": "Conocer el sistema"
+        },
+        {
+          "type": "url",
+          "id": "secondary_link",
+          "label": "Enlace secundario"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Inicio · Tres sistemas",
+      "blocks": [
+        {
+          "type": "system",
+          "settings": {
+            "number": "01 / Bastidores de madera",
+            "heading": "Entramado ligero",
+            "description": "Estructura de montantes y travesaños de madera, con rigidización y aislamiento definidos en el proyecto. Una solución versátil para viviendas y espacios habitables.",
+            "diagram": "frame",
+            "primary_label": "Ver casas de entramado ligero",
+            "primary_link": "/collections/light-frame-houses",
+            "secondary_label": "Conocer el sistema",
+            "secondary_link": "/pages/light-frame-construction-system"
+          }
+        },
+        {
+          "type": "system",
+          "settings": {
+            "number": "02 / Panel prefabricado aislado",
+            "heading": "Panel SIP",
+            "description": "Paneles con caras resistentes y núcleo aislante. Las juntas, apoyos, huecos y encuentros deben resolverse para conseguir las prestaciones del conjunto.",
+            "diagram": "sip",
+            "primary_label": "Ver casas con panel SIP",
+            "primary_link": "/collections/sip-panel-houses",
+            "secondary_label": "Conocer el sistema",
+            "secondary_link": "/pages/sip-panels-system"
+          }
+        },
+        {
+          "type": "system",
+          "settings": {
+            "number": "03 / Madera perfilada",
+            "heading": "Sistema europeo",
+            "description": "Familia comercial vinculada a soluciones tipo Blockhaus/Blockbau y madera apilada. Nuestra propuesta emplea madera exterior perfilada y una capa técnica interior; no equivale automáticamente a cualquier sistema nórdico o finlandés.",
+            "diagram": "european",
+            "primary_label": "Conocer el sistema europeo",
+            "primary_link": "/pages/european-timber-construction-system",
+            "secondary_label": "Consultar compatibilidad",
+            "secondary_link": "/pages/contact-ideas-exteriores"
+          }
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
