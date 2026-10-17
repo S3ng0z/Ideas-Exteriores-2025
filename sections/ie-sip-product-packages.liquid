@@ -72,9 +72,12 @@
           No sustituirlas por resúmenes; los cambios de precio y condiciones se gestionan por separado.
           {% endcomment %}
           {% if block.settings.details != blank %}
-            <div class="ie-sip-pdp__package-body rte">
-              {{ block.settings.details }}
-            </div>
+            <section class="ie-sip-pdp__package-description" aria-label="Descripción completa de {{ block.settings.label | escape }}">
+              <h3 class="ie-sip-pdp__package-description-title">Descripción completa de {{ block.settings.label }}</h3>
+              <div class="ie-sip-pdp__package-body rte">
+                {{ block.settings.details }}
+              </div>
+            </section>
           {% endif %}
         </article>
       {% endfor %}
