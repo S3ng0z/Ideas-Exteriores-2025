@@ -1,0 +1,32 @@
+{% comment %}
+  LINNEA TIMBER HOME 135 — resumen específico.
+  Fuente: producto Shopify Admin y registro CAT-012 del catálogo maestro 16-10-2026.
+  Precio de auditoría no aprobado; no mostrar cuantía fija ni dar por probada superficie útil.
+  La descripción comercial original llama a los paquetes Básico/Estándar/Alta Prestación;
+  evitar suponer que corresponden a las etiquetas de la plantilla compartida.
+{% endcomment %}
+{% if product.handle == 'linnea-timber-home-135' %}
+  <section class="ie-linnea-summary" aria-label="Características de la vivienda LINNEA">
+    <p class="ie-linnea-summary__eyebrow">LINNEA · Vivienda de entramado ligero en una planta</p>
+    <ul class="ie-linnea-summary__facts">
+      <li><strong>135 m²</strong><span>Superficie indicada en ficha; confirmar criterio de medición</span></li>
+      <li><strong>1</strong><span>Planta</span></li>
+      <li><strong>4</strong><span>Dormitorios</span></li>
+      <li><strong>2</strong><span>Baños, uno en suite</span></li>
+    </ul>
+    <p class="ie-linnea-summary__notice">Distribución de referencia con salón, cocina y comedor integrados. La superficie interior y cualquier espacio exterior deben desglosarse en el proyecto. Se pueden revisar distribución, huecos y acabados según la parcela.</p>
+    <p class="ie-linnea-summary__scope"><strong>Antes de solicitar presupuesto:</strong> los importes publicados son referencias sujetas a confirmación comercial. Consulta la composición de la envolvente y compara inclusiones y exclusiones de cubierta, cimentación, transporte, montaje, instalaciones y acabados. Las prestaciones y el cumplimiento normativo se justifican para la solución constructiva completa.</p>
+    <a class="ie-linnea-summary__link" href="#ie-habitable-packages">Ver configuraciones, precios y alcance →</a>
+  </section>
+  <style>
+    .ie-linnea-summary{margin-block:1.25rem;padding:clamp(1rem,2.5vw,1.4rem);border:1px solid #dce4dc;border-radius:12px;background:#f7faf7;color:#26362d}
+    .ie-linnea-summary__eyebrow{margin:0 0 .85rem;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+    .ie-linnea-summary__facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:.75rem;padding:0;margin:0 0 1rem;list-style:none}
+    .ie-linnea-summary__facts li{display:flex;flex-direction:column;gap:.25rem}
+    .ie-linnea-summary__facts strong{font-size:1.25rem;line-height:1.2}
+    .ie-linnea-summary__facts span{font-size:.84rem;line-height:1.4}
+    .ie-linnea-summary__notice,.ie-linnea-summary__scope{margin:0 0 .75rem;font-size:.9rem;line-height:1.6}
+    .ie-linnea-summary__link{font-weight:700;color:#284c3a;text-underline-offset:3px}
+    .ie-linnea-summary__link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+  </style>
+{% endif %}
