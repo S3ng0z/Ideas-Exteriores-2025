@@ -583,3 +583,62 @@
     max-width: none !important;
   }
 }
+
+
+/* HOME / SMARTPHONE TYPOGRAPHY v4
+   More compact headings reduce excessive line breaks at 320–440px.
+   All selectors remain homepage-only because this stylesheet is loaded
+   conditionally on the index template. Desktop/tablet are unchanged. */
+@media screen and (max-width: 749px) {
+  #MainContent {
+    --ie-home-mobile-h1: clamp(1.38rem, 5.1vw, 1.56rem);
+    --ie-home-mobile-h2: clamp(1.40rem, 5.55vw, 1.70rem);
+    --ie-home-mobile-h3: clamp(1.24rem, 4.95vw, 1.48rem);
+  }
+
+  /* Keep the long hero H1 readable, but use fewer lines. */
+  #MainContent .hero-wrapper .text-block--text_MggaYr h1 {
+    font-size: var(--ie-home-mobile-h1) !important;
+    line-height: 1.16 !important;
+    letter-spacing: -0.024em !important;
+    text-transform: none !important;
+    text-wrap: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Chapter headings in solutions, construction systems and editorial sections. */
+  #MainContent :is(
+    .ie-home-discovery__intro h2,
+    .ie-home-systems__intro h2,
+    .ie-home-solutions__heading,
+    .ie-home-criteria__heading,
+    .section-wrapper:not(.hero-wrapper) .text-block h2,
+    .section-resource-list__header .text-block h2
+  ) {
+    font-size: var(--ie-home-mobile-h2) !important;
+    font-weight: 500 !important;
+    line-height: 1.16 !important;
+    letter-spacing: -0.018em !important;
+    text-transform: none !important;
+    text-wrap: normal !important;
+    hyphens: none !important;
+  }
+
+  /* Titles inside commercial cards and collection headings. */
+  #MainContent :is(
+    .ie-home-discovery__card-body h3,
+    .ie-home-systems__body h3,
+    .section-wrapper:not(.hero-wrapper) .text-block h3,
+    .section-resource-list__header .text-block h3
+  ) {
+    font-size: var(--ie-home-mobile-h3) !important;
+    font-weight: 500 !important;
+    line-height: 1.20 !important;
+    letter-spacing: -0.012em !important;
+    text-transform: none !important;
+    text-wrap: normal !important;
+    hyphens: none !important;
+  }
+}
