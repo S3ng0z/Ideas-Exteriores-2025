@@ -1,9 +1,6 @@
 {% liquid
   assign ie_technical_status = product.metafields.custom.technical_status.value | default: ''
   assign ie_packages_on_hold = false
-  if product.id == 15218582552920
-    assign ie_packages_on_hold = true
-  endif
   if ie_technical_status == 'review_required' or ie_technical_status == 'draft' or ie_technical_status == 'withdrawn'
     assign ie_packages_on_hold = true
   endif
@@ -59,6 +56,8 @@
 
             {% if tier_price != blank %}
               <p class="ie-sip-pdp__package-price">{{ tier_price | money }}</p>
+            {% elsif block.settings.price_source == 'basic' %}
+              <p class="ie-sip-pdp__package-price">{{ product.price | money }}</p>
             {% endif %}
 
             {% if block.settings.tax_note != blank %}
