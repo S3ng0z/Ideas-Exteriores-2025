@@ -861,3 +861,16 @@ body:has(.ie-sip-pdp--hero) .product-information .product-details
   .ie-sip-pdp h2 {font-size:clamp(1.4rem,4.5vw,1.8rem)}
   body:has(.ie-sip-pdp--hero) .product-information .product-details h2 {font-size:1.35rem}
 }
+
+/* Remate responsive para anchuras estrechas: títulos legibles sin corte horizontal. */
+@media screen and (max-width:430px) {
+  body:has(.ie-sip-pdp--hero) .product-information .product-details
+  .ie-model-spec[data-ie-template="sip-unified-2026"] h2 {
+    font-size:1.2rem!important;
+    line-height:1.3!important;
+  }
+  body:has(.ie-sip-pdp--hero) .product-information .product-details
+  .ie-model-spec[data-ie-template="sip-unified-2026"] h3 {
+    font-size:1.04rem!important;
+  }
+}
