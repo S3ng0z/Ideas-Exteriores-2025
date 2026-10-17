@@ -1,0 +1,68 @@
+{% liquid
+  assign p = product
+  assign model = p.title | split: '|' | first | strip
+  assign basic = p.metafields.custom.price_basic.value
+  assign standard = p.metafields.custom.price_standard.value
+  assign passive = p.metafields.custom.price_passive.value
+%}
+<section class="ie-sip page-width" aria-label="Información del modelo SIP">
+  <header class="ie-sip__intro">
+    <p class="ie-sip__eyebrow">IDEAS EXTERIORES · SISTEMA SIP</p>
+    <h2>Conoce {{ model | escape }}</h2>
+    <p>Una propuesta de vivienda prefabricada con paneles estructurales aislados. Adaptamos el proyecto a tu parcela, distribución y necesidades.</p>
+  </header>
+  <div class="ie-sip__grid">
+    <article class="ie-sip__card">
+      <h3>01 · El modelo</h3>
+      <p>Consulta en la descripción superior las superficies y la distribución de referencia. Las medidas útiles, construidas y exteriores se confirman con planos acotados.</p>
+    </article>
+    <article class="ie-sip__card">
+      <h3>02 · Construcción con panel SIP</h3>
+      <p>Los paneles SIP combinan caras resistentes con un núcleo aislante. Espesores, composición, uniones, cubierta y prestaciones se concretan en la memoria técnica del proyecto.</p>
+      <a href="/pages/timber-building-systems">Conocer los sistemas constructivos →</a>
+    </article>
+    <article class="ie-sip__card">
+      <h3>03 · Configuraciones y precio</h3>
+      <p>El precio mostrado en la ficha es orientativo y debe vincularse a un alcance de suministro documentado.</p>
+      {% if basic != blank or standard != blank or passive != blank %}
+        <dl class="ie-sip__prices">
+          {% if basic != blank %}<div><dt>BASIC</dt><dd>{{ basic | money_with_currency }}</dd></div>{% endif %}
+          {% if standard != blank %}<div><dt>STANDARD</dt><dd>{{ standard | money_with_currency }}</dd></div>{% endif %}
+          {% if passive != blank %}<div><dt>PASSIVE</dt><dd>{{ passive | money_with_currency }}</dd></div>{% endif %}
+        </dl>
+        <p class="ie-sip__note">Las configuraciones son denominaciones comerciales. PASSIVE no supone certificación Passivhaus. Confirma partidas e impuestos antes de contratar.</p>
+      {% endif %}
+    </article>
+    <article class="ie-sip__card">
+      <h3>04 · Presupuesto transparente</h3>
+      <p>Solicita el desglose de proyecto, licencias, cimentación, transporte, descarga, montaje, instalaciones, fachada, cubierta y acabados. No se presupone una entrega llave en mano.</p>
+    </article>
+  </div>
+  <div class="ie-sip__cta">
+    <h3>¿Quieres estudiar este modelo para tu parcela?</h3>
+    <p>Cuéntanos dónde quieres construir y qué necesitas. Prepararemos una propuesta ajustada al proyecto.</p>
+    <a class="ie-sip__button" href="/pages/contact?modelo={{ p.handle | url_encode }}">Solicitar estudio del modelo →</a>
+  </div>
+</section>
+<style>
+.ie-sip{max-width:1100px;margin:clamp(32px,5vw,72px) auto;color:var(--color-foreground,#252522);font-family:inherit}
+.ie-sip__eyebrow{font-size:.75rem;letter-spacing:.14em;font-weight:650;opacity:.65}
+.ie-sip h2{font-size:clamp(1.7rem,3vw,2.6rem);line-height:1.18;margin:.5rem 0 1rem}
+.ie-sip h3{font-size:clamp(1.05rem,1.5vw,1.25rem);margin:0 0 .8rem}
+.ie-sip p{line-height:1.7;max-width:70ch}
+.ie-sip__intro{margin-bottom:2rem}
+.ie-sip__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.ie-sip__card{border:1px solid rgba(70,60,45,.16);border-radius:12px;padding:clamp(20px,3vw,32px);background:#faf8f4}
+.ie-sip__card a{color:inherit;text-underline-offset:4px}
+.ie-sip__prices{margin:1rem 0}
+.ie-sip__prices div{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-bottom:1px solid #ddd6cc}
+.ie-sip__prices dd{margin:0;font-weight:650}
+.ie-sip__note{font-size:.85rem;opacity:.78}
+.ie-sip__cta{margin-top:1rem;border-radius:12px;background:#f1ede6;padding:clamp(24px,4vw,44px)}
+.ie-sip__button{display:inline-block;margin-top:.6rem;padding:.9rem 1.4rem;border-radius:6px;background:#33312d;color:#fff;text-decoration:none}
+.ie-sip__button:hover,.ie-sip__button:focus-visible{background:#514b42;color:#fff}
+@media(max-width:749px){.ie-sip__grid{grid-template-columns:1fr}.ie-sip{padding-inline:18px}}
+</style>
+{% schema %}
+{"name":"IE · HOME SIP detalles","settings":[],"presets":[{"name":"IE · HOME SIP detalles"}]}
+{% endschema %}
