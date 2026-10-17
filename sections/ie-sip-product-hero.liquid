@@ -4,13 +4,17 @@
 {% liquid
   assign ie_collection_url = collections['sip-panel-houses'].url | default: '/collections/sip-panel-houses'
   assign ie_system_url = pages['sip-panels-system'].url | default: '/pages/sip-panels-system'
+  assign ie_display_title = product.title
+  if product.id == 15218578587992
+    assign ie_display_title = 'HOME-SIP ALICE'
+  endif
 %}
 
 <section class="ie-sip-pdp ie-sip-pdp--hero" aria-labelledby="ie-sip-product-title-{{ section.id }}">
   <div class="ie-sip-pdp__inner">
     {% render 'ie-breadcrumb',
   breadcrumb_object: product,
-  current_title: product.title,
+  current_title: ie_display_title,
   class_name: 'ie-sip-pdp__breadcrumb',
   aria_label: section.settings.breadcrumb_label,
   home_label: section.settings.home_label,
@@ -27,7 +31,7 @@
         {% if section.settings.eyebrow != blank %}
           <p class="ie-sip-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
         {% endif %}
-        <h1 id="ie-sip-product-title-{{ section.id }}">{{ product.title }}</h1>
+        <h1 id="ie-sip-product-title-{{ section.id }}">{{ ie_display_title | escape }}</h1>
         {% render 'ie-sip-product-summary', product: product %}
         {% if section.settings.lead != blank %}
           <div class="ie-sip-pdp__lead rte">{{ section.settings.lead }}</div>
