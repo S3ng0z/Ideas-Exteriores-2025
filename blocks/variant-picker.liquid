@@ -7,7 +7,15 @@
   endif
 -%}
 
-{% render 'variant-main-picker', product_resource: product_resource %}
+{% comment %}
+  ALICE se comercializa mediante presupuesto (commercial_mode=quote).
+  Ocultar únicamente su selector BASIC / STANDARD / PASSIVE en la ficha:
+  las tres variantes permanecen en Shopify y el comparador SIP independiente
+  sigue disponible. No ocultar variantes de otros productos ni de otras plantillas.
+{% endcomment %}
+{% unless product_resource.handle == 'home-sip-alice-117-m-terraza' %}
+  {% render 'variant-main-picker', product_resource: product_resource %}
+{% endunless %}
 
 {% schema %}
 {
