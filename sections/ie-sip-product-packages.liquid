@@ -1,6 +1,10 @@
 {% liquid
   assign ie_technical_status = product.metafields.custom.technical_status.value | default: ''
   assign ie_packages_on_hold = false
+  assign ie_is_alice = false
+  if product.handle == 'home-sip-alice-117-m-terraza'
+    assign ie_is_alice = true
+  endif
   if product.id == 15218582552920
     assign ie_packages_on_hold = true
   endif
@@ -49,14 +53,14 @@
 
         <article class="ie-sip-pdp__package-card ie-sip-pdp__package-card--{{ block.settings.tone }}" {{ block.shopify_attributes }}>
           <header class="ie-sip-pdp__package-head">
-            <p class="ie-sip-pdp__package-label">{{ block.settings.label }}</p>
+            <p class="ie-sip-pdp__package-label">{% if ie_is_alice %}{{ block.settings.label }} · Paneles SIP{% else %}{{ block.settings.label }}{% endif %}</p>
 
             {% if tier_price != blank %}
               <p class="ie-sip-pdp__package-price">{{ tier_price | money }}</p>
             {% endif %}
 
             {% if block.settings.tax_note != blank %}
-              <p class="ie-sip-pdp__package-tax">{{ block.settings.tax_note }}</p>
+              <p class="ie-sip-pdp__package-tax">{% if ie_is_alice %}Precio de referencia provisional · IVA aplicable pendiente de confirmación{% else %}{{ block.settings.tax_note }}{% endif %}</p>
             {% endif %}
 
             {% if block.settings.summary != blank %}
@@ -64,6 +68,9 @@
             {% endif %}
           </header>
 
+          {% comment %}Las descripciones extensas de BASIC, STANDARD y PASSIVE son contenido protegido.
+          No sustituirlas por resúmenes; los cambios de precio y condiciones se gestionan por separado.
+          {% endcomment %}
           {% if block.settings.details != blank %}
             <div class="ie-sip-pdp__package-body rte">
               {{ block.settings.details }}
