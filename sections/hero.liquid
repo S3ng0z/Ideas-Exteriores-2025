@@ -236,6 +236,10 @@
     </div>
   </div>
 </div>
+{% if request.page_type == 'index' and section.id == 'hero_irjTFL' %}
+  {% render 'ie-home-discovery-content' %}
+  {% render 'ie-home-systems-content' %}
+{% endif %}
 
 {% stylesheet %}
   .hero-wrapper {
