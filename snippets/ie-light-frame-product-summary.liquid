@@ -1,0 +1,187 @@
+{% comment %}
+  Un solo componente editorial para las 18 viviendas de entramado ligero.
+  Datos descriptivos procedentes del catálogo maestro y comprobados en Shopify.
+  No sustituye planos, memorias técnicas ni presupuesto contractual.
+  Para sumar otro modelo, añadir únicamente un caso al mapeo.
+{% endcomment %}
+{% liquid
+  assign ie_model = ''
+  assign ie_surface = ''
+  assign ie_surface_label = 'Superficie declarada'
+  assign ie_bedrooms = ''
+  assign ie_bathrooms = ''
+  assign ie_extra_label = ''
+  assign ie_extra_value = ''
+  case product.handle
+    when 'freja-timber-home-101'
+      assign ie_model = 'FREJA'
+      assign ie_surface = '101 m²'
+      assign ie_surface_label = 'Superficie construida declarada'
+      assign ie_bedrooms = '2'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = 'Porche'
+      assign ie_extra_value = '17 m²'
+    when 'nordlys-timber-home-187'
+      assign ie_model = 'NORDLYS'
+      assign ie_surface = '187 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = 'Plazas de garaje'
+      assign ie_extra_value = '2'
+    when 'lys-timber-home-111'
+      assign ie_model = 'LYS'
+      assign ie_surface = '111 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = 'Lavandería'
+      assign ie_extra_value = '1'
+    when 'sisu-timber-home-174'
+      assign ie_model = 'SISU'
+      assign ie_surface = '174 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = 'Plazas de garaje'
+      assign ie_extra_value = '1'
+    when 'eira-timber-home-58'
+      assign ie_model = 'EIRA'
+      assign ie_surface = '58 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '2'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = ''
+      assign ie_extra_value = ''
+    when 'signe-timber-home-32'
+      assign ie_model = 'SIGNE'
+      assign ie_surface = '32 m²'
+      assign ie_surface_label = 'Superficie interior declarada'
+      assign ie_bedrooms = '1'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = 'Porche'
+      assign ie_extra_value = '10 m²'
+    when 'lumi-timber-home-113'
+      assign ie_model = 'LUMI'
+      assign ie_surface = '113 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = ''
+      assign ie_extra_value = ''
+    when 'aava-timber-home-162'
+      assign ie_model = 'AAVA'
+      assign ie_surface = '162 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = 'Plantas'
+      assign ie_extra_value = '2'
+    when 'rova-timber-home-128'
+      assign ie_model = 'ROVA'
+      assign ie_surface = '128 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = ''
+      assign ie_extra_value = ''
+    when 'valo-timber-home-97'
+      assign ie_model = 'VALO'
+      assign ie_surface = '97 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '2'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = ''
+      assign ie_extra_value = ''
+    when 'brygge-timber-home-88'
+      assign ie_model = 'BRYGGE'
+      assign ie_surface = '88 m²'
+      assign ie_surface_label = 'Superficie interior declarada'
+      assign ie_bedrooms = '2'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = 'Porche'
+      assign ie_extra_value = '18 m²'
+    when 'linnea-timber-home-135'
+      assign ie_model = 'LINNEA'
+      assign ie_surface = '135 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '4'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = ''
+      assign ie_extra_value = ''
+    when 'maja-timber-home-76'
+      assign ie_model = 'MAJA'
+      assign ie_surface = '76 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '2'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = ''
+      assign ie_extra_value = ''
+    when 'saga-timber-home-73'
+      assign ie_model = 'SAGA'
+      assign ie_surface = '73 m²'
+      assign ie_surface_label = 'Superficie construida declarada'
+      assign ie_bedrooms = '2'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = 'Entreplanta'
+      assign ie_extra_value = '1'
+    when 'alva-timber-home-58'
+      assign ie_model = 'ALVA'
+      assign ie_surface = '58 m²'
+      assign ie_surface_label = 'Superficie interior declarada'
+      assign ie_bedrooms = '2'
+      assign ie_bathrooms = '1'
+      assign ie_extra_label = 'Porche'
+      assign ie_extra_value = '12 m²'
+    when 'veranda-timber-home-107'
+      assign ie_model = 'VERANDA'
+      assign ie_surface = '107 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = ''
+      assign ie_extra_value = ''
+    when 'lysa-timber-home-152'
+      assign ie_model = 'LYSA'
+      assign ie_surface = '152 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = ''
+      assign ie_extra_value = ''
+    when 'moa-timber-home-214'
+      assign ie_model = 'MOA'
+      assign ie_surface = '214 m²'
+      assign ie_surface_label = 'Superficie indicada en ficha'
+      assign ie_bedrooms = '3'
+      assign ie_bathrooms = '2'
+      assign ie_extra_label = 'Plazas de garaje'
+      assign ie_extra_value = '2'
+  endcase
+%}
+{% if ie_model != blank %}
+  <div class="ie-frame-summary" data-ie-component="light-frame-summary-v1" aria-label="Datos principales de {{ ie_model | escape }}">
+    <p class="ie-frame-summary__eyebrow">Ficha rápida · Entramado ligero de madera</p>
+    <dl class="ie-frame-summary__facts">
+      <div><dt>{{ ie_surface_label | escape }}</dt><dd>{{ ie_surface | escape }}</dd></div>
+      <div><dt>Dormitorios</dt><dd>{{ ie_bedrooms | escape }}</dd></div>
+      <div><dt>Baños</dt><dd>{{ ie_bathrooms | escape }}</dd></div>
+      {% if ie_extra_value != blank %}
+        <div><dt>{{ ie_extra_label | escape }}</dt><dd>{{ ie_extra_value | escape }}</dd></div>
+      {% endif %}
+    </dl>
+    <p class="ie-frame-summary__note">Superficies y distribución según ficha comercial. Confirma planos, alcance del suministro, cimentación, montaje e instalaciones antes de comparar presupuestos.</p>
+    <a class="ie-frame-summary__link" href="#ie-habitable-packages">Comparar configuraciones y alcance <span aria-hidden="true">→</span></a>
+  </div>
+  <style>
+    .ie-frame-summary{margin-block:1.25rem;padding:clamp(1rem,2.5vw,1.4rem);background:#f7faf7;border:1px solid #dce4dc;border-radius:12px;color:#26362d}
+    .ie-frame-summary__eyebrow{margin:0 0 .9rem;font-size:.79rem;line-height:1.4;font-weight:700;letter-spacing:.045em}
+    .ie-frame-summary__facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:.9rem;margin:0 0 .9rem;padding:0}
+    .ie-frame-summary__facts>div{display:flex;flex-direction:column-reverse;gap:.2rem;min-width:0}
+    .ie-frame-summary__facts dd{margin:0;font-size:1.3rem;line-height:1.2;font-weight:700;overflow-wrap:anywhere}
+    .ie-frame-summary__facts dt{font-size:.82rem;line-height:1.4}
+    .ie-frame-summary__note{font-size:.88rem;line-height:1.55;margin:0 0 .7rem}
+    .ie-frame-summary__link{font-size:.9rem;line-height:1.4;font-weight:700;color:#284c3a;text-underline-offset:3px}
+    .ie-frame-summary__link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+  </style>
+{% endif %}
