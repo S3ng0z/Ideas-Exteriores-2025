@@ -84,6 +84,12 @@
       </div>
     </div>
 
+    {%- assign ie_footer_budget_url = section.settings.budget_link | default: '/pages/contact-ideas-exteriores' -%}
+    <a class="ie-footer__mobile-cta" href="{{ ie_footer_budget_url }}">
+      {{ section.settings.budget_label | default: 'Pedir presupuesto' | escape }}
+      <span aria-hidden="true">↗</span>
+    </a>
+
     <div class="ie-footer__nav">
       <div class="ie-footer__nav-grid">
         {% render 'ie-footer-menu',
