@@ -35,8 +35,7 @@
       {% endif %}
     </div>
 
-    {% unless ie_packages_on_hold %}
-      {% if section.settings.note != blank %}
+    {% if section.settings.note != blank %}
         <div class="ie-sip-pdp__technical-note rte">{{ section.settings.note }}</div>
       {% endif %}
       <div class="ie-sip-pdp__package-columns">
@@ -78,7 +77,6 @@
         </article>
       {% endfor %}
       </div>
-    {% endunless %}
   </div>
 </section>
 
