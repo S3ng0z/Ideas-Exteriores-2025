@@ -591,9 +591,9 @@
    conditionally on the index template. Desktop/tablet are unchanged. */
 @media screen and (max-width: 749px) {
   #MainContent {
-    --ie-home-mobile-h1: clamp(1.38rem, 5.1vw, 1.56rem);
-    --ie-home-mobile-h2: clamp(1.40rem, 5.55vw, 1.70rem);
-    --ie-home-mobile-h3: clamp(1.24rem, 4.95vw, 1.48rem);
+    --ie-home-mobile-h1: clamp(1.30rem, 4.8vw, 1.48rem);
+    --ie-home-mobile-h2: clamp(1.34rem, 5.2vw, 1.60rem);
+    --ie-home-mobile-h3: clamp(1.18rem, 4.65vw, 1.40rem);
   }
 
   /* Keep the long hero H1 readable, but use fewer lines. */
