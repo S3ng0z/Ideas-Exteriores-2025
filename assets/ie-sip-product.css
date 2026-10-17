@@ -719,3 +719,8 @@ body:has(.ie-sip-pdp--hero) .product-information .product-details > *{
 .ie-sip-nora ul{padding-inline-start:1.3rem}
 .ie-sip-nora li{margin-block:.4rem}
 .ie-sip-nora p{line-height:1.7}
+
+/* Descripción completa visible dentro de cada tarjeta de configuración SIP. */
+.ie-sip-pdp__package-description{margin-top:24px;padding-top:24px;border-top:1px solid var(--ie-sip-border)}
+.ie-sip-pdp__package-description-title{margin:0 0 18px;font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:1.04rem;font-weight:700;line-height:1.4;color:var(--ie-sip-ink)}
+.ie-sip-pdp__package-description .ie-sip-pdp__package-body{overflow-wrap:anywhere}
