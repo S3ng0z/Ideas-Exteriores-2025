@@ -1,0 +1,31 @@
+{% comment %}
+  MAJA TIMBER HOME 76 — resumen comercial específico.
+  Contrastado con Shopify Admin y catálogo maestro CAT-013 del 16-10-2026.
+  Precio de auditoría no aprobado: no mostrar importe duplicado ni modificar Shopify.
+  No se infiere superficie útil ni se promete conformidad CTE sin proyecto.
+{% endcomment %}
+{% if product.handle == 'maja-timber-home-76' %}
+  <section class="ie-maja-summary" aria-label="Resumen de la vivienda MAJA">
+    <p class="ie-maja-summary__eyebrow">MAJA · Vivienda compacta de entramado ligero</p>
+    <ul class="ie-maja-summary__facts">
+      <li><strong>76 m²</strong><span>Superficie indicada en la ficha</span></li>
+      <li><strong>2</strong><span>Dormitorios</span></li>
+      <li><strong>1</strong><span>Baño</span></li>
+      <li><strong>1</strong><span>Salón-comedor con cocina abierta</span></li>
+    </ul>
+    <p class="ie-maja-summary__notice">Distribución orientativa y personalizable según parcela y proyecto. Deben confirmarse las superficies de referencia, medidas, huecos, composición constructiva y acabados antes de cerrar la oferta.</p>
+    <p class="ie-maja-summary__scope"><strong>Precio y alcance del suministro:</strong> las configuraciones BASIC, STANDARD y PASSIVE pueden incluir partidas diferentes. Solicita el desglose de estructura, cerramientos, cubierta, carpinterías, transporte, cimentación, montaje, instalaciones y acabados. La conformidad con la normativa aplicable debe justificarse para el proyecto completo.</p>
+    <a class="ie-maja-summary__link" href="#ie-habitable-packages">Comparar configuraciones y condiciones →</a>
+  </section>
+  <style>
+    .ie-maja-summary{margin-block:1.25rem;padding:clamp(1rem,2.5vw,1.4rem);border:1px solid #dce4dc;border-radius:12px;background:#f7faf7;color:#26362d}
+    .ie-maja-summary__eyebrow{margin:0 0 .85rem;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+    .ie-maja-summary__facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.75rem;padding:0;margin:0 0 1rem;list-style:none}
+    .ie-maja-summary__facts li{display:flex;flex-direction:column;gap:.25rem}
+    .ie-maja-summary__facts strong{font-size:1.25rem;line-height:1.2}
+    .ie-maja-summary__facts span{font-size:.84rem;line-height:1.4}
+    .ie-maja-summary__notice,.ie-maja-summary__scope{margin:0 0 .75rem;font-size:.9rem;line-height:1.6}
+    .ie-maja-summary__link{font-weight:700;color:#284c3a;text-underline-offset:3px}
+    .ie-maja-summary__link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+  </style>
+{% endif %}
