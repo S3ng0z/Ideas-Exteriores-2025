@@ -1,0 +1,30 @@
+{% comment %}
+  VERANDA TIMBER HOME · resumen específico, referencia CAT-016.
+  Cifras verificadas en Shopify Admin y catálogo maestro 16-10-2026.
+  El precio de auditoría no es nueva tarifa aprobada: evitar importe duplicado.
+{% endcomment %}
+{% if product.handle == 'veranda-timber-home-107' %}
+  <section class="ie-veranda-summary" aria-label="Resumen de la vivienda VERANDA">
+    <p class="ie-veranda-summary__eyebrow">VERANDA · Vivienda de entramado ligero</p>
+    <ul class="ie-veranda-summary__facts">
+      <li><strong>107 m²</strong><span>Superficie indicada en la ficha</span></li>
+      <li><strong>3</strong><span>Dormitorios</span></li>
+      <li><strong>2</strong><span>Baños</span></li>
+      <li><strong>1</strong><span>Salón-comedor con cocina lineal</span></li>
+    </ul>
+    <p class="ie-veranda-summary__notice">Distribución de referencia con lavandería y zona de día abierta. Las superficies, medidas, huecos y acabados se deben confirmar para cada parcela y proyecto; no se presume que la superficie indicada sea útil.</p>
+    <p class="ie-veranda-summary__scope"><strong>Precio de partida y alcance:</strong> compara las configuraciones BASIC, STANDARD y PASSIVE según las partidas realmente incluidas y excluidas. Antes de contratar, solicita definición de estructura, envolvente, cubierta, transporte, cimentación, montaje, instalaciones y acabados. El cumplimiento normativo y las prestaciones se justifican para la solución completa de proyecto.</p>
+    <a class="ie-veranda-summary__link" href="#ie-habitable-packages">Comparar configuraciones y condiciones →</a>
+  </section>
+  <style>
+    .ie-veranda-summary{margin-block:1.25rem;padding:clamp(1rem,2.5vw,1.4rem);border:1px solid #dce4dc;border-radius:12px;background:#f7faf7;color:#26362d}
+    .ie-veranda-summary__eyebrow{margin:0 0 .85rem;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+    .ie-veranda-summary__facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.75rem;padding:0;margin:0 0 1rem;list-style:none}
+    .ie-veranda-summary__facts li{display:flex;flex-direction:column;gap:.25rem}
+    .ie-veranda-summary__facts strong{font-size:1.25rem;line-height:1.2}
+    .ie-veranda-summary__facts span{font-size:.84rem;line-height:1.4}
+    .ie-veranda-summary__notice,.ie-veranda-summary__scope{margin:0 0 .75rem;font-size:.9rem;line-height:1.6}
+    .ie-veranda-summary__link{font-weight:700;color:#284c3a;text-underline-offset:3px}
+    .ie-veranda-summary__link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+  </style>
+{% endif %}
