@@ -352,3 +352,234 @@
     text-justify: auto !important;
   }
 }
+
+
+/* MOBILE DESIGN SYSTEM v3
+   One editorial rule across the homepage:
+   - Heads and prose: natural left alignment.
+   - Commercial CTAs: centered, with consistent tap targets.
+   - Menus, sliders and floating utilities retain their own controls.
+   The Shopify hero section ID is dynamic; target the real schema class. */
+@media screen and (max-width: 749px) {
+  /* The first viewport is already 100svh. Keep its content vertically balanced. */
+  #MainContent .hero-wrapper .hero__container {
+    align-items: center !important;
+    padding-block: max(78px, env(safe-area-inset-top)) 24px !important;
+  }
+  #MainContent .hero-wrapper .hero__content-wrapper {
+    width: 100% !important;
+    max-width: 540px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-inline: auto !important;
+    padding-inline: clamp(16px, 4.5vw, 22px) !important;
+  }
+  #MainContent .hero-wrapper .hero__content-wrapper > .group-block {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+  #MainContent .hero-wrapper .hero__content-wrapper > .group-block > .group-block-content {
+    box-sizing: border-box;
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 18px !important;
+    padding: clamp(20px, 5vw, 26px) clamp(18px, 4.5vw, 24px) !important;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 15px;
+    background: rgba(22,29,23,.80);
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  }
+  #MainContent .hero-wrapper .text-block--text_MggaYr {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  /* Mobile header already shows the brand; do not repeat it as a two-line kicker. */
+  #MainContent .hero-wrapper .text-block--text_MggaYr > p:first-of-type {
+    display: none !important;
+  }
+  #MainContent .hero-wrapper .text-block--text_MggaYr h1 {
+    margin: 0 0 14px !important;
+    max-width: 100% !important;
+    font-family: "Source Serif 4", Georgia, serif !important;
+    font-size: clamp(1.72rem, 6.6vw, 2.1rem) !important;
+    line-height: 1.10 !important;
+    font-weight: 500 !important;
+    letter-spacing: -.02em !important;
+    text-transform: none !important;
+    text-align: left !important;
+    text-wrap: balance !important;
+    color: #fff !important;
+  }
+  #MainContent .hero-wrapper .text-block--text_MggaYr > p:last-of-type {
+    margin: 0 !important;
+    max-width: 100% !important;
+    font-size: clamp(.9rem, 3.5vw, .98rem) !important;
+    font-weight: 400 !important;
+    line-height: 1.58 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+    hyphens: none !important;
+    overflow-wrap: break-word !important;
+    color: rgba(255,255,255,.95) !important;
+  }
+
+  /* Full-width parent + stacked and CENTERED commercial actions in the hero. */
+  #MainContent .hero-wrapper .group-block:has(> .group-block-content > .button--button_ieExplore) {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-self: center !important;
+  }
+  #MainContent .hero-wrapper .group-block-content:has(> .button--button_ieExplore) {
+    box-sizing: border-box;
+    width: 100% !important;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #MainContent .hero-wrapper :is(.button--button_ieExplore, .button-secondary--button_ieQuote) {
+    box-sizing: border-box;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+    width: min(100%, 286px) !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 48px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 12px 14px !important;
+    border-radius: 8px !important;
+    font-size: .83rem !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    text-align: center !important;
+    white-space: normal !important;
+    box-shadow: none !important;
+  }
+  #MainContent .hero-wrapper .button--button_ieExplore {
+    color: #fff !important;
+    background: #647247 !important;
+    border: 1px solid #647247 !important;
+  }
+  #MainContent .hero-wrapper .button-secondary--button_ieQuote {
+    color: #fff !important;
+    background: transparent !important;
+    border: 1px solid rgba(255,255,255,.85) !important;
+  }
+  #MainContent .hero-wrapper :is(.button--button_ieExplore, .button-secondary--button_ieQuote):focus-visible {
+    outline: 3px solid #f4dcac !important;
+    outline-offset: 3px !important;
+  }
+
+  /* Other native Shopify button groups: centered, no impact on textual blocks. */
+  #MainContent .group-block-content:has(> :is(a.button, a.button-secondary, a.link)) {
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+  #MainContent .group-block-content > :is(a.button, a.button-secondary) {
+    align-self: center !important;
+    min-height: 44px !important;
+    text-align: center !important;
+  }
+  #MainContent .section-resource-list__header :is(a.button, a.button-secondary, a.link) {
+    align-self: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  /* Solution cards: descriptions remain left; primary CTA sits on the centerline. */
+  #MainContent .ie-home-discovery__card-link {
+    align-self: center !important;
+    justify-content: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+  #MainContent .ie-home-discovery__quick {
+    justify-content: center !important;
+  }
+  #MainContent .ie-home-discovery__quick > p {
+    text-align: left !important;
+  }
+  #MainContent .ie-home-discovery__quick-links {
+    justify-content: center !important;
+    width: 100%;
+  }
+  #MainContent .ie-home-discovery__quick-links a {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Systems cards: both editorial links centered on a consistent axis. */
+  #MainContent .ie-home-systems__actions {
+    display: grid !important;
+    width: 100% !important;
+    justify-items: center !important;
+    align-items: center !important;
+    gap: 4px !important;
+  }
+  #MainContent .ie-home-systems__actions a {
+    justify-content: center !important;
+    text-align: center !important;
+    margin-inline: auto !important;
+    max-width: 100% !important;
+  }
+  #MainContent .ie-home-systems__outro {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  #MainContent .ie-home-systems__outro > a {
+    align-self: center !important;
+    justify-content: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  /* Editorial consistency: all headlines and prose left-aligned, even benefits.
+     Only the *actions* are centered; do not center multi-line descriptive text. */
+  #MainContent :is(
+    .ie-home-benefit__title, .ie-home-benefit__title p,
+    .ie-home-benefit__copy, .ie-home-benefit__copy p,
+    .text-block--text_KdHD74, .text-block--text_KdHD74 p,
+    .text-block--text_HyRmrt, .text-block--text_HyRmrt p,
+    .text-block--text_HMtCBh, .text-block--text_HMtCBh p,
+    .text-block--text_Pr7jPh, .text-block--text_Pr7jPh p,
+    .text-block--text_kUHHxm, .text-block--text_kUHHxm p,
+    .text-block--text_zntnRd, .text-block--text_zntnRd p,
+    .text-block--text_GW7cCc, .text-block--text_GW7cCc p,
+    .text-block--text_yHnhXa, .text-block--text_yHnhXa p
+  ) {
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+  }
+  #MainContent :is(.ie-home-benefit__copy, .ie-home-benefit__copy p) {
+    max-width: none !important;
+  }
+}
