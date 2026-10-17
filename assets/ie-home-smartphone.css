@@ -1,0 +1,284 @@
+/* IDEAS EXTERIORES · Home smartphone
+   Only viewport <=749px. Tablet landscape and desktop keep their current design.
+   CSS only: no DOM mutations, duplicate headings, JS or new fonts.
+*/
+@media screen and (max-width: 749px) {
+  /* Compact but accessible header. Shopify manages its sticky/drawer behaviour. */
+  #header-component .header__row--top .header__columns {
+    min-height: 60px;
+    padding-inline: 16px !important;
+  }
+  #header-component .header-logo__image {
+    max-width: min(53vw, 202px) !important;
+    max-height: 34px !important;
+    height: auto;
+  }
+
+  /* Hero: a single comfortable editorial panel, instead of copy and detached CTAs. */
+  #shopify-section-hero_irjTFL .hero,
+  #shopify-section-hero_irjTFL .hero__container {
+    min-height: min(650px, 88svh) !important;
+  }
+  #shopify-section-hero_irjTFL .hero__container {
+    align-items: end !important;
+    padding-block: clamp(88px, 11svh, 122px) 30px !important;
+  }
+  #shopify-section-hero_irjTFL .hero__content-wrapper {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 520px !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding-inline: clamp(16px, 4.2vw, 22px) !important;
+    margin-inline: auto !important;
+  }
+  #shopify-section-hero_irjTFL .hero__content-wrapper > .group-block {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+  }
+  #shopify-section-hero_irjTFL .hero__content-wrapper > .group-block > .group-block-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto !important;
+    min-width: 0;
+    padding: clamp(20px, 5vw, 26px) clamp(18px, 4.6vw, 24px) !important;
+    gap: 16px !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    background: rgba(20, 27, 23, .82);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 16px;
+    box-shadow: 0 14px 38px rgba(0, 0, 0, .16);
+  }
+  #shopify-section-hero_irjTFL .text-block--text_MggaYr {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  /* The wordmark already identifies the company in the mobile header. */
+  #shopify-section-hero_irjTFL .text-block--text_MggaYr > p:first-of-type {
+    display: none !important;
+  }
+  #shopify-section-hero_irjTFL .text-block--text_MggaYr h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 14px !important;
+    padding: 0 !important;
+    font-family: "Source Serif 4", Georgia, serif !important;
+    font-size: clamp(1.72rem, 6.75vw, 2.1rem) !important;
+    font-weight: 500 !important;
+    line-height: 1.09 !important;
+    letter-spacing: -.022em !important;
+    text-transform: none !important;
+    text-align: left !important;
+    text-wrap: balance !important;
+    color: #fff !important;
+  }
+  #shopify-section-hero_irjTFL .text-block--text_MggaYr > p:last-of-type {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: Manrope, Arial, sans-serif !important;
+    font-size: clamp(.9rem, 3.5vw, .97rem) !important;
+    font-weight: 400 !important;
+    line-height: 1.56 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+    hyphens: none !important;
+    overflow-wrap: break-word !important;
+    color: rgba(255, 255, 255, .94) !important;
+  }
+
+  /* Two direct commercial actions, aligned inside the same panel. */
+  #shopify-section-hero_irjTFL .group-block-content:has(> .button--button_ieExplore) {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    gap: 9px !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #shopify-section-hero_irjTFL :is(.button--button_ieExplore, .button-secondary--button_ieQuote) {
+    box-sizing: border-box;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 49px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 10px 8px !important;
+    border-radius: 8px !important;
+    font-size: clamp(.73rem, 2.9vw, .84rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    text-align: center !important;
+    white-space: normal !important;
+    text-wrap: balance;
+    box-shadow: none !important;
+  }
+  #shopify-section-hero_irjTFL .button--button_ieExplore {
+    background: #647247 !important;
+    border: 1px solid #647247 !important;
+    color: #fff !important;
+  }
+  #shopify-section-hero_irjTFL .button-secondary--button_ieQuote {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, .8) !important;
+    color: #fff !important;
+  }
+  #shopify-section-hero_irjTFL :is(.button--button_ieExplore, .button-secondary--button_ieQuote):focus-visible {
+    outline: 3px solid #f2d69e !important;
+    outline-offset: 3px !important;
+  }
+
+  /* Commercial discovery — respect the mobile gutter configured in Shopify. */
+  #MainContent .ie-home-discovery,
+  #MainContent .ie-home-systems {
+    padding-block: clamp(40px, 6vw, 54px) !important;
+  }
+  #MainContent .ie-home-discovery > .page-width {
+    width: calc(100% - 2 * var(--ie-discovery-mobile-gutter, 18px)) !important;
+    max-width: var(--ie-discovery-width, 1480px) !important;
+    margin-inline: auto !important;
+  }
+  #MainContent .ie-home-systems > .page-width {
+    width: calc(100% - 2 * var(--ie-systems-mobile-gutter, 18px)) !important;
+    max-width: var(--ie-systems-width, 1480px) !important;
+    margin-inline: auto !important;
+  }
+  #MainContent :is(.ie-home-discovery__intro, .ie-home-systems__intro) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+    margin-bottom: 22px !important;
+    align-items: start !important;
+  }
+  #MainContent :is(.ie-home-discovery__intro h2, .ie-home-systems__intro h2) {
+    margin: 0 !important;
+    font-size: clamp(1.78rem, 7.5vw, 2.1rem) !important;
+    line-height: 1.14 !important;
+    letter-spacing: -.022em !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    text-align: left !important;
+    text-wrap: balance !important;
+  }
+  #MainContent :is(.ie-home-discovery__intro > p, .ie-home-systems__intro > p) {
+    max-width: 42ch !important;
+    font-size: .94rem !important;
+    line-height: 1.59 !important;
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+    color: #526056;
+  }
+  #MainContent :is(.ie-home-discovery__grid, .ie-home-systems__grid) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 16px !important;
+  }
+  #MainContent :is(.ie-home-discovery__card, .ie-home-systems__card) {
+    min-width: 0;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 20px rgba(24, 36, 23, .055);
+  }
+  #MainContent .ie-home-discovery__card:last-child,
+  #MainContent .ie-home-systems__card:last-child {
+    grid-column: auto !important;
+    display: flex !important;
+  }
+  #MainContent .ie-home-discovery__card-body,
+  #MainContent .ie-home-systems__body {
+    padding: clamp(19px, 5vw, 24px) !important;
+  }
+  #MainContent :is(.ie-home-discovery__card-body h3, .ie-home-systems__body h3) {
+    font-size: clamp(1.63rem, 6.1vw, 1.9rem) !important;
+    line-height: 1.13 !important;
+    text-transform: none !important;
+  }
+  #MainContent :is(.ie-home-discovery__card-body > p:not(.ie-home-discovery__category), .ie-home-systems__body > p) {
+    margin-bottom: 18px !important;
+    font-size: .94rem !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+  }
+  #MainContent :is(.ie-home-discovery__card-link, .ie-home-systems__actions a) {
+    min-height: 44px !important;
+    font-size: .88rem !important;
+    line-height: 1.35 !important;
+  }
+  #MainContent .ie-home-discovery__quick {
+    margin-top: 23px !important;
+    gap: 10px !important;
+  }
+  #MainContent .ie-home-discovery__quick > p {
+    width: 100%;
+  }
+  #MainContent .ie-home-discovery__quick-links {
+    gap: 8px !important;
+  }
+  #MainContent .ie-home-discovery__quick-links a {
+    min-height: 42px !important;
+    padding: 9px 12px !important;
+    font-size: .82rem !important;
+  }
+  #MainContent .ie-home-systems__visual {
+    min-height: 0 !important;
+  }
+  #MainContent .ie-home-systems__actions {
+    gap: 5px !important;
+  }
+  #MainContent .ie-home-systems__outro {
+    margin-top: 19px !important;
+    padding: 18px !important;
+    gap: 10px !important;
+    border-radius: 12px !important;
+    font-size: .91rem;
+    line-height: 1.56;
+  }
+  #MainContent .ie-home-systems__outro a {
+    min-height: 44px;
+  }
+}
+/* Narrow devices: prevent CTA label collisions without changing copy. */
+@media screen and (max-width: 359px) {
+  #shopify-section-hero_irjTFL .group-block-content:has(> .button--button_ieExplore) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  #shopify-section-hero_irjTFL .hero__container {
+    padding-block-start: 84px !important;
+  }
+  #shopify-section-hero_irjTFL .text-block--text_MggaYr h1 {
+    font-size: 1.65rem !important;
+  }
+}
+@media screen and (max-width: 749px) and (prefers-reduced-motion: reduce) {
+  #shopify-section-hero_irjTFL .hero__content-wrapper > .group-block > .group-block-content {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
