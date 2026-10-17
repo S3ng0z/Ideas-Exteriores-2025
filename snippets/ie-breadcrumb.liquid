@@ -37,6 +37,19 @@
   assign ie_n1 = ie_n1 | default: fallback_1_label
   assign ie_n2 = ie_n2 | default: fallback_2_label
   assign ie_n3 = ie_n3 | default: fallback_3_label
+
+  comment
+    Mayúsculas opcionales para las categorías y modelo del breadcrumb.
+    No se aplica a Inicio ni a otros productos o páginas por defecto.
+    Los nombres en JSON-LD mantienen la misma capitalización visible.
+  endcomment
+  if uppercase_labels
+    assign ie_n1 = ie_n1 | upcase
+    assign ie_n2 = ie_n2 | upcase
+    assign ie_n3 = ie_n3 | upcase
+    assign ie_title = ie_title | upcase
+  endif
+
   assign ie_n1_url = ie_n1_url | default: fallback_1_link
   assign ie_n2_url = ie_n2_url | default: fallback_2_link
   assign ie_n3_url = ie_n3_url | default: fallback_3_link

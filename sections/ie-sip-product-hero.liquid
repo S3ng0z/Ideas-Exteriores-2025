@@ -5,8 +5,10 @@
   assign ie_collection_url = collections['sip-panel-houses'].url | default: '/collections/sip-panel-houses'
   assign ie_system_url = pages['sip-panels-system'].url | default: '/pages/sip-panels-system'
   assign ie_display_title = product.title
+  assign ie_uppercase_breadcrumb = false
   if product.id == 15218578587992
     assign ie_display_title = 'HOME-SIP ALICE'
+    assign ie_uppercase_breadcrumb = true
   endif
 %}
 
@@ -15,6 +17,7 @@
     {% render 'ie-breadcrumb',
   breadcrumb_object: product,
   current_title: ie_display_title,
+  uppercase_labels: ie_uppercase_breadcrumb,
   class_name: 'ie-sip-pdp__breadcrumb',
   aria_label: section.settings.breadcrumb_label,
   home_label: section.settings.home_label,
