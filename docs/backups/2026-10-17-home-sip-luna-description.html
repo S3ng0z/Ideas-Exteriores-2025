@@ -1,0 +1,163 @@
+<style>
+/*====================
+  ESTILOS GENERALES
+======================*/
+.form__label.conditionsCustom {
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.text-block>style+* {
+    text-align: justify;
+}
+legend.form__label,
+legend.form__label.conditionsCustom {
+  text-align: justify;
+}
+
+/*====================
+  BOTONES DE COMPARTIR
+======================*/
+.ProductMeta__ShareList {
+  display: flex;
+  gap: 12px;
+  margin-bottom: .5rem;
+  flex-wrap: wrap;
+}
+
+.productMeta__ShareItem i {
+  color: #555;
+  transition: color 0.3s;
+}
+.productMeta__ShareItem:hover i {
+  color: #000;
+}
+
+/*====================
+  FICHA TÉCNICA
+======================*/
+.feature-area {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  justify-content: center;
+}
+
+.house-meta .features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.house-meta .features > div {
+  flex: 1 1 calc(33.333% - 1rem);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.house-meta strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+/*====================
+  BOTONES DE CONTACTO
+======================*/
+.container-buttons {
+  margin-top: 2rem;
+}
+
+.container-buttons legend {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.links-buttons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.links-buttons a {
+  color: #555;
+  transition: color 0.3s ease;
+}
+.links-buttons a:hover {
+  color: #000;
+}
+
+/* Agrandar íconos de compartir y contacto */
+.productMeta__ShareItem i,
+.links-buttons i {
+  font-size: 1.5rem;
+}
+
+.group-buttons{
+  padding-top: 1rem;
+  }
+
+  .border-line{
+    border-bottom: 1px solid;
+  }
+
+/*====================
+  RESPONSIVE
+======================*/
+@media (max-width: 768px) {
+  .house-meta .features > div {
+    flex: 1 1 100%;
+  }
+}
+</style>
+<!-- CONDICIÓN LEGAL -->
+<p><strong>IVA INCLUIDO</strong>. Debido a la variación de los precios de las materias primas, el precio final del producto puede diferir del facilitado en la página web. Póngase en contacto con nuestro responsable de ventas para obtener la información más precisa sobre la oferta final.</p>
+<!-- FORMULARIO HIDDEN DE COMPATIBILIDAD --><form style="display: none;" enctype="multipart/form-data" action="/cart/add" method="post">
+<input value="product" name="form_type" type="hidden"> <input value="✓" name="utf8" type="hidden"> <input value="{{ product.variants.first.id }}" type="hidden">
+</form><!-- COMPARTIR -->
+<p>Compartir:</p>
+<div class="ProductMeta__ShareList">
+<!-- WhatsApp --> <a href="#" class="productMeta__ShareItem"> <i class="fab fa-whatsapp" aria-hidden="true"></i> </a> <!-- Facebook --> <a href="#" class="productMeta__ShareItem"> <i class="fab fa-facebook" aria-hidden="true"></i> </a> <!-- Twitter --> <a href="#" class="productMeta__ShareItem"> <i class="fab fa-twitter" aria-hidden="true"></i> </a> <!-- Pinterest --> <a href="#" class="productMeta__ShareItem"> <i class="fab fa-pinterest" aria-hidden="true"></i> </a>
+</div>
+<!-- FICHA TÉCNICA -->
+<div class="feature-area">
+<div class="house-meta">
+<div class="features">
+<div class="border-line">
+<strong>Superficie 129 m²</strong>
+<p>Planta baja: <span>52 m²</span></p>
+<p>Planta alta: <span>77 m²</span></p>
+</div>
+<div class="border-line">
+<strong>Plantas</strong><span>2</span>
+</div>
+<div class="border-line">
+<strong>Dormitorios</strong>
+<p data-start="612" data-end="655">4</p>
+</div>
+<div>
+<strong>Estancias</strong>
+<p data-start="745" data-end="769">10</p>
+</div>
+<div>
+<strong>Baños</strong><span>3</span>
+</div>
+<div>
+<strong>Terraza/Balcón</strong>
+<p>Terraza: 31.0 m²</p>
+  <p>Porche: 41.0 m²</p>
+</div>
+</div>
+</div>
+<strong>* Distribución a medida.</strong> Todas las visualizaciones de los proyectos que aparecen en el sitio web y los atributos de la vivienda que se utilizan en él tienen únicamente fines comerciales y no pueden considerarse un ejemplo indiscutible del proyecto.</div>
+<!-- CONTACTO -->
+<div class="group-buttons">
+<p>Pide tu presupuesto:</p>
+<div class="links-buttons">
+<!-- Email --> <a aria-label="Enviar correo" class="icon icon-email" href="mailto:info@ideas-exteriores.com"> <i class="fas fa-envelope" aria-hidden="true"></i> </a> <!-- Teléfono --> <a aria-label="Llamar" class="icon icon-phone" href="tel:+34916996093"> <i class="fas fa-phone" aria-hidden="true"></i> </a> <!-- WhatsApp --> <a aria-label="WhatsApp" class="icon icon-whatsapp" href="https://wa.me/34687480356" rel="noopener noreferrer" target="_blank"> <i class="fab fa-whatsapp" aria-hidden="true"></i> </a>
+</div>
+</div>
