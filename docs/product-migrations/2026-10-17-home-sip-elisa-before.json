@@ -1,0 +1,28 @@
+{
+  "audit_date": "2026-10-17",
+  "note": "Respaldo previo a modificación del producto, recuperado de Shopify Admin. No contiene activos privados.",
+  "product": {
+    "id": "gid://shopify/Product/15218583503192",
+    "title": "HOME-SIP ELISA (77 m² + Terraza)",
+    "handle": "home-sip-elisa-77-m-terraza",
+    "status": "ACTIVE",
+    "productType": "",
+    "templateSuffix": "casas-sip",
+    "descriptionHtml": "<style>\n/*====================\n  ESTILOS GENERALES\n======================*/\n.form__label.conditionsCustom {\n  color: #4a4a4a;\n  margin-bottom: 1rem;\n  font-weight: 400;\n}\n.text-block>style+* {\n    text-align: justify;\n}\nlegend.form__label,\nlegend.form__label.conditionsCustom {\n  text-align: justify;\n}\n\n/*====================\n  BOTONES DE COMPARTIR\n======================*/\n.ProductMeta__ShareList {\n  display: flex;\n  gap: 12px;\n  margin-bottom: .5rem;\n  flex-wrap: wrap;\n}\n\n.productMeta__ShareItem i {\n  color: #555;\n  transition: color 0.3s;\n}\n.productMeta__ShareItem:hover i {\n  color: #000;\n}\n\n/*====================\n  FICHA TÉCNICA\n======================*/\n.feature-area {\n  background-color: #f9f9f9;\n  padding: 1.5rem;\n  margin-top: 1rem;\n  border-radius: 10px;\n  box-shadow: 0 1px 4px rgba(0,0,0,0.1);\n  justify-content: center;\n}\n\n.house-meta .features {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 1rem;\n  margin-bottom: 1rem;\n}\n\n.house-meta .features > div {\n  flex: 1 1 calc(33.333% - 1rem);\n  display: grid;\n  justify-content: center;\n  text-align: center;\n}\n\n.house-meta strong {\n  display: block;\n  font-weight: 600;\n  margin-bottom: 0.25rem;\n  color: #333;\n}\n\n/*====================\n  BOTONES DE CONTACTO\n======================*/\n.container-buttons {\n  margin-top: 2rem;\n}\n\n.container-buttons legend {\n  font-weight: 600;\n  margin-bottom: 1rem;\n}\n\n.links-buttons {\n  display: flex;\n  gap: 1.2rem;\n}\n\n.links-buttons a {\n  color: #555;\n  transition: color 0.3s ease;\n}\n.links-buttons a:hover {\n  color: #000;\n}\n\n/* Agrandar íconos de compartir y contacto */\n.productMeta__ShareItem i,\n.links-buttons i {\n  font-size: 1.5rem;\n}\n\n.group-buttons{\n  padding-top: 1rem;\n  }\n\n  .border-line{\n    border-bottom: 1px solid;\n  }\n\n/*====================\n  RESPONSIVE\n======================*/\n@media (max-width: 768px) {\n  .house-meta .features > div {\n    flex: 1 1 100%;\n  }\n}\n</style>\n<!-- CONDICIÓN LEGAL -->\n<p><strong>IVA INCLUIDO</strong>. Debido a la variación de los precios de las materias primas, el precio final del producto puede diferir del facilitado en la página web. Póngase en contacto con nuestro responsable de ventas para obtener la información más precisa sobre la oferta final.</p>\n<!-- FORMULARIO HIDDEN DE COMPATIBILIDAD --><form style=\"display: none;\" enctype=\"multipart/form-data\" action=\"/cart/add\" method=\"post\">\n<input value=\"product\" name=\"form_type\" type=\"hidden\"> <input value=\"✓\" name=\"utf8\" type=\"hidden\"> <input value=\"{{ product.variants.first.id }}\" type=\"hidden\">\n</form><!-- COMPARTIR -->\n<p>Compartir:</p>\n<div class=\"ProductMeta__ShareList\">\n<!-- WhatsApp --> <a href=\"#\" class=\"productMeta__ShareItem\"> <i class=\"fab fa-whatsapp\" aria-hidden=\"true\"></i> </a> <!-- Facebook --> <a href=\"#\" class=\"productMeta__ShareItem\"> <i class=\"fab fa-facebook\" aria-hidden=\"true\"></i> </a> <!-- Twitter --> <a href=\"#\" class=\"productMeta__ShareItem\"> <i class=\"fab fa-twitter\" aria-hidden=\"true\"></i> </a> <!-- Pinterest --> <a href=\"#\" class=\"productMeta__ShareItem\"> <i class=\"fab fa-pinterest\" aria-hidden=\"true\"></i> </a>\n</div>\n<!-- FICHA TÉCNICA -->\n<div class=\"feature-area\">\n<div class=\"house-meta\">\n<div class=\"features\">\n<div class=\"border-line\">\n<strong>Superficie 77 m²</strong>\n<p data-start=\"206\" data-end=\"276\">Planta: <span style=\"color: rgb(31, 33, 36); font-size: 0.875rem;\">77 m²</span></p>\n</div>\n<div class=\"border-line\">\n<strong>Plantas</strong><span>1</span>\n</div>\n<div class=\"border-line\">\n<strong>Dormitorios</strong>\n<p data-start=\"612\" data-end=\"655\">3</p>\n</div>\n<div>\n<strong>Estancias</strong>\n<p data-start=\"745\" data-end=\"769\">6</p>\n</div>\n<div>\n<strong>Baños</strong><span>1</span>\n</div>\n<div>\n<strong>Terraza/Balcón</strong>\n<p>Terraza cubierta: 34 m²</p>\n</div>\n</div>\n</div>\n<strong>* Distribución a medida.</strong> Todas las visualizaciones de los proyectos que aparecen en el sitio web y los atributos de la vivienda que se utilizan en él tienen únicamente fines comerciales y no pueden considerarse un ejemplo indiscutible del proyecto.</div>\n<!-- CONTACTO -->\n<div class=\"group-buttons\">\n<p>Pide tu presupuesto:</p>\n<div class=\"links-buttons\">\n<!-- Email --> <a aria-label=\"Enviar correo\" class=\"icon icon-email\" href=\"mailto:info@ideas-exteriores.com\"> <i class=\"fas fa-envelope\" aria-hidden=\"true\"></i> </a> <!-- Teléfono --> <a aria-label=\"Llamar\" class=\"icon icon-phone\" href=\"tel:+34916996093\"> <i class=\"fas fa-phone\" aria-hidden=\"true\"></i> </a> <!-- WhatsApp --> <a aria-label=\"WhatsApp\" class=\"icon icon-whatsapp\" href=\"https://wa.me/34687480356\" rel=\"noopener noreferrer\" target=\"_blank\"> <i class=\"fab fa-whatsapp\" aria-hidden=\"true\"></i> </a>\n</div>\n</div>",
+    "seo": {
+      "title": null,
+      "description": null
+    },
+    "updatedAt": "2026-09-25T10:54:12Z",
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/55382601662808",
+          "title": "Default Title",
+          "price": "42858.00",
+          "sku": null
+        }
+      ]
+    }
+  }
+}
