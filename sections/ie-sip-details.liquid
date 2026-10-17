@@ -38,29 +38,6 @@
       <p>Solicita el desglose de proyecto, licencias, cimentación, transporte, descarga, montaje, instalaciones, fachada, cubierta y acabados. No se presupone una entrega llave en mano.</p>
     </article>
   </div>
-  {% if p.handle == 'home-sip-alice-117-m-terraza' %}
-    <div class="ie-sip__tiers" id="ie-sip-alice-configuraciones" aria-label="Descripciones completas de las configuraciones de HOME-SIP ALICE">
-      <h3 class="ie-sip__tiers-heading">BASIC, STANDARD y PASSIVE · Descripciones completas</h3>
-      <p>Consulta las partidas y características detalladas de cada configuración. Los precios publicados son orientativos hasta validar las mediciones y el alcance definitivo.</p>
-      <div class="ie-sip__tiers-grid">
-        <article class="ie-sip__tier">
-          <h4>BASIC · Paneles SIP</h4>
-          {% if basic != blank %}<p class="ie-sip__tier-price">{{ basic | money }}</p>{% endif %}
-          <div class="ie-sip__tier-description rte">{% render 'ie-sip-alice-basic-full' %}</div>
-        </article>
-        <article class="ie-sip__tier">
-          <h4>STANDARD · Paneles SIP</h4>
-          {% if standard != blank %}<p class="ie-sip__tier-price">{{ standard | money }}</p>{% endif %}
-          <div class="ie-sip__tier-description rte">{% render 'ie-sip-alice-standard-full' %}</div>
-        </article>
-        <article class="ie-sip__tier">
-          <h4>PASSIVE · Paneles SIP</h4>
-          {% if passive != blank %}<p class="ie-sip__tier-price">{{ passive | money }}</p>{% endif %}
-          <div class="ie-sip__tier-description rte">{% render 'ie-sip-alice-passive-full' %}</div>
-        </article>
-      </div>
-    </div>
-  {% endif %}
   <div class="ie-sip__cta">
     <h3>¿Quieres estudiar este modelo para tu parcela?</h3>
     <p>Cuéntanos dónde quieres construir y qué necesitas. Prepararemos una propuesta ajustada al proyecto.</p>
@@ -85,16 +62,6 @@
 .ie-sip__button{display:inline-block;margin-top:.6rem;padding:.9rem 1.4rem;border-radius:6px;background:#33312d;color:#fff;text-decoration:none}
 .ie-sip__button:hover,.ie-sip__button:focus-visible{background:#514b42;color:#fff}
 @media(max-width:749px){.ie-sip__grid{grid-template-columns:1fr}.ie-sip{padding-inline:18px}}
-.ie-sip__tiers{margin:clamp(28px,4vw,56px) 0}
-.ie-sip__tiers-heading{font-size:clamp(1.5rem,2.5vw,2.1rem)!important;margin-bottom:.6rem!important}
-.ie-sip__tiers-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px;align-items:start}
-.ie-sip__tier{min-width:0;padding:24px;background:#faf8f4;border:1px solid #d8d3c9;border-radius:10px}
-.ie-sip__tier h4{font-size:1.15rem;margin:0 0 10px;font-weight:700}
-.ie-sip__tier-price{font-size:1.55rem;font-weight:700;margin:0 0 24px}
-.ie-sip__tier-description{font-size:.92rem;line-height:1.65;overflow-wrap:anywhere}
-.ie-sip__tier-description p,.ie-sip__tier-description ul{margin:.85rem 0}
-.ie-sip__tier-description strong{font-weight:700}
-@media(max-width:1050px){.ie-sip__tiers-grid{grid-template-columns:1fr}}
 </style>
 {% schema %}
 {"name":"IE · HOME SIP detalles","settings":[],"presets":[{"name":"IE · HOME SIP detalles"}]}

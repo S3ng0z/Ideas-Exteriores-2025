@@ -1,6 +1,11 @@
 /*
- * HOME-SIP: plantilla única para los nueve modelos.
- * Asignar product.home-sip en Shopify a cada producto.
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
  */
 {
   "sections": {
@@ -805,6 +810,10 @@
         "padding-block-end": 20
       }
     },
+    "sip_details": {
+      "type": "ie-sip-details",
+      "settings": {}
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "blocks": {
@@ -991,58 +1000,12 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
-    },
-    "1752316360c1afb8f9": {
-      "type": "_blocks",
-      "blocks": {
-        "powerful_form_builder_app_block_yQ6CdE": {
-          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-          "settings": {
-            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
-          }
-        }
-      },
-      "block_order": [
-        "powerful_form_builder_app_block_yQ6CdE"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "sip_details": {
-      "type": "ie-sip-details",
-      "settings": {}
     }
   },
   "order": [
     "custom_liquid_JViiDQ",
     "main",
     "sip_details",
-    "product-recommendations",
-    "1752316360c1afb8f9"
+    "product-recommendations"
   ]
 }
