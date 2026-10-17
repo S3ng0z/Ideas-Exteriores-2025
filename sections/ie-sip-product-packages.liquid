@@ -16,13 +16,7 @@
         {% if section.settings.eyebrow != blank %}
           <p class="ie-sip-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
         {% endif %}
-        <h2 id="ie-sip-packages-title-{{ section.id }}">
-          {% if ie_packages_on_hold %}
-            Configuraciones pendientes de validación
-          {% else %}
-            {{ section.settings.heading }}
-          {% endif %}
-        </h2>
+        <h2 id="ie-sip-packages-title-{{ section.id }}">{{ section.settings.heading }}</h2>
       </div>
 
       {% if ie_packages_on_hold %}
@@ -30,7 +24,8 @@
           <p><strong>Datos técnicos y comerciales en revisión.</strong> Los importes publicados son referencias, no presupuestos cerrados. Para comparar BASIC, STANDARD y PASSIVE es necesario verificar la composición técnica, las superficies, los trabajos incluidos, el transporte y el montaje de este modelo.</p>
           <p><a href="{{ pages['contact-ideas-exteriores'].url | default: '/pages/contact-ideas-exteriores' }}">Solicitar estudio de este modelo</a></p>
         </div>
-      {% elsif section.settings.intro != blank %}
+      {% endif %}
+      {% if section.settings.intro != blank %}
         <div class="ie-sip-pdp__section-intro rte">{{ section.settings.intro }}</div>
       {% endif %}
     </div>
