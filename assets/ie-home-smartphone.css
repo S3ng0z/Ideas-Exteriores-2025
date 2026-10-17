@@ -282,3 +282,69 @@
     -webkit-backdrop-filter: none !important;
   }
 }
+
+
+/* SMARTPHONE ONLY · lectura natural, sin justificación de párrafos.
+   La portada de escritorio/tablet permanece intacta. Los mensajes de
+   beneficios que se diseñaron centrados conservan esa alineación. */
+@media screen and (max-width: 749px) {
+  #MainContent :is(
+    .text-block,
+    .rte,
+    .container_text,
+    .ie-home-solutions__intro,
+    .ie-home-solutions__closing,
+    .ie-home-solutions__systems span,
+    .ie-home-criteria__item span,
+    .ie-home-systems__outro,
+    p,
+    li,
+    dd,
+    dt,
+    blockquote
+  ) {
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    overflow-wrap: break-word;
+  }
+
+  /* Mantener los beneficios expresamente centrados, no justificados. */
+  #MainContent :is(
+    .ie-home-benefit__title,
+    .ie-home-benefit__title p,
+    .ie-home-benefit__copy,
+    .ie-home-benefit__copy p,
+    .text-block--text_KdHD74,
+    .text-block--text_KdHD74 p,
+    .text-block--text_HyRmrt,
+    .text-block--text_HyRmrt p,
+    .text-block--text_HMtCBh,
+    .text-block--text_HMtCBh p,
+    .text-block--text_Pr7jPh,
+    .text-block--text_Pr7jPh p,
+    .text-block--text_kUHHxm,
+    .text-block--text_kUHHxm p,
+    .text-block--text_zntnRd,
+    .text-block--text_zntnRd p,
+    .text-block--text_GW7cCc,
+    .text-block--text_GW7cCc p,
+    .text-block--text_yHnhXa,
+    .text-block--text_yHnhXa p
+  ) {
+    text-align: center !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+  }
+
+  .ie-footer__intro,
+  .ie-footer__intro p,
+  .ie-footer__brand-copy,
+  .ie-footer__brand-copy p {
+    text-align: left !important;
+    text-align-last: auto !important;
+    text-justify: auto !important;
+  }
+}
