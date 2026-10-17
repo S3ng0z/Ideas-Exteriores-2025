@@ -223,25 +223,10 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "variant_picker_nhbWcG": {
-                  "type": "variant-picker",
-                  "settings": {
-                    "product": "{{ closest.product }}",
-                    "variant_style": "buttons",
-                    "show_swatches": true,
-                    "alignment": "left",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "scope_note",
-                "variant_picker_nhbWcG"
+                "scope_note"
               ]
             }
           },
