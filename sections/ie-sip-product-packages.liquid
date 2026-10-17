@@ -16,19 +16,20 @@
         <h2 id="ie-sip-packages-title-{{ section.id }}">{% if ie_packages_on_hold %}Configuraciones pendientes de validación{% else %}{{ section.settings.heading }}{% endif %}</h2>
       </div>
 
-      {% if ie_packages_on_hold %}
-      <div class="ie-sip-pdp__technical-note rte" role="status">
-        <p><strong>Datos técnicos y comerciales en revisión.</strong> Las configuraciones y sus importes no están todavía homologados para este modelo. Solicita una propuesta personalizada con composición, alcance, superficies, transporte y montaje documentados.</p>
       </div>
-    {% else %}
-    {% if section.settings.intro != blank %}
-        <div class="ie-sip-pdp__section-intro rte">{{ section.settings.intro }}</div>
-      {% endif %}
-    </div>
 
-    {% if section.settings.note != blank %}
-      <div class="ie-sip-pdp__technical-note rte">{{ section.settings.note }}</div>
-    {% endif %}
+      {% if ie_packages_on_hold %}
+        <div class="ie-sip-pdp__technical-note rte" role="status">
+          <p><strong>Datos técnicos y comerciales en revisión.</strong> Las configuraciones y sus importes aún no están homologados para este modelo. Solicita una propuesta personalizada con composición, alcance, superficies, transporte y montaje documentados.</p>
+          <p><a href="/pages/contact-ideas-exteriores">Solicitar estudio del modelo →</a></p>
+        </div>
+      {% else %}
+        {% if section.settings.intro != blank %}
+          <div class="ie-sip-pdp__section-intro rte">{{ section.settings.intro }}</div>
+        {% endif %}
+        {% if section.settings.note != blank %}
+          <div class="ie-sip-pdp__technical-note rte">{{ section.settings.note }}</div>
+        {% endif %}
 
     <div class="ie-sip-pdp__package-columns">
       {% for block in section.blocks %}
