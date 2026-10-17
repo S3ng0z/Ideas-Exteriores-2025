@@ -2578,7 +2578,119 @@
     },
     "ie_home_discovery": {
       "type": "ie-home-discovery",
-      "settings": {}
+      "settings": {
+        "eyebrow": "Encuentra tu solución",
+        "heading": "Madera para cada espacio",
+        "intro": "Explora las familias de producto, compara modelos y elige las configuraciones disponibles antes de solicitar presupuesto.",
+        "quick_label": "Ir directamente a",
+        "show_shortcuts": true,
+        "show_numbers": true,
+        "background": "#f6f6f2",
+        "card_background": "#ffffff",
+        "text_color": "#243129",
+        "accent_color": "#566236",
+        "columns": "3",
+        "media_ratio": "8 / 5",
+        "content_width": 1480,
+        "side_margin": 64,
+        "mobile_margin": 18,
+        "section_spacing": 68,
+        "card_gap": 24,
+        "card_radius": 16
+      },
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "number": "01",
+            "category": "Jardín y terraza",
+            "title": "Exterior",
+            "description": "Pérgolas, porches, cenadores y tarimas para disfrutar y proteger el espacio al aire libre.",
+            "collection": "wooden-gazebos",
+            "image_alt": "Cenador de madera para jardín",
+            "button_label": "Ver soluciones de exterior",
+            "button_link": "/collections/wooden-gazebos"
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "number": "02",
+            "category": "Vivienda y espacio adicional",
+            "title": "Habitables",
+            "description": "Casas, casetas, estudios y oficinas de jardín con soluciones y acabados definidos por modelo.",
+            "collection": "sip-panel-houses",
+            "image_alt": "Vivienda de madera con paneles SIP",
+            "button_label": "Comparar casas y modelos",
+            "button_link": "/collections/sip-panel-houses"
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "number": "03",
+            "category": "Construcción en madera",
+            "title": "Estructuras",
+            "description": "Estructuras, cubiertas y soluciones técnicas para proyectos que requieren definir apoyos, cargas y montaje.",
+            "show_illustration": true,
+            "button_label": "Conocer nuestros servicios",
+            "button_link": "/pages/services"
+          }
+        },
+        "quick_1": {
+          "type": "quick_link",
+          "settings": {
+            "label": "Pérgolas",
+            "link": "/pages/bespoke-wooden-pergolas"
+          }
+        },
+        "quick_2": {
+          "type": "quick_link",
+          "settings": {
+            "label": "Porches",
+            "link": "/pages/bespoke-wooden-porches"
+          }
+        },
+        "quick_3": {
+          "type": "quick_link",
+          "settings": {
+            "label": "Cenadores",
+            "link": "/collections/wooden-gazebos"
+          }
+        },
+        "quick_4": {
+          "type": "quick_link",
+          "settings": {
+            "label": "Casas SIP",
+            "link": "/collections/sip-panel-houses"
+          }
+        },
+        "quick_5": {
+          "type": "quick_link",
+          "settings": {
+            "label": "Entramado ligero",
+            "link": "/collections/light-frame-houses"
+          }
+        },
+        "quick_6": {
+          "type": "quick_link",
+          "settings": {
+            "label": "Todos los productos",
+            "link": "/pages/timber-products"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "quick_1",
+        "quick_2",
+        "quick_3",
+        "quick_4",
+        "quick_5",
+        "quick_6"
+      ]
     },
     "ie_home_systems": {
       "type": "ie-home-systems",
