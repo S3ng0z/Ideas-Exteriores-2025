@@ -1,0 +1,53 @@
+/* Landing exclusiva de la página Casetas de madera. Fuentes: colecciones y producto Shopify. */
+{
+  "sections": {
+    "main": {
+      "type": "ie-sheds-hub",
+      "blocks": {
+        "family_01": {
+          "type": "family",
+          "settings": {
+            "family": "casetas-de-entramado-ligero",
+            "kicker": "01 · Entramado ligero",
+            "title": "Casetas de entramado ligero",
+            "description": "Compara soluciones de madera de esta familia por modelo, distribución y alcance de suministro."
+          }
+        },
+        "family_02": {
+          "type": "family",
+          "settings": {
+            "family": "sip-smartfit-sheds",
+            "kicker": "02 · SIP SmartFit",
+            "title": "Casetas SIP SmartFit",
+            "description": "Explora modelos de casetas SIP SmartFit y revisa las dimensiones, el contenido del kit y sus opciones."
+          }
+        },
+        "family_03": {
+          "type": "family",
+          "settings": {
+            "family": "sip-compactkit-sheds",
+            "kicker": "03 · SIP CompactKit",
+            "title": "Casetas SIP CompactKit",
+            "description": "Encuentra modelos compactos para jardín y comprueba el kit, la preparación de la base y el montaje."
+          }
+        }
+      },
+      "block_order": [
+        "family_01",
+        "family_02",
+        "family_03"
+      ],
+      "settings": {
+        "eyebrow": "Habitables · Casetas y espacios auxiliares",
+        "heading": "Casetas de madera para cada necesidad",
+        "intro": "Descubre casetas de madera para jardín, almacenaje y espacios auxiliares. Compara nuestras familias de modelos y comprueba medidas, configuración, base y montaje antes de elegir.",
+        "offices_collection": "sip-offices-and-studios",
+        "poolhouse_product": "oasis-poolhouse-wood-aluminum",
+        "contact_link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
