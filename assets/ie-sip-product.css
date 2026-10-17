@@ -816,3 +816,48 @@ body:has(.ie-sip-pdp--hero) .product-information .product-details .text-block{fo
   .ie-sip-pdp--cta .ie-sip-pdp__inner{padding-block:30px 48px}
   body:has(.ie-sip-pdp--hero) .product-information .product-details h2{font-size:1.5rem}
 }
+
+/* SIP · Tipografía editorial de fichas: títulos compactos y semánticos.
+   La copia conserva palabras clave SEO; no se truncan ni se fuerzan saltos en móvil. */
+.ie-sip-pdp--hero h1 {
+  font-size:clamp(1.85rem,2.5vw,2.8rem);
+  line-height:1.13;
+  letter-spacing:-.022em;
+}
+.ie-sip-pdp h2 {
+  font-size:clamp(1.5rem,1.85vw,2.08rem);
+  line-height:1.18;
+}
+body:has(.ie-sip-pdp--hero) .product-information .product-details h2 {
+  font-size:clamp(1.28rem,1.5vw,1.65rem);
+  line-height:1.24;
+  letter-spacing:-.015em;
+  text-transform:none;
+}
+body:has(.ie-sip-pdp--hero) .product-information .product-details
+.ie-model-spec[data-ie-template="sip-unified-2026"] h2 {
+  margin:0 0 12px!important;
+  font-family:"Source Serif 4",Georgia,serif!important;
+  font-size:clamp(1.25rem,1.48vw,1.52rem)!important;
+  font-weight:500!important;
+  line-height:1.25!important;
+  letter-spacing:-.02em!important;
+  text-transform:none!important;
+  text-wrap:pretty;
+}
+body:has(.ie-sip-pdp--hero) .product-information .product-details
+.ie-model-spec[data-ie-template="sip-unified-2026"] h3 {
+  margin:20px 0 9px!important;
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif!important;
+  font-size:clamp(1.05rem,1.12vw,1.18rem)!important;
+  font-weight:650!important;
+  line-height:1.3!important;
+  letter-spacing:-.01em!important;
+  text-transform:none!important;
+  text-wrap:pretty;
+}
+@media screen and (max-width:749px) {
+  .ie-sip-pdp--hero h1 {font-size:clamp(1.7rem,6vw,2.15rem)}
+  .ie-sip-pdp h2 {font-size:clamp(1.4rem,4.5vw,1.8rem)}
+  body:has(.ie-sip-pdp--hero) .product-information .product-details h2 {font-size:1.35rem}
+}
