@@ -1,0 +1,491 @@
+<style>
+:root {
+  --ie-bg: #faf8f4;
+  --ie-surface: #ffffff;
+  --ie-soft: #f4efe8;
+  --ie-text: #22201d;
+  --ie-muted: #625c54;
+  --ie-border: #ded6cb;
+  --ie-accent: #3f352c;
+  --ie-accent-dark: #241e19;
+  --ie-radius: 14px;
+  --ie-radius-sm: 8px;
+  --ie-shadow: 0 14px 36px rgba(45, 36, 28, 0.08);
+  --ie-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.product-description,
+.product-description *,
+.product-description *::before,
+.product-description *::after {
+  box-sizing: border-box;
+}
+
+.product-description {
+  color: var(--ie-text);
+  font-family: var(--ie-font);
+  font-size: clamp(0.98rem, 0.25vw + 0.92rem, 1.06rem);
+  line-height: 1.72;
+  text-wrap: pretty;
+}
+
+.product-description :where(h2, h3, h4, p, ul) {
+  margin-top: 0;
+}
+
+.product-description p {
+  margin-bottom: 1rem;
+}
+
+.product-description ul {
+  padding-left: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.product-description li {
+  margin-bottom: 0.45rem;
+}
+
+.product-kicker {
+  margin-bottom: 0.65rem;
+  color: var(--ie-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-lead {
+  margin-bottom: 1.15rem;
+  font-size: clamp(1.05rem, 0.45vw + 0.95rem, 1.22rem);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.price-note {
+  margin-bottom: 1.2rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--ie-border);
+  border-radius: var(--ie-radius-sm);
+  background: var(--ie-soft);
+  color: var(--ie-text);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.product-card {
+  margin: 1.25rem 0;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  border: 1px solid var(--ie-border);
+  border-radius: var(--ie-radius);
+  background: var(--ie-surface);
+  box-shadow: var(--ie-shadow);
+}
+
+.product-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.05rem, 0.5vw + 0.95rem, 1.25rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.product-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 1.15rem 0;
+}
+
+.product-highlight {
+  padding: 0.8rem;
+  border: 1px solid var(--ie-border);
+  border-radius: var(--ie-radius-sm);
+  background: #fff;
+}
+
+.product-highlight strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.product-highlight span {
+  display: block;
+  color: var(--ie-muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0 1.15rem;
+  padding: 0;
+  list-style: none;
+}
+
+.product-tags li {
+  margin: 0;
+  padding: 0.42rem 0.65rem;
+  border: 1px solid var(--ie-border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ie-muted);
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+.product-description details {
+  margin-top: 0.65rem;
+  border: 1px solid var(--ie-border);
+  border-radius: var(--ie-radius-sm);
+  background: #fff;
+  overflow: hidden;
+}
+
+.product-description summary {
+  cursor: pointer;
+  padding: 0.85rem 1rem;
+  color: var(--ie-text);
+  font-weight: 600;
+  list-style: none;
+}
+
+.product-description summary::-webkit-details-marker {
+  display: none;
+}
+
+.product-description summary::after {
+  content: "+";
+  float: right;
+  color: var(--ie-muted);
+  font-weight: 400;
+}
+
+.product-description details[open] summary::after {
+  content: "−";
+}
+
+.product-detail-body {
+  padding: 0 1rem 1rem;
+  color: var(--ie-muted);
+  font-size: 0.96rem;
+}
+
+.product-cta {
+  margin-top: 1.4rem;
+  padding: clamp(1.1rem, 2.4vw, 1.6rem);
+  border-radius: var(--ie-radius);
+  background: var(--ie-accent);
+  color: #fff;
+}
+
+.product-cta h3,
+.product-cta p {
+  color: #fff;
+}
+
+.product-cta h3 {
+  margin-bottom: 0.55rem;
+  font-size: clamp(1.05rem, 0.5vw + 0.95rem, 1.25rem);
+  font-weight: 500;
+}
+
+.product-cta p {
+  margin-bottom: 1rem;
+  opacity: 0.92;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.78rem 1.1rem;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ie-accent);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  transform: translateY(-1px);
+  background: var(--ie-soft);
+  color: var(--ie-accent-dark);
+}
+
+.product-legal {
+  margin-top: 1rem;
+  color: var(--ie-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 680px) {
+  .product-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card,
+  .product-cta {
+    border-radius: 12px;
+  }
+}
+</style>
+<section id="poolhouse-oasis-plus" class="product-description">
+  <p class="price-note">
+    <strong>Producto Poolhouse Oasis + en configuración funcional básica.</strong>
+    Incluye carpintería de madera exterior, carpintería de aluminio, cristales, cubierta de panel sándwich, terminado básico interior, terminado exterior y una capa de protección exterior básica. No incluye transporte, descarga, montaje, cimentación, obra civil, acometidas, licencias, mobiliario, iluminación, climatización, domótica, fontanería, tratamientos decorativos completos ni extras personalizados, salvo indicación expresa en el presupuesto.
+  </p>
+
+  <p class="product-kicker">Poolhouse de madera y aluminio · jardín, piscina y espacios exteriores</p>
+
+  <p class="product-lead">
+    Poolhouse Oasis + es una estructura exterior modular de madera y aluminio, diseñada para crear una zona elegante, protegida y funcional junto a la piscina, en el jardín o en una terraza amplia.
+  </p>
+
+  <p>
+    Su combinación de carpintería exterior de madera, carpintería de aluminio, cristales y cubierta de panel sándwich permite crear un espacio más completo que una pérgola convencional, con estética contemporánea, protección superior y una configuración mínima preparada para uso exterior.
+  </p>
+
+  <div class="product-highlights">
+    <div class="product-highlight">
+      <strong>Carpintería incluida</strong>
+      <span>Madera exterior y aluminio</span>
+    </div>
+
+    <div class="product-highlight">
+      <strong>Cerramiento incluido</strong>
+      <span>Cristales según configuración base</span>
+    </div>
+
+    <div class="product-highlight">
+      <strong>Cubierta incluida</strong>
+      <span>Panel sándwich</span>
+    </div>
+
+    <div class="product-highlight">
+      <strong>Acabados incluidos</strong>
+      <span>Terminado básico interior, exterior y protección exterior básica</span>
+    </div>
+  </div>
+
+  <section class="product-card">
+    <h3>Una estancia exterior con estética premium</h3>
+
+    <p>
+      Poolhouse Oasis + está pensado para transformar una zona exterior en un espacio protegido, ordenado y visualmente integrado con la vivienda. Aporta la calidez de la madera, la precisión del aluminio, la entrada de luz de los cristales y el confort de una cubierta aislada mediante panel sándwich.
+    </p>
+
+    <ul>
+      <li>
+<strong>Más completo que un cenador:</strong> combina estructura, carpintería, cristales, cubierta y acabados básicos para crear una estancia exterior funcional.</li>
+      <li>
+<strong>Carpintería de madera exterior:</strong> aporta calidez, presencia natural y una imagen arquitectónica más cuidada.</li>
+      <li>
+<strong>Carpintería de aluminio:</strong> mejora la estabilidad visual, reduce mantenimiento y permite remates contemporáneos.</li>
+      <li>
+<strong>Cristales incluidos:</strong> aportan protección, entrada de luz y conexión visual con el jardín, la piscina o la terraza.</li>
+      <li>
+<strong>Cubierta de panel sándwich:</strong> mejora el confort, protege la zona superior y permite un acabado interior más limpio.</li>
+      <li>
+<strong>Protección exterior básica incluida:</strong> incorpora una capa inicial de protección para la madera, sin considerarse un tratamiento decorativo completo.</li>
+    </ul>
+  </section>
+
+  <details>
+    <summary>Características técnicas</summary>
+    <div class="product-detail-body">
+      <ul>
+        <li>
+<strong>Modelo:</strong> Poolhouse Oasis +.</li>
+        <li>
+<strong>Tipo de producto:</strong> poolhouse modular para jardín, piscina, terraza o espacio exterior.</li>
+        <li>
+<strong>Estructura principal:</strong> carpintería de madera exterior combinada con carpintería de aluminio.</li>
+        <li>
+<strong>Cerramiento incluido:</strong> cristales según diseño y configuración base definida en presupuesto.</li>
+        <li>
+<strong>Cubierta incluida:</strong> panel sándwich.</li>
+        <li>
+<strong>Acabado interior incluido:</strong> terminado básico interior.</li>
+        <li>
+<strong>Acabado exterior incluido:</strong> terminado exterior.</li>
+        <li>
+<strong>Protección incluida:</strong> capa de protección exterior básica para madera.</li>
+        <li>
+<strong>Configuración:</strong> modular y personalizable según medidas, orientación, ubicación, exposición y uso previsto.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Materiales y estructura</summary>
+    <div class="product-detail-body">
+      <p>
+        Poolhouse Oasis + combina madera exterior y aluminio para equilibrar calidez, estabilidad, durabilidad y estética contemporánea. La madera aporta presencia natural y confort visual; el aluminio mejora la precisión de los encuentros, remates y carpinterías.
+      </p>
+
+      <p>
+        La configuración funcional básica incluye carpintería de madera exterior, carpintería de aluminio, cristales, cubierta de panel sándwich, terminado básico interior, terminado exterior y una capa de protección exterior básica.
+      </p>
+
+      <p>
+        La capa de protección exterior básica ayuda a preparar la madera para uso exterior, pero no equivale a un tratamiento decorativo completo, acabado personalizado de color, protección reforzada UV, tratamiento marino o sistema de mantenimiento avanzado.
+      </p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Cubierta, cristales y acabados</summary>
+    <div class="product-detail-body">
+      <p>
+        La cubierta de panel sándwich mejora la protección superior, reduce la incidencia directa del sol respecto a soluciones ligeras no aisladas y permite una terminación interior más limpia. Los cristales incluidos ayudan a proteger el espacio y mantienen la conexión visual con el exterior.
+      </p>
+
+      <ul>
+        <li>
+<strong>Cubierta incluida:</strong> panel sándwich según configuración definida en presupuesto.</li>
+        <li>
+<strong>Cristales incluidos:</strong> cerramiento acristalado según diseño base y presupuesto aceptado.</li>
+        <li>
+<strong>Carpintería incluida:</strong> madera exterior y aluminio.</li>
+        <li>
+<strong>Terminado interior incluido:</strong> acabado básico interior funcional.</li>
+        <li>
+<strong>Terminado exterior incluido:</strong> acabado exterior.</li>
+        <li>
+<strong>Protección incluida:</strong> capa de protección exterior básica para madera.</li>
+        <li>
+<strong>Tratamientos no incluidos:</strong> acabados decorativos completos, tintes personalizados, lasures de color, barnices especiales, protección marina o protección reforzada, salvo indicación expresa.</li>
+        <li>
+<strong>Extras no incluidos:</strong> iluminación LED, domótica, climatización, fontanería, mobiliario, tarima, cocina exterior, ducha, canalones especiales o cerramientos superiores a la configuración base, salvo indicación expresa.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Personalización disponible</summary>
+    <div class="product-detail-body">
+      <p>
+        Poolhouse Oasis + puede adaptarse a diferentes necesidades de jardín, piscina o terraza. La configuración base incorpora los elementos mínimos para que el espacio sea funcional, y puede ampliarse con soluciones de confort, protección o diseño.
+      </p>
+
+      <ul>
+        <li>
+<strong>Acabados de aluminio:</strong> lacado en colores RAL como negro, antracita, blanco, gris, bronce, arena o texturados arquitectónicos.</li>
+        <li>
+<strong>Acabados de madera:</strong> tonos naturales, roble, nogal, teca, gris envejecido, antracita o tono personalizado.</li>
+        <li>
+<strong>Confort:</strong> iluminación LED, enchufes exteriores, ventilador, calefactor, sensores o domótica como extras.</li>
+        <li>
+<strong>Protección:</strong> cortinas de cristal, lamas, toldos screen, canalones, bajantes o protección especial para ambiente marino como extras.</li>
+        <li>
+<strong>Funcionalidad:</strong> barra, módulo técnico, almacenaje, ducha exterior, pequeña cocina, zona de vestuario o mobiliario a medida como extras.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Instalación y requisitos previos</summary>
+    <div class="product-detail-body">
+      <p>
+        Para un resultado seguro y duradero, Poolhouse Oasis + debe instalarse sobre una base firme, estable, nivelada y apta para anclaje. No se recomienda instalar directamente sobre tierra, césped o pavimentos inestables sin cimentación adecuada.
+      </p>
+
+      <p>
+        Antes de fabricar o instalar, conviene revisar nivelación del terreno, resistencia de la base, evacuación de aguas, orientación solar, exposición al viento, distancia a piscina, accesos para transporte y descarga, acometidas necesarias y normativa urbanística municipal.
+      </p>
+
+      <p>
+        Si se contrata montaje profesional, el presupuesto debe indicar expresamente transporte, descarga, medios auxiliares, anclajes, remates, condiciones de acceso, fases de instalación y trabajos incluidos.
+      </p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Mantenimiento recomendado</summary>
+    <div class="product-detail-body">
+      <p>
+        Poolhouse Oasis + está diseñado para reducir el mantenimiento, pero no eliminarlo por completo. La madera exterior necesita revisión periódica para conservar su aspecto y durabilidad; el aluminio y los cristales requieren limpieza regular.
+      </p>
+
+      <ul>
+        <li>Limpiar periódicamente madera, aluminio y cristales con productos suaves.</li>
+        <li>Revisar uniones, tornillería, remates y evacuación de agua al menos una vez al año.</li>
+        <li>Renovar la protección exterior cuando la madera pierda tono o repelencia al agua.</li>
+        <li>Aplicar aceite, lasur o protector específico si se desea reforzar la protección o modificar el acabado estético.</li>
+        <li>Mantener despejada la cubierta de hojas, polvo y residuos.</li>
+        <li>Revisar juntas, sellados y encuentros de cristales y carpinterías.</li>
+        <li>Acortar los intervalos de mantenimiento en zonas costeras, piscinas con uso intensivo, orientación sur, alta humedad o exposición climática severa.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Preguntas frecuentes</summary>
+    <div class="product-detail-body">
+      <p><strong>¿Qué incluye la configuración funcional básica?</strong><br>
+      Incluye carpintería de madera exterior, carpintería de aluminio, cristales, cubierta de panel sándwich, terminado básico interior, terminado exterior y una capa de protección exterior básica.</p>
+
+      <p><strong>¿Incluye montaje?</strong><br>
+      No, salvo indicación expresa en el presupuesto. Transporte, descarga, montaje, cimentación, anclajes especiales y trabajos auxiliares se presupuestan aparte.</p>
+
+      <p><strong>¿Incluye la cubierta?</strong><br>
+      Sí. Incluye cubierta de panel sándwich según la configuración definida en presupuesto.</p>
+
+      <p><strong>¿Incluye cristales?</strong><br>
+      Sí. Incluye cristales según la configuración base definida para el proyecto y reflejada en el presupuesto.</p>
+
+      <p><strong>¿Incluye tratamiento decorativo completo?</strong><br>
+      No. Incluye una capa de protección exterior básica. No debe entenderse como tratamiento decorativo completo, acabado personalizado de color, protección reforzada o tratamiento especial para ambiente marino.</p>
+
+      <p><strong>¿Se puede instalar junto a una piscina?</strong><br>
+      Sí. Es una de sus aplicaciones principales. En zonas de piscina se recomienda valorar humedad, salpicaduras, cloro, orientación solar, pavimento antideslizante y mantenimiento de la madera.</p>
+
+      <p><strong>¿Se puede instalar sobre césped o tierra?</strong><br>
+      Sí, pero con zapatas o apoyos que ofrezcan una base rígida y nivelada. No se recomienda instalar directamente sobre tierra o césped sin cimentación. Lo adecuado es preparar zapatas, solera, apoyos o una base rígida y nivelada.</p>
+
+      <p><strong>¿Necesita licencia?</strong><br>
+      Depende del municipio, dimensiones, ubicación, tipo de anclaje, superficie ocupada y normativa urbanística aplicable. El cliente debe consultarlo con su ayuntamiento o técnico competente, salvo que contrate expresamente una gestión técnica o administrativa.</p>
+
+      <p><strong>¿Se puede personalizar?</strong><br>
+      Sí. Puede adaptarse con colores RAL, acabados de madera, iluminación, domótica, cerramientos adicionales, tarima, mobiliario, barra, almacenaje, ducha exterior o soluciones técnicas específicas, siempre que se valore expresamente en el presupuesto.</p>
+    </div>
+  </details>
+
+  <section class="product-cta">
+    <h3>Solicita tu propuesta personalizada para Poolhouse Oasis +</h3>
+
+    <p>
+      Cuéntanos cómo quieres usar tu espacio exterior y prepararemos una configuración adaptada a tu jardín, piscina, terraza, estilo de vivienda y presupuesto.
+    </p>
+
+    <a href="https://wa.me/34687480356" class="cta-button" id="whatsapp-link" target="_blank" rel="noopener">
+      Solicitar presupuesto por WhatsApp
+    </a>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var whatsappLink = document.getElementById("whatsapp-link");
+
+        if (!whatsappLink) return;
+
+        var cleanUrl = window.location.origin + window.location.pathname;
+        var message = "Hola! Estoy interesado en este producto: " + cleanUrl;
+
+        whatsappLink.href = "https://wa.me/34687480356?text=" + encodeURIComponent(message);
+      });
+    </script>
+  </section>
+
+  <p class="product-legal">
+    Producto Poolhouse Oasis + en configuración funcional básica. Incluye carpintería de madera exterior, carpintería de aluminio, cristales, cubierta de panel sándwich, terminado básico interior, terminado exterior y una capa de protección exterior básica. No incluye transporte, descarga, montaje, cimentación, anclajes especiales, licencias, tasas, proyecto técnico, obra civil, acometidas eléctricas, boletines, fontanería, desagües, iluminación, domótica, climatización, mobiliario, tarima, cocina exterior, ducha, canalones especiales, tratamientos decorativos completos, acabados personalizados, protección reforzada, protección especial para ambiente marino ni trabajos auxiliares, salvo indicación expresa en presupuesto. Las imágenes, renders y fotografías son orientativas y pueden mostrar acabados, mobiliario, paisajismo, iluminación, cerramientos, cubiertas o elementos decorativos no incluidos. La madera es un material natural y puede presentar variaciones de tono, veta, nudos, pequeñas fisuras superficiales, movimientos higroscópicos o cambios estéticos derivados de la exposición exterior. La necesidad de licencia, comunicación previa, autorización comunitaria o proyecto técnico depende del municipio, dimensiones, ubicación, tipo de anclaje, superficie ocupada y normativa aplicable. El alcance exacto se confirma únicamente mediante presupuesto personalizado aceptado por escrito.
+  </p>
+</section>
