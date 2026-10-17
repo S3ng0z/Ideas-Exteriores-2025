@@ -543,6 +543,58 @@
     },
     "ie_home_systems": {
       "type": "ie-home-systems",
+      "blocks": {
+        "system_1": {
+          "type": "system",
+          "settings": {
+            "number": "01 / Bastidores de madera",
+            "heading": "Entramado ligero",
+            "description": "Estructura de montantes y travesaños de madera, con rigidización y aislamiento definidos en el proyecto. Una solución versátil para viviendas y espacios habitables.",
+            "image": "shopify://shop_images/Timber_Frame_House_Under_Construction.webp",
+            "image_alt": "",
+            "diagram": "frame",
+            "primary_label": "Ver casas de entramado ligero",
+            "primary_link": "/collections/light-frame-houses",
+            "secondary_label": "Conocer el sistema",
+            "secondary_link": "/pages/light-frame-construction-system"
+          }
+        },
+        "system_2": {
+          "type": "system",
+          "settings": {
+            "number": "02 / Panel prefabricado aislado",
+            "heading": "Panel SIP",
+            "description": "Paneles con caras resistentes y núcleo aislante. Las juntas, apoyos, huecos y encuentros deben resolverse para conseguir las prestaciones del conjunto.",
+            "image": "shopify://shop_images/Modern_Timber_Frame_House_in_Countryside.webp",
+            "image_alt": "",
+            "diagram": "sip",
+            "primary_label": "Ver casas con panel SIP",
+            "primary_link": "/collections/sip-panel-houses",
+            "secondary_label": "Conocer el sistema",
+            "secondary_link": "/pages/sip-panels-system"
+          }
+        },
+        "system_3": {
+          "type": "system",
+          "settings": {
+            "number": "03 / Madera perfilada",
+            "heading": "Sistema europeo",
+            "description": "Familia comercial vinculada a soluciones tipo Blockhaus/Blockbau y madera apilada. Nuestra propuesta emplea madera exterior perfilada y una capa técnica interior; no equivale automáticamente a cualquier sistema nórdico o finlandés.",
+            "image": "shopify://shop_images/Timber_House_Corner_with_Construction_Cutaway.webp",
+            "image_alt": "",
+            "diagram": "european",
+            "primary_label": "Conocer el sistema europeo",
+            "primary_link": "/pages/european-timber-construction-system",
+            "secondary_label": "Consultar compatibilidad",
+            "secondary_link": "/pages/contact-ideas-exteriores"
+          }
+        }
+      },
+      "block_order": [
+        "system_1",
+        "system_2",
+        "system_3"
+      ],
       "settings": {
         "eyebrow": "Cómo construimos",
         "heading": "Tres sistemas constructivos en madera",
@@ -569,53 +621,7 @@
         "accent_color": "#566236",
         "figure_background": "#e7ede6",
         "outro_background": "#f3f5ee"
-      },
-      "blocks": {
-        "system_1": {
-          "type": "system",
-          "settings": {
-            "number": "01 / Bastidores de madera",
-            "heading": "Entramado ligero",
-            "description": "Estructura de montantes y travesaños de madera, con rigidización y aislamiento definidos en el proyecto. Una solución versátil para viviendas y espacios habitables.",
-            "diagram": "frame",
-            "primary_label": "Ver casas de entramado ligero",
-            "primary_link": "/collections/light-frame-houses",
-            "secondary_label": "Conocer el sistema",
-            "secondary_link": "/pages/light-frame-construction-system"
-          }
-        },
-        "system_2": {
-          "type": "system",
-          "settings": {
-            "number": "02 / Panel prefabricado aislado",
-            "heading": "Panel SIP",
-            "description": "Paneles con caras resistentes y núcleo aislante. Las juntas, apoyos, huecos y encuentros deben resolverse para conseguir las prestaciones del conjunto.",
-            "diagram": "sip",
-            "primary_label": "Ver casas con panel SIP",
-            "primary_link": "/collections/sip-panel-houses",
-            "secondary_label": "Conocer el sistema",
-            "secondary_link": "/pages/sip-panels-system"
-          }
-        },
-        "system_3": {
-          "type": "system",
-          "settings": {
-            "number": "03 / Madera perfilada",
-            "heading": "Sistema europeo",
-            "description": "Familia comercial vinculada a soluciones tipo Blockhaus/Blockbau y madera apilada. Nuestra propuesta emplea madera exterior perfilada y una capa técnica interior; no equivale automáticamente a cualquier sistema nórdico o finlandés.",
-            "diagram": "european",
-            "primary_label": "Conocer el sistema europeo",
-            "primary_link": "/pages/european-timber-construction-system",
-            "secondary_label": "Consultar compatibilidad",
-            "secondary_link": "/pages/contact-ideas-exteriores"
-          }
-        }
-      },
-      "block_order": [
-        "system_1",
-        "system_2",
-        "system_3"
-      ]
+      }
     },
     "section_g3xbzL": {
       "type": "section",
