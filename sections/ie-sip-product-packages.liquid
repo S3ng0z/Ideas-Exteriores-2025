@@ -15,7 +15,11 @@
         {% endif %}
         <h2 id="ie-sip-packages-title-{{ section.id }}">{% if ie_packages_on_hold %}Configuraciones pendientes de validación{% else %}{{ section.settings.heading }}{% endif %}</h2>
       </div>
-
+        {% unless ie_packages_on_hold %}
+          {% if section.settings.intro != blank %}
+            <div class="ie-sip-pdp__section-intro rte">{{ section.settings.intro }}</div>
+          {% endif %}
+        {% endunless %}
       </div>
 
       {% if ie_packages_on_hold %}
@@ -24,9 +28,6 @@
           <p><a href="/pages/contact-ideas-exteriores">Solicitar estudio del modelo →</a></p>
         </div>
       {% else %}
-        {% if section.settings.intro != blank %}
-          <div class="ie-sip-pdp__section-intro rte">{{ section.settings.intro }}</div>
-        {% endif %}
         {% if section.settings.note != blank %}
           <div class="ie-sip-pdp__technical-note rte">{{ section.settings.note }}</div>
         {% endif %}
