@@ -31,6 +31,11 @@
         {% if section.settings.lead != blank %}
           <div class="ie-sip-pdp__lead rte">{{ section.settings.lead }}</div>
         {% endif %}
+        {% if product.handle == 'home-sip-elisa-77-m-terraza' %}
+          <aside class="ie-sip-pdp__technical-note rte" aria-label="Alcance del modelo ELISA" id="ie-sip-elisa-scope">
+            <p><strong>Antes de comparar precios:</strong> verifica las superficies de vivienda y terraza por separado en planos acotados. Contrasta cada configuración con un presupuesto desglosado de cimentación, transporte, montaje, instalaciones y acabados. BASIC, STANDARD y PASSIVE son denominaciones comerciales; no acreditan por sí mismas una certificación energética.</p>
+          </aside>
+        {% endif %}
         <div class="ie-sip-pdp__actions">
           <a class="ie-sip-pdp__button ie-sip-pdp__button--primary" href="#ie-sip-packages">
             {{ section.settings.primary_label }}
