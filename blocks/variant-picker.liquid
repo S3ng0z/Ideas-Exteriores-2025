@@ -8,14 +8,20 @@
 -%}
 
 {% comment %}
-  ALICE se comercializa mediante presupuesto (commercial_mode=quote).
-  Ocultar únicamente su selector BASIC / STANDARD / PASSIVE en la ficha:
-  las tres variantes permanecen en Shopify y el comparador SIP independiente
-  sigue disponible. No ocultar variantes de otros productos ni de otras plantillas.
+  Alice: no presentar el selector de variantes en la ficha del modelo.
+  El producto se identifica por ID estable tanto en el contexto de la página
+  como en el recurso del bloque, para evitar dependencias del handle.
+  Esta condición no elimina las variantes de Shopify ni su comparador comercial.
 {% endcomment %}
-{% unless product_resource.id == 15218578587992 %}
+{% liquid
+  assign ie_show_variant_picker = true
+  if product.id == 15218578587992 or product_resource.id == 15218578587992
+    assign ie_show_variant_picker = false
+  endif
+%}
+{% if ie_show_variant_picker %}
   {% render 'variant-main-picker', product_resource: product_resource %}
-{% endunless %}
+{% endif %}
 
 {% schema %}
 {
