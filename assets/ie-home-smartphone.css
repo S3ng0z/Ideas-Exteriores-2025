@@ -17,7 +17,9 @@
   /* Hero: a single comfortable editorial panel, instead of copy and detached CTAs. */
   #shopify-section-hero_irjTFL .hero,
   #shopify-section-hero_irjTFL .hero__container {
-    min-height: min(650px, 88svh) !important;
+    /* 100svh evita saltos al mostrar u ocultar la barra del navegador. */
+    min-height: 100vh !important;
+    min-height: 100svh !important;
   }
   #shopify-section-hero_irjTFL .hero__container {
     align-items: end !important;
