@@ -53,3 +53,14 @@
   .ie-home-discovery__card { transition: none; }
   .ie-home-discovery__card:hover { transform: none; }
 }
+/* Shopify Theme Editor: ajustes de sección configurables. */
+.ie-home-discovery { background:var(--ie-discovery-bg,#f6f6f2); color:var(--ie-discovery-color,#243129); padding-block:var(--ie-discovery-spacing,68px); }
+.ie-home-discovery > .page-width { width:calc(100% - 2 * var(--ie-discovery-gutter,64px)); max-width:var(--ie-discovery-width,1480px); margin-inline:auto; }
+.ie-home-discovery__grid { grid-template-columns:repeat(var(--ie-discovery-columns,3),minmax(0,1fr)); gap:var(--ie-discovery-gap,24px); }
+.ie-home-discovery__card {background:var(--ie-discovery-card-bg,#fff); border-radius:var(--ie-discovery-radius,16px);}
+.ie-home-discovery__media {aspect-ratio:var(--ie-discovery-image-ratio,8 / 5);}
+.ie-home-discovery__eyebrow,.ie-home-discovery__category {color:var(--ie-discovery-accent,#566236);}
+.ie-home-discovery__card-link,.ie-home-discovery__quick-links a:hover {color:var(--ie-discovery-accent,#566236);}
+.ie-home-discovery__card-body h3 {text-transform:none!important;}
+@media(max-width:989px){.ie-home-discovery__grid{grid-template-columns:repeat(2,minmax(0,1fr));}.ie-home-discovery__card:last-child{grid-column:auto;display:flex;}.ie-home-discovery__card:last-child .ie-home-discovery__media{height:auto;aspect-ratio:var(--ie-discovery-image-ratio,8 / 5);}}
+@media(max-width:749px){.ie-home-discovery{padding-block:clamp(36px,var(--ie-discovery-spacing,68px),70px);}.ie-home-discovery > .page-width{width:calc(100% - 2 * var(--ie-discovery-mobile-gutter,18px));}.ie-home-discovery__grid{grid-template-columns:1fr;}}
