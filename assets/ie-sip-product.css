@@ -712,3 +712,10 @@ body:has(.ie-sip-pdp--hero) .product-information .product-details > *{
     padding-top:0;
   }
 }
+
+/* Modelo NORA: presentación acotada del contenido gestionado en Shopify Admin. */
+.ie-sip-nora{max-width:58rem}
+.ie-sip-nora h3{margin-top:1.5rem}
+.ie-sip-nora ul{padding-inline-start:1.3rem}
+.ie-sip-nora li{margin-block:.4rem}
+.ie-sip-nora p{line-height:1.7}
