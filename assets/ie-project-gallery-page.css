@@ -39,7 +39,7 @@
   max-width: 760px;
   margin: 0;
   font-family: "Source Serif 4", Georgia, serif;
-  font-size: clamp(2.05rem, 3vw, 3.4rem);
+  font-size: clamp(1.65rem, 2.2vw, 2.6rem);
   font-weight: 500;
   line-height: 1.02;
   letter-spacing: -.025em;
@@ -78,9 +78,9 @@
 .ie-project-gallery__card h3 {
   margin: 0 0 14px;
   font-family: Manrope, var(--font-body--family), Arial, sans-serif;
-  font-size: 1rem;
+  font-size: .91rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.3;
   text-wrap: pretty;
 }
 
@@ -162,7 +162,7 @@
   }
 
   .ie-project-gallery__head h2 {
-    font-size: clamp(1.9rem, 8vw, 2.55rem);
+    font-size: clamp(1.55rem, 6vw, 2rem);
   }
 
   .ie-project-gallery__intro {
@@ -189,4 +189,56 @@
 
 @media (prefers-reduced-motion: reduce) {
   .ie-project-gallery__links span { transition: none; }
+}
+
+
+/* Project gallery only: compact editorial headings without forced line breaks.
+   Wrap naturally where the viewport requires it; never hide or clip heading text. */
+body:has(.ie-project-gallery) .ie-services--hero .ie-services__hero {
+  grid-template-columns: minmax(0, 2.35fr) minmax(245px, .65fr);
+  gap: clamp(24px, 3vw, 48px);
+}
+body:has(.ie-project-gallery) .ie-services--hero .ie-services__hero h1 {
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  line-height: 1.07;
+  letter-spacing: -.025em;
+  text-wrap: pretty;
+}
+body:has(.ie-project-gallery) .ie-services--cta .ie-services__closing h2 {
+  font-size: clamp(1.7rem, 2.35vw, 2.65rem);
+  line-height: 1.12;
+  text-wrap: pretty;
+}
+.ie-project-gallery__head {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: clamp(22px, 3vw, 54px);
+}
+.ie-project-gallery__head h2 {
+  max-width: none;
+  text-wrap: pretty;
+}
+.ie-project-gallery__card h3 {
+  overflow-wrap: normal;
+  hyphens: none;
+}
+@media screen and (max-width: 989px) {
+  body:has(.ie-project-gallery) .ie-services--hero .ie-services__hero {
+    grid-template-columns: 1fr;
+  }
+  .ie-project-gallery__head {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 749px) {
+  body:has(.ie-project-gallery) .ie-services--hero .ie-services__hero h1 {
+    font-size: clamp(1.75rem, 7vw, 2.2rem);
+    line-height: 1.11;
+  }
+  body:has(.ie-project-gallery) .ie-services--cta .ie-services__closing h2 {
+    font-size: clamp(1.55rem, 6vw, 1.95rem);
+  }
+  .ie-project-gallery__head h2 {
+    font-size: clamp(1.55rem, 6vw, 2rem);
+    line-height: 1.12;
+  }
 }
