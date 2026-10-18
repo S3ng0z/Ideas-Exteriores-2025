@@ -409,3 +409,29 @@
     transform: none !important;
   }
 }
+
+
+/* One-line search titles: a compact visual label; full product data is unchanged. */
+.search-modal .predictive-search-results__card--product .resource-card__content {
+  min-width: 0;
+}
+.search-modal .predictive-search-results__card--product .resource-card__title,
+.search-modal .predictive-search-results__card--product .resource-card__title.paragraph {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  font-size: .73rem;
+  line-height: 1.35;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: unset;
+  overflow-wrap: normal;
+}
+@media (max-width: 749px) {
+  .search-modal .predictive-search-results__card--product .resource-card__title,
+  .search-modal .predictive-search-results__card--product .resource-card__title.paragraph {
+    font-size: .72rem;
+  }
+}
