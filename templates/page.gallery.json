@@ -1,158 +1,61 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "custom_liquid_X78RHa": {
-      "type": "ie-breadcrumb",
-      "name": "IE · Breadcrumb global",
-      "settings": {
-        "aria_label": "Migas de pan",
-        "home_label": "Inicio",
-        "current_label": "",
-        "show_title": true,
-        "title_level": "h1"
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "step_1": {"type":"summary","settings":{"number":"01","label":"Empieza por la tipología"}},
+        "step_2": {"type":"summary","settings":{"number":"02","label":"Compara soluciones y acabados"}},
+        "step_3": {"type":"summary","settings":{"number":"03","label":"Continúa hacia el catálogo"}}
+      },
+      "block_order":["step_1","step_2","step_3"],
+      "settings":{
+        "eyebrow":"Proyectos realizados",
+        "heading":"Proyectos en madera realizados",
+        "lead":"<p>Explora una selección de trabajos ejecutados en casas, casetas, pérgolas, porches, cenadores, tarimas y otras estructuras de madera. Utiliza estas referencias para identificar la solución, el lenguaje arquitectónico y el nivel de acabado que mejor encajan con tu necesidad.</p>",
+        "primary_label":"Explorar proyectos",
+        "primary_link":"#project-gallery",
+        "secondary_label":"Ver catálogo",
+        "secondary_link":"/collections",
+        "summary_title":"Cómo leer la galería"
       }
     },
-    "main": {
-      "type": "main-page",
-      "blocks": {
-        "text_A8F3Wr": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>{{ closest.page.title }}</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h1",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
+    "guide": {
+      "type":"ie-project-gallery-guide",
+      "blocks":{
+        "guide_1":{"type":"item","settings":{"index":"01 · Tipología","heading":"Busca una referencia cercana a tu necesidad","text":"Casas, casetas, pérgolas, porches, cenadores, tarimas y otras estructuras se presentan como referencias visuales para ayudarte a acotar la decisión.","link_1_label":"","link_1":"","link_2_label":"","link_2":"","link_3_label":"","link_3":""}},
+        "guide_2":{"type":"item","settings":{"index":"02 · Solución","heading":"Separa la inspiración de la decisión técnica","text":"La fotografía muestra un resultado; el sistema constructivo, las dimensiones, la envolvente y el alcance se definen para cada solución concreta.","link_1_label":"Conocer los sistemas constructivos","link_1":"/pages/timber-building-systems","link_2_label":"","link_2":"","link_3_label":"","link_3":""}},
+        "guide_3":{"type":"item","settings":{"index":"03 · Alcance","heading":"No conviertas una imagen en un presupuesto","text":"Un trabajo realizado sirve como prueba y referencia, pero no fija por sí solo precio, prestaciones, montaje, cimentación, instalaciones ni condiciones de entrega.","link_1_label":"Consultar condiciones y servicios","link_1":"/pages/services","link_2_label":"","link_2":"","link_3_label":"","link_3":""}}
       },
-      "block_order": [
-        "text_A8F3Wr"
-      ],
-      "disabled": true,
-      "settings": {
-        "content_direction": "column",
-        "gap": 32,
-        "color_scheme": "",
-        "padding-block-start": 40,
-        "padding-block-end": 80
-      }
+      "block_order":["guide_1","guide_2","guide_3"],
+      "settings":{"anchor_id":"project-gallery","eyebrow":"Evidencia de ejecución","heading":"Inspírate con criterio antes de elegir","intro":"<p>La galería mantiene sus filtros por categoría. Úsalos para localizar trabajos comparables y, después, continúa hacia la familia, el modelo o el sistema correspondiente para revisar información comercial y técnica actualizada.</p>","columns":"3"}
     },
     "17537374647b539d70": {
-      "type": "_blocks",
-      "blocks": {
-        "essential_grid_gallery_app_block_Ye3HTg": {
-          "type": "shopify://apps/essential-grid-gallery/blocks/app-block/b252af1e-c43a-4272-b19c-e87bc447c686",
-          "settings": {
-            "eg_grid_metakey": 1,
-            "eg_grid_dynamic_metakey": "",
-            "eg_grid_heading": "",
-            "eg_grid_sub_heading": "",
-            "eg_grid_heading_size": 30,
-            "eg_grid_sub_heading_size": 15,
-            "eg_grid_heading_alignment": "center",
-            "eg_grid_sec_back_color": "",
-            "eg_grid_sec_front_color": "",
-            "eg_grid_sec_sub_heading_color": "",
-            "eg_grid_sec_pad_top": 40,
-            "eg_grid_sec_pad_bot": 80
-          }
+      "type":"_blocks",
+      "blocks":{
+        "essential_grid_gallery_app_block_Ye3HTg":{
+          "type":"shopify://apps/essential-grid-gallery/blocks/app-block/b252af1e-c43a-4272-b19c-e87bc447c686",
+          "settings":{"eg_grid_metakey":1,"eg_grid_dynamic_metakey":"","eg_grid_heading":"","eg_grid_sub_heading":"","eg_grid_heading_size":30,"eg_grid_sub_heading_size":15,"eg_grid_heading_alignment":"center","eg_grid_sec_back_color":"","eg_grid_sec_front_color":"","eg_grid_sec_sub_heading_color":"","eg_grid_sec_pad_top":0,"eg_grid_sec_pad_bot":72}
         }
       },
-      "block_order": [
-        "essential_grid_gallery_app_block_Ye3HTg"
-      ],
-      "custom_css": [
-        ".shopify-block {max-width: 100% !important; width: 100% !important; height: 100% !important;}"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
+      "block_order":["essential_grid_gallery_app_block_Ye3HTg"],
+      "custom_css":[".shopify-block {max-width: 100% !important; width: 100% !important; height: 100% !important;}"],
+      "settings":{"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":12,"section_width":"page-width","section_height":"","section_height_custom":50,"color_scheme":"","background_media":"none","video_position":"cover","background_image_position":"cover","border":"none","border_width":1,"border_opacity":100,"border_radius":0,"toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","padding-block-start":0,"padding-block-end":0}
     },
-    "1753738957b07b9805": {
-      "type": "_blocks",
-      "disabled": true,
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
+    "routes": {
+      "type":"ie-project-gallery-guide",
+      "blocks":{
+        "route_1":{"type":"item","settings":{"index":"Habitables","heading":"Casas de madera","text":"Compara modelos y alcances comerciales en las dos familias constructivas activas del catálogo.","link_1_label":"Casas de entramado ligero","link_1":"/collections/light-frame-houses","link_2_label":"Casas con panel SIP","link_2":"/collections/sip-panel-houses","link_3_label":"","link_3":""}},
+        "route_2":{"type":"item","settings":{"index":"Exterior","heading":"Pérgolas, porches y cenadores","text":"Continúa hacia soluciones exteriores con páginas y colecciones específicas para revisar el siguiente paso.","link_1_label":"Pérgolas de madera","link_1":"/pages/bespoke-wooden-pergolas","link_2_label":"Porches de madera","link_2":"/pages/bespoke-wooden-porches","link_3_label":"Cenadores y gazebos","link_3":"/collections/wooden-gazebos"}},
+        "route_3":{"type":"item","settings":{"index":"Exterior","heading":"Tarimas exteriores","text":"Elige entre madera natural y tarima tecnológica WPC según uso, mantenimiento y acabado esperado.","link_1_label":"Tarima de madera natural","link_1":"/collections/natural-wood-decking","link_2_label":"Tarima WPC Protech","link_2":"/collections/wpc-protech-decking","link_3_label":"","link_3":""}},
+        "route_4":{"type":"item","settings":{"index":"Capa técnica","heading":"Sistemas constructivos","text":"Si necesitas entender cómo se construye antes de elegir un modelo, compara las soluciones técnicas disponibles.","link_1_label":"Ver sistemas constructivos","link_1":"/pages/timber-building-systems","link_2_label":"","link_2":"","link_3_label":"","link_3":""}}
+      },
+      "block_order":["route_1","route_2","route_3","route_4"],
+      "settings":{"anchor_id":"","eyebrow":"Del proyecto a la solución","heading":"Continúa por la familia que quieres valorar","intro":"<p>Los trabajos realizados aportan confianza; el catálogo aporta la información actual para decidir. Sigue por la familia o el sistema relacionado para revisar modelos, alcance y próximos pasos.</p>","columns":"4"}
+    },
+    "cta":{
+      "type":"ie-services-cta",
+      "settings":{"eyebrow":"Siguiente paso","heading":"¿Has encontrado una referencia que encaja contigo?","text":"<p>Indícanos qué tipología necesitas, medidas aproximadas, ubicación y la referencia que te ha servido de inspiración. Te orientaremos hacia una solución de catálogo, un sistema compatible o el servicio adecuado.</p>","label":"Solicitar presupuesto","link":"/pages/contact-ideas-exteriores"}
     }
   },
-  "order": [
-    "custom_liquid_X78RHa",
-    "main",
-    "17537374647b539d70",
-    "1753738957b07b9805"
-  ]
+  "order":["hero","guide","17537374647b539d70","routes","cta"]
 }

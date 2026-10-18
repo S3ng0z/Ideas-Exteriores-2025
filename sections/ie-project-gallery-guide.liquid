@@ -1,0 +1,103 @@
+{{ 'ie-project-gallery-page.css' | asset_url | stylesheet_tag }}
+
+{% assign anchor_id = section.settings.anchor_id | strip %}
+
+<section
+  class="ie-project-gallery"
+  {% if anchor_id != blank %}id="{{ anchor_id | escape }}"{% endif %}
+  aria-labelledby="ie-project-gallery-title-{{ section.id }}"
+>
+  <div class="ie-project-gallery__inner">
+    <header class="ie-project-gallery__head">
+      <div>
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-project-gallery__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 id="ie-project-gallery-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}
+        <div class="ie-project-gallery__intro rte">{{ section.settings.intro }}</div>
+      {% endif %}
+    </header>
+
+    <div class="ie-project-gallery__grid ie-project-gallery__grid--{{ section.settings.columns }}">
+      {% for block in section.blocks %}
+        <article class="ie-project-gallery__card" {{ block.shopify_attributes }}>
+          {% if block.settings.index != blank %}
+            <p class="ie-project-gallery__index">{{ block.settings.index }}</p>
+          {% endif %}
+          <h3>{{ block.settings.heading }}</h3>
+          {% if block.settings.text != blank %}
+            <p>{{ block.settings.text }}</p>
+          {% endif %}
+
+          {% assign has_links = false %}
+          {% if block.settings.link_1_label != blank and block.settings.link_1 != blank %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if block.settings.link_2_label != blank and block.settings.link_2 != blank %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if block.settings.link_3_label != blank and block.settings.link_3 != blank %}
+            {% assign has_links = true %}
+          {% endif %}
+
+          {% if has_links %}
+            <ul class="ie-project-gallery__links" role="list">
+              {% if block.settings.link_1_label != blank and block.settings.link_1 != blank %}
+                <li><a href="{{ block.settings.link_1 }}">{{ block.settings.link_1_label }} <span aria-hidden="true">→</span></a></li>
+              {% endif %}
+              {% if block.settings.link_2_label != blank and block.settings.link_2 != blank %}
+                <li><a href="{{ block.settings.link_2 }}">{{ block.settings.link_2_label }} <span aria-hidden="true">→</span></a></li>
+              {% endif %}
+              {% if block.settings.link_3_label != blank and block.settings.link_3 != blank %}
+                <li><a href="{{ block.settings.link_3 }}">{{ block.settings.link_3_label }} <span aria-hidden="true">→</span></a></li>
+              {% endif %}
+            </ul>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Proyectos · Guía",
+  "settings": [
+    {"type":"text","id":"anchor_id","label":"ID de anclaje"},
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Proyectos realizados"},
+    {"type":"text","id":"heading","label":"Título","default":"Proyectos que ayudan a decidir"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>Utiliza los trabajos realizados como evidencia y continúa hacia la solución comercial relacionada.</p>"},
+    {
+      "type":"select",
+      "id":"columns",
+      "label":"Columnas en escritorio",
+      "options":[
+        {"value":"3","label":"3 columnas"},
+        {"value":"4","label":"4 columnas"}
+      ],
+      "default":"3"
+    }
+  ],
+  "blocks": [
+    {
+      "type":"item",
+      "name":"Elemento",
+      "settings":[
+        {"type":"text","id":"index","label":"Etiqueta","default":"01 · Tipología"},
+        {"type":"text","id":"heading","label":"Título","default":"Busca una referencia cercana"},
+        {"type":"textarea","id":"text","label":"Texto","default":"Compara tipología, uso y acabado antes de continuar hacia el catálogo."},
+        {"type":"text","id":"link_1_label","label":"Enlace 1 · texto"},
+        {"type":"url","id":"link_1","label":"Enlace 1 · URL"},
+        {"type":"text","id":"link_2_label","label":"Enlace 2 · texto"},
+        {"type":"url","id":"link_2","label":"Enlace 2 · URL"},
+        {"type":"text","id":"link_3_label","label":"Enlace 3 · texto"},
+        {"type":"url","id":"link_3","label":"Enlace 3 · URL"}
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets":[{"name":"Proyectos · Guía"}]
+}
+{% endschema %}
