@@ -1,0 +1,30 @@
+/* Home · Product showcase parity for gazebos, light-frame houses and SIP houses.
+   Scope to the three exact section IDs. Preserve product source titles, prices and URLs. */
+#MainContent :is([id$="__product_list_wcJxUp"],[id$="__product_list_x9Yaab"],[id$="__product_list_nQbyNK"]) .resource-list__item {
+  min-width: 0;
+}
+#MainContent :is([id$="__product_list_wcJxUp"],[id$="__product_list_x9Yaab"],[id$="__product_list_nQbyNK"]) .resource-list__item .product-card {
+  min-width: 0;
+}
+#MainContent :is([id$="__product_list_wcJxUp"],[id$="__product_list_x9Yaab"],[id$="__product_list_nQbyNK"]) .resource-list__item :is(.product-title, .product-title *, .product-card__title, .product-card__title *) {
+  text-align: center !important;
+  text-align-last: center !important;
+  text-justify: auto !important;
+  hyphens: none !important;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+#MainContent :is([id$="__product_list_wcJxUp"],[id$="__product_list_x9Yaab"],[id$="__product_list_nQbyNK"]) .resource-list__item :is(.price, .price *) {
+  text-align: center !important;
+  text-align-last: center !important;
+}
+@media screen and (max-width:749px) {
+  #MainContent :is([id$="__product_list_wcJxUp"],[id$="__product_list_x9Yaab"],[id$="__product_list_nQbyNK"]) .resource-list__item :is(.product-title, .product-title *, .product-card__title, .product-card__title *) {
+    text-align: left !important;
+    text-align-last: auto !important;
+  }
+  #MainContent :is([id$="__product_list_wcJxUp"],[id$="__product_list_x9Yaab"],[id$="__product_list_nQbyNK"]) .resource-list__item :is(.price, .price *) {
+    text-align: left !important;
+    text-align-last: auto !important;
+  }
+}
