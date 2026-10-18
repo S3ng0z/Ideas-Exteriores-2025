@@ -39,16 +39,14 @@
   assign ie_n3 = ie_n3 | default: fallback_3_label
 
   comment
-    Mayúsculas opcionales para las categorías y modelo del breadcrumb.
-    No se aplica a Inicio ni a otros productos o páginas por defecto.
-    Los nombres en JSON-LD mantienen la misma capitalización visible.
+    Regla global de navegación: todos los niveles posteriores a «Inicio»
+    se muestran en mayúsculas. No altera el título real del objeto ni el H1
+    de la plantilla. El JSON-LD reutiliza los mismos textos visibles.
   endcomment
-  if uppercase_labels
-    assign ie_n1 = ie_n1 | upcase
-    assign ie_n2 = ie_n2 | upcase
-    assign ie_n3 = ie_n3 | upcase
-    assign ie_title = ie_title | upcase
-  endif
+  assign ie_n1 = ie_n1 | upcase
+  assign ie_n2 = ie_n2 | upcase
+  assign ie_n3 = ie_n3 | upcase
+  assign ie_title = ie_title | upcase
 
   assign ie_n1_url = ie_n1_url | default: fallback_1_link
   assign ie_n2_url = ie_n2_url | default: fallback_2_link
