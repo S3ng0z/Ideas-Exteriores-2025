@@ -1,0 +1,109 @@
+{{ 'ie-search-results.css' | asset_url | stylesheet_tag }}
+<section class="ie-search-results" aria-labelledby="ie-search-heading">
+  <div class="ie-search-results__inner">
+    {% assign query = search.terms | strip %}
+    <header class="ie-search-results__header">
+      <p class="ie-search-results__eyebrow">IDEAS EXTERIORES · CATÁLOGO Y SOLUCIONES</p>
+      {% if search.performed and query != blank %}
+        <h1 id="ie-search-heading">Resultados para «{{ query | escape }}»</h1>
+        <p class="ie-search-results__lead">Encuentra un modelo para comparar o consulta una solución a medida. Precios, configuraciones y servicios se confirman en la ficha o presupuesto correspondiente.</p>
+      {% else %}
+        <h1 id="ie-search-heading">Buscar soluciones en madera</h1>
+        <p class="ie-search-results__lead">Busca casas, casetas, pérgolas, porches, cenadores, tarimas o sistemas constructivos.</p>
+      {% endif %}
+    </header>
+    {% if search.performed %}
+      {% paginate search.results by 24 %}
+        {% assign product_count = 0 %}
+        {% assign page_count = 0 %}
+        {% for result in search.results %}
+          {% case result.object_type %}
+            {% when 'product' %}{% assign product_count = product_count | plus: 1 %}
+            {% when 'page' %}{% assign page_count = page_count | plus: 1 %}
+          {% endcase %}
+        {% endfor %}
+        <p class="ie-search-results__summary" role="status">{{ search.results_count }} resultados en total{% if paginate.pages > 1 %} · Página {{ paginate.current_page }} de {{ paginate.pages }}{% endif %}</p>
+        {% if search.results_count == 0 %}
+          <div class="ie-search-results__empty">
+            <h2>No encontramos resultados para «{{ query | escape }}»</h2>
+            <p>Prueba con un término más general o explora todas nuestras soluciones de madera.</p>
+            <a href="/collections">Explorar productos <span aria-hidden="true">→</span></a>
+          </div>
+        {% else %}
+          {% if product_count > 0 %}
+            <section class="ie-search-results__group" aria-labelledby="ie-search-products">
+              <div class="ie-search-results__group-head">
+                <h2 id="ie-search-products">Productos y modelos</h2>
+                <span>{{ product_count }} en esta página</span>
+              </div>
+              <ul class="ie-search-results__grid" role="list">
+                {% for result in search.results %}
+                  {% if result.object_type == 'product' %}
+                    <li class="ie-search-results__item">
+                      <a href="{{ result.url }}" class="ie-search-results__product">
+                        <span class="ie-search-results__media">
+                          {% if result.featured_image %}
+                            {{ result.featured_image | image_url: width: 480 | image_tag: loading: 'lazy', widths: '160,240,360,480', sizes: '(min-width: 1200px) 150px, (min-width: 750px) 120px, 96px', alt: result.title }}
+                          {% else %}
+                            <span class="ie-search-results__placeholder" aria-hidden="true">IE</span>
+                          {% endif %}
+                        </span>
+                        <span class="ie-search-results__details">
+                          <span class="ie-search-results__name">{{ result.title | escape }}</span>
+                          <span class="ie-search-results__price">{{ result.price | money }}</span>
+                          <span class="ie-search-results__action">Ver producto <span aria-hidden="true">→</span></span>
+                        </span>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+          {% if page_count > 0 %}
+            <section class="ie-search-results__group" aria-labelledby="ie-search-pages">
+              <div class="ie-search-results__group-head">
+                <h2 id="ie-search-pages">Servicios y páginas relacionadas</h2>
+                <span>{{ page_count }} en esta página</span>
+              </div>
+              <ul class="ie-search-results__pages" role="list">
+                {% for result in search.results %}
+                  {% if result.object_type == 'page' %}
+                    <li>
+                      <a href="{{ result.url }}" class="ie-search-results__page">
+                        <span class="ie-search-results__page-symbol" aria-hidden="true">↗</span>
+                        <span class="ie-search-results__page-copy">
+                          <strong>{{ result.title | escape }}</strong>
+                          {% assign excerpt = result.content | strip_html | strip %}
+                          {% if excerpt != blank %}<small>{{ excerpt | truncate: 130 | escape }}</small>{% endif %}
+                        </span>
+                        <span class="ie-search-results__page-arrow" aria-hidden="true">→</span>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+          {% if product_count == 0 and page_count == 0 %}
+            <div class="ie-search-results__empty">
+              <h2>Explora el catálogo</h2>
+              <p>Los resultados encontrados no pertenecen a los tipos de contenido incluidos en esta vista.</p>
+              <a href="/collections">Ver catálogo <span aria-hidden="true">→</span></a>
+            </div>
+          {% endif %}
+          {% if paginate.pages > 1 %}
+            <nav class="ie-search-results__pagination" aria-label="Páginas de resultados">{{ paginate | default_pagination }}</nav>
+          {% endif %}
+        {% endif %}
+      {% endpaginate %}
+    {% endif %}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "IE · Resultados búsqueda",
+  "settings": [],
+  "presets": [{"name": "IE · Resultados búsqueda"}]
+}
+{% endschema %}
