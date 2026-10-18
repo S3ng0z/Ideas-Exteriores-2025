@@ -1,9 +1,9 @@
 {{ 'ie-home-delivery.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
-  Landing informativa /pages/transporte-entrega-casas-casetas-madera.
+  Política comercial de transporte /pages/transporte-entrega-casas-casetas-madera.
   Shopify OS 2.0: no depender del page.handle, ni de una promesa de tarifa/plazo.
-  Condiciones de pedido y derecho imperativo prevalecen sobre mensajes genéricos.
+  Modalidad estándar separada de los servicios adicionales, todos presupuestados antes de contratar. Los derechos legales prevalecen.
 {% endcomment %}
 <section class="ie-hd" aria-labelledby="ie-hd-title">
   <div class="ie-hd__inner">
@@ -17,55 +17,85 @@
 
     <header class="ie-hd__hero">
       <div class="ie-hd__hero-main">
-        <p class="ie-hd__eyebrow">Información · Entrega e instalación</p>
+        <p class="ie-hd__eyebrow">Transporte de casas y casetas · Condiciones comerciales</p>
         <h1 id="ie-hd-title">Transporte y entrega de casas y casetas de madera</h1>
-        <p class="ie-hd__lead">El coste de una casa o caseta no depende solo del modelo. La ubicación, el tipo de carga, los accesos, la descarga y el montaje pueden cambiar la logística. Te explicamos qué revisamos antes de confirmar el pedido y qué conviene preparar para recibirlo con seguridad.</p>
+        <p class="ie-hd__lead">Trabajamos con un servicio estándar de transporte hasta un punto accesible y acordado. ¿Necesitas grúa, descarga, entrega dentro de la parcela o montaje? Lo organizamos como servicio adicional, con un precio específico y aceptado antes de contratar. Tú eliges la comodidad; nosotros definimos exactamente qué incluye cada partida.</p>
         <div class="ie-hd__actions">
-          <a class="ie-hd__button ie-hd__button--primary" href="#ie-hd-conditions">Qué incluye la entrega <span aria-hidden="true">↗</span></a>
-          <a class="ie-hd__button ie-hd__button--outline" href="#ie-hd-checklist">Preparar mi parcela <span aria-hidden="true">↓</span></a>
+          <a class="ie-hd__button ie-hd__button--primary" href="#ie-hd-conditions">Ver servicio estándar <span aria-hidden="true">↗</span></a>
+          <a class="ie-hd__button ie-hd__button--outline" href="#ie-hd-extras">Solicitar extras <span aria-hidden="true">↓</span></a>
         </div>
       </div>
       <aside class="ie-hd__hero-aside" aria-label="Antes de confirmar tu pedido">
-        <p class="ie-hd__aside-title">Antes de confirmar la entrega</p>
+        <p class="ie-hd__aside-title">Así trabajamos</p>
         <ol>
-          <li><span>01</span><div><strong>Ubicación</strong><p>Destino exacto y accesos comprobados.</p></div></li>
-          <li><span>02</span><div><strong>Modalidad</strong><p>Transporte, descarga y montaje diferenciados.</p></div></li>
-          <li><span>03</span><div><strong>Condiciones</strong><p>Precio y plazo acordados en el pedido.</p></div></li>
+          <li><span>01</span><div><strong>Un transporte base</strong><p>Hasta el punto accesible acordado; sin descarga ni montaje incluidos por defecto.</p></div></li>
+          <li><span>02</span><div><strong>Comodidad a medida</strong><p>Solo añadimos servicios que hayas solicitado y aceptado.</p></div></li>
+          <li><span>03</span><div><strong>Presupuesto cerrado en alcance</strong><p>Servicios, importe total y plazo indicados antes de confirmar.</p></div></li>
         </ol>
       </aside>
     </header>
 
-    <section id="ie-hd-conditions" class="ie-hd__section" aria-labelledby="ie-hd-conditions-title">
-      <div class="ie-hd__section-head">
-        <div>
-          <p class="ie-hd__eyebrow">Transporte, descarga y montaje</p>
-          <h2 id="ie-hd-conditions-title">Tres servicios diferentes. Un alcance claro.</h2>
-        </div>
-        <p>Una tarifa de transporte no implica necesariamente que el material se descargue, se lleve hasta la zona de montaje o quede instalado. Cada partida debe constar expresamente en la oferta aceptada.</p>
-      </div>
 
-      <div class="ie-hd__cards">
-        <article class="ie-hd__card">
-          <p class="ie-hd__index">01 · Transporte</p>
-          <h3>Llegada hasta el punto acordado</h3>
-          <p>Se estudia según peso, volumen, longitud de los elementos, tipo de vehículo, ruta y dirección de entrega. Puede tener un coste independiente según el modelo y el destino.</p>
-          <span class="ie-hd__card-foot">Coste y destino por confirmar</span>
-        </article>
-        <article class="ie-hd__card">
-          <p class="ie-hd__index">02 · Descarga</p>
-          <h3>Bajar y situar la mercancía</h3>
-          <p>Puede requerir grúa, carretilla u otros medios adecuados. Quién los contrata y paga, y dónde se deja la carga, se establece antes de la expedición.</p>
-          <span class="ie-hd__card-foot">Medios y responsable por confirmar</span>
-        </article>
-        <article class="ie-hd__card">
-          <p class="ie-hd__index">03 · Montaje</p>
-          <h3>Ensamblaje e instalación</h3>
-          <p>El montaje profesional es una prestación distinta. Si se contrata, se definen base preparada, accesos, materiales y trabajos incluidos y excluidos.</p>
-          <span class="ie-hd__card-foot">Servicio sujeto a oferta específica</span>
-        </article>
+<section id="ie-hd-conditions" class="ie-hd__section" aria-labelledby="ie-hd-conditions-title">
+  <div class="ie-hd__section-head">
+    <div>
+      <p class="ie-hd__eyebrow">Nuestra modalidad base</p>
+      <h2 id="ie-hd-conditions-title">Transporte estándar: pagas por la entrega, no por servicios que no necesitas</h2>
+    </div>
+    <p>El precio publicado de la casa o caseta no incluye automáticamente el transporte. Lo calculamos según modelo, volumen, destino y accesibilidad, y lo presupuestamos por separado salvo que una oferta indique expresamente lo contrario.</p>
+  </div>
+  <div class="ie-hd__standard">
+    <div class="ie-hd__standard-heading">
+      <p class="ie-hd__eyebrow">Servicio estándar · Con presupuesto previo</p>
+      <h3>Entrega hasta un punto accesible para el vehículo</h3>
+      <p>Coordinamos un transporte adecuado para llevar la mercancía al punto de entrega pactado al que el vehículo pueda acceder legalmente y maniobrar con seguridad. El vehículo no entra en la parcela ni realiza maniobras extraordinarias salvo contratación específica.</p>
+      <p class="ie-hd__standard-note">Se factura el importe de transporte aceptado antes de la expedición. El coste depende de la mercancía y la dirección; no publicamos una tarifa fija que después genere sorpresas.</p>
+    </div>
+    <div class="ie-hd__standard-lists">
+      <div>
+        <h4>Qué contempla</h4>
+        <ul>
+          <li>Planificación del transporte del pedido contratado.</li>
+          <li>Desplazamiento al punto de entrega acordado y accesible.</li>
+          <li>Coordinación de la llegada en la franja comunicada.</li>
+          <li>Documentación de entrega e identificación de bultos.</li>
+        </ul>
       </div>
-      <p class="ie-hd__notice">Importante: no afirmamos que el transporte, la descarga o el montaje estén incluidos en todos los precios publicados. La documentación de cada modelo y el presupuesto confirmado determinan las partidas contratadas, sin perjuicio de los derechos legales aplicables.</p>
-    </section>
+      <div>
+        <h4>Qué no incluye</h4>
+        <ul>
+          <li>Descarga, grúa, carretilla o personal de descarga.</li>
+          <li>Entrada a finca, traslado interior o colocación de piezas.</li>
+          <li>Montaje, anclajes, cimentación y acondicionamiento.</li>
+          <li>Permisos especiales, custodia, esperas extraordinarias y entregas repetidas.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="ie-hd__notice">La descarga de una carga pesada exige medios y personal adecuados. Si no contratas la descarga con nosotros, debes disponer de ellos en el punto acordado y coordinar la operación de forma segura con el transportista. Si no es viable, te ofreceremos antes del envío una modalidad adicional presupuestada. No realizamos descargas inseguras.</p>
+</section>
+
+<section id="ie-hd-extras" class="ie-hd__section" aria-labelledby="ie-hd-extras-title">
+  <div class="ie-hd__section-head">
+    <div>
+      <p class="ie-hd__eyebrow">Más comodidad, bajo presupuesto</p>
+      <h2 id="ie-hd-extras-title">Personaliza tu entrega solo con los servicios que necesitas</h2>
+    </div>
+    <p>Podemos coordinar soluciones adicionales cuando sean técnicamente viables y estén disponibles en tu zona. Cada servicio tiene un alcance y un precio propios: se contrata y se paga únicamente si lo aceptas.</p>
+  </div>
+  <div class="ie-hd__extras">
+    <article><span>01 · Descarga</span><h3>Camión con grúa o medios de elevación</h3><p>Cuando peso, dimensiones y emplazamiento lo permitan, presupuestamos la descarga con el medio adecuado y su operador.</p></article>
+    <article><span>02 · Acceso especial</span><h3>Vehículo adaptado y entrega complicada</h3><p>Calles estrechas, restricciones de circulación o puntos de entrega alejados pueden requerir otra ruta, transbordo o vehículo.</p></article>
+    <article><span>03 · Colocación</span><h3>Traslado hasta la zona de acopio</h3><p>Si necesitas llevar el material desde el punto de descarga hasta una ubicación concreta, evaluamos recorrido, medios y seguridad.</p></article>
+    <article><span>04 · Montaje</span><h3>Instalación profesional</h3><p>Se contrata aparte, con base preparada, prestaciones y exclusiones definidas. No forma parte del transporte estándar.</p></article>
+    <article><span>05 · Coordinación especial</span><h3>Fechas, permisos o medios auxiliares</h3><p>Podemos estudiar una ventana específica, ocupación de vía o medios adicionales, sujetos a autorización y disponibilidad.</p></article>
+    <article><span>06 · Reprogramación</span><h3>Segundo envío o almacenaje solicitado</h3><p>Si necesitas modificar una entrega ya confirmada, evaluaremos los costes adicionales atribuibles al cambio y te pediremos aceptación previa.</p></article>
+  </div>
+  <div class="ie-hd__extra-rule">
+    <strong>Una regla sencilla: ningún extra sin aprobación.</strong>
+    <p>Identificamos qué se añade, por qué es necesario y cuánto cuesta —impuestos aplicables incluidos— antes de reservarlo. No cargaremos servicios opcionales que no hayas solicitado o aceptado. Si el cambio o la incidencia es imputable a IDEAS EXTERIORES, actuaremos conforme al contrato y a la normativa aplicable, sin trasladarte costes que no correspondan.</p>
+  </div>
+</section>
 
     <section id="ie-hd-checklist" class="ie-hd__section ie-hd__section--checklist" aria-labelledby="ie-hd-checklist-title">
       <div class="ie-hd__section-head">
@@ -73,16 +103,16 @@
           <p class="ie-hd__eyebrow">Antes de programar la llegada</p>
           <h2 id="ie-hd-checklist-title">Qué necesitamos saber de tu parcela</h2>
         </div>
-        <p>Con estos datos podemos valorar si la descarga estándar es viable o si harán falta medios o una coordinación diferente.</p>
+        <p>Necesitamos validar estos datos antes de contratar el transporte. Así evitamos desplazamientos inviables, costes imprevistos y maniobras peligrosas.</p>
       </div>
       <div class="ie-hd__check-grid">
-        <article><span>01</span><h3>Dirección y código postal</h3><p>Municipio, punto de acceso y lugar previsto para la entrega, con referencias si la finca es difícil de localizar.</p></article>
-        <article><span>02</span><h3>Accesos y maniobra</h3><p>Anchuras, giros, pendiente, firme, caminos, restricciones de tráfico y obstáculos aéreos.</p></article>
-        <article><span>03</span><h3>Zona de descarga</h3><p>Espacio disponible para el vehículo, medios de elevación, lugar de acopio y protección del material.</p></article>
-        <article><span>04</span><h3>Obra preparada</h3><p>Estado de cimentación, base o solera y disponibilidad del equipo de montaje, si está incluido.</p></article>
+        <article><span>01</span><h3>Destino y contacto responsable</h3><p>Dirección completa, código postal y persona que podrá atender al transportista y recibir la mercancía.</p></article>
+        <article><span>02</span><h3>Acceso real para el camión</h3><p>Anchura y giros, pendientes, firme, restricciones, árboles, cables y posibilidad de parada legal.</p></article>
+        <article><span>03</span><h3>Descarga segura prevista</h3><p>Medios de descarga contratados o aportados por el cliente, personal competente y ubicación de acopio.</p></article>
+        <article><span>04</span><h3>Base y accesos interiores</h3><p>Base preparada cuando haya montaje contratado, paso libre y superficie apta para los medios que correspondan.</p></article>
       </div>
       <div class="ie-hd__check-tip">
-        <div><h3>Unas fotografías pueden evitar muchos imprevistos</h3><p>Antes de aceptar fecha y coste, resulta útil enviar imágenes de la calle de acceso, la entrada a la parcela y el punto previsto de descarga. Las medidas y autorizaciones necesarias se contrastarán según el vehículo y la carga.</p></div>
+        <div><h3>Envíanos fotos y medidas antes de presupuestar</h3><p>Para confirmar viabilidad y precio pediremos fotografías del acceso, la entrada, el punto de entrega y las dimensiones críticas. Si se ocultan obstáculos o cambian los datos comunicados, cualquier servicio extraordinario necesario se volverá a presupuestar antes de realizarse, conforme a las condiciones aceptadas.</p></div>
         <a href="/pages/timber-bases-and-foundations">Ver bases y cimentaciones <span aria-hidden="true">→</span></a>
       </div>
     </section>
@@ -91,24 +121,24 @@
       <div class="ie-hd__section-head">
         <div>
           <p class="ie-hd__eyebrow">Disponibilidad y plazos</p>
-          <h2 id="ie-hd-times-title">Cuándo recibirás tu casa o caseta</h2>
+          <h2 id="ie-hd-times-title">Primero concretamos el pedido. Después confirmamos la fecha</h2>
         </div>
-        <p>El plazo no es único para todas las soluciones. Debe distinguir entre preparación o fabricación, transporte hasta destino y, cuando proceda, montaje.</p>
+        <p>No reservamos un camión sin verificar el destino, la disponibilidad del producto y los servicios contratados. La entrega se programa con un alcance aprobado y una fecha o plazo comunicado.</p>
       </div>
       <div class="ie-hd__timeline">
-        <article><span>01</span><div><h3>Modelo y configuración</h3><p>Identificamos referencia, opciones, cantidad y disponibilidad real.</p></div></article>
-        <article><span>02</span><div><h3>Confirmación de alcance</h3><p>Revisamos dirección, transporte, descarga, servicios y condiciones económicas.</p></div></article>
-        <article><span>03</span><div><h3>Preparación y expedición</h3><p>Se concreta la previsión de producción o preparación y la salida de mercancía.</p></div></article>
-        <article><span>04</span><div><h3>Entrega y, en su caso, montaje</h3><p>Se coordina la ventana de llegada y el receptor, y el montaje se programa según contrato y estado de la obra.</p></div></article>
+        <article><span>01</span><div><h3>Pedido definido</h3><p>Confirmamos modelo, componentes, medidas, disponibilidad y lugar exacto de destino.</p></div></article>
+        <article><span>02</span><div><h3>Presupuesto aceptado</h3><p>Te presentamos el precio total del transporte y los extras elegidos; acordamos la forma y el momento de pago antes de contratar esos servicios.</p></div></article>
+        <article><span>03</span><div><h3>Preparación y planificación</h3><p>Confirmamos el estado del pedido, la viabilidad logística y los medios de descarga disponibles antes de la expedición.</p></div></article>
+        <article><span>04</span><div><h3>Entrega coordinada</h3><p>Comunicamos la cita de entrega; si se ha contratado descarga o montaje, se coordina según su presupuesto particular.</p></div></article>
       </div>
-      <p class="ie-hd__legal">Los plazos comerciales se confirman por pedido. En las compraventas de bienes a consumidores a las que resulte aplicable, el artículo 66 bis del texto refundido de la Ley de Consumidores establece el régimen de entrega y, salvo pacto en contrario, un máximo de 30 días naturales; los proyectos y contratos de obra deben analizarse según su naturaleza. <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555" target="_blank" rel="noopener noreferrer">Consultar la normativa <span aria-hidden="true">↗</span></a>.</p>
+      <p class="ie-hd__legal">Los plazos acordados y los derechos de entrega se respetarán en cada contrato. Para las compraventas de bienes a consumidores que estén sujetas al artículo 66 bis de la ley de consumo, rige la entrega sin demora indebida y, salvo pacto distinto, un plazo máximo de 30 días naturales. Los contratos de obra y las soluciones a medida pueden estar sometidos a regímenes distintos. <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555" target="_blank" rel="noopener noreferrer">Consultar la normativa <span aria-hidden="true">↗</span></a>.</p>
     </section>
 
     <section id="ie-hd-reception" class="ie-hd__reception" aria-labelledby="ie-hd-reception-title">
       <div>
         <p class="ie-hd__eyebrow">Recepción de mercancía</p>
         <h2 id="ie-hd-reception-title">Qué revisar cuando llega el pedido</h2>
-        <p>Conviene que haya una persona autorizada para recibir la carga y que disponga del pedido y de un espacio seguro para revisar los elementos. La comprobación inicial permite documentar mejor cualquier incidencia.</p>
+        <p>El día acordado debe haber una persona identificada para recibir la mercancía y, cuando la descarga no esté contratada con nosotros, los medios y operarios adecuados. Antes de firmar, revisa el estado de la carga en la medida que resulte seguro y posible.</p>
       </div>
       <div class="ie-hd__reception-list">
         <div><span>01</span><p>Comprueba el estado del embalaje y los daños visibles.</p></div>
@@ -117,31 +147,34 @@
         <div><span>04</span><p>Comunica la incidencia por el canal del pedido cuanto antes, conservando pruebas y documentación.</p></div>
       </div>
     </section>
-    <p class="ie-hd__after-note">La falta de anotaciones inmediatas no elimina por sí sola los derechos legales del consumidor. En las compraventas de bienes a consumidores, la transmisión del riesgo está regulada por el artículo 66 ter de la legislación de consumo.</p>
+    <p class="ie-hd__after-note">Una firma sin reservas no elimina por sí sola tus derechos legales. En las compraventas de bienes a consumidores, el riesgo no se traslada automáticamente por la mera llegada del camión: rige la regla de entrega de la posesión material del artículo 66 ter, con sus excepciones legales. La organización de la descarga no altera esos derechos.</p>
 
-    <section class="ie-hd__faq" aria-labelledby="ie-hd-faq-title">
-      <div>
-        <p class="ie-hd__eyebrow">Preguntas frecuentes</p>
-        <h2 id="ie-hd-faq-title">Las dudas más habituales sobre la entrega</h2>
-      </div>
-      <div class="ie-hd__faq-items">
-        <details><summary>¿El transporte está incluido en el precio de la casa o caseta?</summary><p>No se puede asumir. Debe figurar expresamente en la ficha, la oferta o el pedido. El coste se define según modelo, destino, carga y servicios de logística contratados.</p></details>
-        <details><summary>¿La descarga está incluida?</summary><p>Puede contratarse por separado. La oferta debe indicar quién aporta el medio de descarga, quién asume su coste y cuál es el punto en el que se depositará la mercancía.</p></details>
-        <details><summary>¿Entregáis en toda España?</summary><p>España peninsular es el mercado operativo prioritario. La disponibilidad para cada dirección, así como las condiciones aplicables en islas u otros territorios, deben consultarse antes de aceptar el pedido.</p></details>
-        <details><summary>¿Cuánto tarda una casa prefabricada de madera?</summary><p>Depende del modelo y de la configuración, disponibilidad, fabricación, transporte y montaje contratado. No damos un plazo universal: se concreta en la propuesta de cada pedido.</p></details>
-        <details><summary>¿Qué pasa si el camión no puede acceder a la parcela?</summary><p>Hay que valorar otras opciones de vehículo, punto de descarga o medios auxiliares. Cualquier coste adicional y su responsable deben quedar acordados antes de ejecutar el servicio.</p></details>
-        <details><summary>¿Qué debo hacer si llega un bulto dañado o falta material?</summary><p>Fotografía la incidencia, detalla los daños o faltas en la recepción cuando sea posible y comunícalo sin demora indicando referencia y pedido. Esto facilita la gestión y no restringe tus derechos legales.</p></details>
-      </div>
-    </section>
+
+<section class="ie-hd__faq" aria-labelledby="ie-hd-faq-title">
+  <div>
+    <p class="ie-hd__eyebrow">Preguntas frecuentes</p>
+    <h2 id="ie-hd-faq-title">Condiciones claras antes de contratar</h2>
+  </div>
+  <div class="ie-hd__faq-items">
+    <details><summary>¿Está incluido el transporte en el precio de la casa o caseta?</summary><p>Como norma comercial, lo presupuestamos por separado: no está incluido salvo que la ficha u oferta aceptada lo indique expresamente. Conocerás el precio completo y los impuestos aplicables antes de confirmar la compra.</p></details>
+    <details><summary>¿Qué recibo con el transporte estándar?</summary><p>El traslado hasta el punto pactado, accesible legalmente para el vehículo. No incorpora descarga, entrada en parcela, grúa ni montaje. El cliente debe disponer de medios seguros de descarga si no contrata ese servicio con nosotros.</p></details>
+    <details><summary>¿Puedo contratar la descarga con grúa y la colocación?</summary><p>Sí, cuando sea viable. Valoramos el peso, el acceso, el espacio y el medio adecuado. Te entregamos un presupuesto desglosado y solo lo gestionamos después de aceptarlo.</p></details>
+    <details><summary>¿Puedo solicitar montaje profesional?</summary><p>Sí, mediante presupuesto independiente, condicionado a un emplazamiento apto, base preparada y disponibilidad. No confundimos transporte con instalación.</p></details>
+    <details><summary>¿Qué pasa si cambia la dirección o la fecha después de confirmarla?</summary><p>Comunícalo cuanto antes. Comprobaremos si puede modificarse la reserva y, cuando existan nuevos gastos atribuibles al cambio, solicitaremos tu aprobación de un presupuesto adicional antes de realizarlos. Los cambios por causas imputables a la empresa no generan cargos injustificados.</p></details>
+    <details><summary>¿Y si el camión no puede acceder?</summary><p>Si el acceso comunicado resulta inviable, no realizaremos maniobras inseguras. Estudiaremos otro punto de entrega, vehículo o medio de descarga y te presentaremos las condiciones económicas antes de cualquier nuevo servicio. Se respetará lo ya contratado y la normativa aplicable.</p></details>
+    <details><summary>¿Puedo elegir entrega urgente, en islas o fuera de la península?</summary><p>Las rutas especiales y los destinos fuera de nuestro ámbito operativo habitual se estudian caso por caso. Solo confirmamos fechas y servicios cuando exista disponibilidad y un presupuesto aceptado.</p></details>
+    <details><summary>¿Qué ocurre si falta material o llega dañado?</summary><p>Documenta la incidencia con fotografías y notifícala indicando el pedido. Revisaremos la entrega y las soluciones que procedan. Los derechos del consumidor por daños o falta de conformidad se mantienen.</p></details>
+  </div>
+</section>
 
     <section class="ie-hd__closing" aria-labelledby="ie-hd-closing-title">
       <div>
         <p class="ie-hd__eyebrow">Siguiente paso</p>
-        <h2 id="ie-hd-closing-title">Confirma la entrega antes de cerrar tu presupuesto</h2>
-        <p>Indícanos el modelo, el código postal y cómo se accede a la parcela. Podremos revisar el transporte, la descarga y el montaje que correspondan a tu caso.</p>
+        <h2 id="ie-hd-closing-title">Tu casa, tu destino, los servicios que realmente necesitas</h2>
+        <p>Pídenos primero el precio del transporte estándar. Si prefieres olvidarte de la descarga, la grúa o la instalación, añadiremos esos servicios al presupuesto con detalle y sin contratarlos sin tu aprobación.</p>
       </div>
       <div class="ie-hd__closing-actions">
-        <a class="ie-hd__button ie-hd__button--light" href="/pages/contact-ideas-exteriores">Consultar transporte para mi modelo <span aria-hidden="true">↗</span></a>
+        <a class="ie-hd__button ie-hd__button--light" href="/pages/contact-ideas-exteriores">Solicitar presupuesto de transporte y extras <span aria-hidden="true">↗</span></a>
         <a href="/pages/secure-shipping-logistics-spain">Ver logística y accesos <span aria-hidden="true">→</span></a>
         <a href="/pages/warranty-delivery-payment-options">Garantía, entrega y pagos <span aria-hidden="true">→</span></a>
       </div>
