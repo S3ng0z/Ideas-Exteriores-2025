@@ -1,0 +1,12 @@
+/* Transporte y entrega casas/casetas: template exclusivo OS 2.0. */
+{
+  "sections": {
+    "main": {
+      "type": "ie-home-delivery",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
