@@ -1,0 +1,136 @@
+{{ 'ie-house-warranties.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-hw" aria-labelledby="ie-hw-title">
+  <div class="ie-hw__inner">
+    {% render 'ie-breadcrumb',
+      breadcrumb_object: page,
+      current_title: page.title,
+      class_name: 'ie-hw__breadcrumb',
+      fallback_1_label: 'Información',
+      fallback_1_link: '/pages/warranty-delivery-payment-options'
+    %}
+
+    <header class="ie-hw__hero">
+      <div class="ie-hw__hero-copy">
+        <p class="ie-hw__eyebrow">Información · Garantías y posventa</p>
+        <h1 id="ie-hw-title">Garantías de nuestras casas de madera y prefabricadas</h1>
+        <p class="ie-hw__lead">Una casa de madera, una vivienda prefabricada y un kit de construcción no tienen necesariamente el mismo régimen de garantías. Te explicamos qué derechos pueden corresponderte, qué debemos documentar antes de contratar y cómo comunicar una incidencia.</p>
+        <div class="ie-hw__actions">
+          <a class="ie-hw__button ie-hw__button--primary" href="#ie-hw-tipos">Entender las garantías <span aria-hidden="true">↘</span></a>
+          <a class="ie-hw__button ie-hw__button--secondary" href="#ie-hw-incidencias">Cómo solicitar asistencia <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <aside class="ie-hw__summary" aria-label="Tres principios de garantía">
+        <p class="ie-hw__summary-heading">Tres principios importantes</p>
+        <ol>
+          <li><span>01</span><div><strong>Derechos legales</strong><p>Se aplican cuando concurren los requisitos previstos por la normativa.</p></div></li>
+          <li><span>02</span><div><strong>Alcance por contrato</strong><p>Producto, montaje, responsables y prestaciones deben quedar identificados.</p></div></li>
+          <li><span>03</span><div><strong>Garantías adicionales</strong><p>Solo se anuncian cuando existen condiciones expresas y documentadas.</p></div></li>
+        </ol>
+      </aside>
+    </header>
+
+    <section class="ie-hw__types" id="ie-hw-tipos" aria-labelledby="ie-hw-types-title">
+      <div class="ie-hw__heading">
+        <div>
+          <p class="ie-hw__eyebrow">Marco de cobertura</p>
+          <h2 id="ie-hw-types-title">Qué garantía puede corresponder a tu proyecto</h2>
+        </div>
+        <p>No existe una cifra universal para todas las construcciones de madera. El régimen aplicable depende de si compras un bien, contratas una obra de edificación o recibes una garantía comercial adicional.</p>
+      </div>
+      <div class="ie-hw__cards">
+        <article class="ie-hw__card">
+          <p class="ie-hw__card-index">01 · Compraventa de bienes</p>
+          <h3>Garantía legal de conformidad</h3>
+          <p>En las compraventas de bienes a consumidores sujetas a la normativa española, el empresario responde de las faltas de conformidad que se manifiesten en los <strong>tres años siguientes a la entrega</strong>, en los términos de la ley. La clasificación del contrato y la naturaleza del suministro deben analizarse en cada caso.</p>
+          <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-20555" target="_blank" rel="noopener noreferrer">Consultar la ley de consumidores <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="ie-hw__card">
+          <p class="ie-hw__card-index">02 · Edificación</p>
+          <h3>Responsabilidades de la LOE</h3>
+          <p>Cuando una obra está dentro del ámbito de la Ley de Ordenación de la Edificación, su artículo 17 establece responsabilidades por determinados daños materiales: <strong>un año</strong> para defectos de ejecución en acabados, <strong>tres años</strong> para defectos que afecten a la habitabilidad y <strong>diez años</strong> para defectos estructurales que comprometan la resistencia y estabilidad. No se aplican automáticamente a todos los kits o casetas.</p>
+          <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1999-21567" target="_blank" rel="noopener noreferrer">Consultar la Ley de Edificación <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="ie-hw__card">
+          <p class="ie-hw__card-index">03 · Cobertura adicional</p>
+          <h3>Garantías comerciales y del fabricante</h3>
+          <p>Si un modelo, componente o fabricante ofrece una garantía adicional, su duración, beneficiarios, alcance, condiciones y procedimiento deben constar expresamente. Estas garantías son adicionales y <strong>no sustituyen ni limitan los derechos legales</strong> que correspondan.</p>
+          <a href="/pages/contact-ideas-exteriores">Consultar mi modelo <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="ie-hw__legal-note">Los plazos de responsabilidad de la LOE se computan desde la recepción de la obra sin reservas o desde su subsanación, según corresponda. Su régimen, los agentes responsables y las garantías exigibles deben comprobarse para la actuación concreta. Esta página es informativa y no reemplaza los documentos contractuales ni la legislación aplicable.</p>
+    </section>
+
+    <section class="ie-hw__documentation" id="ie-hw-documentos" aria-labelledby="ie-hw-documentation-title">
+      <div class="ie-hw__heading">
+        <div>
+          <p class="ie-hw__eyebrow">Antes de confirmar el pedido</p>
+          <h2 id="ie-hw-documentation-title">Una cobertura clara empieza con documentación clara</h2>
+        </div>
+        <p>Antes de aceptar el presupuesto, conviene comprobar qué se entrega, quién interviene y qué documentos describen el producto y su montaje.</p>
+      </div>
+      <div class="ie-hw__checks">
+        <article><span>01</span><h3>Modelo y configuración</h3><p>Identificación del modelo, componentes, acabados y elementos incluidos y excluidos.</p></article>
+        <article><span>02</span><h3>Suministro e instalación</h3><p>Quién vende, fabrica, transporta, descarga, monta y ejecuta la base, según lo contratado.</p></article>
+        <article><span>03</span><h3>Condiciones de garantía</h3><p>Documento específico que identifique las coberturas adicionales, si las hay, y el canal de asistencia.</p></article>
+        <article><span>04</span><h3>Uso y mantenimiento</h3><p>Instrucciones de protección de la madera, ventilación, drenaje, revisiones y conservación.</p></article>
+      </div>
+      <div class="ie-hw__context">
+        <h3>La madera es un material natural</h3>
+        <p>Puede experimentar variaciones de tono, movimientos dimensionales y fisuras superficiales. Esto no permite descartar automáticamente una reclamación: debe determinarse si existe una falta de conformidad o un defecto cubierto, teniendo en cuenta el estado del material, el montaje, la exposición y la documentación aplicable.</p>
+        <a href="/pages/wood-maintenance-repair">Ver mantenimiento y reparación <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="ie-hw__process" id="ie-hw-incidencias" aria-labelledby="ie-hw-process-title">
+      <div class="ie-hw__process-intro">
+        <p class="ie-hw__eyebrow">Asistencia y posventa</p>
+        <h2 id="ie-hw-process-title">Cómo comunicar una incidencia</h2>
+        <p>Cuanta más información tengamos desde el principio, más fácil será revisar la incidencia e identificar el responsable y la solución que corresponda.</p>
+        <a class="ie-hw__text-link" href="/pages/contact-ideas-exteriores">Contactar con IDEAS EXTERIORES <span aria-hidden="true">↗</span></a>
+      </div>
+      <ol class="ie-hw__process-list">
+        <li><span>01</span><div><h3>Identifica el pedido</h3><p>Indica el modelo, número de pedido o presupuesto y la fecha de entrega o recepción, si la conoces.</p></div></li>
+        <li><span>02</span><div><h3>Describe lo ocurrido</h3><p>Explica qué sucede, cuándo se detectó y cómo afecta al uso. Adjunta fotografías y documentación disponible.</p></div></li>
+        <li><span>03</span><div><h3>Revisamos el alcance</h3><p>Se contrasta el suministro, el montaje, las condiciones aplicables y el posible origen del problema.</p></div></li>
+        <li><span>04</span><div><h3>Definimos el siguiente paso</h3><p>Te indicamos qué información adicional o actuación corresponde, respetando los derechos legales aplicables.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="ie-hw__faq" aria-labelledby="ie-hw-faq-title">
+      <div>
+        <p class="ie-hw__eyebrow">Preguntas habituales</p>
+        <h2 id="ie-hw-faq-title">Respuestas para decidir con tranquilidad</h2>
+      </div>
+      <div class="ie-hw__faq-items">
+        <details><summary>¿Todas las casas prefabricadas tienen diez años de garantía?</summary><p>No de forma automática. La LOE contempla responsabilidades durante diez años por determinados daños estructurales en edificaciones a las que resulte aplicable; no es una garantía general de diez años sobre cada material, elemento o kit.</p></details>
+        <details><summary>¿Qué ocurre si compro el kit y contrato el montaje por mi cuenta?</summary><p>Es necesario distinguir el suministro del kit, el trabajo de instalación y las responsabilidades de los agentes que intervengan. Los derechos por falta de conformidad que correspondan al suministro no desaparecen por el mero hecho de contratar un instalador independiente.</p></details>
+        <details><summary>¿Los movimientos o pequeñas grietas de la madera quedan excluidos?</summary><p>La madera puede moverse y presentar variaciones naturales. Para decidir si hay defecto cubierto debe valorarse la gravedad, el comportamiento real, el uso previsto y la documentación técnica o contractual. No existe una exclusión automática de toda incidencia relacionada con la madera.</p></details>
+        <details><summary>¿Qué documento identifica las condiciones de mi casa?</summary><p>La oferta y el contrato aceptados, la documentación de recepción o entrega y, cuando proceda, la documentación técnica, las garantías adicionales y las instrucciones de conservación. Puedes solicitarlos antes de confirmar el encargo.</p></details>
+        <details><summary>¿El mantenimiento elimina mis derechos de garantía?</summary><p>No. Un mantenimiento inadecuado puede ser relevante al estudiar el origen de determinados daños, pero no permite eliminar sin más los derechos legales por faltas de conformidad o defectos imputables a los responsables.</p></details>
+      </div>
+    </section>
+
+    <section class="ie-hw__closing" aria-labelledby="ie-hw-closing-title">
+      <div>
+        <p class="ie-hw__eyebrow">Condiciones transparentes</p>
+        <h2 id="ie-hw-closing-title">Conoce la cobertura aplicable antes de contratar</h2>
+        <p>Indícanos el modelo y el alcance que te interesa. Podremos identificar qué documentación debe acompañar a tu oferta y a quién dirigir una consulta posventa.</p>
+      </div>
+      <div class="ie-hw__closing-actions">
+        <a class="ie-hw__button ie-hw__button--light" href="/pages/contact-ideas-exteriores">Consultar garantías de mi proyecto <span aria-hidden="true">↗</span></a>
+        <a class="ie-hw__closing-link" href="/pages/warranty-delivery-payment-options">Ver garantía, entrega y formas de pago <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IE · Garantías casas",
+  "tag": "section",
+  "class": "ie-house-warranties-section",
+  "settings": [],
+  "presets": [{"name": "IE · Garantías casas"}]
+}
+{% endschema %}
