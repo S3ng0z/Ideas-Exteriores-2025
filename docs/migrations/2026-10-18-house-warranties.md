@@ -23,3 +23,11 @@ Fuentes directivas: 01 Business Brief; 03 Arquitectura y Sitemap; 05 Catálogo /
 Comprobar sintaxis schema y JSON; referencias de archivos, anchuras móvil y escritorio, CTA, accesibilidad de details y ausencia de claims no aprobados. En Shopify, comprobar templateSuffix `house-warranties` y publicación de Page. Integración GitHub no acredita sincronización del tema publicado: QA visual/Theme Check y consulta HTTP independiente pendientes hasta su comprobación.
 
 Rollback: despublicar la nueva página o reasignar otra plantilla en Shopify; revertir la PR sin alterar productos ni catálogo.
+
+## Revisión comercial y jurídica · 18-10-2026
+- Política IDEAS EXTERIORES: suministros estándar por defecto, montaje y extras solo cuando figuren en oferta; no se asume gratuitamente trabajo ajeno.
+- Matriz: suministro sin montaje / suministro y montaje contratado / obra sometida a LOE. No usar el contrato para desplazar responsabilidades legales del vendedor, subcontratista bajo nuestra responsabilidad ni agentes de edificación.
+- Servicios no cubiertos, personalización, mantenimiento ordinario o reparación de daños ajenos: presupuesto y aceptación antes de ejecución. Diagnóstico remoto primero, inspección proporcional después; ninguna tasa previa como obstáculo al ejercicio de garantía legal.
+- No rechazar automáticamente reclamaciones por fisuras, uso, montaje de terceros o aviso posterior; determinar causalidad y responsabilidad. No presentar 24/48h como caducidad.
+- No se promete cobertura comercial adicional de 5 o 10 años sin documento propio específico.
+- Control pendiente: revisión por asesoría jurídica de cláusulas definitivas de ventas B2C, proyectos de edificación y transacciones B2B; verificar contenido renderizado en tema Shopify activo.
