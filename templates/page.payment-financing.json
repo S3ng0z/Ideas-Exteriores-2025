@@ -1,0 +1,12 @@
+/* Plantilla OS 2.0 exclusiva de pagos y financiación. */
+{
+  "sections": {
+    "main": {
+      "type": "ie-payment-financing",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
