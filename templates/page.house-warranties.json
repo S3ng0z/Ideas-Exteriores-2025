@@ -1,0 +1,12 @@
+/* Garantías de casas de madera y prefabricadas · plantilla Shopify OS 2.0 exclusiva. */
+{
+  "sections": {
+    "main": {
+      "type": "ie-house-warranties",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
