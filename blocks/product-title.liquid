@@ -5,7 +5,23 @@
   {% assign product_title = '<p>' | append: text | append: '</p>' %}
   {% render 'text', fallback_text: product_title, block: block %}
 {% elsif block.settings.product != blank %}
-  {% assign product_title = '<p>' | append: block.settings.product.title | append: '</p>' %}
+  {% liquid
+    assign display_title = block.settings.product.title
+    if request.page_type == 'index'
+      case block.settings.product.handle
+        when 'home-sip-alice-117-m-terraza'
+          assign display_title = 'HOME-SIP ALICE · 117 m²'
+        when 'home-sip-valeria-97-m-terraza'
+          assign display_title = 'HOME-SIP VALERIA · 97 m²'
+        when 'home-sip-nora-89m-terraza'
+          assign display_title = 'HOME-SIP NORA · 89 m²'
+        when 'home-sip-naiara-56-m-terraza'
+          assign display_title = 'HOME-SIP NAIARA · 56 m²'
+      endcase
+    endif
+    assign display_title = display_title | escape
+    assign product_title = '<p>' | append: display_title | append: '</p>'
+  %}
   {% render 'text', fallback_text: product_title, block: block %}
 {% endif %}
 
