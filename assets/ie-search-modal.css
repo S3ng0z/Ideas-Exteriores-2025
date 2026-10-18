@@ -364,3 +364,48 @@
     height: 48px;
   }
 }
+
+
+/* Disable inherited card hover transforms and layout expansion.
+   The thumbnail alone receives a restrained zoom on hover-capable devices. */
+.search-modal .predictive-search-results__wrapper-products .predictive-search-results__card--product,
+.search-modal .predictive-search-results__wrapper-products .predictive-search-results__card--product:is(:hover, :focus-within, [aria-selected='true'].keyboard-focus),
+.search-modal .predictive-search-results__card--product .resource-card,
+.search-modal .predictive-search-results__card--product .resource-card:is(:hover, :focus-visible),
+.search-modal .ie-search-pages__item:is(:hover, :focus-within, [aria-selected='true'].keyboard-focus) {
+  transform: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.search-modal .predictive-search-results__wrapper-products .predictive-search-results__card--product:is(:hover, :focus-within, [aria-selected='true'].keyboard-focus) {
+  padding: 8px 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+.search-modal .predictive-search-results__card--product .resource-card__media {
+  overflow: hidden;
+}
+.search-modal .predictive-search-results__card--product .resource-card__image,
+.search-modal .predictive-search-results__card--product .resource-card__image--secondary {
+  transition: none;
+}
+.search-modal .predictive-search-results__card--product .resource-card {
+  --resource-card-secondary-image-opacity: 0;
+}
+.search-modal .predictive-search-results__card--product .resource-card:has(.resource-card__image--secondary):is(:hover, :focus) {
+  --resource-card-secondary-image-opacity: 0;
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .search-modal .predictive-search-results__card--product .resource-card__image:not(.resource-card__image--secondary) {
+    transition: transform 220ms ease;
+  }
+  .search-modal .predictive-search-results__card--product .resource-card:hover .resource-card__image:not(.resource-card__image--secondary) {
+    transform: scale(1.035);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .search-modal .predictive-search-results__card--product .resource-card__image {
+    transition: none !important;
+    transform: none !important;
+  }
+}
