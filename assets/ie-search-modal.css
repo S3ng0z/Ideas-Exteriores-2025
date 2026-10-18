@@ -435,3 +435,32 @@
     font-size: .72rem;
   }
 }
+
+
+/* Unified small one-line titles for products and pages, overriding theme card typography. */
+.search-modal .predictive-search-results__card--product .resource-card__title,
+.search-modal .predictive-search-results__card--product .resource-card__title.paragraph,
+.search-modal .ie-search-pages__copy strong {
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .73rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0;
+  text-transform: none;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  overflow-wrap: normal;
+  -webkit-line-clamp: unset;
+}
+@media (max-width: 749px) {
+  .search-modal .predictive-search-results__card--product .resource-card__title,
+  .search-modal .predictive-search-results__card--product .resource-card__title.paragraph,
+  .search-modal .ie-search-pages__copy strong {
+    font-size: .72rem !important;
+  }
+}
