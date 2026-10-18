@@ -1,0 +1,230 @@
+/* Shipping policy · Ideas Exteriores
+   Presentation only. The legal source of truth remains Shopify Settings > Policies.
+   Loaded exclusively on the native shipping-policy route from layout/theme.liquid. */
+
+#MainContent {
+  background: #f9f8f6;
+}
+
+.shopify-policy__container {
+  box-sizing: border-box;
+  width: min(calc(100% - 64px), 980px);
+  max-width: none !important;
+  margin-inline: auto;
+  padding: 42px 0 104px;
+  color: #1f231e;
+}
+
+.shopify-policy__title {
+  margin: 0;
+  padding: 20px 0 42px;
+  border-bottom: 1px solid rgba(31, 35, 30, .16);
+  text-align: left !important;
+}
+
+.shopify-policy__title h1 {
+  max-width: 900px;
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(2.65rem, 5vw, 4.6rem) !important;
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.025em;
+  text-transform: none;
+  text-wrap: balance;
+}
+
+.shopify-policy__body {
+  padding-top: 42px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.72;
+  color: rgba(31, 35, 30, .84);
+}
+
+.shopify-policy__body > :first-child {
+  margin-top: 0;
+}
+
+.shopify-policy__body p,
+.shopify-policy__body li,
+.shopify-policy__body dd {
+  font-family: inherit;
+}
+
+.shopify-policy__body p {
+  margin: 0 0 18px;
+}
+
+.shopify-policy__body h2 {
+  margin: 58px 0 22px;
+  padding-top: 38px;
+  border-top: 1px solid rgba(31, 35, 30, .14);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.85rem, 3vw, 2.55rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -.018em;
+  text-transform: none;
+  text-wrap: pretty;
+  color: #1f231e;
+}
+
+.shopify-policy__body h3 {
+  margin: 31px 0 10px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: 1.03rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #1f231e;
+}
+
+.shopify-policy__body ul,
+.shopify-policy__body ol {
+  margin: 0 0 22px;
+  padding-left: 1.35rem;
+}
+
+.shopify-policy__body li {
+  margin: 8px 0;
+}
+
+.shopify-policy__body strong {
+  color: #1f231e;
+  font-weight: 650;
+}
+
+.shopify-policy__body a {
+  color: #566236;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.shopify-policy__body a:hover {
+  color: #414c28;
+}
+
+.shopify-policy__body a:focus-visible {
+  outline: 2px solid #566236;
+  outline-offset: 4px;
+}
+
+.ie-shipping__updated {
+  margin-bottom: 28px !important;
+  font-size: .86rem;
+  color: rgba(31, 35, 30, .66);
+}
+
+.ie-shipping__summary {
+  margin: 0 0 42px;
+  padding: clamp(26px, 4vw, 40px);
+  border: 1px solid rgba(31, 35, 30, .16);
+  border-top: 2px solid #566236;
+  background: #efeee9;
+}
+
+.ie-shipping__eyebrow {
+  margin: 0 0 20px !important;
+  color: #566236;
+  font-size: .74rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.ie-shipping__summary dl {
+  margin: 0;
+}
+
+.ie-shipping__summary dl > div {
+  display: grid;
+  grid-template-columns: minmax(150px, .34fr) minmax(0, 1fr);
+  gap: 24px;
+  padding: 15px 0;
+  border-top: 1px solid rgba(31, 35, 30, .12);
+}
+
+.ie-shipping__summary dl > div:first-child {
+  border-top-color: #1f231e;
+}
+
+.ie-shipping__summary dt {
+  color: #1f231e;
+  font-size: .84rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.ie-shipping__summary dd {
+  margin: 0;
+  font-size: .93rem;
+  line-height: 1.58;
+  color: rgba(31, 35, 30, .78);
+}
+
+.ie-shipping__closing {
+  margin-top: 60px;
+  padding: 28px 30px;
+  border-left: 3px solid #566236;
+  background: #efeee9;
+}
+
+.ie-shipping__closing p {
+  margin: 0;
+}
+
+@media screen and (max-width: 749px) {
+  .shopify-policy__container {
+    width: calc(100% - 32px);
+    padding: 20px 0 68px;
+  }
+
+  .shopify-policy__title {
+    padding: 16px 0 30px;
+  }
+
+  .shopify-policy__title h1 {
+    font-size: clamp(2.2rem, 11vw, 3.15rem) !important;
+    line-height: 1;
+  }
+
+  .shopify-policy__body {
+    padding-top: 30px;
+    font-size: .98rem;
+    line-height: 1.66;
+  }
+
+  .shopify-policy__body h2 {
+    margin-top: 46px;
+    padding-top: 30px;
+    font-size: clamp(1.72rem, 8vw, 2.25rem);
+  }
+
+  .shopify-policy__body h3 {
+    margin-top: 27px;
+    font-size: 1rem;
+  }
+
+  .ie-shipping__summary {
+    margin-bottom: 34px;
+    padding: 22px 20px;
+  }
+
+  .ie-shipping__summary dl > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 14px 0;
+  }
+
+  .ie-shipping__closing {
+    margin-top: 48px;
+    padding: 24px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shopify-policy__body a {
+    scroll-behavior: auto;
+  }
+}
