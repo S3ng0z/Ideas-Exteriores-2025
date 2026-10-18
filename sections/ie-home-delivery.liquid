@@ -11,8 +11,10 @@
       breadcrumb_object: page,
       current_title: page.title,
       class_name: 'ie-hd__breadcrumb',
-      fallback_1_label: 'Envío y logística',
-      fallback_1_link: '/pages/secure-shipping-logistics-spain'
+      fallback_1_label: 'Servicios',
+      fallback_1_link: '/pages/services',
+      fallback_2_label: 'Garantía, entrega y formas de pago',
+      fallback_2_link: '/pages/warranty-delivery-payment-options'
     %}
 
     <header class="ie-hd__hero">
@@ -34,6 +36,8 @@
         </ol>
       </aside>
     </header>
+
+    {% render 'ie-policy-nav', current_key: 'delivery' %}
 
 
 <section id="ie-hd-conditions" class="ie-hd__section" aria-labelledby="ie-hd-conditions-title">

@@ -1,0 +1,12 @@
+/* Navegación transversal para las cuatro páginas de condiciones, aislada del theme. */
+.ie-policy-nav{box-sizing:border-box;margin:clamp(22px,3vw,40px) 0 clamp(40px,5vw,72px);padding:clamp(18px,2.5vw,28px);border:1px solid rgba(31,35,30,.14);background:#efeee9;color:#1f231e;font-family:Manrope,var(--font-body--family),Arial,sans-serif}
+.ie-policy-nav__eyebrow{margin:0 0 16px;color:#566236;font-size:.73rem;line-height:1.4;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.ie-policy-nav__links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.ie-policy-nav__link{box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 10px;border:1px solid rgba(31,35,30,.15);background:#f9f8f6;color:#1f231e;text-align:center;text-decoration:none;font-size:.83rem;font-weight:600;line-height:1.4;transition:background-color .18s ease,border-color .18s ease}
+.ie-policy-nav__link span{font-size:.69rem;font-weight:700;color:#566236}
+.ie-policy-nav__link:hover,.ie-policy-nav__link:focus-visible{background:#fff;border-color:#566236;outline-offset:3px}
+.ie-policy-nav__link.is-current{background:#566236;border-color:#566236;color:#fff}
+.ie-policy-nav__link.is-current span{color:#fff}
+@media(max-width:990px){.ie-policy-nav__links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){.ie-policy-nav{padding:16px;margin:24px 0 44px}.ie-policy-nav__links{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.ie-policy-nav__link{min-height:58px;padding:10px 8px;gap:6px;font-size:.74rem}.ie-policy-nav__link span{font-size:.65rem}}
+@media(prefers-reduced-motion:reduce){.ie-policy-nav__link{transition:none}}

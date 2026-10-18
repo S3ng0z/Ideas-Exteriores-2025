@@ -7,33 +7,37 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Garantía y alcance documentados"
+            "label": "Garantías y responsabilidades conforme a ley"
           }
         },
         "summary_2": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Entrega, accesos y recepción definidos"
+            "label": "Transporte estándar y extras presupuestados"
           }
         },
         "summary_3": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Pagos y hitos acordados por escrito"
+            "label": "Seis medios de pago y calendario acordado"
           }
         }
       },
-      "block_order": ["summary_1", "summary_2", "summary_3"],
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
       "settings": {
         "eyebrow": "Servicio y garantías",
-        "heading": "Garantía, entrega y formas de pago con condiciones claras",
-        "lead": "<p>Antes de confirmar un pedido definimos qué cobertura aplica, cómo se organiza la entrega, qué debe revisarse en la recepción y qué hitos de pago corresponden. Las condiciones concretas dependen del producto, la configuración y los servicios contratados y deben quedar reflejadas en la documentación de cada proyecto.</p>",
+        "heading": "Garantías, entrega y formas de pago",
+        "lead": "<p>Antes de contratar, consulta qué protección legal corresponde a tu pedido, cómo se organiza el transporte y qué medios de pago admitimos. El suministro estándar es el punto de partida: montaje, descarga y otros servicios se presupuestan por separado cuando los necesites.</p>",
         "primary_label": "Consultar condiciones de mi proyecto",
         "primary_link": "/pages/contact-ideas-exteriores",
-        "secondary_label": "Ver envío y logística",
-        "secondary_link": "/pages/secure-shipping-logistics-spain",
+        "secondary_label": "Ver transporte y entrega",
+        "secondary_link": "/pages/transporte-entrega-casas-casetas-madera",
         "summary_title": "Antes de contratar"
       }
     },
@@ -43,13 +47,13 @@
         "condition_1": {
           "type": "service",
           "settings": {
-            "index": "01 · Garantía",
-            "heading": "Cobertura, uso y mantenimiento",
-            "text": "<p>La garantía debe identificar el producto o servicio cubierto, las condiciones de instalación y uso, los requisitos de mantenimiento y las exclusiones aplicables. Ante una incidencia, primero se determina su origen y después la actuación adecuada.</p>",
-            "link_1_label": "Mantenimiento y reparación",
-            "link_1": "/pages/wood-maintenance-repair",
-            "link_2_label": "Tratamiento y protección",
-            "link_2": "/pages/wood-treatment-protection",
+            "index": "01 · Garantías",
+            "heading": "Garantías y atención posventa",
+            "text": "<p>Conoce la garantía legal de los productos, cuándo interviene la normativa de edificación y cómo tramitamos incidencias. Las responsabilidades y cualquier cobertura adicional se determinan según el contrato y la legislación aplicable.</p>",
+            "link_1_label": "Ver garantías de casas y casetas",
+            "link_1": "/pages/garantias-casas-madera-prefabricadas",
+            "link_2_label": "Mantenimiento y reparación",
+            "link_2": "/pages/wood-maintenance-repair",
             "link_3_label": "",
             "link_3": ""
           }
@@ -57,37 +61,41 @@
         "condition_2": {
           "type": "service",
           "settings": {
-            "index": "02 · Entrega",
-            "heading": "Transporte, accesos y recepción",
-            "text": "<p>La entrega se planifica según ubicación, volumen, peso, accesos, medios de descarga y modalidad contratada. En la recepción conviene comprobar el estado visible, los bultos o elementos y la correspondencia con el pedido.</p>",
-            "link_1_label": "Envío y logística nacional",
-            "link_1": "/pages/secure-shipping-logistics-spain",
-            "link_2_label": "Bases y soleras",
-            "link_2": "/pages/timber-bases-and-foundations",
-            "link_3_label": "Montaje profesional",
-            "link_3": "/pages/timber-structure-installation"
+            "index": "02 · Transporte",
+            "heading": "Transporte, entrega y recepción",
+            "text": "<p>La entrega estándar se acuerda hasta un punto accesible. Grúa, descarga, maniobras especiales y montaje son opciones adicionales cuando proceda. Revisamos accesos, medios, fechas y costes antes de programar el envío.</p>",
+            "link_1_label": "Ver transporte y entrega",
+            "link_1": "/pages/transporte-entrega-casas-casetas-madera",
+            "link_2_label": "Logística y accesos",
+            "link_2": "/pages/secure-shipping-logistics-spain",
+            "link_3_label": "",
+            "link_3": ""
           }
         },
         "condition_3": {
           "type": "service",
           "settings": {
-            "index": "03 · Pago",
-            "heading": "Importes, medios y calendario",
-            "text": "<p>Los medios de pago, importes y vencimientos se concretan en la oferta o pedido. Cuando existe fabricación, transporte o montaje, el calendario puede organizarse mediante hitos vinculados al avance real del encargo.</p>",
-            "link_1_label": "Consultar una propuesta",
-            "link_1": "/pages/contact-ideas-exteriores",
-            "link_2_label": "",
-            "link_2": "",
+            "index": "03 · Pagos",
+            "heading": "Formas de pago y financiación",
+            "text": "<p>Transferencia, financiación bancaria, tarjeta, confirming, efectivo y Bizum, según disponibilidad y límites legales. Los anticipos e hitos se pactan por escrito; no anunciamos cuotas, tipos ni financiación propia sin oferta aprobada.</p>",
+            "link_1_label": "Ver formas de pago y financiación",
+            "link_1": "/pages/formas-de-pago-y-financiacion",
+            "link_2_label": "Consultar presupuesto",
+            "link_2": "/pages/contact-ideas-exteriores",
             "link_3_label": "",
             "link_3": ""
           }
         }
       },
-      "block_order": ["condition_1", "condition_2", "condition_3"],
+      "block_order": [
+        "condition_1",
+        "condition_2",
+        "condition_3"
+      ],
       "settings": {
-        "eyebrow": "Condiciones del pedido",
-        "heading": "Qué debe quedar definido antes de confirmar",
-        "intro": "<p>La información útil no es una promesa genérica. Cada pedido debe dejar claro qué se contrata, cómo se entrega, qué responsabilidades existen y qué documentación regula garantía, incidencias y pagos.</p>"
+        "eyebrow": "Antes de confirmar el pedido",
+        "heading": "Tres temas, cada uno con sus condiciones",
+        "intro": "<p>Consulta las condiciones de cada servicio antes de confirmar. El precio base corresponde al alcance descrito en la oferta; las opciones de transporte, descarga, instalación y financiación requieren la aceptación de sus condiciones específicas.</p>"
       }
     },
     "process": {
@@ -97,24 +105,24 @@
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Confirmar el alcance",
-            "text": "Revisamos producto, configuración, servicios, ubicación, transporte, montaje y condiciones comerciales."
+            "heading": "Elegir suministro y extras",
+            "text": "Confirmamos modelo, materiales, configuración estándar y servicios opcionales con precio y exclusiones."
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Preparar la entrega",
-            "text": "Validamos dirección, accesos, medios de descarga, restricciones y persona responsable de la recepción."
+            "heading": "Acordar pagos y calendario",
+            "text": "Documentamos medios de pago, importes, hitos, condiciones de fabricación y necesidades logísticas."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Recibir y comprobar",
-            "text": "Se revisa el estado visible, la correspondencia con el pedido y cualquier incidencia que deba documentarse."
+            "heading": "Coordinar entrega y recepción",
+            "text": "Verificamos destino, accesos, medios de descarga y comprobación visible del pedido."
           }
         },
         "step_4": {
@@ -122,15 +130,20 @@
           "settings": {
             "number": "04",
             "heading": "Gestionar la posventa",
-            "text": "Si aparece una incidencia, recopilamos la información necesaria para diferenciar transporte, montaje, mantenimiento, ajuste o garantía."
+            "text": "Registramos incidencias, estudiamos su origen y aplicamos la solución legal o contractualmente correspondiente."
           }
         }
       },
-      "block_order": ["step_1", "step_2", "step_3", "step_4"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
       "settings": {
         "eyebrow": "De la confirmación a la posventa",
-        "heading": "Un proceso claro en cada hito",
-        "intro": "<p>Ordenamos la documentación y la comunicación para que cada fase tenga un responsable, una condición de avance y una evidencia verificable.</p>"
+        "heading": "Del presupuesto a la posventa",
+        "intro": "<p>Cada pedido avanza con alcance, responsables, importes y condiciones de entrega definidos. Ningún servicio adicional se incorpora sin presupuesto y aceptación.</p>"
       }
     },
     "confidence": {
@@ -140,47 +153,63 @@
           "type": "principle",
           "settings": {
             "heading": "Condiciones específicas",
-            "text": "La cobertura, entrega y pagos se concretan según producto, configuración y servicios contratados."
+            "text": "El suministro estándar es la referencia; montaje, descarga, grúa y otros extras solo se añaden por acuerdo."
           }
         },
         "principle_2": {
           "type": "principle",
           "settings": {
             "heading": "Recepción documentada",
-            "text": "Daños visibles, faltas o diferencias deben quedar registrados por el canal y dentro de los plazos indicados en la documentación aplicable."
+            "text": "Recomendamos dejar constancia de daños visibles al recibir, sin limitar los derechos legales del comprador."
           }
         },
         "principle_3": {
           "type": "principle",
           "settings": {
             "heading": "Mantenimiento coherente",
-            "text": "Cuando el producto o acabado exige mantenimiento, las pautas deben conocerse para conservar prestaciones y estado."
+            "text": "Entregamos las recomendaciones que correspondan a los materiales y al alcance del suministro."
           }
         },
         "principle_4": {
           "type": "principle",
           "settings": {
             "heading": "Documento contractual",
-            "text": "El presupuesto, pedido, ficha técnica o documento aceptado define las condiciones específicas aplicables a cada encargo."
+            "text": "El presupuesto aceptado identifica importes, alcances, responsables, plazos acordados y servicios incluidos."
           }
         }
       },
-      "block_order": ["principle_1", "principle_2", "principle_3", "principle_4"],
+      "block_order": [
+        "principle_1",
+        "principle_2",
+        "principle_3",
+        "principle_4"
+      ],
       "settings": {
         "eyebrow": "Criterio de servicio",
-        "heading": "Claridad comercial antes de fabricar, enviar o montar"
+        "heading": "Sin servicios implícitos ni costes imprevistos"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Consulta las condiciones aplicables a tu proyecto",
-        "text": "<p>Indícanos qué solución necesitas, la ubicación y si el alcance incluye suministro, transporte, montaje u otros servicios. Te ayudaremos a revisar qué debe quedar definido antes de confirmar el pedido.</p>",
+        "heading": "Solicita condiciones claras para tu pedido",
+        "text": "<p>Indícanos el modelo, el municipio de entrega y los servicios que necesitas. Te prepararemos una propuesta con suministro base, extras opcionales, calendario de pagos y responsabilidades claramente diferenciados.</p>",
         "label": "Hablar con el equipo",
         "link": "/pages/contact-ideas-exteriores"
       }
+    },
+    "policy_navigation": {
+      "type": "ie-policy-hub-nav",
+      "settings": {}
     }
   },
-  "order": ["hero", "conditions", "process", "confidence", "cta"]
+  "order": [
+    "hero",
+    "policy_navigation",
+    "conditions",
+    "process",
+    "confidence",
+    "cta"
+  ]
 }

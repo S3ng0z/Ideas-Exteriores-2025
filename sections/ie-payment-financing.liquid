@@ -11,8 +11,10 @@
       breadcrumb_object: page,
       current_title: page.title,
       class_name: 'ie-pf__breadcrumb',
-      fallback_1_label: 'Condiciones de contratación',
-      fallback_1_link: '/pages/warranty-delivery-payment-options'
+      fallback_1_label: 'Servicios',
+      fallback_1_link: '/pages/services',
+      fallback_2_label: 'Garantía, entrega y formas de pago',
+      fallback_2_link: '/pages/warranty-delivery-payment-options'
     %}
 
     <header class="ie-pf__hero">
@@ -34,6 +36,8 @@
         </ol>
       </aside>
     </header>
+
+    {% render 'ie-policy-nav', current_key: 'payments' %}
 
     <section class="ie-pf__section" id="ie-pf-payments" aria-labelledby="ie-pf-payments-title">
       <div class="ie-pf__section-head">
