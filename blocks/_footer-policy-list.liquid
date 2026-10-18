@@ -16,7 +16,7 @@
           href="{{ policy.url }}"
           class="footer-utilities__text"
         >
-          {{- policy.title | escape -}}
+          {{- policy.title | upcase | escape -}}
         </a>
       </li>
     {%- endif -%}
