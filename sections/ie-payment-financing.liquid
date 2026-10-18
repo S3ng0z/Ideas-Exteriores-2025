@@ -1,0 +1,168 @@
+{{ 'ie-payment-financing.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  Dedicated Shopify OS 2.0 information page.
+  No payment provider, APR, instalment percentages or funding offer is presumed.
+  Do not gate the page by its handle: the assigned template is the source of truth.
+{% endcomment %}
+<section class="ie-pf" aria-labelledby="ie-pf-title">
+  <div class="ie-pf__inner">
+    {% render 'ie-breadcrumb',
+      breadcrumb_object: page,
+      current_title: page.title,
+      class_name: 'ie-pf__breadcrumb',
+      fallback_1_label: 'Condiciones de contratación',
+      fallback_1_link: '/pages/warranty-delivery-payment-options'
+    %}
+
+    <header class="ie-pf__hero">
+      <div class="ie-pf__hero-content">
+        <p class="ie-pf__eyebrow">Información · Compra y contratación</p>
+        <h1 id="ie-pf-title">Formas de pago y financiación</h1>
+        <p class="ie-pf__lead">Para elegir una casa o caseta de madera es importante saber qué importe vas a pagar, cuándo corresponde cada pago y qué opciones puedes estudiar para financiar el proyecto. Te explicamos qué debe quedar documentado antes de confirmar un pedido.</p>
+        <div class="ie-pf__actions">
+          <a class="ie-pf__button ie-pf__button--primary" href="#ie-pf-payments">Cómo se organiza el pago <span aria-hidden="true">↗</span></a>
+          <a class="ie-pf__button ie-pf__button--outline" href="#ie-pf-financing">Opciones de financiación <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <aside class="ie-pf__hero-aside" aria-label="Tres decisiones antes de contratar">
+        <p class="ie-pf__aside-title">Tres cosas que conviene confirmar</p>
+        <ol>
+          <li><span>01</span><div><strong>Importe total</strong><p>Modelo, opciones, impuestos, transporte y montaje.</p></div></li>
+          <li><span>02</span><div><strong>Medio y calendario</strong><p>Cómo se paga y qué activa cada vencimiento.</p></div></li>
+          <li><span>03</span><div><strong>Documentación</strong><p>Oferta, contrato y justificantes de cada operación.</p></div></li>
+        </ol>
+      </aside>
+    </header>
+
+    <section class="ie-pf__section" id="ie-pf-payments" aria-labelledby="ie-pf-payments-title">
+      <div class="ie-pf__section-head">
+        <div>
+          <p class="ie-pf__eyebrow">Formas de pago</p>
+          <h2 id="ie-pf-payments-title">Cada compra debe tener sus condiciones por escrito</h2>
+        </div>
+        <p>El canal y el calendario de pago pueden variar entre un producto con compra directa y una casa fabricada o montada bajo presupuesto. No establecemos un porcentaje de anticipo único para todo el catálogo.</p>
+      </div>
+      <div class="ie-pf__cards">
+        <article class="ie-pf__card">
+          <p class="ie-pf__card-number">01 · Compra directa</p>
+          <h3>Pago mediante el proceso de compra</h3>
+          <p>Cuando el producto admita compra online, el checkout muestra los medios efectivamente habilitados y el importe que corresponde a ese pedido. No deben asumirse medios de pago que no aparezcan disponibles.</p>
+          <span class="ie-pf__card-foot">Consultar opciones en el checkout del producto</span>
+        </article>
+        <article class="ie-pf__card">
+          <p class="ie-pf__card-number">02 · Pedido por presupuesto</p>
+          <h3>Pago según la oferta aceptada</h3>
+          <p>En casas, casetas y soluciones configurables, el presupuesto o contrato debe identificar el medio de pago autorizado, el beneficiario, los importes, los vencimientos y las condiciones de confirmación del pedido.</p>
+          <span class="ie-pf__card-foot">Condiciones individualizadas antes de contratar</span>
+        </article>
+        <article class="ie-pf__card">
+          <p class="ie-pf__card-number">03 · Fabricación y montaje</p>
+          <h3>Pagos por hitos, si se acuerdan</h3>
+          <p>Un encargo puede contemplar hitos relacionados con la aceptación, fabricación, expedición, instalación o recepción. Solo son exigibles los importes y fechas pactados en la documentación aplicable.</p>
+          <span class="ie-pf__card-foot">Sin porcentajes genéricos ni hitos automáticos</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="ie-pf__section ie-pf__section--stages" aria-labelledby="ie-pf-stages-title">
+      <div class="ie-pf__section-head">
+        <div>
+          <p class="ie-pf__eyebrow">Calendario de un proyecto</p>
+          <h2 id="ie-pf-stages-title">Qué conviene comprobar en cada fase</h2>
+        </div>
+        <p>Estas son etapas habituales de un encargo, no un calendario de cobro fijo. Las fases aplicables y sus pagos deberán aparecer en la propuesta y en las condiciones aceptadas.</p>
+      </div>
+      <ol class="ie-pf__stages">
+        <li><span>01</span><div><h3>Oferta y aceptación</h3><p>Identificar modelo, configuración, precio total, impuestos, alcance y, si procede, condiciones del anticipo.</p></div></li>
+        <li><span>02</span><div><h3>Preparación o fabricación</h3><p>Documentar las fases contratadas y cuándo corresponde abonar una cantidad, si se ha pactado.</p></div></li>
+        <li><span>03</span><div><h3>Transporte y entrega</h3><p>Confirmar logística, descarga, recepción y cualquier condición de pago vinculada a la expedición.</p></div></li>
+        <li><span>04</span><div><h3>Montaje y cierre</h3><p>Si el montaje forma parte del contrato, concretar verificaciones, documentación y pagos pendientes.</p></div></li>
+      </ol>
+      <p class="ie-pf__small-note">La reserva, el anticipo o los pagos a cuenta deben describirse con claridad en el contrato. En operaciones de vivienda en construcción pueden existir obligaciones legales específicas de protección de cantidades anticipadas; su aplicabilidad debe revisarse según el contrato y la operación.</p>
+    </section>
+
+    <section class="ie-pf__financing" id="ie-pf-financing" aria-labelledby="ie-pf-financing-title">
+      <div class="ie-pf__financing-head">
+        <div>
+          <p class="ie-pf__eyebrow">Financiación</p>
+          <h2 id="ie-pf-financing-title">Cómo puedes estudiar la financiación de tu proyecto</h2>
+        </div>
+        <p>La posibilidad de financiar una casa prefabricada depende del tipo de inmueble, del terreno, de la documentación urbanística y de la evaluación de la entidad financiera. No todas las casetas o kits tienen el mismo tratamiento.</p>
+      </div>
+      <div class="ie-pf__financing-grid">
+        <article>
+          <p class="ie-pf__card-number">Vivienda en construcción</p>
+          <h3>Hipoteca autopromotor</h3>
+          <p>Para una vivienda que reúne los requisitos aplicables, algunas entidades estudian préstamos autopromotor. Pueden solicitar propiedad del terreno, proyecto técnico y licencia, y liberar los fondos según el avance y las certificaciones de obra.</p>
+          <a href="https://clientebancario.bde.es/pcb/es/blog/construye-tu-propia-casa-y-financiala.html" target="_blank" rel="noopener noreferrer">Guía del Banco de España <span aria-hidden="true">↗</span></a>
+        </article>
+        <article>
+          <p class="ie-pf__card-number">Casetas, kits y otros proyectos</p>
+          <h3>Consulta con tu entidad</h3>
+          <p>Una caseta auxiliar, un kit suministrado sin obra o una actuación no hipotecable puede requerir una alternativa de financiación distinta. La concesión, el coste y los requisitos dependen exclusivamente de la entidad y de la evaluación de cada solicitud.</p>
+          <a href="https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/financiacion/hipotecas/guia-textual/primerospasoscon/Contratacion_de_la_hipoteca.html" target="_blank" rel="noopener noreferrer">Qué comparar en una oferta financiera <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="ie-pf__financing-disclaimer"><strong>Información importante:</strong> IDEAS EXTERIORES no anuncia en esta página una línea de financiación propia, un banco colaborador, cuotas mensuales, tipos de interés ni aprobaciones garantizadas. Si se habilita una solución financiera concreta, sus condiciones deberán comunicarse de forma expresa, completa y conforme a la normativa aplicable.</p>
+    </section>
+
+    <section class="ie-pf__section" aria-labelledby="ie-pf-docs-title">
+      <div class="ie-pf__section-head">
+        <div>
+          <p class="ie-pf__eyebrow">Antes de realizar un pago</p>
+          <h2 id="ie-pf-docs-title">Qué debe quedar claro en tu presupuesto</h2>
+        </div>
+        <p>La mejor forma de evitar imprevistos es comprobar que cada pago corresponde a una referencia, a un alcance y a unas condiciones identificables.</p>
+      </div>
+      <div class="ie-pf__check-grid">
+        <article><span>01</span><h3>Importe y desglose</h3><p>Modelo, variantes, montaje, transporte, impuestos y conceptos incluidos o excluidos.</p></article>
+        <article><span>02</span><h3>Beneficiario y medio</h3><p>Identificación de la empresa y datos de pago facilitados por un canal comercial verificado.</p></article>
+        <article><span>03</span><h3>Hitos y plazos</h3><p>Calendario, importes por fase, documentación asociada y condiciones ante modificaciones.</p></article>
+        <article><span>04</span><h3>Justificantes y contrato</h3><p>Oferta aceptada, facturas, comprobantes y condiciones de entrega, cambios e incidencias.</p></article>
+      </div>
+      <div class="ie-pf__tip">
+        <h3>Seguridad al pagar</h3>
+        <p>No realices transferencias a cuentas recibidas en mensajes inesperados o modificadas sin confirmación independiente. Ante una discrepancia, consulta los datos oficiales de tu pedido y contacta con IDEAS EXTERIORES antes de enviar fondos.</p>
+      </div>
+    </section>
+
+    <section class="ie-pf__faq" aria-labelledby="ie-pf-faq-title">
+      <div>
+        <p class="ie-pf__eyebrow">Preguntas frecuentes</p>
+        <h2 id="ie-pf-faq-title">Resolvemos las dudas más habituales</h2>
+      </div>
+      <div class="ie-pf__faq-items">
+        <details><summary>¿Se puede pagar con tarjeta o mediante transferencia?</summary><p>Depende del tipo de producto y del canal de contratación. En compra online se muestran los métodos habilitados durante el checkout; en pedidos presupuestados, el medio aceptado se confirma por escrito antes del pago.</p></details>
+        <details><summary>¿Cuánto hay que adelantar para encargar una casa?</summary><p>No hay un porcentaje único publicado para todas las casas y casetas. Si el encargo requiere anticipo, su importe, naturaleza y condiciones deben especificarse en la oferta o contrato.</p></details>
+        <details><summary>¿Se puede pagar por fases?</summary><p>Cuando se pacte un calendario por hitos de fabricación, transporte u obra, este deberá detallar importes, fechas o condiciones de exigibilidad y documentación correspondiente.</p></details>
+        <details><summary>¿Ofrecéis financiación directa o cuotas mensuales?</summary><p>No se anuncia actualmente en esta página un producto de financiación propio ni un acuerdo financiero verificado. Puedes estudiar opciones con tu entidad financiera; las condiciones y la aprobación corresponden a esta.</p></details>
+        <details><summary>¿Puedo solicitar una hipoteca para una casa prefabricada?</summary><p>Puede ser posible en proyectos de vivienda que cumplan los requisitos urbanísticos, técnicos, registrales y de la entidad. No implica que todos los modelos o kits sean hipotecables. Consulta con el banco antes de comprometer pagos.</p></details>
+        <details><summary>¿El precio del modelo incluye transporte e instalación?</summary><p>Solo cuando figure expresamente en la ficha o en la oferta. Conviene revisar impuestos, base, descarga, transporte, montaje, licencias y acabados para conocer el coste real del proyecto.</p></details>
+      </div>
+    </section>
+
+    <section class="ie-pf__closing" aria-labelledby="ie-pf-closing-title">
+      <div>
+        <p class="ie-pf__eyebrow">Siguiente paso</p>
+        <h2 id="ie-pf-closing-title">Solicita las condiciones de pago de tu modelo</h2>
+        <p>Indícanos qué casa o caseta estás valorando y la ubicación del proyecto. Podremos concretar el alcance comercial y la documentación necesaria para tomar una decisión informada.</p>
+      </div>
+      <div class="ie-pf__closing-actions">
+        <a class="ie-pf__button ie-pf__button--light" href="/pages/contact-ideas-exteriores">Consultar condiciones de pago <span aria-hidden="true">↗</span></a>
+        <a href="/pages/warranty-delivery-payment-options">Garantía, entrega y pagos <span aria-hidden="true">→</span></a>
+        <a href="/pages/transporte-entrega-casas-casetas-madera">Transporte y entrega <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "IE · Pagos y financiación",
+  "tag": "section",
+  "class": "ie-payment-financing-section",
+  "settings": [],
+  "presets": [{"name": "IE · Pagos y financiación"}]
+}
+{% endschema %}
