@@ -198,15 +198,10 @@
         "label": "Hablar con el equipo",
         "link": "/pages/contact-ideas-exteriores"
       }
-    },
-    "policy_navigation": {
-      "type": "ie-policy-hub-nav",
-      "settings": {}
     }
   },
   "order": [
     "hero",
-    "policy_navigation",
     "conditions",
     "process",
     "confidence",
