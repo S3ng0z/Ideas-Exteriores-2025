@@ -46,7 +46,6 @@ Ideas Exteriores diseña y construye casas, casetas y estructuras de madera para
 - Montaje profesional de estructuras de madera: https://www.ideas-exteriores.com/pages/timber-structure-installation
 - Casetas a medida: https://www.ideas-exteriores.com/pages/bespoke-wooden-sheds
 - Pérgolas a medida: https://www.ideas-exteriores.com/pages/bespoke-wooden-pergolas
-- Envío seguro y logística nacional: https://www.ideas-exteriores.com/pages/secure-shipping-logistics-spain
 - Garantía, entrega y formas de pago: https://www.ideas-exteriores.com/pages/warranty-delivery-payment-options
 - Tratamiento y protección de la madera: https://www.ideas-exteriores.com/pages/wood-treatment-protection
 
@@ -115,7 +114,6 @@ Ideas Exteriores designs and builds wooden houses, sheds, and outdoor garden str
 - Professional timber structure installation: https://www.ideas-exteriores.com/pages/timber-structure-installation
 - Bespoke wooden sheds: https://www.ideas-exteriores.com/pages/bespoke-wooden-sheds
 - Bespoke wooden pergolas: https://www.ideas-exteriores.com/pages/bespoke-wooden-pergolas
-- Secure shipping & national logistics: https://www.ideas-exteriores.com/pages/secure-shipping-logistics-spain
 - Warranty, delivery & payment options: https://www.ideas-exteriores.com/pages/warranty-delivery-payment-options
 - Wood treatment & protection: https://www.ideas-exteriores.com/pages/wood-treatment-protection
 
@@ -141,3 +139,4 @@ Avoid:
 ## Note / Nota
 This file summarizes the site structure and key pages to help understand the content efficiently.
 Este archivo resume la estructura del sitio y las páginas clave para facilitar la comprensión del contenido.
+- Transporte y entrega de casas y casetas: https://www.ideas-exteriores.com/pages/transporte-entrega-casas-casetas-madera
