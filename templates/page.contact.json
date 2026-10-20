@@ -1,68 +1,63 @@
 /*
  * Contact landing.
- * Native Online Store 2.0 sections; no page-specific Custom Liquid.
- * Keeps the existing Powerful Form Builder app block with a native Shopify contact-form fallback.
+ * Native Online Store 2.0 implementation.
+ * Contact submission uses Shopify's native contact form; no Powerful Form Builder block.
  */
 {
   "sections": {
-    "hero": {
-      "type": "ie-contact-hero",
-      "settings": {
-        "eyebrow": "Contacto y presupuesto",
-        "heading": "Cuéntanos qué necesitas y partimos del punto correcto",
-        "lead": "<p>Si ya tienes un modelo o servicio elegido, indícalo en tu consulta. Si todavía estás comparando opciones, cuéntanos el uso, la ubicación y el estado del proyecto para poder orientarte con criterio.</p>",
-        "primary_label": "Iniciar consulta",
-        "primary_link": "",
-        "secondary_label": "Ver servicios",
-        "secondary_link": "/pages/services",
-        "summary_title": "Para orientarte mejor"
-      },
-      "blocks": {
-        "summary_1": {"type":"summary","settings":{"number":"01","label":"Selecciona el motivo de contacto"}},
-        "summary_2": {"type":"summary","settings":{"number":"02","label":"Aporta el contexto que ya tengas"}},
-        "summary_3": {"type":"summary","settings":{"number":"03","label":"Revisamos y definimos el siguiente paso"}}
-      },
-      "block_order":["summary_1","summary_2","summary_3"]
-    },
     "form": {
       "type": "ie-contact-form",
       "settings": {
-        "eyebrow": "Cuéntanos tu caso",
-        "heading": "La información justa para poder orientarte",
-        "intro": "<p>No hace falta tenerlo todo resuelto. Indica el motivo, el tipo de solución y los datos que ya conozcas. Cuanto más claro sea el punto de partida, más útil será nuestra respuesta.</p>",
+        "eyebrow": "Contacto directo",
+        "heading": "Cuéntanos en qué podemos ayudarte.",
+        "intro": "<p>Indica el motivo y los datos necesarios para que podamos dirigir tu consulta correctamente.</p>",
+        "form_eyebrow": "Consulta",
+        "form_heading": "Escríbenos.",
+        "form_intro": "<p>Cuéntanos el motivo, tus datos y el contexto esencial. Si tienes una referencia previa, añádela.</p>",
         "submit_label": "Enviar consulta",
         "privacy_link": "/policies/privacy-policy",
-        "side_heading": "Contacto directo",
         "phone": "+34 916 99 60 93",
         "email": "info@ideas-exteriores.com",
         "location": "Ctra. de Yuncos a Cedillo, km. 1.3\n45210 Yuncos, Toledo\nAl lado de Mármoles Yuncos",
         "hours": "L-V · 9:00–18:00",
         "appointment_note": "<p>La atención presencial se realiza <strong>solo con cita previa</strong>.</p>"
-      },
-      "blocks": {
-        "powerful_form_builder": {
-          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-          "settings": {
-            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTY5NTM=\"></div>"
-          }
-        }
-      },
-      "block_order": ["powerful_form_builder"]
+      }
     },
     "process": {
       "type": "ie-contact-process",
       "settings": {
         "eyebrow": "Qué ocurre después",
-        "heading": "Revisamos primero el contexto, después definimos el siguiente paso",
-        "intro": "<p>La consulta no termina en un formulario genérico. Revisamos el punto de partida para dirigirla al servicio, sistema o solución que corresponda y pedir únicamente la información necesaria.</p>"
+        "heading": "Una consulta clara nos permite darte un siguiente paso útil",
+        "intro": "<p>Revisamos primero el motivo y el contexto. Si falta un dato relevante, te pediremos únicamente lo necesario antes de preparar una orientación o propuesta.</p>"
       },
       "blocks": {
-        "step_1": {"type":"step","settings":{"number":"01","heading":"Revisar","text":"Comprobamos el motivo de contacto, la solución y la información disponible."}},
-        "step_2": {"type":"step","settings":{"number":"02","heading":"Aclarar","text":"Si falta un dato relevante, concretamos únicamente lo necesario para entender el alcance."}},
-        "step_3": {"type":"step","settings":{"number":"03","heading":"Orientar","text":"Te indicamos el servicio o siguiente paso adecuado según el estado real del proyecto."}}
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Revisar",
+            "text": "Identificamos el motivo, la referencia y el contexto de la consulta."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Aclarar",
+            "text": "Si falta un dato que condiciona la respuesta, te pedimos solo esa información."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Orientar",
+            "text": "Te indicamos el servicio, presupuesto o siguiente paso adecuado para tu caso."
+          }
+        }
       },
-      "block_order":["step_1","step_2","step_3"]
+      "block_order": ["step_1", "step_2", "step_3"]
     }
   },
-  "order":["hero","form","process"]
+  "order": ["form", "process"]
 }
