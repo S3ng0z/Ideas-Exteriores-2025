@@ -624,7 +624,7 @@
 .ie-foundations h1,
 .ie-foundations h2,
 .ie-foundations__system h3 {
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: -.012em;
   line-height: 1.16;
   overflow-wrap: break-word;
