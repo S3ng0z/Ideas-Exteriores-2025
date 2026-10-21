@@ -25,12 +25,16 @@
           }
         }
       },
-      "block_order": ["summary_1", "summary_2", "summary_3"],
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
       "settings": {
-        "eyebrow": "Gestión integral de proyectos y licencias",
-        "heading": "Viabilidad, proyecto técnico y licencia para construir con criterio",
-        "lead": "<p>Coordinamos la revisión urbanística, la documentación técnica y la tramitación de proyectos en madera para que sepas qué puede hacerse, qué exige tu municipio y qué debe quedar resuelto antes de ejecutar.</p>",
-        "primary_label": "Solicitar revisión de viabilidad",
+        "eyebrow": "Proyecto técnico, viabilidad y licencias",
+        "heading": "Comprueba qué documentación y permisos necesita tu construcción en madera",
+        "lead": "<p>Antes de elegir una vivienda prefabricada, caseta, oficina, ampliación o estructura exterior, conviene comprobar qué permite la parcela y qué trámite corresponde. Te orientamos para encargar la documentación necesaria con un alcance y presupuesto claros, sin prometer una autorización administrativa.</p>",
+        "primary_label": "Consultar viabilidad de mi proyecto",
         "primary_link": "/pages/contact-ideas-exteriores",
         "secondary_label": "Ver diseño 3D y asesoría técnica",
         "secondary_link": "/pages/wood-3d-design-consulting",
@@ -45,8 +49,8 @@
           "settings": {
             "image_alt": "",
             "index": "01 · Viabilidad",
-            "heading": "Saber qué se puede hacer antes de proyectar de más",
-            "text": "<p>Revisamos ocupación, edificabilidad, altura, retranqueos, alineaciones, uso y clasificación del suelo. El objetivo es detectar condicionantes antes de cerrar una solución que después haya que rehacer.</p>",
+            "heading": "Saber qué se permite en tu parcela",
+            "text": "<p>Consultamos clasificación y régimen del suelo, usos admitidos, edificabilidad, ocupación, altura, retranqueos, servidumbres y demás condiciones municipales, con el alcance de estudio acordado.</p>",
             "link_1_label": "Diseño 3D y asesoría técnica",
             "link_1": "/pages/wood-3d-design-consulting",
             "link_2_label": "",
@@ -60,8 +64,8 @@
           "settings": {
             "image_alt": "",
             "index": "02 · Proyecto",
-            "heading": "Convertir la solución en documentación técnica",
-            "text": "<p>Definimos memoria, planos, mediciones y justificaciones aplicables con profesionales habilitados, adaptando el expediente al uso real, la parcela y el término municipal.</p>",
+            "heading": "Identificar qué documentos hacen falta",
+            "text": "<p>Desde una consulta urbanística y planos preliminares hasta memoria, proyecto técnico, estudios complementarios o intervención de profesionales competentes, según actuación y requisitos aplicables.</p>",
             "link_1_label": "Ver sistemas constructivos",
             "link_1": "/pages/timber-building-systems",
             "link_2_label": "",
@@ -75,8 +79,8 @@
           "settings": {
             "image_alt": "",
             "index": "03 · Tramitación",
-            "heading": "Presentar, seguir y responder con contexto",
-            "text": "<p>Identificamos el trámite que corresponda, organizamos la documentación y acompañamos la respuesta a requerimientos. La resolución depende de la administración competente; nuestro trabajo es reducir ambigüedad y mantener trazabilidad.</p>",
+            "heading": "Asignar responsabilidades y tramitar",
+            "text": "<p>Definimos quién prepara, firma, presenta, paga tasas, responde requerimientos y hace seguimiento. La admisión, resolución y plazos dependen de la administración competente.</p>",
             "link_1_label": "Hablar con el equipo",
             "link_1": "/pages/contact-ideas-exteriores",
             "link_2_label": "",
@@ -86,10 +90,14 @@
           }
         }
       },
-      "block_order": ["viability", "technical", "permit"],
+      "block_order": [
+        "viability",
+        "technical",
+        "permit"
+      ],
       "settings": {
         "eyebrow": "Antes de construir",
-        "heading": "Tres frentes que conviene resolver en el orden correcto",
+        "heading": "Primero viabilidad, después documentación y tramitación",
         "intro": "<p>La licencia no es un trámite aislado al final del proyecto. El encaje urbanístico condiciona el diseño; el diseño condiciona la documentación; y la documentación debe corresponder con lo que realmente se ejecutará.</p>"
       }
     },
@@ -117,7 +125,7 @@
           "settings": {
             "number": "03",
             "heading": "Proyecto",
-            "text": "Preparamos memoria, planos, mediciones y justificaciones técnicas que correspondan al caso."
+            "text": "Se encarga a los profesionales competentes la documentación técnica necesaria y expresamente contratada."
           }
         },
         "step_4": {
@@ -125,7 +133,7 @@
           "settings": {
             "number": "04",
             "heading": "Tramitación",
-            "text": "Presentamos o acompañamos el expediente y organizamos la respuesta a requerimientos."
+            "text": "Se presenta y sigue el expediente cuando esté incluido en el servicio; los requerimientos extraordinarios se valoran según el contrato."
           }
         },
         "step_5": {
@@ -133,14 +141,20 @@
           "settings": {
             "number": "05",
             "heading": "Ejecución",
-            "text": "Enlazamos el proyecto aprobado con bases, montaje y protección según el alcance contratado."
+            "text": "Solo se coordina la ejecución cuando proceda y exista habilitación suficiente, conforme al alcance contratado."
           }
         }
       },
-      "block_order": ["step_1", "step_2", "step_3", "step_4", "step_5"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5"
+      ],
       "settings": {
         "eyebrow": "Proceso por fases",
-        "heading": "Del encaje inicial a una ejecución documentada",
+        "heading": "Viabilidad → alcance → documentación → tramitación",
         "intro": "<p>Podemos incorporarnos desde el inicio o desde una fase avanzada si ya dispones de diseño o proyecto. Cada fase debe dejar preparado el siguiente hito y evitar rehacer decisiones cerradas demasiado pronto.</p>"
       }
     },
@@ -151,25 +165,29 @@
           "type": "principle",
           "settings": {
             "heading": "Alcance definido",
-            "text": "Dejamos claro qué revisamos, qué documentación se prepara y qué queda fuera del servicio contratado."
+            "text": "Honorarios, tasas, impuestos, visados, estudios, documentación y seguimiento se presupuestan por conceptos, especificando inclusiones y exclusiones."
           }
         },
         "principle_2": {
           "type": "principle",
           "settings": {
             "heading": "Normativa contextual",
-            "text": "No tratamos todos los municipios ni todos los usos como si exigieran el mismo procedimiento."
+            "text": "El tipo de actuación y el municipio determinan los requisitos; ni una caseta prefabricada ni una solución móvil están automáticamente exentas de control urbanístico."
           }
         },
         "principle_3": {
           "type": "principle",
           "settings": {
             "heading": "Sin promesas administrativas",
-            "text": "La concesión y los plazos dependen de la administración; trabajamos sobre la calidad, coherencia y seguimiento del expediente."
+            "text": "No garantizamos la concesión de licencia, la aprobación de declaraciones responsables ni un plazo administrativo concreto."
           }
         }
       },
-      "block_order": ["principle_1", "principle_2", "principle_3"],
+      "block_order": [
+        "principle_1",
+        "principle_2",
+        "principle_3"
+      ],
       "settings": {
         "eyebrow": "Criterio técnico",
         "heading": "Claridad documental antes de entrar en obra"
@@ -179,12 +197,23 @@
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Cuéntanos dónde está el proyecto y qué necesitas resolver",
-        "text": "<p>Indícanos municipio, uso previsto, dimensiones aproximadas y la documentación que ya tengas. Con ese contexto podremos orientarte hacia la revisión, el proyecto o la tramitación que corresponda.</p>",
-        "label": "Solicitar revisión de viabilidad",
+        "heading": "Revisemos tu parcela antes de presupuestar el proyecto",
+        "text": "<p>Envíanos municipio, tipo de actuación, referencia catastral si la tienes, superficie aproximada, uso previsto y documentación disponible. Confirmaremos el alcance de la revisión y los siguientes pasos antes de contratar trabajos técnicos.</p>",
+        "label": "Consultar viabilidad de mi proyecto",
         "link": "/pages/contact-ideas-exteriores"
       }
+    },
+    "guide": {
+      "type": "ie-permits-practical-guide",
+      "settings": {}
     }
   },
-  "order": ["hero", "services", "process", "confidence", "cta"]
+  "order": [
+    "hero",
+    "services",
+    "guide",
+    "process",
+    "confidence",
+    "cta"
+  ]
 }
