@@ -3,18 +3,40 @@
     "hero": {
       "type": "ie-services-hero",
       "blocks": {
-        "summary_1": {"type": "summary", "settings": {"number": "01", "label": "Diagnóstico por exposición, uso y humedad"}},
-        "summary_2": {"type": "summary", "settings": {"number": "02", "label": "Sistema completo: fondo, acabado y sellado"}},
-        "summary_3": {"type": "summary", "settings": {"number": "03", "label": "Plan de mantenimiento y coordinación en obra"}}
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Diagnóstico de madera, exposición y acabado existente"
+          }
+        },
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Protección preventiva, curativa o acabado superficial"
+          }
+        },
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Preparación, aplicación y mantenimiento pactados"
+          }
+        }
       },
-      "block_order": ["summary_1", "summary_2", "summary_3"],
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
       "settings": {
         "eyebrow": "Construcción y protección",
-        "heading": "Tratamiento y protección de la madera para prolongar su vida útil",
-        "lead": "<p>Definimos la protección según el clima, la exposición, el uso y el tipo de elemento. No se trata de aplicar un único producto, sino de coordinar tratamiento preventivo, acabado visible, sellado de puntos críticos y mantenimiento.</p>",
-        "primary_label": "Pedir recomendación técnica",
+        "heading": "Tratamiento y protección de madera según su exposición y estado",
+        "lead": "<p>Protege la madera frente a las condiciones reales de uso: sol, lluvia, humedad, salpicaduras y desgaste. Antes de elegir lasur, aceite o acabado protector, comprobamos especie, estado del soporte, orientación, tratamiento previo y requisitos de mantenimiento. Definimos el alcance antes de presupuestar.</p>",
+        "primary_label": "Consultar tratamiento de madera",
         "primary_link": "/pages/contact-ideas-exteriores",
-        "secondary_label": "Ver mantenimiento y reparación",
+        "secondary_label": "Mantenimiento y reparación",
         "secondary_link": "/pages/wood-maintenance-repair",
         "summary_title": "Qué resolvemos"
       }
@@ -22,27 +44,27 @@
     "systems": {
       "type": "ie-services-cards",
       "blocks": {
-        "system_1": {
+        "solution_1": {
           "type": "service",
           "settings": {
-            "index": "01 · Diagnosticar",
-            "heading": "Exposición, humedad y uso real",
-            "text": "<p>Analizamos si la madera estará en interior, exterior protegido o intemperie; la orientación, el clima, el contacto con humedad, el desgaste y el tipo de elemento. Ese diagnóstico define la solución técnica y evita sobredimensionar tratamientos.</p>",
-            "link_1_label": "Ver bases y soleras",
+            "index": "01 · Diagnóstico",
+            "heading": "Conocer la madera y el entorno",
+            "text": "<p>Identificar especie cuando sea posible, estado, grietas, degradación, humedad, insolación, orientación, contacto con suelo, salpicaduras y acabado previo. Valorar compatibilidad entre capas.</p>",
+            "link_1_label": "Consultar cimentaciones",
             "link_1": "/pages/timber-bases-and-foundations",
-            "link_2_label": "Ver montaje profesional",
-            "link_2": "/pages/timber-structure-installation",
+            "link_2_label": "",
+            "link_2": "",
             "link_3_label": "",
             "link_3": ""
           }
         },
-        "system_2": {
+        "solution_2": {
           "type": "service",
           "settings": {
-            "index": "02 · Proteger",
-            "heading": "Tratamiento preventivo y acabado visible",
-            "text": "<p>Combinamos protección de fondo frente a agentes biológicos y humedad con lasures, aceites o barnices técnicos seleccionados por exposición, mantenimiento esperado, abrasión y resultado estético.</p>",
-            "link_1_label": "Ver entramado ligero",
+            "index": "02 · Prevención",
+            "heading": "Protección preventiva",
+            "text": "<p>Tratamientos protectores frente a agentes biológicos cuando el riesgo y el uso lo requieran. La selección y dosificación deben respetar clase de uso, producto autorizado y ficha técnica.</p>",
+            "link_1_label": "Ver sistemas constructivos",
             "link_1": "/pages/timber-building-systems",
             "link_2_label": "",
             "link_2": "",
@@ -50,14 +72,56 @@
             "link_3": ""
           }
         },
-        "system_3": {
+        "solution_3": {
           "type": "service",
           "settings": {
-            "index": "03 · Sellar",
-            "heading": "Encuentros, arranques y puntos críticos",
-            "text": "<p>Revisamos juntas, remates, pasos de instalaciones y apoyos cercanos a soleras. La durabilidad depende tanto del acabado como de impedir entradas de agua y resolver correctamente los puntos sensibles de la envolvente.</p>",
-            "link_1_label": "Gestión integral de proyectos",
-            "link_1": "/pages/project-management-permits",
+            "index": "03 · Tratamiento curativo",
+            "heading": "Actuar sobre daños existentes",
+            "text": "<p>Si hay evidencia de organismos xilófagos o pudrición, diagnosticar causa y alcance antes de tratar. No prometer recuperación de resistencia ni sustituir piezas estructurales sin evaluación técnica.</p>",
+            "link_1_label": "Mantenimiento y reparación",
+            "link_1": "/pages/wood-maintenance-repair",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "solution_4": {
+          "type": "service",
+          "settings": {
+            "index": "04 · Acabados",
+            "heading": "Lasures, aceites y sistemas filmógenos",
+            "text": "<p>Seleccionar lasures, aceites, barnices o pinturas por soporte, exposición, desgaste, estética y mantenimiento. Un aceite de tarima no equivale al sistema recomendado para fachada o carpintería.</p>",
+            "link_1_label": "Mantenimiento y reparación",
+            "link_1": "/pages/wood-maintenance-repair",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "solution_5": {
+          "type": "service",
+          "settings": {
+            "index": "05 · Preparación",
+            "heading": "Limpieza, lijado, saneado y secado",
+            "text": "<p>Retirar contaminantes o acabados incompatibles, reparar daños contratados y verificar humedad del soporte. Proteger testas, uniones, encuentros, zonas horizontales y puntos de acumulación de agua.</p>",
+            "link_1_label": "Ver montaje profesional",
+            "link_1": "/pages/timber-structure-installation",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "solution_6": {
+          "type": "service",
+          "settings": {
+            "index": "06 · Presupuesto",
+            "heading": "Partidas incluidas y excluidas",
+            "text": "<p>La oferta desglosa superficies, productos, consumos, preparación, capas, mano de obra y desplazamientos. Reparaciones, medios de altura, andamios o tratamientos curativos no se incluyen salvo pacto expreso.</p>",
+            "link_1_label": "Solicitar valoración",
+            "link_1": "/pages/contact-ideas-exteriores",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
@@ -65,52 +129,145 @@
           }
         }
       },
-      "block_order": ["system_1", "system_2", "system_3"],
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "solution_5",
+        "solution_6"
+      ],
       "settings": {
-        "eyebrow": "Sistema de protección",
-        "heading": "Una solución definida por condiciones reales, no por catálogo",
-        "intro": "<p>El mismo acabado no funciona igual en una fachada orientada al sur, una tarima junto a piscina o una estructura bajo cubierta. Priorizamos compatibilidad, durabilidad y mantenimiento asumible.</p>"
+        "eyebrow": "01 · Soluciones según el soporte",
+        "heading": "Diagnóstico primero. Tratamiento después.",
+        "intro": "<p>No confundimos prevención, intervención curativa y acabado decorativo. Cada solución tiene requisitos, productos y costes distintos; si hay degradación estructural o ataque activo, se estudia previamente el alcance de saneado y la intervención competente.</p>"
       }
     },
     "process": {
       "type": "ie-services-process",
       "blocks": {
-        "step_1": {"type": "step", "settings": {"number": "01", "heading": "Diagnosticar", "text": "Identificamos exposición, humedad, orientación, tránsito, tipo de madera y estado del soporte."}},
-        "step_2": {"type": "step", "settings": {"number": "02", "heading": "Definir el sistema", "text": "Seleccionamos tratamiento de fondo, acabado visible, selladores y preparación previa compatibles entre sí."}},
-        "step_3": {"type": "step", "settings": {"number": "03", "heading": "Aplicar y proteger detalles", "text": "Ejecutamos capas, tiempos de secado y sellado de encuentros con criterio de obra y del fabricante."}},
-        "step_4": {"type": "step", "settings": {"number": "04", "heading": "Entregar un plan de mantenimiento", "text": "Dejamos pautas de limpieza, revisión e indicadores de repaso según exposición y producto aplicado."}}
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Inspección y definición",
+            "text": "Confirmar tipo de madera, riesgo de exposición, estado previo, superficies, puntos críticos y alcance contratado."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Preparación del soporte",
+            "text": "Limpiar, lijar, retirar material inestable, sanear y comprobar secado cuando proceda. Reparaciones estructurales se presupuestan aparte."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Sistema de productos compatible",
+            "text": "Seleccionar fondo, tratamiento preventivo o curativo cuando proceda y acabado compatible con el soporte, uso y exposición."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Aplicación y protección de detalles",
+            "text": "Ejecutar número de manos, rendimientos, intervalos de repintado y condiciones ambientales según ficha técnica; atender testas, juntas y salpicaduras."
+          }
+        },
+        "step_5": {
+          "type": "step",
+          "settings": {
+            "number": "05",
+            "heading": "Comprobación y entrega",
+            "text": "Verificar visualmente cobertura y remates dentro del alcance, informar incidencias y entregar instrucciones o referencias de los productos acordados."
+          }
+        },
+        "step_6": {
+          "type": "step",
+          "settings": {
+            "number": "06",
+            "heading": "Inspección y renovación",
+            "text": "Proponer revisión periódica y renovación según clima, orientación, estado y fabricante. No fijar una periodicidad idéntica para todas las maderas."
+          }
+        }
       },
-      "block_order": ["step_1", "step_2", "step_3", "step_4"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5",
+        "step_6"
+      ],
       "settings": {
-        "eyebrow": "Cómo trabajamos",
-        "heading": "Protección coordinada desde el diagnóstico hasta el mantenimiento",
-        "intro": "<p>El tratamiento se integra con la preparación de la base, el montaje y el comportamiento de la envolvente. Así reducimos patologías por humedad, degradación prematura y repasos innecesarios.</p>"
+        "eyebrow": "02 · Ejecución controlada",
+        "heading": "Del diagnóstico a la entrega, sin promesas genéricas",
+        "intro": "<p>El sistema de aplicación se define por la ficha técnica vigente de cada producto. No establecemos de forma universal número de capas, consumo, humedad admisible o tiempos de secado.</p>"
       }
     },
     "confidence": {
       "type": "ie-services-confidence",
       "blocks": {
-        "principle_1": {"type": "principle", "settings": {"heading": "Exterior e intemperie", "text": "Priorizamos resistencia a UV y agua, facilidad de renovación y detalle correcto de encuentros expuestos."}},
-        "principle_2": {"type": "principle", "settings": {"heading": "Tarimas y zonas húmedas", "text": "Valoramos desgaste, salinidad, proximidad a piscina, limpieza y estabilidad superficial antes de elegir el acabado."}},
-        "principle_3": {"type": "principle", "settings": {"heading": "Interior y espacios habitables", "text": "Buscamos acabados compatibles con el uso, de mantenimiento sencillo y adecuados al nivel de exigencia del espacio."}},
-        "principle_4": {"type": "principle", "settings": {"heading": "Requisitos específicos", "text": "Cuando el proyecto lo exige, estudiamos soluciones certificadas y su compatibilidad con el soporte y la documentación técnica."}}
+        "principle_1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Producto y soporte compatibles",
+            "text": "El fabricante determina preparación, humedad, aplicación, condiciones ambientales, repintado y compatibilidad entre manos. No garantizamos una duración universal."
+          }
+        },
+        "principle_2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Puntos de exposición crítica",
+            "text": "Testas, uniones, cortes, zonas horizontales, contacto con salpicaduras y puntos próximos al suelo requieren especial atención y soluciones constructivas de evacuación de agua."
+          }
+        },
+        "principle_3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Incluido y no incluido",
+            "text": "La oferta confirmará productos, manos, preparación, superficies, desplazamientos y accesibilidad. Andamios, reparaciones y tratamientos curativos se contratan expresamente."
+          }
+        },
+        "principle_4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Conservación responsable",
+            "text": "Inspeccionar el acabado y renovar según exposición e indicaciones del fabricante. Patologías por humedad o daños estructurales requieren evaluación adicional."
+          }
+        }
       },
-      "block_order": ["principle_1", "principle_2", "principle_3", "principle_4"],
+      "block_order": [
+        "principle_1",
+        "principle_2",
+        "principle_3",
+        "principle_4"
+      ],
       "settings": {
-        "eyebrow": "Criterios de selección",
-        "heading": "El acabado correcto depende del uso y de la exposición"
+        "eyebrow": "03 · Condiciones del servicio",
+        "heading": "Alcance, riesgos y mantenimiento definidos"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Cuéntanos dónde estará la madera y qué necesitas proteger",
-        "text": "<p>Con fotos, ubicación, tipo de elemento y estado actual podemos orientarte sobre el sistema de protección y el alcance adecuado. Si el trabajo forma parte de una obra nueva, coordinamos el tratamiento con base, montaje y mantenimiento.</p>",
-        "label": "Solicitar valoración",
+        "heading": "¿Qué tratamiento necesita tu madera?",
+        "text": "<p>Indícanos localidad, elemento (fachada, pérgola, porche, tarima o carpintería), medidas aproximadas, orientación, antigüedad, acabado anterior y fotografías. Te diremos qué diagnóstico es necesario y qué partidas incluiría una propuesta, según disponibilidad.</p>",
+        "label": "Consultar tratamiento de madera",
         "link": "/pages/contact-ideas-exteriores"
       }
     }
   },
-  "order": ["hero", "systems", "process", "confidence", "cta"]
+  "order": [
+    "hero",
+    "systems",
+    "process",
+    "confidence",
+    "cta"
+  ]
 }
