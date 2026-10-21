@@ -120,6 +120,11 @@
   endif
 
 
+  if request.page_type == 'page' and page.handle == 'timber-construction-systems-comparison'
+    assign seo_title = 'Sistemas constructivos de madera: comparativa | IDEAS EXTERIORES'
+    assign seo_description = 'Compara sistema europeo, entramado ligero y paneles SIP. Descubre sus diferencias, ventajas y aplicaciones para elegir tu proyecto de madera.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'wood-maintenance-repair'
     assign seo_title = 'Mantenimiento y reparación de madera exterior'
     assign seo_description = 'Mantenimiento y reparación de madera exterior con diagnóstico previo, saneado, reparación localizada, renovación de protección y plan de mantenimiento.'

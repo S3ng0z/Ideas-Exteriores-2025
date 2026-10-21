@@ -1,0 +1,595 @@
+/* Comparativa de sistemas constructivos · Ideas Exteriores
+   Scope exclusivo de /pages/timber-construction-systems-comparison. */
+
+.ie-compare {
+  --ie-ink: #1f231e;
+  --ie-forest: #566236;
+  --ie-sage: #8a9a5b;
+  --ie-bone: #f9f8f6;
+  --ie-stone: #efeee9;
+  --ie-border: rgba(31, 35, 30, .14);
+  --ie-muted: rgba(31, 35, 30, .72);
+  color: var(--ie-ink);
+  background: var(--ie-bone);
+}
+
+.ie-compare__inner {
+  width: min(calc(100% - 64px), 1600px);
+  margin-inline: auto;
+  padding-bottom: 16px;
+}
+
+.ie-compare__head,
+.ie-compare__section-head {
+  display: grid;
+  grid-template-columns: minmax(360px, .9fr) minmax(0, 1.1fr);
+  gap: clamp(36px, 5vw, 72px);
+  align-items: start;
+  padding-block: 90px 38px;
+}
+
+.ie-compare__head h2,
+.ie-compare__section-head h2,
+.ie-compare__economics h2 {
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -.02em;
+  text-transform: none;
+  text-wrap: pretty;
+}
+
+.ie-compare__head h2,
+.ie-compare__section-head h2 {
+  font-size: clamp(2rem, 2.65vw, 3.15rem);
+  line-height: 1.04;
+}
+
+.ie-compare__head > p,
+.ie-compare__section-head > p:last-child {
+  margin: 25px 0 0;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.68;
+  color: var(--ie-muted);
+}
+
+.ie-compare__eyebrow {
+  margin: 0 0 12px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .78rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ie-forest);
+}
+
+.ie-compare__table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--ie-border);
+  background: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ie-compare__table-wrap:focus-visible {
+  outline: 2px solid var(--ie-forest);
+  outline-offset: 3px;
+}
+
+.ie-compare__table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+}
+
+.ie-compare__table th,
+.ie-compare__table td {
+  padding: 20px 22px;
+  border-right: 1px solid var(--ie-border);
+  border-bottom: 1px solid var(--ie-border);
+  vertical-align: top;
+  text-align: left;
+  font-size: .91rem;
+  line-height: 1.52;
+}
+
+.ie-compare__table tr:last-child th,
+.ie-compare__table tr:last-child td {
+  border-bottom: 0;
+}
+
+.ie-compare__table th:last-child,
+.ie-compare__table td:last-child {
+  border-right: 0;
+}
+
+.ie-compare__table thead th {
+  padding-block: 17px;
+  background: var(--ie-ink);
+  color: #fff;
+  font-size: .79rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.ie-compare__table thead th:first-child {
+  width: 20%;
+}
+
+.ie-compare__table tbody th {
+  background: var(--ie-stone);
+  font-weight: 650;
+}
+
+.ie-compare__note {
+  max-width: 1120px;
+  margin: 18px 0 0;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .82rem;
+  line-height: 1.55;
+  color: var(--ie-muted);
+}
+
+.ie-compare__section {
+  margin-top: 18px;
+  border-top: 1px solid var(--ie-border);
+}
+
+.ie-compare__section-head {
+  padding-top: 92px;
+}
+
+.ie-compare__section-head > div,
+.ie-compare__head > div {
+  min-width: 0;
+}
+
+.ie-compare__criteria {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid var(--ie-ink);
+  border-bottom: 1px solid var(--ie-border);
+}
+
+.ie-compare__criteria article {
+  min-width: 0;
+  padding: 24px 24px 30px;
+  border-right: 1px solid var(--ie-border);
+}
+
+.ie-compare__criteria article:last-child {
+  border-right: 0;
+}
+
+.ie-compare__criteria span,
+.ie-compare__technical-links span {
+  display: block;
+  margin-bottom: 26px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .72rem;
+  color: var(--ie-muted);
+}
+
+.ie-compare__criteria h3,
+.ie-compare__systems h3,
+.ie-compare__budget-grid h3,
+.ie-compare__scope h3,
+.ie-compare__technical-links h3 {
+  margin: 0;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-weight: 650;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.ie-compare__criteria h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.ie-compare__criteria p {
+  margin: 0;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .88rem;
+  line-height: 1.58;
+  color: var(--ie-muted);
+}
+
+.ie-compare__systems {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ie-compare__systems > article {
+  padding: 30px;
+  background: #fff;
+  border: 1px solid var(--ie-border);
+}
+
+.ie-compare__system-kicker {
+  margin: 0 0 9px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ie-forest);
+}
+
+.ie-compare__systems h3 {
+  min-height: 2.8em;
+  padding-bottom: 22px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.18;
+  border-bottom: 1px solid var(--ie-border);
+}
+
+.ie-compare__pros-cons {
+  display: grid;
+  gap: 26px;
+  margin-top: 24px;
+}
+
+.ie-compare__pros-cons h4 {
+  margin: 0 0 10px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .87rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.ie-compare__pros-cons ul,
+.ie-compare__scope ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.ie-compare__pros-cons li,
+.ie-compare__scope li {
+  margin-bottom: 8px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .9rem;
+  line-height: 1.55;
+  color: var(--ie-muted);
+}
+
+.ie-compare__pros-cons li:last-child,
+.ie-compare__scope li:last-child {
+  margin-bottom: 0;
+}
+
+.ie-compare__economics {
+  display: grid;
+  grid-template-columns: minmax(330px, .72fr) minmax(0, 1.28fr);
+  gap: clamp(40px, 5vw, 76px);
+  margin-top: 104px;
+  padding: clamp(44px, 5vw, 72px);
+  background: var(--ie-ink);
+  color: #fff;
+}
+
+.ie-compare__economics .ie-compare__eyebrow {
+  color: #c6d29c;
+}
+
+.ie-compare__economics h2 {
+  font-size: clamp(2rem, 2.6vw, 3rem);
+  line-height: 1.05;
+}
+
+.ie-compare__economics-intro > p:last-child {
+  margin: 20px 0 0;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .96rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.72);
+}
+
+.ie-compare__budget-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-column: 2;
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,.28);
+  border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+.ie-compare__budget-grid article {
+  padding: 24px 22px 28px;
+  border-right: 1px solid rgba(255,255,255,.16);
+}
+
+.ie-compare__budget-grid article:last-child {
+  border-right: 0;
+}
+
+.ie-compare__budget-grid span {
+  display: block;
+  margin-bottom: 16px;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #c6d29c;
+}
+
+.ie-compare__budget-grid h3 {
+  margin-bottom: 10px;
+  font-size: .98rem;
+  color: #fff;
+}
+
+.ie-compare__budget-grid p {
+  margin: 0;
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .86rem;
+  line-height: 1.56;
+  color: rgba(255,255,255,.7);
+}
+
+.ie-compare__scope {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2;
+  gap: 34px;
+  padding-top: 6px;
+}
+
+.ie-compare__scope > div {
+  padding-top: 22px;
+  border-top: 1px solid rgba(255,255,255,.22);
+}
+
+.ie-compare__scope h3 {
+  margin-bottom: 16px;
+  font-size: .98rem;
+  color: #fff;
+}
+
+.ie-compare__scope li {
+  color: rgba(255,255,255,.7);
+}
+
+.ie-compare__technical-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ie-compare__technical-links article {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid var(--ie-border);
+}
+
+.ie-compare__technical-links h3 {
+  margin-bottom: 24px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.ie-compare__technical-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 0;
+  border-top: 1px solid var(--ie-border);
+  color: var(--ie-ink);
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .9rem;
+  font-weight: 550;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.ie-compare__technical-links a b {
+  color: var(--ie-forest);
+  font-weight: 500;
+  transition: transform 160ms ease;
+}
+
+.ie-compare__technical-links a:hover b,
+.ie-compare__technical-links a:focus-visible b {
+  transform: translateX(3px);
+}
+
+.ie-compare__technical-links a:focus-visible {
+  outline: 2px solid var(--ie-forest);
+  outline-offset: 3px;
+}
+
+.ie-compare__technical-note {
+  margin-top: 20px;
+  padding: 22px 24px;
+  border-left: 3px solid var(--ie-forest);
+  background: var(--ie-stone);
+  font-family: Manrope, var(--font-body--family), Arial, sans-serif;
+  font-size: .88rem;
+  line-height: 1.58;
+  color: var(--ie-muted);
+}
+
+.ie-compare__technical-note strong {
+  color: var(--ie-ink);
+}
+
+.ie-compare__sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media screen and (min-width: 750px) {
+  .ie-compare__head > p,
+  .ie-compare__section-head > p:last-child,
+  .ie-compare__criteria p,
+  .ie-compare__pros-cons li,
+  .ie-compare__budget-grid p,
+  .ie-compare__scope li,
+  .ie-compare__technical-note {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .ie-compare__criteria {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ie-compare__criteria article {
+    border-bottom: 1px solid var(--ie-border);
+  }
+
+  .ie-compare__criteria article:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .ie-compare__criteria article:last-child {
+    grid-column: 1 / -1;
+    border-bottom: 0;
+  }
+
+  .ie-compare__economics {
+    grid-template-columns: 1fr;
+  }
+
+  .ie-compare__budget-grid,
+  .ie-compare__scope {
+    grid-column: 1;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .ie-compare__inner {
+    width: min(calc(100% - 48px), 1600px);
+  }
+
+  .ie-compare__head,
+  .ie-compare__section-head {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ie-compare__head > p,
+  .ie-compare__section-head > p:last-child {
+    margin-top: 0;
+  }
+
+  .ie-compare__systems,
+  .ie-compare__technical-links {
+    grid-template-columns: 1fr;
+  }
+
+  .ie-compare__systems h3 {
+    min-height: 0;
+  }
+
+  .ie-compare__budget-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ie-compare__budget-grid article {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.16);
+  }
+
+  .ie-compare__budget-grid article:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .ie-compare__inner {
+    width: calc(100% - 32px);
+  }
+
+  .ie-compare__head,
+  .ie-compare__section-head {
+    padding-block: 58px 26px;
+  }
+
+  .ie-compare__head h2,
+  .ie-compare__section-head h2,
+  .ie-compare__economics h2 {
+    font-size: clamp(1.9rem, 8vw, 2.55rem);
+  }
+
+  .ie-compare__head > p,
+  .ie-compare__section-head > p:last-child,
+  .ie-compare__criteria p,
+  .ie-compare__pros-cons li,
+  .ie-compare__budget-grid p,
+  .ie-compare__scope li,
+  .ie-compare__technical-note {
+    text-align: left;
+  }
+
+  .ie-compare__table {
+    min-width: 840px;
+  }
+
+  .ie-compare__table th,
+  .ie-compare__table td {
+    padding: 16px;
+    font-size: .86rem;
+  }
+
+  .ie-compare__criteria {
+    grid-template-columns: 1fr;
+  }
+
+  .ie-compare__criteria article,
+  .ie-compare__criteria article:nth-child(2n) {
+    border-right: 0;
+    border-bottom: 1px solid var(--ie-border);
+  }
+
+  .ie-compare__criteria article:last-child {
+    grid-column: auto;
+  }
+
+  .ie-compare__systems > article,
+  .ie-compare__technical-links article {
+    padding: 22px;
+  }
+
+  .ie-compare__economics {
+    margin: 72px -16px 0;
+    padding: 42px 24px;
+  }
+
+  .ie-compare__scope {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .ie-compare__technical-note {
+    padding: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ie-compare__technical-links a b {
+    transition: none !important;
+  }
+}

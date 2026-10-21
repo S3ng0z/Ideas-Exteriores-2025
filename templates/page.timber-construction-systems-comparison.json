@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "european": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "SISTEMA EUROPEO"
+          }
+        },
+        "frame": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "ENTRAMADO LIGERO"
+          }
+        },
+        "sip": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "PANELES SIP"
+          }
+        }
+      },
+      "block_order": ["european", "frame", "sip"],
+      "settings": {
+        "eyebrow": "Sistemas constructivos · Comparativa",
+        "heading": "Sistema europeo vs entramado ligero vs paneles SIP",
+        "lead": "<p>Tres soluciones de construcción en madera con lógicas distintas. Compara estructura, aislamiento, hermeticidad, montaje, mantenimiento, personalización y alcance económico para identificar qué alternativa merece estudiar en tu proyecto.</p>",
+        "primary_label": "Ver comparativa técnica",
+        "primary_link": "#comparativa-tecnica",
+        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Tres sistemas, un criterio común"
+      }
+    },
+    "systems": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "european": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Timber_House_Corner_with_Construction_Cutaway.webp",
+            "image_alt": "Detalle constructivo del sistema europeo de madera de Ideas Exteriores",
+            "index": "01 · Piezas perfiladas + capa técnica",
+            "heading": "Sistema europeo",
+            "text": "<p><strong>Cómo se construye:</strong> piezas exteriores de madera perfilada con una capa técnica interior. <strong>Característica principal:</strong> combina presencia exterior de madera y una composición que debe definirse proyecto a proyecto. <strong>Aplicaciones:</strong> viviendas y anexos compatibles tras estudio técnico.</p>",
+            "link_1_label": "Ver ficha del sistema",
+            "link_1": "/pages/european-timber-construction-system",
+            "link_2_label": "Componentes y uniones",
+            "link_2": "/pages/european-timber-system-components-joints-materials",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "frame": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Timber_Frame_House_Under_Construction.webp",
+            "image_alt": "Estructura de bastidores de madera en entramado ligero",
+            "index": "02 · Bastidores de madera",
+            "heading": "Entramado ligero",
+            "text": "<p><strong>Cómo se construye:</strong> bastidores de montantes y soleras, rigidización y envolvente por capas. <strong>Característica principal:</strong> flexibilidad geométrica y técnica. <strong>Aplicaciones:</strong> viviendas, ampliaciones, oficinas, estudios y anexos.</p>",
+            "link_1_label": "Ver ficha del sistema",
+            "link_1": "/pages/light-frame-construction-system",
+            "link_2_label": "Estructura, capas y aislamiento",
+            "link_2": "/pages/timber-frame-structure-layers-insulation",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "sip": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Modern_Timber_Frame_House_in_Countryside.webp",
+            "image_alt": "Vivienda construida con solución prefabricada de paneles SIP",
+            "index": "03 · Paneles estructurales aislados",
+            "heading": "Paneles SIP",
+            "text": "<p><strong>Cómo se construye:</strong> paneles prefabricados con caras resistentes y núcleo aislante. <strong>Característica principal:</strong> alto grado de industrialización y definición previa. <strong>Aplicaciones:</strong> viviendas, estudios, oficinas y casetas según sistema y proyecto.</p>",
+            "link_1_label": "Ver ficha del sistema",
+            "link_1": "/pages/sip-panels-system",
+            "link_2_label": "Estructura, capas y aislamiento",
+            "link_2": "/pages/sip-panel-structure-layers-insulation",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": ["european", "frame", "sip"],
+      "settings": {
+        "eyebrow": "01 · Resumen visual",
+        "heading": "Tres formas de construir en madera",
+        "intro": "<p>La comparación empieza por entender qué elemento forma la estructura, dónde se sitúa el aislamiento y cuánto trabajo se concentra en fábrica o en parcela. Ninguna denominación garantiza por sí sola una prestación, un plazo o un precio.</p>"
+      }
+    },
+    "comparison": {
+      "type": "ie-timber-systems-comparison",
+      "settings": {}
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Descubre qué sistema encaja con tu proyecto",
+        "text": "<p>Cuéntanos uso, ubicación, superficie aproximada, geometría, nivel de acabado y condicionantes de parcela. Compararemos alternativas con el mismo alcance antes de proponerte una solución y un presupuesto.</p>",
+        "label": "Solicitar estudio del proyecto",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": ["hero", "systems", "comparison", "cta"]
+}
