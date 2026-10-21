@@ -1,6 +1,8 @@
 {{ 'ie-wood-3d-page.css' | asset_url | stylesheet_tag }}
+{{ 'ie-service-editorial-compact.css' | asset_url | stylesheet_tag }}
 
-<section class="ie-wood3d ie-wood3d--hero" aria-labelledby="ie-wood3d-title-{{ section.id }}">
+
+<section class="ie-wood3d ie-wood3d--hero ie-services-compact" aria-labelledby="ie-wood3d-title-{{ section.id }}">
   <div class="ie-wood3d__inner">
     {% render 'ie-breadcrumb',
       breadcrumb_object: page,
