@@ -72,3 +72,46 @@ body:has(.ie-services-compact) .ie-wood3d__detail-card{padding:clamp(20px,2vw,30
  body:has(.ie-services-compact) .ie-services__confidence{padding-block:40px}
  body:has(.ie-services-compact) p{text-align:left;text-wrap:pretty}
 }
+
+/* Stronger, unified layout tokens for all three OS 2.0 service families.
+   Dedicated section styles may be loaded later by Shopify; specificity and
+   explicit small-screen rules prevent those late overrides. */
+body:has(.ie-services-compact){--ie-service-max:1320px;--ie-service-h1:clamp(2rem,3.1vw,3.15rem);--ie-service-h2:clamp(1.7rem,2.2vw,2.5rem)}
+body:has(.ie-services-compact) :is(.ie-services__inner,.ie-wood3d__inner,.ie-foundations__inner){width:min(calc(100% - 56px),var(--ie-service-max))}
+body:has(.ie-services-compact) :is(.ie-services__hero h1,.ie-wood3d h1,.ie-foundations h1){font-size:var(--ie-service-h1)!important;line-height:1.13!important;letter-spacing:-.025em;text-wrap:pretty}
+body:has(.ie-services-compact) :is(.ie-services__section-head h2,.ie-services__process h2,.ie-services__confidence h2,.ie-services__closing h2,.ie-wood3d h2,.ie-wood3d__quote-copy h2,.ie-foundations h2){font-size:var(--ie-service-h2)!important;line-height:1.16!important}
+body:has(.ie-services-compact) :is(.ie-wood3d__detail-card h3,.ie-wood3d__fit-grid h3,.ie-wood3d__process-step h3,.ie-foundations__system h3){font-size:clamp(1.12rem,1.45vw,1.38rem)!important;line-height:1.25!important}
+body:has(.ie-services-compact) :is(.ie-services__hero,.ie-wood3d__hero-grid,.ie-foundations__hero){padding-block:12px 46px!important;gap:clamp(22px,3vw,44px)}
+body:has(.ie-services-compact) .ie-wood3d__breadcrumb{padding-top:12px;margin-bottom:16px}
+body:has(.ie-services-compact) :is(.ie-services__section-head,.ie-wood3d__section-head){gap:clamp(20px,3vw,38px);padding-bottom:25px}
+body:has(.ie-services-compact) :is(.ie-wood3d--detail,.ie-wood3d--fit,.ie-wood3d--quote){padding-block:clamp(44px,5vw,66px)!important}
+body:has(.ie-services-compact) .ie-wood3d--process{padding-bottom:clamp(44px,5vw,66px)!important}
+body:has(.ie-services-compact) .ie-wood3d__process{padding:clamp(28px,4vw,48px)!important;gap:clamp(22px,3vw,44px)}
+body:has(.ie-services-compact) .ie-wood3d__process-step{padding-block:14px}
+body:has(.ie-services-compact) .ie-wood3d__detail-card,
+body:has(.ie-services-compact) .ie-wood3d__fit-grid article{min-height:0!important;padding:clamp(20px,2vw,28px)!important}
+body:has(.ie-services-compact) .ie-wood3d__detail-index{margin-bottom:18px}
+body:has(.ie-services-compact) .ie-wood3d__fit-label{margin-bottom:16px}
+body:has(.ie-services-compact) .ie-wood3d__quote-layout{gap:clamp(26px,4vw,55px)}
+body:has(.ie-services-compact) .ie-wood3d__form-panel{padding:clamp(22px,3vw,36px)}
+body:has(.ie-services-compact) .ie-foundations__intro{padding-block:50px 25px}
+body:has(.ie-services-compact) :is(.ie-foundations__process,.ie-foundations__workflow,.ie-foundations__scope,.ie-foundations__closing){margin-top:52px}
+body:has(.ie-services-compact) .ie-foundations__system{min-height:0}
+body:has(.ie-services-compact) .ie-services__card h3{font-size:1.03rem!important;line-height:1.35!important}
+body:has(.ie-services-compact) :is(.ie-services__section-intro,.ie-wood3d__section-intro,.ie-foundations__intro-copy){font-size:clamp(.94rem,1vw,1.02rem);line-height:1.65}
+@media(max-width:989px){
+ body:has(.ie-services-compact) :is(.ie-services__hero,.ie-wood3d__hero-grid,.ie-foundations__hero){grid-template-columns:minmax(0,1fr)!important}
+ body:has(.ie-services-compact) :is(.ie-wood3d__section-head,.ie-wood3d__process,.ie-wood3d__quote-layout){grid-template-columns:minmax(0,1fr)!important}
+}
+@media(max-width:749px){
+ body:has(.ie-services-compact){--ie-service-h1:clamp(1.75rem,6.3vw,2.15rem);--ie-service-h2:clamp(1.55rem,5.4vw,1.95rem)}
+ body:has(.ie-services-compact) :is(.ie-services__inner,.ie-wood3d__inner,.ie-foundations__inner){width:calc(100% - 32px)!important}
+ body:has(.ie-services-compact) :is(.ie-services__hero,.ie-wood3d__hero-grid,.ie-foundations__hero){padding-block:8px 32px!important;gap:22px}
+ body:has(.ie-services-compact) :is(.ie-wood3d--detail,.ie-wood3d--fit,.ie-wood3d--quote){padding-block:38px!important}
+ body:has(.ie-services-compact) .ie-wood3d--process{padding-bottom:38px!important}
+ body:has(.ie-services-compact) .ie-wood3d__process{padding:28px 22px!important;margin-inline:0}
+ body:has(.ie-services-compact) :is(.ie-wood3d__detail-grid,.ie-wood3d__fit-grid,.ie-wood3d__form-grid){grid-template-columns:minmax(0,1fr)}
+ body:has(.ie-services-compact) .ie-wood3d__quote-copy h2{font-size:var(--ie-service-h2)!important}
+ body:has(.ie-services-compact) :is(.ie-foundations__intro,.ie-foundations__workflow,.ie-foundations__scope){padding-block:38px}
+ body:has(.ie-services-compact) :is(.ie-services__lead,.ie-foundations__lead,.ie-wood3d__lead){font-size:.96rem;line-height:1.63}
+}
