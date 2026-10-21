@@ -1,0 +1,233 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Necesito mantenimiento o renovar protección"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Tengo un daño o un problema de funcionamiento"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Quiero consultar mis derechos de garantía"
+          }
+        },
+        "d": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Necesito información sobre mi pedido"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "settings": {
+        "eyebrow": "Servicio posventa y garantías",
+        "heading": "Conserva tu construcción de madera y encuentra el soporte adecuado después de la entrega",
+        "lead": "<p>Te orientamos según tu necesidad: mantenimiento preventivo, reparación, consulta sobre garantía o información de un pedido. Diferenciamos los derechos legales de los servicios adicionales presupuestados, con un procedimiento claro para comunicar incidencias.</p>",
+        "primary_label": "Solicitar mantenimiento",
+        "primary_link": "/pages/wood-maintenance-repair",
+        "secondary_label": "Comunicar una incidencia",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "¿Qué necesitas?"
+      }
+    },
+    "services": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "care": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Proteccion_mantenimiento_y_posventa.webp",
+            "image_alt": "Inspección y conservación de una construcción de madera",
+            "index": "01 · Cuidar",
+            "heading": "Mantenimiento y reparación de madera",
+            "text": "<p>Inspección, limpieza, renovación de acabados y protección según exposición y uso. Valoramos saneados, ajustes de fijaciones y sustitución localizada si son técnicamente viables; trabajos mayores requieren evaluación independiente.</p>",
+            "link_1_label": "Ver mantenimiento y reparación",
+            "link_1": "/pages/wood-maintenance-repair",
+            "link_2_label": "Ver tratamiento y protección",
+            "link_2": "/pages/wood-treatment-protection",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "warranty": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_y_definicion_tecnica.webp",
+            "image_alt": "Documentación de garantía y servicio posventa de una casa de madera",
+            "index": "02 · Consultar derechos",
+            "heading": "Garantías y atención de incidencias",
+            "text": "<p>Las garantías legales dependen de la operación y del régimen aplicable. Una garantía comercial adicional solo existe si se ofrece por escrito. La comunicación y análisis de una incidencia no implica exclusión automática ni exige comprar servicios adicionales.</p>",
+            "link_1_label": "Ver garantías de casas y casetas",
+            "link_1": "/pages/prefabricated-wooden-house-warranties",
+            "link_2_label": "Comunicar una incidencia",
+            "link_2": "/pages/contact-ideas-exteriores",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "orders": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt": "Coordinación de entrega y documentación de un pedido",
+            "index": "03 · Consultar pedido",
+            "heading": "Entrega, condiciones y documentación",
+            "text": "<p>Para estado del pedido, transporte, daños de entrega, facturas o pagos, utiliza las páginas específicas. Diferenciamos suministro de producto, montaje contratado y otros servicios; la oferta aceptada determina el alcance comercial.</p>",
+            "link_1_label": "Transporte y entrega",
+            "link_1": "/pages/wooden-houses-and-sheds-delivery",
+            "link_2_label": "Formas de pago y financiación",
+            "link_2": "/pages/payment-and-financing-options",
+            "link_3_label": "Resumen de condiciones",
+            "link_3": "/pages/warranty-delivery-payment-options"
+          }
+        }
+      },
+      "block_order": [
+        "care",
+        "warranty",
+        "orders"
+      ],
+      "settings": {
+        "eyebrow": "01 · Servicios y atención",
+        "heading": "Mantenimiento cuando lo necesitas. Posventa cuando corresponde.",
+        "intro": "<p>El mantenimiento y la reparación son servicios comerciales que pueden contratarse por separado. Las consultas sobre conformidad, garantía y entregas se atienden conforme a las obligaciones que correspondan, sin obligar a contratar mantenimiento.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Identificar el pedido",
+            "text": "Facilita referencia, nombre de quien contrató, fecha aproximada y producto o servicio afectado."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Describir la incidencia",
+            "text": "Indica desde cuándo ocurre, cómo se manifiesta y si afecta al uso o puede comprometer la seguridad."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Adjuntar fotografías",
+            "text": "Envía vistas generales y de detalle, documentos o informes disponibles, sin exponerte a riesgos para obtenerlos."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Evaluación y diagnóstico",
+            "text": "Revisamos antecedentes, entrega, uso, conservación y posible causa. Si procede se acuerdan inspección o pruebas adicionales."
+          }
+        },
+        "step_5": {
+          "type": "step",
+          "settings": {
+            "number": "05",
+            "heading": "Resolución aplicable",
+            "text": "Informamos de la medida que legal o contractualmente corresponda y de su seguimiento. Cualquier servicio adicional ajeno a cobertura se presupuestará por separado."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5"
+      ],
+      "settings": {
+        "eyebrow": "02 · Gestión de incidencias",
+        "heading": "Cómo comunicar un problema y recibir respuesta",
+        "intro": "<p>Recogemos la información necesaria para identificar el pedido, valorar el origen del problema y determinar la actuación que corresponda. Este procedimiento no reduce los derechos legales ni establece plazos de reclamación adicionales.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "faq_1": {
+          "type": "principle",
+          "settings": {
+            "heading": "¿Qué sucede si observo un daño?",
+            "text": "Comunícalo con referencia del pedido y fotografías. Si hay riesgo estructural o de seguridad, evita utilizar el elemento afectado y solicita valoración profesional."
+          }
+        },
+        "faq_2": {
+          "type": "principle",
+          "settings": {
+            "heading": "¿Qué mantenimiento necesita la madera?",
+            "text": "Inspección, limpieza y renovación de protección según tipo de producto, orientación, humedad, exposición e instrucciones del fabricante. No existe un calendario idéntico para todos los casos."
+          }
+        },
+        "faq_3": {
+          "type": "principle",
+          "settings": {
+            "heading": "¿El mantenimiento ordinario forma parte de la garantía?",
+            "text": "No necesariamente. El mantenimiento periódico o las mejoras se contratan cuando proceda. Las obligaciones legales por falta de conformidad o defectos cubiertos se tramitan independientemente."
+          }
+        },
+        "faq_4": {
+          "type": "principle",
+          "settings": {
+            "heading": "¿Dónde consulto mi garantía, entrega o pago?",
+            "text": "La página de garantías desarrolla el régimen aplicable; el resumen de contratación enlaza a entrega, formas de pago y financiación. Una garantía comercial adicional debe estar documentada."
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4"
+      ],
+      "settings": {
+        "eyebrow": "03 · Preguntas frecuentes",
+        "heading": "Qué se considera mantenimiento, reparación o garantía"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "04 · Atención y seguimiento",
+        "heading": "Cuéntanos qué necesitas resolver",
+        "text": "<p>Para mantenimiento, indica tipo de estructura, ubicación, estado y fotografías. Para una incidencia de posventa, aporta referencia del pedido, descripción y evidencias disponibles. Los servicios presupuestables y las obligaciones de garantía se tramitan por vías diferenciadas.</p>",
+        "label": "Comunicar una incidencia",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "services",
+    "process",
+    "confidence",
+    "cta"
+  ]
+}
