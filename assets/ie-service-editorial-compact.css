@@ -1,0 +1,74 @@
+/* Services visual compactness · only the 11 approved service handles.
+   Layout-only: no page copy, link destination, product or form modifications. */
+body:has(.ie-services-compact) .ie-services__inner,
+body:has(.ie-services-compact) .ie-wood3d__inner,
+body:has(.ie-services-compact) .ie-foundations__inner{width:min(calc(100% - 56px),1320px)}
+body:has(.ie-services-compact) .ie-services__breadcrumb,
+body:has(.ie-services-compact) .ie-wood3d__breadcrumb,
+body:has(.ie-services-compact) .ie-foundations__breadcrumb{margin-bottom:16px;min-height:32px}
+body:has(.ie-services-compact) .ie-services__hero,
+body:has(.ie-services-compact) .ie-foundations__hero{gap:clamp(22px,3vw,44px);grid-template-columns:minmax(0,1.8fr) minmax(260px,.85fr);padding-block:12px 46px}
+body:has(.ie-services-compact) .ie-wood3d__hero-grid{gap:clamp(22px,3vw,44px);grid-template-columns:minmax(0,1.8fr) minmax(260px,.85fr);padding-block:12px 46px}
+body:has(.ie-services-compact) .ie-services__hero h1,
+body:has(.ie-services-compact) .ie-wood3d h1,
+body:has(.ie-services-compact) .ie-foundations h1{font-size:clamp(2rem,3.1vw,3.15rem);line-height:1.13;letter-spacing:-.025em;text-wrap:pretty}
+body:has(.ie-services-compact) .ie-services__lead,
+body:has(.ie-services-compact) .ie-wood3d__lead,
+body:has(.ie-services-compact) .ie-foundations__lead{margin-top:16px;font-size:clamp(.96rem,1.05vw,1.06rem);line-height:1.65}
+body:has(.ie-services-compact) .ie-services__actions,
+body:has(.ie-services-compact) .ie-wood3d__actions,
+body:has(.ie-services-compact) .ie-foundations__actions{margin-top:22px}
+body:has(.ie-services-compact) .ie-services__button,
+body:has(.ie-services-compact) .ie-wood3d__button,
+body:has(.ie-services-compact) .ie-foundations__button{min-height:46px;padding:11px 18px}
+body:has(.ie-services-compact) .ie-services__hero-summary,
+body:has(.ie-services-compact) .ie-wood3d__hero-summary{padding-top:12px}
+body:has(.ie-services-compact) .ie-services__summary-list li,
+body:has(.ie-services-compact) .ie-wood3d__summary-list li{padding-block:9px}
+body:has(.ie-services-compact) .ie-services__section-head{padding-block:52px 25px;gap:clamp(20px,3vw,38px)}
+body:has(.ie-services-compact) .ie-services__section-head h2,
+body:has(.ie-services-compact) .ie-services__process h2,
+body:has(.ie-services-compact) .ie-services__confidence h2,
+body:has(.ie-services-compact) .ie-services__closing h2,
+body:has(.ie-services-compact) .ie-wood3d h2,
+body:has(.ie-services-compact) .ie-foundations h2{font-size:clamp(1.7rem,2.2vw,2.5rem);line-height:1.16;text-wrap:pretty}
+body:has(.ie-services-compact) .ie-services__cards{gap:14px}
+body:has(.ie-services-compact) .ie-services__card-content{padding:20px}
+body:has(.ie-services-compact) .ie-services__card h3{font-size:1.03rem!important;line-height:1.35}
+body:has(.ie-services-compact) .ie-services__card p{line-height:1.62}
+body:has(.ie-services-compact) .ie-services__process{margin-top:56px;padding:clamp(28px,4vw,48px);gap:clamp(22px,3vw,44px)}
+body:has(.ie-services-compact) .ie-services__process-step{padding-block:14px}
+body:has(.ie-services-compact) .ie-services__confidence{padding-block:56px 48px}
+body:has(.ie-services-compact) .ie-services__closing{padding-top:48px}
+body:has(.ie-services-compact) .ie-services--cta .ie-services__inner{padding-bottom:64px}
+body:has(.ie-services-compact) .ie-foundations__inner{padding-block:16px 56px}
+body:has(.ie-services-compact) .ie-foundations__intro{gap:clamp(22px,3vw,42px)}
+body:has(.ie-services-compact) .ie-wood3d__section-head{gap:clamp(22px,3vw,42px)}
+body:has(.ie-services-compact) .ie-wood3d__detail-card{padding:clamp(20px,2vw,30px)}
+@media(max-width:989px){
+ body:has(.ie-services-compact) .ie-services__hero,
+ body:has(.ie-services-compact) .ie-foundations__hero,
+ body:has(.ie-services-compact) .ie-wood3d__hero-grid{grid-template-columns:1fr;gap:22px}
+ body:has(.ie-services-compact) .ie-services__section-head{grid-template-columns:1fr}
+}
+@media(max-width:749px){
+ body:has(.ie-services-compact) .ie-services__inner,
+ body:has(.ie-services-compact) .ie-foundations__inner,
+ body:has(.ie-services-compact) .ie-wood3d__inner{width:calc(100% - 32px)}
+ body:has(.ie-services-compact) .ie-services__hero,
+ body:has(.ie-services-compact) .ie-foundations__hero,
+ body:has(.ie-services-compact) .ie-wood3d__hero-grid{padding-block:8px 32px}
+ body:has(.ie-services-compact) .ie-services__hero h1,
+ body:has(.ie-services-compact) .ie-foundations h1,
+ body:has(.ie-services-compact) .ie-wood3d h1{font-size:clamp(1.75rem,6.3vw,2.15rem);line-height:1.17}
+ body:has(.ie-services-compact) .ie-services__section-head h2,
+ body:has(.ie-services-compact) .ie-services__process h2,
+ body:has(.ie-services-compact) .ie-services__confidence h2,
+ body:has(.ie-services-compact) .ie-services__closing h2,
+ body:has(.ie-services-compact) .ie-wood3d h2,
+ body:has(.ie-services-compact) .ie-foundations h2{font-size:clamp(1.55rem,5.4vw,1.95rem);line-height:1.18}
+ body:has(.ie-services-compact) .ie-services__section-head{padding-block:38px 18px}
+ body:has(.ie-services-compact) .ie-services__process{margin-top:38px;padding:28px 22px}
+ body:has(.ie-services-compact) .ie-services__confidence{padding-block:40px}
+ body:has(.ie-services-compact) p{text-align:left;text-wrap:pretty}
+}
