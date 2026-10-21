@@ -41,12 +41,12 @@
       ],
       "settings": {
         "eyebrow": "Servicio y garantías",
-        "heading": "Garantías, entrega y formas de pago",
-        "lead": "<p>Antes de contratar, consulta qué protección legal corresponde a tu pedido, cómo se organiza el transporte y qué medios de pago admitimos. El suministro estándar es el punto de partida: montaje, descarga y otros servicios se presupuestan por separado cuando los necesites.</p>",
+        "heading": "Condiciones claras antes de contratar tu proyecto de madera",
+        "lead": "<p>Consulta garantías, transporte y formas de pago antes de confirmar. Diferenciamos suministro de productos, montaje contratado y, cuando corresponda, contrato de obra. La oferta aceptada identifica los servicios incluidos, opcionales y excluidos, así como la documentación aplicable.</p>",
         "primary_label": "Consultar condiciones de mi proyecto",
         "primary_link": "/pages/contact-ideas-exteriores",
         "secondary_label": "Ver transporte y entrega",
-        "secondary_link": "/pages/transporte-entrega-casas-casetas-madera",
+        "secondary_link": "/pages/wooden-houses-and-sheds-delivery",
         "summary_title": "Antes de contratar"
       }
     },
@@ -60,7 +60,7 @@
             "heading": "Garantías y atención posventa",
             "text": "<p>Conoce la garantía legal de los productos, cuándo interviene la normativa de edificación y cómo tramitamos incidencias. Las responsabilidades y cualquier cobertura adicional se determinan según el contrato y la legislación aplicable.</p>",
             "link_1_label": "Ver garantías de casas y casetas",
-            "link_1": "/pages/garantias-casas-madera-prefabricadas",
+            "link_1": "/pages/prefabricated-wooden-house-warranties",
             "link_2_label": "Mantenimiento y reparación",
             "link_2": "/pages/wood-maintenance-repair",
             "link_3_label": "",
@@ -74,7 +74,7 @@
             "heading": "Transporte, entrega y recepción",
             "text": "<p>La entrega estándar se acuerda hasta un punto accesible. Grúa, descarga, maniobras especiales y montaje son opciones adicionales cuando proceda. Revisamos accesos, medios, fechas y costes antes de programar el envío.</p>",
             "link_1_label": "Ver transporte y entrega",
-            "link_1": "/pages/transporte-entrega-casas-casetas-madera",
+            "link_1": "/pages/wooden-houses-and-sheds-delivery",
             "link_2_label": "",
             "link_2": "",
             "link_3_label": "",
@@ -88,7 +88,7 @@
             "heading": "Formas de pago y financiación",
             "text": "<p>Transferencia, financiación bancaria, tarjeta, confirming, efectivo y Bizum, según disponibilidad y límites legales. Los anticipos e hitos se pactan por escrito; no anunciamos cuotas, tipos ni financiación propia sin oferta aprobada.</p>",
             "link_1_label": "Ver formas de pago y financiación",
-            "link_1": "/pages/formas-de-pago-y-financiacion",
+            "link_1": "/pages/payment-and-financing-options",
             "link_2_label": "Consultar presupuesto",
             "link_2": "/pages/contact-ideas-exteriores",
             "link_3_label": "",
@@ -104,7 +104,7 @@
       "settings": {
         "eyebrow": "Antes de confirmar el pedido",
         "heading": "Tres temas, cada uno con sus condiciones",
-        "intro": "<p>Consulta las condiciones de cada servicio antes de confirmar. El precio base corresponde al alcance descrito en la oferta; las opciones de transporte, descarga, instalación y financiación requieren la aceptación de sus condiciones específicas.</p>"
+        "intro": "<p>El contrato distingue el producto suministrado de las labores de descarga, instalación y ejecución de obra. Consulta cada guía y confirma por escrito el precio, la configuración, las responsabilidades y las condiciones particulares antes de aceptar.</p>"
       }
     },
     "process": {
@@ -114,32 +114,32 @@
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Elegir suministro y extras",
-            "text": "Confirmamos modelo, materiales, configuración estándar y servicios opcionales con precio y exclusiones."
+            "heading": "Presupuesto desglosado",
+            "text": "Modelo, configuración, impuestos, transporte, montaje y extras identificados como incluidos, opcionales o excluidos."
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Acordar pagos y calendario",
-            "text": "Documentamos medios de pago, importes, hitos, condiciones de fabricación y necesidades logísticas."
+            "heading": "Aceptación y confirmación",
+            "text": "Formalizamos la oferta, condiciones particulares y documentación aplicable antes de encargar fabricación o servicios."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Coordinar entrega y recepción",
-            "text": "Verificamos destino, accesos, medios de descarga y comprobación visible del pedido."
+            "heading": "Facturación, hitos y entrega",
+            "text": "Confirmamos importes y vencimientos, coordinar logística, recepción y montaje solo si figura en el pedido."
           }
         },
         "step_4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Gestionar la posventa",
-            "text": "Registramos incidencias, estudiamos su origen y aplicamos la solución legal o contractualmente correspondiente."
+            "heading": "Incidencias y posventa",
+            "text": "Contacta indicando referencia del pedido y evidencias: garantías para defectos, entrega para faltantes y facturación para pagos."
           }
         }
       },
@@ -161,29 +161,29 @@
         "principle_1": {
           "type": "principle",
           "settings": {
-            "heading": "Condiciones específicas",
-            "text": "El suministro estándar es la referencia; montaje, descarga, grúa y otros extras solo se añaden por acuerdo."
+            "heading": "Suministro, montaje y obra",
+            "text": "Un kit suministrado, un montaje contratado y una obra sometida a normativa específica no son equivalentes. Cada alcance y sus responsables se identifican en la oferta."
           }
         },
         "principle_2": {
           "type": "principle",
           "settings": {
-            "heading": "Recepción documentada",
-            "text": "Recomendamos dejar constancia de daños visibles al recibir, sin limitar los derechos legales del comprador."
+            "heading": "Incluidos, opcionales y excluidos",
+            "text": "El presupuesto distingue producto, transporte, descarga, medios auxiliares, cimentación, instalación, acabados y trabajos técnicos."
           }
         },
         "principle_3": {
           "type": "principle",
           "settings": {
-            "heading": "Mantenimiento coherente",
-            "text": "Entregamos las recomendaciones que correspondan a los materiales y al alcance del suministro."
+            "heading": "Documentación y facturas",
+            "text": "Conserva presupuesto aceptado, pedido, factura, fichas, instrucciones y documentación técnica o de obra cuando corresponda."
           }
         },
         "principle_4": {
           "type": "principle",
           "settings": {
-            "heading": "Documento contractual",
-            "text": "El presupuesto aceptado identifica importes, alcances, responsables, plazos acordados y servicios incluidos."
+            "heading": "Cambios, cancelaciones e incidencias",
+            "text": "Las modificaciones se acuerdan antes de ejecutarse. Cancelaciones y devoluciones siguen las políticas aplicables, sin restringir derechos legales."
           }
         }
       },
@@ -195,16 +195,16 @@
       ],
       "settings": {
         "eyebrow": "Criterio de servicio",
-        "heading": "Sin servicios implícitos ni costes imprevistos"
+        "heading": "Oferta aceptada, condiciones particulares y derechos aplicables"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Solicita condiciones claras para tu pedido",
-        "text": "<p>Indícanos el modelo, el municipio de entrega y los servicios que necesitas. Te prepararemos una propuesta con suministro base, extras opcionales, calendario de pagos y responsabilidades claramente diferenciados.</p>",
-        "label": "Hablar con el equipo",
+        "heading": "Aclara las condiciones de tu proyecto antes de contratar",
+        "text": "<p>Indica el modelo, ubicación de entrega y servicios deseados. Confirmaremos presupuesto, inclusiones, exclusiones, pago, plazos y documentación. Para devoluciones o desistimiento, consulta también la política aplicable a tu pedido.</p>",
+        "label": "Consultar condiciones de mi proyecto",
         "link": "/pages/contact-ideas-exteriores"
       }
     }
