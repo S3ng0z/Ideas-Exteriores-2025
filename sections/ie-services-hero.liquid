@@ -1,7 +1,12 @@
 {{ 'ie-services-page.css' | asset_url | stylesheet_tag }}
+{% assign ie_editorial_handles = 'european-timber-construction-system,european-timber-system-how-it-works,european-timber-system-components-joints-materials,european-timber-system-assembly-finishes,european-timber-system-applications-models,light-frame-construction-system,what-is-light-timber-frame-construction,timber-frame-structure-layers-insulation,timber-frame-assembly-durability-sustainability,timber-frame-applications-compatible-models,sip-panels-system,what-are-sip-panels-how-they-work,sip-panel-structure-layers-insulation,sip-panel-assembly-durability-sustainability,sip-panel-applications-compatible-models,compare-and-choose-timber-systems,timber-construction-systems-comparison,choose-timber-construction-system,how-to-choose-timber-construction-system' | split: ',' %}
+{% if ie_editorial_handles contains page.handle %}
+  {{ 'ie-timber-editorial-compact.css' | asset_url | stylesheet_tag }}
+{% endif %}
+
 {% comment %}IE breadcrumb renderer synced{% endcomment %}
 
-<section class="ie-services ie-services--hero" aria-labelledby="ie-services-title-{{ section.id }}">
+<section class="ie-services ie-services--hero{% if ie_editorial_handles contains page.handle %} ie-systems-compact{% endif %}" aria-labelledby="ie-services-title-{{ section.id }}">
   <div class="ie-services__inner">
     {% render 'ie-breadcrumb', breadcrumb_object: page, current_title: page.title, class_name: 'ie-services__breadcrumb' %}
 
