@@ -1,4 +1,4 @@
-<section class="ie-services ie-services--cards" aria-labelledby="ie-services-cards-title-{{ section.id }}">
+<section class="ie-services ie-services--cards" {% if page.handle == 'timber-building-systems' %}id="sistemas-madera"{% endif %} aria-labelledby="ie-services-cards-title-{{ section.id }}">
   <div class="ie-services__inner">
     <div class="ie-services__section-head">
       {% if section.settings.eyebrow != blank %}
