@@ -4,9 +4,14 @@
   {{ 'ie-timber-editorial-compact.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
+{% assign ie_service_compact_handles = 'services,design-and-project-management,project-management-permits,wood-installation-and-protection,timber-structure-installation,wood-treatment-protection,after-sales-and-warranties,wood-maintenance-repair,warranty-delivery-payment-options' | split: ',' %}
+{% if ie_service_compact_handles contains page.handle %}
+  {{ 'ie-service-editorial-compact.css' | asset_url | stylesheet_tag }}
+{% endif %}
+
 {% comment %}IE breadcrumb renderer synced{% endcomment %}
 
-<section class="ie-services ie-services--hero{% if ie_editorial_handles contains page.handle %} ie-systems-compact{% endif %}" aria-labelledby="ie-services-title-{{ section.id }}">
+<section class="ie-services ie-services--hero{% if ie_service_compact_handles contains page.handle %} ie-services-compact{% endif %}{% if ie_editorial_handles contains page.handle %} ie-systems-compact{% endif %}" aria-labelledby="ie-services-title-{{ section.id }}">
   <div class="ie-services__inner">
     {% render 'ie-breadcrumb', breadcrumb_object: page, current_title: page.title, class_name: 'ie-services__breadcrumb' %}
 
