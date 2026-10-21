@@ -115,3 +115,31 @@ body:has(.ie-services-compact) :is(.ie-services__section-intro,.ie-wood3d__secti
  body:has(.ie-services-compact) :is(.ie-foundations__intro,.ie-foundations__workflow,.ie-foundations__scope){padding-block:38px}
  body:has(.ie-services-compact) :is(.ie-services__lead,.ie-foundations__lead,.ie-wood3d__lead){font-size:.96rem;line-height:1.63}
 }
+
+/* Unified editorial hierarchy: inherited author text remains unaltered.
+   Use the same font, case, reading rhythm, and hero balance on every service template. */
+body:has(.ie-services-compact) :is(.ie-services__hero h1,.ie-wood3d h1,.ie-foundations h1,.ie-services__section-head h2,.ie-services__process h2,.ie-services__confidence h2,.ie-services__closing h2,.ie-wood3d h2,.ie-foundations h2,.ie-foundations__system h3){
+  font-family:"Source Serif 4",Georgia,serif!important;
+  font-weight:500!important;
+  text-transform:none!important;
+  font-variant:normal!important;
+  letter-spacing:-.02em!important;
+  text-wrap:pretty;
+}
+body:has(.ie-services-compact) :is(.ie-services__lead,.ie-services__section-intro,.ie-services__card-text,.ie-services__process-intro,.ie-services__process-step p,.ie-services__confidence-grid p,.ie-services__closing .rte,.ie-wood3d__lead,.ie-wood3d__section-intro,.ie-wood3d__detail-card .rte,.ie-wood3d__process-intro .rte,.ie-wood3d__process-step p,.ie-wood3d__fit-grid article>p:last-child,.ie-wood3d__quote-copy .rte,.ie-foundations__lead,.ie-foundations__intro-copy,.ie-foundations__system .rte,.ie-foundations__moisture .rte,.ie-foundations__workflow-copy .rte,.ie-foundations__scope-grid .rte,.ie-foundations__cta .rte){
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+  text-align:left!important;
+  text-justify:auto!important;
+  hyphens:none!important;
+  line-height:1.64;
+}
+body:has(.ie-services-compact) :is(.ie-services__hero,.ie-wood3d__hero-grid,.ie-foundations__hero){
+  grid-template-columns:minmax(0,1.8fr) minmax(260px,.85fr)!important;
+  align-items:start;
+}
+body:has(.ie-services-compact) :is(.ie-services__hero-copy,.ie-wood3d__hero-copy,.ie-foundations__hero-copy){min-width:0}
+body:has(.ie-services-compact) :is(.ie-services__summary-list strong,.ie-wood3d__summary-list strong,.ie-foundations__decision strong){font-family:Manrope,var(--font-body--family),Arial,sans-serif;font-size:.9rem;line-height:1.45}
+body:has(.ie-services-compact) :is(.ie-services__eyebrow,.ie-wood3d__eyebrow,.ie-foundations__eyebrow){font-size:.75rem!important;line-height:1.4;letter-spacing:.07em}
+@media(max-width:989px){
+ body:has(.ie-services-compact) :is(.ie-services__hero,.ie-wood3d__hero-grid,.ie-foundations__hero){grid-template-columns:minmax(0,1fr)!important}
+}
