@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "choose": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Tengo un modelo elegido y quiero adaptarlo"
+          }
+        },
+        "measures": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Necesito definir medidas y distribución"
+          }
+        },
+        "plans": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Ya tengo planos o documentación"
+          }
+        },
+        "permits": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Necesito comprobar viabilidad o permisos"
+          }
+        }
+      },
+      "block_order": [
+        "choose",
+        "measures",
+        "plans",
+        "permits"
+      ],
+      "settings": {
+        "eyebrow": "Diseño y proyectos en madera",
+        "heading": "Convierte tu idea en un proyecto definido, viable y preparado para ejecutar",
+        "lead": "<p>¿Has elegido un modelo, necesitas adaptar medidas, ya tienes planos o debes comprobar los permisos? Te ayudamos a identificar el siguiente paso sin confundir diseño visual con proyecto técnico ni comprometer licencias o plazos no confirmados.</p>",
+        "primary_label": "Definir mi proyecto",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Consultar permisos y viabilidad",
+        "secondary_link": "/pages/project-management-permits",
+        "summary_title": "¿En qué punto estás?"
+      }
+    },
+    "services": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "design": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_y_definicion_tecnica.webp",
+            "image_alt": "Documentación y planos para diseñar una construcción de madera",
+            "index": "01 · Visualizar y definir",
+            "heading": "Diseño 3D y asesoría técnica en madera",
+            "text": "<p>Definimos uso, dimensiones, distribución y volumen. Entregables posibles: imágenes 3D, planos preliminares y propuesta de opciones, según el contrato. No sustituye por sí mismo proyecto visado, cálculo o licencia.</p>",
+            "link_1_label": "Ver diseño 3D y asesoramiento",
+            "link_1": "/pages/wood-3d-design-consulting",
+            "link_2_label": "Consultar mi idea",
+            "link_2": "/pages/contact-ideas-exteriores"
+          }
+        },
+        "permitting": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_y_definicion_tecnica.webp",
+            "image_alt": "Documentación técnica y de viabilidad para una construcción de madera",
+            "index": "02 · Verificar y tramitar",
+            "heading": "Proyecto técnico, viabilidad y licencias",
+            "text": "<p>Revisamos condiciones urbanísticas y definimos documentación técnica, profesionales competentes y trámites cuando proceda. La aprobación y los plazos dependen de la administración; tasas y estudios se presupuestan separadamente.</p>",
+            "link_1_label": "Ver viabilidad y licencias",
+            "link_1": "/pages/project-management-permits",
+            "link_2_label": "Consultar requisitos",
+            "link_2": "/pages/contact-ideas-exteriores"
+          }
+        },
+        "related": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt": "Preparación para la ejecución de una estructura de madera",
+            "index": "03 · Preparar el siguiente paso",
+            "heading": "Del diseño a la fabricación o ejecución",
+            "text": "<p>La propuesta validada permite valorar suministro, bases y montaje si se contratan posteriormente. La definición comercial, el diseño y la dirección de obra no se incluyen automáticamente unos en otros.</p>",
+            "link_1_label": "Ver servicios de montaje",
+            "link_1": "/pages/timber-structure-installation",
+            "link_2_label": "Ver trabajos realizados",
+            "link_2": "/pages/wood-project-gallery"
+          }
+        }
+      },
+      "block_order": [
+        "design",
+        "permitting",
+        "related"
+      ],
+      "settings": {
+        "eyebrow": "Servicios de diseño y proyecto",
+        "heading": "Dos servicios diferenciados, coordinables entre sí",
+        "intro": "<p>Elige asesoramiento y diseño 3D para explorar y definir una solución; contrata el proyecto técnico y los trámites aplicables cuando la actuación lo exija. Cada prestación requiere alcance, honorarios y entregables propios.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "phase_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Definir necesidades",
+            "text": "Uso, parcela, localidad, dimensiones, presupuesto orientativo y modelos o referencias."
+          }
+        },
+        "phase_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Comprobaciones iniciales",
+            "text": "Condicionantes urbanísticos y técnicos disponibles; identificamos estudios adicionales cuando sean necesarios."
+          }
+        },
+        "phase_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Propuesta de diseño 3D",
+            "text": "Volumetría, distribución y opciones de diseño dentro del número de revisiones contratado."
+          }
+        },
+        "phase_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Validación técnica",
+            "text": "Compatibilidad del sistema, geometría, estructura y requisitos aplicables por profesionales competentes cuando proceda."
+          }
+        },
+        "phase_5": {
+          "type": "step",
+          "settings": {
+            "number": "05",
+            "heading": "Documentación y trámites",
+            "text": "Planos preliminares, proyecto técnico o acompañamiento administrativo, según servicio; aprobación y tiempos no garantizados."
+          }
+        }
+      },
+      "block_order": [
+        "phase_1",
+        "phase_2",
+        "phase_3",
+        "phase_4",
+        "phase_5"
+      ],
+      "settings": {
+        "eyebrow": "Fases del proyecto",
+        "heading": "De la necesidad a la documentación que corresponda",
+        "intro": "<p>Las fases son orientativas. Algunas actuaciones solo necesitan asesoramiento; otras precisan profesionales habilitados, proyecto y autorización administrativa antes de ejecutarse.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "scope_1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Asesoramiento inicial",
+            "text": "Orientación sobre necesidades y posibles soluciones. No incluye automáticamente planos, estudios urbanísticos exhaustivos ni trámites."
+          }
+        },
+        "scope_2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Diseño y revisiones",
+            "text": "Imágenes 3D y planos preliminares solo en el alcance acordado; revisiones y modificaciones adicionales se valoran aparte."
+          }
+        },
+        "scope_3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Proyecto y gestión documental",
+            "text": "Proyecto técnico, firma profesional, estudios, visado, tasas, solicitudes y seguimiento administrativo se definen y presupuestan según necesidad."
+          }
+        },
+        "scope_4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Información y responsabilidades",
+            "text": "Facilita ubicación de parcela, uso, medidas, planos y fotografías. La viabilidad definitiva, autorizaciones y plazos dependen de los organismos y técnicos responsables."
+          }
+        }
+      },
+      "block_order": [
+        "scope_1",
+        "scope_2",
+        "scope_3",
+        "scope_4"
+      ],
+      "settings": {
+        "eyebrow": "Contratación y entregables",
+        "heading": "Un alcance claro para cada fase"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Empezamos por tu situación",
+        "heading": "Define tu proyecto con el servicio adecuado",
+        "text": "<p>Indícanos si tienes un modelo, necesitas distribución, ya dispones de planos o buscas tramitar permisos. Adjunta municipio, parcela, uso, dimensiones y fotografías disponibles. Te orientaremos sobre entregables, honorarios, estudios, tasas y revisiones, sin obligarte a contratar la construcción.</p>",
+        "label": "Definir mi proyecto",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "services",
+    "process",
+    "confidence",
+    "cta"
+  ]
+}
