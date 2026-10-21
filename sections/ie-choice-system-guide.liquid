@@ -1,0 +1,55 @@
+{{ 'ie-choice-guide.css' | asset_url | stylesheet_tag }}
+<section class="ie-choice" id="criterios-eleccion" aria-labelledby="ie-choice-heading-{{ section.id }}">
+ <div class="ie-choice__inner">
+  <header class="ie-choice__intro"><p class="ie-choice__eyebrow">01 · Guía de decisión</p><h2 id="ie-choice-heading-{{ section.id }}">Ocho decisiones que conviene cerrar antes de pedir presupuesto</h2><p>El mejor sistema no se determina por un ranking universal. Depende de uso, proyecto, entorno, prestaciones justificadas y alcance contratado. Utiliza esta guía para comparar con criterios verificables.</p></header>
+  <div class="ie-choice__steps">
+  {% assign labels = 'Uso previsto y frecuencia de utilización|Presupuesto y alcance real|Parcela, accesos y cimentación|Aislamiento, acústica y energía|Diseño y personalización|Montaje, plazos y acabados|Mantenimiento, durabilidad y garantías|Permisos y documentación técnica' | split: '|' %}
+  {% for label in labels %}
+   <article class="ie-choice__step">
+    <span class="ie-choice__num">0{{ forloop.index }}</span><div>
+      <h3>{{ label }}</h3>
+      {% case forloop.index %}
+      {% when 1 %}<p><strong>Auxiliar:</strong> almacenaje o función complementaria, sin presuponer habitabilidad. <strong>Ocasional:</strong> utilización esporádica, cuya autorización y exigencias dependen de la actividad concreta. <strong>Residencial:</strong> vivienda habitual o segunda residencia, con proyecto y requisitos de habitabilidad aplicables. El uso no se deduce de las dimensiones ni del producto elegido.</p>
+      {% when 2 %}<p>Antes de comparar precios, exige una oferta con qué incluye y qué no incluye: estructura, aislamiento, cubierta, carpinterías, instalaciones, acabados, IVA y alcance del montaje. Proyecto, licencias, cimentación, transporte, descarga, grúa y acometidas deben figurar como partidas incluidas, excluidas o sujetas a estudio. Los precios publicados de catálogo no equivalen automáticamente a un presupuesto llave en mano.</p>
+      {% when 3 %}<p>Revisar municipio, uso urbanístico permitido, topografía, geotecnia cuando proceda, cargas, cimentación y anclajes. Comprobar acceso de camiones, maniobras, descarga, acopio y medios auxiliares. Una solución económica en fábrica puede no serlo en una parcela con logística compleja.</p>
+      {% when 4 %}<p>El comportamiento térmico y acústico depende de la composición completa: aislante, capas, huecos, juntas, puentes térmicos, ventilación y ejecución. Las exigencias de energía, salubridad y ruido se justifican según el proyecto y el uso; ningún nombre de sistema garantiza una clase energética o un valor U universal.</p>
+      {% when 5 %}<p>Definir superficie útil y construida, plantas, geometría, distribución, huecos y acabados antes de elegir sistema. El entramado permite configuraciones por capas; SIP requiere una definición cuidadosa antes de mecanizar; el sistema europeo exige atender a perfiles, uniones y movimientos de la madera. Los cambios estructurales o de envolvente requieren estudio adicional.</p>
+      {% when 6 %}<p>Separar fabricación, transporte, descarga, preparación de base, montaje, cerramientos, instalaciones y acabados. Los plazos dependen del modelo, la coordinación y la parcela. Comparar una entrega de kit con otra de montaje terminado sin homogeneizar el alcance conduce a conclusiones erróneas.</p>
+      {% when 7 %}<p>Revisar la exposición del revestimiento, protección frente a humedad, mantenimiento de sellados, encuentros y acabados, y accesibilidad para inspección. Las garantías y su alcance deben constar por escrito; nunca sustituyen el mantenimiento necesario ni los derechos legales del consumidor.</p>
+      {% when 8 %}<p>Confirmar planeamiento municipal, títulos habilitantes, técnicos intervinientes y normativa aplicable. En España, cuando corresponda, el CTE y sus Documentos Básicos deben justificarse para el proyecto concreto. Solicita memoria de composición, documentación de producto, planos, cálculo y detalle de uniones según cada solución.</p>
+      {% endcase %}
+     </div>
+   </article>
+  {% endfor %}
+  </div>
+  <aside class="ie-choice__guide"><div><p class="ie-choice__eyebrow">02 · Conocer las alternativas</p><h2>Distintas soluciones. El mismo rigor.</h2><p>Utiliza las fichas de sistema para contrastar componentes, montaje y aplicaciones. El «sistema europeo» es una denominación comercial de Ideas Exteriores, no una certificación o norma.</p></div><div class="ie-choice__guide-links"><a href="/pages/european-timber-construction-system">Sistema europeo <span>→</span></a><a href="/pages/light-frame-construction-system">Entramado ligero <span>→</span></a><a href="/pages/sip-panels-system">Paneles SIP <span>→</span></a><a href="/pages/timber-construction-systems-comparison">Comparativa técnica de los tres sistemas <span>→</span></a><a href="/pages/choose-timber-construction-system">Elegir según el uso del proyecto <span>→</span></a></div></aside>
+  <div class="ie-choice__checklist" id="checklist-presupuesto"><div><p class="ie-choice__eyebrow">03 · Checklist comercial</p><h2>Antes de pedir presupuesto</h2><p>Cuantos más puntos puedas concretar, más preciso será el estudio. No es necesario tener todos resueltos para contactar.</p></div><ul>
+   <li>Uso previsto: auxiliar, habitual, residencial u otro</li><li>Municipio y situación urbanística de la parcela</li><li>Superficie aproximada y número de plantas</li><li>Modelo de referencia o distribución deseada</li><li>Necesidades térmicas, acústicas y de instalaciones</li><li>Accesos, cimentación existente y medios de descarga</li><li>Nivel de acabado y alcance de montaje</li><li>Presupuesto estimado y fase de decisión</li><li>Planos, fotografías o documentación disponible</li>
+  </ul></div>
+  <section class="ie-choice__form-section" id="solicitar-asesoramiento" aria-labelledby="ie-choice-form-heading">
+   <div class="ie-choice__form-intro"><p class="ie-choice__eyebrow">04 · Asesoría y presupuesto</p><h2 id="ie-choice-form-heading">Cuéntanos tu proyecto</h2><p>Envíanos los datos esenciales. Confirmaremos qué sistema conviene estudiar tras revisar el uso, la parcela y el alcance; el formulario no emite una recomendación técnica definitiva.</p></div>
+   <div class="ie-choice__form-panel">
+   {% assign form_id = 'IEChoiceForm-' | append: section.id %}
+   {% form 'contact', id: form_id, class: 'ie-choice__form' %}
+    {% if form.posted_successfully? %}<div class="ie-choice__feedback" role="status">Consulta recibida por Shopify. Revisaremos la información y responderemos por correo.</div>{% endif %}
+    {% if form.errors %}<div class="ie-choice__feedback ie-choice__feedback--error" role="alert">{{ form.errors | default_errors }}</div>{% endif %}
+    <input type="hidden" name="contact[Origen]" value="{{ canonical_url | escape }}">
+    <div class="ie-choice__fields">
+     <div><label for="{{ form_id }}-email">Correo electrónico *</label><input id="{{ form_id }}-email" type="email" name="contact[email]" value="{{ form.email | escape }}" autocomplete="email" required></div>
+     <div><label for="{{ form_id }}-type">Tipo de proyecto *</label><select id="{{ form_id }}-type" name="contact[Tipo de proyecto]" required><option value="">Seleccionar</option><option>Vivienda habitual</option><option>Segunda residencia</option><option>Casa de jardín</option><option>Oficina o estudio</option><option>Caseta auxiliar</option><option>Ampliación</option><option>Otro proyecto</option></select></div>
+     <div><label for="{{ form_id }}-city">Localidad / provincia *</label><input id="{{ form_id }}-city" type="text" name="contact[Localidad]" autocomplete="address-level2" required placeholder="Municipio y provincia"></div>
+     <div><label for="{{ form_id }}-area">Superficie aproximada (m²)</label><input id="{{ form_id }}-area" type="number" min="1" max="10000" step="1" inputmode="numeric" name="contact[Superficie aproximada m2]" placeholder="Ej. 45"></div>
+     <div><label for="{{ form_id }}-budget">Presupuesto estimado</label><select id="{{ form_id }}-budget" name="contact[Presupuesto estimado]"><option value="">Sin definir</option><option>Hasta 15.000 €</option><option>15.000–40.000 €</option><option>40.000–80.000 €</option><option>80.000–150.000 €</option><option>Más de 150.000 €</option></select></div>
+     <div><label for="{{ form_id }}-stage">Fase del proyecto</label><select id="{{ form_id }}-stage" name="contact[Fase del proyecto]"><option value="">Seleccionar</option><option>Explorando alternativas</option><option>Parcela definida</option><option>Con planos o mediciones</option><option>Con proyecto técnico</option><option>Preparando contratación</option></select></div>
+     <div class="ie-choice__full"><label for="{{ form_id }}-body">Información adicional *</label><textarea id="{{ form_id }}-body" name="contact[body]" required placeholder="Uso previsto, si tienes parcela, necesidades de aislamiento y acabado, accesos y cualquier condicionante relevante.">{{ form.body | escape }}</textarea></div>
+    </div>
+    <label class="ie-choice__privacy"><input type="checkbox" name="contact[Privacidad]" value="Aceptada" required><span>He leído y acepto la <a href="/policies/privacy-policy">política de privacidad</a>.</span></label>
+    <button type="submit" class="ie-choice__submit">Solicitar asesoramiento y presupuesto</button>
+   {% endform %}
+   </div>
+  </section>
+ </div>
+</section>
+{% schema %}
+{"name":"Guía · Claves de elección","settings":[],"presets":[{"name":"Guía · Claves de elección"}]}
+{% endschema %}

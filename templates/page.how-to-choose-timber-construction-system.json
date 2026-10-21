@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "CRITERIOS DEL PROYECTO"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "CHECKLIST PREVIO"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "ASESORÍA Y PRESUPUESTO"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "settings": {
+        "eyebrow": "Guía práctica · Sistemas constructivos",
+        "heading": "Cómo elegir el mejor sistema constructivo de madera para tu proyecto",
+        "lead": "<p>Antes de decidir entre sistema europeo, entramado ligero y paneles SIP, revisa lo que condiciona de verdad tu obra: uso, presupuesto, parcela, aislamiento, acabados, mantenimiento y normativa. Te ayudamos a convertir esas decisiones en una propuesta concreta, sin promesas genéricas.</p>",
+        "primary_label": "Revisar criterios de elección",
+        "primary_link": "#criterios-eleccion",
+        "secondary_label": "Solicitar asesoramiento",
+        "secondary_link": "#solicitar-asesoramiento",
+        "summary_title": "De las dudas a un presupuesto claro"
+      }
+    },
+    "guide": {
+      "type": "ie-choice-system-guide",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "guide"
+  ]
+}
