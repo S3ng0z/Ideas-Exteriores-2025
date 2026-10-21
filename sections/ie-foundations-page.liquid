@@ -6,8 +6,10 @@
 %}
 
 {{ 'ie-foundations-page.css' | asset_url | stylesheet_tag }}
+{{ 'ie-service-editorial-compact.css' | asset_url | stylesheet_tag }}
 
-<section class="ie-foundations" aria-labelledby="ie-foundations-title-{{ section.id }}">
+
+<section class="ie-foundations ie-services-compact" aria-labelledby="ie-foundations-title-{{ section.id }}">
   <div class="ie-foundations__inner">
     {% render 'ie-breadcrumb',
       breadcrumb_object: page,
