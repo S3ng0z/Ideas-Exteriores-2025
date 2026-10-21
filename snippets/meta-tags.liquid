@@ -135,6 +135,11 @@
     assign seo_description = 'Conoce los criterios para elegir un sistema de construcción en madera: presupuesto, aislamiento, durabilidad, montaje, normativa y mantenimiento.'
   endif
 
+  if request.page_type == 'page' and page.handle == 'light-frame-vs-sip-comparison'
+    assign seo_title = 'Comparar y elegir sistemas constructivos | Ideas Exteriores'
+    assign seo_description = 'Compara sistema europeo, entramado ligero y paneles SIP. Descubre sus diferencias, qué sistema elegir según tu proyecto y cómo solicitar presupuesto.'
+  endif
+
   if request.page_type == 'page' and page.handle == 'wood-maintenance-repair'
     assign seo_title = 'Mantenimiento y reparación de madera exterior'
     assign seo_description = 'Mantenimiento y reparación de madera exterior con diagnóstico previo, saneado, reparación localizada, renovación de protección y plan de mantenimiento.'

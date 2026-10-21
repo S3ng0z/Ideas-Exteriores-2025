@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "a": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "COMPARAR LOS SISTEMAS"
+          }
+        },
+        "b": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "ELEGIR SEGÚN EL PROYECTO"
+          }
+        },
+        "c": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "CONSULTAR ANTES DE COMPRAR"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "settings": {
+        "eyebrow": "Sistemas constructivos · Guía de elección",
+        "heading": "Compara y elige tu sistema constructivo de madera",
+        "lead": "<p>Sistema europeo, entramado ligero y paneles SIP: tres formas de construir, con prestaciones y condiciones distintas. Descubre las diferencias, identifica opciones para tu proyecto y prepara un presupuesto con el alcance bien definido.</p>",
+        "primary_label": "Explorar las tres guías",
+        "primary_link": "#guias-comparativa",
+        "secondary_label": "Solicitar asesoramiento",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Una elección informada en tres pasos"
+      }
+    },
+    "cards": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "one": {
+          "type": "service",
+          "settings": {
+            "index": "01 · Diferencias",
+            "heading": "Comparativa de sistemas constructivos",
+            "text": "<p>Conoce cómo se construyen el sistema europeo, el entramado ligero y los paneles SIP. Compara aislamiento, personalización, hermeticidad, montaje y precio sin promesas genéricas.</p>",
+            "link_1_label": "Comparar los tres sistemas",
+            "link_1": "/pages/timber-construction-systems-comparison",
+            "link_2_label": "Sistema europeo",
+            "link_2": "/pages/european-timber-construction-system",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "two": {
+          "type": "service",
+          "settings": {
+            "index": "02 · Aplicaciones",
+            "heading": "¿Qué sistema encaja con tu proyecto?",
+            "text": "<p>Vivienda, estudio, oficina, caseta o ampliación: parte del uso previsto, la parcela y el nivel de confort. Descubre referencias reales del catálogo y qué compatibilidades deben validarse.</p>",
+            "link_1_label": "Elegir según el uso",
+            "link_1": "/pages/choose-timber-construction-system",
+            "link_2_label": "Ver entramado ligero",
+            "link_2": "/pages/light-frame-construction-system",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "three": {
+          "type": "service",
+          "settings": {
+            "index": "03 · Compra informada",
+            "heading": "Claves antes de solicitar presupuesto",
+            "text": "<p>Revisa normativa, cimentación, acceso, aislamiento, acabados, montaje, mantenimiento y garantías. Define qué incluye el suministro y qué se presupuesta por separado.</p>",
+            "link_1_label": "Preparar mi presupuesto",
+            "link_1": "/pages/how-to-choose-timber-construction-system",
+            "link_2_label": "Ver paneles SIP",
+            "link_2": "/pages/sip-panels-system",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "one",
+        "two",
+        "three"
+      ],
+      "settings": {
+        "eyebrow": "01 · Tres decisiones",
+        "heading": "Todo lo que necesitas para elegir con criterio",
+        "intro": "<p>No existe un único sistema mejor para todos los proyectos. Estas guías ordenan las preguntas importantes y te conducen desde la comparación técnica a una propuesta concreta.</p>"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "02 · Te ayudamos a decidir",
+        "heading": "Elige con información, no con suposiciones",
+        "text": "<p>Cuéntanos el uso, municipio, superficie, presupuesto aproximado y estado de tu proyecto. Revisaremos alternativas y condiciones técnicas antes de recomendar una solución y preparar una oferta desglosada.</p>",
+        "label": "Solicitar asesoramiento y presupuesto",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "cards",
+    "cta"
+  ]
+}
