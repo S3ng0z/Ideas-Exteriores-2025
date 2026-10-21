@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "one": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "COMPARAR"
+          }
+        },
+        "two": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "ELEGIR"
+          }
+        },
+        "three": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "DECIDIR"
+          }
+        }
+      },
+      "block_order": [
+        "one",
+        "two",
+        "three"
+      ],
+      "settings": {
+        "eyebrow": "Sistemas constructivos · Comparar y elegir",
+        "heading": "Comparar y elegir un sistema constructivo de madera",
+        "lead": "<p>¿Sistema europeo, entramado ligero o paneles SIP? Descubre qué cambia entre soluciones, cuál conviene estudiar según tu proyecto y qué revisar antes de comprar. Tres guías claras para avanzar con información y solicitar una propuesta ajustada a tu caso.</p>",
+        "primary_label": "Ver las tres guías",
+        "primary_link": "#comparar-y-elegir-guias",
+        "secondary_label": "Solicitar asesoramiento",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Tres preguntas para tomar una buena decisión"
+      }
+    },
+    "guides": {
+      "type": "ie-compare-choose-landing",
+      "settings": {}
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Tu proyecto, nuestro punto de partida",
+        "heading": "Te ayudamos a elegir con criterio",
+        "text": "<p>Indícanos el uso previsto, localidad, superficie aproximada y estado del proyecto. Contrastaremos sistema, condicionantes, alcance y presupuesto antes de recomendar una solución. Las prestaciones y la compatibilidad se confirman mediante estudio técnico.</p>",
+        "label": "Solicitar asesoramiento y presupuesto",
+        "link": "/pages/how-to-choose-timber-construction-system#solicitar-asesoramiento"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "guides",
+    "cta"
+  ]
+}
