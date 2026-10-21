@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "one": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "USO DEL PROYECTO"
+          }
+        },
+        "two": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "MODELOS REALES"
+          }
+        },
+        "three": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "ESTUDIO DE VIABILIDAD"
+          }
+        }
+      },
+      "block_order": [
+        "one",
+        "two",
+        "three"
+      ],
+      "settings": {
+        "eyebrow": "Guía de elección · Construcción en madera",
+        "heading": "¿Qué sistema constructivo elegir para tu casa o caseta de madera?",
+        "lead": "<p>Cuéntanos qué quieres construir y te ayudamos a elegir. Selecciona el uso previsto para conocer los sistemas que merece la pena estudiar, ver modelos del catálogo y entender qué depende de la parcela, la normativa y el alcance del presupuesto.</p>",
+        "primary_label": "Elegir por tipo de proyecto",
+        "primary_link": "#selector-por-uso",
+        "secondary_label": "Solicitar presupuesto",
+        "secondary_link": "/pages/contact-ideas-exteriores",
+        "summary_title": "Del uso al modelo compatible"
+      }
+    },
+    "selector": {
+      "type": "ie-use-system-selector",
+      "settings": {}
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "Del modelo a una propuesta técnica y económica",
+        "text": "<p>Indícanos el uso previsto, municipio, terreno, superficie, presupuesto aproximado y acabados. Revisaremos viabilidad, sistema, configuración, transporte y montaje antes de preparar una oferta con partidas incluidas y excluidas.</p>",
+        "label": "Solicitar presupuesto",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "selector",
+    "cta"
+  ]
+}

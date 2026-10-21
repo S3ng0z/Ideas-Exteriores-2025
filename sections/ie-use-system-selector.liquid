@@ -1,0 +1,110 @@
+{{ 'ie-use-system-selector.css' | asset_url | stylesheet_tag }}
+<section class="ie-use" id="selector-por-uso" aria-labelledby="ie-use-title-{{ section.id }}">
+  <div class="ie-use__inner">
+    <header class="ie-use__heading"><p class="ie-use__eyebrow">01 · Selector por uso</p><h2 id="ie-use-title-{{ section.id }}">¿Qué quieres construir?</h2><p>Una orientación inicial, no un certificado de compatibilidad. La selección muestra modelos reales del catálogo; el uso y las prestaciones finales requieren validación técnica y urbanística.</p></header>
+    <div class="ie-use__tabs" role="group" aria-label="Selecciona el uso de tu construcción">
+      <button type="button" class="ie-use__tab" data-use="habitual" aria-pressed="true">Vivienda habitual</button>
+      <button type="button" class="ie-use__tab" data-use="garden" aria-pressed="false">Casa de jardín</button>
+      <button type="button" class="ie-use__tab" data-use="office" aria-pressed="false">Oficina o estudio</button>
+      <button type="button" class="ie-use__tab" data-use="shed" aria-pressed="false">Caseta de jardín</button>
+      <button type="button" class="ie-use__tab" data-use="extension" aria-pressed="false">Ampliación a medida</button>
+      <button type="button" class="ie-use__tab" data-use="other" aria-pressed="false">Otra construcción</button>
+    </div>
+    <div class="ie-use__result" aria-live="polite" aria-atomic="true">
+      <p class="ie-use__eyebrow">Orientación inicial</p>
+      <h3 data-result-title>Vivienda habitual</h3>
+      <p data-result-copy>Comparar entramado ligero y SIP según clima, proyecto, envolvente y alcance económico. Valorar sistema europeo únicamente si una solución documentada resulta compatible.</p>
+      <div class="ie-use__result-links">
+        <a data-result-link href="/collections/light-frame-houses">Ver modelos compatibles para estudiar <span aria-hidden="true">→</span></a>
+        <a href="/pages/contact-ideas-exteriores">Solicitar presupuesto <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="ie-use__model-head">
+      <p class="ie-use__eyebrow">02 · Productos reales del catálogo</p>
+      <h2>Modelos de referencia para iniciar el estudio</h2>
+      <p>No se presupone que una caseta pueda destinarse a vivienda ni que una ampliación esté autorizada. Los productos se presentan como referencias comerciales para analizar compatibilidad y no como homologaciones automáticas para un uso.</p>
+    </div>
+    <div class="ie-use__products">
+      {% assign ie_handles = 'signe-timber-home-32,eira-timber-home-58,home-sip-naiara-56-m-terraza,home-sip-nora-89m-terraza,sip-maxspace-ximena-6-m-x-4-m,sip-maxspace-victoria-6-m-x-4-m,sip-smartfit-victoria-4-5m-x-3-5-m,sip-compactkit-sofia-3-5-m-x-3-m' | split: ',' %}
+      {% for ie_handle in ie_handles %}
+        {% assign ie_product = all_products[ie_handle] %}
+        {% if ie_product != blank %}
+          {% assign ie_category = 'habitual' %}
+          {% if forloop.index == 5 or forloop.index == 6 %}
+            {% assign ie_category = 'office' %}
+          {% elsif forloop.index == 7 or forloop.index == 8 %}
+            {% assign ie_category = 'shed' %}
+          {% endif %}
+          <article class="ie-use__product" data-product-use="{{ ie_category }}" {% unless ie_category == 'habitual' %}hidden{% endunless %}>
+            <a href="{{ ie_product.url }}" class="ie-use__product-image">
+              {% if ie_product.featured_image != blank %}
+                {{ ie_product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', widths: '320, 500, 800', sizes: '(min-width: 990px) 25vw, (min-width: 750px) 50vw, 100vw', alt: ie_product.title }}
+              {% else %}<span>Consultar modelo</span>{% endif %}
+            </a>
+            <div class="ie-use__product-copy">
+              <p class="ie-use__product-label">{% if ie_category == 'office' %}Estudio / oficina SIP{% elsif ie_category == 'shed' %}Caseta SIP{% elsif forloop.index <= 2 %}Vivienda · Entramado ligero{% else %}Vivienda · Panel SIP{% endif %}</p>
+              <h3>{{ ie_product.title }}</h3>
+              <p class="ie-use__price">Precio publicado: {{ ie_product.price_min | money }}{% if ie_product.price_varies %} desde{% endif %}</p>
+              <p class="ie-use__disclaimer">Importe de referencia del producto. Confirmar configuración, impuestos aplicables y partidas incluidas; no es un presupuesto llave en mano ni acredita idoneidad urbanística.</p>
+              <a class="ie-use__product-link" href="{{ ie_product.url }}">Consultar ficha y alcance <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <p class="ie-use__empty" data-empty-products hidden>Para este uso no hay un modelo específico cuya compatibilidad pueda garantizarse sin estudio. Podemos revisar alternativas existentes y definir el alcance antes de presupuestar.</p>
+
+    <div class="ie-use__details">
+      <article><p class="ie-use__eyebrow">03 · Intensidad de uso</p><h2>Ocasional, habitual o residencial</h2><p><strong>Uso ocasional:</strong> guardar material o realizar actividades esporádicas no equivale a un espacio habitable. <strong>Uso habitual:</strong> oficina o estudio exige comprobar confort térmico, ventilación, acústica e instalaciones de acuerdo con el uso declarado. <strong>Uso residencial:</strong> vivienda principal o secundaria requiere estudiar viabilidad urbanística, proyecto, seguridad, salubridad, energía y demás exigencias aplicables. Ninguna etiqueta comercial sustituye esos requisitos.</p></article>
+      <article><p class="ie-use__eyebrow">04 · Viabilidad de parcela</p><h2>Antes de elegir, comprobar la ubicación</h2><p>Municipio y planeamiento, uso permitido, servidumbres, accesos, topografía, terreno y cimentación, clima, viento y nieve, evacuación de aguas, protección frente a humedad, conexión a servicios, transporte y descarga. La documentación y exigencias del CTE se justifican para el edificio y la solución concreta cuando sean aplicables.</p></article>
+    </div>
+    <div class="ie-use__commercial">
+      <div><p class="ie-use__eyebrow">05 · Presupuesto responsable</p><h2>Un precio de catálogo no es el coste total de construir</h2><p>Los importes de las fichas corresponden a precios actualmente publicados en Shopify. El alcance técnico y comercial debe confirmarse; no aplicamos porcentajes arbitrarios, no extrapolamos precios de casetas a viviendas y no comparamos soluciones con diferente nivel de suministro.</p></div>
+      <div><h3>Partidas a revisar por escrito</h3><p>Proyecto y licencias, cimentación, estructura, cubierta, aislamiento, carpinterías, instalaciones, acabados, impuestos, transporte, grúa, descarga, montaje, accesos y mantenimiento.</p></div>
+    </div>
+    <div class="ie-use__systems">
+      <div><p class="ie-use__eyebrow">06 · Documentación técnica</p><h2>Conoce los tres sistemas antes de decidir</h2></div>
+      <a href="/pages/european-timber-construction-system">Sistema europeo <span>Ficha y guías →</span></a>
+      <a href="/pages/light-frame-construction-system">Entramado ligero <span>Ficha y guías →</span></a>
+      <a href="/pages/sip-panels-system">Paneles SIP <span>Ficha y guías →</span></a>
+      <a href="/pages/timber-construction-systems-comparison">Comparar los tres sistemas <span>Tabla técnica →</span></a>
+    </div>
+  </div>
+</section>
+<script>
+(function() {
+  var root = document.getElementById('shopify-section-{{ section.id }}');
+  if (!root) return;
+  var descriptions = {
+    habitual: ['Vivienda habitual','Comparar entramado ligero y SIP según proyecto, clima, composición de cerramientos y presupuesto. Valorar sistema europeo si existe una configuración técnica documentada compatible.','/collections/light-frame-houses'],
+    garden: ['Casa de jardín','Determinar primero si será espacio auxiliar, estancia habitual o vivienda. Explorar entramado ligero y SIP en función del uso autorizado, aislamiento, instalaciones y condiciones de parcela.','/pages/timber-homes-and-modules'],
+    office: ['Oficina o estudio en jardín','Explorar los estudios SIP del catálogo. Para trabajo frecuente, contrastar ventilación, confort, acústica, instalaciones, licencias y alcance de montaje.','/pages/sip-panel-applications-compatible-models'],
+    shed: ['Caseta de jardín','Explorar SIP SmartFit y CompactKit para necesidades auxiliares. El uso habitable o residencial no debe deducirse del nombre comercial y requiere comprobación específica.','/pages/sip-panel-applications-compatible-models'],
+    extension: ['Ampliación a medida','Estudiar prioritariamente entramado ligero por su flexibilidad geométrica; SIP o sistema europeo pueden evaluarse solo si sus uniones, cargas y detalles son compatibles con el edificio existente.','/pages/timber-frame-applications-compatible-models'],
+    other: ['Otra construcción compatible','Describir uso, dimensiones y condicionantes para evaluar sistemas y productos sin presuponer compatibilidad. El equipo podrá indicar si conviene entramado, SIP o sistema europeo.','/pages/timber-building-systems']
+  };
+  var tabs = root.querySelectorAll('[data-use]');
+  var products = root.querySelectorAll('[data-product-use]');
+  var title = root.querySelector('[data-result-title]');
+  var copy = root.querySelector('[data-result-copy]');
+  var link = root.querySelector('[data-result-link]');
+  var empty = root.querySelector('[data-empty-products]');
+  function change(use) {
+    var d = descriptions[use];
+    if (!d) return;
+    title.textContent=d[0]; copy.textContent=d[1]; link.href=d[2];
+    tabs.forEach(function(t){t.setAttribute('aria-pressed',String(t.dataset.use===use));});
+    var count=0;
+    products.forEach(function(p){
+      var show = p.dataset.productUse === use || (use==='garden' && (p.dataset.productUse==='shed'||p.dataset.productUse==='office'));
+      p.hidden=!show; if(show) count++;
+    });
+    empty.hidden=count>0;
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){change(t.dataset.use);});});
+  change('habitual');
+})();
+</script>
+{% schema %}
+{"name":"Guía · Elegir por uso","settings":[],"presets":[{"name":"Guía · Elegir por uso"}]}
+{% endschema %}

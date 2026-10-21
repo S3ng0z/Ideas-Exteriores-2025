@@ -142,3 +142,5 @@ Avoid:
 This file summarizes the site structure and key pages to help understand the content efficiently.
 Este archivo resume la estructura del sitio y las páginas clave para facilitar la comprensión del contenido.
 - Transporte y entrega de casas y casetas: https://www.ideas-exteriores.com/pages/transporte-entrega-casas-casetas-madera
+
+- Guía de elección por uso / Choose timber system by project use: https://www.ideas-exteriores.com/pages/choose-timber-construction-system
