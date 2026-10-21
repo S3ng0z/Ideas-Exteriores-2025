@@ -3,18 +3,40 @@
     "hero": {
       "type": "ie-services-hero",
       "blocks": {
-        "summary_1": {"type":"summary","settings":{"number":"01","label":"Diagnóstico del estado y del origen del deterioro"}},
-        "summary_2": {"type":"summary","settings":{"number":"02","label":"Reparación localizada antes de sustituir"}},
-        "summary_3": {"type":"summary","settings":{"number":"03","label":"Mantenimiento planificado según exposición y uso"}}
+        "summary_1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Evaluación de síntomas, exposición y material"
+          }
+        },
+        "summary_2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Actuaciones puntuales o plan periódico contratado"
+          }
+        },
+        "summary_3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Presupuesto y prioridades según alcance"
+          }
+        }
       },
-      "block_order": ["summary_1","summary_2","summary_3"],
+      "block_order": [
+        "summary_1",
+        "summary_2",
+        "summary_3"
+      ],
       "settings": {
         "eyebrow": "Servicio y garantías",
-        "heading": "Mantenimiento y reparación de madera para conservar seguridad, estabilidad y acabado",
-        "lead": "<p>Revisamos estructuras, tarimas, porches, pérgolas, fachadas y otros elementos de madera para identificar el origen del deterioro, priorizar lo crítico y definir una intervención proporcionada. El objetivo es reparar cuando sea viable, recuperar la protección y dejar un plan de mantenimiento claro.</p>",
-        "primary_label": "Solicitar revisión",
+        "heading": "Prolonga la vida útil de tus estructuras de madera con un mantenimiento adecuado",
+        "lead": "<p>Inspeccionamos, limpiamos, protegemos y, cuando es técnicamente viable, reparamos elementos de madera en exterior e interior. Primero diferenciamos desgaste estético, problemas funcionales y señales de daño estructural; después proponemos una intervención proporcionada y presupuestada.</p>",
+        "primary_label": "Solicitar diagnóstico",
         "primary_link": "/pages/contact-ideas-exteriores",
-        "secondary_label": "Ver tratamiento y protección",
+        "secondary_label": "Tratamiento y protección",
         "secondary_link": "/pages/wood-treatment-protection",
         "summary_title": "Qué resolvemos"
       }
@@ -22,26 +44,26 @@
     "services": {
       "type": "ie-services-cards",
       "blocks": {
-        "service_diagnosis": {
+        "care_1": {
           "type": "service",
           "settings": {
-            "index": "01 · Diagnosticar",
-            "heading": "Inspección y origen del problema",
-            "text": "<p>Revisamos humedad, exposición, drenaje, apoyos, encuentros, uniones, fijaciones y estado del acabado para diferenciar desgaste superficial de una patología que exige corregir la causa.</p>",
-            "link_1_label": "Bases y soleras",
+            "index": "01 · Inspección",
+            "heading": "Revisión inicial y diagnóstico",
+            "text": "<p>Partimos de fotografías, edad aproximada, ubicación, especie o material conocido, acabado previo, orientación y síntomas. La visita presencial o ensayos se confirman y presupuestan si son necesarios.</p>",
+            "link_1_label": "Consultar viabilidad de base",
             "link_1": "/pages/timber-bases-and-foundations",
-            "link_2_label": "Montaje profesional",
-            "link_2": "/pages/timber-structure-installation",
+            "link_2_label": "",
+            "link_2": "",
             "link_3_label": "",
             "link_3": ""
           }
         },
-        "service_repair": {
+        "care_2": {
           "type": "service",
           "settings": {
-            "index": "02 · Reparar",
-            "heading": "Saneado, ajustes y reparación localizada",
-            "text": "<p>Cuando el estado lo permite, priorizamos saneado, corrección de uniones, sustitución de fijaciones y reparación o reemplazo localizado de piezas antes de plantear intervenciones más amplias.</p>",
+            "index": "02 · Conservación",
+            "heading": "Limpieza y protección superficial",
+            "text": "<p>Limpieza apropiada al soporte, preparación, lijado o renovación del sistema protector cuando proceda; productos, rendimientos, condiciones de aplicación y mantenimiento según fabricante.</p>",
             "link_1_label": "Tratamiento y protección",
             "link_1": "/pages/wood-treatment-protection",
             "link_2_label": "",
@@ -50,67 +72,202 @@
             "link_3": ""
           }
         },
-        "service_maintenance": {
+        "care_3": {
           "type": "service",
           "settings": {
-            "index": "03 · Mantener",
-            "heading": "Protección y mantenimiento preventivo",
-            "text": "<p>Preparamos la superficie, renovamos el sistema de protección cuando procede y definimos revisiones posteriores según orientación, clima, uso y acabado para actuar antes de que el deterioro sea mayor.</p>",
-            "link_1_label": "Garantía, entrega y pago",
-            "link_1": "/pages/warranty-delivery-payment-options",
-            "link_2_label": "Servicios para proyectos en madera",
-            "link_2": "/pages/services",
+            "index": "03 · Reparaciones",
+            "heading": "Ajustes y reparación localizada",
+            "text": "<p>Corrección de elementos accesibles, fijaciones, sellados o tablas deterioradas, siempre que el diagnóstico confirme una intervención segura. No se presupone que toda pieza pueda recuperarse.</p>",
+            "link_1_label": "Montaje profesional",
+            "link_1": "/pages/timber-structure-installation",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "care_4": {
+          "type": "service",
+          "settings": {
+            "index": "04 · Sustituciones",
+            "heading": "Sustitución de elementos compatibles",
+            "text": "<p>Cuando sea viable, reemplazo de piezas dañadas con definición de medidas, uniones y compatibilidad. Refuerzos, cálculo, apeos o reparaciones estructurales mayores requieren estudio especializado.</p>",
+            "link_1_label": "Proyectos y licencias",
+            "link_1": "/pages/project-management-permits",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "care_5": {
+          "type": "service",
+          "settings": {
+            "index": "05 · Modalidad puntual",
+            "heading": "Intervención bajo presupuesto",
+            "text": "<p>Una incidencia concreta: valoración, descripción de tareas, materiales, desplazamiento, accesibilidad y plazo sujeto a disponibilidad. Se acuerda lo incluido antes de comenzar.</p>",
+            "link_1_label": "Solicitar diagnóstico",
+            "link_1": "/pages/contact-ideas-exteriores",
+            "link_2_label": "",
+            "link_2": "",
+            "link_3_label": "",
+            "link_3": ""
+          }
+        },
+        "care_6": {
+          "type": "service",
+          "settings": {
+            "index": "06 · Plan periódico",
+            "heading": "Mantenimiento contratado",
+            "text": "<p>Visitas o controles periódicos solo si se pactan por escrito, con frecuencia, tareas, precio, cobertura geográfica y exclusiones establecidos. La periodicidad depende de exposición, sistema y estado.</p>",
+            "link_1_label": "Consultar tratamiento",
+            "link_1": "/pages/wood-treatment-protection",
+            "link_2_label": "",
+            "link_2": "",
             "link_3_label": "",
             "link_3": ""
           }
         }
       },
-      "block_order": ["service_diagnosis","service_repair","service_maintenance"],
+      "block_order": [
+        "care_1",
+        "care_2",
+        "care_3",
+        "care_4",
+        "care_5",
+        "care_6"
+      ],
       "settings": {
-        "eyebrow": "Ámbito de intervención",
-        "heading": "Diagnosticar, reparar y mantener en el orden correcto",
-        "intro": "<p>Una superficie degradada no siempre se resuelve aplicando un producto nuevo. Primero identificamos la causa, después definimos la reparación y finalmente recuperamos la protección con un mantenimiento asumible.</p>"
+        "eyebrow": "01 · Servicios disponibles",
+        "heading": "Conservar, reparar y sustituir cuando sea viable",
+        "intro": "<p>El servicio se adapta a la madera, al uso y a su estado real. No toda marca, fisura o decoloración implica una avería estructural; tampoco basta renovar un acabado para resolver humedad o movimientos anómalos.</p>"
       }
     },
     "process": {
       "type": "ie-services-process",
       "blocks": {
-        "step_1": {"type":"step","settings":{"number":"01","heading":"Recibir información","text":"Partimos de fotografías, ubicación, antigüedad aproximada, acabado conocido y descripción de la incidencia."}},
-        "step_2": {"type":"step","settings":{"number":"02","heading":"Diagnosticar","text":"Valoramos superficie, humedad, encuentros, apoyos, uniones y daños para localizar el origen probable del problema."}},
-        "step_3": {"type":"step","settings":{"number":"03","heading":"Intervenir","text":"Definimos limpieza, saneado, ajustes, reparaciones o sustituciones localizadas y el sistema de protección posterior."}},
-        "step_4": {"type":"step","settings":{"number":"04","heading":"Planificar el mantenimiento","text":"Dejamos criterios de revisión y repaso según la exposición, el uso, el diseño constructivo y el acabado aplicado."}}
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Consulta inicial",
+            "text": "Recibimos fotografías generales y de detalle, síntomas, localización, antigüedad, material y uso previsto."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Diagnóstico preliminar",
+            "text": "Priorizamos las incidencias estéticas, funcionales o potencialmente estructurales y detectamos datos pendientes."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Inspección, si procede",
+            "text": "Se propone visita, medición de humedad o evaluación profesional específica cuando las fotografías no basten; se acuerda su coste."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Presupuesto desglosado",
+            "text": "Definimos reparaciones, materiales, desplazamientos, medios auxiliares, plazos, exclusiones y posibles condicionantes."
+          }
+        },
+        "step_5": {
+          "type": "step",
+          "settings": {
+            "number": "05",
+            "heading": "Intervención contratada",
+            "text": "Ejecutamos limpieza, protección, ajustes o sustituciones incluidas cuando la seguridad y el soporte lo permiten."
+          }
+        },
+        "step_6": {
+          "type": "step",
+          "settings": {
+            "number": "06",
+            "heading": "Recomendaciones y seguimiento",
+            "text": "Entregamos indicaciones de conservación y, si interesa, una propuesta separada de mantenimiento periódico."
+          }
+        }
       },
-      "block_order": ["step_1","step_2","step_3","step_4"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5",
+        "step_6"
+      ],
       "settings": {
-        "eyebrow": "Cómo trabajamos",
-        "heading": "De la incidencia a una intervención definida",
-        "intro": "<p>Separar diagnóstico, reparación y protección evita tratamientos innecesarios y permite priorizar seguridad, estanqueidad, durabilidad y aspecto.</p>"
+        "eyebrow": "02 · Cómo trabajamos",
+        "heading": "Consulta → diagnóstico → presupuesto → intervención",
+        "intro": "<p>La inspección presencial no se considera incluida automáticamente. Se confirma la disponibilidad antes de concertarla, y cualquier modificación del alcance requiere presupuesto y aceptación previa.</p>"
       }
     },
     "confidence": {
       "type": "ie-services-confidence",
       "blocks": {
-        "principle_1": {"type":"principle","settings":{"heading":"Seguridad y estabilidad","text":"Movimientos anómalos, piezas blandas, uniones deterioradas o daños relevantes se priorizan antes de cualquier actuación estética."}},
-        "principle_2": {"type":"principle","settings":{"heading":"Humedad y agua","text":"Corregir retenciones, apoyos húmedos, filtraciones o encuentros deficientes es clave para que una reparación o acabado tenga sentido."}},
-        "principle_3": {"type":"principle","settings":{"heading":"Compatibilidad de acabados","text":"La preparación y el producto posterior deben ser compatibles con la madera, el acabado existente y el nivel real de exposición."}},
-        "principle_4": {"type":"principle","settings":{"heading":"Mantenimiento proporcionado","text":"La frecuencia de revisión no es fija: depende de orientación, clima, uso, diseño del detalle y sistema de protección."}}
+        "principle_1": {
+          "type": "principle",
+          "settings": {
+            "heading": "Incidencia estética",
+            "text": "Pérdida de color, envejecimiento del acabado o marcas superficiales: evaluar limpieza, preparación y renovación sin asumir daños resistentes."
+          }
+        },
+        "principle_2": {
+          "type": "principle",
+          "settings": {
+            "heading": "Incidencia funcional",
+            "text": "Filtraciones, estanqueidad, movimiento de juntas, fijaciones sueltas o deformaciones: identificar causa y comprobar los encuentros antes de intervenir."
+          }
+        },
+        "principle_3": {
+          "type": "principle",
+          "settings": {
+            "heading": "Posible daño estructural",
+            "text": "Flechas anómalas, pérdida de sección, apoyos comprometidos, pudrición o xilófagos relevantes: evitar sobrecargas y solicitar evaluación de técnico competente antes de reparar."
+          }
+        },
+        "principle_4": {
+          "type": "principle",
+          "settings": {
+            "heading": "Mantenimiento y garantía",
+            "text": "El mantenimiento ordinario se contrata aparte de las reclamaciones legales. Los derechos de garantía aplicables se tramitan por su cauce propio; no se condicionan a comprar un plan de mantenimiento."
+          }
+        }
       },
-      "block_order": ["principle_1","principle_2","principle_3","principle_4"],
+      "block_order": [
+        "principle_1",
+        "principle_2",
+        "principle_3",
+        "principle_4"
+      ],
       "settings": {
-        "eyebrow": "Criterios técnicos",
-        "heading": "Primero resolver la causa; después recuperar y proteger"
+        "eyebrow": "03 · Criterio técnico y comercial",
+        "heading": "Actuar según la gravedad, con garantías claras"
       }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
-        "eyebrow": "Siguiente paso",
-        "heading": "Cuéntanos qué le ocurre a la madera",
-        "text": "<p>Envíanos fotografías generales y de detalle, ubicación, medidas aproximadas y, si lo conoces, el acabado o las intervenciones anteriores. Con ese contexto podremos orientar la revisión y el alcance más adecuado.</p>",
-        "label": "Solicitar valoración",
+        "eyebrow": "04 · Solicitud de revisión",
+        "heading": "Cuéntanos qué ocurre y te orientaremos sobre el diagnóstico",
+        "text": "<p>Envíanos localidad, fotografías generales y de detalle, medidas aproximadas, antigüedad, síntomas y acabado anterior si lo conoces. Comprobaremos cobertura, gravedad aparente y necesidad de visita antes de formular una oferta. Las reparaciones mayores, sustituciones estructurales y recálculos requieren estudio específico.</p>",
+        "label": "Solicitar diagnóstico",
         "link": "/pages/contact-ideas-exteriores"
       }
     }
   },
-  "order": ["hero","services","process","confidence","cta"]
+  "order": [
+    "hero",
+    "services",
+    "process",
+    "confidence",
+    "cta"
+  ]
 }
