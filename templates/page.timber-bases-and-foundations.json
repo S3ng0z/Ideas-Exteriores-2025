@@ -170,9 +170,9 @@
       ],
       "settings": {
         "eyebrow": "BASES Y CIMENTACIONES",
-        "heading": "BASES PARA ESTRUCTURAS DE MADERA",
-        "lead": "<p>Elegimos los apoyos según el terreno, las cargas y el uso de cada construcción. Una base bien definida facilita el montaje y ayuda a proteger la madera de la humedad.</p>",
-        "primary_label": "Evaluar mi terreno",
+        "heading": "UNA BASE ADECUADA PARA CADA ESTRUCTURA Y TERRENO",
+        "lead": "<p>Definimos el tipo de base según terreno, uso, geometría y cargas: losas estructurales, zapatas, apoyos puntuales o pilotes cuando estén justificados. El alcance técnico y la ejecución se presupuestan por separado.</p>",
+        "primary_label": "Solicitar valoración de cimentación",
         "secondary_label": "Comparar soluciones",
         "quick_note": "Para una primera orientación, envíanos ubicación, uso previsto, dimensiones aproximadas y fotografías de la parcela. La solución definitiva y su ejecución requerirán las verificaciones técnicas y autorizaciones que correspondan.",
         "decision_title": "QUÉ DEBEMOS VALORAR",
@@ -188,20 +188,25 @@
         "workflow_text": "<p>Recogemos información de la parcela, contrastamos soluciones y determinamos las comprobaciones necesarias antes de ejecutar la base y montar la estructura.</p>",
         "scope_eyebrow": "ALCANCE TÉCNICO",
         "scope_heading": "TE AYUDAMOS A DECIDIR",
-        "scope_in_heading": "ASESORAMIENTO INICIAL",
-        "scope_in_text": "<ul><li>Revisamos el uso, la parcela y las dimensiones.</li><li>Comparamos soluciones de apoyo viables.</li><li>Coordinamos cimentación, anclajes y montaje.</li><li>Definimos los datos necesarios para presupuestar.</li></ul>",
-        "scope_project_heading": "ESTUDIO Y CÁLCULO",
-        "scope_project_text": "<ul><li>Estudio geotécnico cuando corresponda.</li><li>Cálculo de cimentación y anclajes.</li><li>Comprobación de estabilidad y durabilidad.</li><li>Proyecto y permisos, cuando sean exigibles.</li></ul>",
+        "scope_in_heading": "MODALIDADES Y RESPONSABILIDADES",
+        "scope_in_text": "<ul><li>Base ejecutada por tercero: debe ajustarse al proyecto y a las condiciones de recepción para montaje.</li><li>Base o coordinación contratada: solo si figura expresamente en la oferta y hay disponibilidad.</li><li>Especificar quién asume replanteo, excavación, ejecución, anclajes, verificación de nivelación y recepción.</li></ul>",
+        "scope_project_heading": "PARTIDAS NO INCLUIDAS POR DEFECTO",
+        "scope_project_text": "<ul><li>Geotecnia, topografía, proyecto, cálculo y licencias no contratados.</li><li>Excavaciones especiales, contenciones y retirada o gestión de tierras.</li><li>Saneamiento, acometidas, instalaciones enterradas y drenajes extraordinarios.</li><li>Trabajos con maquinaria especial, adaptación de accesos y cambios por imprevistos.</li></ul>",
         "cta_eyebrow": "EMPEZAMOS",
-        "cta_heading": "CUÉNTANOS TU PROYECTO",
-        "cta_text": "<p>Envíanos la ubicación, las medidas, el uso previsto y algunas fotografías de la parcela. Te orientaremos sobre las soluciones que conviene estudiar.</p>",
-        "cta_primary_label": "Enviar ubicación y fotos",
+        "cta_heading": "SOLICITA UNA VALORACIÓN DE CIMENTACIÓN",
+        "cta_text": "<p>Indícanos municipio, dimensiones, uso, pendiente, accesos y fotografías. Antes de ofrecer una solución concreta indicaremos los estudios, cálculos y comprobaciones necesarios.</p>",
+        "cta_primary_label": "Solicitar valoración de cimentación",
         "cta_secondary_label": "Ver montaje profesional",
         "cta_tertiary_label": "Ver proyectos y licencias"
       }
+    },
+    "comparison": {
+      "type": "ie-foundations-comparison",
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "comparison"
   ]
 }
