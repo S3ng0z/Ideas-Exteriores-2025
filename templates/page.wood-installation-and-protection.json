@@ -1,0 +1,236 @@
+{
+  "sections": {
+    "hero": {
+      "type": "ie-services-hero",
+      "blocks": {
+        "base": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Necesito preparar el terreno y la base"
+          }
+        },
+        "ready": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Ya tengo la base terminada"
+          }
+        },
+        "mount": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Necesito montaje o instalar un kit"
+          }
+        },
+        "coat": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Necesito proteger la madera"
+          }
+        }
+      },
+      "block_order": [
+        "base",
+        "ready",
+        "mount",
+        "coat"
+      ],
+      "settings": {
+        "eyebrow": "Construcción y protección · Servicios",
+        "heading": "Prepara e instala tu estructura de madera con una ejecución planificada",
+        "lead": "<p>Desde la preparación del terreno hasta el montaje y la protección final, coordinamos las fases que realmente necesitas. El suministro, la cimentación, el montaje y los acabados son alcances independientes que se presupuestan según cada proyecto.</p>",
+        "primary_label": "Solicitar presupuesto de ejecución",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Ver montaje profesional",
+        "secondary_link": "/pages/timber-structure-installation",
+        "summary_title": "¿En qué fase estás?"
+      }
+    },
+    "services": {
+      "type": "ie-services-cards",
+      "blocks": {
+        "foundations": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt": "Preparación de apoyo y base para una estructura de madera",
+            "index": "01 · Preparar",
+            "heading": "Bases y cimentaciones",
+            "text": "<p>Analizamos geometría, cargas, características de la parcela, pendiente, drenaje, cotas y anclajes. La base debe comprobarse antes de iniciar el montaje; geotecnia, cálculo y excavaciones extraordinarias requieren alcance propio.</p>",
+            "link_1_label": "Ver bases y cimentaciones",
+            "link_1": "/pages/timber-bases-and-foundations",
+            "link_2_label": "Consultar valoración",
+            "link_2": "/pages/contact-ideas-exteriores"
+          }
+        },
+        "assembly": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Preparacion_base_y_montaje.webp",
+            "image_alt": "Montaje profesional de estructura prefabricada de madera",
+            "index": "02 · Montar",
+            "heading": "Montaje profesional",
+            "text": "<p>Coordinación de suministros, accesos, descarga y acopio, personal y secuencia de instalación. Estructura, fijaciones, cubierta, carpinterías o instalaciones se incluyen únicamente si están descritas en la oferta.</p>",
+            "link_1_label": "Ver servicio de montaje",
+            "link_1": "/pages/timber-structure-installation",
+            "link_2_label": "Consultar presupuesto",
+            "link_2": "/pages/contact-ideas-exteriores"
+          }
+        },
+        "protection": {
+          "type": "service",
+          "settings": {
+            "image": "shopify://shop_images/Proteccion_mantenimiento_y_posventa.webp",
+            "image_alt": "Protección y conservación de estructuras de madera expuestas",
+            "index": "03 · Proteger",
+            "heading": "Tratamiento y protección de madera",
+            "text": "<p>Evaluamos exposición, humedad, estado, preparación y productos compatibles. Lasures, aceites, sellados, tratamientos y renovaciones se aplican según ficha técnica y alcance contratado.</p>",
+            "link_1_label": "Ver tratamientos de madera",
+            "link_1": "/pages/wood-treatment-protection",
+            "link_2_label": "Mantenimiento posterior",
+            "link_2": "/pages/wood-maintenance-repair"
+          }
+        }
+      },
+      "block_order": [
+        "foundations",
+        "assembly",
+        "protection"
+      ],
+      "settings": {
+        "eyebrow": "01 · Servicios de ejecución",
+        "heading": "Tres servicios que puedes contratar por separado",
+        "intro": "<p>No añadimos partidas implícitas. Cada propuesta diferencia producto, transporte, descarga, cimentación, medios auxiliares, instalación y tratamiento protector; la cobertura depende de ubicación y disponibilidad.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-services-process",
+      "blocks": {
+        "phase_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Planificación",
+            "text": "Definir uso, documentación, alcance de suministro y servicios, permisos y responsables."
+          }
+        },
+        "phase_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Base y preparación",
+            "text": "Verificar terreno, cimentación, replanteo, nivelación, estabilidad y anclajes adecuados."
+          }
+        },
+        "phase_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Transporte y descarga",
+            "text": "Confirmar acceso, dimensiones de carga, logística, espacio de maniobra y medios de descarga acordados."
+          }
+        },
+        "phase_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "heading": "Montaje",
+            "text": "Instalar el sistema compatible con personal, herramientas, equipos de elevación y protecciones previstos."
+          }
+        },
+        "phase_5": {
+          "type": "step",
+          "settings": {
+            "number": "05",
+            "heading": "Comprobaciones",
+            "text": "Revisar geometría, fijaciones, encuentros, sellados ejecutados y pendientes según presupuesto."
+          }
+        },
+        "phase_6": {
+          "type": "step",
+          "settings": {
+            "number": "06",
+            "heading": "Protección y entrega",
+            "text": "Ejecutar acabados contratados, documentar verificaciones y entregar recomendaciones aplicables."
+          }
+        }
+      },
+      "block_order": [
+        "phase_1",
+        "phase_2",
+        "phase_3",
+        "phase_4",
+        "phase_5",
+        "phase_6"
+      ],
+      "settings": {
+        "eyebrow": "02 · Proceso constructivo",
+        "heading": "De la planificación a la entrega: seis fases coordinadas",
+        "intro": "<p>Antes de cada fase comprobamos que la anterior esté lista. La planificación y los plazos reales dependen de condiciones de parcela, permisos, disponibilidad de materiales y accesos.</p>"
+      }
+    },
+    "confidence": {
+      "type": "ie-services-confidence",
+      "blocks": {
+        "principle_1": {
+          "type": "principle",
+          "settings": {
+            "heading": "¿Qué necesito tener preparado?",
+            "text": "Base y replanteo aceptables, permisos exigibles, accesos seguros, descarga coordinada, materiales disponibles y responsabilidades concretadas antes del montaje."
+          }
+        },
+        "principle_2": {
+          "type": "principle",
+          "settings": {
+            "heading": "¿Puedo comprar un kit sin montaje?",
+            "text": "Sí, cuando el producto se comercialice para suministro independiente. El automontaje y la ejecución por terceros exigen seguir la documentación y las condiciones acordadas."
+          }
+        },
+        "principle_3": {
+          "type": "principle",
+          "settings": {
+            "heading": "¿Qué ocurre con terrenos difíciles o plazos?",
+            "text": "Pendientes, accesos reducidos, grúa, segundo vehículo, esperas y trabajos especiales se valoran aparte. Los plazos iniciales son estimativos hasta confirmación."
+          }
+        },
+        "principle_4": {
+          "type": "principle",
+          "settings": {
+            "heading": "¿Qué incluye la ejecución y cómo se recibe?",
+            "text": "Oferta escrita con personal, maquinaria, anclajes, sellados, cubierta, carpinterías, acabados y exclusiones. Entrega con comprobaciones y documentación conforme al alcance; extras solo tras aceptación."
+          }
+        }
+      },
+      "block_order": [
+        "principle_1",
+        "principle_2",
+        "principle_3",
+        "principle_4"
+      ],
+      "settings": {
+        "eyebrow": "03 · Condiciones y preguntas frecuentes",
+        "heading": "Todo lo necesario antes de iniciar la obra"
+      }
+    },
+    "cta": {
+      "type": "ie-services-cta",
+      "settings": {
+        "eyebrow": "04 · Presupuesto y coordinación",
+        "heading": "Cuéntanos qué fase necesitas ejecutar",
+        "text": "<p>Envíanos municipio, producto o kit, medidas, fotografías del terreno, estado de la base y accesos. Te indicaremos cobertura y una propuesta separando suministro, cimentación, transporte, descarga, montaje y protección. Puedes consultar ejemplos de trabajos realizados en nuestra galería, sin atribuirles actuaciones que no estén documentadas.</p>",
+        "label": "Solicitar presupuesto de ejecución",
+        "link": "/pages/contact-ideas-exteriores"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "services",
+    "process",
+    "confidence",
+    "cta"
+  ]
+}
