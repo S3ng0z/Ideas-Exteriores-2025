@@ -406,3 +406,57 @@ body:has(.ie-hab-pdp--hero) .product-information .product-details .text-block {
     transition: none !important;
   }
 }
+
+/* 2026-10-22 · Unified decking visual rhythm (8 shared products + collection).
+   Pure styling; does not modify material facts, prices, variants or page copy. */
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp h1,
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp h2,
+.collection-natural-wood-decking .ie-deck.ie-deck h1,
+.collection-natural-wood-decking .ie-deck.ie-deck h2{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-weight:500;
+  text-transform:none;
+  letter-spacing:-.02em;
+  text-wrap:pretty;
+}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp--hero h1,
+.collection-natural-wood-decking .ie-deck.ie-deck h1{font-size:clamp(1.75rem,2.35vw,2.45rem);line-height:1.15}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp h2,
+.collection-natural-wood-decking .ie-deck.ie-deck h2{font-size:clamp(1.45rem,1.85vw,1.95rem);line-height:1.19}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__inner,
+.collection-natural-wood-decking .ie-deck.ie-deck .ie-deck__wrap{width:min(calc(100% - 56px),1360px);max-width:1360px;margin-inline:auto}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__hero-grid,
+.collection-natural-wood-decking .ie-deck.ie-deck .ie-deck__intro{gap:clamp(20px,3vw,38px);align-items:start}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__hero-grid{grid-template-columns:minmax(0,1.65fr) minmax(250px,.8fr)}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__breadcrumb{margin-bottom:12px}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp--hero .ie-hab-pdp__inner{padding-block:14px 18px}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__hero-grid{padding-bottom:16px}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__summary li{padding-block:7px}
+body:has(.ie-hab-pdp--hero) .product-information .product-details h2{font-size:clamp(1.2rem,1.45vw,1.55rem);line-height:1.24}
+body:has(.ie-hab-pdp--hero) .product-information .product-details .rte,
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__model-description,
+.collection-natural-wood-decking .ie-deck.ie-deck p{font-size:clamp(.91rem,1vw,.98rem);line-height:1.62;text-align:left}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp--packages .ie-hab-pdp__inner{padding-block:42px 30px}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__package-head{min-height:0}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__package-card{padding:18px}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__section-head{gap:clamp(18px,3vw,34px);padding-bottom:18px}
+.collection-natural-wood-decking .ie-deck.ie-deck .ie-deck__wrap{padding:20px 0 32px}
+.collection-natural-wood-decking .ie-deck.ie-deck .ie-deck__breadcrumb{margin-bottom:12px}
+.collection-natural-wood-decking .ie-deck.ie-deck .ie-deck__intro{grid-template-columns:minmax(0,1.65fr) minmax(250px,.8fr)}
+.collection-natural-wood-decking .ie-deck.ie-deck h1{max-width:850px;margin-bottom:10px}
+.collection-natural-wood-decking .ie-deck.ie-deck h2{margin-bottom:12px}
+.collection-natural-wood-decking .product-grid-container{--padding-block-start:8px!important;--padding-block-end:40px!important}
+@media(max-width:989px){
+ body:has(.ie-hab-pdp--hero) .ie-hab-pdp__hero-grid,
+ .collection-natural-wood-decking .ie-deck.ie-deck .ie-deck__intro{grid-template-columns:minmax(0,1fr);gap:18px}
+}
+@media(max-width:749px){
+ body:has(.ie-hab-pdp--hero) .ie-hab-pdp__inner,
+ .collection-natural-wood-decking .ie-deck.ie-deck .ie-deck__wrap{width:calc(100% - 32px)}
+ body:has(.ie-hab-pdp--hero) .ie-hab-pdp--hero h1,
+ .collection-natural-wood-decking .ie-deck.ie-deck h1{font-size:clamp(1.65rem,6.3vw,1.95rem);line-height:1.17}
+ body:has(.ie-hab-pdp--hero) .ie-hab-pdp h2,
+ .collection-natural-wood-decking .ie-deck.ie-deck h2{font-size:clamp(1.35rem,5.2vw,1.65rem)}
+ .collection-natural-wood-decking .ie-deck.ie-deck .ie-deck__wrap{padding-block:15px 24px}
+ body:has(.ie-hab-pdp--hero) .ie-hab-pdp--packages .ie-hab-pdp__inner{padding-block:34px 26px}
+}
