@@ -78,3 +78,30 @@
   .collection-natural-wood-decking .facets-block-wrapper{width:100%;margin-inline:0}
 }
 @media(prefers-reduced-motion:reduce){.ie-deck__button{transition:none}}
+
+
+/* 2026-10-22 · Natural decking collection cards: centered content + one visible price.
+   Pricing data remains untouched; the unit price is only hidden visually in this collection grid. */
+.collection-natural-wood-decking .product-grid .product-card .group-block{
+  align-items:center!important;
+  text-align:center!important;
+}
+.collection-natural-wood-decking .product-grid .product-card .text-block,
+.collection-natural-wood-decking .product-grid .product-card product-price{
+  width:100%!important;
+  text-align:center!important;
+  justify-content:center;
+}
+.collection-natural-wood-decking .product-grid .product-card .text-block p{
+  margin-inline:auto;
+  text-align:center!important;
+}
+.collection-natural-wood-decking .product-grid .product-card .unit-price{
+  display:none!important;
+}
+.collection-natural-wood-decking .product-grid .product-card product-price{
+  display:block;
+  margin-top:4px;
+  font-size:.94rem;
+  line-height:1.4;
+}
