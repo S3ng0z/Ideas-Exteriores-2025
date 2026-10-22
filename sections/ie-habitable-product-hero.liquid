@@ -1,9 +1,16 @@
 {{ 'ie-habitable-product.css' | asset_url | stylesheet_tag }}
-{% if product.template_suffix == 'natural-decking' or product.template_suffix == 'bamboo-decking' %}
+{% if product.template_suffix == 'decking' or product.template_suffix == 'natural-decking' or product.template_suffix == 'bamboo-decking' %}
   {{ 'ie-decking-layout.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
 {% liquid
+  assign ie_hero_eyebrow = section.settings.eyebrow
+  assign ie_hero_lead = section.settings.lead
+  if product.product_type == 'Tarima exterior de bambú'
+    assign ie_hero_eyebrow = 'Tarima exterior · Bambú densificado'
+    assign ie_hero_lead = '<p>Compara el alcance del suministro por m² y valida soporte, fijación, drenaje, stock y montaje antes de cerrar el pedido.</p>'
+  endif
+
   assign ie_breadcrumb_1_label = product.metafields.custom.n1.value | default: section.settings.breadcrumb_1_label
   assign ie_breadcrumb_2_label = product.metafields.custom.n2.value | default: section.settings.breadcrumb_2_label
   assign ie_breadcrumb_3_label = product.metafields.custom.n3.value | default: section.settings.breadcrumb_3_label
@@ -41,8 +48,8 @@
 
     <div class="ie-hab-pdp__hero-grid">
       <div>
-        {% if section.settings.eyebrow != blank %}
-          <p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% if ie_hero_eyebrow != blank %}
+          <p class="ie-hab-pdp__eyebrow">{{ ie_hero_eyebrow }}</p>
         {% endif %}
         <h1 id="ie-hab-product-title-{{ section.id }}">{{ product.title }}</h1>
         {% render 'ie-freja-product-summary' %}
@@ -61,8 +68,8 @@
         {% render 'ie-alva-product-summary' %}
         {% render 'ie-saga-product-summary' %}
         {% render 'ie-veranda-product-summary' %}
-        {% if section.settings.lead != blank %}
-          <div class="ie-hab-pdp__lead rte">{{ section.settings.lead }}</div>
+        {% if ie_hero_lead != blank %}
+          <div class="ie-hab-pdp__lead rte">{{ ie_hero_lead }}</div>
         {% endif %}
         <div class="ie-hab-pdp__actions">
           <a class="ie-hab-pdp__button ie-hab-pdp__button--primary" href="#ie-habitable-packages">{{ section.settings.primary_label }}</a>
