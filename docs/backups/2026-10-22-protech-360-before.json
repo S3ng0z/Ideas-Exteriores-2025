@@ -1,0 +1,63 @@
+{
+  "capturedAt": "2026-10-22",
+  "product": {
+    "id": "gid://shopify/Product/15458602090840",
+    "handle": "wpc-capped-decking-360-premium",
+    "title": "ProTech 360",
+    "templateSuffix": "desk",
+    "productType": "",
+    "status": "ACTIVE",
+    "tags": [
+      "TARIMAS/DECK"
+    ],
+    "seo": {
+      "title": "Tarima WPC encapsulada 360º ProTech 360 | IDEAS EXTERIORES",
+      "description": "WPC coextruido encapsulado 360º: más resistencia a manchas y humedad. Lamas 2200x140x22–23, veta en relieve y fijación oculta. Acabado madera sin complicaciones."
+    },
+    "basic": {
+      "type": "money",
+      "value": "{\"amount\":\"34.90\",\"currency_code\":\"EUR\"}"
+    },
+    "standard": {
+      "type": "money",
+      "value": "{\"amount\":\"84.90\",\"currency_code\":\"EUR\"}"
+    },
+    "passive": {
+      "type": "money",
+      "value": "{\"amount\":\"169.00\",\"currency_code\":\"EUR\"}"
+    },
+    "variants": {
+      "nodes": [
+        {
+          "id": "gid://shopify/ProductVariant/56237543063896",
+          "title": "Default Title",
+          "price": "34.90",
+          "sku": null
+        }
+      ]
+    }
+  },
+  "descriptionHtml": "<style>\n  /*====================\n    BASE + ACCESIBILIDAD\n  ======================*/\n  :root{\n    --texto: #444;\n    --titulo: #333;\n    --muted: #4a4a4a;\n    --borde: rgba(0,0,0,0.08);\n    --sombra: 0 1px 4px rgba(0,0,0,0.10);\n    --fondo: #f9f9f9;\n    --blanco: #fff;\n    --gap: clamp(.75rem, 2vw, 1rem);\n    --pad: clamp(1rem, 3vw, 1.6rem);\n    --radio: 12px;\n  }\n\n  *{ box-sizing: border-box; }\n  img, svg, video{ max-width: 100%; height: auto; }\n\n  /*====================\n    ESTILOS GENERALES\n  ======================*/\n  .texto-legal{\n    color: var(--muted);\n    margin: 0 0 1rem 0;\n    font-weight: 400;\n    text-align: justify;\n    font-size: clamp(.95rem, 1.6vw, 1rem);\n    line-height: 1.6;\n  }\n\n  .bloque-info{\n    background-color: var(--fondo);\n    padding: var(--pad);\n    margin-top: 1rem;\n    border-radius: var(--radio);\n    box-shadow: var(--sombra);\n  }\n\n  .titulo-seccion{\n    margin: 0 0 .75rem 0;\n    font-weight: 800;\n    color: var(--titulo);\n    font-size: clamp(1.1rem, 2.2vw, 1.35rem);\n    line-height: 1.25;\n  }\n\n  .subtitulo-seccion{\n    margin: 1.25rem 0 .75rem 0;\n    font-weight: 800;\n    color: var(--titulo);\n    font-size: clamp(1.02rem, 2vw, 1.2rem);\n    line-height: 1.3;\n  }\n\n  .descripcion{\n    margin: 0 0 1rem 0;\n    color: var(--texto);\n    line-height: 1.65;\n    text-align: justify;\n    font-size: clamp(.98rem, 1.7vw, 1.05rem);\n  }\n\n  /*====================\n    FICHA TÉCNICA (GRID RESPONSIVE)\n  ======================*/\n  .lista-datos{\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));\n    gap: var(--gap);\n    margin: 0 0 1rem 0;\n    padding: 0;\n    list-style: none;\n  }\n\n  .dato{\n    background: var(--blanco);\n    border-radius: var(--radio);\n    padding: clamp(.9rem, 2.2vw, 1.1rem);\n    border: 1px solid var(--borde);\n    text-align: center;\n  }\n\n  .dato strong{\n    display: block;\n    color: var(--titulo);\n    margin-bottom: .35rem;\n    font-weight: 800;\n    font-size: clamp(.95rem, 1.7vw, 1.02rem);\n  }\n\n  .dato span{\n    color: var(--texto);\n    font-size: clamp(.98rem, 1.8vw, 1.08rem);\n  }\n\n  .nota{\n    margin: 0;\n    color: #555;\n    font-size: clamp(.92rem, 1.6vw, .98rem);\n    text-align: justify;\n    line-height: 1.6;\n  }\n\n  /*====================\n    TABLA (SCROLL EN MÓVIL)\n  ======================*/\n  .tabla-contenedor{\n    margin-top: .75rem;\n    overflow-x: auto;\n    -webkit-overflow-scrolling: touch;\n    border-radius: var(--radio);\n    border: 1px solid var(--borde);\n    background: var(--blanco);\n  }\n\n  .tabla{\n    width: 100%;\n    min-width: 520px; /* permite scroll horizontal en pantallas pequeñas */\n    border-collapse: collapse;\n  }\n\n  .tabla th,\n  .tabla td{\n    padding: .85rem 1rem;\n    border-bottom: 1px solid var(--borde);\n    text-align: left;\n    color: var(--texto);\n    font-size: clamp(.95rem, 1.6vw, 1rem);\n    white-space: nowrap;\n  }\n\n  .tabla th{\n    background: #f3f3f3;\n    color: var(--titulo);\n    font-weight: 800;\n  }\n\n  .tabla tr:last-child td{ border-bottom: 0; }\n\n  /*====================\n    BOTONES\n  ======================*/\n  .grupo-botones{\n    margin-top: 1.25rem;\n    padding-top: 1rem;\n    border-top: 1px solid rgba(0,0,0,0.12);\n  }\n\n  .grupo-botones p{\n    margin: 0 0 .75rem 0;\n    color: var(--titulo);\n    font-size: clamp(1rem, 1.8vw, 1.05rem);\n  }\n\n  .botones{\n    display: flex;\n    gap: 1.2rem;\n    flex-wrap: wrap;\n    align-items: center;\n  }\n\n  .botones a{\n    color: #555;\n    transition: color .3s ease, transform .2s ease;\n    text-decoration: none;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    min-width: 44px; /* área táctil cómoda */\n    min-height: 44px;\n    border-radius: 999px;\n  }\n\n  .botones a:hover{\n    color: #000;\n    transform: translateY(-1px);\n  }\n\n  .botones i{ font-size: 1.55rem; }\n\n  /*====================\n    AJUSTES EXTRA PARA PANTALLAS MUY PEQUEÑAS\n  ======================*/\n  @media (max-width: 360px){\n    .botones{ gap: .8rem; }\n    .botones i{ font-size: 1.4rem; }\n  }\n\n  /*====================\n    MEJORA EN PANTALLAS GRANDES\n  ======================*/\n  @media (min-width: 1200px){\n    .bloque-info{ max-width: 980px; margin-left: auto; margin-right: auto; }\n  }\n</style>\n\n<section aria-label=\"Tarima exterior WPC encapsulado premium\" class=\"bloque-info\">\n  <h4 class=\"titulo-seccion\">Tarima exterior WPC encapsulada 360º: antimanchas, veta marcada y estética “madera” sin complicaciones</h4>\n  <br>\n\n  <p class=\"descripcion\">\n    Si buscas una tarima exterior WPC premium que se venda sola por estética y por uso, la opción más comercial en España es la lama coextruida con encapsulado 360º: una capa protectora que envuelve toda la pieza para mejorar el rendimiento frente a manchas, humedad y suciedad superficial. Es la elección típica para terrazas, porches, jardines y zonas de piscina porque combina imagen “madera” (veta en relieve y tonos multicromáticos) con\n    mantenimiento sencillo: limpieza y listo.\n  </p>\n\n  <p class=\"descripcion\">\n    El acabado que más pide el cliente final es la veta sincronizada/embossed con colores tipo teca, ipé, roble o tonos “antique/vintage”, ya que la multicromía disimula mejor el desgaste visual y aporta un aspecto más natural.\n    Muchas colecciones son reversibles (una cara más texturizada y otra más lisa/ranurada) para adaptar el look a cada proyecto.\n  </p>\n\n  <br>\n  <h4 class=\"subtitulo-seccion\">FICHA TÉCNICA</h4>\n  <br>\n\n  <ul aria-label=\"Datos principales WPC encapsulado premium\" class=\"lista-datos\">\n    <li class=\"dato\">\n      <strong>Producto</strong><span>Tarima WPC coextruida encapsulada 360º (premium)</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Medida comercial</strong><span>2200 × 140 × 22–23 mm</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Variación frecuente</strong><span>2200 × 138 × 22–23 mm</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Fijación</strong><span>Ranura lateral + grapa/clip oculto</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Acabado</strong><span>Veta en relieve + tonos multicromáticos</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Reversible</strong><span>2 caras (textura “madera” / lisa-estriada)</span>\n    </li>\n  </ul>\n\n  <p class=\"nota\">\n    * Dato útil para cálculo: con 2200 × 140 mm ⇒ 0,308 m² por lama.\n    Consumo orientativo: ~3,25 lamas/m² (sin merma). Recomendación de compra: +7–10% por cortes y juntas.\n  </p>\n\n  <br>\n  <h4 class=\"subtitulo-seccion\">POR QUÉ ES “PREMIUM” (ARGUMENTO COMERCIAL)</h4>\n  <br>\n\n  <ul aria-label=\"Ventajas comerciales WPC encapsulado\" class=\"lista-datos\">\n    <li class=\"dato\">\n      <strong>Anti-manchas real</strong><span>La piel 360º reduce la penetración de vino, café, aceites y salsas</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Exterior sin barnices</strong><span>No se aceite ni se barniza: mantenimiento por limpieza</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Look madera vendible</strong><span>Embossing + multicromía para aspecto natural</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Montaje limpio</strong><span>Clip oculto: acabado sin tornillería vista</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Piscina/uso intenso</strong><span>Elegida por comportamiento frente a humedad y suciedad superficial</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Confort de pisada</strong><span>Mejor sensación “cuerpo” si la subestructura está bien resuelta</span>\n    </li>\n  </ul>\n\n  <br>\n  <h4 class=\"subtitulo-seccion\">INSTALACIÓN RECOMENDADA</h4>\n  <br>\n\n  <ul aria-label=\"Criterios de instalación WPC premium\" class=\"lista-datos\">\n    <li class=\"dato\">\n      <strong>Rastreles</strong><span>30–35 cm entre ejes (según colección y carga)</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Tornillería</strong><span>Inox A2 (A4 en costa o ambientes con cloro)</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Soporte</strong><span>Pendiente 1–2% + ventilación inferior</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Juntas</strong><span>Dilatación en testas y perímetros (según manual)</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Subestructura</strong><span>Madera tratada / composite / aluminio</span>\n    </li>\n    <li class=\"dato\">\n      <strong>Sistema</strong><span>Clips, rastrel y tornillería compatibles</span>\n    </li>\n  </ul>\n\n  <p class=\"nota\">\n    * Consejo técnico (y comercial): el encapsulado ayuda, pero el drenaje y la ventilación mandan. Evita encharcamientos,\n    respeta juntas y monta siguiendo el sistema para mantener estabilidad y facilidad de limpieza.\n  </p>\n\n  <br>\n  <h4 class=\"subtitulo-seccion\">MANTENIMIENTO</h4>\n  <br>\n\n  <p class=\"descripcion\">\n    Mantenimiento recomendado: agua + jabón neutro y cepillo suave si hay relieve. En zonas de barbacoa o restauración,\n    retira grasas cuanto antes. No aplicar aceites/barnices de madera: pueden crear película, atrapar suciedad y afectar al\n    comportamiento antimanchas declarado por algunas marcas.\n  </p>\n\n  <div aria-label=\"Contacto\" class=\"grupo-botones\">\n    <p><strong>Pide tu presupuesto:</strong></p>\n    <div class=\"botones\">\n      <a href=\"mailto:info@ideas-exteriores.com\" aria-label=\"Enviar correo\">\n        <i aria-hidden=\"true\" class=\"fas fa-envelope\"></i>\n      </a>\n      <a href=\"tel:+34916996093\" aria-label=\"Llamar\">\n        <i aria-hidden=\"true\" class=\"fas fa-phone\"></i>\n      </a>\n      <a rel=\"noopener noreferrer\" href=\"https://wa.me/34687480356\" aria-label=\"WhatsApp\" target=\"_blank\">\n        <i aria-hidden=\"true\" class=\"fab fa-whatsapp\"></i>\n      </a>\n    </div>\n  </div>\n</section>",
+  "images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/636c831e-743a-4031-abf4-158da4c2be56.png?v=1768939781",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69822919770456"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/638c9f2d-a854-4414-a5fb-4b57ec85fdc0.png?v=1768939790",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69822920196440"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/ebc42a79-0fb6-4ad7-b8ad-c1a1d49ff42a.png?v=1768939803",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69822920786264"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/c5ecfc7c-d6b0-45ec-8f4a-269d6dbbe33c.png?v=1768939881",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69822932025688"
+    }
+  ]
+}
