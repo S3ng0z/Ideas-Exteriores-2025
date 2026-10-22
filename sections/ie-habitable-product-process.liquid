@@ -1,19 +1,44 @@
+{% liquid
+  assign ie_process_heading = section.settings.heading
+  assign ie_process_intro = section.settings.intro
+  if product.handle == 'wpc-capped-decking-360-premium'
+    assign ie_process_heading = 'De la superficie al pedido'
+  elsif product.handle == 'diy-click-deck-tiles'
+    assign ie_process_heading = 'De la superficie al pedido'
+    assign ie_process_intro = '<p>Primero definimos geometría y soporte; después cerramos la referencia y la unidad comercial, y por último verificamos suministro, logística e instalación.</p>'
+  endif
+%}
 <section class="ie-hab-pdp ie-hab-pdp--process" aria-labelledby="ie-hab-process-title-{{ section.id }}">
   <div class="ie-hab-pdp__inner">
     <div class="ie-hab-pdp__process-box">
       <div>
         {% if section.settings.eyebrow != blank %}<p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
-        <h2 id="ie-hab-process-title-{{ section.id }}">{{ section.settings.heading }}</h2>
-        {% if section.settings.intro != blank %}<div class="ie-hab-pdp__process-intro rte">{{ section.settings.intro }}</div>{% endif %}
+        <h2 id="ie-hab-process-title-{{ section.id }}">{{ ie_process_heading }}</h2>
+        {% if ie_process_intro != blank %}<div class="ie-hab-pdp__process-intro rte">{{ ie_process_intro }}</div>{% endif %}
         {% if section.settings.link_label != blank and section.settings.link != blank %}
           <a class="ie-hab-pdp__process-link" href="{{ section.settings.link }}">{{ section.settings.link_label }} <span aria-hidden="true">→</span></a>
         {% endif %}
       </div>
       <ol class="ie-hab-pdp__process-list">
         {% for block in section.blocks %}
+          {% liquid
+            assign ie_process_step_heading = block.settings.heading
+            assign ie_process_step_text = block.settings.text
+            if product.handle == 'diy-click-deck-tiles'
+              case forloop.index
+                when 1
+                  assign ie_process_step_text = 'Indica m², perímetro, pilares, registros y zonas singulares para preparar el despiece.'
+                when 2
+                  assign ie_process_step_heading = 'Soporte'
+                  assign ie_process_step_text = 'Comprobamos que la base sea estable, suficientemente regular y compatible con el drenaje previsto.'
+                when 3
+                  assign ie_process_step_text = 'Confirmamos referencia, unidad comercial, cobertura, stock, logística y alcance antes de cerrar el pedido.'
+              endcase
+            endif
+          %}
           <li {{ block.shopify_attributes }}>
             <span>{{ block.settings.number }}</span>
-            <div><h3>{{ block.settings.heading }}</h3><p>{{ block.settings.text }}</p></div>
+            <div><h3>{{ ie_process_step_heading }}</h3><p>{{ ie_process_step_text }}</p></div>
           </li>
         {% endfor %}
       </ol>
