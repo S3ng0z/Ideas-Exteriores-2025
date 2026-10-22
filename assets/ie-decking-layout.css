@@ -731,3 +731,54 @@ body:has(.ie-hab-pdp--hero) .ie-hab-pdp__closing .ie-hab-pdp__button--secondary{
     padding:42px 24px;
   }
 }
+
+
+/* 2026-10-22 · Correct technical heading hierarchy across all product.decking pages.
+   Visual hierarchy only; underlying product description markup/content is untouched. */
+body:has(.ie-hab-pdp--hero) .product-information .product-details > .group-block > .text-block:first-child h2,
+body:has(.ie-hab-pdp--hero) .product-information .product-details .text-block:first-of-type h2{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:clamp(1.35rem,1.65vw,1.75rem)!important;
+  font-weight:500;
+  line-height:1.18!important;
+  letter-spacing:-.018em;
+  margin:0 0 18px!important;
+  text-wrap:balance;
+}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__model-description > section:first-child > h2{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:clamp(1.9rem,2.45vw,2.55rem)!important;
+  font-weight:500;
+  line-height:1.08!important;
+  letter-spacing:-.024em;
+  margin:0 0 14px!important;
+  text-wrap:balance;
+}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__model-description > section:not(:first-child) > h2{
+  font-family:"Source Serif 4",Georgia,serif;
+  font-size:clamp(1.25rem,1.5vw,1.55rem)!important;
+  font-weight:500;
+  line-height:1.18!important;
+  letter-spacing:-.016em;
+  margin:26px 0 10px!important;
+  text-wrap:pretty;
+}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__model-description > section{
+  margin:0;
+}
+body:has(.ie-hab-pdp--hero) .ie-hab-pdp__model-description > section + section{
+  padding-top:2px;
+}
+@media(max-width:749px){
+  body:has(.ie-hab-pdp--hero) .product-information .product-details > .group-block > .text-block:first-child h2,
+  body:has(.ie-hab-pdp--hero) .product-information .product-details .text-block:first-of-type h2{
+    font-size:clamp(1.2rem,5.2vw,1.45rem)!important;
+  }
+  body:has(.ie-hab-pdp--hero) .ie-hab-pdp__model-description > section:first-child > h2{
+    font-size:clamp(1.65rem,7vw,2.05rem)!important;
+  }
+  body:has(.ie-hab-pdp--hero) .ie-hab-pdp__model-description > section:not(:first-child) > h2{
+    font-size:clamp(1.18rem,5.4vw,1.4rem)!important;
+    margin-top:22px!important;
+  }
+}
