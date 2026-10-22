@@ -200,8 +200,8 @@
             "price_source": "basic",
             "tone": "light",
             "tax_note": "IVA incluido · PVP orientativo por m²",
-            "summary": "Solo tarima de Iroko para quien ya dispone de subestructura, fijación compatible e instalador.",
-            "details": "<h3>Solo material</h3><ul><li>Tarima maciza de Iroko; formato comercial de referencia 19 × 120 mm.</li><li>Perfil preparado para fijación oculta cuando el lote suministrado corresponda a esta mecanización.</li><li>Largos, acabado y disponibilidad se confirman con el stock del pedido.</li></ul><p><strong>No incluye:</strong> subestructura, clips/tornillería, remates, transporte, descarga ni montaje, salvo indicación expresa en oferta.</p>"
+            "summary": "Solo tarima natural para quien ya dispone de subestructura, fijación compatible e instalador.",
+            "details": "<h3>Solo material</h3><ul><li>Tarima de madera natural según el formato y acabado indicados en la ficha técnica del producto.</li><li>Perfil preparado para fijación oculta cuando el lote suministrado corresponda a esta mecanización.</li><li>Largos, acabado y disponibilidad se confirman con el stock del pedido.</li></ul><p><strong>No incluye:</strong> subestructura, clips/tornillería, remates, transporte, descarga ni montaje, salvo indicación expresa en oferta.</p>"
           }
         },
         "standard": {
@@ -212,7 +212,7 @@
             "tone": "mid",
             "tax_note": "IVA incluido · PVP orientativo por m²",
             "summary": "Kit coordinado de tarima, subestructura y fijaciones para reducir incompatibilidades en obra.",
-            "details": "<h3>Kit sin montaje</h3><ul><li>Tarima de Iroko según stock confirmado.</li><li>Subestructura compatible definida para el soporte y la exposición.</li><li>Clips, tornillería inoxidable y remates básicos del sistema.</li></ul><p><strong>No incluye:</strong> montaje, regularización de base, obra civil, transporte o descarga salvo que se detallen en presupuesto.</p>"
+            "details": "<h3>Kit sin montaje</h3><ul><li>Tarima de madera natural según stock confirmado.</li><li>Subestructura compatible definida para el soporte y la exposición.</li><li>Clips, tornillería inoxidable y remates básicos del sistema.</li></ul><p><strong>No incluye:</strong> montaje, regularización de base, obra civil, transporte o descarga salvo que se detallen en presupuesto.</p>"
           }
         },
         "passive": {
