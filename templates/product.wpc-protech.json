@@ -1,0 +1,472 @@
+/*
+ * IDEAS EXTERIORES · ProTech WPC master product template
+ * Shared by the eight ProTech WPC / modular decking products.
+ * Product content remains in Product/metafields; product-specific existing template copy is resolved in shared components.
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "ie-habitable-product-hero",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "label": "Calcula superficie y geometría"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "label": "Elige material, kit o montaje"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "label": "Valida soporte, stock y entrega"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "breadcrumb_label": "Migas de pan",
+        "home_label": "Inicio",
+        "breadcrumb_1_label": "Productos",
+        "breadcrumb_1_link": "/pages/timber-products",
+        "breadcrumb_2_label": "Estructuras de jardín",
+        "breadcrumb_2_link": "/pages/garden-structures-in-wood",
+        "breadcrumb_3_label": "Tarimas",
+        "breadcrumb_3_link": "/pages/timber-products",
+        "eyebrow": "Tarima exterior",
+        "lead": "<p>Compara el alcance del suministro y valida soporte, fijación, drenaje, stock y montaje antes de cerrar el pedido.</p>",
+        "primary_label": "Comparar opciones",
+        "secondary_label": "Ver soluciones de tarima",
+        "secondary_link": "/pages/timber-products",
+        "summary_title": "Antes de pedir presupuesto",
+        "summary_aria_label": "Pasos antes de pedir presupuesto"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "product": "{{ closest.product }}",
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 10,
+            "large_first_image": true,
+            "icons_style": "arrows",
+            "slideshow_controls_style": "dots",
+            "slideshow_mobile_controls_style": "hint",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 50,
+            "aspect_ratio": "2/1",
+            "media_radius": 10,
+            "extend_media": false,
+            "constrain_to_viewport": true,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "gap": 18,
+            "sticky_details_desktop": false,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 28,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "features_heading": {
+              "type": "text",
+              "name": "Características del producto",
+              "settings": {
+                "text": "<h2>Ficha técnica y criterios de instalación</h2>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 4,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "model_description": {
+              "type": "ie-product-model-description",
+              "name": "Características del modelo",
+              "settings": {
+                "strip_legacy_style": true,
+                "hide_legacy_contact": true
+              },
+              "blocks": {}
+            },
+            "scope_note": {
+              "type": "custom-liquid",
+              "name": "Alcance y configuraciones",
+              "settings": {
+                "custom_liquid": "{% case product.handle %}\n  {% when 'wpc-capped-decking-360-premium' %}\n    <div class=\"rte\"><p><strong>PVP orientativo con IVA incluido.</strong> Compara OUTDOOR CORE, CLEAN y SELECT por alcance. La unidad comercial, el stock, el transporte y las condiciones de montaje se confirman en la oferta o pedido.</p><p><a href=\"#ie-habitable-packages\">Comparar opciones →</a></p></div>\n  {% when 'diy-click-deck-tiles' %}\n    <div class=\"rte\"><p><strong>PVP final con IVA incluido.</strong> La unidad comercial y la cobertura por unidad de esta referencia se confirman antes del pedido. Hasta completar esa validación, los importes no deben interpretarse como €/m².</p><p><a href=\"#ie-habitable-packages\">Comparar alcance →</a></p></div>\n  {% else %}\n    <div class=\"rte\"><p><strong>PVP orientativo.</strong> Compara OUTDOOR CORE, CLEAN y SELECT por alcance. La unidad comercial, el rendimiento, el stock, el transporte y las condiciones de montaje se confirman en la oferta o pedido.</p><p><a href=\"#ie-habitable-packages\">Comparar opciones →</a></p></div>\n{% endcase %}"
+              }
+            }
+          },
+          "block_order": [
+            "features_heading",
+            "model_description",
+            "scope_note"
+          ]
+        }
+      },
+      "settings": {
+        "product": "{{ closest.product }}",
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": true,
+        "limit_details_width": false,
+        "gap": 24,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 32,
+        "padding-block-end": 32
+      }
+    },
+    "packages": {
+      "type": "ie-habitable-product-packages",
+      "blocks": {
+        "basic": {
+          "type": "tier",
+          "settings": {
+            "label": "OUTDOOR CORE",
+            "price_source": "basic",
+            "tone": "light",
+            "tax_note": "IVA incluido · PVP orientativo",
+            "summary": "Solo tarima para quien ya dispone de subestructura, fijación compatible e instalador.",
+            "details": "<h3>Solo material</h3><ul><li>Tarima según el material, perfil, formato y acabado indicados en la ficha técnica del producto.</li><li>Perfil preparado para fijación oculta cuando el lote suministrado corresponda a esta mecanización.</li><li>Largos, acabado y disponibilidad se confirman con el stock del pedido.</li></ul><p><strong>No incluye:</strong> subestructura, clips/tornillería, remates, transporte, descarga ni montaje, salvo indicación expresa en oferta.</p>"
+          }
+        },
+        "standard": {
+          "type": "tier",
+          "settings": {
+            "label": "OUTDOOR CLEAN",
+            "price_source": "standard",
+            "tone": "mid",
+            "tax_note": "IVA incluido · PVP orientativo",
+            "summary": "Kit coordinado de tarima, subestructura y fijaciones para reducir incompatibilidades en obra.",
+            "details": "<h3>Kit sin montaje</h3><ul><li>Tarima según stock confirmado.</li><li>Subestructura compatible definida para el soporte y la exposición.</li><li>Clips, tornillería inoxidable y remates básicos del sistema.</li></ul><p><strong>No incluye:</strong> montaje, regularización de base, obra civil, transporte o descarga salvo que se detallen en presupuesto.</p>"
+          }
+        },
+        "passive": {
+          "type": "tier",
+          "settings": {
+            "label": "OUTDOOR SELECT",
+            "price_source": "passive",
+            "tone": "deep",
+            "tax_note": "IVA incluido · PVP orientativo",
+            "summary": "Suministro coordinado con montaje profesional para proyectos cuya base y acceso sean compatibles.",
+            "details": "<h3>Suministro + montaje</h3><ul><li>Materiales de la solución coordinada.</li><li>Replanteo, corte, modulación de juntas y colocación dentro del alcance aceptado.</li><li>Remates estándar definidos en la oferta.</li></ul><p><strong>A valorar aparte cuando proceda:</strong> corrección o ejecución de base, desmontajes, escalones, perímetros complejos, encuentros especiales, trabajos en piscina, medios auxiliares, transporte y desplazamientos fuera del ámbito previsto.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "basic",
+        "standard",
+        "passive"
+      ],
+      "settings": {
+        "eyebrow": "Opciones de suministro",
+        "heading": "Compara precio y alcance antes de decidir",
+        "intro": "<p>Elige entre solo tarima, kit coordinado o suministro con montaje. Así puedes comparar precio y alcance sin mezclar partidas distintas.</p>",
+        "note": "<p><strong>Importante:</strong> los importes son PVP orientativos con IVA incluido. La unidad comercial, el rendimiento, los largos disponibles, la merma, el transporte, la descarga, el soporte existente y los trabajos especiales se confirman antes de contratar.</p>"
+      }
+    },
+    "process": {
+      "type": "ie-habitable-product-process",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "heading": "Superficie",
+            "text": "Indica m², perímetro, escalones, registros y zonas singulares para estimar material y merma."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "heading": "Sistema",
+            "text": "Definimos tarima, subestructura, fijación y acabado según soporte, exposición y uso previsto."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "heading": "Validación",
+            "text": "Confirmamos stock, largos, acceso, transporte y alcance de montaje antes de cerrar la propuesta."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "eyebrow": "Cómo avanzar",
+        "heading": "De los m² al pedido",
+        "intro": "<p>Primero definimos superficie y geometría; después cerramos el sistema y verificamos las condiciones que afectan a suministro, logística y montaje.</p>",
+        "link_label": "Ver cómo trabajamos",
+        "link": "/pages/services"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "blocks": {
+        "header": {
+          "type": "text",
+          "name": "t:names.header",
+          "settings": {
+            "text": "<p><strong>Otras tarimas y soluciones para exterior</strong></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-product-card": {
+          "type": "product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product": "{{ closest.product }}",
+            "product_card_gap": 16,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card-gallery": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "product": "{{ closest.product }}",
+                "image_ratio": "landscape",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "group": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "product_title_AQqXJ9": {
+                  "type": "product-title",
+                  "name": "t:names.product_title",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price": {
+                  "type": "price",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "center",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_title_AQqXJ9",
+                "price"
+              ]
+            }
+          },
+          "block_order": [
+            "card-gallery",
+            "group"
+          ]
+        }
+      },
+      "block_order": [
+        "header"
+      ],
+      "settings": {
+        "product": "{{ closest.product }}",
+        "recommendation_type": "related",
+        "layout_type": "grid",
+        "carousel_on_mobile": true,
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 12,
+        "rows_gap": 36,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 56,
+        "padding-block-end": 56
+      }
+    },
+    "cta": {
+      "type": "ie-habitable-product-cta",
+      "settings": {
+        "eyebrow": "Siguiente paso",
+        "heading": "¿Quieres calcular el material para tu terraza?",
+        "text": "<p>Envíanos los m² aproximados, la ubicación y, si puedes, fotos o un croquis. Revisaremos geometría, soporte y alcance para proponerte la opción adecuada sin mezclar partidas.</p>",
+        "primary_label": "Calcular mi proyecto",
+        "primary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Ver soluciones de tarima",
+        "secondary_link": "/pages/timber-products"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "packages",
+    "process",
+    "product-recommendations",
+    "cta"
+  ]
+}

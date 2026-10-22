@@ -1,14 +1,32 @@
 {{ 'ie-habitable-product.css' | asset_url | stylesheet_tag }}
-{% if product.template_suffix contains 'decking' %}
+{% if product.template_suffix contains 'decking' or product.template_suffix == 'wpc-protech' %}
   {{ 'ie-decking-layout.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
 {% liquid
   assign ie_hero_eyebrow = section.settings.eyebrow
   assign ie_hero_lead = section.settings.lead
+  assign ie_secondary_label = section.settings.secondary_label
+  assign ie_secondary_link = section.settings.secondary_link
+  assign ie_summary_title = section.settings.summary_title
+  assign ie_summary_aria_label = section.settings.summary_aria_label
   if product.product_type == 'Tarima exterior de bambú'
     assign ie_hero_eyebrow = 'Tarima exterior · Bambú densificado'
     assign ie_hero_lead = '<p>Compara el alcance del suministro por m² y valida soporte, fijación, drenaje, stock y montaje antes de cerrar el pedido.</p>'
+  endif
+
+  if product.handle == 'wpc-capped-decking-360-premium'
+    assign ie_hero_eyebrow = 'Tarima exterior · WPC tecnológica'
+    assign ie_hero_lead = '<p>Compara el alcance del suministro y valida unidad comercial, perfil, fijación, drenaje, stock y montaje antes de cerrar el pedido.</p>'
+    assign ie_secondary_label = 'Ver tarimas WPC ProTech'
+    assign ie_secondary_link = '/collections/wpc-protech-decking'
+  elsif product.handle == 'diy-click-deck-tiles'
+    assign ie_hero_eyebrow = 'Loseta modular exterior'
+    assign ie_hero_lead = '<p>Solución modular para renovar pavimentos exteriores con una instalación limpia. Antes del pedido confirmamos referencia, unidad comercial, cobertura, soporte, drenaje, stock y condiciones de entrega.</p>'
+    assign ie_secondary_label = 'Ver Tarima ProTech'
+    assign ie_secondary_link = '/collections/wpc-protech-decking'
+    assign ie_summary_title = 'Antes de elegir'
+    assign ie_summary_aria_label = 'Comprobaciones antes del pedido'
   endif
 
   assign ie_breadcrumb_1_label = product.metafields.custom.n1.value | default: section.settings.breadcrumb_1_label
@@ -30,7 +48,7 @@
   endif
 %}
 
-<section class="ie-hab-pdp ie-hab-pdp--hero" aria-labelledby="ie-hab-product-title-{{ section.id }}">
+<section class="ie-hab-pdp ie-hab-pdp--hero{% if product.template_suffix == 'wpc-protech' %} ie-hab-pdp--wpc-protech{% endif %}" aria-labelledby="ie-hab-product-title-{{ section.id }}">
   <div class="ie-hab-pdp__inner">
     {% render 'ie-breadcrumb',
   breadcrumb_object: product,
@@ -73,20 +91,33 @@
         {% endif %}
         <div class="ie-hab-pdp__actions">
           <a class="ie-hab-pdp__button ie-hab-pdp__button--primary" href="#ie-habitable-packages">{{ section.settings.primary_label }}</a>
-          {% if section.settings.secondary_link != blank and section.settings.secondary_label != blank %}
-            <a class="ie-hab-pdp__button ie-hab-pdp__button--secondary" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label }}</a>
+          {% if ie_secondary_link != blank and ie_secondary_label != blank %}
+            <a class="ie-hab-pdp__button ie-hab-pdp__button--secondary" href="{{ ie_secondary_link }}">{{ ie_secondary_label }}</a>
           {% endif %}
         </div>
       </div>
 
       {% if section.blocks.size > 0 %}
-        <aside class="ie-hab-pdp__summary" aria-label="{{ section.settings.summary_aria_label | escape }}">
-          <p class="ie-hab-pdp__summary-title">{{ section.settings.summary_title }}</p>
+        <aside class="ie-hab-pdp__summary" aria-label="{{ ie_summary_aria_label | escape }}">
+          <p class="ie-hab-pdp__summary-title">{{ ie_summary_title }}</p>
           <ol>
             {% for block in section.blocks %}
+              {% liquid
+                assign ie_step_label = block.settings.label
+                if product.handle == 'diy-click-deck-tiles'
+                  case forloop.index
+                    when 1
+                      assign ie_step_label = 'Mide superficie y perímetro'
+                    when 2
+                      assign ie_step_label = 'Valida soporte y drenaje'
+                    when 3
+                      assign ie_step_label = 'Confirma unidad, stock y entrega'
+                  endcase
+                endif
+              %}
               <li {{ block.shopify_attributes }}>
                 <span>{{ block.settings.number }}</span>
-                <strong>{{ block.settings.label }}</strong>
+                <strong>{{ ie_step_label }}</strong>
               </li>
             {% endfor %}
           </ol>
