@@ -14,6 +14,17 @@
       {% for block in section.blocks %}
         {% liquid
           assign tier_price = blank
+          assign tier_summary = block.settings.summary
+          assign tier_details = block.settings.details
+          if product.product_type == 'Tarima exterior de bambú'
+            case block.settings.price_source
+              when 'basic'
+                assign tier_summary = 'Solo tarima de bambú densificado para quien ya dispone de subestructura, fijación compatible e instalador.'
+                assign tier_details = '<h3>Solo material</h3><ul><li>Tarima exterior de bambú densificado según el formato y acabado indicados en la ficha técnica del producto.</li><li>Perfil y mecanizado sujetos a la referencia y lote suministrado.</li><li>Largos, acabado y disponibilidad se confirman con el stock del pedido.</li></ul><p><strong>No incluye:</strong> subestructura, clips/tornillería, remates, transporte, descarga ni montaje, salvo indicación expresa en oferta.</p>'
+              when 'standard'
+                assign tier_details = '<h3>Kit sin montaje</h3><ul><li>Tarima de bambú densificado según stock confirmado.</li><li>Subestructura compatible definida para el soporte y la exposición.</li><li>Clips, tornillería inoxidable y remates básicos del sistema.</li></ul><p><strong>No incluye:</strong> montaje, regularización de base, obra civil, transporte o descarga salvo que se detallen en presupuesto.</p>'
+            endcase
+          endif
           case block.settings.price_source
             when 'basic'
               assign tier_price = product.metafields.custom.price_basic.value
@@ -28,9 +39,9 @@
             <p class="ie-hab-pdp__package-label">{{ block.settings.label }}</p>
             {% if tier_price != blank %}<p class="ie-hab-pdp__package-price">{{ tier_price | money }}</p>{% endif %}
             {% if block.settings.tax_note != blank %}<p class="ie-hab-pdp__package-tax">{{ block.settings.tax_note }}</p>{% endif %}
-            {% if block.settings.summary != blank %}<p class="ie-hab-pdp__package-summary">{{ block.settings.summary }}</p>{% endif %}
+            {% if tier_summary != blank %}<p class="ie-hab-pdp__package-summary">{{ tier_summary }}</p>{% endif %}
           </header>
-          {% if block.settings.details != blank %}<div class="ie-hab-pdp__package-body rte">{{ block.settings.details }}</div>{% endif %}
+          {% if tier_details != blank %}<div class="ie-hab-pdp__package-body rte">{{ tier_details }}</div>{% endif %}
         </article>
       {% endfor %}
     </div>
