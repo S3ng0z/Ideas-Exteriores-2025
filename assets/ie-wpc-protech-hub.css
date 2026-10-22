@@ -1,5 +1,6 @@
-/* ProTech WPC hub · visual system aligned with page.wooden-sheds. Scoped to this collection only. */
-.collection-wpc-protech-decking .ie-wpc{
+/* ProTech WPC collection · aligned with wooden-sheds + natural-decking hubs.
+   Presentation only. Supports the current /collections/wpc-decking handle and legacy body class. */
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc{
   --ink:#1f231e;
   --forest:#566236;
   --bone:#f9f8f6;
@@ -9,32 +10,26 @@
   color:var(--ink);
   font-family:Manrope,var(--font-body--family),Arial,sans-serif;
 }
-.collection-wpc-protech-decking .ie-wpc *{box-sizing:border-box}
-.collection-wpc-protech-decking .ie-wpc__inner{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc *{box-sizing:border-box}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__inner{
   width:min(calc(100% - 64px),1600px);
   margin:auto;
   padding:25px 0 0;
 }
-.collection-wpc-protech-decking .ie-wpc__breadcrumb{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__breadcrumb{
   display:flex;
   align-items:center;
   gap:8px;
   flex-wrap:wrap;
   min-height:40px;
-  margin-bottom:35px;
+  margin-bottom:30px;
   font-size:.78rem;
   color:var(--muted);
 }
-.collection-wpc-protech-decking .ie-wpc__breadcrumb a{
-  color:inherit;
-  text-decoration:none;
-}
-.collection-wpc-protech-decking .ie-wpc__breadcrumb a:hover{
-  text-decoration:underline;
-  text-underline-offset:3px;
-}
-.collection-wpc-protech-decking .ie-wpc h1,
-.collection-wpc-protech-decking .ie-wpc h2{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__breadcrumb a{color:inherit;text-decoration:none}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__breadcrumb a:hover{text-decoration:underline;text-underline-offset:3px}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc h1,
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc h2{
   max-width:none;
   margin:0;
   font-family:"Source Serif 4",Georgia,serif;
@@ -43,289 +38,291 @@
   text-transform:none;
   text-wrap:balance;
 }
-.collection-wpc-protech-decking .ie-wpc h3{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc h3{
   margin:0;
   font-family:Manrope,Arial,sans-serif;
   font-weight:600;
   letter-spacing:-.015em;
   text-transform:none;
 }
-.collection-wpc-protech-decking .ie-wpc__eyebrow{
-  margin:0 0 14px;
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__eyebrow{
+  margin:0 0 12px;
   color:var(--forest);
-  font-size:.77rem;
+  font-size:.75rem;
   font-weight:700;
   line-height:1.4;
   letter-spacing:.075em;
   text-transform:uppercase;
 }
-.collection-wpc-protech-decking .ie-wpc__hero{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__hero{
   display:grid;
-  grid-template-columns:minmax(0,1.65fr) minmax(300px,.68fr);
-  gap:clamp(30px,5vw,90px);
+  grid-template-columns:minmax(0,1.65fr) minmax(300px,.72fr);
+  gap:clamp(28px,4.5vw,72px);
   align-items:end;
-  padding:12px 0 78px;
+  padding:8px 0 64px;
   border-bottom:1px solid var(--line);
 }
-.collection-wpc-protech-decking .ie-wpc h1{
-  max-width:1040px;
-  font-size:clamp(2.6rem,4.2vw,4.5rem);
-  line-height:1.03;
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc h1{
+  max-width:980px;
+  font-size:clamp(2.35rem,3.55vw,3.75rem);
+  line-height:1.05;
 }
-.collection-wpc-protech-decking .ie-wpc__lead{
-  max-width:900px;
-  margin:23px 0 0;
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__lead{
+  max-width:880px;
+  margin:20px 0 0;
   color:var(--muted);
-  font-size:clamp(1rem,1.2vw,1.17rem);
-  line-height:1.68;
+  font-size:clamp(.98rem,1.1vw,1.08rem);
+  line-height:1.64;
 }
-.collection-wpc-protech-decking .ie-wpc__actions{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__actions{
   display:flex;
   flex-wrap:wrap;
-  gap:12px;
-  margin-top:28px;
+  gap:10px;
+  margin-top:24px;
 }
-.collection-wpc-protech-decking .ie-wpc__button{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__button{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:20px;
-  min-height:50px;
-  padding:12px 22px;
+  gap:18px;
+  min-height:46px;
+  padding:11px 20px;
   border:1px solid var(--forest);
-  font-size:.92rem;
+  font-size:.88rem;
   font-weight:650;
   line-height:1.2;
   text-decoration:none;
   transition:background-color .16s,color .16s,border-color .16s;
 }
-.collection-wpc-protech-decking .ie-wpc__button--primary{
-  background:var(--forest);
-  color:#fff;
-}
-.collection-wpc-protech-decking .ie-wpc__button--primary:hover{
-  background:#414c28;
-  border-color:#414c28;
-}
-.collection-wpc-protech-decking .ie-wpc__button--outline{
-  background:transparent;
-  color:var(--ink);
-}
-.collection-wpc-protech-decking .ie-wpc__button--outline:hover{
-  background:var(--ink);
-  color:#fff;
-}
-.collection-wpc-protech-decking .ie-wpc__hero-aside{
-  border-top:1px solid var(--ink);
-}
-.collection-wpc-protech-decking .ie-wpc__hero-aside .ie-wpc__eyebrow{
-  margin-top:18px;
-}
-.collection-wpc-protech-decking .ie-wpc__hero-aside p:last-child{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__button--primary{background:var(--forest);color:#fff}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__button--primary:hover{background:#414c28;border-color:#414c28}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__button--outline{background:transparent;color:var(--ink)}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__button--outline:hover{background:var(--ink);color:#fff}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__hero-aside{border-top:1px solid var(--ink)}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__hero-aside .ie-wpc__eyebrow{margin-top:16px}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__hero-aside p:last-child{
   margin:0;
   color:var(--muted);
   font-size:.9rem;
-  line-height:1.66;
+  line-height:1.62;
 }
-.collection-wpc-protech-decking .ie-wpc__criteria,
-.collection-wpc-protech-decking .ie-wpc__guide{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__criteria,
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__guide{
   scroll-margin-top:100px;
-  padding-top:85px;
+  padding-top:68px;
 }
-.collection-wpc-protech-decking .ie-wpc__section-head{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__section-head{
   display:grid;
   grid-template-columns:minmax(0,1.28fr) minmax(270px,.72fr);
-  gap:clamp(25px,4.5vw,75px);
+  gap:clamp(24px,4vw,60px);
   align-items:end;
-  margin-bottom:32px;
+  margin-bottom:26px;
 }
-.collection-wpc-protech-decking .ie-wpc__section-head h2,
-.collection-wpc-protech-decking .ie-wpc__faq h2,
-.collection-wpc-protech-decking .ie-wpc__cta h2{
-  font-size:clamp(2.15rem,3.15vw,3.2rem);
-  line-height:1.12;
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__section-head h2,
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq h2,
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta h2{
+  font-size:clamp(1.9rem,2.65vw,2.75rem);
+  line-height:1.14;
 }
-.collection-wpc-protech-decking .ie-wpc__section-head>p{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__section-head>p{
   margin:0;
   color:var(--muted);
-  font-size:1rem;
-  line-height:1.65;
+  font-size:.96rem;
+  line-height:1.62;
 }
-.collection-wpc-protech-decking .ie-wpc__cards{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cards{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:15px;
 }
-.collection-wpc-protech-decking .ie-wpc__cards article{
-  padding:26px;
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cards article{
+  padding:24px;
   background:#fff;
   border-top:2px solid var(--forest);
 }
-.collection-wpc-protech-decking .ie-wpc__index{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__index{
   display:block;
   color:var(--forest);
-  font-size:.75rem;
+  font-size:.73rem;
   font-weight:700;
   letter-spacing:.055em;
   text-transform:uppercase;
 }
-.collection-wpc-protech-decking .ie-wpc__cards h3{
-  margin:17px 0 10px;
-  font-size:1.1rem;
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cards h3{
+  margin:15px 0 9px;
+  font-size:1.05rem;
 }
-.collection-wpc-protech-decking .ie-wpc__cards p{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cards p{
   margin:0;
   color:var(--muted);
-  font-size:.94rem;
-  line-height:1.65;
+  font-size:.92rem;
+  line-height:1.62;
 }
-.collection-wpc-protech-decking .ie-wpc__guide .ie-wpc__cards article{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__guide .ie-wpc__cards article{
   background:#ecebe5;
   border-top:0;
 }
-.collection-wpc-protech-decking .ie-wpc__faq{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq{
   display:grid;
   grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);
-  gap:clamp(30px,6vw,100px);
-  padding:90px 0;
+  gap:clamp(30px,5vw,80px);
+  padding:72px 0;
 }
-.collection-wpc-protech-decking .ie-wpc__faq-items{
-  border-top:1px solid var(--ink);
-}
-.collection-wpc-protech-decking .ie-wpc__faq details{
-  border-bottom:1px solid var(--line);
-}
-.collection-wpc-protech-decking .ie-wpc__faq summary{
-  position:relative;
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq-items{border-top:1px solid var(--ink)}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq details{border-bottom:1px solid var(--line)}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq summary{
   cursor:pointer;
-  padding:19px 30px 19px 0;
+  padding:17px 30px 17px 0;
   font-weight:650;
   line-height:1.45;
 }
-.collection-wpc-protech-decking .ie-wpc__faq details p{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq details p{
   margin:0;
-  padding:0 26px 22px 0;
+  padding:0 26px 20px 0;
   color:var(--muted);
-  font-size:.94rem;
-  line-height:1.68;
+  font-size:.92rem;
+  line-height:1.65;
 }
-.collection-wpc-protech-decking .ie-wpc__cta{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta{
   display:grid;
   grid-template-columns:minmax(0,1.1fr) minmax(250px,.65fr);
-  gap:clamp(35px,6vw,100px);
+  gap:clamp(32px,5vw,72px);
   align-items:center;
-  padding:clamp(30px,5vw,70px);
+  padding:clamp(30px,4.5vw,60px);
   background:var(--ink);
   color:#fff;
 }
-.collection-wpc-protech-decking .ie-wpc__cta h2{color:#fff}
-.collection-wpc-protech-decking .ie-wpc__cta p{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta h2{color:#fff}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta p{
   max-width:900px;
-  margin:22px 0 0;
+  margin:18px 0 0;
   color:#e2e5dc;
-  line-height:1.65;
+  font-size:.94rem;
+  line-height:1.62;
 }
-.collection-wpc-protech-decking .ie-wpc__cta .ie-wpc__button--primary{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta .ie-wpc__button--primary{
   justify-self:start;
   background:var(--bone);
   border-color:var(--bone);
   color:var(--ink);
 }
-.collection-wpc-protech-decking .ie-wpc a:focus-visible,
-.collection-wpc-protech-decking .ie-wpc summary:focus-visible{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc a:focus-visible,
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc summary:focus-visible{
   outline:3px solid #8a9a5b;
   outline-offset:4px;
 }
 #ie-wpc-products{scroll-margin-top:100px}
 
-/* Native Shopify collection grid follows the same page rhythm. */
-.collection-wpc-protech-decking .product-grid-container{
-  --padding-block-start:46px!important;
-  --padding-block-end:72px!important;
+/* Shopify product grid mirrors natural-wood-decking: centered content, one visible price. */
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .product-grid-container{
+  --padding-block-start:40px!important;
+  --padding-block-end:64px!important;
 }
-.collection-wpc-protech-decking .collection-wrapper{row-gap:16px}
-.collection-wpc-protech-decking .main-collection-grid,
-.collection-wpc-protech-decking .facets-block-wrapper{
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .collection-wrapper{row-gap:14px}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .main-collection-grid,
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .facets-block-wrapper{
   width:min(calc(100% - 64px),1600px);
   margin-inline:auto;
 }
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .product-grid .product-card .group-block{
+  align-items:center!important;
+  text-align:center!important;
+}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .product-grid .product-card .text-block,
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .product-grid .product-card product-price{
+  width:100%!important;
+  text-align:center!important;
+  justify-content:center;
+}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .product-grid .product-card .text-block p{
+  margin-inline:auto;
+  text-align:center!important;
+}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .product-grid .product-card .unit-price{display:none!important}
+:is(.collection-wpc-decking,.collection-wpc-protech-decking) .product-grid .product-card product-price{
+  display:block;
+  margin-top:4px;
+  font-size:.94rem;
+  line-height:1.4;
+}
 
 @media(max-width:1100px){
-  .collection-wpc-protech-decking .ie-wpc__cards{
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cards{
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
 }
 @media(max-width:749px){
-  .collection-wpc-protech-decking .ie-wpc__inner{
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__inner{
     width:calc(100% - 32px);
     padding:14px 0 0;
   }
-  .collection-wpc-protech-decking .ie-wpc__breadcrumb{margin-bottom:22px}
-  .collection-wpc-protech-decking .ie-wpc__hero,
-  .collection-wpc-protech-decking .ie-wpc__section-head,
-  .collection-wpc-protech-decking .ie-wpc__faq,
-  .collection-wpc-protech-decking .ie-wpc__cta{
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__breadcrumb{margin-bottom:20px}
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__hero,
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__section-head,
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq,
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta{
     grid-template-columns:1fr;
   }
-  .collection-wpc-protech-decking .ie-wpc__hero{
-    gap:30px;
-    padding:0 0 50px;
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__hero{
+    gap:26px;
+    padding:0 0 46px;
   }
-  .collection-wpc-protech-decking .ie-wpc h1{
-    font-size:clamp(2.25rem,9vw,3rem);
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc h1{
+    font-size:clamp(2rem,8vw,2.65rem);
   }
-  .collection-wpc-protech-decking .ie-wpc__lead{
-    margin-top:18px;
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__lead{
+    margin-top:16px;
     line-height:1.56;
   }
-  .collection-wpc-protech-decking .ie-wpc__actions{
-    justify-content:center;
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__actions{
+    display:grid;
+    grid-template-columns:1fr;
   }
-  .collection-wpc-protech-decking .ie-wpc__button{
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__button{
     width:100%;
     min-width:0;
   }
-  .collection-wpc-protech-decking .ie-wpc__criteria,
-  .collection-wpc-protech-decking .ie-wpc__guide{
-    padding-top:60px;
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__criteria,
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__guide{
+    padding-top:52px;
     scroll-margin-top:70px;
   }
-  .collection-wpc-protech-decking .ie-wpc__section-head{
-    gap:15px;
-    margin-bottom:22px;
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__section-head{
+    gap:14px;
+    margin-bottom:20px;
   }
-  .collection-wpc-protech-decking .ie-wpc__section-head h2,
-  .collection-wpc-protech-decking .ie-wpc__faq h2,
-  .collection-wpc-protech-decking .ie-wpc__cta h2{
-    font-size:clamp(2rem,8vw,2.6rem);
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__section-head h2,
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq h2,
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta h2{
+    font-size:clamp(1.7rem,7vw,2.15rem);
   }
-  .collection-wpc-protech-decking .ie-wpc__cards{
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cards{
     grid-template-columns:1fr;
     gap:14px;
   }
-  .collection-wpc-protech-decking .ie-wpc__faq{
-    gap:20px;
-    padding:65px 0;
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__faq{
+    gap:18px;
+    padding:56px 0;
   }
-  .collection-wpc-protech-decking .ie-wpc__cta{
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta{
     margin:0 -16px;
-    padding:42px 24px;
-    gap:26px;
+    padding:36px 22px;
+    gap:22px;
   }
-  .collection-wpc-protech-decking .ie-wpc__cta .ie-wpc__button--primary{
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__cta .ie-wpc__button--primary{
     justify-self:stretch;
   }
   #ie-wpc-products{scroll-margin-top:70px}
-  .collection-wpc-protech-decking .product-grid-container{
-    --padding-block-start:34px!important;
-    --padding-block-end:52px!important;
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .product-grid-container{
+    --padding-block-start:30px!important;
+    --padding-block-end:48px!important;
   }
-  .collection-wpc-protech-decking .main-collection-grid,
-  .collection-wpc-protech-decking .facets-block-wrapper{
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .main-collection-grid,
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .facets-block-wrapper{
     width:100%;
     margin-inline:0;
   }
 }
 @media(prefers-reduced-motion:reduce){
-  .collection-wpc-protech-decking .ie-wpc__button{transition:none}
+  :is(.collection-wpc-decking,.collection-wpc-protech-decking) .ie-wpc__button{transition:none}
 }
