@@ -1,7 +1,11 @@
 /*
- * IDEAS EXTERIORES · Decking product master template
- * Shared by natural wood, treated wood and densified bamboo decking.
- * Product-specific technical/commercial data remains in Shopify Product/metafields.
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
  */
 {
   "sections": {
@@ -62,7 +66,7 @@
           "settings": {
             "product": "{{ closest.product }}",
             "media_presentation": "grid",
-            "media_columns": "one",
+            "media_columns": "two",
             "image_gap": 10,
             "large_first_image": true,
             "icons_style": "arrows",
@@ -186,7 +190,7 @@
         "limit_details_width": false,
         "gap": 24,
         "color_scheme": "scheme-1",
-        "padding-block-start": 0,
+        "padding-block-start": 32,
         "padding-block-end": 32
       }
     },
