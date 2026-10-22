@@ -1,4 +1,14 @@
 <section id="ie-habitable-packages" class="ie-hab-pdp ie-hab-pdp--packages" aria-labelledby="ie-hab-packages-title-{{ section.id }}">
+  {% liquid
+    assign ie_packages_intro = section.settings.intro
+    assign ie_packages_note = section.settings.note
+    if product.handle == 'diy-click-deck-tiles'
+      assign ie_packages_intro = '<p>Separamos material, kit coordinado e instalación para que el precio corresponda a un alcance claro y comparable.</p>'
+      assign ie_packages_note = '<p><strong>Importante:</strong> los importes son PVP finales con IVA incluido. La unidad de venta, la cobertura por unidad, la referencia exacta, el stock, el transporte y los trabajos sobre la base se confirman antes de contratar.</p>'
+    elsif product.handle == 'wpc-capped-decking-360-premium'
+      assign ie_packages_note = '<p><strong>Importante:</strong> los importes son PVP orientativos con IVA incluido. La unidad comercial —m², lama, caja u otra—, el perfil y largo suministrados, el rendimiento, la merma, el transporte, la descarga, el soporte existente y los trabajos especiales se confirman antes de contratar.</p>'
+    endif
+  %}
   <div class="ie-hab-pdp__inner">
     <div class="ie-hab-pdp__section-head">
       <div>
