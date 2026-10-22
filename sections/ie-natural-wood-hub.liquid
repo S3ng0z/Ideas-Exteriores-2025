@@ -1,80 +1,102 @@
-<section class="ie-deck" aria-labelledby="ie-deck-title">
-<style>
-.ie-deck{background:#f9f8f6;color:#253027}
-.ie-deck__wrap{max-width:1360px;margin:0 auto;padding:28px 32px 44px}
-.ie-deck__breadcrumb{margin-bottom:18px}
-.ie-deck__intro{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(320px,.85fr);gap:44px;align-items:center}
-.ie-deck__eyebrow{font:700 11px/1.35 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#617049;margin:0 0 10px}
-.ie-deck h1{font:500 clamp(32px,3.2vw,48px)/1.08 Georgia,serif;letter-spacing:-.03em;max-width:720px;margin:0 0 14px}
-.ie-deck h2{font:500 clamp(25px,2.6vw,38px)/1.15 Georgia,serif;margin:0 0 18px}
-.ie-deck h3{font:600 17px/1.25 Arial,sans-serif;margin:0 0 10px}
-.ie-deck p,.ie-deck li{font:400 14px/1.58 Arial,sans-serif;color:#5b635c}
-.ie-deck__intro>div:last-child{padding-top:20px;border-top:1px solid #d8ddd4}
-.ie-deck__actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.ie-deck__button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;background:#28342a;color:#fff!important;text-decoration:none;font:600 13px/1.35 Arial,sans-serif}
-.ie-deck__button--outline{background:transparent!important;color:#28342a!important;border:1px solid #7b8478}
-.ie-deck__cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
-.ie-deck__cards article{padding:20px;background:#fff;border:1px solid #e3e5df}
-.ie-deck__cards span{display:block;color:#617049;font:700 11px Arial,sans-serif;margin-bottom:15px}
-.ie-deck__guide{margin-top:48px;padding:34px;background:#eeefe9}
-.ie-deck__guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 42px}
-.ie-deck__guide-grid article{border-top:1px solid #cdd2c8;padding-top:18px}
-.ie-deck__guide-grid h3{font-size:17px}
-.ie-deck__faq{margin-top:48px;max-width:1000px}
-.ie-deck__faq details{border-top:1px solid #d8ddd4;padding:18px 0}
-.ie-deck__faq details:last-child{border-bottom:1px solid #d8ddd4}
-.ie-deck__faq summary{cursor:pointer;font:600 16px/1.4 Arial,sans-serif}
-.ie-deck__faq details p{margin:12px 0 0}
-.ie-deck__foot{border-top:1px solid #d8ddd4;margin-top:36px;padding-top:26px;display:flex;gap:28px;justify-content:space-between;align-items:center}
-.ie-deck__foot p{max-width:840px}
-.ie-deck__foot a{white-space:nowrap}
-.ie-deck a:focus-visible{outline:2px solid #617049;outline-offset:3px}
-@media(max-width:900px){
-  .ie-deck__wrap{padding:24px 24px 38px}
-  .ie-deck__guide-grid{grid-template-columns:1fr}
-  .ie-deck__intro{grid-template-columns:1fr;gap:22px}
-  .ie-deck__intro>div:last-child{padding-top:18px}
-  .ie-deck__cards{grid-template-columns:1fr}
-  .ie-deck__foot{display:block}
-  .ie-deck__foot a{margin-top:12px}
-}
-@media(max-width:749px){
-  .ie-deck__wrap{padding:18px 16px 32px}
-  .ie-deck__breadcrumb{margin-bottom:12px}
-  .ie-deck h1{font-size:clamp(28px,8vw,36px);margin-bottom:12px}
-  .ie-deck__actions{flex-direction:column;margin-top:16px}
-  .ie-deck__button{width:100%}
-  .ie-deck__cards{margin-top:24px}
-  .ie-deck p{text-align:left!important}
-}
+{{ 'ie-natural-wood-hub.css' | asset_url | stylesheet_tag }}
 
-/* Shared editorial sizing with the four featured services hubs. */
-.ie-deck .ie-deck__wrap{width:min(calc(100% - 56px),1320px);max-width:1320px;padding:20px 0 32px}
-.ie-deck .ie-deck__breadcrumb{margin-bottom:12px}
-.ie-deck .ie-deck__intro{grid-template-columns:minmax(0,1.65fr) minmax(250px,.8fr);gap:clamp(20px,3vw,38px);align-items:start}
-.ie-deck h1{font-family:"Source Serif 4",Georgia,serif;font-size:clamp(1.75rem,2.35vw,2.45rem);font-weight:500;line-height:1.15;text-transform:none;text-wrap:pretty}
-.ie-deck h2{font-family:"Source Serif 4",Georgia,serif;font-size:clamp(1.45rem,1.85vw,1.95rem);font-weight:500;line-height:1.19;text-transform:none;text-wrap:pretty}
-.ie-deck p{font-size:clamp(.91rem,1vw,.98rem);line-height:1.62;text-align:left}
-@media(max-width:989px){.ie-deck .ie-deck__intro{grid-template-columns:minmax(0,1fr)}}
-@media(max-width:749px){
- .ie-deck .ie-deck__wrap{width:calc(100% - 32px);padding:15px 0 24px}
- .ie-deck h1{font-size:clamp(1.65rem,6.3vw,1.95rem)}
- .ie-deck h2{font-size:clamp(1.35rem,5.2vw,1.65rem)}
-}
-</style>
-<div class="ie-deck__wrap">
-{% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: collection.title, class_name: 'ie-deck__breadcrumb', fallback_1_label: 'Productos', fallback_1_link: '/pages/timber-products' %}
-<div class="ie-deck__intro"><div><p class="ie-deck__eyebrow">IDEAS EXTERIORES · Tarimas de exterior</p><h1 id="ie-deck-title">Tarimas de madera natural para exterior</h1><p>Compara especies y soluciones para terrazas, jardines, porches y zonas de piscina. Te ayudamos a elegir según exposición, uso, estabilidad, mantenimiento y presupuesto, sin prometer un comportamiento idéntico para todas las maderas.</p><div class="ie-deck__actions"><a class="ie-deck__button" href="#ie-deck-products">Ver las {{ collection.products_count }} tarimas ↓</a><a class="ie-deck__button ie-deck__button--outline" href="/pages/contact-ideas-exteriores">Consultar mi proyecto →</a></div></div>
-<div><p class="ie-deck__eyebrow">Selección técnica y comercial</p><p>En esta colección encontrarás Ipé, Iroko, Itaúba, Cumarú, Garapa, Teca y Pino tratado CL4, además de Bamboo X, que es bambú densificado y no una especie de madera maciza. La disponibilidad, las dimensiones, el perfil, el acabado y el precio se confirman en cada ficha y presupuesto.</p></div></div>
-<div class="ie-deck__cards">
-<article><span>01 · ESPECIE Y USO</span><h3>Elige según el entorno</h3><p>Compara exposición solar, humedad, salinidad, tránsito, color y textura. No todas las especies ni tratamientos son adecuados para la misma condición de uso.</p></article>
-<article><span>02 · INSTALACIÓN</span><h3>La subestructura importa</h3><p>Comprueba drenaje, ventilación, separación del terreno, distancia entre apoyos, fijaciones y dilataciones de acuerdo con la solución y las instrucciones del fabricante.</p></article>
-<article><span>03 · CONSERVACIÓN</span><h3>Protege y mantén</h3><p>La madera exterior cambia de tonalidad con la intemperie. Inspección, limpieza y renovación del acabado dependen de la exposición y de la ficha técnica aplicada.</p></article>
-</div>
-<div class="ie-deck__guide" aria-labelledby="ie-deck-guide-title"><p class="ie-deck__eyebrow">Cómo comparar tarimas</p><h2 id="ie-deck-guide-title">La tarima adecuada depende de la instalación, no solo de la especie</h2><div class="ie-deck__guide-grid"><article><h3>01 · Material y aspecto</h3><p>Compara madera tropical, pino tratado y bambú densificado. Comprueba tonalidad, perfil, dimensiones, procedencia y aptitud para el uso previsto en la ficha del producto.</p></article><article><h3>02 · Suelo y subestructura</h3><p>Una base estable, la evacuación del agua y la ventilación condicionan la durabilidad. El dimensionado, los apoyos, las separaciones y las fijaciones deben definirse para el sistema elegido.</p></article><article><h3>03 · Entorno y mantenimiento</h3><p>Valora exposición al sol, proximidad al agua, tránsito y cambios naturales de tono. Ningún acabado elimina la necesidad de inspección y conservación periódica.</p></article><article><h3>04 · Presupuesto completo</h3><p>Distingue material, accesorios, subestructura, desperdicio, transporte, instalación y tratamiento. Solo forman parte del precio los conceptos descritos en la oferta aceptada.</p></article></div></div>
-<div class="ie-deck__faq" aria-labelledby="ie-deck-faq-title"><p class="ie-deck__eyebrow">Preguntas frecuentes</p><h2 id="ie-deck-faq-title">Antes de elegir</h2><details><summary>¿Qué tarima elegir para piscina o zona húmeda?</summary><p>Depende del contacto con agua, la ventilación, el acabado, el mantenimiento y las prestaciones declaradas. Compara las fichas y verifica la idoneidad y resistencia al deslizamiento exigibles en tu proyecto.</p></details><details><summary>¿El precio incluye instalación y subestructura?</summary><p>No deben darse por incluidas. Cada producto y presupuesto detalla el suministro; la base, la subestructura, los accesorios, la instalación y el transporte requieren confirmación expresa.</p></details><details><summary>¿La madera natural cambia de color?</summary><p>Sí, la exposición exterior puede modificar su tonalidad. La frecuencia de limpieza y renovación depende de la especie, las condiciones reales y las instrucciones del fabricante.</p></details></div>
-<div class="ie-deck__foot"><p>Los precios mostrados en las fichas corresponden a la configuración comercial indicada. Transporte, preparación del soporte, instalación, recortes y tratamientos adicionales no se presumen incluidos. Solicita una valoración para conocer el alcance real.</p><a class="ie-deck__button ie-deck__button--outline" href="/pages/wood-treatment-protection">Tratamientos de madera →</a></div>
-</div>
-<div id="ie-deck-products" aria-hidden="true"></div>
+<section class="ie-deck" aria-labelledby="ie-deck-title">
+  <div class="ie-deck__wrap">
+    {% render 'ie-breadcrumb',
+      breadcrumb_object: collection,
+      current_title: collection.title,
+      class_name: 'ie-deck__breadcrumb',
+      fallback_1_label: 'Productos',
+      fallback_1_link: '/pages/timber-products'
+    %}
+
+    <header class="ie-deck__hero">
+      <div>
+        <p class="ie-deck__eyebrow">IDEAS EXTERIORES · Tarimas de exterior</p>
+        <h1 id="ie-deck-title">Tarimas de madera natural para exterior</h1>
+        <p class="ie-deck__lead">Compara especies y soluciones para terrazas, jardines, porches y zonas de piscina. Te ayudamos a elegir según exposición, uso, estabilidad, mantenimiento y presupuesto, sin prometer un comportamiento idéntico para todas las maderas.</p>
+        <div class="ie-deck__actions">
+          <a class="ie-deck__button ie-deck__button--primary" href="#ie-deck-products">Ver las {{ collection.products_count }} tarimas <span aria-hidden="true">↓</span></a>
+          <a class="ie-deck__button ie-deck__button--outline" href="/pages/contact-ideas-exteriores">Consultar mi proyecto <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <aside class="ie-deck__hero-aside" aria-label="Selección técnica y comercial">
+        <p class="ie-deck__eyebrow">Selección técnica y comercial</p>
+        <p>En esta colección encontrarás Ipé, Iroko, Itaúba, Cumarú, Garapa, Teca y Pino tratado CL4, además de Bamboo X, que es bambú densificado y no una especie de madera maciza. La disponibilidad, las dimensiones, el perfil, el acabado y el precio se confirman en cada ficha y presupuesto.</p>
+      </aside>
+    </header>
+
+    <section class="ie-deck__criteria" aria-label="Criterios para elegir tarima">
+      <div class="ie-deck__cards">
+        <article>
+          <span class="ie-deck__index">01 · ESPECIE Y USO</span>
+          <h3>Elige según el entorno</h3>
+          <p>Compara exposición solar, humedad, salinidad, tránsito, color y textura. No todas las especies ni tratamientos son adecuados para la misma condición de uso.</p>
+        </article>
+        <article>
+          <span class="ie-deck__index">02 · INSTALACIÓN</span>
+          <h3>La subestructura importa</h3>
+          <p>Comprueba drenaje, ventilación, separación del terreno, distancia entre apoyos, fijaciones y dilataciones de acuerdo con la solución y las instrucciones del fabricante.</p>
+        </article>
+        <article>
+          <span class="ie-deck__index">03 · CONSERVACIÓN</span>
+          <h3>Protege y mantén</h3>
+          <p>La madera exterior cambia de tonalidad con la intemperie. Inspección, limpieza y renovación del acabado dependen de la exposición y de la ficha técnica aplicada.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ie-deck__guide" aria-labelledby="ie-deck-guide-title">
+      <div class="ie-deck__section-head">
+        <div>
+          <p class="ie-deck__eyebrow">Cómo comparar tarimas</p>
+          <h2 id="ie-deck-guide-title">La tarima adecuada depende de la instalación, no solo de la especie</h2>
+        </div>
+      </div>
+
+      <div class="ie-deck__guide-grid">
+        <article><h3>01 · Material y aspecto</h3><p>Compara madera tropical, pino tratado y bambú densificado. Comprueba tonalidad, perfil, dimensiones, procedencia y aptitud para el uso previsto en la ficha del producto.</p></article>
+        <article><h3>02 · Suelo y subestructura</h3><p>Una base estable, la evacuación del agua y la ventilación condicionan la durabilidad. El dimensionado, los apoyos, las separaciones y las fijaciones deben definirse para el sistema elegido.</p></article>
+        <article><h3>03 · Entorno y mantenimiento</h3><p>Valora exposición al sol, proximidad al agua, tránsito y cambios naturales de tono. Ningún acabado elimina la necesidad de inspección y conservación periódica.</p></article>
+        <article><h3>04 · Presupuesto completo</h3><p>Distingue material, accesorios, subestructura, desperdicio, transporte, instalación y tratamiento. Solo forman parte del precio los conceptos descritos en la oferta aceptada.</p></article>
+      </div>
+    </section>
+
+    <section class="ie-deck__faq" aria-labelledby="ie-deck-faq-title">
+      <div>
+        <p class="ie-deck__eyebrow">Preguntas frecuentes</p>
+        <h2 id="ie-deck-faq-title">Antes de elegir</h2>
+      </div>
+      <div class="ie-deck__faq-items">
+        <details>
+          <summary>¿Qué tarima elegir para piscina o zona húmeda?</summary>
+          <p>Depende del contacto con agua, la ventilación, el acabado, el mantenimiento y las prestaciones declaradas. Compara las fichas y verifica la idoneidad y resistencia al deslizamiento exigibles en tu proyecto.</p>
+        </details>
+        <details>
+          <summary>¿El precio incluye instalación y subestructura?</summary>
+          <p>No deben darse por incluidas. Cada producto y presupuesto detalla el suministro; la base, la subestructura, los accesorios, la instalación y el transporte requieren confirmación expresa.</p>
+        </details>
+        <details>
+          <summary>¿La madera natural cambia de color?</summary>
+          <p>Sí, la exposición exterior puede modificar su tonalidad. La frecuencia de limpieza y renovación depende de la especie, las condiciones reales y las instrucciones del fabricante.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="ie-deck__cta" aria-label="Tratamientos de madera">
+      <div>
+        <p>Los precios mostrados en las fichas corresponden a la configuración comercial indicada. Transporte, preparación del soporte, instalación, recortes y tratamientos adicionales no se presumen incluidos. Solicita una valoración para conocer el alcance real.</p>
+      </div>
+      <div class="ie-deck__cta-actions">
+        <a class="ie-deck__button ie-deck__button--light" href="/pages/wood-treatment-protection">Tratamientos de madera <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </div>
+
+  <div id="ie-deck-products" aria-hidden="true"></div>
 </section>
-{% schema %}{"name":"IE · Tarima natural","settings":[],"presets":[{"name":"IE · Tarima natural"}]}{% endschema %}
+
+{% schema %}
+{"name":"IE · Tarima natural","settings":[],"presets":[{"name":"IE · Tarima natural"}]}
+{% endschema %}
