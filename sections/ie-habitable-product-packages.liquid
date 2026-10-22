@@ -5,10 +5,20 @@
         {% if section.settings.eyebrow != blank %}<p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
         <h2 id="ie-hab-packages-title-{{ section.id }}">{{ section.settings.heading }}</h2>
       </div>
-      {% if section.settings.intro != blank %}<div class="ie-hab-pdp__section-intro rte">{{ section.settings.intro }}</div>{% endif %}
+      {% if ie_packages_intro != blank %}<div class="ie-hab-pdp__section-intro rte">{{ ie_packages_intro }}</div>{% endif %}
     </div>
 
-    {% if section.settings.note != blank %}<div class="ie-hab-pdp__technical-note rte">{{ section.settings.note }}</div>{% endif %}
+    {% liquid
+      assign ie_packages_intro = section.settings.intro
+      assign ie_packages_note = section.settings.note
+      if product.handle == 'diy-click-deck-tiles'
+        assign ie_packages_intro = '<p>Separamos material, kit coordinado e instalación para que el precio corresponda a un alcance claro y comparable.</p>'
+        assign ie_packages_note = '<p><strong>Importante:</strong> los importes son PVP finales con IVA incluido. La unidad de venta, la cobertura por unidad, la referencia exacta, el stock, el transporte y los trabajos sobre la base se confirman antes de contratar.</p>'
+      elsif product.handle == 'wpc-capped-decking-360-premium'
+        assign ie_packages_note = '<p><strong>Importante:</strong> los importes son PVP orientativos con IVA incluido. La unidad comercial —m², lama, caja u otra—, el perfil y largo suministrados, el rendimiento, la merma, el transporte, la descarga, el soporte existente y los trabajos especiales se confirman antes de contratar.</p>'
+      endif
+    %}
+    {% if ie_packages_note != blank %}<div class="ie-hab-pdp__technical-note rte">{{ ie_packages_note }}</div>{% endif %}
 
     <div class="ie-hab-pdp__package-columns">
       {% for block in section.blocks %}
@@ -16,7 +26,26 @@
           assign tier_price = blank
           assign tier_summary = block.settings.summary
           assign tier_details = block.settings.details
-          if product.product_type == 'Tarima exterior de bambú'
+          assign tier_tax_note = block.settings.tax_note
+          if product.handle == 'diy-click-deck-tiles'
+            assign tier_tax_note = 'IVA incluido · unidad comercial a confirmar'
+            case block.settings.price_source
+              when 'basic'
+                assign tier_summary = 'Solo losetas para una base existente compatible, estable y correctamente drenada.'
+                assign tier_details = '<h3>Solo material</h3><ul><li>Losetas modulares de la referencia confirmada en el pedido.</li><li>Cantidad y cobertura calculadas con la unidad comercial validada.</li><li>Acabado y disponibilidad sujetos al lote y stock confirmados.</li></ul><p><strong>No incluye:</strong> remates, transporte, descarga, preparación o corrección del soporte ni instalación, salvo indicación expresa en oferta.</p>'
+              when 'standard'
+                assign tier_summary = 'Pack coordinado de losetas y elementos de acabado definidos para el perímetro del proyecto.'
+                assign tier_details = '<h3>Kit sin montaje</h3><ul><li>Losetas según referencia y stock confirmados.</li><li>Remates y consumibles básicos que se detallen expresamente en la oferta.</li><li>Despiece orientativo según superficie, perímetro y geometría facilitados.</li></ul><p><strong>No incluye:</strong> instalación, regularización de base, impermeabilización, obra civil, transporte o descarga salvo detalle expreso.</p>'
+              when 'passive'
+                assign tier_summary = 'Suministro coordinado con instalación para soportes y accesos compatibles, previa validación del emplazamiento.'
+                assign tier_details = '<h3>Suministro + instalación</h3><ul><li>Materiales incluidos en la solución aceptada.</li><li>Replanteo, modulación, cortes y colocación dentro del alcance presupuestado.</li><li>Remates estándar definidos en la oferta.</li></ul><p><strong>A valorar aparte cuando proceda:</strong> corrección o ejecución de base, impermeabilización, desmontajes, perímetros complejos, encuentros especiales, medios auxiliares, transporte y desplazamientos fuera del ámbito previsto.</p>'
+            endcase
+          elsif product.handle == 'wpc-capped-decking-360-premium'
+            assign tier_tax_note = 'IVA incluido · unidad comercial a confirmar'
+            if block.settings.price_source == 'standard'
+              assign tier_details = '<h3>Kit sin montaje</h3><ul><li>Tarima según stock confirmado.</li><li>Subestructura compatible definida para el soporte y la exposición.</li><li>Clips, fijaciones y remates compatibles definidos para la referencia confirmada.</li></ul><p><strong>No incluye:</strong> montaje, regularización de base, obra civil, transporte o descarga salvo que se detallen en presupuesto.</p>'
+            endif
+          elsif product.product_type == 'Tarima exterior de bambú'
             case block.settings.price_source
               when 'basic'
                 assign tier_summary = 'Solo tarima de bambú densificado para quien ya dispone de subestructura, fijación compatible e instalador.'
@@ -38,7 +67,7 @@
           <header class="ie-hab-pdp__package-head">
             <p class="ie-hab-pdp__package-label">{{ block.settings.label }}</p>
             {% if tier_price != blank %}<p class="ie-hab-pdp__package-price">{{ tier_price | money }}</p>{% endif %}
-            {% if block.settings.tax_note != blank %}<p class="ie-hab-pdp__package-tax">{{ block.settings.tax_note }}</p>{% endif %}
+            {% if tier_tax_note != blank %}<p class="ie-hab-pdp__package-tax">{{ tier_tax_note }}</p>{% endif %}
             {% if tier_summary != blank %}<p class="ie-hab-pdp__package-summary">{{ tier_summary }}</p>{% endif %}
           </header>
           {% if tier_details != blank %}<div class="ie-hab-pdp__package-body rte">{{ tier_details }}</div>{% endif %}
