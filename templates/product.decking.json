@@ -46,13 +46,13 @@
         "breadcrumb_1_link": "/pages/timber-products",
         "breadcrumb_2_label": "Estructuras de jardín",
         "breadcrumb_2_link": "/pages/garden-structures-in-wood",
-        "breadcrumb_3_label": "Tarima natural",
-        "breadcrumb_3_link": "/collections/natural-wood-decking",
-        "eyebrow": "Tarima exterior · Madera natural",
+        "breadcrumb_3_label": "Tarimas",
+        "breadcrumb_3_link": "/pages/timber-products",
+        "eyebrow": "Tarima exterior",
         "lead": "<p>Compara el alcance del suministro y valida soporte, fijación, drenaje, stock y montaje antes de cerrar el pedido.</p>",
         "primary_label": "Comparar opciones",
-        "secondary_label": "Ver tarimas naturales",
-        "secondary_link": "/collections/natural-wood-decking",
+        "secondary_label": "Ver soluciones de tarima",
+        "secondary_link": "/pages/timber-products",
         "summary_title": "Antes de pedir presupuesto",
         "summary_aria_label": "Pasos antes de pedir presupuesto"
       }
@@ -204,8 +204,8 @@
             "price_source": "basic",
             "tone": "light",
             "tax_note": "IVA incluido · PVP orientativo por m²",
-            "summary": "Solo tarima natural para quien ya dispone de subestructura, fijación compatible e instalador.",
-            "details": "<h3>Solo material</h3><ul><li>Tarima de madera natural según el formato y acabado indicados en la ficha técnica del producto.</li><li>Perfil preparado para fijación oculta cuando el lote suministrado corresponda a esta mecanización.</li><li>Largos, acabado y disponibilidad se confirman con el stock del pedido.</li></ul><p><strong>No incluye:</strong> subestructura, clips/tornillería, remates, transporte, descarga ni montaje, salvo indicación expresa en oferta.</p>"
+            "summary": "Solo tarima para quien ya dispone de subestructura, fijación compatible e instalador.",
+            "details": "<h3>Solo material</h3><ul><li>Tarima según el material, perfil, formato y acabado indicados en la ficha técnica del producto.</li><li>Perfil preparado para fijación oculta cuando el lote suministrado corresponda a esta mecanización.</li><li>Largos, acabado y disponibilidad se confirman con el stock del pedido.</li></ul><p><strong>No incluye:</strong> subestructura, clips/tornillería, remates, transporte, descarga ni montaje, salvo indicación expresa en oferta.</p>"
           }
         },
         "standard": {
@@ -216,7 +216,7 @@
             "tone": "mid",
             "tax_note": "IVA incluido · PVP orientativo por m²",
             "summary": "Kit coordinado de tarima, subestructura y fijaciones para reducir incompatibilidades en obra.",
-            "details": "<h3>Kit sin montaje</h3><ul><li>Tarima de madera natural según stock confirmado.</li><li>Subestructura compatible definida para el soporte y la exposición.</li><li>Clips, tornillería inoxidable y remates básicos del sistema.</li></ul><p><strong>No incluye:</strong> montaje, regularización de base, obra civil, transporte o descarga salvo que se detallen en presupuesto.</p>"
+            "details": "<h3>Kit sin montaje</h3><ul><li>Tarima según stock confirmado.</li><li>Subestructura compatible definida para el soporte y la exposición.</li><li>Clips, tornillería inoxidable y remates básicos del sistema.</li></ul><p><strong>No incluye:</strong> montaje, regularización de base, obra civil, transporte o descarga salvo que se detallen en presupuesto.</p>"
           }
         },
         "passive": {
@@ -479,8 +479,8 @@
         "text": "<p>Envíanos los m² aproximados, la ubicación y, si puedes, fotos o un croquis. Revisaremos geometría, soporte y alcance para proponerte la opción adecuada sin mezclar partidas.</p>",
         "primary_label": "Calcular mi proyecto",
         "primary_link": "/pages/contact-ideas-exteriores",
-        "secondary_label": "Ver tarimas naturales",
-        "secondary_link": "/collections/natural-wood-decking"
+        "secondary_label": "Ver soluciones de tarima",
+        "secondary_link": "/pages/timber-products"
       }
     }
   },
