@@ -9,9 +9,10 @@
   {{ 'ie-service-editorial-compact.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
+{% assign ie_featured_hub_handles = 'services,design-and-project-management,wood-installation-and-protection,after-sales-and-warranties' | split: ',' %}
 {% comment %}IE breadcrumb renderer synced{% endcomment %}
 
-<section class="ie-services ie-services--hero{% if ie_service_compact_handles contains page.handle %} ie-services-compact{% endif %}{% if ie_editorial_handles contains page.handle %} ie-systems-compact{% endif %}" aria-labelledby="ie-services-title-{{ section.id }}">
+<section class="ie-services ie-services--hero{% if ie_featured_hub_handles contains page.handle %} ie-featured-hub{% endif %}{% if ie_service_compact_handles contains page.handle %} ie-services-compact{% endif %}{% if ie_editorial_handles contains page.handle %} ie-systems-compact{% endif %}" aria-labelledby="ie-services-title-{{ section.id }}">
   <div class="ie-services__inner">
     {% render 'ie-breadcrumb', breadcrumb_object: page, current_title: page.title, class_name: 'ie-services__breadcrumb' %}
 
