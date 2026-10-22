@@ -1,5 +1,5 @@
 {{ 'ie-habitable-product.css' | asset_url | stylesheet_tag }}
-{% if product.template_suffix == 'decking' or product.template_suffix == 'wpc-decking' %}
+{% if product.template_suffix contains 'decking' %}
   {{ 'ie-decking-layout.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
