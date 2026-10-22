@@ -47,6 +47,20 @@
   .ie-deck__cards{margin-top:24px}
   .ie-deck p{text-align:left!important}
 }
+
+/* Shared editorial sizing with the four featured services hubs. */
+.ie-deck .ie-deck__wrap{width:min(calc(100% - 56px),1320px);max-width:1320px;padding:20px 0 32px}
+.ie-deck .ie-deck__breadcrumb{margin-bottom:12px}
+.ie-deck .ie-deck__intro{grid-template-columns:minmax(0,1.65fr) minmax(250px,.8fr);gap:clamp(20px,3vw,38px);align-items:start}
+.ie-deck h1{font-family:"Source Serif 4",Georgia,serif;font-size:clamp(1.75rem,2.35vw,2.45rem);font-weight:500;line-height:1.15;text-transform:none;text-wrap:pretty}
+.ie-deck h2{font-family:"Source Serif 4",Georgia,serif;font-size:clamp(1.45rem,1.85vw,1.95rem);font-weight:500;line-height:1.19;text-transform:none;text-wrap:pretty}
+.ie-deck p{font-size:clamp(.91rem,1vw,.98rem);line-height:1.62;text-align:left}
+@media(max-width:989px){.ie-deck .ie-deck__intro{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:749px){
+ .ie-deck .ie-deck__wrap{width:calc(100% - 32px);padding:15px 0 24px}
+ .ie-deck h1{font-size:clamp(1.65rem,6.3vw,1.95rem)}
+ .ie-deck h2{font-size:clamp(1.35rem,5.2vw,1.65rem)}
+}
 </style>
 <div class="ie-deck__wrap">
 {% render 'ie-breadcrumb', breadcrumb_object: collection, current_title: collection.title, class_name: 'ie-deck__breadcrumb', fallback_1_label: 'Productos', fallback_1_link: '/pages/timber-products' %}
