@@ -782,3 +782,38 @@ body:has(.ie-hab-pdp--hero) .ie-hab-pdp__model-description > section + section{
     margin-top:22px!important;
   }
 }
+
+
+/* 2026-10-22 · Decking recommendations: one price, centered content.
+   Keeps Shopify pricing data intact; only hides the secondary unit-price inside related cards. */
+body:has(.ie-hab-pdp--hero) .product-recommendations{
+  text-align:center;
+}
+body:has(.ie-hab-pdp--hero) .product-recommendations > .section > .section-content-wrapper > .text-block,
+body:has(.ie-hab-pdp--hero) .product-recommendations .section-header,
+body:has(.ie-hab-pdp--hero) .product-recommendations .text-block{
+  text-align:center;
+}
+body:has(.ie-hab-pdp--hero) .product-recommendations .resource-list__item .product-card .group-block{
+  align-items:center!important;
+  text-align:center!important;
+}
+body:has(.ie-hab-pdp--hero) .product-recommendations .resource-list__item .product-card .text-block,
+body:has(.ie-hab-pdp--hero) .product-recommendations .resource-list__item .product-card product-price{
+  width:100%!important;
+  text-align:center!important;
+  justify-content:center;
+}
+body:has(.ie-hab-pdp--hero) .product-recommendations .resource-list__item .product-card .unit-price{
+  display:none!important;
+}
+body:has(.ie-hab-pdp--hero) .product-recommendations .resource-list__item .product-card product-price{
+  display:block;
+  margin-top:4px;
+  font-size:.94rem;
+  line-height:1.4;
+}
+body:has(.ie-hab-pdp--hero) .product-recommendations .resource-list__item .product-card .text-block p{
+  margin-inline:auto;
+  text-align:center!important;
+}
