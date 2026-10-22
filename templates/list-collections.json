@@ -7,10 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-/*
- * Plantilla /collections: las tarjetas usan selectores nativos de colección.
- * La fuente de productos, imágenes y descripciones sigue siendo Shopify Admin.
- */
 {
   "sections": {
     "main": {
@@ -47,7 +43,7 @@
         "family_05": {
           "type": "family",
           "settings": {
-            "collection": "wpc-protech-decking",
+            "collection": "wpc-decking",
             "territory": "exterior"
           }
         },

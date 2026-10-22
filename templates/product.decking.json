@@ -152,7 +152,7 @@
               "type": "text",
               "name": "Alcance y configuraciones",
               "settings": {
-                "text": "<p><strong>PVP orientativo.</strong> Compara OUTDOOR CORE, CLEAN y SELECT por alcance. La unidad comercial, el rendimiento, el stock, el transporte y las condiciones de montaje se confirman en la oferta o pedido.</p><p><a href=\"#ie-habitable-packages\">Comparar opciones →</a></p>",
+                "text": "<p><strong>PVP orientativo por m².</strong> Compara OUTDOOR CORE, CLEAN y SELECT por alcance. El stock, el transporte y las condiciones de montaje se confirman en la oferta o pedido.</p><p><a href=\"#ie-habitable-packages\">Comparar opciones →</a></p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -203,7 +203,7 @@
             "label": "OUTDOOR CORE",
             "price_source": "basic",
             "tone": "light",
-            "tax_note": "IVA incluido · PVP orientativo",
+            "tax_note": "IVA incluido · PVP orientativo por m²",
             "summary": "Solo tarima para quien ya dispone de subestructura, fijación compatible e instalador.",
             "details": "<h3>Solo material</h3><ul><li>Tarima según el material, perfil, formato y acabado indicados en la ficha técnica del producto.</li><li>Perfil preparado para fijación oculta cuando el lote suministrado corresponda a esta mecanización.</li><li>Largos, acabado y disponibilidad se confirman con el stock del pedido.</li></ul><p><strong>No incluye:</strong> subestructura, clips/tornillería, remates, transporte, descarga ni montaje, salvo indicación expresa en oferta.</p>"
           }
@@ -214,7 +214,7 @@
             "label": "OUTDOOR CLEAN",
             "price_source": "standard",
             "tone": "mid",
-            "tax_note": "IVA incluido · PVP orientativo",
+            "tax_note": "IVA incluido · PVP orientativo por m²",
             "summary": "Kit coordinado de tarima, subestructura y fijaciones para reducir incompatibilidades en obra.",
             "details": "<h3>Kit sin montaje</h3><ul><li>Tarima según stock confirmado.</li><li>Subestructura compatible definida para el soporte y la exposición.</li><li>Clips, tornillería inoxidable y remates básicos del sistema.</li></ul><p><strong>No incluye:</strong> montaje, regularización de base, obra civil, transporte o descarga salvo que se detallen en presupuesto.</p>"
           }
@@ -225,7 +225,7 @@
             "label": "OUTDOOR SELECT",
             "price_source": "passive",
             "tone": "deep",
-            "tax_note": "IVA incluido · PVP orientativo",
+            "tax_note": "IVA incluido · PVP orientativo por m²",
             "summary": "Suministro coordinado con montaje profesional para proyectos cuya base y acceso sean compatibles.",
             "details": "<h3>Suministro + montaje</h3><ul><li>Materiales de la solución coordinada.</li><li>Replanteo, corte, modulación de juntas y colocación dentro del alcance aceptado.</li><li>Remates estándar definidos en la oferta.</li></ul><p><strong>A valorar aparte cuando proceda:</strong> corrección o ejecución de base, desmontajes, escalones, perímetros complejos, encuentros especiales, trabajos en piscina, medios auxiliares, transporte y desplazamientos fuera del ámbito previsto.</p>"
           }
@@ -240,7 +240,7 @@
         "eyebrow": "Opciones de suministro",
         "heading": "Compara precio y alcance antes de decidir",
         "intro": "<p>Elige entre solo tarima, kit coordinado o suministro con montaje. Así puedes comparar precio y alcance sin mezclar partidas distintas.</p>",
-        "note": "<p><strong>Importante:</strong> los importes son PVP orientativos con IVA incluido. La unidad comercial, el rendimiento, los largos disponibles, la merma, el transporte, la descarga, el soporte existente y los trabajos especiales se confirman antes de contratar.</p>"
+        "note": "<p><strong>Importante:</strong> los importes son PVP orientativos por m² con IVA incluido. Largos disponibles, merma, transporte, descarga, soporte existente y trabajos especiales se confirman antes de contratar.</p>"
       }
     },
     "process": {
