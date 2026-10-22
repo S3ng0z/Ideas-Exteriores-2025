@@ -1,5 +1,9 @@
 
 
+{% if collection.handle == 'natural-wood-decking' %}
+  {{ 'ie-decking-layout.css' | asset_url | stylesheet_tag }}
+{% endif %}
+
 {% liquid
   # Onboarding: When no products are available, we show placeholder items
   assign products = ''
