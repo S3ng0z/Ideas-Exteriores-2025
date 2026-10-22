@@ -1,14 +1,32 @@
+{% liquid
+  assign ie_cta_heading = section.settings.heading
+  assign ie_cta_text = section.settings.text
+  assign ie_cta_primary_label = section.settings.primary_label
+  assign ie_cta_secondary_label = section.settings.secondary_label
+  assign ie_cta_secondary_link = section.settings.secondary_link
+  if product.handle == 'wpc-capped-decking-360-premium'
+    assign ie_cta_text = '<p>Envíanos la superficie aproximada, la ubicación y, si puedes, fotos o un croquis. Revisaremos geometría, soporte, sistema y unidad comercial antes de proponerte la opción adecuada.</p>'
+    assign ie_cta_secondary_label = 'Ver tarimas WPC ProTech'
+    assign ie_cta_secondary_link = '/collections/wpc-protech-decking'
+  elsif product.handle == 'diy-click-deck-tiles'
+    assign ie_cta_heading = '¿Quieres calcular el material para tu superficie?'
+    assign ie_cta_text = '<p>Envíanos superficie, perímetro y una breve descripción o imágenes del soporte. Te ayudaremos a validar cantidad, alcance y condiciones antes del pedido.</p>'
+    assign ie_cta_primary_label = 'Calcular material'
+    assign ie_cta_secondary_label = 'Ver Tarima ProTech'
+    assign ie_cta_secondary_link = '/collections/wpc-protech-decking'
+  endif
+%}
 <section class="ie-hab-pdp ie-hab-pdp--cta" aria-labelledby="ie-hab-cta-title-{{ section.id }}">
   <div class="ie-hab-pdp__inner">
     <div class="ie-hab-pdp__closing">
       <div>
         {% if section.settings.eyebrow != blank %}<p class="ie-hab-pdp__eyebrow">{{ section.settings.eyebrow }}</p>{% endif %}
-        <h2 id="ie-hab-cta-title-{{ section.id }}">{{ section.settings.heading }}</h2>
-        {% if section.settings.text != blank %}<div class="ie-hab-pdp__closing-text rte">{{ section.settings.text }}</div>{% endif %}
+        <h2 id="ie-hab-cta-title-{{ section.id }}">{{ ie_cta_heading }}</h2>
+        {% if ie_cta_text != blank %}<div class="ie-hab-pdp__closing-text rte">{{ ie_cta_text }}</div>{% endif %}
       </div>
       <div class="ie-hab-pdp__actions">
-        {% if section.settings.primary_link != blank %}<a class="ie-hab-pdp__button ie-hab-pdp__button--primary" href="{{ section.settings.primary_link }}">{{ section.settings.primary_label }}</a>{% endif %}
-        {% if section.settings.secondary_link != blank %}<a class="ie-hab-pdp__button ie-hab-pdp__button--secondary" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label }}</a>{% endif %}
+        {% if section.settings.primary_link != blank %}<a class="ie-hab-pdp__button ie-hab-pdp__button--primary" href="{{ section.settings.primary_link }}">{{ ie_cta_primary_label }}</a>{% endif %}
+        {% if ie_cta_secondary_link != blank %}<a class="ie-hab-pdp__button ie-hab-pdp__button--secondary" href="{{ ie_cta_secondary_link }}">{{ ie_cta_secondary_label }}</a>{% endif %}
       </div>
     </div>
   </div>
