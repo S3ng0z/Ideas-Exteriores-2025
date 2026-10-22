@@ -1,4 +1,7 @@
 {{ 'ie-habitable-product.css' | asset_url | stylesheet_tag }}
+{% if product.template_suffix == 'natural-decking' or product.template_suffix == 'bamboo-decking' %}
+  {{ 'ie-decking-layout.css' | asset_url | stylesheet_tag }}
+{% endif %}
 
 {% liquid
   assign ie_breadcrumb_1_label = product.metafields.custom.n1.value | default: section.settings.breadcrumb_1_label
