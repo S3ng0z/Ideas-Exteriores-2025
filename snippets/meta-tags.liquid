@@ -21,7 +21,6 @@
   assign seo_description = page_description | default: shop.description | default: shop.name
 
   if request.page_type == 'index'
-    assign seo_title = 'Soluciones de madera para exterior y casas | Ideas Exteriores'
     assign seo_description = 'Casas y casetas de madera con entramado ligero, panel SIP y sistema europeo. Pérgolas, porches y cenadores. Compara modelos y solicita presupuesto.'
   endif
 
