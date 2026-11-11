@@ -50,6 +50,8 @@
 
             {% if tier_price != blank %}
               <p class="ie-sip-pdp__package-price">{{ tier_price | money }}</p>
+            {% elsif block.settings.price_source == 'basic' %}
+              <p class="ie-sip-pdp__package-price">{{ product.price | money }}</p>
             {% endif %}
 
             {% if block.settings.tax_note != blank %}
