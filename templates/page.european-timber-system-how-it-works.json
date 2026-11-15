@@ -58,7 +58,7 @@
             "image": "shopify://shop_images/Modern_Timber_Cabin_with_Precision_Joinery.webp",
             "image_alt": "Modern Timber Cabin with Precision Joinery",
             "index": "01 · Composición",
-            "heading": "La pieza exterior aporta geometría, acabado y una función que debe documentarse",
+            "heading": "Perfil de madera mecanizado: la pieza protagonista",
             "text": "<p>La solución de referencia utiliza piezas rectas de madera perfilada, normalmente de conífera. La especie, clasificación resistente, sección, humedad, mecanizado y eventual función portante no se deducen del aspecto ni del nombre comercial: deben corresponder al sistema y al cálculo del proyecto.</p>",
             "link_1_label": "Componentes, uniones y materiales",
             "link_1": "/pages/european-timber-system-components-joints-materials",
@@ -108,7 +108,7 @@
       ],
       "settings": {
         "eyebrow": "01 · Fundamentos",
-        "heading": "Madera perfilada exterior + capa técnica interior: la lógica del sistema",
+        "heading": "El principio constructivo: perfiles horizontales apilados",
         "intro": "<p>Los perfiles de madera ensamblados por hiladas constituyen el elemento característico. Los modelos pueden incorporar una envolvente básica o capas complementarias documentadas para el uso previsto.</p>"
       }
     },
@@ -217,13 +217,13 @@
           "type": "question",
           "settings": {
             "question": "¿Es lo mismo que una casa nórdica de tronco macizo?",
-            "answer": "<p>No. La construcción nórdica de tronco puede utilizar muros macizos o laminados con detalles específicos de asentamiento. El sistema descrito aquí combina madera exterior perfilada con una capa técnica interior. Además, fabricantes nórdicos actuales ofrecen troncos laminados no asentables, que constituyen tecnologías propias.</p>"
+            "answer": "<p>Comparten el principio de perfiles horizontales de madera. Sin embargo, cada producto puede diferir en madera maciza o laminada, tipo de junta, sección y movimiento previsto. El aislamiento adicional tampoco es universal: se confirma en los planos del modelo.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿La pieza exterior de madera es siempre estructural?",
+            "question": "¿Los perfiles apilados tienen función estructural?",
             "answer": "<p>No debe suponerse. Su función depende de la configuración concreta, de la sección de las piezas, de los encuentros y de la solución estructural del edificio. La documentación técnica y el cálculo deben indicar qué elementos reciben y transmiten las cargas.</p>"
           }
         },
