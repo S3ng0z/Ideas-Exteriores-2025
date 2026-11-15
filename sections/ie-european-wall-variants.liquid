@@ -1,0 +1,65 @@
+{{ 'ie-european-wall-variants.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-log-variants" aria-labelledby="ie-log-variants-title-{{ section.id }}">
+  <div class="ie-log-variants__inner">
+    <header class="ie-log-variants__header">
+      <p class="ie-log-variants__eyebrow">{{ section.settings.eyebrow }}</p>
+      <h2 id="ie-log-variants-title-{{ section.id }}">{{ section.settings.heading }}</h2>
+      <div class="rte">{{ section.settings.intro }}</div>
+    </header>
+
+    <div class="ie-log-variants__grid">
+      <article class="ie-log-variants__card">
+        <div class="ie-log-variants__visual" role="img" aria-label="Esquema conceptual de perfiles horizontales de madera apilados, sin aislamiento adicional">
+          <div class="ie-log-variants__logs" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <span class="ie-log-variants__visual-label">Madera perfilada</span>
+        </div>
+        <div class="ie-log-variants__copy">
+          <p class="ie-log-variants__index">01 · Composición base</p>
+          <h3>{{ section.settings.base_heading }}</h3>
+          <div class="rte">{{ section.settings.base_text }}</div>
+        </div>
+      </article>
+
+      <article class="ie-log-variants__card">
+        <div class="ie-log-variants__visual ie-log-variants__visual--insulated" role="img" aria-label="Esquema conceptual de perfiles de madera apilados, aislamiento interior opcional y revestimiento interior">
+          <div class="ie-log-variants__logs" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="ie-log-variants__insulation" aria-hidden="true"></div>
+          <div class="ie-log-variants__lining" aria-hidden="true"></div>
+          <span class="ie-log-variants__visual-label">Madera + capa técnica</span>
+        </div>
+        <div class="ie-log-variants__copy">
+          <p class="ie-log-variants__index">02 · Configuración acondicionada</p>
+          <h3>{{ section.settings.option_heading }}</h3>
+          <div class="rte">{{ section.settings.option_text }}</div>
+        </div>
+      </article>
+    </div>
+
+    <p class="ie-log-variants__note">{{ section.settings.note }}</p>
+    <a class="ie-log-variants__link" href="/pages/european-timber-system-components-joints-materials">
+      Ver perfiles, uniones y materiales <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Madera apilada y capas",
+  "settings": [
+    {"type":"text","id":"eyebrow","label":"Antetítulo","default":"Dos configuraciones posibles"},
+    {"type":"text","id":"heading","label":"Título","default":"La madera es la base; el aislamiento depende del modelo"},
+    {"type":"richtext","id":"intro","label":"Introducción","default":"<p>El montaje por hiladas utiliza piezas de madera mecanizadas que encajan entre sí. Un mismo principio constructivo puede dar lugar a un kit sencillo o a una envolvente con capas complementarias, siempre que esa variante esté disponible y documentada.</p>"},
+    {"type":"text","id":"base_heading","label":"Título de composición base","default":"Muro de perfiles de madera ensamblados"},
+    {"type":"richtext","id":"base_text","label":"Descripción de composición base","default":"<p>Los perfiles apilados forman el cerramiento de madera. La sección útil, las juntas, las esquinas, los anclajes y la cubierta se especifican por modelo. No presupone aislamiento adicional ni uso residencial.</p>"},
+    {"type":"text","id":"option_heading","label":"Título de composición acondicionada","default":"Muro preparado para aislamiento complementario"},
+    {"type":"richtext","id":"option_text","label":"Descripción de composición acondicionada","default":"<p>Cuando el modelo admite esta opción, se incorpora una subestructura interior con aislamiento y capas de control y acabado definidos por proyecto. Esta configuración no se incluye por defecto en todos los kits.</p>"},
+    {"type":"text","id":"note","label":"Nota técnica","default":"Esquemas conceptuales, no a escala. No representan una sección comercial aprobada ni acreditan transmitancias, resistencia al fuego o cumplimiento del CTE."}
+  ],
+  "presets": [{"name":"Madera apilada y capas"}]
+}
+{% endschema %}

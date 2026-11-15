@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
@@ -16,28 +7,28 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Qué significa aquí “sistema europeo”"
+            "label": "Perfiles de madera apilados"
           }
         },
         "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Cómo se organiza el muro"
+            "label": "Uniones y esquinas"
           }
         },
         "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Cómo se resuelven uniones y movimientos"
+            "label": "Movimientos y sellados"
           }
         },
         "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Qué debe justificar el proyecto"
+            "label": "Aislamiento según modelo"
           }
         }
       },
@@ -49,11 +40,11 @@
       ],
       "settings": {
         "eyebrow": "Sistema europeo · 01",
-        "heading": "Sistema europeo de madera: qué es y cómo funciona",
-        "lead": "<p>En Ideas Exteriores, «sistema europeo» identifica una solución comercial de muro de madera con pieza exterior recta y perfilada más una capa técnica interior para aislamiento, instalaciones y acabado. No es una categoría normativa universal de la Unión Europea ni equivale automáticamente a cualquier casa de troncos: sus prestaciones dependen de la composición real, las uniones, el control de humedad, los movimientos de la madera y el proyecto completo.</p>",
+        "heading": "Cómo funciona el Sistema Europeo de madera apilada",
+        "lead": "<p>La madera perfilada se mecaniza para encajar y se monta por hiladas hasta formar muros, esquinas y huecos. Una construcción puede disponer de muros de madera sin aislamiento adicional o de una configuración con capa técnica interior, si el modelo lo contempla. La unión, los anclajes, la cubierta y los movimientos de la madera forman parte del diseño.</p>",
         "primary_label": "Ver sistema europeo",
         "primary_link": "/pages/european-timber-construction-system",
-        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_label": "Consultar modelos y presupuesto",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Claves para entender el sistema"
       }
@@ -67,7 +58,7 @@
             "image": "shopify://shop_images/Modern_Timber_Cabin_with_Precision_Joinery.webp",
             "image_alt": "Modern Timber Cabin with Precision Joinery",
             "index": "01 · Composición",
-            "heading": "La pieza exterior aporta geometría, acabado y una función que debe documentarse",
+            "heading": "Perfil de madera mecanizado: la pieza protagonista",
             "text": "<p>La solución de referencia utiliza piezas rectas de madera perfilada, normalmente de conífera. La especie, clasificación resistente, sección, humedad, mecanizado y eventual función portante no se deducen del aspecto ni del nombre comercial: deben corresponder al sistema y al cálculo del proyecto.</p>",
             "link_1_label": "Componentes, uniones y materiales",
             "link_1": "/pages/european-timber-system-components-joints-materials",
@@ -83,8 +74,8 @@
             "image": "shopify://shop_images/Timber_Wall_Exterior_Interior_Cutaway.webp",
             "image_alt": "Timber Wall Exterior–Interior Cutaway",
             "index": "02 · Capa técnica",
-            "heading": "Aislamiento e instalaciones se coordinan dentro del muro",
-            "text": "<p>La zona interior permite incorporar subestructura, aislamiento, capas de control de aire y vapor cuando proceda, instalaciones y revestimiento. No existe una «cantidad de aislante» universal: la composición se define según clima, uso, prestaciones térmicas, humedad, fuego y acústica.</p>",
+            "heading": "Aislamiento interior: opción definida por modelo",
+            "text": "<p>La construcción básica puede resolverse mediante perfiles de madera apilados. Una capa interior con aislante, instalaciones y revestimiento solo forma parte del suministro cuando la configuración comercial y técnica del modelo así lo especifica; no se presupone incluida.</p>",
             "link_1_label": "Montaje y acabados",
             "link_1": "/pages/european-timber-system-assembly-finishes",
             "link_2_label": "",
@@ -117,8 +108,8 @@
       ],
       "settings": {
         "eyebrow": "01 · Fundamentos",
-        "heading": "Madera perfilada exterior + capa técnica interior: la lógica del sistema",
-        "intro": "<p>La lógica de esta solución combina una cara exterior de madera perfilada con una segunda zona interior capaz de alojar aislamiento, instalaciones y acabado. La configuración concreta debe leerse como un sistema completo, no como la suma de materiales independientes.</p>"
+        "heading": "El principio constructivo: perfiles horizontales apilados",
+        "intro": "<p>Los perfiles de madera ensamblados por hiladas constituyen el elemento característico. Los modelos pueden incorporar una envolvente básica o capas complementarias documentadas para el uso previsto.</p>"
       }
     },
     "process": {
@@ -219,20 +210,20 @@
           "type": "question",
           "settings": {
             "question": "¿Qué significa «sistema europeo» en Ideas Exteriores?",
-            "answer": "<p>Es la denominación comercial que usamos para una solución prefabricada de madera basada en un cerramiento exterior de piezas perfiladas y una capa técnica interior donde pueden integrarse aislamiento, instalaciones y acabado. No es una categoría normativa europea universal.</p>"
+            "answer": "<p>Es la denominación comercial de nuestra familia de construcciones con perfiles horizontales de madera mecanizados y apilados. La madera, la composición y el aislamiento adicional, si existe, se especifican para cada modelo.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
             "question": "¿Es lo mismo que una casa nórdica de tronco macizo?",
-            "answer": "<p>No. La construcción nórdica de tronco puede utilizar muros macizos o laminados con detalles específicos de asentamiento. El sistema descrito aquí combina madera exterior perfilada con una capa técnica interior. Además, fabricantes nórdicos actuales ofrecen troncos laminados no asentables, que constituyen tecnologías propias.</p>"
+            "answer": "<p>Comparten el principio de perfiles horizontales de madera. Sin embargo, cada producto puede diferir en madera maciza o laminada, tipo de junta, sección y movimiento previsto. El aislamiento adicional tampoco es universal: se confirma en los planos del modelo.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿La pieza exterior de madera es siempre estructural?",
+            "question": "¿Los perfiles apilados tienen función estructural?",
             "answer": "<p>No debe suponerse. Su función depende de la configuración concreta, de la sección de las piezas, de los encuentros y de la solución estructural del edificio. La documentación técnica y el cálculo deben indicar qué elementos reciben y transmiten las cargas.</p>"
           }
         },
@@ -284,16 +275,21 @@
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Comprueba si el sistema europeo encaja con tu proyecto",
-        "text": "<p>Cuéntanos uso, ubicación, superficie, distribución y nivel de acabado. Podemos ayudarte a revisar la configuración compatible, el alcance de suministro y las comprobaciones técnicas necesarias antes de presupuestar.</p>",
-        "label": "Solicitar asesoría técnica",
+        "heading": "Descubre cómo se construiría tu espacio",
+        "text": "<p>Indícanos uso, superficie aproximada, municipio y nivel de acabado. Revisaremos el modelo disponible, sus opciones documentadas, las necesidades de montaje y el alcance del presupuesto.</p>",
+        "label": "Consultar solución y presupuesto",
         "link": "/pages/contact-ideas-exteriores"
       }
+    },
+    "variants": {
+      "type": "ie-european-wall-variants",
+      "settings": {}
     }
   },
   "order": [
     "hero",
     "principles",
+    "variants",
     "process",
     "criteria",
     "faq",

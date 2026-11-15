@@ -7,28 +7,28 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Vivienda habitual"
+            "label": "Casetas auxiliares"
           }
         },
         "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Segunda residencia"
+            "label": "Estudios y oficinas"
           }
         },
         "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Anexos y espacios auxiliares"
+            "label": "Viviendas y segunda residencia"
           }
         },
         "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Modelos sujetos a validación"
+            "label": "Modelos verificados"
           }
         }
       },
@@ -40,11 +40,11 @@
       ],
       "settings": {
         "eyebrow": "Sistema europeo · 04",
-        "heading": "Aplicaciones y modelos compatibles con el sistema europeo de madera",
-        "lead": "<p>El sistema europeo puede estudiarse para viviendas y determinados anexos, pero la compatibilidad no se decide por estética ni por cambiar el «sistema constructivo» de un modelo existente. Uso, geometría, cargas, clima, prestaciones, logística y documentación deben verificarse antes de vincular un modelo del catálogo a esta solución.</p>",
+        "heading": "Casas, casetas y estudios de madera: aplicaciones del Sistema Europeo",
+        "lead": "<p>El sistema de perfiles de madera apilada puede utilizarse en casetas de jardín, estudios, oficinas auxiliares y viviendas. El uso previsto determina las necesidades de aislamiento, instalaciones, prestaciones y autorizaciones. No todos los modelos son habitables ni todos incorporan capas técnicas adicionales.</p>",
         "primary_label": "Conocer el sistema europeo",
         "primary_link": "/pages/european-timber-construction-system",
-        "secondary_label": "Consultar compatibilidad",
+        "secondary_label": "Consultar modelos y presupuesto",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Decide según tu proyecto"
       }
@@ -103,8 +103,8 @@
           "type": "service",
           "settings": {
             "index": "04 · Modelos",
-            "heading": "Compatibilidad con catálogo: solo modelos verificados",
-            "text": "<p>La compatibilidad debe quedar expresamente validada para el modelo y su configuración. Mientras no exista una colección pública específica de sistema europeo, las familias de entramado ligero y SIP mantienen su sistema publicado y no deben renombrarse o intercambiarse sin rediseño.</p>",
+            "heading": "Modelos comercializados: solo referencias verificadas",
+            "text": "<p>La oferta debe corresponder a un modelo y configuración documentados. No debe considerarse compatible por su apariencia un producto diseñado para un sistema constructivo diferente.</p>",
             "link_1_label": "Ver sistemas y alternativas",
             "link_1": "/pages/european-timber-construction-system",
             "link_2_label": "",
@@ -176,7 +176,7 @@
           "type": "principle",
           "settings": {
             "heading": "Denominación comercial",
-            "text": "«Sistema europeo» identifica aquí una configuración comercial de tronco recto y capa técnica interior; no es una norma europea universal ni acredita por sí misma certificación o rendimiento."
+            "text": "«Sistema Europeo» identifica nuestra familia comercial de construcciones de madera mediante perfiles horizontales apilados. La composición y las opciones dependen de cada modelo; el nombre no constituye certificación ni norma europea universal."
           }
         },
         "c2": {
@@ -226,7 +226,7 @@
           "type": "question",
           "settings": {
             "question": "¿Existe un catálogo de modelos europeos confirmados?",
-            "answer": "<p>No se ha verificado una colección pública específica de modelos del catálogo actual confirmados para sistema europeo. La página funciona como guía técnica; cualquier compatibilidad comercial debe aprobarse modelo a modelo antes de publicarse.</p>"
+            "answer": "<p>La disponibilidad se confirma mediante referencias del catálogo y documentación técnica actualizada. Esta guía describe los usos posibles; no presupone que cada tipología tenga actualmente modelos aprobados.</p>"
           }
         },
         "q3": {
@@ -284,9 +284,9 @@
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Verifiquemos qué modelo encaja con tu proyecto",
-        "text": "<p>Indícanos ubicación, uso, metros cuadrados y nivel de acabado. Revisaremos si existe una solución de sistema europeo documentada y qué alternativas del catálogo pueden ajustarse mejor. Sin prometer compatibilidades no verificadas.</p>",
-        "label": "Solicitar valoración técnica",
+        "heading": "Consulta qué modelo encaja con tu uso",
+        "text": "<p>Indícanos uso, superficie aproximada, municipio y nivel de acabado. Revisaremos el modelo disponible, sus opciones documentadas, las necesidades de montaje y el alcance del presupuesto.</p>",
+        "label": "Consultar solución y presupuesto",
         "link": "/pages/contact-ideas-exteriores"
       }
     }

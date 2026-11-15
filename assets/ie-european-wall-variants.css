@@ -1,0 +1,22 @@
+/* Page-scoped, image-free explanatory detail of horizontal profiled timber and optional insulated variant. */
+.ie-log-variants{background:#f7f6f1;color:#28362e}
+.ie-log-variants__inner{width:min(calc(100% - 56px),1320px);margin:0 auto;padding:clamp(42px,5vw,72px) 0}
+.ie-log-variants__header{max-width:880px;margin-bottom:30px}
+.ie-log-variants__eyebrow{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#66776a;font-weight:700;margin:0 0 12px}
+.ie-log-variants__header h2{font-size:clamp(1.7rem,2.45vw,2.55rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 16px}
+.ie-log-variants__header .rte{font-size:1rem;line-height:1.7;max-width:760px}
+.ie-log-variants__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ie-log-variants__card{overflow:hidden;border:1px solid #dddcd3;border-radius:16px;background:#fff}
+.ie-log-variants__visual{min-height:210px;display:flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(135deg,#f2ede4,#e8e6df);position:relative;padding:22px 28px 44px}
+.ie-log-variants__logs{width:min(55%,235px);display:grid;gap:3px;transform:perspective(550px) rotateY(-10deg)}
+.ie-log-variants__logs span{height:31px;border:1px solid #9d7651;border-radius:4px;background:repeating-linear-gradient(2deg,#d2b08a 0,#d2b08a 7px,#c9a47d 8px,#d8b590 11px);box-shadow:inset 0 -4px #bb9069}
+.ie-log-variants__insulation{width:36px;height:130px;border:2px dashed #909c8e;background:repeating-linear-gradient(135deg,#d9e0d5 0,#d9e0d5 7px,#e6e9e0 7px,#e6e9e0 13px)}
+.ie-log-variants__lining{width:15px;height:130px;background:#f8f5eb;border:1px solid #b7b4a9;box-shadow:3px 3px 0 #d3d1c5}
+.ie-log-variants__visual-label{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:.77rem;font-weight:700;letter-spacing:.02em;color:#5a625a}
+.ie-log-variants__copy{padding:26px 28px 28px}
+.ie-log-variants__index{font-size:.77rem;font-weight:700;color:#66776a;letter-spacing:.06em;margin:0 0 10px}
+.ie-log-variants__copy h3{font-size:clamp(1.1rem,1.45vw,1.32rem);line-height:1.3;margin:0 0 12px}
+.ie-log-variants__copy .rte{font-size:.96rem;line-height:1.65}
+.ie-log-variants__note{max-width:940px;margin:22px 0 12px;font-size:.85rem;line-height:1.6;color:#667268}
+.ie-log-variants__link{font-weight:650;text-decoration:underline;text-underline-offset:3px;color:#2c4b3b}
+@media(max-width:749px){.ie-log-variants__inner{width:calc(100% - 32px);padding:38px 0}.ie-log-variants__grid{grid-template-columns:1fr}.ie-log-variants__visual{min-height:180px}.ie-log-variants__copy{padding:22px}}

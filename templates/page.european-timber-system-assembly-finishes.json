@@ -7,28 +7,28 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Base, replanteo y logística"
+            "label": "Base, drenaje y anclajes"
           }
         },
         "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Hiladas, uniones y movimientos"
+            "label": "Montaje por hiladas"
           }
         },
         "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Humedad, capa técnica y acabados"
+            "label": "Cubierta y carpinterías"
           }
         },
         "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Mantenimiento y sostenibilidad"
+            "label": "Protección y mantenimiento"
           }
         }
       },
@@ -40,11 +40,11 @@
       ],
       "settings": {
         "eyebrow": "Sistema europeo · 03",
-        "heading": "Montaje y acabados del sistema europeo de madera",
-        "lead": "<p>En este sistema, montaje y acabado no son fases independientes: la base, el contenido de humedad, la secuencia de hiladas, los sellados, los movimientos de la madera, la capa técnica interior y la protección exterior deben coordinarse para conservar estructura, estanqueidad y durabilidad.</p>",
+        "heading": "Montaje y acabados de construcciones de madera apilada",
+        "lead": "<p>El montaje comienza por una base nivelada, separada de la humedad, y continúa por la colocación de perfiles de madera, esquinas, carpinterías y cubierta. Sellado, protección, holguras para movimientos dimensionales y mantenimiento deben resolverse de acuerdo con la ficha y el manual específicos del producto.</p>",
         "primary_label": "Ver sistema europeo",
         "primary_link": "/pages/european-timber-construction-system",
-        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_label": "Consultar modelos y presupuesto",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Del apoyo al acabado final"
       }
@@ -54,7 +54,7 @@
       "settings": {
         "eyebrow": "01 · Preparación",
         "heading": "La precisión del montaje empieza en la base y en los detalles",
-        "intro": "<p>En una solución de madera perfilada con capa técnica interior, cimentación, barrera capilar, replanteo, anclajes, logística y encuentros deben coordinarse antes de colocar la primera hilada. La rapidez de obra no sustituye a la definición previa.</p>"
+        "intro": "<p>El montaje requiere definir base, barrera capilar, replanteo, anclajes, logística y encuentros antes de colocar la primera hilada de perfiles mecanizados. Si hay aislamiento y revestimientos interiores, su montaje forma parte de una fase adicional documentada.</p>"
       },
       "blocks": {
         "m1": {
@@ -223,8 +223,8 @@
           "type": "service",
           "settings": {
             "index": "02 · Interior",
-            "heading": "Aislamiento, instalaciones y revestimiento se coordinan en la capa técnica",
-            "text": "<p>La capa técnica interior debe coordinar aislante, instalaciones, registros y revestimiento sin perforar innecesariamente las capas de control. Yeso, madera u otros acabados pueden modificar prestaciones de fuego, acústica y comportamiento higrotérmico.</p>",
+            "heading": "Acabados interiores y aislamiento según alcance contratado",
+            "text": "<p>Los perfiles pueden quedar vistos en el interior. Cuando el modelo contempla acondicionamiento, se documentan aislamiento, capas de control, cámara técnica, instalaciones y revestimiento. Estos componentes no se suponen incluidos en todos los kits.</p>",
             "link_1_label": "Componentes, uniones y materiales",
             "link_1": "/pages/european-timber-system-components-joints-materials",
             "link_2_label": "",
@@ -383,9 +383,9 @@
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Define montaje y acabados antes de cerrar el presupuesto",
-        "text": "<p>Cuéntanos ubicación, uso, superficie, configuración, accesos y nivel de acabado. Revisaremos contigo base, logística, encuentros, aislamiento, instalaciones, protección exterior y documentación para comparar el alcance real del sistema.</p>",
-        "label": "Solicitar asesoría técnica",
+        "heading": "Organiza montaje y acabados con claridad",
+        "text": "<p>Indícanos uso, superficie aproximada, municipio y nivel de acabado. Revisaremos el modelo disponible, sus opciones documentadas, las necesidades de montaje y el alcance del presupuesto.</p>",
+        "label": "Consultar solución y presupuesto",
         "link": "/pages/contact-ideas-exteriores"
       }
     }
