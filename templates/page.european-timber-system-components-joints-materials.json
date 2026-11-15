@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero": {
@@ -16,28 +7,28 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Perfil exterior y función del muro"
+            "label": "Sección nominal y útil"
           }
         },
         "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Uniones, esquinas y anclajes"
+            "label": "Ensamble de las hiladas"
           }
         },
         "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Aislamiento, aire y humedad"
+            "label": "Esquinas, huecos y cubierta"
           }
         },
         "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Materiales y documentación"
+            "label": "Capas adicionales opcionales"
           }
         }
       },
@@ -49,11 +40,11 @@
       ],
       "settings": {
         "eyebrow": "Sistema europeo · 02",
-        "heading": "Componentes, uniones y materiales del sistema europeo de madera",
-        "lead": "<p>La sección real del sistema europeo se define por materiales, funciones y detalles, no por la palabra «tronco» ni por un espesor genérico. Perfil exterior, clasificación de la madera, uniones, anclajes, aislamiento, capas de aire y humedad, instalaciones, fijaciones y acabado interior deben quedar coordinados y documentados.</p>",
+        "heading": "Perfiles, uniones y materiales del Sistema Europeo",
+        "lead": "<p>El sistema se reconoce por los perfiles de madera apilados, la geometría de sus juntas, los encuentros de esquina, los anclajes y la unión con huecos y cubierta. Hay que distinguir madera maciza y laminada, sección nominal y medida útil montada, y componentes básicos frente a aislamiento y acabados opcionales.</p>",
         "primary_label": "Ver sistema europeo",
         "primary_link": "/pages/european-timber-construction-system",
-        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_label": "Consultar modelos y presupuesto",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Qué define realmente el muro"
       }
@@ -118,7 +109,7 @@
       "settings": {
         "eyebrow": "01 · Composición",
         "heading": "Tres grupos de componentes que deben coordinarse",
-        "intro": "<p>La solución comercial de referencia combina madera exterior perfilada con una zona interior capaz de alojar aislamiento, instalaciones y acabado. La función estructural y las prestaciones de cada pieza no deben suponerse por su apariencia: se confirman en la documentación y el proyecto del sistema real.</p>"
+        "intro": "<p>Perfil de madera, junta entre hiladas, esquina, arranque y cubierta componen la lógica del sistema. Aislamiento, instalaciones y revestimiento solo se incluyen cuando aparecen en la configuración definida del producto.</p>"
       }
     },
     "specification": {
@@ -292,16 +283,21 @@
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Cierra la sección del muro antes de comparar presupuestos",
-        "text": "<p>Indícanos uso, ubicación, superficie y nivel de acabado. Podemos ayudarte a definir qué componentes, uniones y capas necesita la configuración, qué documentación debe acompañarla y qué aspectos quedan sujetos al proyecto.</p>",
-        "label": "Solicitar asesoría técnica",
+        "heading": "Solicita la composición real del modelo",
+        "text": "<p>Indícanos uso, superficie aproximada, municipio y nivel de acabado. Revisaremos el modelo disponible, sus opciones documentadas, las necesidades de montaje y el alcance del presupuesto.</p>",
+        "label": "Consultar solución y presupuesto",
         "link": "/pages/contact-ideas-exteriores"
       }
+    },
+    "variants": {
+      "type": "ie-european-wall-variants",
+      "settings": {}
     }
   },
   "order": [
     "hero",
     "composition",
+    "variants",
     "specification",
     "criteria",
     "faq",
