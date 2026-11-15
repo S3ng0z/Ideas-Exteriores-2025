@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -51,15 +60,12 @@
     },
     "composition": {
       "type": "ie-services-cards",
-      "settings": {
-        "eyebrow": "01 · Composición",
-        "heading": "Tres grupos de componentes que deben coordinarse",
-        "intro": "<p>La solución comercial de referencia combina madera exterior perfilada con una zona interior capaz de alojar aislamiento, instalaciones y acabado. La función estructural y las prestaciones de cada pieza no deben suponerse por su apariencia: se confirman en la documentación y el proyecto del sistema real.</p>"
-      },
       "blocks": {
         "c1": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Scandinavian_Double_Tongue-and-Groove_Timber_Detail.webp",
+            "image_alt": "Scandinavian Double Tongue-and-Groove Timber Detail",
             "index": "01 · Madera exterior",
             "heading": "Perfil, geometría de junta y condición de servicio",
             "text": "<p>Las piezas exteriores pueden ser macizas o laminadas según el sistema. Deben identificarse especie, clase resistente o documentación equivalente, sección, humedad de suministro, mecanizado y clase de servicio prevista. Un doble machihembrado organiza el contacto entre piezas, pero no demuestra por sí solo resistencia, estanqueidad al aire ni protección frente al agua.</p>",
@@ -74,6 +80,8 @@
         "c2": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Timber_Wall_Construction_Cutaway.webp",
+            "image_alt": "Timber Wall Construction Cutaway",
             "index": "02 · Capa técnica interior",
             "heading": "Subestructura, aislamiento, instalaciones y acabado",
             "text": "<p>La subestructura interior permite alojar aislamiento e instalaciones y recibir el acabado. La elección de aislante y de capas de control depende de la composición higrotérmica completa; no conviene copiar soluciones de «triple aislante» o barrera de vapor sin comprobar clima, materiales y riesgo de condensación.</p>",
@@ -88,6 +96,8 @@
         "c3": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Modern_Timber_House_Corner.webp",
+            "image_alt": "Modern Timber House Corner",
             "index": "03 · Uniones y fijaciones",
             "heading": "Base, esquinas, huecos y cubierta concentran las decisiones críticas",
             "text": "<p>Arranque sobre cimentación, barrera capilar, esquinas, uniones longitudinales, huecos y encuentro con cubierta concentran los riesgos de agua, infiltración, deformación y puente térmico. En sistemas con movimiento vertical previsto, carpinterías y elementos rígidos deben disponer de detalles compatibles.</p>",
@@ -104,7 +114,12 @@
         "c1",
         "c2",
         "c3"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "01 · Composición",
+        "heading": "Tres grupos de componentes que deben coordinarse",
+        "intro": "<p>La solución comercial de referencia combina madera exterior perfilada con una zona interior capaz de alojar aislamiento, instalaciones y acabado. La función estructural y las prestaciones de cada pieza no deben suponerse por su apariencia: se confirman en la documentación y el proyecto del sistema real.</p>"
+      }
     },
     "specification": {
       "type": "ie-services-process",
