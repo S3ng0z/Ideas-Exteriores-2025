@@ -39,22 +39,22 @@
         "d"
       ],
       "settings": {
-        "eyebrow": "Paneles SIP · 01",
-        "heading": "Qué son los paneles SIP y cómo funciona el sistema",
-        "lead": "<p>Los SIP (Structural Insulated Panels) son elementos prefabricados tipo sándwich en los que dos caras resistentes trabajan unidas a un núcleo aislante. La ventaja no está en una capa aislada, sino en proyectar paneles, uniones, apoyos y envolvente como un sistema coordinado.</p>",
+        "eyebrow": "Paneles SIP · Guía 01 / 04",
+        "heading": "Qué es un panel SIP y cómo funciona en una construcción",
+        "lead": "<p>Un panel estructural aislante (SIP) está formado por dos caras resistentes adheridas a un núcleo rígido. En las soluciones basadas en OSB y aislamiento EPS, EPS grafitado o PIR, el panel integra funciones estructurales y térmicas, pero no sustituye las uniones, los apoyos ni el proyecto del edificio. Descubre qué hace cada elemento y por qué la prefabricación permite montar con más control.</p>",
         "primary_label": "Ver casas con paneles SIP",
         "primary_link": "/collections/sip-panel-houses",
-        "secondary_label": "Solicitar asesoría técnica",
-        "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Claves para entender el sistema"
+        "secondary_label": "Visión general del sistema",
+        "secondary_link": "/pages/sip-panels-system",
+        "summary_title": "De la pieza al edificio"
       }
     },
     "principles": {
       "type": "ie-services-cards",
       "settings": {
         "eyebrow": "01 · Fundamentos",
-        "heading": "Un componente industrializado que combina estructura y aislamiento",
-        "intro": "<p>La composición habitual incorpora tableros estructurales y un núcleo rígido, pero no existe un único SIP universal. Materiales, espesores, capacidades y detalles pertenecen a la documentación del sistema seleccionado.</p>"
+        "heading": "Tres funciones que explican cómo trabaja un SIP",
+        "intro": "<p>Los paneles no son simples placas aislantes. La unión entre caras y núcleo, la continuidad en los encuentros y las condiciones de apoyo definen cómo se integra cada pieza en el conjunto resistente.</p>"
       },
       "blocks": {
         "p1": {
@@ -63,8 +63,8 @@
             "image": "shopify://shop_images/structural-insulated-panel-system-how-it-works_001.png",
             "image_alt": "Composición de un panel SIP con caras resistentes y núcleo aislante",
             "index": "01 · Panel compuesto",
-            "heading": "Las capas trabajan juntas",
-            "text": "<p>Las caras resisten principalmente esfuerzos de tracción y compresión, mientras el núcleo mantiene su separación y transmite cortante. La adhesión entre capas convierte el conjunto en un elemento compuesto con respuesta estructural propia.</p>",
+            "heading": "Dos caras OSB y núcleo aislante",
+            "text": "<p>En una configuración habitual, los tableros OSB estructurales se adhieren a un núcleo de EPS, EPS grafitado o PIR según referencia técnica. Las caras absorben esfuerzos de flexión; el núcleo mantiene su separación y transmite cortante.</p>",
             "link_1_label": "Estructura, capas y aislamiento",
             "link_1": "/pages/sip-panel-structure-layers-insulation",
             "link_2_label": "",
@@ -79,8 +79,8 @@
             "image": "shopify://shop_images/structural-insulated-panel-system-how-it-works_002.png",
             "image_alt": "Detalle conceptual del funcionamiento estructural de un panel SIP",
             "index": "02 · Sistema resistente",
-            "heading": "El panel no trabaja solo",
-            "text": "<p>Apoyos, splines o elementos de unión, dinteles, anclajes, encuentros con forjados y cubiertas y arriostramiento completan el sistema. La capacidad final se verifica para el edificio y las cargas del proyecto.</p>",
+            "heading": "Uniones, anclajes y refuerzos completan la estructura",
+            "text": "<p>Los paneles se conectan mediante juntas y piezas especificadas. Encuentros, apoyos, dinteles, arriostramiento y cimentación deben dimensionarse para las cargas y geometría del proyecto.</p>",
             "link_1_label": "Montaje, durabilidad y sostenibilidad",
             "link_1": "/pages/sip-panel-assembly-durability-sustainability",
             "link_2_label": "",
@@ -95,8 +95,8 @@
             "image": "shopify://shop_images/structural-insulated-panel-system-how-it-works_003.png",
             "image_alt": "Paneles SIP prefabricados preparados para montaje en seco",
             "index": "03 · Industrialización",
-            "heading": "Más decisiones antes de llegar a obra",
-            "text": "<p>El despiece, los huecos y los encuentros pueden resolverse en taller mediante planos de fabricación. Eso reduce operaciones húmedas y ajustes en parcela, pero exige cerrar antes geometría, instalaciones, tolerancias y secuencia de montaje.</p>",
+            "heading": "Piezas preparadas para una obra más ordenada",
+            "text": "<p>El taller puede mecanizar huecos y paneles conforme a planos de fabricación, reduciendo cortes y trabajos húmedos en parcela. Requiere medidas, instalaciones y accesos confirmados previamente.</p>",
             "link_1_label": "Aplicaciones y modelos compatibles",
             "link_1": "/pages/sip-panel-applications-compatible-models",
             "link_2_label": "",
@@ -119,32 +119,32 @@
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Definir uso y prestaciones",
-            "text": "Establecer cargas, geometría, clima, fuego, acústica, energía, humedad y acabado según el edificio y su emplazamiento."
+            "heading": "Definir el edificio",
+            "text": "Confirmar uso, normativa, geometría, acciones de viento y nieve, prestaciones térmicas y necesidades de ventilación."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Seleccionar un sistema documentado",
-            "text": "Comprobar composición, capacidades declaradas, detalles de unión, limitaciones de uso y documentación técnica del fabricante."
+            "heading": "Elegir la configuración SIP",
+            "text": "Contrastar OSB, núcleo, espesores, límites estructurales, documentación y detalles de unión de la solución ofertada."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Convertir el proyecto en despiece",
-            "text": "Coordinar paneles, huecos, apoyos, anclajes, pasos de instalaciones y secuencia de montaje mediante planos de fabricación."
+            "heading": "Preparar planos de despiece",
+            "text": "Coordinar modulación, aberturas, apoyo sobre base, pasos de instalaciones y encuentro de muros con cubierta y suelo."
           }
         },
         "s4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Montar y verificar",
-            "text": "Controlar soporte, almacenamiento, humedad, fijaciones, juntas, protección frente al agua y continuidad de la envolvente antes de cerrar acabados."
+            "heading": "Montar y cerrar la envolvente",
+            "text": "Instalar los paneles siguiendo instrucciones y verificar fijaciones, sellos, protección del agua y continuidad antes de los acabados."
           }
         }
       },
@@ -156,8 +156,8 @@
       ],
       "settings": {
         "eyebrow": "02 · De proyecto a obra",
-        "heading": "La prefabricación funciona cuando el detalle llega resuelto",
-        "intro": "<p>La rapidez del montaje es una consecuencia de la preparación previa; no sustituye cálculo, coordinación ni control de ejecución.</p>"
+        "heading": "De la ingeniería al montaje de los paneles",
+        "intro": "<p>El proyecto fija prestaciones y cargas; el despiece convierte esas decisiones en paneles mecanizados y conexiones identificadas. La secuencia real sigue la documentación del sistema y el proyecto.</p>"
       }
     },
     "criteria": {
@@ -166,29 +166,29 @@
         "c1": {
           "type": "principle",
           "settings": {
-            "heading": "CTE y cálculo",
-            "text": "En España, el proyecto debe justificar las exigencias aplicables de seguridad estructural, energía, incendio, salubridad y acústica. Las guías extranjeras aportan criterios, no sustituyen esa justificación."
+            "heading": "Capacidad estructural documentada",
+            "text": "No se puede deducir la resistencia a partir del grosor del panel. Se justifican cargas, uniones, luces, apoyos y estabilidad del conjunto."
           }
         },
         "c2": {
           "type": "principle",
           "settings": {
-            "heading": "Plazo completo",
-            "text": "Un cerramiento puede montarse con rapidez, pero el plazo total incluye proyecto, licencia, cimentación, fabricación, transporte, instalaciones, revestimientos, comprobaciones y acabados."
+            "heading": "Menos improvisación en obra",
+            "text": "La prefabricación aporta precisión y planificación. Su ventaja de plazo depende también de licencias, cimentación, logística, accesibilidad y acabados."
           }
         },
         "c3": {
           "type": "principle",
           "settings": {
-            "heading": "Coste comparable",
-            "text": "Comparar presupuestos por alcance equivalente: panel o kit, montaje, cubierta, fachada, carpinterías, instalaciones, cimentación, proyecto y transporte pueden estar incluidos o no."
+            "heading": "Envolvente térmica continua",
+            "text": "El núcleo proporciona aislamiento dentro del panel; las juntas, huecos y encuentros deben detallarse para controlar infiltraciones y puentes térmicos."
           }
         },
         "c4": {
           "type": "principle",
           "settings": {
-            "heading": "Prestaciones verificables",
-            "text": "No asumir que todo SIP elimina puentes térmicos, obtiene una calificación energética concreta o alcanza una resistencia al fuego o acústica determinada: depende del sistema y de la solución completa."
+            "heading": "Normativa del proyecto",
+            "text": "El uso residencial exige justificar las exigencias correspondientes del CTE y las autorizaciones urbanísticas. El sistema SIP no supone una homologación automática del edificio."
           }
         }
       },
@@ -200,7 +200,7 @@
       ],
       "settings": {
         "eyebrow": "03 · Criterios de decisión",
-        "heading": "Qué conviene comprobar antes de elegir SIP"
+        "heading": "Ventajas de industrializar, con límites definidos"
       }
     },
     "faq": {
@@ -209,8 +209,8 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "¿Todos los paneles SIP son OSB + EPS?",
-            "answer": "<p>No. Es una configuración frecuente, pero existen sistemas con otros tableros y núcleos. La composición, el adhesivo, las uniones y las capacidades deben corresponder a un producto y una documentación técnica concretos.</p>"
+            "question": "¿Todos los paneles SIP utilizan OSB y EPS?",
+            "answer": "<p>No. Nuestras soluciones de referencia se basan en caras OSB y núcleos aislantes que pueden ser EPS, EPS grafitado o PIR según la configuración. Otras tecnologías SIP pueden utilizar materiales diferentes.</p>"
           }
         },
         "q2": {
@@ -223,8 +223,8 @@
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿Se puede construir una vivienda habitual con SIP?",
-            "answer": "<p>Sí, siempre que el proyecto y la ejecución justifiquen las exigencias aplicables al uso residencial y a la normativa del emplazamiento.</p>"
+            "question": "¿Qué hace que un panel SIP sea estructural?",
+            "answer": "<p>La acción conjunta de caras, núcleo y adhesión, siempre dentro de los límites documentados del producto. La estabilidad del edificio depende además de uniones, refuerzos, apoyos y arriostramiento.</p>"
           }
         },
         "q4": {
@@ -244,8 +244,8 @@
         "q6": {
           "type": "question",
           "settings": {
-            "question": "¿SIP es siempre más barato?",
-            "answer": "<p>No. La comparación debe hacerse sobre edificios equivalentes y presupuestos con el mismo alcance. El precio del panel por sí solo no representa el coste final.</p>"
+            "question": "¿Puedo modificar huecos o cortar paneles durante el montaje?",
+            "answer": "<p>No debe hacerse sin autorización técnica: las aberturas pueden alterar caras resistentes, juntas, cargas y protección frente al agua. Los cambios deben incorporarse a los planos antes de fabricar siempre que sea posible.</p>"
           }
         },
         "q7": {
@@ -267,7 +267,7 @@
       ],
       "settings": {
         "eyebrow": "FAQ",
-        "heading": "Preguntas básicas antes de pasar a espesores y montaje",
+        "heading": "Dudas habituales sobre los paneles SIP",
         "intro": "<p>El objetivo es entender el sistema sin confundir ventajas potenciales con garantías universales.</p>"
       }
     },
@@ -275,8 +275,8 @@
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Comprueba si SIP encaja con tu proyecto",
-        "text": "<p>Cuéntanos uso, ubicación, superficie, geometría y nivel de acabado. Podemos ayudarte a ordenar sistema, prestaciones, alcance y siguientes comprobaciones antes de presupuestar.</p>",
+        "heading": "Compara soluciones SIP para tu construcción",
+        "text": "<p>Si ya conoces el uso, la superficie y la ubicación, podemos orientarte hacia los modelos compatibles y la documentación necesaria para avanzar.</p>",
         "label": "Solicitar asesoría técnica",
         "link": "/pages/contact-ideas-exteriores"
       }
