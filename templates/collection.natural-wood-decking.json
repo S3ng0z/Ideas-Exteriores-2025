@@ -192,22 +192,27 @@
       },
       "settings": {
         "layout_type": "grid",
-        "product_card_size": "large",
+        "product_card_size": "medium",
         "mobile_product_card_size": "large",
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
-        "columns_gap_horizontal": 16,
-        "columns_gap_vertical": 16,
+        "columns_gap_horizontal": 18,
+        "columns_gap_vertical": 28,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
         "color_scheme": "scheme-1",
         "padding-block-start": 20,
         "padding-block-end": 48
       }
+    },
+    "ie_deck_guide": {
+      "type": "ie-natural-wood-guide",
+      "settings": {}
     }
   },
   "order": [
     "ie_deck_intro",
-    "main"
+    "main",
+    "ie_deck_guide"
   ]
 }
