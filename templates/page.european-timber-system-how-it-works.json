@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -55,8 +64,8 @@
         "p1": {
           "type": "service",
           "settings": {
-            "image": "shopify://shop_images/Modern_Timber_Cabin_with_Precision_Joinery.webp",
-            "image_alt": "Modern Timber Cabin with Precision Joinery",
+            "image": "shopify://shop_images/Interlocking_Pine_Timber_Profiles.webp",
+            "image_alt": "Interlocking Pine Timber Profiles",
             "index": "01 · Composición",
             "heading": "Perfil de madera mecanizado: la pieza protagonista",
             "text": "<p>La solución de referencia utiliza piezas rectas de madera perfilada, normalmente de conífera. La especie, clasificación resistente, sección, humedad, mecanizado y eventual función portante no se deducen del aspecto ni del nombre comercial: deben corresponder al sistema y al cálculo del proyecto.</p>",
@@ -71,8 +80,8 @@
         "p2": {
           "type": "service",
           "settings": {
-            "image": "shopify://shop_images/Timber_Wall_Exterior_Interior_Cutaway.webp",
-            "image_alt": "Timber Wall Exterior–Interior Cutaway",
+            "image": "shopify://shop_images/Timber_Wall_Construction_Cutaway_e992ff68-5100-4b00-8f9f-c988659da161.webp",
+            "image_alt": "Timber Wall Construction Cutaway",
             "index": "02 · Capa técnica",
             "heading": "Aislamiento interior: opción definida por modelo",
             "text": "<p>La construcción básica puede resolverse mediante perfiles de madera apilados. Una capa interior con aislante, instalaciones y revestimiento solo forma parte del suministro cuando la configuración comercial y técnica del modelo así lo especifica; no se presupone incluida.</p>",
@@ -87,8 +96,8 @@
         "p3": {
           "type": "service",
           "settings": {
-            "image": "shopify://shop_images/Modern_Timber_Cabin_Corner.webp",
-            "image_alt": "Modern Timber Cabin Corner",
+            "image": "shopify://shop_images/Contemporary_Timber_House_Corner_8bbfdfb1-df9e-41b9-9fc3-0c141435406e.webp",
+            "image_alt": "Contemporary Timber House Corner",
             "index": "03 · Sistema completo",
             "heading": "Juntas, huecos y cubierta deben admitir el comportamiento higroscópico de la madera",
             "text": "<p>En construcciones derivadas del tronco, los encuentros deben mantener estabilidad y estanqueidad aunque cambien las dimensiones de la madera. Los sistemas nórdicos tradicionales contemplan asentamientos; existen productos industrializados no asentables, pero son tecnologías específicas y no deben atribuirse por defecto a esta solución comercial.</p>",
@@ -110,6 +119,19 @@
         "eyebrow": "01 · Fundamentos",
         "heading": "El principio constructivo: perfiles horizontales apilados",
         "intro": "<p>Los perfiles de madera ensamblados por hiladas constituyen el elemento característico. Los modelos pueden incorporar una envolvente básica o capas complementarias documentadas para el uso previsto.</p>"
+      }
+    },
+    "variants": {
+      "type": "ie-european-wall-variants",
+      "settings": {
+        "eyebrow": "Dos configuraciones posibles",
+        "heading": "La madera es la base; el aislamiento depende del modelo",
+        "intro": "<p>El montaje por hiladas utiliza piezas de madera mecanizadas que encajan entre sí. Un mismo principio constructivo puede dar lugar a un kit sencillo o a una envolvente con capas complementarias, siempre que esa variante esté disponible y documentada.</p>",
+        "base_heading": "Muro de perfiles de madera ensamblados",
+        "base_text": "<p>Los perfiles apilados forman el cerramiento de madera. La sección útil, las juntas, las esquinas, los anclajes y la cubierta se especifican por modelo. No presupone aislamiento adicional ni uso residencial.</p>",
+        "option_heading": "Muro preparado para aislamiento complementario",
+        "option_text": "<p>Cuando el modelo admite esta opción, se incorpora una subestructura interior con aislamiento y capas de control y acabado definidos por proyecto. Esta configuración no se incluye por defecto en todos los kits.</p>",
+        "note": "Esquemas conceptuales, no a escala. No representan una sección comercial aprobada ni acreditan transmitancias, resistencia al fuego o cumplimiento del CTE."
       }
     },
     "process": {
@@ -280,10 +302,6 @@
         "label": "Consultar solución y presupuesto",
         "link": "/pages/contact-ideas-exteriores"
       }
-    },
-    "variants": {
-      "type": "ie-european-wall-variants",
-      "settings": {}
     }
   },
   "order": [
