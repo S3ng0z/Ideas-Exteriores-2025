@@ -73,7 +73,7 @@
           "settings": {
             "image": "shopify://shop_images/Timber_Wall_Construction_Cutaway.webp",
             "image_alt": "Timber Wall Construction Cutaway",
-            "index": "02 · Capa técnica interior",
+            "index": "02 · Opción de acondicionamiento",
             "heading": "Subestructura, aislamiento, instalaciones y acabado",
             "text": "<p>La subestructura interior permite alojar aislamiento e instalaciones y recibir el acabado. La elección de aislante y de capas de control depende de la composición higrotérmica completa; no conviene copiar soluciones de «triple aislante» o barrera de vapor sin comprobar clima, materiales y riesgo de condensación.</p>",
             "link_1_label": "Montaje y acabados",
@@ -223,7 +223,7 @@
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿La pieza exterior de madera es siempre portante?",
+            "question": "¿Los perfiles de madera son siempre portantes?",
             "answer": "<p>No debe darse por supuesto. Su función depende del sistema, la sección, las uniones, los elementos de arriostramiento y el esquema estructural del edificio. El proyecto y la documentación técnica deben indicar qué piezas reciben y transmiten cargas.</p>"
           }
         },
@@ -245,7 +245,7 @@
           "type": "question",
           "settings": {
             "question": "¿Dónde se integran electricidad y fontanería?",
-            "answer": "<p>La capa técnica interior puede reservar recorridos para instalaciones y registros. Conviene coordinar trazados y penetraciones antes del cierre para no cortar elementos estructurales ni comprometer sellados, capas de control o capacidad de movimiento del sistema.</p>"
+            "answer": "<p>En variantes acondicionadas se puede disponer una cámara interior para conducciones y registros. En soluciones exclusivamente macizas, los recorridos se diseñan de forma específica para evitar mecanizados que comprometan estructura, juntas o movimientos.</p>"
           }
         },
         "q7": {
