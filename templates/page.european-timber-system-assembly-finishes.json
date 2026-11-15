@@ -218,7 +218,8 @@
         "f1": {
           "type": "service",
           "settings": {
-            "image_alt": "",
+            "image": "shopify://shop_images/Sunlit_Modern_Timber_House_Corner.webp",
+            "image_alt": "Sunlit Modern Timber House Corner",
             "index": "01 · Exterior",
             "heading": "Madera vista: protección compatible con exposición y mantenimiento",
             "text": "<p>El tipo de acabado se selecciona según especie, mecanizado, orientación, lluvia, radiación solar y aspecto deseado. El producto de protección y su ciclo de renovación deben seguir las indicaciones del fabricante y permitir inspeccionar juntas y zonas de agua.</p>",
@@ -233,7 +234,8 @@
         "f2": {
           "type": "service",
           "settings": {
-            "image_alt": "",
+            "image": "shopify://shop_images/Scandinavian_Cabin_Living_Space.webp",
+            "image_alt": "Scandinavian Cabin Living Space",
             "index": "02 · Interior",
             "heading": "Acabados interiores y aislamiento según alcance contratado",
             "text": "<p>Los perfiles pueden quedar vistos en el interior. Cuando el modelo contempla acondicionamiento, se documentan aislamiento, capas de control, cámara técnica, instalaciones y revestimiento. Estos componentes no se suponen incluidos en todos los kits.</p>",
@@ -248,7 +250,8 @@
         "f3": {
           "type": "service",
           "settings": {
-            "image_alt": "",
+            "image": "shopify://shop_images/Photorealistic_Timber_House_Corner_Detail.webp",
+            "image_alt": "Photorealistic Timber House Corner Detail",
             "index": "03 · Encuentros",
             "heading": "Los acabados no deben puentear elementos con movimientos diferentes",
             "text": "<p>Revestimientos rígidos, carpinterías, instalaciones verticales y elementos anclados a estructuras con comportamiento dimensional diferente necesitan juntas o fijaciones compatibles. El acabado no debe inmovilizar un muro diseñado para moverse.</p>",
