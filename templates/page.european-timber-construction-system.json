@@ -7,28 +7,28 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "Qué es y cómo funciona"
+            "label": "Cómo se ensamblan los perfiles"
           }
         },
         "b": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "Componentes, uniones y materiales"
+            "label": "Perfiles, juntas y materiales"
           }
         },
         "c": {
           "type": "summary",
           "settings": {
             "number": "03",
-            "label": "Montaje y acabados"
+            "label": "Preparación y montaje"
           }
         },
         "d": {
           "type": "summary",
           "settings": {
             "number": "04",
-            "label": "Aplicaciones y modelos compatibles"
+            "label": "Casetas, estudios y viviendas"
           }
         }
       },
@@ -40,11 +40,11 @@
       ],
       "settings": {
         "eyebrow": "Sistema constructivo · Sistema europeo",
-        "heading": "Sistema europeo de madera: construcción con perfil exterior y capa técnica interior",
-        "lead": "<p>En Ideas Exteriores, «sistema europeo» es la denominación comercial de una solución prefabricada que combina piezas exteriores de madera rectas y perfiladas con una capa técnica interior para integrar aislamiento, instalaciones y acabado. No es una norma ni una tipología técnica universal de la Unión Europea: estructura, uniones, humedad, movimientos y prestaciones deben definirse para la configuración y el proyecto reales.</p>",
+        "heading": "Sistema Europeo de madera: construcción con perfiles apilados",
+        "lead": "<p>Las construcciones de madera mediante perfiles horizontales mecanizados se ensamblan por hiladas para formar los cerramientos. El sistema admite diferentes usos y configuraciones según el producto: casetas, estudios y viviendas. La composición, el aislamiento y el alcance del suministro deben verificarse por modelo. «Sistema Europeo» es nuestra denominación comercial, no una certificación.</p>",
         "primary_label": "Entender cómo funciona",
         "primary_link": "/pages/european-timber-system-how-it-works",
-        "secondary_label": "Solicitar asesoría técnica",
+        "secondary_label": "Consultar modelos y presupuesto",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Guía del sistema"
       }
@@ -128,32 +128,32 @@
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Definir uso, ubicación y prestaciones",
-            "text": "Partir del uso real, municipio, clima, geometría, cargas, superficie, ocupación y nivel de acabado antes de elegir sección, aislamiento o sistema de montaje."
+            "heading": "Define el uso",
+            "text": "Caseta, estudio o vivienda: identificar uso y emplazamiento antes de elegir modelo."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Cerrar la sección real del muro",
-            "text": "Documentar perfil exterior, función estructural, subestructura, aislamiento, capas de control, cámara de instalaciones, revestimientos y prestaciones aplicables."
+            "heading": "Identifica el modelo",
+            "text": "Comprobar dimensiones, perfil de madera, cubierta, carpinterías y planos de la referencia ofertada."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Resolver encuentros, agua y movimientos",
-            "text": "Coordinar cimentación, barrera capilar, anclajes, esquinas, huecos, forjados y cubierta; prever tolerancias y movimientos de la madera según el producto y la tecnología reales."
+            "heading": "Elige opciones documentadas",
+            "text": "Confirmar aislamiento, acabados, instalaciones y montaje solo cuando estén previstos en esa configuración."
           }
         },
         "s4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Validar proyecto, montaje y alcance",
-            "text": "Comprobar exigencias del edificio, documentación del producto, secuencia de ejecución, transporte, montaje, instalaciones, acabados, incluidos y exclusiones antes de presupuestar."
+            "heading": "Verifica presupuesto y entrega",
+            "text": "Revisar incluidos, exclusiones, base, transporte, permisos, mantenimiento y documentación."
           }
         }
       },
@@ -216,15 +216,20 @@
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Valida si el sistema europeo encaja con tu proyecto",
-        "text": "<p>Indícanos uso, ubicación, superficie aproximada, distribución, estado del proyecto y nivel de acabado. Revisaremos la compatibilidad técnica, el alcance de suministro y montaje y las alternativas del catálogo antes de presupuestar.</p>",
-        "label": "Solicitar asesoría técnica",
+        "heading": "Elige tu próximo espacio de madera",
+        "text": "<p>Indícanos uso, superficie aproximada, municipio y nivel de acabado. Revisaremos el modelo disponible, sus opciones documentadas, las necesidades de montaje y el alcance del presupuesto.</p>",
+        "label": "Consultar solución y presupuesto",
         "link": "/pages/contact-ideas-exteriores"
       }
+    },
+    "variants": {
+      "type": "ie-european-wall-variants",
+      "settings": {}
     }
   },
   "order": [
     "hero",
+    "variants",
     "guides",
     "process",
     "confidence",
