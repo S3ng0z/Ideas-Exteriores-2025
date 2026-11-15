@@ -44,9 +44,9 @@
         "lead": "<p>Una solución SIP de referencia incorpora tableros estructurales OSB a ambos lados de un núcleo aislante de EPS, EPS grafitado o PIR según su configuración. El espesor del panel no define por sí solo el comportamiento del muro o la cubierta: además cuentan las juntas, los revestimientos, las fijaciones y la gestión de aire, vapor y agua.</p>",
         "primary_label": "Ver casas con paneles SIP",
         "primary_link": "/collections/sip-panel-houses",
-        "secondary_label": "Visión general del sistema",
+        "secondary_label": "Volver al sistema SIP",
         "secondary_link": "/pages/sip-panels-system",
-        "summary_title": "Qué comprobar en la ficha"
+        "summary_title": "Composición y prestaciones a verificar"
       }
     },
     "composition": {

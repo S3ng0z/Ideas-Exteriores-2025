@@ -44,9 +44,9 @@
         "lead": "<p>Los paneles SIP permiten estudiar soluciones para viviendas, oficinas, estudios de jardín y construcciones auxiliares. Elegir el modelo depende del uso autorizado, la configuración disponible, la parcela y el nivel de suministro. Aquí encontrarás las familias de Ideas Exteriores y un método para comparar propuestas sin confundir aislamiento con habitabilidad.</p>",
         "primary_label": "Ver casas con paneles SIP",
         "primary_link": "/collections/sip-panel-houses",
-        "secondary_label": "Visión general del sistema",
+        "secondary_label": "Volver al sistema SIP",
         "secondary_link": "/pages/sip-panels-system",
-        "summary_title": "Elige primero por uso"
+        "summary_title": "Usos y modelos del catálogo"
       }
     },
     "principles": {
