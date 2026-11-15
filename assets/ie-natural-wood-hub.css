@@ -1,107 +1,123 @@
-/* Tarima natural hub · aligned with page.wooden-sheds visual system. */
-.ie-deck{--ink:#1f231e;--forest:#566236;--bone:#f9f8f6;--muted:#61675e;--line:#d8d5cc;background:var(--bone);color:var(--ink);font-family:Manrope,var(--font-body--family),Arial,sans-serif}
+/* Natural wood decking collection · commercial architecture · Natural Precision */
+.ie-deck{
+  --ink:#1f231e;
+  --forest:#566236;
+  --sage:#8a9a5b;
+  --bone:#f9f8f6;
+  --stone:#ede8df;
+  --muted:#62685d;
+  --line:#d8d5cc;
+  background:var(--bone);
+  color:var(--ink);
+  font-family:Manrope,var(--font-body--family),Arial,sans-serif;
+}
 .ie-deck *{box-sizing:border-box}
-.ie-deck__wrap{width:min(calc(100% - 64px),1600px);margin:auto;padding:25px 0 0}
+.ie-deck__wrap{width:min(calc(100% - 64px),1440px);margin:auto;padding:25px 0 0}
+.ie-deck__wrap--post{padding-top:0;padding-bottom:84px}
 .ie-deck__breadcrumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-height:40px;margin-bottom:35px;font-size:.78rem;color:var(--muted)}
 .ie-deck__breadcrumb a{color:inherit;text-decoration:none}
 .ie-deck__breadcrumb a:hover{text-decoration:underline;text-underline-offset:3px}
 .ie-deck h1,.ie-deck h2{font-family:"Source Serif 4",Georgia,serif;font-weight:500;letter-spacing:-.024em;text-transform:none;text-wrap:balance;max-width:none;margin:0}
 .ie-deck h3{font-family:Manrope,Arial,sans-serif;font-weight:600;letter-spacing:-.015em;text-transform:none;margin:0}
-.ie-deck__eyebrow{font-size:.77rem;line-height:1.4;text-transform:uppercase;letter-spacing:.075em;font-weight:700;color:var(--forest);margin:0 0 14px}
-.ie-deck__hero{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,.68fr);gap:clamp(30px,5vw,90px);align-items:end;padding:12px 0 72px;border-bottom:1px solid var(--line)}
-.ie-deck h1{font-size:clamp(2.6rem,4.2vw,4.5rem);line-height:1.03}
-.ie-deck__lead{max-width:850px;font-size:clamp(1rem,1.2vw,1.17rem);line-height:1.68;color:var(--muted);margin:23px 0 0}
+.ie-deck__eyebrow{font-size:.75rem;line-height:1.4;text-transform:uppercase;letter-spacing:.075em;font-weight:700;color:var(--forest);margin:0 0 14px}
+.ie-deck__hero{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(310px,.72fr);gap:clamp(36px,6vw,96px);align-items:end;padding:12px 0 68px;border-bottom:1px solid var(--line)}
+.ie-deck h1{font-size:clamp(2.7rem,4.55vw,4.75rem);line-height:1.01;max-width:980px}
+.ie-deck__lead{max-width:820px;font-size:clamp(1rem,1.2vw,1.16rem);line-height:1.68;color:var(--muted);margin:23px 0 0}
 .ie-deck__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.ie-deck__button{display:inline-flex;justify-content:center;align-items:center;gap:20px;min-height:50px;padding:12px 22px;border:1px solid var(--forest);font-size:.92rem;line-height:1.2;font-weight:650;text-decoration:none;transition:background-color .16s,color .16s}
-.ie-deck__button--primary{background:var(--forest);color:#fff}.ie-deck__button--primary:hover{background:#414c28}
-.ie-deck__button--outline{background:transparent;color:var(--ink)}.ie-deck__button--outline:hover{background:var(--ink);color:#fff}
-.ie-deck__hero-aside{border-top:1px solid var(--ink)}
-.ie-deck__hero-aside .ie-deck__eyebrow{margin-top:18px}
-.ie-deck__hero-aside p:last-child{font-size:.9rem;line-height:1.66;color:var(--muted);margin:0}
-.ie-deck__criteria,.ie-deck__guide,.ie-deck__faq{padding-top:85px}
-.ie-deck__section-head{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(270px,.72fr);gap:clamp(25px,4.5vw,75px);align-items:end;margin-bottom:32px}
-.ie-deck__section-head h2,.ie-deck__faq h2,.ie-deck__cta h2{font-size:clamp(2.15rem,3.15vw,3.2rem);line-height:1.12}
-.ie-deck__section-head>p{font-size:1rem;line-height:1.65;color:var(--muted);margin:0}
-.ie-deck__cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-.ie-deck__cards article{padding:26px;background:#fff;border-top:2px solid var(--forest)}
-.ie-deck__index{display:block;font-size:.75rem;font-weight:700;letter-spacing:.055em;color:var(--forest);text-transform:uppercase}
-.ie-deck__cards h3{font-size:1.1rem;margin:17px 0 10px}
-.ie-deck__cards p{font-size:.94rem;line-height:1.65;color:var(--muted);margin:0}
+.ie-deck__button{display:inline-flex;justify-content:center;align-items:center;gap:20px;min-height:50px;padding:12px 22px;border:1px solid var(--forest);font-size:.92rem;line-height:1.2;font-weight:650;text-decoration:none;transition:background-color .16s,color .16s,border-color .16s}
+.ie-deck__button--primary{background:var(--forest);color:#fff}
+.ie-deck__button--primary:hover{background:#414c28;border-color:#414c28}
+.ie-deck__button--outline{background:transparent;color:var(--ink)}
+.ie-deck__button--outline:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.ie-deck__proof{display:flex;gap:10px 22px;flex-wrap:wrap;list-style:none;padding:0;margin:26px 0 0;color:var(--muted);font-size:.82rem;line-height:1.45}
+.ie-deck__proof li{position:relative;padding-left:16px}
+.ie-deck__proof li:before{content:"";position:absolute;left:0;top:.56em;width:6px;height:6px;border-radius:50%;background:var(--sage)}
+.ie-deck__hero-aside{border-top:1px solid var(--ink);padding-top:18px}
+.ie-deck__hero-aside .ie-deck__eyebrow{margin-bottom:12px}
+.ie-deck__hero-aside h2{font-size:clamp(1.55rem,2vw,2rem);line-height:1.15;margin-bottom:14px}
+.ie-deck__hero-aside p:not(.ie-deck__eyebrow){font-size:.92rem;line-height:1.66;color:var(--muted);margin:0 0 18px}
+.ie-deck__text-link{color:#fff;text-decoration:underline;text-underline-offset:4px;font-weight:600;font-size:.91rem}
+.ie-deck__text-link--dark{color:var(--ink)}
+.ie-deck__families{padding-top:78px}
+.ie-deck__section-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:clamp(30px,5vw,82px);align-items:end;margin-bottom:30px}
+.ie-deck__section-head h2,.ie-deck__faq h2,.ie-deck__cta h2,.ie-deck__catalog-lead h2{font-size:clamp(2.1rem,3vw,3.1rem);line-height:1.1}
+.ie-deck__section-head>p,.ie-deck__catalog-lead>p{font-size:.96rem;line-height:1.68;color:var(--muted);margin:0}
+.ie-deck__family-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ie-deck__family-card{display:flex;flex-direction:column;min-height:100%;padding:28px;background:#fff;border-top:2px solid var(--forest)}
+.ie-deck__index{display:block;font-size:.73rem;font-weight:700;letter-spacing:.055em;color:var(--forest);text-transform:uppercase}
+.ie-deck__family-card h3{font:500 clamp(1.45rem,1.7vw,1.85rem)/1.16 "Source Serif 4",Georgia,serif;margin:18px 0 13px}
+.ie-deck__family-card>p{font-size:.92rem;line-height:1.65;color:var(--muted);margin:0 0 23px}
+.ie-deck__family-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.ie-deck__family-links a{display:inline-flex;align-items:center;min-height:34px;padding:7px 10px;border:1px solid var(--line);color:var(--ink);font-size:.78rem;line-height:1.25;text-decoration:none;background:var(--bone)}
+.ie-deck__family-links a:hover{border-color:var(--forest);color:var(--forest)}
+.ie-deck__catalog-lead{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.7fr);gap:clamp(30px,5vw,82px);align-items:end;margin-top:78px;padding:0 0 28px;border-bottom:1px solid var(--line)}
+.ie-deck__guide,.ie-deck__scope{padding-top:82px}
 .ie-deck__guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.ie-deck__guide-grid article{padding:27px;background:#ecebe5}
-.ie-deck__guide-grid h3{font:500 clamp(1.35rem,1.8vw,1.8rem)/1.15 "Source Serif 4",Georgia,serif;margin:0 0 14px}
-.ie-deck__guide-grid p{font-size:.94rem;line-height:1.65;color:var(--muted);margin:0}
-.ie-deck__faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(30px,6vw,100px);padding-bottom:90px}
+.ie-deck__guide-grid article{padding:28px;background:var(--stone)}
+.ie-deck__guide-grid h3{font:500 clamp(1.35rem,1.7vw,1.75rem)/1.16 "Source Serif 4",Georgia,serif;margin:14px 0}
+.ie-deck__guide-grid p{font-size:.93rem;line-height:1.66;color:var(--muted);margin:0}
+.ie-deck__scope-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ie-deck__scope-grid article{padding:27px;border:1px solid var(--line);background:#fff}
+.ie-deck__scope-grid h3{font-size:1.06rem;margin:15px 0 10px}
+.ie-deck__scope-grid p{font-size:.91rem;line-height:1.64;color:var(--muted);margin:0}
+.ie-deck__faq{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(36px,7vw,110px);padding:88px 0}
 .ie-deck__faq-items{border-top:1px solid var(--ink)}
 .ie-deck__faq details{border-bottom:1px solid var(--line)}
 .ie-deck__faq summary{position:relative;cursor:pointer;padding:19px 30px 19px 0;font-weight:650;line-height:1.45}
-.ie-deck__faq details p{font-size:.94rem;color:var(--muted);line-height:1.68;margin:0;padding:0 26px 22px 0}
-.ie-deck__cta{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.65fr);gap:clamp(35px,6vw,100px);align-items:center;background:var(--ink);color:#fff;padding:clamp(30px,5vw,70px)}
+.ie-deck__faq details p{font-size:.93rem;color:var(--muted);line-height:1.68;margin:0;padding:0 26px 22px 0}
+.ie-deck__cta{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(250px,.58fr);gap:clamp(35px,6vw,100px);align-items:center;background:var(--ink);color:#fff;padding:clamp(34px,5vw,68px)}
 .ie-deck__cta h2{color:#fff}
 .ie-deck__cta .ie-deck__eyebrow{color:#c6d4a4}
-.ie-deck__cta p:not(.ie-deck__eyebrow){line-height:1.65;color:#e2e5dc;margin:22px 0 0;max-width:900px}
+.ie-deck__cta p:not(.ie-deck__eyebrow){line-height:1.65;color:#e2e5dc;margin:20px 0 0;max-width:820px}
 .ie-deck__cta-actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
-.ie-deck__button--light{background:var(--bone);color:var(--ink);border-color:var(--bone)}.ie-deck__button--light:hover{background:#e0e6d0}
-.ie-deck__text-link{color:#fff;text-decoration:underline;text-underline-offset:4px;font-weight:600;font-size:.91rem}
-.ie-deck a:focus-visible,.ie-deck summary:focus-visible{outline:3px solid #8a9a5b;outline-offset:4px}
-#ie-deck-products{scroll-margin-top:100px}
+.ie-deck__button--light{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+.ie-deck__button--light:hover{background:#e0e6d0}
+.ie-deck a:focus-visible,.ie-deck summary:focus-visible{outline:3px solid var(--sage);outline-offset:4px}
+#ie-deck-family,#ie-deck-products{scroll-margin-top:100px}
 
-/* Keep the native Shopify product grid aligned to the same page rhythm. */
-.collection-natural-wood-decking .product-grid-container{--padding-block-start:46px!important;--padding-block-end:72px!important}
-.collection-natural-wood-decking .collection-wrapper{row-gap:16px}
-.collection-natural-wood-decking .main-collection-grid{width:min(calc(100% - 64px),1600px);margin-inline:auto}
-.collection-natural-wood-decking .facets-block-wrapper{width:min(calc(100% - 64px),1600px);margin-inline:auto}
+/* Native Shopify product grid · visually integrated with the commercial hub */
+.collection-natural-wood-decking .product-grid-container{--padding-block-start:28px!important;--padding-block-end:62px!important;background:var(--color-background)}
+.collection-natural-wood-decking .collection-wrapper{row-gap:18px}
+.collection-natural-wood-decking .main-collection-grid{width:min(calc(100% - 64px),1440px);margin-inline:auto}
+.collection-natural-wood-decking .facets-block-wrapper{width:min(calc(100% - 64px),1440px);margin-inline:auto}
+.collection-natural-wood-decking .product-grid .product-card .group-block{align-items:center!important;text-align:center!important;padding-top:4px}
+.collection-natural-wood-decking .product-grid .product-card .text-block,
+.collection-natural-wood-decking .product-grid .product-card product-price{width:100%!important;text-align:center!important;justify-content:center}
+.collection-natural-wood-decking .product-grid .product-card .text-block p{margin-inline:auto;text-align:center!important}
+.collection-natural-wood-decking .product-grid .product-card .unit-price{display:none!important}
+.collection-natural-wood-decking .product-grid .product-card product-price{display:block;margin-top:5px;font-size:.94rem;line-height:1.4}
+.collection-natural-wood-decking .product-grid__item{padding-bottom:14px}
 
 @media(max-width:1100px){
-  .ie-deck__cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ie-deck__family-grid{grid-template-columns:1fr 1fr}
+  .ie-deck__family-card:last-child{grid-column:1/-1}
+  .ie-deck__scope-grid{grid-template-columns:1fr 1fr}
+  .ie-deck__scope-grid article:last-child{grid-column:1/-1}
 }
 @media(max-width:749px){
   .ie-deck__wrap{width:calc(100% - 32px);padding:14px 0 0}
+  .ie-deck__wrap--post{padding-top:0;padding-bottom:48px}
   .ie-deck__breadcrumb{margin-bottom:22px}
-  .ie-deck__hero,.ie-deck__section-head,.ie-deck__faq,.ie-deck__cta{grid-template-columns:1fr}
-  .ie-deck__hero{gap:30px;padding:0 0 50px}
-  .ie-deck h1{font-size:clamp(2.25rem,9vw,3rem)}
+  .ie-deck__hero,.ie-deck__section-head,.ie-deck__catalog-lead,.ie-deck__faq,.ie-deck__cta{grid-template-columns:1fr}
+  .ie-deck__hero{gap:34px;padding:0 0 48px}
+  .ie-deck h1{font-size:clamp(2.3rem,10vw,3.15rem)}
   .ie-deck__lead{line-height:1.56;margin-top:18px}
-  .ie-deck__actions{justify-content:center}
-  .ie-deck__button{min-width:0}
-  .ie-deck__criteria,.ie-deck__guide{padding-top:60px}
-  .ie-deck__section-head{gap:15px;margin-bottom:22px}
-  .ie-deck__section-head h2,.ie-deck__faq h2,.ie-deck__cta h2{font-size:clamp(2rem,8vw,2.6rem)}
-  .ie-deck__cards,.ie-deck__guide-grid{grid-template-columns:1fr;gap:14px}
-  .ie-deck__faq{gap:20px;padding-top:65px;padding-bottom:65px}
-  .ie-deck__cta{margin:0 -16px;padding:42px 24px;gap:26px}
-  .ie-deck__cta-actions{align-items:center}
-  .ie-deck__cta .ie-deck__button{width:100%;text-align:center}
-  #ie-deck-products{scroll-margin-top:70px}
-  .collection-natural-wood-decking .product-grid-container{--padding-block-start:34px!important;--padding-block-end:52px!important}
+  .ie-deck__actions{display:grid;grid-template-columns:1fr}
+  .ie-deck__button{width:100%;min-width:0}
+  .ie-deck__proof{display:grid;gap:8px}
+  .ie-deck__families,.ie-deck__guide,.ie-deck__scope{padding-top:56px}
+  .ie-deck__section-head{gap:14px;margin-bottom:22px}
+  .ie-deck__section-head h2,.ie-deck__faq h2,.ie-deck__cta h2,.ie-deck__catalog-lead h2{font-size:clamp(2rem,8.5vw,2.65rem)}
+  .ie-deck__family-grid,.ie-deck__guide-grid,.ie-deck__scope-grid{grid-template-columns:1fr;gap:13px}
+  .ie-deck__family-card:last-child,.ie-deck__scope-grid article:last-child{grid-column:auto}
+  .ie-deck__family-card{padding:24px}
+  .ie-deck__catalog-lead{gap:14px;margin-top:58px;padding-bottom:23px}
+  .ie-deck__faq{gap:20px;padding:62px 0}
+  .ie-deck__cta{margin:0 -16px;padding:42px 24px;gap:28px}
+  .ie-deck__cta-actions{align-items:stretch}
+  #ie-deck-family,#ie-deck-products{scroll-margin-top:70px}
+  .collection-natural-wood-decking .product-grid-container{--padding-block-start:20px!important;--padding-block-end:46px!important}
   .collection-natural-wood-decking .main-collection-grid,
   .collection-natural-wood-decking .facets-block-wrapper{width:100%;margin-inline:0}
 }
 @media(prefers-reduced-motion:reduce){.ie-deck__button{transition:none}}
-
-
-/* 2026-10-22 · Natural decking collection cards: centered content + one visible price.
-   Pricing data remains untouched; the unit price is only hidden visually in this collection grid. */
-.collection-natural-wood-decking .product-grid .product-card .group-block{
-  align-items:center!important;
-  text-align:center!important;
-}
-.collection-natural-wood-decking .product-grid .product-card .text-block,
-.collection-natural-wood-decking .product-grid .product-card product-price{
-  width:100%!important;
-  text-align:center!important;
-  justify-content:center;
-}
-.collection-natural-wood-decking .product-grid .product-card .text-block p{
-  margin-inline:auto;
-  text-align:center!important;
-}
-.collection-natural-wood-decking .product-grid .product-card .unit-price{
-  display:none!important;
-}
-.collection-natural-wood-decking .product-grid .product-card product-price{
-  display:block;
-  margin-top:4px;
-  font-size:.94rem;
-  line-height:1.4;
-}
