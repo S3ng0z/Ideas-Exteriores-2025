@@ -53,7 +53,7 @@
       "type": "ie-services-cards",
       "settings": {
         "eyebrow": "Sistema europeo · Guía completa",
-        "heading": "Cuatro guías para pasar de la denominación comercial a una solución verificable",
+        "heading": "Cuatro guías para elegir y comprender la madera apilada",
         "intro": "<p>La página general ordena la decisión y deriva cada tema a una guía específica. El objetivo es distinguir la lógica del sistema de las prestaciones que solo pueden atribuirse a una composición, un fabricante, una documentación y un proyecto concretos.</p>"
       },
       "blocks": {
@@ -62,7 +62,7 @@
           "settings": {
             "index": "01 · Fundamentos",
             "heading": "Qué es y cómo funciona",
-            "text": "<p>Comprende la relación entre la pieza exterior de madera, la capa técnica interior, el aislamiento y las instalaciones; qué función puede asumir cada elemento y por qué juntas, huecos y movimientos deben resolverse como parte del sistema completo.</p>",
+            "text": "<p>Comprende cómo los perfiles de madera mecanizados se ensamblan por hiladas, qué función tienen sus juntas, esquinas y fijaciones y cuándo puede añadirse aislamiento interior.</p>",
             "link_1_label": "Abrir guía",
             "link_1": "/pages/european-timber-system-how-it-works",
             "link_2_label": "",
