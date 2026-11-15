@@ -281,7 +281,8 @@
         "e1": {
           "type": "service",
           "settings": {
-            "image_alt": "",
+            "image": "shopify://shop_images/Precision-Milled_Timber_by_the_Woodland_Cabin.webp",
+            "image_alt": "Precision-Milled Timber by the Woodland Cabin",
             "index": "01 · Trazabilidad",
             "heading": "Pedir origen, prestaciones y documentación del producto",
             "text": "<p>Conviene disponer de fichas técnicas, declaraciones de prestaciones cuando correspondan, identificación de especies y productos, documentación de tratamientos y certificaciones de cadena de custodia cuando formen parte de la especificación o del contrato.</p>",
@@ -296,7 +297,8 @@
         "e2": {
           "type": "service",
           "settings": {
-            "image_alt": "",
+            "image": "shopify://shop_images/Precision-Milled_Timber_Home_Components.webp",
+            "image_alt": "Precision-Milled Timber Home Components",
             "index": "02 · Proceso",
             "heading": "Prefabricar puede reducir recortes, pero el transporte también cuenta",
             "text": "<p>El mecanizado y la preparación en taller pueden ordenar el montaje y aprovechar mejor el material. Para comparar alternativas deben incluirse embalaje, distancias de transporte, medios de elevación, residuos y futuras renovaciones de acabados.</p>",
@@ -311,7 +313,8 @@
         "e3": {
           "type": "service",
           "settings": {
-            "image_alt": "",
+            "image": "shopify://shop_images/Timber_House_Envelope_Cutaway.webp",
+            "image_alt": "Timber House Envelope Cutaway",
             "index": "03 · Uso",
             "heading": "La envolvente completa determina el comportamiento energético",
             "text": "<p>Añadir aislamiento interior puede mejorar prestaciones, pero el resultado depende de transmitancias, puentes térmicos, hermeticidad, huecos, control solar, ventilación e instalaciones. La sostenibilidad no se deduce de un espesor aislante ni del uso de madera por separado.</p>",
