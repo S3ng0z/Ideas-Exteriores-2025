@@ -60,15 +60,12 @@
     },
     "principles": {
       "type": "ie-services-cards",
-      "settings": {
-        "eyebrow": "01 · Aplicaciones",
-        "heading": "El uso del edificio determina la solución, no solo el aspecto de madera",
-        "intro": "<p>Una vivienda habitual, una segunda residencia y un anexo tienen exigencias distintas. Además, a fecha de esta revisión no existe una colección pública específica de Ideas Exteriores dedicada a modelos confirmados como «sistema europeo», por lo que no se debe presentar ningún producto actual como compatible sin validación técnica.</p>"
-      },
       "blocks": {
         "home": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Modern_Timber_House_with_Garden_Terrace.webp",
+            "image_alt": "Modern Timber House with Garden Terrace",
             "index": "01 · Vivienda habitual",
             "heading": "Viviendas permanentes: envolvente y proyecto completos",
             "text": "<p>Una vivienda permanente requiere una solución completa que justifique estructura, energía, salubridad, incendio, acústica, ventilación e instalaciones. El muro exterior es solo una parte del edificio y no garantiza por sí solo habitabilidad ni cumplimiento.</p>",
@@ -83,6 +80,8 @@
         "secondary": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Serene_Mountain_Cabin_Retreat.webp",
+            "image_alt": "Serene Mountain Cabin Retreat",
             "index": "02 · Segunda residencia",
             "heading": "Viviendas vacacionales y refugios: el uso real sigue contando",
             "text": "<p>El uso estacional puede cambiar objetivos de confort y equipamiento, pero no elimina las obligaciones urbanísticas o técnicas que correspondan. Deben definirse ocupación, clima, periodos de uso y alcance real del edificio.</p>",
@@ -97,6 +96,8 @@
         "annex": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Modern_Garden_Office_in_Bloom.webp",
+            "image_alt": "Modern Garden Office in Bloom",
             "index": "03 · Anexos",
             "heading": "Estudios, oficinas y anexos: viabilidad caso por caso",
             "text": "<p>Estudios, oficinas y anexos pueden estudiarse si geometría, acceso, cimentación, cargas y requisitos del uso encajan. No debe trasladarse automáticamente una caseta o producto auxiliar a uso habitable.</p>",
@@ -111,6 +112,8 @@
         "models": {
           "type": "service",
           "settings": {
+            "image": "shopify://shop_images/Scandinavian_Garden_Studio_Retreat.webp",
+            "image_alt": "Scandinavian Garden Studio Retreat",
             "index": "04 · Modelos",
             "heading": "Modelos comercializados: solo referencias verificadas",
             "text": "<p>La oferta debe corresponder a un modelo y configuración documentados. No debe considerarse compatible por su apariencia un producto diseñado para un sistema constructivo diferente.</p>",
@@ -128,7 +131,12 @@
         "secondary",
         "annex",
         "models"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "01 · Aplicaciones",
+        "heading": "El uso del edificio determina la solución, no solo el aspecto de madera",
+        "intro": "<p>Una vivienda habitual, una segunda residencia y un anexo tienen exigencias distintas. Además, a fecha de esta revisión no existe una colección pública específica de Ideas Exteriores dedicada a modelos confirmados como «sistema europeo», por lo que no se debe presentar ningún producto actual como compatible sin validación técnica.</p>"
+      }
     },
     "process": {
       "type": "ie-services-process",
