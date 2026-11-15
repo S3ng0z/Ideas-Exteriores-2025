@@ -39,13 +39,13 @@
         "d"
       ],
       "settings": {
-        "eyebrow": "Paneles SIP · 04",
-        "heading": "Aplicaciones y modelos compatibles con paneles SIP",
-        "lead": "<p>SIP puede utilizarse en viviendas y en construcciones auxiliares, pero el uso previsto determina exigencias, composición, instalaciones y documentación. Esta guía conecta cada aplicación con las familias reales del catálogo y explica cómo comparar alcance y prestaciones antes de elegir modelo.</p>",
+        "eyebrow": "Paneles SIP · Guía 04 / 04",
+        "heading": "Casas, estudios y casetas: dónde utilizar paneles SIP",
+        "lead": "<p>Los paneles SIP permiten estudiar soluciones para viviendas, oficinas, estudios de jardín y construcciones auxiliares. Elegir el modelo depende del uso autorizado, la configuración disponible, la parcela y el nivel de suministro. Aquí encontrarás las familias de Ideas Exteriores y un método para comparar propuestas sin confundir aislamiento con habitabilidad.</p>",
         "primary_label": "Ver casas con paneles SIP",
         "primary_link": "/collections/sip-panel-houses",
-        "secondary_label": "Solicitar asesoramiento",
-        "secondary_link": "/pages/contact-ideas-exteriores",
+        "secondary_label": "Visión general del sistema",
+        "secondary_link": "/pages/sip-panels-system",
         "summary_title": "Elige primero por uso"
       }
     },
@@ -53,8 +53,8 @@
       "type": "ie-services-cards",
       "settings": {
         "eyebrow": "01 · Aplicaciones",
-        "heading": "El mismo sistema no convierte todos los edificios en el mismo producto",
-        "intro": "<p>Una vivienda permanente, una oficina climatizada y una caseta de almacenamiento pueden usar SIP, pero tienen requisitos funcionales y regulatorios muy distintos.</p>"
+        "heading": "Tres familias SIP con requisitos y alcances distintos",
+        "intro": "<p>Las mismas técnicas de panelización pueden emplearse en edificios diferentes; no todas las familias comparten proyecto, equipamiento, autorizaciones o grado de terminación.</p>"
       },
       "blocks": {
         "home": {
@@ -63,8 +63,8 @@
             "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_001.png",
             "image_alt": "Vivienda contemporánea diseñada con sistema SIP",
             "index": "01 · Vivienda",
-            "heading": "Casas SIP: proyecto de edificio completo",
-            "text": "<p>La vivienda requiere justificar estructura, energía, salubridad, incendio, acústica, instalaciones y condiciones urbanísticas. El panel es una parte de la solución; cimentación, cubierta, fachada, carpinterías y sistemas técnicos completan el edificio.</p>",
+            "heading": "Casas con panel SIP",
+            "text": "<p>Viviendas prefabricadas mediante un sistema estructural aislante. Requieren proyecto específico, cimentación, estudio de envolvente, instalaciones y justificación normativa para su ubicación y uso.</p>",
             "link_1_label": "Ver casas SIP",
             "link_1": "/collections/sip-panel-houses",
             "link_2_label": "",
@@ -79,8 +79,8 @@
             "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_002.png",
             "image_alt": "Estudio u oficina de jardín con sistema SIP",
             "index": "02 · Trabajo y estancia",
-            "heading": "Estudios y oficinas: confort durante muchas horas de uso",
-            "text": "<p>Para trabajo habitual importan aislamiento, control solar, ventilación, acústica, iluminación, instalaciones y uso urbanístico. No debe equipararse automáticamente con una caseta de jardín.</p>",
+            "heading": "Estudios y oficinas de jardín",
+            "text": "<p>Espacios para trabajo o estancia que deben definir ventilación, iluminación, control térmico y acústico, electricidad y uso permitido. El equipamiento no se presupone incluido.</p>",
             "link_1_label": "Ver estudios y oficinas SIP",
             "link_1": "/collections/sip-offices-and-studios",
             "link_2_label": "",
@@ -95,8 +95,8 @@
             "image": "shopify://shop_images/structural-insulated-panel-case-studies-reference-projects_003.png",
             "image_alt": "Caseta auxiliar construida con paneles SIP",
             "index": "03 · Uso auxiliar",
-            "heading": "Casetas y anexos: especificación proporcional al uso",
-            "text": "<p>Almacenamiento, taller o espacio ocasional pueden necesitar una solución diferente a la vivienda. Deben definirse cargas, humedad, ventilación, acabados, seguridad y permisos según el uso real.</p>",
+            "heading": "Casetas SIP Smart Fit y Compact Kit",
+            "text": "<p>Soluciones auxiliares para jardín y almacenamiento con modalidades y componentes propios. Un kit de caseta no debe anunciarse como vivienda sin transformación y validación de proyecto.</p>",
             "link_1_label": "Ver SIP Smart Fit",
             "link_1": "/collections/sip-smartfit-sheds",
             "link_2_label": "Ver SIP Compact Kit",
@@ -119,32 +119,32 @@
           "type": "step",
           "settings": {
             "number": "01",
-            "heading": "Definir el uso legal y real",
-            "text": "Determinar si será vivienda, oficina, estancia auxiliar, taller o almacenamiento y revisar las condiciones urbanísticas del emplazamiento."
+            "heading": "Definir uso y autorización",
+            "text": "Distinguir vivienda, estudio, oficina y anexo; comprobar emplazamiento, permisos, ocupación y condiciones de parcela."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
             "number": "02",
-            "heading": "Comparar prestaciones necesarias",
-            "text": "Estructura, aislamiento, fuego, acústica, ventilación, humedad, instalaciones y acabados cambian según la ocupación y el clima."
+            "heading": "Revisar el modelo real",
+            "text": "Comprobar dimensiones, superficie útil frente a construida, configuración SIP y opciones efectivamente compatibles."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
             "number": "03",
-            "heading": "Comparar el alcance del suministro",
-            "text": "Distinguir paneles o kit, kit con montaje, cubierta y fachada, envolvente cerrada y solución llave en mano; no comparar precios con incluidos diferentes."
+            "heading": "Solicitar el alcance detallado",
+            "text": "Identificar paneles, cubierta, suelo, carpinterías, sellados, transporte, montaje, acabados e instalaciones incluidas."
           }
         },
         "s4": {
           "type": "step",
           "settings": {
             "number": "04",
-            "heading": "Validar modelo, parcela y presupuesto",
-            "text": "Comprobar dimensiones, transporte, accesos, medios de descarga, cimentación, licencias, proyecto y partidas excluidas antes de contratar."
+            "heading": "Cerrar viabilidad y costes adicionales",
+            "text": "Confirmar estudio del terreno, cimentación, acceso de camión o grúa, licencias, acometidas, impuestos y obligaciones del cliente."
           }
         }
       },
@@ -156,8 +156,8 @@
       ],
       "settings": {
         "eyebrow": "02 · Elección",
-        "heading": "Del uso a un modelo compatible, no al revés",
-        "intro": "<p>Los catálogos son un punto de partida. La compatibilidad final depende de emplazamiento, prestaciones, alcance y documentación.</p>"
+        "heading": "Elige primero la función, después el modelo",
+        "intro": "<p>El catálogo ayuda a comparar referencias reales, pero la viabilidad definitiva se determina por condiciones de uso, parcela, solución constructiva y oferta.</p>"
       }
     },
     "criteria": {
@@ -166,29 +166,29 @@
         "c1": {
           "type": "principle",
           "settings": {
-            "heading": "Panel o kit",
-            "text": "Puede incluir solo estructura y componentes del sistema. Confirmar transporte, herrajes, membranas, proyecto, montaje, cubierta y revestimientos."
+            "heading": "Suministro de paneles o kit",
+            "text": "Incluye las piezas descritas en la lista de suministro. No implica cimentación, montaje, servicios, instalaciones ni acabados salvo que consten expresamente."
           }
         },
         "c2": {
           "type": "principle",
           "settings": {
-            "heading": "Kit + montaje",
-            "text": "Añade mano de obra estructural, pero no implica necesariamente edificio terminado. Revisar qué trabajos previos y posteriores quedan a cargo del cliente."
+            "heading": "Kit con montaje",
+            "text": "Se añade ejecución de las partidas contratadas. No equivale automáticamente a fachada y cubierta terminadas ni a un espacio listo para usar."
           }
         },
         "c3": {
           "type": "principle",
           "settings": {
-            "heading": "Envolvente terminada",
-            "text": "Puede incorporar cubierta, fachada o carpinterías según oferta. Aclarar nivel de estanqueidad, acabados, instalaciones y pruebas incluidas."
+            "heading": "Envolvente cerrada",
+            "text": "Puede incluir carpinterías, fachada o cubierta acabada según oferta. Debe definirse si incorpora suelo, ventilación, instalaciones y pruebas."
           }
         },
         "c4": {
           "type": "principle",
           "settings": {
-            "heading": "Llave en mano",
-            "text": "Debe describir de forma contractual cimentación, proyecto, licencias o gestión, instalaciones, acabados, transporte, impuestos, acometidas, dirección de obra y exclusiones."
+            "heading": "Construcción completa",
+            "text": "Es una modalidad que debe detallarse y confirmarse en presupuesto: proyecto, licencias, cimentación, instalaciones, acabados, transporte y acometidas pueden tener responsables distintos."
           }
         }
       },
@@ -200,7 +200,7 @@
       ],
       "settings": {
         "eyebrow": "03 · Alcance comercial",
-        "heading": "El precio solo es comparable cuando los incluidos también lo son"
+        "heading": "Qué significa realmente cada modalidad de suministro"
       }
     },
     "faq": {
@@ -209,22 +209,22 @@
         "q1": {
           "type": "question",
           "settings": {
-            "question": "¿Qué aplicaciones SIP ofrece actualmente Ideas Exteriores?",
-            "answer": "<p>El catálogo incluye familias de casas SIP, estudios y oficinas SIP y casetas SIP. La disponibilidad concreta, medidas y características deben comprobarse en cada colección y ficha de producto.</p>"
+            "question": "¿Qué colecciones SIP puedo consultar?",
+            "answer": "<p>Puedes explorar casas con paneles SIP, estudios y oficinas SIP, casetas SIP Smart Fit y kits SIP Compact Kit. Cada ficha confirma modelos, características y configuraciones disponibles.</p>"
           }
         },
         "q2": {
           "type": "question",
           "settings": {
-            "question": "¿Una caseta SIP puede convertirse en vivienda?",
-            "answer": "<p>No debe asumirse. El uso residencial exige proyecto, prestaciones, instalaciones y autorizaciones específicas; una referencia auxiliar puede no estar diseñada para ello.</p>"
+            "question": "¿Una caseta SIP es apta automáticamente para vivienda?",
+            "answer": "<p>No. Un anexo o kit auxiliar no adquiere condición residencial por llevar paneles aislados; el uso habitacional requiere una solución y un proyecto compatibles con las exigencias aplicables.</p>"
           }
         },
         "q3": {
           "type": "question",
           "settings": {
-            "question": "¿Puedo personalizar un modelo?",
-            "answer": "<p>Depende de la referencia y del alcance comercial. Cualquier cambio de huecos, geometría o instalaciones debe revisarse antes de fabricación porque puede afectar estructura, despiece y precio.</p>"
+            "question": "¿Se pueden mover ventanas y cambiar dimensiones?",
+            "answer": "<p>Solo dentro de opciones aprobadas. Cambiar huecos o geometría puede modificar cálculo estructural, despiece, estanqueidad, transporte y coste.</p>"
           }
         },
         "q4": {
@@ -244,8 +244,8 @@
         "q6": {
           "type": "question",
           "settings": {
-            "question": "¿Qué información facilita un presupuesto útil?",
-            "answer": "<p>Ubicación, uso, superficie, geometría o planos, estado de la parcela, accesos, nivel de acabado, instalaciones previstas y si necesitas kit, montaje, envolvente o solución completa.</p>"
+            "question": "¿Qué datos necesito para recibir asesoría y presupuesto?",
+            "answer": "<p>Uso, ubicación, superficie, modelo de interés, parcela y accesos, nivel de acabado, instalaciones previstas y alcance deseado: kit, montaje o construcción más completa.</p>"
           }
         }
       },
@@ -259,7 +259,7 @@
       ],
       "settings": {
         "eyebrow": "FAQ",
-        "heading": "Aplicaciones y precios: comparar sin mezclar productos distintos",
+        "heading": "Compatibilidad y presupuesto: respuestas prácticas",
         "intro": "<p>La decisión comercial debe mantener el mismo rigor que la técnica: uso definido, alcance comparable y documentación clara.</p>"
       }
     },
@@ -267,8 +267,8 @@
       "type": "ie-services-cta",
       "settings": {
         "eyebrow": "Siguiente paso",
-        "heading": "Empieza por el uso, la parcela y el alcance",
-        "text": "<p>Indícanos qué quieres construir, dónde, qué superficie necesitas y hasta qué nivel quieres contratar. Te orientaremos hacia la familia SIP adecuada y las comprobaciones necesarias.</p>",
+        "heading": "Encuentra tu casa, estudio o caseta SIP",
+        "text": "<p>Comparte uso, municipio, superficie, plazos orientativos y qué trabajos quieres contratar. Te orientaremos entre las colecciones disponibles y las validaciones necesarias antes de formalizar el presupuesto.</p>",
         "label": "Consultar mi proyecto",
         "link": "/pages/contact-ideas-exteriores"
       }
