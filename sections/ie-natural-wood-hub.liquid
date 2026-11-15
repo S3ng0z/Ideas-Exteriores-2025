@@ -1,6 +1,6 @@
 {{ 'ie-natural-wood-hub.css' | asset_url | stylesheet_tag }}
 
-<section class="ie-deck" aria-labelledby="ie-deck-title">
+<section class="ie-deck ie-deck--intro" aria-labelledby="ie-deck-title">
   <div class="ie-deck__wrap">
     {% render 'ie-breadcrumb',
       breadcrumb_object: collection,
@@ -11,86 +11,84 @@
     %}
 
     <header class="ie-deck__hero">
-      <div>
-        <p class="ie-deck__eyebrow">IDEAS EXTERIORES · Tarimas de exterior</p>
-        <h1 id="ie-deck-title">Tarimas de madera natural para exterior</h1>
-        <p class="ie-deck__lead">Compara especies y soluciones para terrazas, jardines, porches y zonas de piscina. Te ayudamos a elegir según exposición, uso, estabilidad, mantenimiento y presupuesto, sin prometer un comportamiento idéntico para todas las maderas.</p>
+      <div class="ie-deck__hero-main">
+        <p class="ie-deck__eyebrow">Tarimas de exterior · Gama Natura</p>
+        <h1 id="ie-deck-title">Tarima de madera natural y bambú para exterior</h1>
+        <p class="ie-deck__lead">Una selección de maderas tropicales, maderas tratadas o termomodificadas y bambú compactado para terrazas, porches, jardines y espacios exteriores. Compara material, perfil, acabado, mantenimiento y sistema de instalación antes de decidir.</p>
+
         <div class="ie-deck__actions">
-          <a class="ie-deck__button ie-deck__button--primary" href="#ie-deck-products">Ver las {{ collection.products_count }} tarimas <span aria-hidden="true">↓</span></a>
-          <a class="ie-deck__button ie-deck__button--outline" href="/pages/contact-ideas-exteriores">Consultar mi proyecto <span aria-hidden="true">→</span></a>
+          <a class="ie-deck__button ie-deck__button--primary" href="#ie-deck-products">Ver las {{ collection.products_count }} opciones <span aria-hidden="true">↓</span></a>
+          <a class="ie-deck__button ie-deck__button--outline" href="/pages/contact-ideas-exteriores">Pedir recomendación <span aria-hidden="true">→</span></a>
         </div>
+
+        <ul class="ie-deck__proof" aria-label="Ventajas de la colección">
+          <li>Ficha técnica y dossier en cada producto</li>
+          <li>Opciones con fijación oculta</li>
+          <li>Suministro e instalación según proyecto</li>
+        </ul>
       </div>
 
-      <aside class="ie-deck__hero-aside" aria-label="Selección técnica y comercial">
-        <p class="ie-deck__eyebrow">Selección técnica y comercial</p>
-        <p>En esta colección encontrarás Ipé, Iroko, Itaúba, Cumarú, Garapa, Teca y Pino tratado CL4, además de Bamboo X, que es bambú densificado y no una especie de madera maciza. La disponibilidad, las dimensiones, el perfil, el acabado y el precio se confirman en cada ficha y presupuesto.</p>
+      <aside class="ie-deck__hero-aside" aria-label="Cómo elegir">
+        <p class="ie-deck__eyebrow">Antes de comparar precios</p>
+        <h2>El material es solo una parte de la decisión</h2>
+        <p>La durabilidad real depende también de la exposición, la subestructura, el drenaje, la ventilación, las fijaciones y el mantenimiento. En cada ficha indicamos las condiciones documentadas para esa referencia.</p>
+        <a class="ie-deck__text-link ie-deck__text-link--dark" href="#ie-deck-family">Elegir por familia <span aria-hidden="true">↓</span></a>
       </aside>
     </header>
 
-    <section class="ie-deck__criteria" aria-label="Criterios para elegir tarima">
-      <div class="ie-deck__cards">
-        <article>
-          <span class="ie-deck__index">01 · ESPECIE Y USO</span>
-          <h3>Elige según el entorno</h3>
-          <p>Compara exposición solar, humedad, salinidad, tránsito, color y textura. No todas las especies ni tratamientos son adecuados para la misma condición de uso.</p>
-        </article>
-        <article>
-          <span class="ie-deck__index">02 · INSTALACIÓN</span>
-          <h3>La subestructura importa</h3>
-          <p>Comprueba drenaje, ventilación, separación del terreno, distancia entre apoyos, fijaciones y dilataciones de acuerdo con la solución y las instrucciones del fabricante.</p>
-        </article>
-        <article>
-          <span class="ie-deck__index">03 · CONSERVACIÓN</span>
-          <h3>Protege y mantén</h3>
-          <p>La madera exterior cambia de tonalidad con la intemperie. Inspección, limpieza y renovación del acabado dependen de la exposición y de la ficha técnica aplicada.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="ie-deck__guide" aria-labelledby="ie-deck-guide-title">
+    <section id="ie-deck-family" class="ie-deck__families" aria-labelledby="ie-deck-family-title">
       <div class="ie-deck__section-head">
         <div>
-          <p class="ie-deck__eyebrow">Cómo comparar tarimas</p>
-          <h2 id="ie-deck-guide-title">La tarima adecuada depende de la instalación, no solo de la especie</h2>
+          <p class="ie-deck__eyebrow">Elige por tipo de material</p>
+          <h2 id="ie-deck-family-title">Tres familias para empezar a comparar</h2>
         </div>
+        <p>La gama actual se organiza por naturaleza del material y tratamiento. Dentro de cada familia cambian las secciones, perfiles, acabados y condiciones de instalación.</p>
       </div>
 
-      <div class="ie-deck__guide-grid">
-        <article><h3>01 · Material y aspecto</h3><p>Compara madera tropical, pino tratado y bambú densificado. Comprueba tonalidad, perfil, dimensiones, procedencia y aptitud para el uso previsto en la ficha del producto.</p></article>
-        <article><h3>02 · Suelo y subestructura</h3><p>Una base estable, la evacuación del agua y la ventilación condicionan la durabilidad. El dimensionado, los apoyos, las separaciones y las fijaciones deben definirse para el sistema elegido.</p></article>
-        <article><h3>03 · Entorno y mantenimiento</h3><p>Valora exposición al sol, proximidad al agua, tránsito y cambios naturales de tono. Ningún acabado elimina la necesidad de inspección y conservación periódica.</p></article>
-        <article><h3>04 · Presupuesto completo</h3><p>Distingue material, accesorios, subestructura, desperdicio, transporte, instalación y tratamiento. Solo forman parte del precio los conceptos descritos en la oferta aceptada.</p></article>
+      <div class="ie-deck__family-grid">
+        <article class="ie-deck__family-card">
+          <span class="ie-deck__index">01 · Maderas tropicales</span>
+          <h3>Iroko, Elondo, Grapia y Louro Gamela</h3>
+          <p>Maderas macizas con carácter, tonalidad y propiedades propias de cada especie. La elección debe hacerse por referencia concreta, no por una promesa genérica de “madera tropical”.</p>
+          <div class="ie-deck__family-links">
+            <a href="/products/natura-iroko-p13-p14-tarima-exterior">Iroko</a>
+            <a href="/products/natura-elondo-tali-perfil-13">Elondo</a>
+            <a href="/products/natura-grapia-p10">Grapia</a>
+            <a href="/products/natura-louro-gamela-perfil-10">Louro Gamela</a>
+          </div>
+        </article>
+
+        <article class="ie-deck__family-card">
+          <span class="ie-deck__index">02 · Maderas modificadas y tratadas</span>
+          <h3>Pino, abeto y soluciones en autoclave</h3>
+          <p>Alternativas de conífera con modificación térmica o tratamiento en autoclave. Compara clase de uso, sección, acabado superficial y requisitos de protección de cortes.</p>
+          <div class="ie-deck__family-links">
+            <a href="/products/natura-pino-termotratado-tarima-exterior-de-madera">Pino termotratado</a>
+            <a href="/products/natura-abeto-termotratado">Abeto termotratado</a>
+            <a href="/products/natura-pino-autoclave-perfil-10-11">Pino autoclave P10/P11</a>
+            <a href="/products/natura-pino-autoclave-ranurado">Pino autoclave ranurado</a>
+          </div>
+        </article>
+
+        <article class="ie-deck__family-card">
+          <span class="ie-deck__index">03 · Bambú compactado</span>
+          <h3>Café, Caramelo y Caramelo Natural</h3>
+          <p>Tarimas de bambú compactado con perfiles y acabados diferenciados. Algunas referencias se suministran preaceitadas y otras sin aceitar; consulta la ficha antes de comparar mantenimiento.</p>
+          <div class="ie-deck__family-links">
+            <a href="/products/natura-bambu-cafe">Bambú Café</a>
+            <a href="/products/natura-bambu-caramelo">Bambú Caramelo</a>
+            <a href="/products/natura-bambu-caramelo-natural-tarima-exterior">Caramelo Natural</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="ie-deck__faq" aria-labelledby="ie-deck-faq-title">
+    <section class="ie-deck__catalog-lead" aria-labelledby="ie-deck-catalog-title">
       <div>
-        <p class="ie-deck__eyebrow">Preguntas frecuentes</p>
-        <h2 id="ie-deck-faq-title">Antes de elegir</h2>
+        <p class="ie-deck__eyebrow">Catálogo actual</p>
+        <h2 id="ie-deck-catalog-title">Compara productos, formatos y precios</h2>
       </div>
-      <div class="ie-deck__faq-items">
-        <details>
-          <summary>¿Qué tarima elegir para piscina o zona húmeda?</summary>
-          <p>Depende del contacto con agua, la ventilación, el acabado, el mantenimiento y las prestaciones declaradas. Compara las fichas y verifica la idoneidad y resistencia al deslizamiento exigibles en tu proyecto.</p>
-        </details>
-        <details>
-          <summary>¿El precio incluye instalación y subestructura?</summary>
-          <p>No deben darse por incluidas. Cada producto y presupuesto detalla el suministro; la base, la subestructura, los accesorios, la instalación y el transporte requieren confirmación expresa.</p>
-        </details>
-        <details>
-          <summary>¿La madera natural cambia de color?</summary>
-          <p>Sí, la exposición exterior puede modificar su tonalidad. La frecuencia de limpieza y renovación depende de la especie, las condiciones reales y las instrucciones del fabricante.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="ie-deck__cta" aria-label="Tratamientos de madera">
-      <div>
-        <p>Los precios mostrados en las fichas corresponden a la configuración comercial indicada. Transporte, preparación del soporte, instalación, recortes y tratamientos adicionales no se presumen incluidos. Solicita una valoración para conocer el alcance real.</p>
-      </div>
-      <div class="ie-deck__cta-actions">
-        <a class="ie-deck__button ie-deck__button--light" href="/pages/wood-treatment-protection">Tratamientos de madera <span aria-hidden="true">→</span></a>
-      </div>
+      <p>Abre cada producto para revisar sección, perfil, tratamiento, instalación, mantenimiento y documentación descargable. El precio mostrado corresponde a la variante o configuración publicada.</p>
     </section>
   </div>
 
@@ -98,5 +96,5 @@
 </section>
 
 {% schema %}
-{"name":"IE · Tarima natural","settings":[],"presets":[{"name":"IE · Tarima natural"}]}
+{"name":"IE · Tarima natural · Intro","settings":[],"presets":[{"name":"IE · Tarima natural · Intro"}]}
 {% endschema %}
