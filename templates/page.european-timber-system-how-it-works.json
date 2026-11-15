@@ -80,7 +80,8 @@
         "p2": {
           "type": "service",
           "settings": {
-            "image_alt": "",
+            "image": "shopify://shop_images/Timber_Wall_Exterior_Interior_Cutaway.webp",
+            "image_alt": "Timber Wall Exterior–Interior Cutaway",
             "index": "02 · Capa técnica",
             "heading": "Aislamiento e instalaciones se coordinan dentro del muro",
             "text": "<p>La zona interior permite incorporar subestructura, aislamiento, capas de control de aire y vapor cuando proceda, instalaciones y revestimiento. No existe una «cantidad de aislante» universal: la composición se define según clima, uso, prestaciones térmicas, humedad, fuego y acústica.</p>",
@@ -95,7 +96,8 @@
         "p3": {
           "type": "service",
           "settings": {
-            "image_alt": "",
+            "image": "shopify://shop_images/Modern_Timber_Cabin_Corner.webp",
+            "image_alt": "Modern Timber Cabin Corner",
             "index": "03 · Sistema completo",
             "heading": "Juntas, huecos y cubierta deben admitir el comportamiento higroscópico de la madera",
             "text": "<p>En construcciones derivadas del tronco, los encuentros deben mantener estabilidad y estanqueidad aunque cambien las dimensiones de la madera. Los sistemas nórdicos tradicionales contemplan asentamientos; existen productos industrializados no asentables, pero son tecnologías específicas y no deben atribuirse por defecto a esta solución comercial.</p>",
