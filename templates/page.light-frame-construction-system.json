@@ -41,13 +41,66 @@
       "settings": {
         "eyebrow": "Sistema constructivo · Entramado ligero",
         "heading": "Entramado ligero de madera para viviendas y espacios habitables",
-        "lead": "<p>El entramado ligero de madera —light timber frame— combina bastidores de montantes y soleras con tableros, fijaciones, aislamiento y capas de control para resolver estructura y envolvente de forma coordinada. La prefabricación puede trasladar trabajo al taller y ordenar el montaje, pero las prestaciones finales dependen de la composición, los encuentros, la ejecución y el proyecto concreto.</p>",
+        "lead": "<p>Construimos soluciones de madera mediante bastidores de montantes y soleras, tableros, uniones y capas de envolvente diseñadas como un conjunto. Descubre qué resuelve el sistema, cómo se especifica y qué datos necesitas para comparar modelos, montaje y presupuesto.</p>",
         "primary_label": "Ver casas de entramado ligero",
         "primary_link": "/collections/light-frame-houses",
         "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Guía del sistema"
       }
+    },
+    "matrix": {
+      "type": "ie-light-frame-matrix",
+      "settings": {
+        "eyebrow": "Mapa técnico · Entramado ligero",
+        "heading": "Qué debe quedar definido antes de elegir un modelo",
+        "intro": "<p>Una vivienda o anexo de entramado ligero no se especifica solo por la superficie y el acabado. Estas cuatro decisiones conectan el sistema con una oferta técnicamente comparable.</p>",
+        "note": "Esquema de definición. La solución final depende del proyecto, de la configuración comercial y de la documentación del fabricante."
+      },
+      "blocks": {
+        "item_1": {
+          "type": "component",
+          "settings": {
+            "number": "01",
+            "heading": "Estructura portante",
+            "role": "Esquema resistente",
+            "detail": "Montantes, soleras, dinteles, tableros de arriostramiento, uniones y anclajes dimensionados para las cargas y geometría del proyecto."
+          }
+        },
+        "item_2": {
+          "type": "component",
+          "settings": {
+            "number": "02",
+            "heading": "Envolvente y confort",
+            "role": "Solución por capas",
+            "detail": "Aislamiento, hermeticidad, control de vapor, barrera frente a la lluvia, fachada, cubierta y tratamiento de encuentros."
+          }
+        },
+        "item_3": {
+          "type": "component",
+          "settings": {
+            "number": "03",
+            "heading": "Fabricación y montaje",
+            "role": "Alcance industrializado",
+            "detail": "Qué se suministra como panel, kit o componente; secuencia de instalación, exigencias de la base y controles de recepción."
+          }
+        },
+        "item_4": {
+          "type": "component",
+          "settings": {
+            "number": "04",
+            "heading": "Presupuesto verificable",
+            "role": "Incluidos y excluidos",
+            "detail": "Diferenciar estructura, cerramientos, carpinterías, instalaciones, transporte, montaje, cimentación, licencias y acabados."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
     },
     "guides": {
       "type": "ie-services-cards",
@@ -233,6 +286,7 @@
   },
   "order": [
     "hero",
+    "matrix",
     "guides",
     "process",
     "confidence",

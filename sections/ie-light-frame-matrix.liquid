@@ -1,0 +1,62 @@
+{{ 'ie-light-frame-matrix.css' | asset_url | stylesheet_tag }}
+<section class="ie-services ie-light-frame-matrix" aria-labelledby="ie-frame-matrix-title-{{ section.id }}">
+  <div class="ie-services__inner">
+    <div class="ie-light-frame-matrix__layout">
+      <header class="ie-light-frame-matrix__header">
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-light-frame-matrix__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {% endif %}
+        <h2 id="ie-frame-matrix-title-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+        {% if section.settings.intro != blank %}
+          <div class="ie-light-frame-matrix__intro rte">{{ section.settings.intro }}</div>
+        {% endif %}
+        {% if section.settings.note != blank %}
+          <p class="ie-light-frame-matrix__note">{{ section.settings.note | escape }}</p>
+        {% endif %}
+      </header>
+      {% if section.blocks.size > 0 %}
+        <ol class="ie-light-frame-matrix__items">
+          {% for block in section.blocks %}
+            <li class="ie-light-frame-matrix__item" {{ block.shopify_attributes }}>
+              <span class="ie-light-frame-matrix__index" aria-hidden="true">{{ block.settings.number | escape }}</span>
+              <div class="ie-light-frame-matrix__item-main">
+                <h3>{{ block.settings.heading | escape }}</h3>
+                {% if block.settings.role != blank %}
+                  <p class="ie-light-frame-matrix__role">{{ block.settings.role | escape }}</p>
+                {% endif %}
+                {% if block.settings.detail != blank %}
+                  <p class="ie-light-frame-matrix__detail">{{ block.settings.detail | escape }}</p>
+                {% endif %}
+              </div>
+            </li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Entramado · Matriz",
+  "settings": [
+    {"type":"text","id":"eyebrow","label":"Antetítulo"},
+    {"type":"text","id":"heading","label":"Título","default":"Lectura técnica del sistema"},
+    {"type":"richtext","id":"intro","label":"Introducción"},
+    {"type":"textarea","id":"note","label":"Nota de alcance"}
+  ],
+  "blocks": [
+    {
+      "type":"component",
+      "name":"Elemento técnico",
+      "settings":[
+        {"type":"text","id":"number","label":"Número","default":"01"},
+        {"type":"text","id":"heading","label":"Elemento","default":"Elemento constructivo"},
+        {"type":"text","id":"role","label":"Función"},
+        {"type":"textarea","id":"detail","label":"Detalle técnico"}
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets":[{"name":"Entramado · Matriz"}]
+}
+{% endschema %}

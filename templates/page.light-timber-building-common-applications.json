@@ -41,20 +41,73 @@
       "settings": {
         "eyebrow": "Entramado ligero · 04",
         "heading": "Aplicaciones y modelos compatibles con entramado ligero de madera",
-        "lead": "<p>El entramado ligero puede utilizarse en viviendas, ampliaciones, estudios, oficinas y anexos, pero el uso previsto determina estructura, envolvente, instalaciones y documentación. Esta guía conecta las aplicaciones con el catálogo y explica cómo comparar alcance y prestaciones antes de elegir modelo.</p>",
+        "lead": "<p>Viviendas, oficinas de jardín, ampliaciones y anexos pueden resolverse con entramado ligero, pero cada uso exige prestaciones, licencias y alcance distintos. Elige una familia de producto verificando la compatibilidad técnica del modelo.</p>",
         "primary_label": "Ver casas de entramado ligero",
         "primary_link": "/collections/light-frame-houses",
-        "secondary_label": "Solicitar asesoramiento",
+        "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Elige primero por uso"
       }
+    },
+    "matrix": {
+      "type": "ie-light-frame-matrix",
+      "settings": {
+        "eyebrow": "Guía de aplicación · Uso antes que modelo",
+        "heading": "Cuatro escenarios que requieren soluciones diferentes",
+        "intro": "<p>El entramado ligero es un sistema constructivo, no una categoría automática de producto. Para elegir una solución comercial hay que definir uso, ubicación, cargas, instalaciones y alcance de suministro.</p>",
+        "note": "La disponibilidad de modelos, niveles de terminación y configuraciones compatibles se confirma para cada proyecto. La normativa urbanística y las licencias dependen de la parcela y del uso."
+      },
+      "blocks": {
+        "item_1": {
+          "type": "component",
+          "settings": {
+            "number": "01",
+            "heading": "Vivienda habitual",
+            "role": "Edificio residencial",
+            "detail": "Proyecto, permisos y justificación de estructura, energía, incendio, salubridad, acústica y habitabilidad que correspondan."
+          }
+        },
+        "item_2": {
+          "type": "component",
+          "settings": {
+            "number": "02",
+            "heading": "Estudio u oficina de jardín",
+            "role": "Uso prolongado",
+            "detail": "Priorizar aislamiento, ventilación, confort acústico, soleamiento, electricidad y régimen urbanístico del anexo."
+          }
+        },
+        "item_3": {
+          "type": "component",
+          "settings": {
+            "number": "03",
+            "heading": "Ampliación o anexo",
+            "role": "Encuentros con lo existente",
+            "detail": "Comprobar capacidad de apoyos, juntas con el edificio, estabilidad, puentes térmicos, instalaciones y legalidad urbanística."
+          }
+        },
+        "item_4": {
+          "type": "component",
+          "settings": {
+            "number": "04",
+            "heading": "Caseta de apoyo o almacenaje",
+            "role": "Uso auxiliar",
+            "detail": "Definir necesidad real de aislamiento, cargas de uso, resistencia al agua, mantenimiento y condiciones de implantación."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
     },
     "principles": {
       "type": "ie-services-cards",
       "settings": {
         "eyebrow": "01 · Aplicaciones",
         "heading": "El mismo sistema no convierte todos los edificios en el mismo producto",
-        "intro": "<p>Una vivienda permanente, una ampliación y una oficina climatizada pueden usar entramado ligero, pero sus requisitos funcionales, estructurales y regulatorios no son los mismos.</p>"
+        "intro": "<p>La misma técnica permite resolver edificios de distinto tamaño y uso. Cada solución necesita una definición propia de estructura, habitabilidad, aislamiento, instalaciones, fuego, permisos y nivel de terminación.</p>"
       },
       "blocks": {
         "home": {
@@ -237,8 +290,8 @@
         "q5": {
           "type": "question",
           "settings": {
-            "question": "¿Los precios publicados por otras empresas sirven como referencia?",
-            "answer": "<p>Solo como contexto comercial general. No deben trasladarse a otro proveedor o proyecto sin comprobar superficie, ubicación, composición, incluidos, impuestos y fecha de la oferta.</p>"
+            "question": "¿Por qué no basta con comparar un precio por metro cuadrado?",
+            "answer": "<p>Porque dos precios por superficie pueden incluir suministros y trabajos distintos. Compara por separado estructura, cerramientos, aislamiento, carpinterías, transporte, montaje, cimentación, instalaciones, documentación, licencias y acabados.</p>"
           }
         },
         "q6": {
@@ -276,6 +329,7 @@
   },
   "order": [
     "hero",
+    "matrix",
     "principles",
     "process",
     "criteria",

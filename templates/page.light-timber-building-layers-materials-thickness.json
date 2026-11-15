@@ -41,13 +41,96 @@
       "settings": {
         "eyebrow": "Entramado ligero · 02",
         "heading": "Estructura, capas y aislamiento del entramado ligero de madera",
-        "lead": "<p>La prestación de un cerramiento timber frame depende de cómo se coordinan bastidor, rigidización, aislamiento, hermeticidad, control de vapor, protección frente al agua y revestimientos. Esta guía explica qué función cumple cada parte y qué debe verificarse sobre la solución completa.</p>",
+        "lead": "<p>Un muro timber frame se define por las funciones de sus capas y por la continuidad de sus encuentros. Explora un corte funcional orientativo y aprende qué datos permiten calcular transmitancia, controlar humedad y justificar las prestaciones reales.</p>",
         "primary_label": "Ver casas de entramado ligero",
         "primary_link": "/collections/light-frame-houses",
-        "secondary_label": "Solicitar asesoramiento",
+        "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Qué se especifica realmente"
       }
+    },
+    "matrix": {
+      "type": "ie-light-frame-matrix",
+      "settings": {
+        "eyebrow": "Corte funcional · Exterior → Interior",
+        "heading": "Siete funciones de un muro de entramado ligero",
+        "intro": "<p>El siguiente orden es una referencia didáctica, no un paquete constructivo cerrado: la posición de tableros, membranas, aislamientos y cámaras puede variar según solución, clima y justificación higrotérmica.</p>",
+        "note": "Esquema orientativo sin espesores ni valores U asignados. No emplear como detalle de ejecución; validar estructura, condensaciones, fuego, acústica y encuentros con la documentación de cada configuración."
+      },
+      "blocks": {
+        "item_1": {
+          "type": "component",
+          "settings": {
+            "number": "01",
+            "heading": "Revestimiento exterior",
+            "role": "Protección y acabado",
+            "detail": "Fachada de madera u otro revestimiento compatible con la exposición, la estética y los requisitos de mantenimiento."
+          }
+        },
+        "item_2": {
+          "type": "component",
+          "settings": {
+            "number": "02",
+            "heading": "Cámara y drenaje",
+            "role": "Evacuación de humedad",
+            "detail": "Cuando procede, rastreles y cámara ventilada facilitan el drenaje y secado de la fachada."
+          }
+        },
+        "item_3": {
+          "type": "component",
+          "settings": {
+            "number": "03",
+            "heading": "Control de agua y viento",
+            "role": "Protección exterior",
+            "detail": "Lámina o tablero adecuado que limite entrada de agua y aire exterior, con juntas y encuentros resueltos."
+          }
+        },
+        "item_4": {
+          "type": "component",
+          "settings": {
+            "number": "04",
+            "heading": "Tablero de rigidización",
+            "role": "Resistencia al esfuerzo",
+            "detail": "Tablero estructural y patrón de fijaciones definidos por cálculo; su posición no es universal."
+          }
+        },
+        "item_5": {
+          "type": "component",
+          "settings": {
+            "number": "05",
+            "heading": "Montantes y aislamiento",
+            "role": "Estructura + resistencia térmica",
+            "detail": "Cavidad entre montantes con aislamiento compatible; puede añadirse una capa continua para reducir puentes térmicos."
+          }
+        },
+        "item_6": {
+          "type": "component",
+          "settings": {
+            "number": "06",
+            "heading": "Hermeticidad y vapor",
+            "role": "Control de aire y humedad",
+            "detail": "Capa continua y estrategia de difusión/retardo de vapor determinada por la composición y las condiciones de uso."
+          }
+        },
+        "item_7": {
+          "type": "component",
+          "settings": {
+            "number": "07",
+            "heading": "Instalaciones y acabado interior",
+            "role": "Protección y confort",
+            "detail": "Cámara técnica, cuando se prevea, y revestimientos interiores definidos por requisitos funcionales, acústicos y de incendio."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5",
+        "item_6",
+        "item_7"
+      ]
     },
     "composition": {
       "type": "ie-services-cards",
@@ -157,7 +240,7 @@
       "settings": {
         "eyebrow": "02 · Rendimiento térmico",
         "heading": "Un valor U solo es válido para la solución calculada",
-        "intro": "<p>La justificación energética debe realizarse sobre la composición y el edificio real. En España, el DB-HE considera además zona climática, puentes térmicos, huecos, control solar, ventilación e instalaciones.</p>"
+        "intro": "<p>En España, la comprobación energética del DB-HE se realiza para la solución y el edificio completos. Importan la zona climática, la transmitancia real de cada elemento, los puentes térmicos y el resto de condicionantes; no puede asignarse un valor U por el mero nombre del sistema.</p>"
       }
     },
     "criteria": {
@@ -276,6 +359,7 @@
   },
   "order": [
     "hero",
+    "matrix",
     "composition",
     "performance",
     "criteria",

@@ -41,13 +41,76 @@
       "settings": {
         "eyebrow": "Entramado ligero · 03",
         "heading": "Montaje, durabilidad y sostenibilidad del entramado ligero de madera",
-        "lead": "<p>El rendimiento de un sistema timber frame depende tanto del despiece y la fabricación como de la instalación y de cómo se mantiene seco y protegido durante su vida útil. Esta guía reúne planificación, logística, montaje, control de humedad, mantenimiento y criterios para evaluar sostenibilidad sin afirmaciones genéricas.</p>",
+        "lead": "<p>La calidad del entramado ligero depende de planos ejecutables, recepción de materiales, uniones, protección frente al agua y controles antes de cerrar. La sostenibilidad exige trazabilidad y evaluación del ciclo de vida, no una etiqueta comercial.</p>",
         "primary_label": "Ver casas de entramado ligero",
         "primary_link": "/collections/light-frame-houses",
         "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Del taller a la vida útil"
       }
+    },
+    "matrix": {
+      "type": "ie-light-frame-matrix",
+      "settings": {
+        "eyebrow": "Control de obra · Antes de cerrar",
+        "heading": "Cinco comprobaciones críticas para un montaje duradero",
+        "intro": "<p>La durabilidad se construye desde los apoyos y los encuentros. Conviene registrar controles antes de ocultar anclajes, capas de estanqueidad, pasos de instalaciones y zonas sensibles al agua.</p>",
+        "note": "Las comprobaciones son una guía de control de calidad. La dirección facultativa y el plan de obra determinan ensayos, tolerancias, responsabilidades y documentación exigibles."
+      },
+      "blocks": {
+        "item_1": {
+          "type": "component",
+          "settings": {
+            "number": "01",
+            "heading": "Base y arranque",
+            "role": "Nivel y separación del agua",
+            "detail": "Comprobar geometría, cotas, apoyo, barrera frente a humedad capilar y detalle de arranque definido en proyecto."
+          }
+        },
+        "item_2": {
+          "type": "component",
+          "settings": {
+            "number": "02",
+            "heading": "Recepción y acopio",
+            "role": "Madera protegida",
+            "detail": "Verificar identificación, estado aparente y condiciones de humedad; proteger paneles y tableros de lluvia y salpicaduras."
+          }
+        },
+        "item_3": {
+          "type": "component",
+          "settings": {
+            "number": "03",
+            "heading": "Elevación y estabilidad",
+            "role": "Arriostrar antes de liberar",
+            "detail": "Revisar aplomado, conexiones, fijaciones y arriostramientos provisionales y definitivos según secuencia de montaje."
+          }
+        },
+        "item_4": {
+          "type": "component",
+          "settings": {
+            "number": "04",
+            "heading": "Encuentros y estanqueidad",
+            "role": "Juntas continuas",
+            "detail": "Resolver huecos, zócalos, cubierta, penetraciones, drenajes y continuidad de capas antes de cerrar revestimientos."
+          }
+        },
+        "item_5": {
+          "type": "component",
+          "settings": {
+            "number": "05",
+            "heading": "Entrega y seguimiento",
+            "role": "Mantenimiento trazable",
+            "detail": "Recopilar documentación realmente disponible, manual de uso, inspecciones de zonas expuestas y pautas de reparación."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ]
     },
     "mounting_overview": {
       "type": "ie-services-cards",
@@ -208,7 +271,7 @@
       "settings": {
         "eyebrow": "04 · Sostenibilidad",
         "heading": "Evaluar datos, no etiquetas",
-        "intro": "<p>La madera puede almacenar carbono biogénico durante su vida en servicio y la prefabricación puede reducir mermas, pero el impacto global depende también de origen, fabricación, transporte, otros materiales, energía de uso, mantenimiento y fin de vida.</p>"
+        "intro": "<p>La madera puede aportar ventajas ambientales cuando existe un suministro responsable y un proyecto duradero. Las declaraciones de origen, huella de carbono o contenido reciclado deben apoyarse en documentación verificable; también cuentan transporte, reposiciones, energía de uso y fin de vida.</p>"
       },
       "blocks": {
         "e1": {
@@ -339,6 +402,7 @@
   },
   "order": [
     "hero",
+    "matrix",
     "mounting_overview",
     "mounting_process",
     "durability",

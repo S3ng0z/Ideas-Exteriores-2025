@@ -41,13 +41,76 @@
       "settings": {
         "eyebrow": "Entramado ligero · 01",
         "heading": "Qué es el entramado ligero de madera y cómo funciona",
-        "lead": "<p>El entramado ligero de madera —light timber frame— es un sistema estructural formado por bastidores de montantes y soleras que trabajan junto con tableros, fijaciones, arriostramientos y anclajes. Su ventaja no está en una pieza aislada, sino en coordinar estructura, envolvente, instalaciones y montaje como un sistema completo.</p>",
+        "lead": "<p>Los montantes, las soleras, los tableros y las conexiones forman una estructura resistente ligera. Su funcionamiento se entiende siguiendo las cargas hasta la cimentación y distinguiendo estructura, aislamiento y cerramiento: ninguna capa por separado define el edificio.</p>",
         "primary_label": "Ver casas de entramado ligero",
         "primary_link": "/collections/light-frame-houses",
         "secondary_label": "Solicitar asesoría técnica",
         "secondary_link": "/pages/contact-ideas-exteriores",
         "summary_title": "Claves para entender el sistema"
       }
+    },
+    "matrix": {
+      "type": "ie-light-frame-matrix",
+      "settings": {
+        "eyebrow": "Lectura estructural · Del tejado al terreno",
+        "heading": "Cómo se transmiten las cargas en un entramado ligero",
+        "intro": "<p>El sistema trabaja como un conjunto. Los elementos verticales reciben las cargas gravitatorias; los tableros, conexiones y arriostramientos contribuyen a la estabilidad frente a acciones horizontales.</p>",
+        "note": "Recorrido conceptual de cargas. Secciones, conectores, anclajes y arriostramientos se determinan mediante proyecto y cálculo; no se deducen de este esquema."
+      },
+      "blocks": {
+        "item_1": {
+          "type": "component",
+          "settings": {
+            "number": "01",
+            "heading": "Cubierta y forjados",
+            "role": "Recoger acciones",
+            "detail": "Viguetas, correas, vigas o cerchas trasladan las acciones a las líneas resistentes previstas en el proyecto."
+          }
+        },
+        "item_2": {
+          "type": "component",
+          "settings": {
+            "number": "02",
+            "heading": "Montantes y soleras",
+            "role": "Transmisión vertical",
+            "detail": "Los montantes llevan las cargas hacia los apoyos; las soleras distribuyen y conectan la estructura."
+          }
+        },
+        "item_3": {
+          "type": "component",
+          "settings": {
+            "number": "03",
+            "heading": "Tableros y arriostramiento",
+            "role": "Estabilidad lateral",
+            "detail": "Los paños rigidizados y sus fijaciones colaboran frente a viento y otras acciones horizontales según el cálculo."
+          }
+        },
+        "item_4": {
+          "type": "component",
+          "settings": {
+            "number": "04",
+            "heading": "Uniones y anclajes",
+            "role": "Continuidad resistente",
+            "detail": "Herrajes, tornillos y anclajes enlazan elementos y deben resolver esfuerzos y posibles levantamientos."
+          }
+        },
+        "item_5": {
+          "type": "component",
+          "settings": {
+            "number": "05",
+            "heading": "Base o cimentación",
+            "role": "Transferencia al terreno",
+            "detail": "La cimentación recibe las cargas y exige comprobaciones de capacidad portante, geometría, cotas y protección frente al agua."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ]
     },
     "principles": {
       "type": "ie-services-cards",
@@ -284,6 +347,7 @@
   },
   "order": [
     "hero",
+    "matrix",
     "principles",
     "process",
     "criteria",
