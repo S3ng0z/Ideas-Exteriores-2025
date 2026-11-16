@@ -19,6 +19,8 @@
 {%- liquid
   assign seo_title = page_title | default: shop.name
   assign seo_description = page_description | default: shop.description | default: shop.name
+  assign seo_title_normalized = seo_title | downcase
+  assign shop_name_normalized = shop.name | downcase
 
   if request.page_type == 'index'
     assign seo_description = 'Casas y casetas de madera con entramado ligero, panel SIP y sistema europeo. Pérgolas, porches y cenadores. Compara modelos y solicita presupuesto.'
@@ -119,30 +121,18 @@
   endif
 
 
-  if request.page_type == 'page' and page.handle == 'timber-construction-systems-comparison'
-    assign seo_title = 'Sistemas constructivos de madera: comparativa | IDEAS EXTERIORES'
-    assign seo_description = 'Compara sistema europeo, entramado ligero y paneles SIP. Descubre sus diferencias, ventajas y aplicaciones para elegir tu proyecto de madera.'
-  endif
 
-  if request.page_type == 'page' and page.handle == 'choose-timber-construction-system'
-    assign seo_title = '¿Qué sistema constructivo elegir? | Ideas Exteriores'
-    assign seo_description = 'Descubre qué sistema de madera elegir para tu vivienda, caseta, oficina o ampliación. Compara opciones y encuentra modelos para tu proyecto.'
-  endif
 
-  if request.page_type == 'page' and page.handle == 'how-to-choose-timber-construction-system'
-    assign seo_title = 'Cómo elegir un sistema constructivo de madera | Ideas Exteriores'
-    assign seo_description = 'Conoce los criterios para elegir un sistema de construcción en madera: presupuesto, aislamiento, durabilidad, montaje, normativa y mantenimiento.'
-  endif
+
+
+
 
   if request.page_type == 'page' and page.handle == 'light-frame-vs-sip-comparison'
     assign seo_title = 'Comparar y elegir sistemas constructivos | Ideas Exteriores'
     assign seo_description = 'Compara sistema europeo, entramado ligero y paneles SIP. Descubre sus diferencias, qué sistema elegir según tu proyecto y cómo solicitar presupuesto.'
   endif
 
-  if request.page_type == 'page' and page.handle == 'compare-and-choose-timber-systems'
-    assign seo_title = 'Comparar y elegir sistemas de madera | Ideas Exteriores'
-    assign seo_description = 'Compara sistema europeo, entramado ligero y paneles SIP. Descubre qué sistema estudiar según tu proyecto y las claves antes de solicitar presupuesto.'
-  endif
+
 
   if request.page_type == 'page' and page.handle == 'wood-maintenance-repair'
     assign seo_title = 'Mantenimiento y reparación de madera exterior'
@@ -273,7 +263,7 @@
   {%- if request.page_type != 'index' -%}
     {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
     {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-    {%- unless seo_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    {%- unless seo_title_normalized contains shop_name_normalized %} &ndash; {{ shop.name }}{% endunless -%}
   {%- endif -%}
 </title>
 
