@@ -1,55 +1,278 @@
 {{ 'ie-choice-guide.css' | asset_url | stylesheet_tag }}
-<section class="ie-choice" id="criterios-eleccion" aria-labelledby="ie-choice-heading-{{ section.id }}">
- <div class="ie-choice__inner">
-  <header class="ie-choice__intro"><p class="ie-choice__eyebrow">01 · Guía de decisión</p><h2 id="ie-choice-heading-{{ section.id }}">Ocho decisiones que conviene cerrar antes de pedir presupuesto</h2><p>El mejor sistema no se determina por un ranking universal. Depende de uso, proyecto, entorno, prestaciones justificadas y alcance contratado. Utiliza esta guía para comparar con criterios verificables.</p></header>
-  <div class="ie-choice__steps">
-  {% assign labels = 'Uso previsto y frecuencia de utilización|Presupuesto y alcance real|Parcela, accesos y cimentación|Aislamiento, acústica y energía|Diseño y personalización|Montaje, plazos y acabados|Mantenimiento, durabilidad y garantías|Permisos y documentación técnica' | split: '|' %}
-  {% for label in labels %}
-   <article class="ie-choice__step">
-    <span class="ie-choice__num">0{{ forloop.index }}</span><div>
-      <h3>{{ label }}</h3>
-      {% case forloop.index %}
-      {% when 1 %}<p><strong>Auxiliar:</strong> almacenaje o función complementaria, sin presuponer habitabilidad. <strong>Ocasional:</strong> utilización esporádica, cuya autorización y exigencias dependen de la actividad concreta. <strong>Residencial:</strong> vivienda habitual o segunda residencia, con proyecto y requisitos de habitabilidad aplicables. El uso no se deduce de las dimensiones ni del producto elegido.</p>
-      {% when 2 %}<p>Antes de comparar precios, exige una oferta con qué incluye y qué no incluye: estructura, aislamiento, cubierta, carpinterías, instalaciones, acabados, IVA y alcance del montaje. Proyecto, licencias, cimentación, transporte, descarga, grúa y acometidas deben figurar como partidas incluidas, excluidas o sujetas a estudio. Los precios publicados de catálogo no equivalen automáticamente a un presupuesto llave en mano.</p>
-      {% when 3 %}<p>Revisar municipio, uso urbanístico permitido, topografía, geotecnia cuando proceda, cargas, cimentación y anclajes. Comprobar acceso de camiones, maniobras, descarga, acopio y medios auxiliares. Una solución económica en fábrica puede no serlo en una parcela con logística compleja.</p>
-      {% when 4 %}<p>El comportamiento térmico y acústico depende de la composición completa: aislante, capas, huecos, juntas, puentes térmicos, ventilación y ejecución. Las exigencias de energía, salubridad y ruido se justifican según el proyecto y el uso; ningún nombre de sistema garantiza una clase energética o un valor U universal.</p>
-      {% when 5 %}<p>Definir superficie útil y construida, plantas, geometría, distribución, huecos y acabados antes de elegir sistema. El entramado permite configuraciones por capas; SIP requiere una definición cuidadosa antes de mecanizar; el sistema europeo exige atender a perfiles, uniones y movimientos de la madera. Los cambios estructurales o de envolvente requieren estudio adicional.</p>
-      {% when 6 %}<p>Separar fabricación, transporte, descarga, preparación de base, montaje, cerramientos, instalaciones y acabados. Los plazos dependen del modelo, la coordinación y la parcela. Comparar una entrega de kit con otra de montaje terminado sin homogeneizar el alcance conduce a conclusiones erróneas.</p>
-      {% when 7 %}<p>Revisar la exposición del revestimiento, protección frente a humedad, mantenimiento de sellados, encuentros y acabados, y accesibilidad para inspección. Las garantías y su alcance deben constar por escrito; nunca sustituyen el mantenimiento necesario ni los derechos legales del consumidor.</p>
-      {% when 8 %}<p>Confirmar planeamiento municipal, títulos habilitantes, técnicos intervinientes y normativa aplicable. En España, cuando corresponda, el CTE y sus Documentos Básicos deben justificarse para el proyecto concreto. Solicita memoria de composición, documentación de producto, planos, cálculo y detalle de uniones según cada solución.</p>
-      {% endcase %}
-     </div>
-   </article>
-  {% endfor %}
-  </div>
-  <aside class="ie-choice__guide"><div><p class="ie-choice__eyebrow">02 · Conocer las alternativas</p><h2>Distintas soluciones. El mismo rigor.</h2><p>Utiliza las fichas de sistema para contrastar componentes, montaje y aplicaciones. El «sistema europeo» es una denominación comercial de Ideas Exteriores, no una certificación o norma.</p></div><div class="ie-choice__guide-links"><a href="/pages/european-timber-construction-system">Sistema europeo <span>→</span></a><a href="/pages/light-frame-construction-system">Entramado ligero <span>→</span></a><a href="/pages/sip-panels-system">Paneles SIP <span>→</span></a><a href="/pages/timber-construction-systems-comparison">Comparativa técnica de los tres sistemas <span>→</span></a><a href="/pages/choose-timber-construction-system">Elegir según el uso del proyecto <span>→</span></a></div></aside>
-  <div class="ie-choice__checklist" id="checklist-presupuesto"><div><p class="ie-choice__eyebrow">03 · Checklist comercial</p><h2>Antes de pedir presupuesto</h2><p>Cuantos más puntos puedas concretar, más preciso será el estudio. No es necesario tener todos resueltos para contactar.</p></div><ul>
-   <li>Uso previsto: auxiliar, habitual, residencial u otro</li><li>Municipio y situación urbanística de la parcela</li><li>Superficie aproximada y número de plantas</li><li>Modelo de referencia o distribución deseada</li><li>Necesidades térmicas, acústicas y de instalaciones</li><li>Accesos, cimentación existente y medios de descarga</li><li>Nivel de acabado y alcance de montaje</li><li>Presupuesto estimado y fase de decisión</li><li>Planos, fotografías o documentación disponible</li>
-  </ul></div>
-  <section class="ie-choice__form-section" id="solicitar-asesoramiento" aria-labelledby="ie-choice-form-heading">
-   <div class="ie-choice__form-intro"><p class="ie-choice__eyebrow">04 · Asesoría y presupuesto</p><h2 id="ie-choice-form-heading">Cuéntanos tu proyecto</h2><p>Envíanos los datos esenciales. Confirmaremos qué sistema conviene estudiar tras revisar el uso, la parcela y el alcance; el formulario no emite una recomendación técnica definitiva.</p></div>
-   <div class="ie-choice__form-panel">
-   {% assign form_id = 'IEChoiceForm-' | append: section.id %}
-   {% form 'contact', id: form_id, class: 'ie-choice__form' %}
-    {% if form.posted_successfully? %}<div class="ie-choice__feedback" role="status">Consulta recibida por Shopify. Revisaremos la información y responderemos por correo.</div>{% endif %}
-    {% if form.errors %}<div class="ie-choice__feedback ie-choice__feedback--error" role="alert">{{ form.errors | default_errors }}</div>{% endif %}
-    <input type="hidden" name="contact[Origen]" value="{{ canonical_url | escape }}">
-    <div class="ie-choice__fields">
-     <div><label for="{{ form_id }}-email">Correo electrónico *</label><input id="{{ form_id }}-email" type="email" name="contact[email]" value="{{ form.email | escape }}" autocomplete="email" required></div>
-     <div><label for="{{ form_id }}-type">Tipo de proyecto *</label><select id="{{ form_id }}-type" name="contact[Tipo de proyecto]" required><option value="">Seleccionar</option><option>Vivienda habitual</option><option>Segunda residencia</option><option>Casa de jardín</option><option>Oficina o estudio</option><option>Caseta auxiliar</option><option>Ampliación</option><option>Otro proyecto</option></select></div>
-     <div><label for="{{ form_id }}-city">Localidad / provincia *</label><input id="{{ form_id }}-city" type="text" name="contact[Localidad]" autocomplete="address-level2" required placeholder="Municipio y provincia"></div>
-     <div><label for="{{ form_id }}-area">Superficie aproximada (m²)</label><input id="{{ form_id }}-area" type="number" min="1" max="10000" step="1" inputmode="numeric" name="contact[Superficie aproximada m2]" placeholder="Ej. 45"></div>
-     <div><label for="{{ form_id }}-budget">Presupuesto estimado</label><select id="{{ form_id }}-budget" name="contact[Presupuesto estimado]"><option value="">Sin definir</option><option>Hasta 15.000 €</option><option>15.000–40.000 €</option><option>40.000–80.000 €</option><option>80.000–150.000 €</option><option>Más de 150.000 €</option></select></div>
-     <div><label for="{{ form_id }}-stage">Fase del proyecto</label><select id="{{ form_id }}-stage" name="contact[Fase del proyecto]"><option value="">Seleccionar</option><option>Explorando alternativas</option><option>Parcela definida</option><option>Con planos o mediciones</option><option>Con proyecto técnico</option><option>Preparando contratación</option></select></div>
-     <div class="ie-choice__full"><label for="{{ form_id }}-body">Información adicional *</label><textarea id="{{ form_id }}-body" name="contact[body]" required placeholder="Uso previsto, si tienes parcela, necesidades de aislamiento y acabado, accesos y cualquier condicionante relevante.">{{ form.body | escape }}</textarea></div>
+<section class="ie-choice" id="criterios-eleccion" aria-labelledby="ie-choice-title-{{ section.id }}">
+  <div class="ie-choice__inner">
+    <div class="ie-choice__intro">
+      <div>
+        <p class="ie-choice__eyebrow">{{ section.settings.intro_kicker | escape }}</p>
+        <h2 id="ie-choice-title-{{ section.id }}">{{ section.settings.intro_title | escape }}</h2>
+      </div>
+      <div class="ie-choice__lead rte">{{ section.settings.intro_text }}</div>
     </div>
-    <label class="ie-choice__privacy"><input type="checkbox" name="contact[Privacidad]" value="Aceptada" required><span>He leído y acepto la <a href="/policies/privacy-policy">política de privacidad</a>.</span></label>
-    <button type="submit" class="ie-choice__submit">Solicitar asesoramiento y presupuesto</button>
-   {% endform %}
-   </div>
-  </section>
- </div>
+
+    <nav class="ie-choice__nav" aria-label="Apartados de esta guía">
+      <a href="#criterios-eleccion">Ocho decisiones</a>
+      <a href="#alcance-del-presupuesto">Comparar presupuestos</a>
+      <a href="#checklist-presupuesto">Lista de comprobación</a>
+      <a href="#preguntas-antes-de-comprar">Preguntas frecuentes</a>
+      <a href="#solicitar-asesoramiento">Solicitar asesoramiento</a>
+    </nav>
+
+    <div class="ie-choice__decisions">
+      {% for block in section.blocks %}
+        {% if block.type == 'decision' %}
+          <article class="ie-choice__decision" {{ block.shopify_attributes }}>
+            <span class="ie-choice__number">{{ block.settings.number | escape }}</span>
+            <div>
+              <h3>{{ block.settings.title | escape }}</h3>
+              <p>{{ block.settings.summary | escape }}</p>
+              {% if block.settings.points != blank %}
+                {% assign bullets = block.settings.points | split: '|' %}
+                <ul>
+                  {% for bullet in bullets %}
+                    {% assign point = bullet | strip %}
+                    {% if point != blank %}<li>{{ point | escape }}</li>{% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+              {% if block.settings.note != blank %}
+                <p class="ie-choice__hint">{{ block.settings.note | escape }}</p>
+              {% endif %}
+              {% if block.settings.link != blank %}
+                <a class="ie-choice__inline-link" href="{{ block.settings.link }}">{{ block.settings.link_label | escape }} <span aria-hidden="true">↗</span></a>
+              {% endif %}
+            </div>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <section class="ie-choice__region" id="alcance-del-presupuesto" aria-labelledby="ie-choice-budget-{{ section.id }}">
+      <header class="ie-choice__section-head">
+        <div>
+          <p class="ie-choice__eyebrow">{{ section.settings.budget_kicker | escape }}</p>
+          <h2 id="ie-choice-budget-{{ section.id }}">{{ section.settings.budget_title | escape }}</h2>
+        </div>
+        <div class="ie-choice__lead rte">{{ section.settings.budget_intro }}</div>
+      </header>
+      <div class="ie-choice__table-wrap" role="region" aria-label="Tabla de partidas de presupuesto, desplazable horizontalmente" tabindex="0">
+        <table class="ie-choice__table">
+          <caption>Aspectos que deben definirse antes de comparar presupuestos de construcción en madera.</caption>
+          <thead><tr><th scope="col">Partida</th><th scope="col">Qué debe quedar definido</th></tr></thead>
+          <tbody>
+            {% for block in section.blocks %}
+              {% if block.type == 'budget_row' %}
+                <tr {{ block.shopify_attributes }}>
+                  <th scope="row">{{ block.settings.concept | escape }}</th>
+                  <td>{{ block.settings.scope | escape }}</td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="ie-choice__note">{{ section.settings.budget_note | escape }}</p>
+    </section>
+
+    <section class="ie-choice__region" id="checklist-presupuesto" aria-labelledby="ie-choice-checklist-{{ section.id }}">
+      <header class="ie-choice__section-head">
+        <div>
+          <p class="ie-choice__eyebrow">{{ section.settings.list_kicker | escape }}</p>
+          <h2 id="ie-choice-checklist-{{ section.id }}">{{ section.settings.list_title | escape }}</h2>
+        </div>
+        <div class="ie-choice__lead rte">{{ section.settings.list_intro }}</div>
+      </header>
+      <div class="ie-choice__checklist">
+        {% for block in section.blocks %}
+          {% if block.type == 'check_item' %}
+            <label class="ie-choice__check-row" {{ block.shopify_attributes }}>
+              <input type="checkbox" aria-label="{{ block.settings.label | escape }}">
+              <span>{{ block.settings.label | escape }}</span>
+            </label>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <p class="ie-choice__note">{{ section.settings.list_note | escape }}</p>
+    </section>
+
+    <section class="ie-choice__region" id="preguntas-antes-de-comprar" aria-labelledby="ie-choice-faq-{{ section.id }}">
+      <header class="ie-choice__section-head">
+        <div>
+          <p class="ie-choice__eyebrow">{{ section.settings.faq_kicker | escape }}</p>
+          <h2 id="ie-choice-faq-{{ section.id }}">{{ section.settings.faq_title | escape }}</h2>
+        </div>
+        <div class="ie-choice__lead rte">{{ section.settings.faq_intro }}</div>
+      </header>
+      <div class="ie-choice__faq">
+        {% for block in section.blocks %}
+          {% if block.type == 'faq' %}
+            <details {{ block.shopify_attributes }}>
+              <summary><span>{{ block.settings.question | escape }}</span><span class="ie-choice__plus" aria-hidden="true"></span></summary>
+              <p>{{ block.settings.answer | escape }}</p>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <nav class="ie-choice__resources" aria-label="Guías complementarias">
+      <div>
+        <p class="ie-choice__eyebrow">Siguiente lectura</p>
+        <h2>Del criterio al modelo</h2>
+      </div>
+      <div class="ie-choice__resource-links">
+        <a href="/pages/choose-timber-construction-system">Elegir según el uso <span aria-hidden="true">↗</span></a>
+        <a href="/pages/timber-construction-systems-comparison">Comparar los tres sistemas <span aria-hidden="true">↗</span></a>
+        <a href="/pages/compare-and-choose-timber-systems">Volver a la guía de sistemas <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+
+    <section class="ie-choice__form-section" id="solicitar-asesoramiento" aria-labelledby="ie-choice-form-title-{{ section.id }}">
+      <div class="ie-choice__form-intro">
+        <p class="ie-choice__eyebrow">{{ section.settings.form_kicker | escape }}</p>
+        <h2 id="ie-choice-form-title-{{ section.id }}">{{ section.settings.form_title | escape }}</h2>
+        <div class="rte">{{ section.settings.form_intro }}</div>
+        <p class="ie-choice__note">{{ section.settings.form_note | escape }}</p>
+      </div>
+      <div class="ie-choice__form-panel">
+        {% assign form_id = 'IEChoiceForm-' | append: section.id %}
+        {% form 'contact', id: form_id, class: 'ie-choice__form' %}
+          {% if form.posted_successfully? %}
+            <div class="ie-choice__feedback" role="status">Tu consulta se ha enviado correctamente. Revisaremos la información facilitada.</div>
+          {% endif %}
+          {% if form.errors %}
+            <div class="ie-choice__feedback ie-choice__feedback--error" role="alert">{{ form.errors | default_errors }}</div>
+          {% endif %}
+          <input type="hidden" name="contact[Origen]" value="{{ canonical_url | escape }}">
+          <div class="ie-choice__fields">
+            <div>
+              <label for="{{ form_id }}-name">Nombre</label>
+              <input id="{{ form_id }}-name" name="contact[name]" type="text" autocomplete="name" placeholder="Tu nombre">
+            </div>
+            <div>
+              <label for="{{ form_id }}-email">Correo electrónico <span aria-hidden="true">*</span></label>
+              <input id="{{ form_id }}-email" name="contact[email]" type="email" value="{{ form.email | escape }}" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="{{ form_id }}-phone">Teléfono (opcional)</label>
+              <input id="{{ form_id }}-phone" name="contact[phone]" type="tel" autocomplete="tel">
+            </div>
+            <div>
+              <label for="{{ form_id }}-type">Tipo de proyecto <span aria-hidden="true">*</span></label>
+              <select id="{{ form_id }}-type" name="contact[Tipo de proyecto]" required>
+                <option value="">Selecciona un tipo</option>
+                <option value="Vivienda habitual">Vivienda habitual</option>
+                <option value="Segunda residencia">Segunda residencia</option>
+                <option value="Oficina o estudio">Oficina o estudio</option>
+                <option value="Caseta auxiliar">Caseta auxiliar</option>
+                <option value="Ampliación">Ampliación</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div>
+              <label for="{{ form_id }}-city">Municipio y provincia <span aria-hidden="true">*</span></label>
+              <input id="{{ form_id }}-city" name="contact[Localidad]" type="text" autocomplete="address-level2" placeholder="Ej. Toledo (Toledo)" required>
+            </div>
+            <div>
+              <label for="{{ form_id }}-area">Superficie aproximada (m²)</label>
+              <input id="{{ form_id }}-area" name="contact[Superficie aproximada m2]" type="number" min="1" max="10000" step="1" inputmode="numeric" placeholder="Ej. 65">
+            </div>
+            <div>
+              <label for="{{ form_id }}-system">Sistema de interés</label>
+              <select id="{{ form_id }}-system" name="contact[Sistema de interés]">
+                <option value="">Todavía no lo sé</option>
+                <option value="Sistema Europeo">Sistema Europeo</option>
+                <option value="Entramado Ligero">Entramado Ligero</option>
+                <option value="Paneles SIP">Paneles SIP</option>
+                <option value="Comparar alternativas">Quiero comparar alternativas</option>
+              </select>
+            </div>
+            <div>
+              <label for="{{ form_id }}-budget">Presupuesto orientativo</label>
+              <select id="{{ form_id }}-budget" name="contact[Presupuesto estimado]">
+                <option value="">Sin definir</option>
+                <option>Hasta 15.000 €</option>
+                <option>15.000–40.000 €</option>
+                <option>40.000–80.000 €</option>
+                <option>80.000–150.000 €</option>
+                <option>Más de 150.000 €</option>
+              </select>
+            </div>
+            <div>
+              <label for="{{ form_id }}-stage">Fase del proyecto</label>
+              <select id="{{ form_id }}-stage" name="contact[Fase del proyecto]">
+                <option value="">Sin definir</option>
+                <option>Explorando alternativas</option>
+                <option>Seleccionando modelo</option>
+                <option>Parcela identificada</option>
+                <option>Con proyecto técnico</option>
+                <option>Preparando contratación</option>
+              </select>
+            </div>
+            <div>
+              <label for="{{ form_id }}-model">Modelo de referencia (opcional)</label>
+              <input id="{{ form_id }}-model" type="text" name="contact[Modelo de referencia]" placeholder="Modelo del catálogo, si lo conoces">
+            </div>
+            <div class="ie-choice__full">
+              <label for="{{ form_id }}-body">Necesidades o información adicional</label>
+              <textarea id="{{ form_id }}-body" name="contact[body]" rows="4" placeholder="Distribución, parcela, accesos, aislamiento, acabados o dudas pendientes">{{ form.body | escape }}</textarea>
+            </div>
+          </div>
+          <label class="ie-choice__privacy">
+            <input type="checkbox" name="contact[Información privacidad]" value="Leída" required>
+            <span>He leído la <a href="/policies/privacy-policy">política de privacidad</a>.</span>
+          </label>
+          <button class="ie-choice__submit" type="submit">{{ section.settings.submit_label | escape }} <span aria-hidden="true">↗</span></button>
+          <p class="ie-choice__micro">Los campos marcados con * son obligatorios. Puedes solicitar una primera orientación aunque no tengas todos los datos.</p>
+        {% endform %}
+      </div>
+    </section>
+    <p class="ie-choice__legal">{{ section.settings.legal_note | escape }}</p>
+  </div>
 </section>
 {% schema %}
-{"name":"Guía · Claves de elección","settings":[],"presets":[{"name":"Guía · Claves de elección"}]}
+{
+  "name": "Guía · Antes de comprar",
+  "settings": [
+    {"type":"text","id":"intro_kicker","label":"Antetítulo inicial","default":"01 · Antes de comprar"},
+    {"type":"text","id":"intro_title","label":"Título de guía","default":"Ocho decisiones para comprar con criterio"},
+    {"type":"richtext","id":"intro_text","label":"Introducción","default":"<p>Elegir un sistema exige conocer el uso, el modelo, la parcela, las prestaciones documentadas y el alcance de la oferta. Comienza por lo esencial y profundiza solo donde lo necesites.</p>"},
+    {"type":"text","id":"budget_kicker","label":"Antetítulo tabla","default":"02 · Comparar con rigor"},
+    {"type":"text","id":"budget_title","label":"Título tabla","default":"Qué debe incluir un presupuesto comparable"},
+    {"type":"richtext","id":"budget_intro","label":"Introducción tabla","default":"<p>Un kit no es comparable directamente con una construcción terminada. Revisa cada partida y sus posibles exclusiones antes de valorar el precio.</p>"},
+    {"type":"textarea","id":"budget_note","label":"Nota económica","default":"Las denominaciones BASIC, STANDARD o PASSIVE pueden identificar paquetes comerciales. No acreditan por sí solas una certificación energética, Passivhaus o prestaciones específicas."},
+    {"type":"text","id":"list_kicker","label":"Antetítulo lista","default":"03 · Preparar la consulta"},
+    {"type":"text","id":"list_title","label":"Título lista","default":"Lista de comprobación antes del presupuesto"},
+    {"type":"richtext","id":"list_intro","label":"Introducción lista","default":"<p>Marca lo que ya tienes definido. No necesitas resolverlo todo para consultar; los puntos pendientes ayudan a orientar el siguiente paso.</p>"},
+    {"type":"textarea","id":"list_note","label":"Nota checklist","default":"Esta lista es orientativa, no se envía ni guarda automáticamente."},
+    {"type":"text","id":"faq_kicker","label":"Antetítulo FAQ","default":"04 · Respuestas rápidas"},
+    {"type":"text","id":"faq_title","label":"Título FAQ","default":"Preguntas frecuentes antes de comprar"},
+    {"type":"richtext","id":"faq_intro","label":"Introducción FAQ","default":"<p>Resolvemos las dudas habituales sin atribuir prestaciones universales ni permisos automáticos a los sistemas prefabricados.</p>"},
+    {"type":"text","id":"form_kicker","label":"Antetítulo formulario","default":"05 · Asesoramiento"},
+    {"type":"text","id":"form_title","label":"Título formulario","default":"Cuéntanos tu proyecto"},
+    {"type":"richtext","id":"form_intro","label":"Introducción formulario","default":"<p>Indícanos qué necesitas construir, dónde y en qué fase estás. Revisaremos las referencias de catálogo y las comprobaciones pendientes antes de formular una propuesta.</p>"},
+    {"type":"textarea","id":"form_note","label":"Nota formulario","default":"La consulta inicial no implica aprobación técnica ni urbanística. El presupuesto definitivo depende del modelo, la configuración, la parcela y las partidas contratadas."},
+    {"type":"text","id":"submit_label","label":"Texto de envío","default":"Solicitar asesoramiento y presupuesto"},
+    {"type":"textarea","id":"legal_note","label":"Aviso final","default":"La información es orientativa y no sustituye cálculos, proyecto, comprobación urbanística o documentación del fabricante. Las prestaciones aplicables deben acreditarse para la composición, el uso y el emplazamiento concretos."}
+  ],
+  "blocks": [
+    {"type":"decision","name":"Decisión de compra","settings":[
+      {"type":"text","id":"number","label":"Número","default":"01"},
+      {"type":"text","id":"title","label":"Decisión","default":"Define el uso"},
+      {"type":"textarea","id":"summary","label":"Resumen","default":"Determina para qué vas a utilizar la construcción."},
+      {"type":"textarea","id":"points","label":"Puntos (separar con |)","default":"Uso y frecuencia|Superficie y ocupación|Instalaciones y confort"},
+      {"type":"textarea","id":"note","label":"Nota adicional","default":"La compatibilidad debe comprobarse según uso y modelo."},
+      {"type":"text","id":"link_label","label":"Enlace texto","default":"Saber más"},
+      {"type":"url","id":"link","label":"Enlace URL"}]},
+    {"type":"budget_row","name":"Partida económica","settings":[
+      {"type":"text","id":"concept","label":"Partida","default":"Estructura"},
+      {"type":"textarea","id":"scope","label":"Aspectos incluidos","default":"Elementos, uniones y accesorios."}]},
+    {"type":"check_item","name":"Checklist","settings":[
+      {"type":"text","id":"label","label":"Comprobación","default":"He definido el uso previsto."}]},
+    {"type":"faq","name":"Pregunta frecuente","settings":[
+      {"type":"text","id":"question","label":"Pregunta","default":"¿El montaje está incluido?"},
+      {"type":"textarea","id":"answer","label":"Respuesta","default":"Depende del producto y la oferta."}]}
+  ],
+  "max_blocks": 50,
+  "presets": [{"name":"Guía · Antes de comprar"}]
+}
 {% endschema %}

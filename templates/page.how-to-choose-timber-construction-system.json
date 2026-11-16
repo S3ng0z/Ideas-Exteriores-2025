@@ -31,19 +31,353 @@
         "c"
       ],
       "settings": {
-        "eyebrow": "Guía práctica · Sistemas constructivos",
-        "heading": "Cómo elegir el mejor sistema constructivo de madera para tu proyecto",
-        "lead": "<p>Antes de decidir entre sistema europeo, entramado ligero y paneles SIP, revisa lo que condiciona de verdad tu obra: uso, presupuesto, parcela, aislamiento, acabados, mantenimiento y normativa. Te ayudamos a convertir esas decisiones en una propuesta concreta, sin promesas genéricas.</p>",
-        "primary_label": "Revisar criterios de elección",
+        "eyebrow": "Guía antes de comprar · Construcción en madera",
+        "heading": "Guía para elegir un sistema constructivo de madera antes de comprar",
+        "lead": "<p>Ocho decisiones para elegir con información y solicitar un presupuesto completo. Conoce cómo influyen el uso, la parcela, el aislamiento, la configuración, los trabajos incluidos y las comprobaciones técnicas en tu proyecto.</p>",
+        "primary_label": "Revisar las ocho decisiones",
         "primary_link": "#criterios-eleccion",
         "secondary_label": "Solicitar asesoramiento",
         "secondary_link": "#solicitar-asesoramiento",
-        "summary_title": "De las dudas a un presupuesto claro"
+        "summary_title": "Uso, modelo, alcance y viabilidad"
       }
     },
     "guide": {
       "type": "ie-choice-system-guide",
-      "settings": {}
+      "settings": {
+        "intro_kicker": "01 · Guía práctica",
+        "intro_title": "Ocho decisiones antes de comprar",
+        "intro_text": "<p>Una caseta, un estudio y una vivienda no se definen solo por su apariencia. Antes de comparar sistemas o precios, concreta el uso, la ubicación y las prestaciones que realmente necesitas.</p>",
+        "budget_kicker": "02 · Presupuestos comparables",
+        "budget_title": "Qué debe incluir una oferta clara",
+        "budget_intro": "<p>No confundas el precio de un kit con el coste de una construcción terminada. Estructura, montaje, cimentación, transporte e impuestos pueden tener alcances diferentes entre ofertas.</p>",
+        "budget_note": "BASIC, STANDARD y PASSIVE pueden ser denominaciones comerciales de configuraciones distintas. No constituyen por sí mismas certificaciones técnicas ni Passivhaus.",
+        "list_kicker": "03 · Tu proyecto en una lista",
+        "list_title": "Antes de solicitar presupuesto",
+        "list_intro": "<p>Marca lo que ya tienes identificado. No es necesario tener todo resuelto para realizar una primera consulta: lo pendiente servirá para orientar el estudio.</p>",
+        "list_note": "Esta lista es orientativa; las selecciones no se guardan ni se envían con el formulario.",
+        "faq_kicker": "04 · Dudas habituales",
+        "faq_title": "Preguntas frecuentes antes de comprar",
+        "faq_intro": "<p>Respuestas sencillas sobre precio, uso residencial, prestaciones y pasos previos a la contratación.</p>",
+        "form_kicker": "05 · Asesoramiento técnico y comercial",
+        "form_title": "Cuéntanos tu proyecto",
+        "form_intro": "<p>Indícanos qué deseas construir, dónde, la superficie aproximada y el presupuesto previsto. Revisaremos los modelos y las configuraciones disponibles antes de preparar una propuesta.</p>",
+        "form_note": "Puedes solicitar una orientación sin haber elegido todavía el sistema constructivo. No es una aprobación técnica o urbanística.",
+        "submit_label": "Solicitar asesoramiento y presupuesto",
+        "legal_note": "La información es orientativa y no sustituye el proyecto, el cálculo estructural, las comprobaciones urbanísticas ni las prestaciones documentadas. El presupuesto definitivo depende del modelo, la configuración, el emplazamiento y las condiciones contratadas."
+      },
+      "blocks": {
+        "decision_1": {
+          "type": "decision",
+          "settings": {
+            "number": "01",
+            "title": "Define el uso de la construcción",
+            "summary": "Identifica si el espacio será auxiliar, de uso frecuente o residencial. La frecuencia de ocupación no convierte una caseta en vivienda.",
+            "points": "Función principal, superficie y distribución|Ocupación prevista y frecuencia de uso|Agua, electricidad, saneamiento y climatización|Confort, mantenimiento y actividad autorizada",
+            "note": "La aptitud para un uso debe justificarse en el modelo y la parcela.",
+            "link_label": "Elegir según el uso",
+            "link": "/pages/choose-timber-construction-system"
+          }
+        },
+        "decision_2": {
+          "type": "decision",
+          "settings": {
+            "number": "02",
+            "title": "Establece un presupuesto realista",
+            "summary": "Compara ofertas con la misma configuración y las mismas partidas, no precios de productos con distintos grados de terminación.",
+            "points": "Estructura, envolvente y carpinterías|Cimentación, instalaciones y acabados|Logística, descarga, montaje e impuestos|Proyecto, licencias, exclusiones y garantías",
+            "note": "BASIC, STANDARD o PASSIVE son nombres comerciales hasta que sus componentes y prestaciones queden documentados.",
+            "link_label": "Saber más",
+            "link": ""
+          }
+        },
+        "decision_3": {
+          "type": "decision",
+          "settings": {
+            "number": "03",
+            "title": "Comprueba la parcela y los accesos",
+            "summary": "La ubicación puede modificar la viabilidad, la cimentación, el cálculo estructural, los medios de transporte y el presupuesto.",
+            "points": "Planeamiento, usos permitidos y títulos habilitantes|Topografía, terreno, apoyos y anclajes|Acceso de camión, descarga, acopio y maniobras|Viento, nieve, lluvia, drenaje y exposición",
+            "note": "La prefabricación no supone por sí sola exención de permisos.",
+            "link_label": "Saber más",
+            "link": ""
+          }
+        },
+        "decision_4": {
+          "type": "decision",
+          "settings": {
+            "number": "04",
+            "title": "Evalúa aislamiento y confort",
+            "summary": "Revisa el comportamiento del conjunto de la envolvente, no solo un espesor de pared o el nombre del sistema.",
+            "points": "Muros, cubierta, suelo y puentes térmicos|Carpinterías, juntas y hermeticidad|Acústica, ventilación y calidad de ejecución|Humedad, condensaciones y protección del agua",
+            "note": "Los valores técnicos se comparan con documentación equivalente de composiciones concretas.",
+            "link_label": "Comparar los sistemas",
+            "link": "/pages/timber-construction-systems-comparison"
+          }
+        },
+        "decision_5": {
+          "type": "decision",
+          "settings": {
+            "number": "05",
+            "title": "Elige modelo y acabados",
+            "summary": "Parte de una referencia real de catálogo y define opciones compatibles antes de asumir que cualquier modificación es viable.",
+            "points": "Superficie útil y construida claramente diferenciadas|Distribución, huecos, estructura y cubierta|Carpinterías, aislamiento y revestimientos|Equipamiento base, opcionales y exclusiones",
+            "note": "Los cambios de huecos, cargas o cerramientos necesitan revisión técnica y comercial.",
+            "link_label": "Explorar por tipo de proyecto",
+            "link": "/pages/choose-timber-construction-system"
+          }
+        },
+        "decision_6": {
+          "type": "decision",
+          "settings": {
+            "number": "06",
+            "title": "Planifica fabricación y montaje",
+            "summary": "Separa la fabricación de la preparación de parcela, el transporte, la descarga, el montaje y los trabajos posteriores.",
+            "points": "Definición de la configuración y mecanizados|Bases, suministros y accesos preparados|Dimensiones, pesos y medios de descarga|Montaje aprobado, instalaciones y acabados",
+            "note": "No debe deducirse un plazo total menor únicamente por el grado de prefabricación.",
+            "link_label": "Saber más",
+            "link": ""
+          }
+        },
+        "decision_7": {
+          "type": "decision",
+          "settings": {
+            "number": "07",
+            "title": "Revisa mantenimiento y garantías",
+            "summary": "La durabilidad se apoya en el diseño, el control de humedad, la exposición y la conservación de los componentes.",
+            "points": "Protección y acabados de madera expuesta|Cubiertas, canalones, juntas y encuentros|Carpinterías, herrajes y elementos accesibles|Garantías, responsabilidades e instrucciones de uso",
+            "note": "Las garantías comerciales no sustituyen los derechos legales de los consumidores.",
+            "link_label": "Saber más",
+            "link": ""
+          }
+        },
+        "decision_8": {
+          "type": "decision",
+          "settings": {
+            "number": "08",
+            "title": "Comprueba normativa y documentación",
+            "summary": "Una ficha comercial no equivale a proyecto técnico ni acredita automáticamente la viabilidad de un emplazamiento.",
+            "points": "Planeamiento municipal y profesionales competentes|CTE y documentos básicos cuando correspondan|Planos, composición, prestaciones y uniones documentadas|Licencias, garantías, montaje y alcance presupuestado",
+            "note": "El cumplimiento se justifica para el edificio, el uso y la solución concreta; no por el nombre del producto.",
+            "link_label": "Saber más",
+            "link": ""
+          }
+        },
+        "budget_1": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Estructura",
+            "scope": "Componentes resistentes, uniones, herrajes y accesorios."
+          }
+        },
+        "budget_2": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Cerramientos",
+            "scope": "Muros, cubierta, suelo, membranas y aislamiento incluidos."
+          }
+        },
+        "budget_3": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Carpinterías",
+            "scope": "Puertas, ventanas, acristalamientos y prestaciones especificadas."
+          }
+        },
+        "budget_4": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Acabados",
+            "scope": "Revestimientos y terminaciones interiores y exteriores."
+          }
+        },
+        "budget_5": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Instalaciones",
+            "scope": "Electricidad, agua, saneamiento, climatización y alcance de cada oficio."
+          }
+        },
+        "budget_6": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Cimentación",
+            "scope": "Preparación de terreno, apoyos, cimentación y anclajes."
+          }
+        },
+        "budget_7": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Logística",
+            "scope": "Transporte, descarga, grúa, acopio y accesos."
+          }
+        },
+        "budget_8": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Montaje",
+            "scope": "Trabajos contratados, medios y condiciones de entrega."
+          }
+        },
+        "budget_9": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Proyecto y permisos",
+            "scope": "Documentación técnica, profesionales, licencias y tasas."
+          }
+        },
+        "budget_10": {
+          "type": "budget_row",
+          "settings": {
+            "concept": "Impuestos",
+            "scope": "Tipos aplicables y desglose de partidas gravadas."
+          }
+        },
+        "check_1": {
+          "type": "check_item",
+          "settings": {
+            "label": "He definido el uso previsto y la frecuencia de ocupación."
+          }
+        },
+        "check_2": {
+          "type": "check_item",
+          "settings": {
+            "label": "Conozco el municipio donde se instalaría."
+          }
+        },
+        "check_3": {
+          "type": "check_item",
+          "settings": {
+            "label": "Tengo superficie y distribución aproximadas."
+          }
+        },
+        "check_4": {
+          "type": "check_item",
+          "settings": {
+            "label": "He identificado un modelo o sistema de referencia."
+          }
+        },
+        "check_5": {
+          "type": "check_item",
+          "settings": {
+            "label": "He considerado el aislamiento y el nivel de confort."
+          }
+        },
+        "check_6": {
+          "type": "check_item",
+          "settings": {
+            "label": "Conozco los acabados y equipamientos de interés."
+          }
+        },
+        "check_7": {
+          "type": "check_item",
+          "settings": {
+            "label": "He revisado los accesos y la situación básica de la parcela."
+          }
+        },
+        "check_8": {
+          "type": "check_item",
+          "settings": {
+            "label": "Sé qué trabajos y servicios necesito contratar."
+          }
+        },
+        "check_9": {
+          "type": "check_item",
+          "settings": {
+            "label": "Dispongo de un presupuesto orientativo."
+          }
+        },
+        "check_10": {
+          "type": "check_item",
+          "settings": {
+            "label": "Conozco las verificaciones técnicas o administrativas pendientes."
+          }
+        },
+        "check_11": {
+          "type": "check_item",
+          "settings": {
+            "label": "Solicitaré una oferta con partidas incluidas y excluidas."
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "¿El precio incluye el montaje?",
+            "answer": "Depende del producto y de la oferta. Montaje, transporte, cimentación y servicios adicionales deben constar expresamente como incluidos o excluidos."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo instalar una vivienda prefabricada en cualquier terreno?",
+            "answer": "No. Debe comprobarse el uso permitido por el planeamiento y los requisitos técnicos y administrativos aplicables al emplazamiento."
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué diferencia hay entre un kit y una construcción terminada?",
+            "answer": "El kit corresponde a un suministro definido; una construcción terminada puede incluir proyecto, trabajos en parcela, instalaciones y acabados. Hay que comparar partidas equivalentes."
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué significa la configuración PASSIVE?",
+            "answer": "Puede ser una denominación comercial de un paquete. No acredita automáticamente certificación Passivhaus, una calificación energética ni una prestación concreta."
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Es mejor elegir primero el sistema o el modelo?",
+            "answer": "Primero identifica el uso y las necesidades. Después compara modelos y sistemas compatibles, sus configuraciones verificadas y el alcance económico."
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo consultar si aún no tengo todos los datos?",
+            "answer": "Sí. Con el uso previsto, una ubicación aproximada y una referencia de superficie podemos orientar los siguientes pasos y señalar las comprobaciones pendientes."
+          }
+        }
+      },
+      "block_order": [
+        "decision_1",
+        "decision_2",
+        "decision_3",
+        "decision_4",
+        "decision_5",
+        "decision_6",
+        "decision_7",
+        "decision_8",
+        "budget_1",
+        "budget_2",
+        "budget_3",
+        "budget_4",
+        "budget_5",
+        "budget_6",
+        "budget_7",
+        "budget_8",
+        "budget_9",
+        "budget_10",
+        "check_1",
+        "check_2",
+        "check_3",
+        "check_4",
+        "check_5",
+        "check_6",
+        "check_7",
+        "check_8",
+        "check_9",
+        "check_10",
+        "check_11",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6"
+      ]
     }
   },
   "order": [
