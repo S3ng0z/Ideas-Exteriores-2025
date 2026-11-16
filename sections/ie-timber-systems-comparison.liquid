@@ -1,308 +1,262 @@
 {{ 'ie-timber-comparison-page.css' | asset_url | stylesheet_tag }}
-
 <section class="ie-compare" id="comparativa-tecnica" aria-labelledby="ie-compare-title-{{ section.id }}">
   <div class="ie-compare__inner">
-    <header class="ie-compare__head">
-      <div>
-        <p class="ie-compare__eyebrow">02 · Comparativa técnica y comercial</p>
-        <h2 id="ie-compare-title-{{ section.id }}">Comparar prestaciones con el mismo alcance</h2>
-      </div>
-      <p>
-        El nombre del sistema no determina por sí solo el resultado. Estructura, aislamiento, hermeticidad, humedad,
-        fuego, acústica, montaje y coste dependen de la composición real, del detalle constructivo y del alcance contratado.
-        Esta comparativa sirve para orientar la decisión antes del estudio específico del proyecto.
-      </p>
-    </header>
+    <nav class="ie-compare__jump" aria-label="Índice de la comparativa">
+      <a href="#comparativa-tabla">{{ section.settings.nav_table | escape }}</a>
+      <a href="#comparativa-detalles">{{ section.settings.nav_detail | escape }}</a>
+      <a href="#comparativa-presupuesto">{{ section.settings.nav_cost | escape }}</a>
+      <a href="#comparativa-faq">{{ section.settings.nav_faq | escape }}</a>
+    </nav>
 
-    <div class="ie-compare__table-wrap" role="region" aria-label="Tabla comparativa de sistemas constructivos" tabindex="0">
-      <table class="ie-compare__table">
-        <caption class="ie-compare__sr-only">Comparativa técnica y comercial entre sistema europeo, entramado ligero y paneles SIP.</caption>
-        <thead>
-          <tr>
-            <th scope="col">Criterio</th>
-            <th scope="col">Europeo</th>
-            <th scope="col">Entramado</th>
-            <th scope="col">SIP</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Sistema estructural</th>
-            <td>Piezas perfiladas*</td>
-            <td>Bastidores de madera</td>
-            <td>Paneles estructurales aislados</td>
-          </tr>
-          <tr>
-            <th scope="row">Personalización</th>
-            <td>Según solución y geometría</td>
-            <td>Muy flexible, dentro de la revisión estructural y de envolvente</td>
-            <td>Requiere planificación previa; los cambios tardíos condicionan fabricación y juntas</td>
-          </tr>
-          <tr>
-            <th scope="row">Aislamiento</th>
-            <td>Según composición completa</td>
-            <td>Configurable por capas</td>
-            <td>Integrado en el panel; encuentros y capas complementarias siguen siendo decisivos</td>
-          </tr>
-          <tr>
-            <th scope="row">Hermeticidad</th>
-            <td>Depende de juntas, encuentros y de la capa técnica interior</td>
-            <td>Se diseña con tableros o membranas y sellados continuos</td>
-            <td>Depende especialmente del diseño y ejecución de juntas, huecos y encuentros</td>
-          </tr>
-          <tr>
-            <th scope="row">Montaje</th>
-            <td>Según sistema y grado de mecanizado</td>
-            <td>Prefabricable o ejecutable parcialmente en obra</td>
-            <td>Prefabricación en paneles con alta necesidad de definición previa</td>
-          </tr>
-          <tr>
-            <th scope="row">Mantenimiento</th>
-            <td>La madera exterior visible exige revisar protección, humedad y encuentros según exposición</td>
-            <td>Depende del revestimiento exterior, drenaje, sellados y control de humedad</td>
-            <td>Depende del revestimiento, sellados y protección del panel frente a entradas de agua</td>
-          </tr>
-          <tr>
-            <th scope="row">Ampliaciones</th>
-            <td>Estudio específico</td>
-            <td>Flexible, con estudio de estructura y envolvente</td>
-            <td>Estudio y planificación de modulación, apoyos y juntas</td>
-          </tr>
-          <tr>
-            <th scope="row">Precio</th>
-            <td>Presupuesto según composición y alcance</td>
-            <td>Según modelo y configuración</td>
-            <td>Según modelo y configuración</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p class="ie-compare__note">
-      * «Sistema europeo» es la denominación comercial de Ideas Exteriores para su solución específica de piezas exteriores
-      de madera perfilada y capa técnica interior. No equivale automáticamente a cualquier sistema de madera maciza ni constituye
-      una norma, certificación o sello europeo.
-    </p>
-
-    <div class="ie-compare__section">
-      <div class="ie-compare__section-head">
-        <p class="ie-compare__eyebrow">03 · Qué cambia en el proyecto</p>
-        <h2>Aislamiento, hermeticidad, montaje, mantenimiento y personalización</h2>
-        <p>
-          Ninguno de estos criterios debe evaluarse con un claim aislado. La comparación útil es la que mantiene constantes
-          uso, ubicación, exigencias de proyecto y nivel de acabado.
-        </p>
-      </div>
-
-      <div class="ie-compare__criteria">
-        <article>
-          <span>01</span>
-          <h3>Aislamiento</h3>
-          <p>En el sistema europeo depende de la sección completa; en entramado puede ajustarse por capas; en SIP el núcleo forma parte del panel, pero puentes térmicos, juntas, huecos y encuentros deben resolverse en el conjunto.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Hermeticidad</h3>
-          <p>Se consigue mediante una capa continua de control de aire y un sellado coherente. El procedimiento cambia entre sistemas, pero la calidad de detalle y ejecución es determinante en los tres.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Montaje</h3>
-          <p>El grado de prefabricación condiciona tiempos, tolerancias, medios de descarga y trabajo en parcela. SIP concentra más decisiones antes de fabricar; el entramado admite distintos grados de panelización; el europeo depende de su solución concreta.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Mantenimiento</h3>
-          <p>La durabilidad exige controlar agua y humedad, revisar sellados y conservar los acabados expuestos. La frecuencia real depende de fachada, orientación, clima, detalle y material de acabado, no solo del sistema estructural.</p>
-        </article>
-        <article>
-          <span>05</span>
-          <h3>Personalización</h3>
-          <p>Entramado ofrece gran libertad de composición; SIP funciona especialmente bien con geometría y mecanizados definidos antes de fábrica; el sistema europeo admite ajustes dentro de las reglas de su composición y de los movimientos de la madera.</p>
-        </article>
-      </div>
-    </div>
-
-    <div class="ie-compare__section ie-compare__section--strengths">
-      <div class="ie-compare__section-head">
-        <p class="ie-compare__eyebrow">04 · Ventajas y limitaciones</p>
-        <h2>Qué aporta cada solución y qué exige controlar</h2>
-        <p>La mejor opción es la que reduce incertidumbres para un proyecto concreto, no la que acumula más ventajas genéricas.</p>
-      </div>
-
-      <div class="ie-compare__systems">
-        <article>
-          <p class="ie-compare__system-kicker">Sistema europeo</p>
-          <h3>Madera perfilada + capa técnica interior</h3>
-          <div class="ie-compare__pros-cons">
-            <div>
-              <h4>Ventajas</h4>
-              <ul>
-                <li>Expresión exterior de madera integrada en la solución.</li>
-                <li>La capa técnica puede alojar aislamiento, instalaciones y acabado interior.</li>
-                <li>Permite una identidad material muy definida cuando la composición está cerrada.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Limitaciones</h4>
-              <ul>
-                <li>Debe estudiar movimientos dimensionales, humedad, uniones y sellados.</li>
-                <li>La madera exterior expuesta exige una estrategia de protección y mantenimiento.</li>
-                <li>El nombre comercial no permite inferir prestaciones sin memoria de composición.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <p class="ie-compare__system-kicker">Entramado ligero</p>
-          <h3>Bastidores y envolvente por capas</h3>
-          <div class="ie-compare__pros-cons">
-            <div>
-              <h4>Ventajas</h4>
-              <ul>
-                <li>Alta flexibilidad geométrica y de configuración por capas.</li>
-                <li>Buen encaje en ampliaciones, rehabilitación y soluciones con condicionantes.</li>
-                <li>Permite graduar el nivel de prefabricación y coordinar diferentes acabados.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Limitaciones</h4>
-              <ul>
-                <li>La prestación final es sensible a encuentros, membranas, huecos y control de ejecución.</li>
-                <li>Un mayor trabajo en parcela puede incrementar coordinación y variabilidad.</li>
-                <li>Los cambios que afecten estructura o envolvente requieren revisión técnica.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <p class="ie-compare__system-kicker">Paneles SIP</p>
-          <h3>Caras resistentes + núcleo aislante</h3>
-          <div class="ie-compare__pros-cons">
-            <div>
-              <h4>Ventajas</h4>
-              <ul>
-                <li>Alto grado de prefabricación y repetibilidad cuando el proyecto está definido.</li>
-                <li>Estructura y aislamiento se integran en un elemento industrializado.</li>
-                <li>Puede reducir operaciones en parcela dentro de un alcance bien coordinado.</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Limitaciones</h4>
-              <ul>
-                <li>Huecos, pasos, uniones y cambios deben planificarse antes de fabricar.</li>
-                <li>Las juntas y la protección frente a humedad requieren detalle y ejecución precisos.</li>
-                <li>No existe una prestación SIP universal: depende del panel y sistema documentados.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <div class="ie-compare__economics">
-      <div class="ie-compare__economics-intro">
-        <p class="ie-compare__eyebrow">05 · Diferencias económicas</p>
-        <h2>Comparar coste total, no solo el precio del kit</h2>
-        <p>
-          No asignamos porcentajes genéricos entre sistemas. El presupuesto cambia con la solución, el modelo, el nivel de
-          prefabricación, la ubicación, la obra previa y las partidas incluidas. Dos ofertas solo son comparables si cubren el mismo alcance.
-        </p>
-      </div>
-
-      <div class="ie-compare__budget-grid">
-        <article>
-          <span>Europeo</span>
-          <h3>Presupuesto por composición y proyecto</h3>
-          <p>Influyen perfil y clasificación de la madera, sección interior, aislamiento, carpinterías, protección exterior, mecanizados, transporte, montaje y detalles específicos.</p>
-        </article>
-        <article>
-          <span>Entramado</span>
-          <h3>Presupuesto por modelo y configuración</h3>
-          <p>Influyen secciones, tableros, aislamiento, membranas, revestimientos, nivel de panelización, carpinterías, instalaciones, transporte, montaje y acabados.</p>
-        </article>
-        <article>
-          <span>SIP</span>
-          <h3>Presupuesto por modelo y configuración</h3>
-          <p>Influyen tipo y espesor de panel, mecanizados, refuerzos, juntas, revestimientos, carpinterías, transporte, medios de descarga, montaje, instalaciones y acabados.</p>
-        </article>
-      </div>
-
-      <div class="ie-compare__scope">
+    <section class="ie-compare__region" id="comparativa-tabla" aria-labelledby="ie-compare-title-{{ section.id }}">
+      <header class="ie-compare__head">
         <div>
-          <h3>Alcance que conviene igualar antes de comparar</h3>
-          <ul>
-            <li>Proyecto y documentación técnica.</li>
-            <li>Base, cimentación y preparación del terreno.</li>
-            <li>Estructura, envolvente y cubierta.</li>
-            <li>Carpinterías exteriores e interiores.</li>
-            <li>Transporte, descarga, grúa y montaje.</li>
-            <li>Instalaciones y pasos técnicos.</li>
-            <li>Acabados interiores y exteriores.</li>
-            <li>Impuestos, licencias y partidas expresamente excluidas.</li>
-          </ul>
+          <p class="ie-compare__eyebrow">{{ section.settings.table_kicker | escape }}</p>
+          <h2 id="ie-compare-title-{{ section.id }}">{{ section.settings.table_title | escape }}</h2>
         </div>
+        <div class="ie-compare__intro rte">{{ section.settings.table_intro }}</div>
+      </header>
+      <div class="ie-compare__table-wrap" role="region" aria-label="Tabla comparativa desplazable horizontalmente" tabindex="0">
+        <table class="ie-compare__table">
+          <caption>{{ section.settings.table_caption | escape }}</caption>
+          <thead><tr>
+            <th scope="col">{{ section.settings.col_criterion | escape }}</th>
+            <th scope="col">{{ section.settings.col_european | escape }}</th>
+            <th scope="col">{{ section.settings.col_frame | escape }}</th>
+            <th scope="col">{{ section.settings.col_sip | escape }}</th>
+          </tr></thead>
+          <tbody>
+            {% for block in section.blocks %}
+              {% if block.type == 'compare_row' %}
+                <tr {{ block.shopify_attributes }}>
+                  <th scope="row">{{ block.settings.criterion | escape }}</th>
+                  <td>{{ block.settings.european | escape }}</td>
+                  <td>{{ block.settings.frame | escape }}</td>
+                  <td>{{ block.settings.sip | escape }}</td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="ie-compare__note">{{ section.settings.table_note | escape }}</p>
+    </section>
+
+    <section class="ie-compare__region ie-compare__region--bordered" id="comparativa-detalles" aria-labelledby="ie-compare-details-{{ section.id }}">
+      <header class="ie-compare__head">
         <div>
-          <h3>Factores que pueden alterar el presupuesto</h3>
-          <ul>
-            <li>Superficie, geometría, número de plantas y luces estructurales.</li>
-            <li>Municipio, clima, cargas, acústica y exigencias de uso.</li>
-            <li>Acceso de camión, descarga, acopio y medios auxiliares.</li>
-            <li>Calidad de carpinterías, revestimientos y nivel de acabado.</li>
-            <li>Cambios posteriores a la definición técnica o a la fabricación.</li>
-            <li>Condiciones del terreno y solución de cimentación.</li>
-          </ul>
+          <p class="ie-compare__eyebrow">{{ section.settings.details_kicker | escape }}</p>
+          <h2 id="ie-compare-details-{{ section.id }}">{{ section.settings.details_title | escape }}</h2>
         </div>
+        <div class="ie-compare__intro rte">{{ section.settings.details_intro }}</div>
+      </header>
+      <div class="ie-compare__insights">
+        {% for block in section.blocks %}
+          {% if block.type == 'insight' %}
+            <article class="ie-compare__insight" {{ block.shopify_attributes }}>
+              <h3>{{ block.settings.title | escape }}</h3>
+              <p>{{ block.settings.text | escape }}</p>
+            </article>
+          {% endif %}
+        {% endfor %}
       </div>
-    </div>
+      <p class="ie-compare__note">{{ section.settings.details_note | escape }}</p>
+    </section>
 
-    <div class="ie-compare__section ie-compare__section--technical">
-      <div class="ie-compare__section-head">
-        <p class="ie-compare__eyebrow">06 · Fichas técnicas</p>
-        <h2>Profundiza en el sistema antes de elegir modelo</h2>
-        <p>Las guías de cada sistema desarrollan composición, uniones, montaje, durabilidad y aplicaciones sin convertir el nombre del sistema en una promesa automática de prestaciones.</p>
+    <section class="ie-compare__region ie-compare__region--bordered" id="comparativa-control" aria-labelledby="ie-compare-control-{{ section.id }}">
+      <header class="ie-compare__head">
+        <div>
+          <p class="ie-compare__eyebrow">{{ section.settings.control_kicker | escape }}</p>
+          <h2 id="ie-compare-control-{{ section.id }}">{{ section.settings.control_title | escape }}</h2>
+        </div>
+        <div class="ie-compare__intro rte">{{ section.settings.control_intro }}</div>
+      </header>
+      <div class="ie-compare__tradeoffs">
+        {% for block in section.blocks %}
+          {% if block.type == 'tradeoff' %}
+            <article {{ block.shopify_attributes }}>
+              <h3>{{ block.settings.title | escape }}</h3>
+              <div>
+                <h4>{{ section.settings.benefit_label | escape }}</h4>
+                <p>{{ block.settings.benefit | escape }}</p>
+              </div>
+              <div>
+                <h4>{{ section.settings.check_label | escape }}</h4>
+                <p>{{ block.settings.check | escape }}</p>
+              </div>
+            </article>
+          {% endif %}
+        {% endfor %}
       </div>
+    </section>
 
-      <div class="ie-compare__technical-links">
-        <article>
-          <span>01</span>
-          <h3>Sistema europeo</h3>
-          <a href="/pages/european-timber-construction-system">Ficha principal del sistema <b aria-hidden="true">→</b></a>
-          <a href="/pages/european-timber-system-how-it-works">Qué es y cómo funciona <b aria-hidden="true">→</b></a>
-          <a href="/pages/european-timber-system-components-joints-materials">Componentes, uniones y materiales <b aria-hidden="true">→</b></a>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Entramado ligero</h3>
-          <a href="/pages/light-frame-construction-system">Ficha principal del sistema <b aria-hidden="true">→</b></a>
-          <a href="/pages/what-is-light-timber-frame-construction">Qué es y cómo funciona <b aria-hidden="true">→</b></a>
-          <a href="/pages/timber-frame-structure-layers-insulation">Estructura, capas y aislamiento <b aria-hidden="true">→</b></a>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Paneles SIP</h3>
-          <a href="/pages/sip-panels-system">Ficha principal del sistema <b aria-hidden="true">→</b></a>
-          <a href="/pages/what-are-sip-panels-how-they-work">Qué son y cómo funcionan <b aria-hidden="true">→</b></a>
-          <a href="/pages/sip-panel-structure-layers-insulation">Estructura, capas y aislamiento <b aria-hidden="true">→</b></a>
-        </article>
+    <section class="ie-compare__region ie-compare__region--bordered" id="comparativa-presupuesto" aria-labelledby="ie-compare-cost-{{ section.id }}">
+      <header class="ie-compare__head">
+        <div>
+          <p class="ie-compare__eyebrow">{{ section.settings.cost_kicker | escape }}</p>
+          <h2 id="ie-compare-cost-{{ section.id }}">{{ section.settings.cost_title | escape }}</h2>
+        </div>
+        <div class="ie-compare__intro rte">{{ section.settings.cost_intro }}</div>
+      </header>
+      <div class="ie-compare__scope-panel">
+        <h3>{{ section.settings.scope_title | escape }}</h3>
+        <ul class="ie-compare__scope-list">
+          {% for block in section.blocks %}
+            {% if block.type == 'scope' %}
+              <li {{ block.shopify_attributes }}>{{ block.settings.item | escape }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        <p>{{ section.settings.scope_note | escape }}</p>
       </div>
+    </section>
 
-      <aside class="ie-compare__technical-note">
-        <strong>Criterio de proyecto.</strong>
-        La conformidad normativa y las prestaciones finales se justifican para la solución concreta y su emplazamiento.
-        La página no sustituye proyecto técnico, cálculo estructural, estudio energético o acústico, documentación del fabricante
-        ni comprobación urbanística.
-      </aside>
-    </div>
+    <section class="ie-compare__region ie-compare__region--bordered" id="comparativa-uso" aria-labelledby="ie-compare-use-{{ section.id }}">
+      <header class="ie-compare__head">
+        <div>
+          <p class="ie-compare__eyebrow">{{ section.settings.use_kicker | escape }}</p>
+          <h2 id="ie-compare-use-{{ section.id }}">{{ section.settings.use_title | escape }}</h2>
+        </div>
+        <div class="ie-compare__intro rte">{{ section.settings.use_intro }}</div>
+      </header>
+      <div class="ie-compare__uses">
+        {% for block in section.blocks %}
+          {% if block.type == 'use_case' %}
+            <article {{ block.shopify_attributes }}>
+              <h3>{{ block.settings.title | escape }}</h3>
+              <p>{{ block.settings.description | escape }}</p>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="ie-compare__next">
+        {% if section.settings.choose_link != blank %}
+          <a class="ie-compare__primary-link" href="{{ section.settings.choose_link }}">
+            {{ section.settings.choose_label | escape }} <span aria-hidden="true">↗</span>
+          </a>
+        {% endif %}
+        {% if section.settings.contact_link != blank %}
+          <a class="ie-compare__secondary-link" href="{{ section.settings.contact_link }}">{{ section.settings.contact_label | escape }}</a>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="ie-compare__region ie-compare__region--bordered" id="comparativa-faq" aria-labelledby="ie-compare-faq-{{ section.id }}">
+      <header class="ie-compare__head">
+        <div>
+          <p class="ie-compare__eyebrow">{{ section.settings.faq_kicker | escape }}</p>
+          <h2 id="ie-compare-faq-{{ section.id }}">{{ section.settings.faq_title | escape }}</h2>
+        </div>
+        <div class="ie-compare__intro rte">{{ section.settings.faq_intro }}</div>
+      </header>
+      <div class="ie-compare__faq">
+        {% for block in section.blocks %}
+          {% if block.type == 'faq' %}
+            <details {{ block.shopify_attributes }}>
+              <summary>{{ block.settings.question | escape }} <span class="ie-compare__faq-symbol" aria-hidden="true"></span></summary>
+              <p>{{ block.settings.answer | escape }}</p>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="ie-compare__region ie-compare__region--bordered ie-compare__region--last" aria-labelledby="ie-compare-guides-{{ section.id }}">
+      <header class="ie-compare__head">
+        <div>
+          <p class="ie-compare__eyebrow">{{ section.settings.guides_kicker | escape }}</p>
+          <h2 id="ie-compare-guides-{{ section.id }}">{{ section.settings.guides_title | escape }}</h2>
+        </div>
+        <div class="ie-compare__intro rte">{{ section.settings.guides_intro }}</div>
+      </header>
+      <div class="ie-compare__guides">
+        {% for block in section.blocks %}
+          {% if block.type == 'tech_guide' %}
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}" {{ block.shopify_attributes }}>
+                <span>{{ block.settings.title | escape }}</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <p class="ie-compare__note ie-compare__closing-note">{{ section.settings.legal_note | escape }}</p>
+    </section>
   </div>
 </section>
-
 {% schema %}
 {
-  "name": "Comparativa · 3 sistemas",
-  "settings": [],
-  "presets": [{"name": "Comparativa · 3 sistemas"}]
+  "name": "Comparativa · Sistemas",
+  "settings": [
+    {"type":"text","id":"nav_table","label":"Navegación tabla","default":"Comparativa"},
+    {"type":"text","id":"nav_detail","label":"Navegación detalles","default":"Prestaciones"},
+    {"type":"text","id":"nav_cost","label":"Navegación presupuesto","default":"Presupuesto"},
+    {"type":"text","id":"nav_faq","label":"Navegación FAQ","default":"Preguntas frecuentes"},
+    {"type":"text","id":"table_kicker","label":"Antetítulo tabla","default":"01 · Comparativa"},
+    {"type":"text","id":"table_title","label":"Título tabla","default":"Qué cambia entre los tres sistemas"},
+    {"type":"richtext","id":"table_intro","label":"Introducción tabla","default":"<p>Comparamos principios constructivos, no prestaciones certificadas de modelos concretos. La composición, las uniones, la ejecución y el uso previsto condicionan el resultado.</p>"},
+    {"type":"text","id":"table_caption","label":"Resumen accesible tabla","default":"Comparación de sistema europeo, entramado ligero y paneles SIP por criterios constructivos"},
+    {"type":"text","id":"col_criterion","label":"Columna criterio","default":"Criterio"},
+    {"type":"text","id":"col_european","label":"Columna europeo","default":"Sistema Europeo"},
+    {"type":"text","id":"col_frame","label":"Columna entramado","default":"Entramado Ligero"},
+    {"type":"text","id":"col_sip","label":"Columna SIP","default":"Paneles SIP"},
+    {"type":"textarea","id":"table_note","label":"Nota técnica tabla","default":"«Sistema Europeo» es una denominación comercial, no una certificación. La función estructural y las prestaciones deben verificarse para cada solución, modelo y fabricante."},
+    {"type":"text","id":"details_kicker","label":"Antetítulo prestaciones","default":"02 · Comportamiento"},
+    {"type":"text","id":"details_title","label":"Título prestaciones","default":"Confort, humedad y ejecución"},
+    {"type":"richtext","id":"details_intro","label":"Introducción prestaciones","default":"<p>La calidad de una envolvente depende de cómo se resuelve el conjunto: muros, cubierta, suelo, huecos y encuentros. Ningún sistema garantiza resultados por su denominación.</p>"},
+    {"type":"textarea","id":"details_note","label":"Nota prestaciones","default":"La comparación térmica exige valores documentados bajo condiciones equivalentes. Un dato de material o panel no equivale a la prestación del cerramiento completo o del edificio."},
+    {"type":"text","id":"control_kicker","label":"Antetítulo revisión","default":"03 · Fortalezas y límites"},
+    {"type":"text","id":"control_title","label":"Título revisión","default":"Qué aporta cada solución y qué revisar"},
+    {"type":"richtext","id":"control_intro","label":"Introducción revisión","default":"<p>Cada tecnología tiene particularidades que interesa comprender antes de definir un modelo y una configuración.</p>"},
+    {"type":"text","id":"benefit_label","label":"Encabezado aporte","default":"Qué aporta"},
+    {"type":"text","id":"check_label","label":"Encabezado revisión","default":"Qué comprobar"},
+    {"type":"text","id":"cost_kicker","label":"Antetítulo economía","default":"04 · Coste real"},
+    {"type":"text","id":"cost_title","label":"Título economía","default":"Compara presupuestos, no solo precios"},
+    {"type":"richtext","id":"cost_intro","label":"Introducción economía","default":"<p>No existe un sistema universalmente más económico. El coste depende del modelo, superficie, composición, ubicación, acabados y trabajos incluidos. Compara ofertas con el mismo alcance.</p>"},
+    {"type":"text","id":"scope_title","label":"Título checklist","default":"Partidas que conviene revisar"},
+    {"type":"textarea","id":"scope_note","label":"Nota de presupuesto","default":"El precio de un kit no es directamente comparable al de una construcción terminada. Las exclusiones y las responsabilidades de cada parte deben constar expresamente en la oferta."},
+    {"type":"text","id":"use_kicker","label":"Antetítulo selección","default":"05 · Aplicaciones"},
+    {"type":"text","id":"use_title","label":"Título selección","default":"¿Cuál conviene estudiar para tu proyecto?"},
+    {"type":"richtext","id":"use_intro","label":"Introducción selección","default":"<p>Estas orientaciones ayudan a identificar alternativas, pero la elección final requiere contrastar el uso, el modelo y las condiciones del emplazamiento.</p>"},
+    {"type":"text","id":"choose_label","label":"Texto elegir uso","default":"Elegir según el uso"},
+    {"type":"url","id":"choose_link","label":"Enlace elegir uso"},
+    {"type":"text","id":"contact_label","label":"Texto contacto","default":"Solicitar asesoramiento técnico"},
+    {"type":"url","id":"contact_link","label":"Enlace contacto"},
+    {"type":"text","id":"faq_kicker","label":"Antetítulo FAQ","default":"06 · Resolvemos dudas"},
+    {"type":"text","id":"faq_title","label":"Título FAQ","default":"Preguntas frecuentes"},
+    {"type":"richtext","id":"faq_intro","label":"Introducción FAQ","default":"<p>Respuestas breves a las dudas más habituales antes de elegir un sistema constructivo.</p>"},
+    {"type":"text","id":"guides_kicker","label":"Antetítulo fichas","default":"07 · Documentación"},
+    {"type":"text","id":"guides_title","label":"Título fichas","default":"Profundiza en cada sistema"},
+    {"type":"richtext","id":"guides_intro","label":"Introducción fichas","default":"<p>Consulta las guías sobre componentes, encuentros, fabricación y aplicaciones antes de valorar un modelo concreto.</p>"},
+    {"type":"textarea","id":"legal_note","label":"Nota legal","default":"Información orientativa. Las prestaciones del material, del producto, del cerramiento y del edificio son niveles de evaluación distintos. La normativa y viabilidad urbanística aplicables se justifican para el proyecto y la parcela concretos."}
+  ],
+  "blocks": [
+    {"type":"compare_row","name":"Fila comparativa","settings":[
+      {"type":"text","id":"criterion","label":"Criterio","default":"Aislamiento"},
+      {"type":"textarea","id":"european","label":"Sistema europeo","default":"Según composición completa"},
+      {"type":"textarea","id":"frame","label":"Entramado ligero","default":"Configurable por capas"},
+      {"type":"textarea","id":"sip","label":"Panel SIP","default":"Núcleo integrado con complementos"}]},
+    {"type":"insight","name":"Detalle técnico","settings":[
+      {"type":"text","id":"title","label":"Título","default":"Aislamiento"},
+      {"type":"textarea","id":"text","label":"Explicación","default":"La comparación requiere valorar el cerramiento completo."}]},
+    {"type":"tradeoff","name":"Aporte y revisión","settings":[
+      {"type":"text","id":"title","label":"Sistema","default":"Sistema Europeo"},
+      {"type":"textarea","id":"benefit","label":"Qué aporta","default":"Una composición constructiva definida."},
+      {"type":"textarea","id":"check","label":"Qué comprobar","default":"Materiales, uniones, prestaciones y condiciones de montaje."}]},
+    {"type":"scope","name":"Partida presupuesto","settings":[
+      {"type":"text","id":"item","label":"Partida","default":"Proyecto y licencias"}]},
+    {"type":"use_case","name":"Encaje orientativo","settings":[
+      {"type":"text","id":"title","label":"Sistema","default":"Sistema Europeo"},
+      {"type":"textarea","id":"description","label":"Cuándo estudiar","default":"Cuando existe una configuración compatible con el uso previsto."}]},
+    {"type":"faq","name":"Pregunta frecuente","settings":[
+      {"type":"text","id":"question","label":"Pregunta","default":"¿Cuál aísla mejor?"},
+      {"type":"textarea","id":"answer","label":"Respuesta","default":"Depende de la configuración documentada y del proyecto."}]},
+    {"type":"tech_guide","name":"Enlace guía técnica","settings":[
+      {"type":"text","id":"title","label":"Nombre","default":"Sistema Europeo"},
+      {"type":"url","id":"link","label":"Destino"}]}
+  ],
+  "max_blocks": 45,
+  "presets": [{"name": "Comparativa · Sistemas"}]
 }
 {% endschema %}

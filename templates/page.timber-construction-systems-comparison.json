@@ -25,16 +25,20 @@
           }
         }
       },
-      "block_order": ["european", "frame", "sip"],
+      "block_order": [
+        "european",
+        "frame",
+        "sip"
+      ],
       "settings": {
         "eyebrow": "Sistemas constructivos · Comparativa",
-        "heading": "Sistema europeo vs entramado ligero vs paneles SIP",
-        "lead": "<p>Tres soluciones de construcción en madera con lógicas distintas. Compara estructura, aislamiento, hermeticidad, montaje, mantenimiento, personalización y alcance económico para identificar qué alternativa merece estudiar en tu proyecto.</p>",
-        "primary_label": "Ver comparativa técnica",
-        "primary_link": "#comparativa-tecnica",
-        "secondary_label": "Solicitar asesoría técnica",
+        "heading": "Sistema Europeo vs Entramado Ligero vs Paneles SIP",
+        "lead": "<p>Conoce las diferencias constructivas antes de elegir. Comparamos estructura, aislamiento, hermeticidad, fabricación, mantenimiento y coste para ayudarte a identificar las soluciones que conviene estudiar según tu proyecto.</p>",
+        "primary_label": "Ver tabla comparativa",
+        "primary_link": "#comparativa-tabla",
+        "secondary_label": "Consultar mi proyecto",
         "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Tres sistemas, un criterio común"
+        "summary_title": "Tres sistemas. Una elección con criterio."
       }
     },
     "systems": {
@@ -45,9 +49,9 @@
           "settings": {
             "image": "shopify://shop_images/Timber_House_Corner_with_Construction_Cutaway.webp",
             "image_alt": "Detalle constructivo del sistema europeo de madera de Ideas Exteriores",
-            "index": "01 · Piezas perfiladas + capa técnica",
+            "index": "01 · Madera perfilada",
             "heading": "Sistema europeo",
-            "text": "<p><strong>Cómo se construye:</strong> piezas exteriores de madera perfilada con una capa técnica interior. <strong>Característica principal:</strong> combina presencia exterior de madera y una composición que debe definirse proyecto a proyecto. <strong>Aplicaciones:</strong> viviendas y anexos compatibles tras estudio técnico.</p>",
+            "text": "<p>Piezas de madera perfilada que forman el cerramiento exterior y, cuando procede, una capa técnica interior con aislamiento e instalaciones. El cálculo, las juntas y los movimientos dependen de la configuración.</p>",
             "link_1_label": "Ver ficha del sistema",
             "link_1": "/pages/european-timber-construction-system",
             "link_2_label": "Componentes y uniones",
@@ -61,9 +65,9 @@
           "settings": {
             "image": "shopify://shop_images/Timber_Frame_House_Under_Construction.webp",
             "image_alt": "Estructura de bastidores de madera en entramado ligero",
-            "index": "02 · Bastidores de madera",
+            "index": "02 · Bastidores por capas",
             "heading": "Entramado ligero",
-            "text": "<p><strong>Cómo se construye:</strong> bastidores de montantes y soleras, rigidización y envolvente por capas. <strong>Característica principal:</strong> flexibilidad geométrica y técnica. <strong>Aplicaciones:</strong> viviendas, ampliaciones, oficinas, estudios y anexos.</p>",
+            "text": "<p>Montantes, soleras, tableros de rigidización y una envolvente compuesta por aislamiento, membranas y revestimientos. Admite distintos grados de prefabricación según el diseño.</p>",
             "link_1_label": "Ver ficha del sistema",
             "link_1": "/pages/light-frame-construction-system",
             "link_2_label": "Estructura, capas y aislamiento",
@@ -76,10 +80,10 @@
           "type": "service",
           "settings": {
             "image": "shopify://shop_images/Modern_Timber_Frame_House_in_Countryside.webp",
-            "image_alt": "Vivienda construida con solución prefabricada de paneles SIP",
-            "index": "03 · Paneles estructurales aislados",
+            "image_alt": "Imagen arquitectónica ilustrativa; no constituye evidencia técnica del sistema SIP",
+            "index": "03 · Paneles aislados",
             "heading": "Paneles SIP",
-            "text": "<p><strong>Cómo se construye:</strong> paneles prefabricados con caras resistentes y núcleo aislante. <strong>Característica principal:</strong> alto grado de industrialización y definición previa. <strong>Aplicaciones:</strong> viviendas, estudios, oficinas y casetas según sistema y proyecto.</p>",
+            "text": "<p>Paneles con caras resistentes y núcleo aislante, fabricados según dimensiones y uniones definidas. Su función estructural y comportamiento dependen de la referencia y de sus detalles de montaje.</p>",
             "link_1_label": "Ver ficha del sistema",
             "link_1": "/pages/sip-panels-system",
             "link_2_label": "Estructura, capas y aislamiento",
@@ -89,27 +93,393 @@
           }
         }
       },
-      "block_order": ["european", "frame", "sip"],
+      "block_order": [
+        "european",
+        "frame",
+        "sip"
+      ],
       "settings": {
-        "eyebrow": "01 · Resumen visual",
-        "heading": "Tres formas de construir en madera",
-        "intro": "<p>La comparación empieza por entender qué elemento forma la estructura, dónde se sitúa el aislamiento y cuánto trabajo se concentra en fábrica o en parcela. Ninguna denominación garantiza por sí sola una prestación, un plazo o un precio.</p>"
+        "eyebrow": "Cómo funcionan",
+        "heading": "Tres maneras de construir en madera",
+        "intro": "<p>La diferencia empieza por los elementos constructivos y su ensamblaje. Las prestaciones finales deben comprobarse con el fabricante, la configuración y las condiciones del proyecto.</p>"
       }
     },
     "comparison": {
       "type": "ie-timber-systems-comparison",
-      "settings": {}
+      "settings": {
+        "nav_table": "Comparativa",
+        "nav_detail": "Prestaciones",
+        "nav_cost": "Presupuesto",
+        "nav_faq": "Preguntas frecuentes",
+        "table_kicker": "01 · Comparación",
+        "table_title": "Qué cambia entre los tres sistemas",
+        "table_intro": "<p>Una tabla para entender las diferencias constructivas. No constituye una clasificación de calidad ni acredita prestaciones de modelos individuales.</p>",
+        "table_caption": "Características generales comparadas de Sistema Europeo, Entramado Ligero y Paneles SIP",
+        "col_criterion": "Criterio",
+        "col_european": "Sistema Europeo",
+        "col_frame": "Entramado Ligero",
+        "col_sip": "Paneles SIP",
+        "table_note": "Las prestaciones dependen de materiales, uniones, capas y ejecución. «Sistema Europeo» es una denominación comercial, no una norma ni certificación europea.",
+        "details_kicker": "02 · Prestaciones y proceso",
+        "details_title": "Confort, humedad, montaje y durabilidad",
+        "details_intro": "<p>El rendimiento se determina en la envolvente completa: muros, cubierta, suelo, carpinterías, juntas y encuentros. El diseño y la ejecución importan tanto como los materiales.</p>",
+        "details_note": "Para comparar prestaciones térmicas, acústicas o de fuego, solicita valores y ensayos aplicables a configuraciones equivalentes. Una clasificación de un producto no equivale a la de todo el edificio.",
+        "control_kicker": "03 · Decisión técnica",
+        "control_title": "Qué aporta cada sistema y qué conviene revisar",
+        "control_intro": "<p>Los sistemas presentan posibilidades distintas. Ninguna ventaja debe extrapolarse a cualquier modelo sin comprobar su composición y los límites del proyecto.</p>",
+        "benefit_label": "Qué aporta",
+        "check_label": "Qué comprobar",
+        "cost_kicker": "04 · Alcance económico",
+        "cost_title": "Compara el coste total, no solo el kit",
+        "cost_intro": "<p>No existe un sistema universalmente más barato. La superficie, la geometría, la ubicación, el nivel de terminación y las partidas incluidas pueden alterar significativamente la oferta.</p>",
+        "scope_title": "Partidas que deben quedar claras",
+        "scope_note": "Un kit de suministro y una construcción terminada no son ofertas equivalentes. El presupuesto debe identificar expresamente inclusiones, exclusiones y responsabilidades.",
+        "use_kicker": "05 · Elección orientativa",
+        "use_title": "¿Cuál conviene estudiar para tu proyecto?",
+        "use_intro": "<p>El primer filtro es qué quieres construir. Después se comprueba el modelo, la configuración, la parcela y la documentación técnica disponible.</p>",
+        "choose_label": "Elegir sistema según el uso",
+        "choose_link": "/pages/choose-timber-construction-system",
+        "contact_label": "Solicitar asesoramiento técnico",
+        "contact_link": "/pages/how-to-choose-timber-construction-system#solicitar-asesoramiento",
+        "faq_kicker": "06 · Dudas habituales",
+        "faq_title": "Preguntas frecuentes",
+        "faq_intro": "<p>Respuestas directas, sin conclusiones universales sobre aislamiento, mantenimiento o habitabilidad.</p>",
+        "guides_kicker": "07 · Más información",
+        "guides_title": "Conoce cada sistema con más detalle",
+        "guides_intro": "<p>Antes de seleccionar un modelo, consulta las guías de composición, uniones, montaje y aplicaciones de cada solución.</p>",
+        "legal_note": "Información orientativa. El fabricante, la configuración y el proyecto determinan las prestaciones reales. Una ficha técnica no sustituye el proyecto, los cálculos, las verificaciones normativas ni la comprobación urbanística de cada emplazamiento."
+      },
+      "blocks": {
+        "row_1": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Elemento característico",
+            "european": "Piezas de madera perfilada",
+            "frame": "Montantes, soleras y tableros",
+            "sip": "Paneles con caras resistentes y núcleo aislante"
+          }
+        },
+        "row_2": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Función estructural",
+            "european": "Según piezas, uniones y apoyos verificados",
+            "frame": "Bastidores, arriostramiento y conexiones calculados",
+            "sip": "Según función acreditada del panel y conexiones"
+          }
+        },
+        "row_3": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Aislamiento",
+            "european": "Según composición completa y capas técnicas",
+            "frame": "Configurable en cavidades y capas adicionales",
+            "sip": "Núcleo integrado; complementos según configuración"
+          }
+        },
+        "row_4": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Hermeticidad",
+            "european": "Juntas, huecos y continuidad de capas de control",
+            "frame": "Membranas o tableros y sellados continuos",
+            "sip": "Sellado de juntas, huecos y encuentros"
+          }
+        },
+        "row_5": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Personalización",
+            "european": "Dentro de la geometría y reglas del sistema",
+            "frame": "Según proyecto, estructura y envolvente",
+            "sip": "Huecos y mecanizados definidos previamente"
+          }
+        },
+        "row_6": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Prefabricación",
+            "european": "Según mecanizado y formato de suministro",
+            "frame": "Desde bastidores hasta paneles de taller",
+            "sip": "Paneles fabricados según modulación"
+          }
+        },
+        "row_7": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Montaje",
+            "european": "Ensamblaje de perfiles y componentes",
+            "frame": "Montaje de bastidores y capas",
+            "sip": "Ensamblaje de paneles y conexiones"
+          }
+        },
+        "row_8": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Acabados",
+            "european": "Madera perfilada visible en la solución considerada",
+            "frame": "Revestimientos según composición",
+            "sip": "Acabados y protecciones definidos por proyecto"
+          }
+        },
+        "row_9": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Mantenimiento",
+            "european": "Madera expuesta, juntas y encuentros",
+            "frame": "Según revestimientos, agua y sellados",
+            "sip": "Según protección de paneles, juntas y revestimientos"
+          }
+        },
+        "row_10": {
+          "type": "compare_row",
+          "settings": {
+            "criterion": "Coste",
+            "european": "Según modelo, composición y partidas",
+            "frame": "Según modelo, configuración y partidas",
+            "sip": "Según modelo, configuración y partidas"
+          }
+        },
+        "insight_1": {
+          "type": "insight",
+          "settings": {
+            "title": "Aislamiento térmico y confort",
+            "text": "El Sistema Europeo depende del muro completo y sus capas; el entramado distribuye aislamiento en cavidades o capas continuas; SIP integra un núcleo aislante. Puentes térmicos, cubiertas, suelos y carpinterías siguen siendo decisivos."
+          }
+        },
+        "insight_2": {
+          "type": "insight",
+          "settings": {
+            "title": "Hermeticidad al aire",
+            "text": "Los tres sistemas requieren una estrategia continua de control de aire. Las juntas, las penetraciones de instalaciones, los huecos y la calidad del sellado condicionan el resultado."
+          }
+        },
+        "insight_3": {
+          "type": "insight",
+          "settings": {
+            "title": "Humedad, durabilidad y mantenimiento",
+            "text": "Evacuación del agua, separación del terreno, secado, ventilación, protección de madera y conservación de revestimientos deben resolverse según clima, exposición y manuales aplicables."
+          }
+        },
+        "insight_4": {
+          "type": "insight",
+          "settings": {
+            "title": "Fabricación y montaje",
+            "text": "Los perfiles pueden mecanizarse, el entramado puede panelizarse y SIP se prefabrica por elementos. El plazo total también depende de cimentación, accesos, descarga, instalaciones y terminaciones."
+          }
+        },
+        "insight_5": {
+          "type": "insight",
+          "settings": {
+            "title": "Cambios y ampliaciones",
+            "text": "Abrir huecos, alterar muros o modificar cargas exige revisión técnica en todos los sistemas. La adaptación depende del diseño aprobado y de las conexiones existentes."
+          }
+        },
+        "trade_1": {
+          "type": "tradeoff",
+          "settings": {
+            "title": "Sistema Europeo",
+            "benefit": "La madera perfilada tiene una presencia arquitectónica destacada y permite integrar capas interiores cuando la configuración las prevé.",
+            "check": "Función estructural, secciones, uniones, movimientos higroscópicos, aislamiento adicional, protección exterior y mantenimiento."
+          }
+        },
+        "trade_2": {
+          "type": "tradeoff",
+          "settings": {
+            "title": "Entramado Ligero",
+            "benefit": "Permite configurar estructura, aislamiento, revestimientos y grado de prefabricación dentro de las opciones técnicas validadas.",
+            "check": "Cálculo, arriostramientos, continuidad de aislamiento y membranas, protección frente al agua y precisión de encuentros."
+          }
+        },
+        "trade_3": {
+          "type": "tradeoff",
+          "settings": {
+            "title": "Paneles SIP",
+            "benefit": "Integra caras resistentes y aislamiento en paneles industrializados, adecuados para geometrías definidas previamente.",
+            "check": "Referencia y función del panel, uniones, juntas, protección frente a humedad, límites de mecanizado y compatibilidad de acabados."
+          }
+        },
+        "scope_1": {
+          "type": "scope",
+          "settings": {
+            "item": "Estructura, cerramientos, cubierta y espesores documentados"
+          }
+        },
+        "scope_2": {
+          "type": "scope",
+          "settings": {
+            "item": "Aislamiento, carpinterías, sellados y revestimientos"
+          }
+        },
+        "scope_3": {
+          "type": "scope",
+          "settings": {
+            "item": "Transporte, descarga, grúa y montaje"
+          }
+        },
+        "scope_4": {
+          "type": "scope",
+          "settings": {
+            "item": "Cimentación, preparación de terreno y accesos"
+          }
+        },
+        "scope_5": {
+          "type": "scope",
+          "settings": {
+            "item": "Instalaciones, conexiones y acometidas"
+          }
+        },
+        "scope_6": {
+          "type": "scope",
+          "settings": {
+            "item": "Proyecto técnico, licencias y tasas aplicables"
+          }
+        },
+        "scope_7": {
+          "type": "scope",
+          "settings": {
+            "item": "Acabados, equipamientos, garantías y mantenimiento"
+          }
+        },
+        "scope_8": {
+          "type": "scope",
+          "settings": {
+            "item": "Impuestos, exclusiones y condiciones de entrega"
+          }
+        },
+        "use_1": {
+          "type": "use_case",
+          "settings": {
+            "title": "Sistema Europeo",
+            "description": "Estudiarlo cuando se busca madera perfilada visible y existe un modelo cuya composición, uso y mantenimiento son compatibles con el proyecto."
+          }
+        },
+        "use_2": {
+          "type": "use_case",
+          "settings": {
+            "title": "Entramado Ligero",
+            "description": "Estudiarlo cuando interesa revisar distribuciones y configuraciones de cerramiento dentro de las posibilidades técnicas y comerciales del catálogo."
+          }
+        },
+        "use_3": {
+          "type": "use_case",
+          "settings": {
+            "title": "Paneles SIP",
+            "description": "Estudiarlo cuando se puede definir previamente una geometría compatible con los paneles, sus uniones y el proceso de fabricación y transporte."
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Los SIP siempre aíslan mejor que el entramado ligero?",
+            "answer": "No. Depende del sistema concreto, la composición completa, los huecos, las juntas y el proyecto. Deben compararse prestaciones documentadas bajo condiciones equivalentes."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "¿El Sistema Europeo necesita aislamiento adicional?",
+            "answer": "Depende del modelo, del uso previsto, de la composición real del muro y de las exigencias del proyecto. La madera perfilada por sí sola no permite concluir si el aislamiento es suficiente."
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué sistema exige menos mantenimiento?",
+            "answer": "No hay una respuesta general. Importan los revestimientos, la exposición, las protecciones, los detalles constructivos y las indicaciones del fabricante."
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Pueden utilizarse los tres sistemas para viviendas?",
+            "answer": "Existen soluciones residenciales basadas en estas tecnologías, pero cada modelo requiere justificar prestaciones, proyecto y autorizaciones aplicables a su uso y emplazamiento."
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Se pueden hacer modificaciones después del montaje?",
+            "answer": "Depende del diseño y de la modificación. Los cambios en muros, huecos, apoyos, uniones o cargas deben someterse a evaluación técnica en cualquiera de los tres sistemas."
+          }
+        },
+        "tech_1": {
+          "type": "tech_guide",
+          "settings": {
+            "title": "Sistema Europeo · Guía técnica",
+            "link": "/pages/european-timber-construction-system"
+          }
+        },
+        "tech_2": {
+          "type": "tech_guide",
+          "settings": {
+            "title": "Entramado Ligero · Guía técnica",
+            "link": "/pages/light-frame-construction-system"
+          }
+        },
+        "tech_3": {
+          "type": "tech_guide",
+          "settings": {
+            "title": "Paneles SIP · Guía técnica",
+            "link": "/pages/sip-panels-system"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5",
+        "row_6",
+        "row_7",
+        "row_8",
+        "row_9",
+        "row_10",
+        "insight_1",
+        "insight_2",
+        "insight_3",
+        "insight_4",
+        "insight_5",
+        "trade_1",
+        "trade_2",
+        "trade_3",
+        "scope_1",
+        "scope_2",
+        "scope_3",
+        "scope_4",
+        "scope_5",
+        "scope_6",
+        "scope_7",
+        "scope_8",
+        "use_1",
+        "use_2",
+        "use_3",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "tech_1",
+        "tech_2",
+        "tech_3"
+      ]
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
-        "eyebrow": "Siguiente paso",
-        "heading": "Descubre qué sistema encaja con tu proyecto",
-        "text": "<p>Cuéntanos uso, ubicación, superficie aproximada, geometría, nivel de acabado y condicionantes de parcela. Compararemos alternativas con el mismo alcance antes de proponerte una solución y un presupuesto.</p>",
-        "label": "Solicitar estudio del proyecto",
+        "eyebrow": "El siguiente paso",
+        "heading": "Elige según las necesidades de tu proyecto",
+        "text": "<p>Indícanos uso, localidad, superficie, estado del proyecto y nivel de acabado. Comprobaremos las opciones de catálogo y su compatibilidad antes de preparar una propuesta con alcance definido.</p>",
+        "label": "Solicitar asesoramiento técnico",
         "link": "/pages/contact-ideas-exteriores"
       }
     }
   },
-  "order": ["hero", "systems", "comparison", "cta"]
+  "order": [
+    "hero",
+    "systems",
+    "comparison",
+    "cta"
+  ]
 }
