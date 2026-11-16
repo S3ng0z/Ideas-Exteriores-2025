@@ -1,41 +1,143 @@
 {{ 'ie-compare-choose-landing.css' | asset_url | stylesheet_tag }}
-<section class="ie-choose" id="comparar-y-elegir-guias" aria-labelledby="ie-choose-title-{{ section.id }}">
+<section class="ie-choose" aria-labelledby="ie-choose-systems-title-{{ section.id }}">
   <div class="ie-choose__inner">
-    <div class="ie-choose__head">
-      <div><p class="ie-choose__eyebrow">01 · Comparar y elegir</p><h2 id="ie-choose-title-{{ section.id }}">Tres preguntas. Tres guías para decidir.</h2></div>
-      <p>No se trata de elegir un sistema por moda o por un precio aislado. La decisión depende del uso, la composición constructiva, la parcela y las partidas contratadas. Empieza por lo que necesitas saber.</p>
-    </div>
-    <div class="ie-choose__grid">
-      <article class="ie-choose__card">
-        <p class="ie-choose__index">01 · COMPARAR</p>
-        <h3>¿En qué se diferencian los sistemas?</h3>
-        <p>Compara estructura, aislamiento, hermeticidad, montaje, personalización y condiciones económicas del sistema europeo, entramado ligero y SIP.</p>
-        <a href="/pages/timber-construction-systems-comparison">Comparativa de sistemas constructivos <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="ie-choose__card">
-        <p class="ie-choose__index">02 · ELEGIR</p>
-        <h3>¿Cuál es adecuado para mi proyecto?</h3>
-        <p>Selecciona el uso previsto —vivienda, estudio, oficina, caseta o ampliación— y consulta modelos reales del catálogo como punto de partida, sujetos a compatibilidad técnica.</p>
-        <a href="/pages/choose-timber-construction-system">¿Qué sistema elegir para tu proyecto? <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="ie-choose__card">
-        <p class="ie-choose__index">03 · PREPARAR LA COMPRA</p>
-        <h3>¿Qué debo tener en cuenta antes de comprar?</h3>
-        <p>Revisa presupuesto y alcance, cimentación, accesos, transporte, normativa, confort, acabados, mantenimiento y garantías. Termina con un checklist y un formulario de asesoramiento.</p>
-        <a href="/pages/how-to-choose-timber-construction-system">Claves para elegir el sistema constructivo <span aria-hidden="true">→</span></a>
-      </article>
-    </div>
-    <div class="ie-choose__systems">
-      <div><p class="ie-choose__eyebrow">02 · Documentación por sistema</p><h2>Profundiza solo cuando lo necesites</h2><p>Los tres sistemas requieren especificación y justificación para cada proyecto. «Sistema europeo» es la denominación comercial de Ideas Exteriores para una solución específica, no una certificación ni una categoría técnica universal.</p></div>
-      <div class="ie-choose__links">
-        <a href="/pages/european-timber-construction-system">Sistema europeo <span aria-hidden="true">→</span></a>
-        <a href="/pages/light-frame-construction-system">Entramado ligero <span aria-hidden="true">→</span></a>
-        <a href="/pages/sip-panels-system">Paneles SIP <span aria-hidden="true">→</span></a>
+    <section class="ie-choose__region" id="sistemas-constructivos" aria-labelledby="ie-choose-systems-title-{{ section.id }}">
+      <header class="ie-choose__intro">
+        <div>
+          <p class="ie-choose__eyebrow">{{ section.settings.systems_label | escape }}</p>
+          <h2 id="ie-choose-systems-title-{{ section.id }}">{{ section.settings.systems_title | escape }}</h2>
+        </div>
+        <div class="ie-choose__intro-text rte">{{ section.settings.systems_intro }}</div>
+      </header>
+      <div class="ie-choose__grid ie-choose__grid--systems">
+        {% for block in section.blocks %}
+          {% if block.type == 'system' %}
+            <article class="ie-choose__card ie-choose__card--system" {{ block.shopify_attributes }}>
+              <span class="ie-choose__index">{{ block.settings.number | escape }}</span>
+              <h3>{{ block.settings.title | escape }}</h3>
+              <p class="ie-choose__tagline">{{ block.settings.tagline | escape }}</p>
+              <p class="ie-choose__description">{{ block.settings.description | escape }}</p>
+              {% if block.settings.link != blank %}
+                <a class="ie-choose__link" href="{{ block.settings.link }}">
+                  <span>{{ block.settings.link_label | escape }}</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              {% endif %}
+            </article>
+          {% endif %}
+        {% endfor %}
       </div>
-    </div>
-    <p class="ie-choose__legal">Los importes del catálogo son referencias de productos y configuraciones específicas; no constituyen una oferta llave en mano. Los precios finales, las inclusiones, las prestaciones y las autorizaciones urbanísticas requieren confirmación.</p>
+    </section>
+
+    <section class="ie-choose__region ie-choose__region--separated" id="comparar-y-elegir-guias" aria-labelledby="ie-choose-guides-title-{{ section.id }}">
+      <header class="ie-choose__intro">
+        <div>
+          <p class="ie-choose__eyebrow">{{ section.settings.guides_label | escape }}</p>
+          <h2 id="ie-choose-guides-title-{{ section.id }}">{{ section.settings.guides_title | escape }}</h2>
+        </div>
+        <div class="ie-choose__intro-text rte">{{ section.settings.guides_intro }}</div>
+      </header>
+      <div class="ie-choose__grid ie-choose__grid--guides">
+        {% for block in section.blocks %}
+          {% if block.type == 'guide' %}
+            <article class="ie-choose__card ie-choose__card--guide" {{ block.shopify_attributes }}>
+              <span class="ie-choose__index">{{ block.settings.number | escape }}</span>
+              <h3>{{ block.settings.title | escape }}</h3>
+              <p class="ie-choose__description">{{ block.settings.description | escape }}</p>
+              {% if block.settings.link != blank %}
+                <a class="ie-choose__link" href="{{ block.settings.link }}">
+                  <span>{{ block.settings.link_label | escape }}</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              {% endif %}
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="ie-choose__region ie-choose__region--separated" id="criterios-de-eleccion" aria-labelledby="ie-choose-criteria-title-{{ section.id }}">
+      <header class="ie-choose__intro ie-choose__intro--criteria">
+        <div>
+          <p class="ie-choose__eyebrow">{{ section.settings.criteria_label | escape }}</p>
+          <h2 id="ie-choose-criteria-title-{{ section.id }}">{{ section.settings.criteria_title | escape }}</h2>
+        </div>
+        <div class="ie-choose__intro-text rte">{{ section.settings.criteria_intro }}</div>
+      </header>
+      <ul class="ie-choose__criteria">
+        {% for block in section.blocks %}
+          {% if block.type == 'criterion' %}
+            <li {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <p class="ie-choose__note">{{ section.settings.criteria_note | escape }}</p>
+    </section>
+
+    <section class="ie-choose__region ie-choose__region--separated" id="proceso-de-presupuesto" aria-labelledby="ie-choose-process-title-{{ section.id }}">
+      <header class="ie-choose__intro">
+        <div>
+          <p class="ie-choose__eyebrow">{{ section.settings.process_label | escape }}</p>
+          <h2 id="ie-choose-process-title-{{ section.id }}">{{ section.settings.process_title | escape }}</h2>
+        </div>
+        <div class="ie-choose__intro-text rte">{{ section.settings.process_intro }}</div>
+      </header>
+      <ol class="ie-choose__steps">
+        {% for block in section.blocks %}
+          {% if block.type == 'step' %}
+            <li {{ block.shopify_attributes }}>
+              <span class="ie-choose__step-number" aria-hidden="true">{{ block.settings.number | escape }}</span>
+              <h3>{{ block.settings.title | escape }}</h3>
+              <p>{{ block.settings.description | escape }}</p>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </section>
+    <p class="ie-choose__legal">{{ section.settings.legal_note | escape }}</p>
   </div>
 </section>
 {% schema %}
-{"name":"Comparar y elegir · Guías","settings":[],"presets":[{"name":"Comparar y elegir · Guías"}]}
+{
+  "name": "Elegir sistema · Contenido",
+  "settings": [
+    {"type":"text","id":"systems_label","label":"Antetítulo · Sistemas","default":"01 · Tres sistemas de construcción"},
+    {"type":"text","id":"systems_title","label":"Título · Sistemas","default":"Tres formas de construir en madera"},
+    {"type":"richtext","id":"systems_intro","label":"Introducción · Sistemas","default":"<p>Los materiales, las uniones y los procesos de montaje cambian de una solución a otra. Conocer las diferencias ayuda a elegir modelos y configuraciones compatibles con tu proyecto.</p>"},
+    {"type":"text","id":"guides_label","label":"Antetítulo · Guías","default":"02 · Por dónde empezar"},
+    {"type":"text","id":"guides_title","label":"Título · Guías","default":"Tres preguntas para elegir con criterio"},
+    {"type":"richtext","id":"guides_intro","label":"Introducción · Guías","default":"<p>Compara primero, selecciona según el uso y revisa el alcance antes de pedir presupuesto. Hemos organizado la información para que encuentres lo que necesitas sin perderte en detalles.</p>"},
+    {"type":"text","id":"criteria_label","label":"Antetítulo · Criterios","default":"03 · La decisión"},
+    {"type":"text","id":"criteria_title","label":"Título · Criterios","default":"No hay un sistema mejor para todo"},
+    {"type":"richtext","id":"criteria_intro","label":"Introducción · Criterios","default":"<p>La solución adecuada depende de las condiciones concretas del proyecto. Estos son los factores que conviene valorar de manera conjunta.</p>"},
+    {"type":"textarea","id":"criteria_note","label":"Nota · Criterios","default":"Partimos de modelos y configuraciones definidos. Antes de recomendar una alternativa, verificamos su compatibilidad y las prestaciones documentadas para el proyecto."},
+    {"type":"text","id":"process_label","label":"Antetítulo · Proceso","default":"04 · Del sistema a la propuesta"},
+    {"type":"text","id":"process_title","label":"Título · Proceso","default":"Un presupuesto empieza con una buena definición"},
+    {"type":"richtext","id":"process_intro","label":"Introducción · Proceso","default":"<p>Cuanto mejor conozcamos el uso, la ubicación y el alcance, más precisa podrá ser la propuesta.</p>"},
+    {"type":"textarea","id":"legal_note","label":"Nota técnica y comercial","default":"Las prestaciones dependen del fabricante, el modelo, la configuración y el proyecto. «Sistema Europeo» es una denominación comercial, no una certificación. El precio de catálogo no equivale necesariamente al coste final. La viabilidad técnica y urbanística debe verificarse para cada emplazamiento."}
+  ],
+  "blocks": [
+    {"type":"system","name":"Sistema constructivo","limit":3,"settings":[
+      {"type":"text","id":"number","label":"Número","default":"01 / 03"},
+      {"type":"text","id":"title","label":"Sistema","default":"Sistema Europeo"},
+      {"type":"text","id":"tagline","label":"Concepto","default":"La madera perfilada como protagonista."},
+      {"type":"textarea","id":"description","label":"Descripción","default":"Construcción basada en piezas de madera perfilada y, cuando la configuración la incorpora, una capa técnica interior. Estructura, aislamiento y movimientos deben comprobarse para el sistema concreto."},
+      {"type":"text","id":"link_label","label":"Texto del enlace","default":"Conocer el sistema"},
+      {"type":"url","id":"link","label":"Destino del enlace"}]},
+    {"type":"guide","name":"Guía de decisión","limit":3,"settings":[
+      {"type":"text","id":"number","label":"Paso","default":"01 · COMPARAR"},
+      {"type":"text","id":"title","label":"Pregunta","default":"¿En qué se diferencian?"},
+      {"type":"textarea","id":"description","label":"Descripción","default":"Compara la estructura, el aislamiento, las uniones y el montaje sin reducir la decisión a un único indicador."},
+      {"type":"text","id":"link_label","label":"Texto del enlace","default":"Ver guía"},
+      {"type":"url","id":"link","label":"Destino del enlace"}]},
+    {"type":"criterion","name":"Criterio de elección","limit":7,"settings":[
+      {"type":"text","id":"text","label":"Criterio","default":"Uso previsto y exigencias de habitabilidad."}]},
+    {"type":"step","name":"Paso de presupuesto","limit":4,"settings":[
+      {"type":"text","id":"number","label":"Número","default":"01"},
+      {"type":"text","id":"title","label":"Título","default":"Cuéntanos el proyecto"},
+      {"type":"textarea","id":"description","label":"Descripción","default":"Uso, superficie aproximada y ubicación."}]}
+  ],
+  "max_blocks":17,
+  "presets":[{"name":"Elegir sistema · Contenido"}]
+}
 {% endschema %}

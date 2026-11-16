@@ -7,14 +7,14 @@
           "type": "summary",
           "settings": {
             "number": "01",
-            "label": "COMPARAR"
+            "label": "CONOCER"
           }
         },
         "two": {
           "type": "summary",
           "settings": {
             "number": "02",
-            "label": "ELEGIR"
+            "label": "COMPARAR"
           }
         },
         "three": {
@@ -31,28 +31,201 @@
         "three"
       ],
       "settings": {
-        "eyebrow": "Sistemas constructivos · Comparar y elegir",
+        "eyebrow": "Sistemas constructivos · Guía de elección",
         "heading": "Comparar y elegir un sistema constructivo de madera",
-        "lead": "<p>¿Sistema europeo, entramado ligero o paneles SIP? Descubre qué cambia entre soluciones, cuál conviene estudiar según tu proyecto y qué revisar antes de comprar. Tres guías claras para avanzar con información y solicitar una propuesta ajustada a tu caso.</p>",
-        "primary_label": "Ver las tres guías",
-        "primary_link": "#comparar-y-elegir-guias",
+        "lead": "<p>Tres sistemas constructivos. Diferentes soluciones. Una elección adaptada a tu proyecto. Conoce el sistema europeo, el entramado ligero y los paneles SIP; compara sus características y descubre qué modelos conviene estudiar según el uso, la ubicación y el alcance de la construcción.</p>",
+        "primary_label": "Conocer los tres sistemas",
+        "primary_link": "#sistemas-constructivos",
         "secondary_label": "Solicitar asesoramiento",
         "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Tres preguntas para tomar una buena decisión"
+        "summary_title": "De la idea a una elección informada"
       }
     },
     "guides": {
       "type": "ie-compare-choose-landing",
-      "settings": {}
+      "blocks": {
+        "system_1": {
+          "type": "system",
+          "settings": {
+            "number": "01 / 03",
+            "title": "Sistema Europeo",
+            "tagline": "La madera perfilada como protagonista.",
+            "description": "Piezas de madera perfilada que definen la envolvente y, en algunas configuraciones, una capa técnica interior con aislamiento y otros componentes. Estructura y comportamiento térmico dependen de la solución concreta.",
+            "link_label": "Conocer el sistema",
+            "link": "/pages/european-timber-construction-system"
+          }
+        },
+        "system_2": {
+          "type": "system",
+          "settings": {
+            "number": "02 / 03",
+            "title": "Entramado Ligero",
+            "tagline": "Una estructura diseñada por componentes y capas.",
+            "description": "Montantes, soleras, elementos de rigidización, aislamiento y revestimientos configurados según el modelo. Permite ajustar la composición dentro de los límites de su diseño técnico.",
+            "link_label": "Conocer el sistema",
+            "link": "/pages/light-frame-construction-system"
+          }
+        },
+        "system_3": {
+          "type": "system",
+          "settings": {
+            "number": "03 / 03",
+            "title": "Paneles SIP",
+            "tagline": "Prefabricación con aislamiento integrado.",
+            "description": "Paneles de caras resistentes y núcleo aislante, ensamblados mediante uniones y detalles definidos. Su función estructural y prestaciones requieren documentación del fabricante y verificación del proyecto.",
+            "link_label": "Conocer el sistema",
+            "link": "/pages/sip-panels-system"
+          }
+        },
+        "guide_1": {
+          "type": "guide",
+          "settings": {
+            "number": "01 · COMPARAR",
+            "title": "¿En qué se diferencian los sistemas?",
+            "description": "Contrasta estructura, capas, uniones, fabricación, montaje y mantenimiento sin atribuir ventajas universales a una tecnología.",
+            "link_label": "Comparar los sistemas",
+            "link": "/pages/timber-construction-systems-comparison"
+          }
+        },
+        "guide_2": {
+          "type": "guide",
+          "settings": {
+            "number": "02 · ELEGIR SEGÚN EL USO",
+            "title": "¿Qué sistema encaja con mi proyecto?",
+            "description": "Una vivienda, una oficina o una caseta auxiliar tienen exigencias diferentes. Explora los usos y los modelos que se pueden estudiar.",
+            "link_label": "Elegir según el uso",
+            "link": "/pages/choose-timber-construction-system"
+          }
+        },
+        "guide_3": {
+          "type": "guide",
+          "settings": {
+            "number": "03 · PREPARAR LA COMPRA",
+            "title": "¿Qué debo revisar antes de comprar?",
+            "description": "Comprueba normativa, cimentación, prestaciones, transporte, montaje, acabados y partidas incluidas antes de comparar precios.",
+            "link_label": "Preparar la compra",
+            "link": "/pages/how-to-choose-timber-construction-system"
+          }
+        },
+        "criterion_1": {
+          "type": "criterion",
+          "settings": {
+            "text": "Uso previsto y requisitos de habitabilidad."
+          }
+        },
+        "criterion_2": {
+          "type": "criterion",
+          "settings": {
+            "text": "Superficie, distribución y solución arquitectónica."
+          }
+        },
+        "criterion_3": {
+          "type": "criterion",
+          "settings": {
+            "text": "Ubicación, clima, orientación y características del terreno."
+          }
+        },
+        "criterion_4": {
+          "type": "criterion",
+          "settings": {
+            "text": "Aislamiento térmico, acústica, control de humedad y ventilación."
+          }
+        },
+        "criterion_5": {
+          "type": "criterion",
+          "settings": {
+            "text": "Materiales, acabados, durabilidad y mantenimiento."
+          }
+        },
+        "criterion_6": {
+          "type": "criterion",
+          "settings": {
+            "text": "Presupuesto disponible y alcance real del suministro."
+          }
+        },
+        "criterion_7": {
+          "type": "criterion",
+          "settings": {
+            "text": "Fabricación, accesos, transporte y condiciones de montaje."
+          }
+        },
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "title": "Cuéntanos qué quieres construir",
+            "description": "Identificamos el uso, la superficie aproximada y la ubicación."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "title": "Estudiamos las alternativas",
+            "description": "Revisamos los sistemas y modelos compatibles con el proyecto."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "title": "Definimos el alcance",
+            "description": "Contrastamos componentes, acabados, prestaciones documentadas y servicios."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "title": "Preparamos la propuesta",
+            "description": "Elaboramos un presupuesto según el modelo y las verificaciones necesarias."
+          }
+        }
+      },
+      "block_order": [
+        "system_1",
+        "system_2",
+        "system_3",
+        "guide_1",
+        "guide_2",
+        "guide_3",
+        "criterion_1",
+        "criterion_2",
+        "criterion_3",
+        "criterion_4",
+        "criterion_5",
+        "criterion_6",
+        "criterion_7",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "systems_label": "01 · Tres sistemas constructivos",
+        "systems_title": "Tres formas de construir en madera",
+        "systems_intro": "<p>Cada alternativa utiliza materiales, componentes y procesos diferentes. Sus prestaciones se determinan por el modelo, la configuración y la documentación técnica, no por el nombre del sistema.</p>",
+        "guides_label": "02 · Por dónde empezar",
+        "guides_title": "Tres preguntas para elegir con criterio",
+        "guides_intro": "<p>Un recorrido sencillo para comprender las diferencias, identificar las soluciones compatibles y preparar una compra con la información necesaria.</p>",
+        "criteria_label": "03 · La decisión",
+        "criteria_title": "No hay un sistema mejor para todo",
+        "criteria_intro": "<p>Elegir bien consiste en contrastar el uso previsto, las condiciones del emplazamiento y las prestaciones y partidas realmente documentadas.</p>",
+        "criteria_note": "Partimos de modelos y configuraciones definidos. Antes de proponer una alternativa, comprobamos su compatibilidad técnica y las prestaciones que pueden justificarse.",
+        "process_label": "04 · Del sistema a la propuesta",
+        "process_title": "De la elección del sistema a tu presupuesto",
+        "process_intro": "<p>Un proceso claro, basado en el proyecto y en el alcance real del suministro.</p>",
+        "legal_note": "Las prestaciones de cada sistema dependen del fabricante, el modelo, la configuración y el proyecto. «Sistema Europeo» es una denominación comercial, no una certificación. Los precios de catálogo no equivalen necesariamente al coste total de la construcción. La viabilidad técnica y urbanística debe comprobarse para cada emplazamiento."
+      }
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
-        "eyebrow": "Tu proyecto, nuestro punto de partida",
-        "heading": "Te ayudamos a elegir con criterio",
-        "text": "<p>Indícanos el uso previsto, localidad, superficie aproximada y estado del proyecto. Contrastaremos sistema, condicionantes, alcance y presupuesto antes de recomendar una solución. Las prestaciones y la compatibilidad se confirman mediante estudio técnico.</p>",
-        "label": "Solicitar asesoramiento y presupuesto",
-        "link": "/pages/how-to-choose-timber-construction-system#solicitar-asesoramiento"
+        "eyebrow": "Asesoramiento para tu proyecto",
+        "heading": "¿Necesitas ayuda para elegir?",
+        "text": "<p>Cuéntanos qué quieres construir, dónde y para qué lo utilizarás. Te ayudamos a identificar los sistemas y modelos que merece la pena estudiar y a definir las comprobaciones necesarias antes del presupuesto.</p>",
+        "label": "Solicitar asesoramiento",
+        "link": "/pages/contact-ideas-exteriores"
       }
     }
   },
