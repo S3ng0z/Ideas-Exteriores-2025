@@ -31,28 +31,415 @@
         "three"
       ],
       "settings": {
-        "eyebrow": "Guía de elección · Construcción en madera",
-        "heading": "¿Qué sistema constructivo elegir para tu casa o caseta de madera?",
-        "lead": "<p>Cuéntanos qué quieres construir y te ayudamos a elegir. Selecciona el uso previsto para conocer los sistemas que merece la pena estudiar, ver modelos del catálogo y entender qué depende de la parcela, la normativa y el alcance del presupuesto.</p>",
-        "primary_label": "Elegir por tipo de proyecto",
+        "eyebrow": "Guía por usos · Construcción de madera",
+        "heading": "¿Qué sistema constructivo elegir según tu proyecto?",
+        "lead": "<p>Primero define qué necesitas construir. Después, cómo construirlo. Explora alternativas para vivienda habitual, segunda residencia, oficina, caseta o ampliación y descubre qué modelos merece la pena estudiar según la parcela y el alcance.</p>",
+        "primary_label": "Elegir según el uso",
         "primary_link": "#selector-por-uso",
-        "secondary_label": "Solicitar presupuesto",
-        "secondary_link": "/pages/contact-ideas-exteriores",
-        "summary_title": "Del uso al modelo compatible"
+        "secondary_label": "Solicitar asesoramiento",
+        "secondary_link": "/pages/how-to-choose-timber-construction-system#solicitar-asesoramiento",
+        "summary_title": "Del uso al modelo y a la propuesta"
       }
     },
     "selector": {
       "type": "ie-use-system-selector",
-      "settings": {}
+      "settings": {
+        "use_kicker": "01 · Empieza por el uso",
+        "use_title": "¿Qué quieres construir?",
+        "use_intro": "<p>Una vivienda, una oficina y una caseta pueden emplear materiales parecidos, pero no tienen las mismas exigencias. Abre el tipo de proyecto para consultar alternativas y puntos de control.</p>",
+        "systems_label": "Sistemas que conviene estudiar",
+        "checks_label": "Qué debemos comprobar",
+        "table_kicker": "02 · Comparativa rápida",
+        "table_title": "Sistemas y criterios según el uso",
+        "table_intro": "<p>Las alternativas son puntos de partida, no aprobaciones automáticas. Se revisan siempre los modelos disponibles y las condiciones concretas del proyecto.</p>",
+        "table_accessibility": "Tabla desplazable horizontalmente de usos y sistemas",
+        "table_caption": "Alternativas a estudiar según el tipo de construcción",
+        "table_use": "Uso",
+        "table_systems": "Alternativas iniciales",
+        "table_conditions": "Qué determina la elección",
+        "table_note": "La clasificación comercial de un producto no determina su uso legal ni sustituye la justificación técnica de un edificio.",
+        "comfort_kicker": "03 · Nivel de acondicionamiento",
+        "comfort_title": "No todas las construcciones se utilizan igual",
+        "comfort_intro": "<p>Las necesidades de confort cambian con la actividad y la ocupación. El carácter ocasional no elimina por sí solo las obligaciones urbanísticas o técnicas aplicables.</p>",
+        "site_kicker": "04 · Antes de implantar",
+        "site_title": "Dónde se instalará también importa",
+        "site_intro": "<p>El emplazamiento condiciona la viabilidad, el cálculo, la preparación de la base, el transporte y el presupuesto.</p>",
+        "site_note": "La condición de prefabricado, desmontable o de pequeña superficie no implica por sí sola que la construcción esté exenta de controles o permisos.",
+        "models_kicker": "05 · Catálogo real",
+        "models_title": "Modelos de referencia para iniciar el estudio",
+        "models_intro": "<p>Seleccionamos ejemplos de productos activos del catálogo. Se muestran como referencias comerciales; ninguno acredita por sí solo compatibilidad residencial, profesional o urbanística.</p>",
+        "group_home": "Viviendas · referencias iniciales",
+        "group_office": "Estudios y oficinas · referencias",
+        "group_shed": "Casetas y uso auxiliar · referencias",
+        "no_image": "Imagen no disponible",
+        "model_link_label": "Ver ficha del modelo",
+        "model_caution": "Referencia del catálogo. Confirmar uso, prestaciones, configuración y alcance.",
+        "models_empty": "No hay modelos seleccionados en esta categoría. Podemos revisar alternativas existentes.",
+        "models_note": "Los datos y precios de ficha deben confirmarse para cada configuración. La superficie nominal o el precio de un kit no equivalen a superficie habitable ni a presupuesto final de obra.",
+        "compare_label": "Comparar Sistema Europeo, Entramado Ligero y SIP",
+        "compare_link": "/pages/timber-construction-systems-comparison",
+        "process_kicker": "06 · Cómo avanzamos",
+        "process_title": "Del modelo seleccionado al presupuesto",
+        "process_intro": "<p>Empezamos con una orientación y cerramos progresivamente la información necesaria para definir una propuesta comparable y realista.</p>",
+        "faq_kicker": "07 · Dudas frecuentes",
+        "faq_title": "Preguntas frecuentes",
+        "faq_intro": "<p>Respuestas breves para empezar sin confundir posibilidades de catálogo con autorizaciones o prestaciones acreditadas.</p>",
+        "resources_label": "Guías técnicas de Sistema Europeo, Entramado Ligero y Paneles SIP",
+        "resources_title": "Profundiza en cada sistema",
+        "label_european": "Sistema Europeo",
+        "link_european": "/pages/european-timber-construction-system",
+        "label_frame": "Entramado Ligero",
+        "link_frame": "/pages/light-frame-construction-system",
+        "label_sip": "Paneles SIP",
+        "link_sip": "/pages/sip-panels-system",
+        "legal_note": "Guía orientativa. Las recomendaciones no sustituyen el análisis urbanístico, el proyecto, el cálculo estructural ni la verificación de prestaciones aplicables a cada producto y emplazamiento. La disponibilidad y la configuración del modelo se confirman antes de emitir una oferta."
+      },
+      "blocks": {
+        "use_residential": {
+          "type": "use",
+          "settings": {
+            "use_key": "residential",
+            "number": "01",
+            "title": "Vivienda habitual",
+            "subtitle": "Para uso residencial permanente",
+            "description": "Una vivienda habitual necesita resolver estructura, envolvente, ventilación, seguridad, salubridad, acústica, instalaciones y requisitos de habitabilidad aplicables.",
+            "systems": "Entramado Ligero, Paneles SIP y modelos residenciales de Sistema Europeo cuando la documentación del sistema concreto permita justificar su uso.",
+            "checks": "Planeamiento, proyecto técnico, superficie y distribución, estructura, cerramientos, instalaciones, accesos y alcance económico.",
+            "table_systems": "Entramado, SIP y Europeo residencial documentado",
+            "table_checks": "Habitabilidad, prestaciones, proyecto y presupuesto",
+            "link_label": "Ver casas de entramado ligero",
+            "link": "/collections/light-frame-houses"
+          }
+        },
+        "use_second": {
+          "type": "use",
+          "settings": {
+            "use_key": "second",
+            "number": "02",
+            "title": "Segunda residencia",
+            "subtitle": "Para estancias temporales o periódicas",
+            "description": "La ocupación intermitente puede influir en climatización, ventilación y conservación durante periodos vacíos, pero no reduce automáticamente los requisitos legales de una vivienda.",
+            "systems": "Los tres sistemas cuando existan modelos residenciales adecuados y una configuración compatible con el uso autorizado.",
+            "checks": "Clasificación urbanística, condiciones de habitabilidad, aislamiento, humedad, distribución, instalaciones y mantenimiento.",
+            "table_systems": "Los tres sistemas según modelo residencial",
+            "table_checks": "Uso autorizado, confort y mantenimiento",
+            "link_label": "Comparar los sistemas",
+            "link": "/pages/timber-construction-systems-comparison"
+          }
+        },
+        "use_office": {
+          "type": "use",
+          "settings": {
+            "use_key": "office",
+            "number": "03",
+            "title": "Oficina o estudio de jardín",
+            "subtitle": "Espacio para trabajar, estudiar o crear",
+            "description": "Para un uso frecuente conviene atender a luz natural, ventilación, confort térmico y acústico, electricidad y acceso. La actividad concreta condiciona el proyecto.",
+            "systems": "Estudios y oficinas SIP del catálogo, así como alternativas de Entramado Ligero o Sistema Europeo documentadas y disponibles.",
+            "checks": "Uso y actividad, permisos, ocupación, iluminación, acústica, ventilación, acondicionamiento, accesos e instalaciones.",
+            "table_systems": "SIP y otras soluciones documentadas",
+            "table_checks": "Actividad, aislamiento, ventilación y permisos",
+            "link_label": "Ver aplicaciones SIP",
+            "link": "/pages/sip-panel-applications-compatible-models"
+          }
+        },
+        "use_shed": {
+          "type": "use",
+          "settings": {
+            "use_key": "shed",
+            "number": "04",
+            "title": "Caseta de jardín",
+            "subtitle": "Almacenamiento y funciones auxiliares",
+            "description": "Una caseta puede destinarse a herramientas, bicicletas o material de jardín conforme a las condiciones del modelo. No debe presentarse automáticamente como vivienda.",
+            "systems": "Gamas auxiliares SIP y modelos de Sistema Europeo; otras soluciones cuando haya oferta real compatible.",
+            "checks": "Dimensiones y base, anclajes, evacuación de agua, ventilación, seguridad de acceso, exposición y mantenimiento.",
+            "table_systems": "SIP y Europeo auxiliar según catálogo",
+            "table_checks": "Dimensiones, base, agua y protección",
+            "link_label": "Ver casetas y aplicaciones SIP",
+            "link": "/pages/sip-panel-applications-compatible-models"
+          }
+        },
+        "use_extension": {
+          "type": "use",
+          "settings": {
+            "use_key": "extension",
+            "number": "05",
+            "title": "Ampliación o anexo",
+            "subtitle": "Espacio conectado a una construcción existente",
+            "description": "La ampliación debe estudiarse conjuntamente con el edificio previo, especialmente apoyos, estructura, uniones, impermeabilización y compatibilidad de movimientos.",
+            "systems": "Entramado Ligero como alternativa inicial por su configuración; SIP o Sistema Europeo solo cuando su diseño y sus conexiones sean compatibles.",
+            "checks": "Estructura existente, cimentación, cargas, encuentros, movimientos diferenciales, servicios y permisos.",
+            "table_systems": "Entramado; SIP o Europeo condicionados",
+            "table_checks": "Conexiones, estructura existente y licencias",
+            "link_label": "Ver aplicaciones de Entramado Ligero",
+            "link": "/pages/timber-frame-applications-compatible-models"
+          }
+        },
+        "use_other": {
+          "type": "use",
+          "settings": {
+            "use_key": "other",
+            "number": "06",
+            "title": "Otro proyecto",
+            "subtitle": "Cuéntanos qué necesitas construir",
+            "description": "Si el uso no corresponde a estas categorías, revisaremos modelos y configuraciones disponibles sin prometer desarrollos ni compatibilidades que todavía no se hayan estudiado.",
+            "systems": "Según el catálogo real y las capacidades de diseño, fabricación y suministro disponibles.",
+            "checks": "Uso previsto, ubicación, superficie, distribución, grado de acabado y documentación necesaria.",
+            "table_systems": "Según catálogo y estudio específico",
+            "table_checks": "Viabilidad técnica y disponibilidad",
+            "link_label": "Solicitar asesoramiento",
+            "link": "/pages/how-to-choose-timber-construction-system#solicitar-asesoramiento"
+          }
+        },
+        "comfort_1": {
+          "type": "comfort",
+          "settings": {
+            "title": "Uso auxiliar",
+            "text": "Para almacenamiento y otras funciones complementarias, la protección frente al agua, la ventilación y la estabilidad siguen siendo necesarias aunque no se exija el confort propio de una vivienda."
+          }
+        },
+        "comfort_2": {
+          "type": "comfort",
+          "settings": {
+            "title": "Uso frecuente",
+            "text": "Una oficina o estudio debe acondicionarse según su actividad: aislamiento, ventilación, iluminación, acústica, electricidad y condiciones de seguridad aplicables."
+          }
+        },
+        "comfort_3": {
+          "type": "comfort",
+          "settings": {
+            "title": "Uso residencial",
+            "text": "Tanto la vivienda habitual como la secundaria requieren comprobar urbanismo, proyecto, seguridad, salubridad, energía, accesibilidad y habitabilidad cuando proceda."
+          }
+        },
+        "site_1": {
+          "type": "site_check",
+          "settings": {
+            "text": "Municipio, planeamiento y uso autorizado"
+          }
+        },
+        "site_2": {
+          "type": "site_check",
+          "settings": {
+            "text": "Superficie, orientación y accesos disponibles"
+          }
+        },
+        "site_3": {
+          "type": "site_check",
+          "settings": {
+            "text": "Topografía y condiciones del terreno"
+          }
+        },
+        "site_4": {
+          "type": "site_check",
+          "settings": {
+            "text": "Viento, nieve, lluvia y clima de la zona"
+          }
+        },
+        "site_5": {
+          "type": "site_check",
+          "settings": {
+            "text": "Cimentación, apoyos y anclajes"
+          }
+        },
+        "site_6": {
+          "type": "site_check",
+          "settings": {
+            "text": "Transporte, descarga y medios auxiliares"
+          }
+        },
+        "site_7": {
+          "type": "site_check",
+          "settings": {
+            "text": "Acometidas, drenaje y disponibilidad de suministros"
+          }
+        },
+        "model_1": {
+          "type": "model",
+          "settings": {
+            "product": "signe-timber-home-32",
+            "group": "home",
+            "label": "Vivienda · Entramado Ligero"
+          }
+        },
+        "model_2": {
+          "type": "model",
+          "settings": {
+            "product": "eira-timber-home-58",
+            "group": "home",
+            "label": "Vivienda · Entramado Ligero"
+          }
+        },
+        "model_3": {
+          "type": "model",
+          "settings": {
+            "product": "home-sip-naiara-56sqm-terrace",
+            "group": "home",
+            "label": "Vivienda · Panel SIP"
+          }
+        },
+        "model_4": {
+          "type": "model",
+          "settings": {
+            "product": "home-sip-nora-89sqm-terrace",
+            "group": "home",
+            "label": "Vivienda · Panel SIP"
+          }
+        },
+        "model_5": {
+          "type": "model",
+          "settings": {
+            "product": "sip-maxspace-ximena-6-m-x-4-m",
+            "group": "office",
+            "label": "Estudio u oficina · Panel SIP"
+          }
+        },
+        "model_6": {
+          "type": "model",
+          "settings": {
+            "product": "sip-maxspace-victoria-6-m-x-4-m",
+            "group": "office",
+            "label": "Estudio u oficina · Panel SIP"
+          }
+        },
+        "model_7": {
+          "type": "model",
+          "settings": {
+            "product": "sip-smartfit-victoria-4-5m-x-3-5-m",
+            "group": "shed",
+            "label": "Caseta auxiliar · Panel SIP"
+          }
+        },
+        "model_8": {
+          "type": "model",
+          "settings": {
+            "product": "sip-compactkit-sofia-3-5-m-x-3-m",
+            "group": "shed",
+            "label": "Caseta auxiliar · Panel SIP"
+          }
+        },
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "title": "Definir el uso",
+            "description": "Vivienda, segunda residencia, estudio, caseta, ampliación u otro destino."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "title": "Concretar dimensiones",
+            "description": "Superficie aproximada, plantas, distribución y condiciones de ocupación."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "title": "Revisar la ubicación",
+            "description": "Municipio, situación urbanística, terreno, accesos y servicios disponibles."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "title": "Seleccionar modelos",
+            "description": "Identificar referencias reales y opciones de configuración que merecen estudio."
+          }
+        },
+        "step_5": {
+          "type": "step",
+          "settings": {
+            "number": "05",
+            "title": "Delimitar el alcance",
+            "description": "Estructura, cubierta, aislamiento, transporte, montaje, instalaciones y acabados."
+          }
+        },
+        "step_6": {
+          "type": "step",
+          "settings": {
+            "number": "06",
+            "title": "Preparar la propuesta",
+            "description": "Presupuestar lo definido e identificar comprobaciones y partidas pendientes."
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo utilizar una caseta de jardín como vivienda?",
+            "answer": "No debe darse por supuesto. El uso residencial requiere comprobar planeamiento, condiciones técnicas, proyecto y autorizaciones aplicables. La denominación caseta no acredita aptitud residencial."
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué sistema conviene para una oficina de jardín?",
+            "answer": "Depende del uso, la ventilación, el confort, la acústica, las instalaciones y la parcela. Los estudios SIP del catálogo son una alternativa que puede analizarse, no la única."
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo modificar un modelo del catálogo?",
+            "answer": "Depende de las opciones permitidas y de la configuración documentada. Los cambios de estructura, geometría, huecos, aislamiento o envolvente requieren revisión técnica y aceptación comercial."
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Necesito un proyecto completo para pedir presupuesto?",
+            "answer": "No necesariamente para una primera orientación. Con uso, ubicación y superficie podemos estudiar alternativas; el precio definitivo y las prestaciones no se confirman hasta cerrar las verificaciones necesarias."
+          }
+        }
+      },
+      "block_order": [
+        "use_residential",
+        "use_second",
+        "use_office",
+        "use_shed",
+        "use_extension",
+        "use_other",
+        "comfort_1",
+        "comfort_2",
+        "comfort_3",
+        "site_1",
+        "site_2",
+        "site_3",
+        "site_4",
+        "site_5",
+        "site_6",
+        "site_7",
+        "model_1",
+        "model_2",
+        "model_3",
+        "model_4",
+        "model_5",
+        "model_6",
+        "model_7",
+        "model_8",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4",
+        "step_5",
+        "step_6",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4"
+      ]
     },
     "cta": {
       "type": "ie-services-cta",
       "settings": {
-        "eyebrow": "Siguiente paso",
-        "heading": "Del modelo a una propuesta técnica y económica",
-        "text": "<p>Indícanos el uso previsto, municipio, terreno, superficie, presupuesto aproximado y acabados. Revisaremos viabilidad, sistema, configuración, transporte y montaje antes de preparar una oferta con partidas incluidas y excluidas.</p>",
-        "label": "Solicitar presupuesto",
-        "link": "/pages/contact-ideas-exteriores"
+        "eyebrow": "Siguiente paso · Asesoramiento técnico",
+        "heading": "Encuentra una solución para tu proyecto",
+        "text": "<p>Cuéntanos qué quieres construir, la superficie aproximada, el municipio, el uso y el presupuesto previsto. Identificaremos modelos y configuraciones que convenga estudiar, indicando las verificaciones pendientes antes de preparar una oferta.</p>",
+        "label": "Solicitar asesoramiento y presupuesto",
+        "link": "/pages/how-to-choose-timber-construction-system#solicitar-asesoramiento"
       }
     }
   },
