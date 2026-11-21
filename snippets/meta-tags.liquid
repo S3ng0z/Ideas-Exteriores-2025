@@ -23,7 +23,8 @@
   assign shop_name_normalized = shop.name | downcase
 
   if request.page_type == 'index'
-    assign seo_description = 'Casas y casetas de madera con entramado ligero, panel SIP y sistema europeo. Pérgolas, porches y cenadores. Compara modelos y solicita presupuesto.'
+    assign seo_title = 'Casas de madera, tarimas y soluciones de exterior | Ideas Exteriores'
+    assign seo_description = 'Casas y casetas de madera, pérgolas, porches, cenadores y tarimas naturales o WPC. Compara modelos, sistemas, precios y alcance de montaje.'
   endif
 
   if request.page_type == 'collection' and collection.handle == 'wooden-gazebos'
