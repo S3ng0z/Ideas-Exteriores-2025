@@ -2,21 +2,21 @@
   'use strict';
 
   var HERO_COPY = {
-    eyebrow: 'Soluciones habitables en madera',
-    heading: 'Casas y casetas prefabricadas de madera para vivir, trabajar y disfrutar',
-    lead: 'Modelos configurables para vivienda, estudio, oficina y exterior, disponibles en sistema europeo, entramado ligero y panel SIP. Te asesoramos para definir la solución, el acabado y el montaje con un alcance claro desde el presupuesto.'
+    eyebrow: 'Casas, exterior y tarimas',
+    heading: 'Casas de madera, tarimas y soluciones para exterior',
+    lead: 'Explora casas y casetas prefabricadas, pérgolas, porches, cenadores y tarimas naturales o WPC. Compara modelos, sistemas constructivos y alcance de suministro o montaje antes de solicitar presupuesto.'
   };
 
   var SOLUTIONS_COPY = {
-    heading: 'Casas y casetas prefabricadas de madera',
+    heading: 'Sistemas constructivos para casas y espacios habitables',
     body:
-      '<p class="ie-home-solutions__intro">Trabajamos con tres sistemas constructivos para casas, casetas y espacios habitables, seleccionados según el uso, el nivel de acabado y el alcance de cada proyecto.</p>' +
+      '<p class="ie-home-solutions__intro">Para casas, casetas, estudios y oficinas de jardín trabajamos con tres sistemas constructivos en madera. La elección depende del modelo, el uso, las prestaciones requeridas y el alcance de suministro o montaje.</p>' +
       '<ul class="ie-home-solutions__systems">' +
         '<li><strong>Sistema europeo</strong><span>Solución prefabricada en madera basada en modelos definidos y configuraciones estandarizadas, con piezas preparadas para un montaje preciso y un acabado natural.</span></li>' +
         '<li><strong>Entramado ligero</strong><span>Sistema estructural ligero y versátil que permite resolver distintas tipologías con configuraciones y acabados definidos.</span></li>' +
         '<li><strong>Panel SIP</strong><span>Sistema prefabricado con paneles estructurales aislados, orientado a una ejecución precisa y una envolvente eficiente.</span></li>' +
       '</ul>' +
-      '<p class="ie-home-solutions__closing">Te ayudamos a elegir la opción más adecuada y a definir suministro, acabado y montaje con un alcance claro desde el presupuesto.</p>'
+      '<p class="ie-home-solutions__closing">Compara los sistemas, revisa los modelos compatibles y solicita un presupuesto con suministro, acabados y montaje claramente definidos.</p>'
   };
 
   var BENEFITS = [
