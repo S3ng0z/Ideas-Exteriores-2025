@@ -55,7 +55,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p><strong>IDEAS EXTERIORES · SOLUCIONES EN MADERA</strong></p><h1>Soluciones de madera para exterior, estructuras y espacios habitables</h1><p>Explora pérgolas, porches, cenadores, casas y casetas de madera. Trabajamos con entramado ligero, panel SIP y sistema europeo según el modelo y las necesidades de tu proyecto. Compara soluciones y solicita un presupuesto con el alcance definido.</p>",
+                "text": "<p><strong>IDEAS EXTERIORES · CASAS, EXTERIOR Y TARIMAS</strong></p><h1>Casas de madera, tarimas y soluciones para exterior</h1><p>Explora casas y casetas prefabricadas, pérgolas, porches, cenadores y tarimas naturales o WPC. Compara modelos, sistemas constructivos y alcance de suministro o montaje antes de solicitar presupuesto.</p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
@@ -198,13 +198,13 @@
             "number": "01",
             "category": "Jardín y terraza",
             "title": "Exterior",
-            "description": "Pérgolas, porches, cenadores y tarimas para disfrutar y proteger el espacio al aire libre.",
+            "description": "Pérgolas, porches, cenadores y tarimas naturales o WPC para terrazas, jardines, piscinas y espacios exteriores.",
             "image": "shopify://shop_images/00146.webp",
             "collection": "wooden-gazebos",
             "image_alt": "Cenador de madera para jardín",
             "show_illustration": false,
-            "button_label": "Ver soluciones de exterior",
-            "button_link": "/collections/wooden-gazebos"
+            "button_label": "Explorar exterior y tarimas",
+            "button_link": "/pages/timber-products"
           }
         },
         "solution_2": {
@@ -247,8 +247,8 @@
         "quick_2": {
           "type": "quick_link",
           "settings": {
-            "label": "Porches",
-            "link": "/pages/bespoke-wooden-porches"
+            "label": "Tarima natural",
+            "link": "/collections/natural-wood-decking"
           }
         },
         "quick_3": {
@@ -261,15 +261,15 @@
         "quick_4": {
           "type": "quick_link",
           "settings": {
-            "label": "Casas SIP",
-            "link": "/collections/sip-panel-houses"
+            "label": "Tarima ProTech",
+            "link": "/collections/wpc-decking"
           }
         },
         "quick_5": {
           "type": "quick_link",
           "settings": {
-            "label": "Entramado ligero",
-            "link": "/collections/light-frame-houses"
+            "label": "Casas de madera",
+            "link": "/pages/timber-products"
           }
         },
         "quick_6": {
@@ -293,8 +293,8 @@
       ],
       "settings": {
         "eyebrow": "Encuentra tu solución",
-        "heading": "Madera para cada espacio",
-        "intro": "Explora las familias de producto, compara modelos y elige las configuraciones disponibles antes de solicitar presupuesto.",
+        "heading": "Elige la solución que necesitas",
+        "intro": "Compara soluciones para jardín, terraza y espacios habitables. Entra por producto y revisa modelos, materiales, sistema, suministro y montaje antes de pedir presupuesto.",
         "quick_label": "Ir directamente a",
         "show_shortcuts": true,
         "show_numbers": true,
