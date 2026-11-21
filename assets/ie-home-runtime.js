@@ -2,9 +2,9 @@
   'use strict';
 
   var HERO_COPY = {
-    eyebrow: 'Casas, exterior y tarimas',
-    heading: 'Casas de madera, tarimas y soluciones para exterior',
-    lead: 'Explora casas y casetas prefabricadas, pérgolas, porches, cenadores y tarimas naturales o WPC. Compara modelos, sistemas constructivos y alcance de suministro o montaje antes de solicitar presupuesto.'
+    eyebrow: 'Casas, tarimas y construcción en madera',
+    heading: 'Casas de madera prefabricadas, tarimas y soluciones para exterior',
+    lead: 'Compara casas y casetas prefabricadas, pérgolas, porches, cenadores y tarima exterior de madera natural o WPC. Trabajamos con sistema europeo, entramado ligero y panel SIP, con modelos, acabados y alcance de suministro o montaje definidos antes del presupuesto.'
   };
 
   var SOLUTIONS_COPY = {
