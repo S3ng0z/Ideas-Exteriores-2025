@@ -2047,7 +2047,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h2>Casas con panel SIP</h2>",
+                "text": "<h2>Tarima exterior de madera natural · Natura</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -2073,7 +2073,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<p>Compara modelos y configuraciones</p>",
+                "text": "<p>Compara especies, perfiles y acabados</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -2299,7 +2299,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h2>Casas con panel SIP</h2>",
+                "text": "<h2>Tarima tecnológica y sintética · ProTech</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -2325,7 +2325,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<p>Compara modelos y configuraciones</p>",
+                "text": "<p>Compara diseños, perfiles y acabados WPC</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
