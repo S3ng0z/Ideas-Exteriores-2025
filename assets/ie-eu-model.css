@@ -8,8 +8,10 @@
 .ie-eu__section{padding-block:96px}
 .ie-eu__section--tight{padding-block:64px}
 .ie-eu :where(h1,h2){font-family:var(--eu-serif);font-weight:500;letter-spacing:-.015em;text-wrap:balance;margin:0;color:var(--eu-ink)}
-.ie-eu :where(h1){font-size:clamp(2.25rem,4.2vw,3.75rem);line-height:1.04}
-.ie-eu :where(h2){font-size:clamp(1.85rem,2.9vw,2.6rem);line-height:1.12}
+.ie-eu h1{font-size:clamp(2.25rem,4.2vw,3.75rem);line-height:1.04}
+.ie-eu h2{font-size:clamp(1.85rem,2.9vw,2.6rem);line-height:1.12}
+.ie-eu h1,.ie-eu h2{font-family:var(--eu-serif);font-weight:500;text-transform:none;letter-spacing:-.015em}
+.ie-eu h3{text-transform:none;letter-spacing:0}
 .ie-eu :where(h3){font-family:var(--eu-sans);font-weight:600;font-size:1.15rem;line-height:1.3;margin:0}
 .ie-eu :where(p){margin:0}
 .ie-eu :where(a){color:inherit}
