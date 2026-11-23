@@ -16,7 +16,7 @@
       "settings": {}
     },
     "scope": {
-      "type": "ie-european-product-scope",
+      "type": "ie-european-product-inclusions",
       "blocks": {
         "row_1": {
           "type": "row",
