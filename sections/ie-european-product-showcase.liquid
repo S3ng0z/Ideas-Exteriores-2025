@@ -1,0 +1,144 @@
+{% liquid
+  assign eu_name = product.title
+  assign eu_cover = product.featured_image
+  assign eu_description = product.metafields.custom.eu_short_description.value | default: 'Casa de madera configurable. Consulta dimensiones, distribución y alcance antes de solicitar presupuesto.'
+  assign eu_subtitle = product.metafields.custom.eu_subtitle.value | default: 'Casa de madera configurable en Sistema Europeo'
+  assign eu_dimensions = product.metafields.custom.eu_dimensions.value
+  assign eu_interior = product.metafields.custom.eu_interior_area.value
+  assign eu_terrace = product.metafields.custom.eu_terrace_area.value
+  assign eu_layout = product.metafields.custom.eu_layout.value
+  assign eu_wall_height = product.metafields.custom.eu_wall_height.value
+  assign eu_wall = product.metafields.custom.eu_wall.value
+  assign eu_roof = product.metafields.custom.eu_roof.value
+  assign eu_insulation = product.metafields.custom.eu_insulation.value
+  assign eu_has_price = false
+  if product.price > 0
+    assign eu_has_price = true
+  endif
+%}
+
+{{ 'ie-european-product-showcase.css' | asset_url | stylesheet_tag }}
+
+<section class="ie-eu-showcase" aria-labelledby="ie-eu-title-{{ section.id }}">
+  <div class="ie-eu-showcase__wrap">
+    <nav class="ie-eu-showcase__breadcrumb" aria-label="Ruta de navegación">
+      <a href="{{ routes.root_url }}">Inicio</a><span aria-hidden="true">/</span>
+      <a href="{{ section.settings.system_link }}">Sistema Europeo</a><span aria-hidden="true">/</span>
+      <span aria-current="page">{{ eu_name | escape }}</span>
+    </nav>
+
+    <div class="ie-eu-showcase__hero">
+      <div class="ie-eu-showcase__gallery">
+        <div class="ie-eu-showcase__main-image" id="ie-eu-image-{{ section.id }}">
+          {% if eu_cover != blank %}
+            {{ eu_cover | image_url: width: 1600 | image_tag: loading: 'eager', fetchpriority: 'high', widths: '550, 750, 1000, 1400, 1600', sizes: '(min-width: 1020px) 53vw, 100vw', alt: eu_cover.alt }}
+          {% else %}
+            <div class="ie-eu-showcase__image-missing"><span>Fotografías del modelo pendientes de verificación</span></div>
+          {% endif %}
+        </div>
+        {% if product.images.size > 1 %}
+          <div class="ie-eu-showcase__thumbs" aria-label="Otras imágenes del modelo">
+            {% for image in product.images limit: 4 %}
+              <button class="ie-eu-showcase__thumb{% if forloop.first %} is-selected{% endif %}" type="button" data-eu-image="{{ image | image_url: width: 1600 }}" data-eu-alt="{{ image.alt | default: eu_name | escape }}" aria-label="Ver imagen {{ forloop.index }} de {{ product.images.size }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">
+                {{ image | image_url: width: 320 | image_tag: loading: 'lazy', widths: '120, 240, 320', sizes: '160px', alt: image.alt }}
+              </button>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ie-eu-showcase__overview">
+        <p class="ie-eu-showcase__eyebrow">Sistema Europeo · Casa de madera</p>
+        <h1 id="ie-eu-title-{{ section.id }}">{{ eu_name | escape }}</h1>
+        <p class="ie-eu-showcase__subtitle">{{ eu_subtitle | escape }}</p>
+        <p class="ie-eu-showcase__summary">{{ eu_description | escape }}</p>
+
+        <dl class="ie-eu-showcase__metrics">
+          {% if eu_dimensions != blank %}
+            <div class="ie-eu-showcase__metric"><span class="ie-eu-showcase__metric-icon" aria-hidden="true">↗</span><div><dt>Dimensiones máximas</dt><dd>{{ eu_dimensions | escape }}</dd></div></div>
+          {% endif %}
+          {% if eu_interior != blank %}
+            <div class="ie-eu-showcase__metric"><span class="ie-eu-showcase__metric-icon" aria-hidden="true">⌂</span><div><dt>Recintos interiores</dt><dd>{{ eu_interior | escape }}</dd></div></div>
+          {% endif %}
+          {% if eu_terrace != blank %}
+            <div class="ie-eu-showcase__metric"><span class="ie-eu-showcase__metric-icon" aria-hidden="true">▤</span><div><dt>Terraza cubierta</dt><dd>{{ eu_terrace | escape }}</dd></div></div>
+          {% endif %}
+          {% if eu_layout != blank %}
+            <div class="ie-eu-showcase__metric"><span class="ie-eu-showcase__metric-icon" aria-hidden="true">▭</span><div><dt>Distribución</dt><dd>{{ eu_layout | escape }}</dd></div></div>
+          {% endif %}
+          {% if eu_wall_height != blank %}
+            <div class="ie-eu-showcase__metric"><span class="ie-eu-showcase__metric-icon" aria-hidden="true">≋</span><div><dt>Altura de pared</dt><dd>{{ eu_wall_height | escape }}</dd></div></div>
+          {% endif %}
+        </dl>
+
+        <div class="ie-eu-showcase__pricebox">
+          <span class="ie-eu-showcase__price-icon" aria-hidden="true">◇</span>
+          <div>
+            <strong>{% if eu_has_price %}Desde {{ product.price | money }}{% else %}Precio según configuración{% endif %}</strong>
+            <p>Kit de madera. Transporte, descarga y montaje se presupuestan aparte, salvo inclusión expresa.</p>
+          </div>
+        </div>
+        <div class="ie-eu-showcase__actions">
+          <a class="ie-eu-showcase__button ie-eu-showcase__button--primary" href="{{ section.settings.quote_link }}">Solicitar presupuesto <span aria-hidden="true">→</span></a>
+          <a class="ie-eu-showcase__button ie-eu-showcase__button--secondary" href="#ie-eu-specs-{{ section.id }}">Ver especificaciones</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="ie-eu-showcase__specs" id="ie-eu-specs-{{ section.id }}" aria-labelledby="ie-eu-specs-title-{{ section.id }}">
+      <div>
+        <p class="ie-eu-showcase__eyebrow">Configuración de referencia</p>
+        <h2 id="ie-eu-specs-title-{{ section.id }}">Qué define este modelo</h2>
+        <p>Resumen de la configuración de referencia, verificable y configurable dentro de las opciones compatibles del modelo.</p>
+      </div>
+      <dl class="ie-eu-showcase__spec-table">
+        {% if eu_wall != blank %}<div><dt>Pared exterior</dt><dd>{{ eu_wall | escape }}</dd></div>{% endif %}
+        {% if eu_roof != blank %}<div><dt>Cubierta</dt><dd>{{ eu_roof | escape }}</dd></div>{% endif %}
+        {% if eu_insulation != blank %}<div><dt>Aislamiento</dt><dd>{{ eu_insulation | escape }}</dd></div>{% endif %}
+        <div><dt>Alcance</dt><dd>Kit; servicios adicionales según presupuesto</dd></div>
+      </dl>
+    </section>
+  </div>
+</section>
+
+<script>
+  (() => {
+    const root = document.getElementById('shopify-section-{{ section.id }}');
+    if (!root) return;
+    const hero = root.querySelector('.ie-eu-showcase__main-image img');
+    if (!hero) return;
+    root.querySelectorAll('.ie-eu-showcase__thumb').forEach((button) => {
+      button.addEventListener('click', () => {
+        hero.src = button.dataset.euImage;
+        hero.removeAttribute('srcset');
+        hero.alt = button.dataset.euAlt;
+        root.querySelectorAll('.ie-eu-showcase__thumb').forEach((item) => {
+          const active = item === button;
+          item.classList.toggle('is-selected', active);
+          item.setAttribute('aria-pressed', String(active));
+        });
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Sistema Europeo · ficha",
+  "settings": [
+    {
+      "type": "url",
+      "id": "system_link",
+      "label": "Enlace Sistema Europeo",
+      "default": "/pages/european-timber-construction-system"
+    },
+    {
+      "type": "url",
+      "id": "quote_link",
+      "label": "Enlace para presupuesto",
+      "default": "/pages/contact"
+    }
+  ],
+  "presets": [{ "name": "Sistema Europeo · ficha" }]
+}
+{% endschema %}
