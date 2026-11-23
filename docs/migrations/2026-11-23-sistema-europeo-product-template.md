@@ -81,3 +81,11 @@ Datos de origen: `docs/product-migrations/2026-11-23-burgas-sistema-europeo.json
 Recintos en `eu_rooms` sin `n` → la tabla oculta la columna Nº (planos sin numeración).
 
 Regla Shopify: los ajustes `url` no admiten `default` distinto de `/collections` o `/collections/all`; los enlaces se fijan en la plantilla.
+
+## CATALAN · aplicado el 2026-11-23
+
+- Producto `CATALAN` (`/products/catalan`): `sistema-europeo`, `ACTIVE`, publicado en Online Store; 4 imágenes (render frontal, fachada y hastial, distribución amueblada, plano acotado); datos de IE-SE-01 en `docs/product-migrations/2026-11-23-catalan-sistema-europeo.json`.
+- Dato de cabecera combinado: `eu_terrace_label` «Cochera · porche» / `eu_terrace_area` «17,6 · 2,7 m²». Recintos numerados (1–8, T1–T2): columna Nº visible. Pie y nota del plano: los comunes (milímetros, a ejes).
+- Imagen excluida: render de la cochera con vehículo y matrícula con marca de terceros (no figura en IE-SE-01).
+- IE-SE-02 / IE-SE-03 sin cambios. Precio 0,00 € (sin PVP aprobado) → «Precio según configuración».
+- Sin cambios de theme: el modelo se publica solo con datos.
