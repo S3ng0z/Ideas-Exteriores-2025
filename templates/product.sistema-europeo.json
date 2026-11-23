@@ -1,12 +1,58 @@
 {
   "sections": {
+    "header": {
+      "type": "ie-european-product-header",
+      "blocks": {
+        "g1": {
+          "type": "summary",
+          "settings": {
+            "number": "01",
+            "label": "Planta y distribución",
+            "anchor": "planta"
+          }
+        },
+        "g2": {
+          "type": "summary",
+          "settings": {
+            "number": "02",
+            "label": "Especificaciones y opciones",
+            "anchor": "especificaciones"
+          }
+        },
+        "g3": {
+          "type": "summary",
+          "settings": {
+            "number": "03",
+            "label": "Qué incluye y qué no",
+            "anchor": "alcance"
+          }
+        },
+        "g4": {
+          "type": "summary",
+          "settings": {
+            "number": "04",
+            "label": "Compra e instalación",
+            "anchor": "compra"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3",
+        "g4"
+      ],
+      "settings": {
+        "crumb_1_label": "Sistemas constructivos",
+        "crumb_1_link": "/pages/timber-building-systems",
+        "crumb_2_label": "Sistema Europeo",
+        "crumb_2_link": "/pages/european-timber-construction-system",
+        "quote_link": "/pages/contact-ideas-exteriores"
+      }
+    },
     "showcase": {
       "type": "ie-european-product-showcase",
-      "settings": {
-        "system_link": "/pages/european-timber-construction-system",
-        "quote_link": "/pages/contact-ideas-exteriores",
-        "eyebrow": "Sistema Europeo · Casa de madera"
-      }
+      "settings": {}
     },
     "plan": {
       "type": "ie-european-product-plan",
@@ -265,6 +311,7 @@
     }
   },
   "order": [
+    "header",
     "showcase",
     "plan",
     "specs",

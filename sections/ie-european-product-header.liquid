@@ -1,0 +1,111 @@
+{% comment %}
+  IE · Sistema Europeo · encabezado de modelo.
+  Reutiliza el encabezado global de la web (ie-breadcrumb + ie-services--hero + ie-systems-compact)
+  para que la ficha de modelo comparta migas, tipografía, botones y guía lateral con el resto de páginas.
+  Datos del modelo: título del producto + custom.eu_subtitle + custom.eu_short_description + custom.eu_datasheet.
+  Migas: custom.n1/n2 (+ _url) del producto si existen; si no, los ajustes de esta sección.
+{% endcomment %}
+{{ 'ie-services-page.css' | asset_url | stylesheet_tag }}
+{{ 'ie-timber-editorial-compact.css' | asset_url | stylesheet_tag }}
+{{ 'ie-eu-model.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign eu_name = product.title
+  assign eu_subtitle = product.metafields.custom.eu_subtitle.value
+  assign eu_lead = product.metafields.custom.eu_short_description.value
+  assign eu_sheet_url = product.metafields.custom.eu_datasheet.value.url
+  assign eu_heading = eu_name
+  if eu_subtitle != blank
+    assign eu_first = eu_subtitle | slice: 0 | downcase
+    assign eu_rest_len = eu_subtitle.size | minus: 1
+    assign eu_rest = eu_subtitle | slice: 1, eu_rest_len
+    assign eu_heading = eu_name | append: ': ' | append: eu_first | append: eu_rest
+  endif
+  assign eu_model_param = eu_name | url_encode
+  assign eu_quote = section.settings.quote_link | append: '?modelo=' | append: eu_model_param
+-%}
+
+<section class="ie-services ie-services--hero ie-systems-compact ie-eu-header" aria-labelledby="ie-eu-header-{{ section.id }}">
+  <div class="ie-services__inner">
+    {% render 'ie-breadcrumb',
+      breadcrumb_object: product,
+      current_title: eu_name,
+      class_name: 'ie-services__breadcrumb',
+      fallback_1_label: section.settings.crumb_1_label,
+      fallback_1_link: section.settings.crumb_1_link,
+      fallback_2_label: section.settings.crumb_2_label,
+      fallback_2_link: section.settings.crumb_2_link
+    %}
+
+    <div class="ie-services__hero">
+      <div class="ie-services__hero-copy">
+        {% if section.settings.eyebrow != blank %}
+          <p class="ie-services__eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+
+        <h1 id="ie-eu-header-{{ section.id }}">{{ eu_heading | escape }}</h1>
+
+        {% if eu_lead != blank %}
+          <div class="ie-services__lead rte"><p>{{ eu_lead | escape }}</p></div>
+        {% endif %}
+
+        <div class="ie-services__actions">
+          <a class="ie-services__button ie-services__button--primary" href="{{ eu_quote }}">{{ section.settings.primary_label }}</a>
+          {% if eu_sheet_url != blank %}
+            <a class="ie-services__button ie-services__button--secondary" href="{{ eu_sheet_url }}" target="_blank" rel="noopener">{{ section.settings.secondary_label }}</a>
+          {% else %}
+            <a class="ie-services__button ie-services__button--secondary" href="#especificaciones">{{ section.settings.secondary_fallback_label }}</a>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if section.blocks.size > 0 %}
+        <aside class="ie-services__hero-summary" aria-label="{{ section.settings.summary_title | escape }}">
+          {% if section.settings.summary_title != blank %}
+            <p class="ie-services__summary-title">{{ section.settings.summary_title }}</p>
+          {% endif %}
+          <ol class="ie-services__summary-list">
+            {% for block in section.blocks %}
+              <li {{ block.shopify_attributes }}>
+                <span>{{ block.settings.number }}</span>
+                <strong>{% if block.settings.anchor != blank %}<a href="#{{ block.settings.anchor }}">{{ block.settings.label }}</a>{% else %}{{ block.settings.label }}{% endif %}</strong>
+              </li>
+            {% endfor %}
+          </ol>
+        </aside>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Europeo · encabezado",
+  "settings": [
+    { "type": "header", "content": "Migas de pan" },
+    { "type": "text", "id": "crumb_1_label", "label": "Nivel 1", "default": "Sistemas constructivos" },
+    { "type": "url", "id": "crumb_1_link", "label": "Enlace nivel 1" },
+    { "type": "text", "id": "crumb_2_label", "label": "Nivel 2", "default": "Sistema Europeo" },
+    { "type": "url", "id": "crumb_2_link", "label": "Enlace nivel 2" },
+    { "type": "header", "content": "Contenido" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Sistema Europeo · Casa de madera" },
+    { "type": "text", "id": "primary_label", "label": "CTA principal", "default": "Solicitar presupuesto" },
+    { "type": "url", "id": "quote_link", "label": "Enlace de presupuesto" },
+    { "type": "text", "id": "secondary_label", "label": "CTA secundario (con ficha PDF)", "default": "Descargar ficha técnica" },
+    { "type": "text", "id": "secondary_fallback_label", "label": "CTA secundario (sin ficha PDF)", "default": "Ver especificaciones" },
+    { "type": "text", "id": "summary_title", "label": "Título de la guía", "default": "Guía del modelo" }
+  ],
+  "blocks": [
+    {
+      "type": "summary",
+      "name": "Paso de la guía",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Número", "default": "01" },
+        { "type": "text", "id": "label", "label": "Texto", "default": "Planta y distribución" },
+        { "type": "text", "id": "anchor", "label": "Ancla de la sección (sin #)", "default": "planta" }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [{ "name": "Europeo · encabezado" }]
+}
+{% endschema %}

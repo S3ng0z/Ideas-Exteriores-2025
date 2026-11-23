@@ -1,12 +1,11 @@
-{% comment %} rev 2026-11-23b ·
-  IE · Sistema Europeo · cabecera de modelo.
+{% comment %}
+  IE · Sistema Europeo · galería, datos clave, precio y navegación interna del modelo.
+  El encabezado (migas, H1, introducción) lo pinta ie-european-product-header.
   Datos del modelo: Product (título, imágenes, precio) + metafields custom.eu_*.
   Contenido común del sistema: ajustes de la sección. Sin datos de modelo hard-coded.
 {% endcomment %}
 {% liquid
   assign eu_name = product.title
-  assign eu_subtitle = product.metafields.custom.eu_subtitle.value | default: section.settings.subtitle_fallback
-  assign eu_text = product.metafields.custom.eu_short_description.value
   assign eu_dimensions = product.metafields.custom.eu_dimensions.value
   assign eu_interior = product.metafields.custom.eu_interior_area.value
   assign eu_terrace = product.metafields.custom.eu_terrace_area.value
@@ -25,12 +24,6 @@
 
 <div class="ie-eu ie-eu-hero" data-eu-hero>
   <div class="ie-eu__wrap">
-    <nav class="ie-eu-hero__crumbs" aria-label="Ruta de navegación">
-      <a href="{{ routes.root_url }}">Inicio</a><span aria-hidden="true">/</span>
-      <a href="{{ section.settings.system_link }}">Sistema Europeo</a><span aria-hidden="true">/</span>
-      <span aria-current="page">{{ eu_name | escape }}</span>
-    </nav>
-
     <div class="ie-eu-hero__grid">
       <div class="ie-eu-hero__gallery">
         {%- assign first_alt = eu_cover.alt | default: eu_name | downcase -%}
@@ -72,10 +65,7 @@
       </div>
 
       <div class="ie-eu-hero__summary">
-        <p class="ie-eu__eyebrow">{{ section.settings.eyebrow }}</p>
-        <h1>{{ eu_name | escape }}</h1>
-        {% if eu_subtitle != blank %}<p class="ie-eu-hero__subtitle">{{ eu_subtitle | escape }}</p>{% endif %}
-        {% if eu_text != blank %}<p class="ie-eu-hero__text">{{ eu_text | escape }}</p>{% endif %}
+        <p class="ie-eu__eyebrow">{{ section.settings.data_label }}</p>
 
         <dl class="ie-eu-hero__metrics">
           {% if eu_dimensions != blank %}
@@ -219,16 +209,14 @@
 
 {% schema %}
 {
-  "name": "Europeo · cabecera",
+  "name": "Europeo · galería y datos",
   "class": "ie-eu-section",
   "settings": [
     { "type": "header", "content": "Enlaces" },
-    { "type": "url", "id": "system_link", "label": "Enlace Sistema Europeo" },
     { "type": "url", "id": "quote_link", "label": "Enlace de presupuesto" },
     { "type": "text", "id": "phone", "label": "Teléfono de contacto", "default": "+34 916 99 60 93" },
     { "type": "header", "content": "Textos comunes" },
-    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Sistema Europeo · Casa de madera" },
-    { "type": "text", "id": "subtitle_fallback", "label": "Subtítulo si el modelo no tiene uno", "default": "Casa de madera del Sistema Europeo" },
+    { "type": "text", "id": "data_label", "label": "Título del bloque de datos", "default": "Datos del modelo" },
     { "type": "text", "id": "render_badge", "label": "Etiqueta sobre imágenes render", "info": "Vacío para ocultar. No se muestra sobre planos.", "default": "Render" },
     { "type": "textarea", "id": "image_note", "label": "Nota de imágenes", "default": "Imágenes ilustrativas. El entorno, el mobiliario, la iluminación y el equipamiento no forman parte del modelo." },
     { "type": "header", "content": "Precio" },
@@ -239,6 +227,6 @@
     { "type": "text", "id": "primary_label", "label": "Botón principal", "default": "Solicitar presupuesto" },
     { "type": "text", "id": "secondary_label", "label": "Botón secundario", "default": "Ver especificaciones" }
   ],
-  "presets": [{ "name": "Europeo · cabecera" }]
+  "presets": [{ "name": "Europeo · galería y datos" }]
 }
 {% endschema %}
