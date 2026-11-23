@@ -1,0 +1,201 @@
+{
+  "product": {
+    "match_title": "DUERO",
+    "handle": "duero",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE"
+  },
+  "media_alt_by_position": [
+    "DUERO, casa de madera de una planta con porche frontal. Render ilustrativo en simetría respecto al plano, vista frontal",
+    "DUERO, hastial y porche. Render ilustrativo en simetría respecto al plano",
+    "DUERO, distribución amueblada en vista cenital. Representación ilustrativa",
+    "DUERO, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Casa de madera de una planta con cubierta a dos aguas y porche frontal"
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Casa compacta con salón-comedor abierto a la cocina, dos dormitorios, un vestíbulo de entrada y un baño, con grandes ventanales hacia el porche cubierto a lo largo de toda la fachada principal."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "8,00 × 7,92 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "43,5 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "16,0 m²"
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Porche cubierto"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "2 dorm. · 1 baño"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.295 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "34 mm de madera maciza; opción 44 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A dos aguas"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Superficies de recintos según plano, medidas a ejes de muro: no equivalen a la superficie útil ni a la construida. Los usos de cada recinto son de referencia; el equipamiento de cocina y baño no forma parte del modelo. Los renders muestran la casa en simetría respecto al plano: la disposición válida es la del plano."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          {
+            "n": "1",
+            "name": "Dormitorio",
+            "area": "9,11"
+          },
+          {
+            "n": "2",
+            "name": "Dormitorio",
+            "area": "6,80"
+          },
+          {
+            "n": "3",
+            "name": "Cocina, abierta al salón",
+            "area": "5,17"
+          },
+          {
+            "n": "4",
+            "name": "Salón-comedor",
+            "area": "14,75"
+          },
+          {
+            "n": "5",
+            "name": "Vestíbulo",
+            "area": "4,56"
+          },
+          {
+            "n": "6",
+            "name": "Baño",
+            "area": "3,14"
+          }
+        ],
+        "total": "43,53",
+        "exterior": [
+          {
+            "n": "T",
+            "name": "Porche cubierto (exterior)",
+            "area": "15,96"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "Sistema Europeo: muros de perfiles horizontales de madera maciza de abeto, mecanizados en taller, apilados con machihembrado y trabados en las esquinas. La pared es cerramiento y elemento portante."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de una planta con porche cubierto a lo largo de la fachada principal, bajo la prolongación de la cubierta."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "8.000 × 7.920 mm, cotas totales del plano con porche. Entre ejes extremos: 7.665 × 7.595 mm. Porche: 1.930 mm de fondo. Altura de muro: 2.295 mm."
+        },
+        {
+          "label": "Superficies",
+          "value": "Recintos interiores: 43,53 m² (suma del plano, a ejes). Porche cubierto: 15,96 m² (plano)."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 34 mm, sin aislamiento, vista por ambas caras. Opción: 44 mm."
+        },
+        {
+          "label": "Suelo",
+          "value": "Vigas de arranque y viguetas de madera impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A dos aguas. Vigas de madera y tablero machihembrado de 17 mm visto desde el interior. Acabado exterior de tégola asfáltica (teja bituminosa): material incluido, colocación como servicio aparte."
+        },
+        {
+          "label": "Porche",
+          "value": "Tarima de tablas impregnadas de 25 mm sobre rastreles biselados, bajo la cubierta."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera, gama Superior, con acristalamiento con cámara. Acceso desde el porche al vestíbulo. Número, medidas y posición según plano."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido. Disponible como opción en paredes (requiere 44 mm), cubierta y suelo."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "Madera natural, sin acabado protector final. Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        },
+        {
+          "label": "Uso",
+          "value": "Pared sin aislar indicada para uso estacional. Para un uso prolongado conviene la pared de 44 mm con aislamiento. El uso autorizado en cada parcela depende del planeamiento y del proyecto técnico."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "34 mm",
+          "option": "44 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes (con 44 mm), cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Tégola asfáltica",
+          "option": "Chapa de acero de perfil trapezoidal"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Superior",
+          "option": "Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Superior",
+          "option": "Premium · Ventanal de aluminio (con 44 mm)"
+        },
+        {
+          "element": "Canalones y bajantes",
+          "reference": "No incluidos",
+          "option": "Acero o PVC"
+        }
+      ]
+    }
+  },
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_DUERO.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios)"
+  }
+}
