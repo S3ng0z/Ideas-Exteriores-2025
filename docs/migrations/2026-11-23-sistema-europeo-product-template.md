@@ -40,18 +40,17 @@ Plantilla única y reutilizable para los ~15 modelos del Sistema Europeo. La pá
 
 Retirados: `sections/ie-european-product-guide.liquid` y `assets/ie-european-product-showcase.css` (solo los usaba esta plantilla).
 
-## Shopify Admin (BURGAS)
+## Shopify Admin (BURGAS) · aplicado el 2026-11-23
 
-Datos en `docs/product-migrations/2026-11-23-burgas-sistema-europeo.json`. Aplicación idempotente:
+Aplicado con la Admin API (conector Shopify), sin token local:
 
-```bash
-SHOPIFY_STORE=<tienda>.myshopify.com SHOPIFY_ADMIN_TOKEN=<token> \
-node docs/product-migrations/apply-sistema-europeo-model.mjs \
-  docs/product-migrations/2026-11-23-burgas-sistema-europeo.json \
-  --pdf-dir <carpeta con los 3 PDF> --write-template
-```
+- 16 definiciones de metafield `custom.eu_*` (Producto), con nombre «Sistema Europeo · …».
+- Files: IE-SE-01 (ficha BURGAS), IE-SE-02 (memoria de calidades) e IE-SE-03 (guía de compra), importados desde `docs/catalogo/sistema-europeo/`.
+- Producto `BURGAS` (`/products/burgas`): `templateSuffix: sistema-europeo`, `ACTIVE`, publicado en Online Store; 4 imágenes con alt (render frontal, render posterior, distribución amueblada, plano acotado); metafields de la ficha IE-SE-01; `eu_datasheet`, `eu_plan_image`, `eu_layout_image` enlazados.
+- Precio de la variante: 0,00 € (sin PVP aprobado). La cabecera muestra «Precio según configuración». Al aprobar el PVP basta con fijar el precio de la variante: la plantilla pasa a «Desde X €» con su alcance.
+- URLs de IE-SE-02 / IE-SE-03 guardadas en `templates/product.sistema-europeo.json` (sección `docs`).
 
-El script crea las definiciones de metafield, sube los PDF a Files, fija metafields y textos alternativos, asigna `templateSuffix: sistema-europeo` y deja el producto en `ACTIVE`. Con `--write-template` escribe las URL de IE-SE-02/03 en la plantilla (commit posterior a `main`).
+Datos de origen: `docs/product-migrations/2026-11-23-burgas-sistema-europeo.json`. El script `apply-sistema-europeo-model.mjs` queda como alternativa para modelos siguientes con token de Admin.
 
 ## QA
 

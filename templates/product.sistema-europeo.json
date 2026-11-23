@@ -197,7 +197,10 @@
     },
     "docs": {
       "type": "ie-european-product-docs",
-      "settings": {}
+      "settings": {
+        "quality_url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/IE-SE-02_Memoria_Calidades_Sistema_Europeo.pdf?v=1795455991",
+        "guide_url": "https://cdn.shopify.com/s/files/1/0921/0796/4760/files/IE-SE-03_Guia_Compra_Suministro_Instalacion_Sistema_Europeo.pdf?v=1795455990"
+      }
     },
     "faq": {
       "type": "ie-european-product-faq",
