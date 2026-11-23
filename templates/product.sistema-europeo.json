@@ -4,7 +4,8 @@
       "type": "ie-european-product-showcase",
       "settings": {
         "system_link": "/pages/european-timber-construction-system",
-        "quote_link": "/pages/contact-ideas-exteriores"
+        "quote_link": "/pages/contact-ideas-exteriores",
+        "eyebrow": "Sistema Europeo · Casa de madera"
       }
     },
     "plan": {

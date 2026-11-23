@@ -5,3 +5,5 @@ Branch: main
 Shopify theme: Ideas-Exteriores-2025/main
 
 This metadata file requests a new GitHub push event without modifying storefront theme files.
+
+Sync request: 2026-11-23 · Sistema Europeo (template + showcase/specs/faq)
