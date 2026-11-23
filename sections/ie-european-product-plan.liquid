@@ -1,12 +1,18 @@
 {% comment %}
   IE · Sistema Europeo · planta y distribución de referencia.
   custom.eu_rooms (json): {"rooms":[{"n":"1","name":"Salón-comedor","area":"15,8"}],"total":"46,3","exterior":[{"n":"1","name":"Terraza cubierta (exterior)","area":"9,5"}]}
-  custom.eu_plan_image / custom.eu_layout_image (file_reference, imagen). Si faltan, se buscan en las imágenes del producto por texto alternativo («plano» / «amueblad»).
+  custom.eu_plan_image / custom.eu_layout_image (file_reference, imagen). custom.eu_plan_caption / custom.eu_plan_note sustituyen al pie y la nota comunes; si los recintos no llevan "n", se oculta la columna Nº. Si faltan, se buscan en las imágenes del producto por texto alternativo («plano» / «amueblad»).
 {% endcomment %}
 {% liquid
   assign rooms = product.metafields.custom.eu_rooms.value
   assign plan_img = product.metafields.custom.eu_plan_image.value
   assign layout_img = product.metafields.custom.eu_layout_image.value
+  assign plan_caption = product.metafields.custom.eu_plan_caption.value | default: section.settings.plan_caption
+  assign plan_note = product.metafields.custom.eu_plan_note.value | default: section.settings.note
+  assign show_idx = false
+  if rooms.rooms.first.n != blank
+    assign show_idx = true
+  endif
   for image in product.images
     assign alt = image.alt | downcase
     if plan_img == blank and alt contains 'plano'
@@ -47,8 +53,8 @@
               {{ layout_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: section.settings.layout_alt, data-eu-panel: 'layout', class: layout_class }}
             {% endif %}
           </div>
-          <figcaption data-eu-caption data-plan="{{ section.settings.plan_caption | escape }}" data-layout="{{ section.settings.layout_caption | escape }}">
-            {% if plan_img != blank %}{{ section.settings.plan_caption }}{% else %}{{ section.settings.layout_caption }}{% endif %}
+          <figcaption data-eu-caption data-plan="{{ plan_caption | escape }}" data-layout="{{ section.settings.layout_caption | escape }}">
+            {% if plan_img != blank %}{{ plan_caption | escape }}{% else %}{{ section.settings.layout_caption }}{% endif %}
           </figcaption>
         </figure>
       {% endif %}
@@ -58,16 +64,16 @@
           <table class="ie-eu-table">
             <caption>Recintos de {{ product.title | escape }}</caption>
             <thead>
-              <tr><th scope="col" class="is-idx">Nº</th><th scope="col">Recinto</th><th scope="col" class="is-num">m²</th></tr>
+              <tr>{% if show_idx %}<th scope="col" class="is-idx">Nº</th>{% endif %}<th scope="col">Recinto</th><th scope="col" class="is-num">m²</th></tr>
             </thead>
             <tbody>
               {% for room in rooms.rooms %}
-                <tr><td class="is-idx">{{ room.n }}</td><th scope="row">{{ room.name }}</th><td class="is-num">{{ room.area }}</td></tr>
+                <tr>{% if show_idx %}<td class="is-idx">{{ room.n }}</td>{% endif %}<th scope="row">{{ room.name }}</th><td class="is-num">{{ room.area }}</td></tr>
               {% endfor %}
             </tbody>
             {% if rooms.total != blank %}
               <tfoot>
-                <tr><td></td><th scope="row">Suma de recintos interiores</th><td class="is-num">{{ rooms.total }}</td></tr>
+                <tr>{% if show_idx %}<td></td>{% endif %}<th scope="row">Suma de recintos interiores</th><td class="is-num">{{ rooms.total }}</td></tr>
               </tfoot>
             {% endif %}
           </table>
@@ -75,12 +81,12 @@
             <table class="ie-eu-table ie-eu-table--follow">
               <tbody>
                 {% for room in rooms.exterior %}
-                  <tr class="is-exterior"><td class="is-idx">{{ room.n }}</td><th scope="row">{{ room.name }}</th><td class="is-num">{{ room.area }}</td></tr>
+                  <tr class="is-exterior">{% if show_idx %}<td class="is-idx">{{ room.n }}</td>{% endif %}<th scope="row">{{ room.name }}</th><td class="is-num">{{ room.area }}</td></tr>
                 {% endfor %}
               </tbody>
             </table>
           {% endif %}
-          {% if section.settings.note != blank %}<p class="ie-eu__note">{{ section.settings.note }}</p>{% endif %}
+          {% if plan_note != blank %}<p class="ie-eu__note">{{ plan_note | escape }}</p>{% endif %}
         </div>
       {% endif %}
     </div>

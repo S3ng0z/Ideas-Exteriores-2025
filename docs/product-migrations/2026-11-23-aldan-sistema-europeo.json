@@ -1,0 +1,198 @@
+{
+  "product": {
+    "match_title": "ALDAN",
+    "handle": "aldan",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE"
+  },
+  "media_alt_by_position": [
+    "ALDAN, casa de madera de una planta con porche corrido. Render ilustrativo, vista frontal",
+    "ALDAN, vista lateral con hastial y porche. Render ilustrativo",
+    "ALDAN, distribución amueblada en vista cenital. Representación ilustrativa",
+    "ALDAN, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Casa de madera de una planta con cubierta a dos aguas y porche corrido"
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Amplia zona de día con salón y cocina-comedor que distribuye a dos dormitorios, un baño y una despensa, con salida directa al porche cubierto a lo largo de toda la fachada principal."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "11,70 × 6,50 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "55,4 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "17,5 m²"
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Porche cubierto"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "2 dorm. · 1 baño"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.295 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "44 mm de madera maciza; opción 68 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A dos aguas"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_plan_caption": {
+      "type": "single_line_text_field",
+      "value": "Plano de planta. Cotas en centímetros, sin escala gráfica; mobiliario ilustrativo."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Superficies medidas entre muros: su suma no equivale a la superficie útil ni a la construida. Usos de referencia; el equipamiento de cocina y baño no forma parte del modelo."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          {
+            "name": "Salón y distribuidor",
+            "area": "20,0"
+          },
+          {
+            "name": "Cocina-comedor",
+            "area": "7,6"
+          },
+          {
+            "name": "Dormitorio",
+            "area": "9,0"
+          },
+          {
+            "name": "Dormitorio",
+            "area": "9,0"
+          },
+          {
+            "name": "Baño",
+            "area": "4,4"
+          },
+          {
+            "name": "Despensa",
+            "area": "5,4"
+          }
+        ],
+        "total": "55,4",
+        "exterior": [
+          {
+            "name": "Porche cubierto (exterior)",
+            "area": "17,5"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "Sistema Europeo: muros de perfiles horizontales de madera maciza de abeto, mecanizados en taller, apilados con machihembrado y trabados en las esquinas. La pared es cerramiento y elemento portante."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de una planta con porche cubierto a lo largo de la fachada principal, bajo la prolongación de la cubierta."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "1.170,4 × 650,4 cm, cotas totales del plano con porche. Cuerpo cerrado: 493,9 cm de fondo. Porche: 150 cm de fondo. Altura de muro: 2.295 mm."
+        },
+        {
+          "label": "Superficies",
+          "value": "Recintos interiores: 55,4 m² (suma del plano, medidas interiores). Porche cubierto: 17,5 m² (1.170,4 × 150 cm)."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 44 mm, sin aislamiento, vista por ambas caras. Admite aislamiento. Opción: 68 mm."
+        },
+        {
+          "label": "Suelo",
+          "value": "Vigas de arranque y viguetas de madera impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A dos aguas. Vigas de madera y tablero machihembrado de 17 mm visto desde el interior. Acabado exterior de tégola asfáltica (teja bituminosa): material incluido, colocación como servicio aparte."
+        },
+        {
+          "label": "Porche",
+          "value": "Tarima de tablas impregnadas de 25 mm sobre rastreles biselados, bajo la cubierta."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera, gama Superior, con acristalamiento con cámara. Número, medidas y posición según plano."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido. Disponible como opción en paredes, cubierta y suelo, por separado."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "Madera natural, sin acabado protector final. Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        },
+        {
+          "label": "Uso",
+          "value": "Para un uso prolongado conviene añadir aislamiento en paredes, cubierta y suelo. Disponer de dormitorios y baño no implica aptitud como vivienda: el uso autorizado depende del planeamiento, de la parcela y del proyecto técnico."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "44 mm",
+          "option": "68 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes, cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Tégola asfáltica",
+          "option": "Tela asfáltica · Chapa de acero (dos perfiles)"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Superior",
+          "option": "Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Superior",
+          "option": "Premium · Ventanal de aluminio"
+        },
+        {
+          "element": "Canalones y bajantes",
+          "reference": "No incluidos",
+          "option": "Acero o PVC"
+        }
+      ]
+    }
+  },
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_ALDAN.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios)"
+  }
+}

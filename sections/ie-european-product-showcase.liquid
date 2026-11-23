@@ -9,6 +9,7 @@
   assign eu_dimensions = product.metafields.custom.eu_dimensions.value
   assign eu_interior = product.metafields.custom.eu_interior_area.value
   assign eu_terrace = product.metafields.custom.eu_terrace_area.value
+  assign eu_terrace_label = product.metafields.custom.eu_terrace_label.value | default: 'Terraza cubierta'
   assign eu_layout = product.metafields.custom.eu_layout.value
   assign eu_wall_height = product.metafields.custom.eu_wall_height.value
   assign eu_cover = product.featured_media.preview_image | default: product.featured_image
@@ -83,7 +84,7 @@
           {% if eu_terrace != blank %}
             <div class="ie-eu-hero__metric">
               <svg class="ie-eu__icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M3 10h22M6 10v14M22 10v14M3 24h22M5 7l4-3h10l4 3M10 17h8"/></svg>
-              <div><dt>Terraza cubierta</dt><dd>{{ eu_terrace | escape }}</dd></div>
+              <div><dt>{{ eu_terrace_label | escape }}</dt><dd>{{ eu_terrace | escape }}</dd></div>
             </div>
           {% endif %}
           {% if eu_layout != blank %}
