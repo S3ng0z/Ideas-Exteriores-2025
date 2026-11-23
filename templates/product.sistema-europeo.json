@@ -14,7 +14,9 @@
     },
     "specs": {
       "type": "ie-european-product-specs",
-      "settings": {}
+      "settings": {
+        "system_link": "/pages/european-timber-construction-system"
+      }
     },
     "scope": {
       "type": "ie-european-product-inclusions",
@@ -257,7 +259,9 @@
         "faq_5",
         "faq_6"
       ],
-      "settings": {}
+      "settings": {
+        "quote_link": "/pages/contact-ideas-exteriores"
+      }
     }
   },
   "order": [
