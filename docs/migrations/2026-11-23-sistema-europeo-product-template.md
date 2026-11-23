@@ -63,3 +63,21 @@ Datos de origen: `docs/product-migrations/2026-11-23-burgas-sistema-europeo.json
 1. Duplicar el JSON de BURGAS con los datos de la ficha IE-SE-01 del modelo.
 2. Imágenes en orden: render principal, render secundario, distribución amueblada, plano acotado.
 3. Ejecutar el script. No hace falta tocar el theme.
+
+## ALDAN · aplicado el 2026-11-23
+
+- Producto `ALDAN` (`/products/aldan`): `sistema-europeo`, `ACTIVE`, publicado en Online Store; 4 imágenes (render frontal, render lateral, distribución amueblada, plano acotado); datos de la ficha IE-SE-01 en `docs/product-migrations/2026-11-23-aldan-sistema-europeo.json`.
+- IE-SE-02 e IE-SE-03: sin cambios (mismo PDF); se reutilizan los publicados.
+- Precio de la variante: 0,00 € (sin PVP aprobado) → «Precio según configuración».
+
+### Campos por modelo añadidos a la plantilla (opcionales)
+
+| Metafield | Uso | Si está vacío |
+|---|---|---|
+| `custom.eu_terrace_label` | Etiqueta del dato «Terraza cubierta» / «Porche cubierto» | «Terraza cubierta» |
+| `custom.eu_plan_caption` | Pie del plano (unidades de cota) | Ajuste de sección (milímetros) |
+| `custom.eu_plan_note` | Nota de superficies (a ejes / entre muros) | Ajuste de sección (a ejes) |
+
+Recintos en `eu_rooms` sin `n` → la tabla oculta la columna Nº (planos sin numeración).
+
+Regla Shopify: los ajustes `url` no admiten `default` distinto de `/collections` o `/collections/all`; los enlaces se fijan en la plantilla.
