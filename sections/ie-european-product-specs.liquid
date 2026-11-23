@@ -1,0 +1,98 @@
+{% comment %}
+  IE · Sistema Europeo · especificaciones y opciones compatibles del modelo.
+  custom.eu_specs (json): [{"label":"Pared exterior","value":"Madera maciza de 34 mm…"}]
+  custom.eu_options (json): [{"element":"Pared exterior","reference":"34 mm","option":"44 mm"}]
+  Compatibilidad: si eu_specs no existe se usan eu_wall, eu_roof y eu_insulation.
+{% endcomment %}
+{% liquid
+  assign specs = product.metafields.custom.eu_specs.value
+  assign options = product.metafields.custom.eu_options.value
+  assign legacy_wall = product.metafields.custom.eu_wall.value
+  assign legacy_roof = product.metafields.custom.eu_roof.value
+  assign legacy_insulation = product.metafields.custom.eu_insulation.value
+%}
+{{ 'ie-eu-model.css' | asset_url | stylesheet_tag }}
+<section class="ie-eu ie-eu--bone ie-eu__section" id="especificaciones" aria-labelledby="ie-eu-specs-{{ section.id }}">
+  <div class="ie-eu__wrap">
+    <div class="ie-eu-specs__grid">
+      <div class="ie-eu-specs__aside">
+        <p class="ie-eu__eyebrow">{{ section.settings.eyebrow }}</p>
+        <h2 id="ie-eu-specs-{{ section.id }}">{{ section.settings.heading }}</h2>
+        {% if section.settings.intro != blank %}<p class="ie-eu__lead">{{ section.settings.intro }}</p>{% endif %}
+        {% if section.settings.system_link != blank %}
+          <p class="ie-eu__note"><a href="{{ section.settings.system_link }}">{{ section.settings.system_link_label }}</a></p>
+        {% endif %}
+      </div>
+
+      <div>
+        <dl class="ie-eu-specs__list">
+          {% if specs != blank %}
+            {% for row in specs %}
+              <div><dt>{{ row.label }}</dt><dd>{{ row.value }}</dd></div>
+            {% endfor %}
+          {% else %}
+            {% if legacy_wall != blank %}<div><dt>Pared exterior</dt><dd>{{ legacy_wall | escape }}</dd></div>{% endif %}
+            {% if legacy_roof != blank %}<div><dt>Cubierta</dt><dd>{{ legacy_roof | escape }}</dd></div>{% endif %}
+            {% if legacy_insulation != blank %}<div><dt>Aislamiento</dt><dd>{{ legacy_insulation | escape }}</dd></div>{% endif %}
+          {% endif %}
+        </dl>
+
+        {% if section.settings.callout_text != blank %}
+          <div class="ie-eu-callout" role="note">
+            <strong>{{ section.settings.callout_title }}</strong>
+            <p>{{ section.settings.callout_text }}</p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if options != blank %}
+      <div class="ie-eu-options" id="opciones">
+        <header class="ie-eu__head">
+          <div>
+            <p class="ie-eu__eyebrow">{{ section.settings.options_eyebrow }}</p>
+            <h2>{{ section.settings.options_heading | replace: '[modelo]', product.title }}</h2>
+          </div>
+          {% if section.settings.options_intro != blank %}<p class="ie-eu__lead">{{ section.settings.options_intro }}</p>{% endif %}
+        </header>
+        <table class="ie-eu-table ie-eu-options__table">
+          <thead>
+            <tr><th scope="col">Elemento</th><th scope="col">Configuración de referencia</th><th scope="col">Opción</th></tr>
+          </thead>
+          <tbody>
+            {% for row in options %}
+              <tr>
+                <th scope="row">{{ row.element }}</th>
+                <td><span class="ie-eu__chip ie-eu__chip--ref">Ref.</span>{{ row.reference }}</td>
+                <td>{% if row.option != blank %}<span class="ie-eu__chip ie-eu__chip--optional">Opción</span>{{ row.option }}{% else %}—{% endif %}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% if section.settings.options_note != blank %}<p class="ie-eu__note">{{ section.settings.options_note }}</p>{% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Europeo · ficha técnica",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Configuración de referencia" },
+    { "type": "text", "id": "heading", "label": "Título", "default": "Especificaciones del modelo" },
+    { "type": "textarea", "id": "intro", "label": "Introducción", "default": "Composición de la versión de referencia, la que corresponde al precio publicado. Las opciones compatibles se detallan a continuación." },
+    { "type": "url", "id": "system_link", "label": "Enlace al sistema constructivo", "default": "/pages/european-timber-construction-system" },
+    { "type": "text", "id": "system_link_label", "label": "Texto del enlace", "default": "Cómo funciona el Sistema Europeo →" },
+    { "type": "header", "content": "Aviso de uso" },
+    { "type": "text", "id": "callout_title", "label": "Título", "default": "Uso durante todo el año" },
+    { "type": "textarea", "id": "callout_text", "label": "Texto", "default": "Una pared fina sin aislar está indicada para uso estacional. Para vivir de forma permanente conviene una configuración con aislamiento en paredes, cubierta y suelo; el espesor necesario y el cumplimiento del CTE se comprueban en el proyecto técnico según la zona climática de la parcela." },
+    { "type": "header", "content": "Opciones compatibles" },
+    { "type": "text", "id": "options_eyebrow", "label": "Antetítulo", "default": "Opciones" },
+    { "type": "text", "id": "options_heading", "label": "Título", "info": "[modelo] se sustituye por el nombre del producto.", "default": "Opciones compatibles con [modelo]" },
+    { "type": "textarea", "id": "options_intro", "label": "Introducción", "default": "Mejoras disponibles para este modelo, con coste adicional. Se confirman en el presupuesto antes de la fabricación." },
+    { "type": "textarea", "id": "options_note", "label": "Nota", "default": "Algunas opciones pueden exigir cambios en la estructura o en otras partidas. La compatibilidad final se confirma en el presupuesto." }
+  ],
+  "presets": [{ "name": "Europeo · ficha técnica" }]
+}
+{% endschema %}
