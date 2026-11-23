@@ -89,3 +89,9 @@ Regla Shopify: los ajustes `url` no admiten `default` distinto de `/collections`
 - Imagen excluida: render de la cochera con vehículo y matrícula con marca de terceros (no figura en IE-SE-01).
 - IE-SE-02 / IE-SE-03 sin cambios. Precio 0,00 € (sin PVP aprobado) → «Precio según configuración».
 - Sin cambios de theme: el modelo se publica solo con datos.
+
+## DUERO · aplicado el 2026-11-23
+
+- Producto `DUERO` (`/products/duero`): `sistema-europeo`, `ACTIVE`, publicado en Online Store; 4 imágenes (render frontal, hastial y porche, distribución amueblada, plano acotado); datos de IE-SE-01 en `docs/product-migrations/2026-11-23-duero-sistema-europeo.json`.
+- Los renders están en simetría respecto al plano: se indica en el texto alternativo de las imágenes y en `eu_plan_note` («la disposición válida es la del plano»).
+- Pared de referencia 34 mm (uso estacional); recintos numerados 1–6 + T. IE-SE-02 / IE-SE-03 sin cambios. Precio 0,00 € → «Precio según configuración». Sin cambios de theme.
