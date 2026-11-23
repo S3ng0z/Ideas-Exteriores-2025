@@ -21,7 +21,7 @@ Plantilla única y reutilizable para los ~15 modelos del Sistema Europeo. La pá
 
 - **Un template por línea, sin templates por modelo.** Un modelo nuevo se publica asignando `sistema-europeo` y rellenando metafields.
 - **Datos del modelo → metafields `custom.eu_*` del producto.** Contenido común del sistema → ajustes y bloques de sección (editable en el Theme Editor).
-- Componentes con prefijo `ie-`, CSS encapsulado en `.ie-eu` (sin `!important`, sin estilos globales), una sola hoja `assets/ie-eu-model.css`.
+- Componentes con prefijo `ie-`, CSS encapsulado en `.ie-eu` (sin `!important`, sin estilos globales), una sola hoja `assets/ie-european-product.css`.
 - Tokens «Natural Precision»: Source Serif 4 500 (titulares) + Manrope 400–600 (interfaz y datos); Forest #566236 como acción; Bone/Stone como superficies; radios 4/8/pill; retícula 12/8/4 (7/5 en cabecera y planta).
 - Accesibilidad: un H1, tablas con `th`/`scope`, chips con texto (no solo color), foco visible, `aria-pressed` en galería y conmutador de plano, `prefers-reduced-motion`.
 - SEO: `structured_data` de Product y JSON-LD `FAQPage`.
@@ -33,7 +33,7 @@ Plantilla única y reutilizable para los ~15 modelos del Sistema Europeo. La pá
 | 1 | `ie-european-product-showcase` | Título, imágenes, precio · `eu_subtitle`, `eu_short_description`, `eu_dimensions`, `eu_interior_area`, `eu_terrace_area`, `eu_layout`, `eu_wall_height`. Incluye navegación interna y CTA fijo en móvil. |
 | 2 | `ie-european-product-plan` | `eu_rooms` (json), `eu_plan_image`, `eu_layout_image` (o imágenes con alt «plano» / «amueblad»). |
 | 3 | `ie-european-product-specs` | `eu_specs` (json), `eu_options` (json). Compatibilidad con `eu_wall`, `eu_roof`, `eu_insulation`. |
-| 4 | `ie-european-product-inclusions` | Bloques comunes (partida, situación, condiciones). |
+| 4 | `ie-european-product-scope` | Bloques comunes (partida, situación, condiciones). |
 | 5 | `ie-european-product-purchase` | Ajustes y bloques comunes (modalidades, precio, 8 pasos). |
 | 6 | `ie-european-product-docs` | `eu_datasheet` (PDF) + URLs comunes IE-SE-02/03. Solo muestra documentos publicados. |
 | 7 | `ie-european-product-faq` | Bloques comunes + cierre con presupuesto. |

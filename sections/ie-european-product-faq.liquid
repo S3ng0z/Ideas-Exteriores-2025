@@ -4,7 +4,7 @@
   assign eu_model_param = eu_name | url_encode
   assign eu_quote = section.settings.quote_link | append: '?modelo=' | append: eu_model_param
 -%}
-{{ 'ie-eu-model.css' | asset_url | stylesheet_tag }}
+{{ 'ie-european-product.css' | asset_url | stylesheet_tag }}
 <section class="ie-eu ie-eu__section" id="preguntas" aria-labelledby="ie-eu-faq-{{ section.id }}">
   <div class="ie-eu__wrap">
     {% if section.blocks.size > 0 %}
