@@ -1,0 +1,82 @@
+{% comment %}IE · Sistema Europeo · qué incluye y qué no incluye. Contenido común a la línea, editable por bloques.{% endcomment %}
+{{ 'ie-european-product.css' | asset_url | stylesheet_tag }}
+<section class="ie-eu ie-eu__section" id="alcance" aria-labelledby="ie-eu-scope-{{ section.id }}">
+  <div class="ie-eu__wrap">
+    <header class="ie-eu__head">
+      <div>
+        <p class="ie-eu__eyebrow">{{ section.settings.eyebrow }}</p>
+        <h2 id="ie-eu-scope-{{ section.id }}">{{ section.settings.heading }}</h2>
+      </div>
+      {% if section.settings.intro != blank %}<p class="ie-eu__lead">{{ section.settings.intro }}</p>{% endif %}
+    </header>
+
+    <div class="ie-eu-legend" aria-label="Leyenda">
+      <span><span class="ie-eu__chip ie-eu__chip--included">Incluido</span> Forma parte del kit</span>
+      <span><span class="ie-eu__chip ie-eu__chip--service">Servicio aparte</span> Se presupuesta por separado</span>
+      <span><span class="ie-eu__chip ie-eu__chip--buyer">Comprador</span> A su cargo si no lo contrata</span>
+    </div>
+
+    <table class="ie-eu-table ie-eu-scope__table">
+      <thead>
+        <tr><th scope="col">Partida</th><th scope="col">Situación</th><th scope="col">Condiciones</th></tr>
+      </thead>
+      <tbody>
+        {% for block in section.blocks %}
+          {%- liquid
+            assign labels = 'included:Incluido|optional:Opcional|service:Servicio aparte|buyer:Comprador' | split: '|'
+          -%}
+          <tr {{ block.shopify_attributes }}>
+            <th scope="row">{{ block.settings.title }}</th>
+            <td class="is-status">
+              <span class="ie-eu__chips">
+                {% for pair in labels %}
+                  {%- assign kv = pair | split: ':' -%}
+                  {% if block.settings.status == kv[0] or block.settings.status_2 == kv[0] %}
+                    <span class="ie-eu__chip ie-eu__chip--{{ kv[0] }}">{{ kv[1] }}</span>
+                  {% endif %}
+                {% endfor %}
+              </span>
+            </td>
+            <td>{{ block.settings.text }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% if section.settings.note != blank %}<p class="ie-eu__note">{{ section.settings.note }}</p>{% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Europeo · alcance",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Alcance" },
+    { "type": "text", "id": "heading", "label": "Título", "default": "Qué incluye y qué no incluye" },
+    { "type": "textarea", "id": "intro", "label": "Introducción", "default": "Ningún servicio se da por incluido si no figura expresamente en el presupuesto aceptado." },
+    { "type": "textarea", "id": "note", "label": "Nota", "default": "Que un servicio pueda contratarse no significa que esté incluido. Solo forma parte del pedido lo que figura en el presupuesto aceptado." }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Partida",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Partida" },
+        { "type": "select", "id": "status", "label": "Situación", "options": [
+          { "value": "included", "label": "Incluido" },
+          { "value": "optional", "label": "Opcional" },
+          { "value": "service", "label": "Servicio aparte" },
+          { "value": "buyer", "label": "Comprador" }
+        ], "default": "included" },
+        { "type": "select", "id": "status_2", "label": "Situación adicional", "options": [
+          { "value": "none", "label": "Ninguna" },
+          { "value": "optional", "label": "Opcional" },
+          { "value": "service", "label": "Servicio aparte" },
+          { "value": "buyer", "label": "Comprador" }
+        ], "default": "none" },
+        { "type": "textarea", "id": "text", "label": "Condiciones" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Europeo · alcance" }]
+}
+{% endschema %}
