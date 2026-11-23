@@ -1,0 +1,41 @@
+.ie-eu-showcase{--eu-ink:#171915;--eu-muted:#5b5d59;--eu-green:#465334;--eu-accent:#718d30;--eu-border:#e0e2db;--eu-paper:#f6f5f0;--eu-bg:#fff;color:var(--eu-ink);background:var(--eu-bg);font-family:Manrope,var(--font-body--family),Arial,sans-serif}
+.ie-eu-showcase *{box-sizing:border-box}
+.ie-eu-showcase__wrap{width:min(calc(100% - 96px),1408px);margin:auto}
+.ie-eu-showcase__breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:26px 0 32px;font-size:.77rem;line-height:1.4;text-transform:uppercase;color:#646963}
+.ie-eu-showcase__breadcrumb a{color:inherit;text-decoration:none}.ie-eu-showcase__breadcrumb a:hover{text-decoration:underline}.ie-eu-showcase__breadcrumb span[aria-current]{color:#333}
+.ie-eu-showcase__hero{display:grid;grid-template-columns:minmax(0,1.16fr) minmax(0,.9fr);gap:clamp(34px,4vw,68px)}
+.ie-eu-showcase__gallery,.ie-eu-showcase__overview{min-width:0}
+.ie-eu-showcase__main-image{aspect-ratio:1.51;background:#f0f0eb;overflow:hidden}
+.ie-eu-showcase__main-image img{width:100%;height:100%;object-fit:cover;display:block}
+.ie-eu-showcase__image-missing{height:100%;display:flex;align-items:center;justify-content:center;padding:32px;color:#5c6459;font-size:.95rem;text-align:center}
+.ie-eu-showcase__thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}
+.ie-eu-showcase__thumb{padding:0;aspect-ratio:1.5;background:#f4f5f0;border:2px solid transparent;border-radius:4px;overflow:hidden;cursor:pointer}
+.ie-eu-showcase__thumb img{display:block;width:100%;height:100%;object-fit:cover}.ie-eu-showcase__thumb.is-selected{border-color:var(--eu-green)}.ie-eu-showcase__thumb:focus-visible{outline:2px solid var(--eu-accent);outline-offset:3px}
+.ie-eu-showcase__image-note{margin:10px 0 0;font-size:.72rem;line-height:1.5;color:#7a7d76}
+.ie-eu-showcase__eyebrow{margin:0 0 10px;color:var(--eu-green);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem}
+.ie-eu-showcase h1,.ie-eu-showcase h2{font-family:"Source Serif 4",Georgia,serif;font-weight:400;letter-spacing:-.022em;text-wrap:balance}
+.ie-eu-showcase h1{margin:0 0 8px;font-size:clamp(2.9rem,3.65vw,4.1rem);line-height:1.02}
+.ie-eu-showcase__subtitle{margin:0;font-size:clamp(1.05rem,1.3vw,1.33rem);line-height:1.35;color:#4e534e;text-wrap:pretty}
+.ie-eu-showcase__summary{margin:18px 0;font-size:1rem;line-height:1.55;text-wrap:pretty}
+.ie-eu-showcase__metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:20px 0 28px;padding:0;border-bottom:1px solid var(--eu-border)}
+.ie-eu-showcase__metric{min-height:85px;display:flex;gap:17px;align-items:center;padding:13px 14px;border-top:1px solid var(--eu-border)}
+.ie-eu-showcase__metric:nth-child(2n){border-left:1px solid var(--eu-border);padding-left:22px}
+.ie-eu-showcase__metric-icon,.ie-eu-showcase__price-icon{flex:0 0 32px;color:var(--eu-accent);line-height:1}
+.ie-eu-showcase__metric-icon svg,.ie-eu-showcase__price-icon svg{display:block;width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ie-eu-showcase__metric dt{font-size:.79rem;line-height:1.35}.ie-eu-showcase__metric dd{margin:5px 0 0;font-size:1.16rem;line-height:1.25;font-weight:700;overflow-wrap:anywhere}
+.ie-eu-showcase__pricebox{display:flex;align-items:center;gap:18px;padding:18px;background:var(--eu-paper);border-radius:3px}
+.ie-eu-showcase__price-icon{color:var(--eu-green)}.ie-eu-showcase__price-icon svg{width:32px;height:32px}
+.ie-eu-showcase__pricebox strong{font-size:1.05rem}.ie-eu-showcase__pricebox p{margin:5px 0 0;font-size:.86rem;line-height:1.5;color:#50544d}
+.ie-eu-showcase__actions{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-top:18px}
+.ie-eu-showcase__button{min-height:54px;display:flex;justify-content:center;align-items:center;gap:12px;padding:12px 16px;border:1px solid var(--eu-green);border-radius:7px;text-decoration:none;text-align:center;font-size:.92rem;font-weight:700;transition:background .15s,color .15s}
+.ie-eu-showcase__button--primary{background:var(--eu-green);color:#fff}.ie-eu-showcase__button--primary:hover{background:#586342;color:#fff}
+.ie-eu-showcase__button--secondary{background:#fff;color:var(--eu-green)}.ie-eu-showcase__button--secondary:hover{background:#f5f7f1}
+.ie-eu-showcase__button:focus-visible{outline:2px solid var(--eu-accent);outline-offset:3px}
+.ie-eu-showcase__specs{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,76px);margin-top:58px;padding:42px 0 60px;border-top:1px solid var(--eu-border)}
+.ie-eu-showcase__specs h2{margin:0 0 12px;font-size:clamp(1.9rem,2.5vw,2.7rem);line-height:1.1}
+.ie-eu-showcase__specs p:not(.ie-eu-showcase__eyebrow){max-width:550px;font-size:.9rem;line-height:1.6;color:#565b54}
+.ie-eu-showcase__spec-table>div{display:grid;grid-template-columns:.7fr 1.3fr;gap:24px;border-bottom:1px solid var(--eu-border);padding:14px 0;font-size:.9rem;line-height:1.45}
+.ie-eu-showcase__spec-table dt{font-weight:700}.ie-eu-showcase__spec-table dd{margin:0}
+@media(max-width:1020px){.ie-eu-showcase__hero{grid-template-columns:1fr}.ie-eu-showcase__main-image{aspect-ratio:1.7}.ie-eu-showcase__specs{margin-top:45px}.ie-eu-showcase__wrap{width:calc(100% - 48px)}}
+@media(max-width:650px){.ie-eu-showcase__wrap{width:calc(100% - 32px)}.ie-eu-showcase__breadcrumb{padding:20px 0 24px;gap:8px;font-size:.7rem}.ie-eu-showcase__hero{gap:27px}.ie-eu-showcase__main-image{aspect-ratio:1.28}.ie-eu-showcase__thumbs{gap:7px;margin-top:10px}.ie-eu-showcase h1{font-size:2.6rem}.ie-eu-showcase__metrics{margin-top:20px}.ie-eu-showcase__metric{padding:12px 8px;gap:9px}.ie-eu-showcase__metric:nth-child(2n){padding-left:12px}.ie-eu-showcase__metric-icon{flex-basis:24px}.ie-eu-showcase__metric-icon svg{width:24px;height:24px}.ie-eu-showcase__metric dd{font-size:1rem}.ie-eu-showcase__actions{grid-template-columns:1fr;gap:10px}.ie-eu-showcase__specs{grid-template-columns:1fr;gap:24px;padding:34px 0 50px;margin-top:44px}.ie-eu-showcase__spec-table>div{grid-template-columns:.85fr 1.15fr;gap:12px}}
+@media(prefers-reduced-motion:reduce){.ie-eu-showcase__button{transition:none}}
