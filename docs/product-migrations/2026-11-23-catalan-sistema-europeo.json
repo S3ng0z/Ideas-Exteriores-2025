@@ -1,0 +1,213 @@
+{
+  "product": {
+    "match_title": "CATALAN",
+    "handle": "catalan",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE"
+  },
+  "media_alt_by_position": [
+    "CATALAN, casa de madera de una planta con porche de entrada y cochera. Render ilustrativo, vista frontal",
+    "CATALAN, fachada y hastial. Render ilustrativo",
+    "CATALAN, distribución amueblada en vista cenital. Representación ilustrativa",
+    "CATALAN, plano de planta acotado con recintos y superficies"
+  ],
+  "excluded_media": "CATALAN_3 (render de la cochera con vehículo y matrícula de terceros): no se publica; no figura en IE-SE-01.",
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Casa de madera de una planta con cubierta a dos aguas, porche de entrada y cochera"
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Amplia zona de día de 41 m² con salón, comedor y cocina, tres dormitorios, un baño, un distribuidor y dos despensas. Bajo la misma cubierta, un porche de entrada y una cochera abierta para un vehículo."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "13,67 × 9,16 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "97,9 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "17,6 · 2,7 m²"
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Cochera · porche"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "3 dorm. · 1 baño"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.295 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "44 mm de madera maciza; opción 68 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A dos aguas"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          {
+            "n": "1",
+            "name": "Despensa o almacén",
+            "area": "7,69"
+          },
+          {
+            "n": "2",
+            "name": "Salón, comedor y cocina",
+            "area": "41,35"
+          },
+          {
+            "n": "3",
+            "name": "Baño",
+            "area": "8,49"
+          },
+          {
+            "n": "4",
+            "name": "Dormitorio",
+            "area": "11,66"
+          },
+          {
+            "n": "5",
+            "name": "Despensa",
+            "area": "2,80"
+          },
+          {
+            "n": "6",
+            "name": "Dormitorio",
+            "area": "10,11"
+          },
+          {
+            "n": "7",
+            "name": "Dormitorio",
+            "area": "10,11"
+          },
+          {
+            "n": "8",
+            "name": "Distribuidor",
+            "area": "5,68"
+          }
+        ],
+        "total": "97,89",
+        "exterior": [
+          {
+            "n": "T1",
+            "name": "Porche de entrada (exterior)",
+            "area": "2,65"
+          },
+          {
+            "n": "T2",
+            "name": "Cochera cubierta (exterior)",
+            "area": "17,57"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "Sistema Europeo: muros de perfiles horizontales de madera maciza de abeto, mecanizados en taller, apilados con machihembrado y trabados en las esquinas. La pared es cerramiento y elemento portante."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de una planta con porche de entrada empotrado y cochera abierta para un vehículo, ambos bajo la cubierta principal."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "13.670 × 9.160 mm, cotas totales del plano con cochera. Entre ejes extremos: 13.290 × 8.825 mm. Altura de muro: 2.295 mm."
+        },
+        {
+          "label": "Superficies",
+          "value": "Recintos interiores: 97,89 m² (suma del plano, a ejes). Porche de entrada: 2,65 m². Cochera: 17,57 m²."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 44 mm, sin aislamiento, vista por ambas caras. Admite aislamiento. Opción: 68 mm."
+        },
+        {
+          "label": "Suelo",
+          "value": "Vigas de arranque y viguetas de madera impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A dos aguas, continua sobre la cochera y el porche. Vigas de madera y tablero machihembrado de 17 mm visto desde el interior. Acabado exterior de tégola asfáltica (teja bituminosa): material incluido, colocación como servicio aparte."
+        },
+        {
+          "label": "Porche y cochera",
+          "value": "Porche de entrada con tarima impregnada de 25 mm. Cochera abierta bajo la cubierta; el acabado de su suelo se define en el presupuesto."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera, gama Silver line, con acristalamiento con cámara. Dos accesos: porche de entrada y fachada opuesta. Número, medidas y posición según plano."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido. Disponible como opción en paredes, cubierta y suelo, por separado."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "Madera natural, sin acabado protector final. Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        },
+        {
+          "label": "Uso",
+          "value": "Para un uso prolongado conviene añadir aislamiento en paredes, cubierta y suelo. Disponer de dormitorios y baño no implica aptitud como vivienda: el uso autorizado depende del planeamiento, de la parcela y del proyecto técnico."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "44 mm",
+          "option": "68 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes, cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Tégola asfáltica",
+          "option": "Chapa de acero (dos perfiles) · Fibrocemento"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Silver line",
+          "option": "Superior · Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Silver line",
+          "option": "Superior · Premium"
+        },
+        {
+          "element": "Canalones y bajantes",
+          "reference": "No incluidos",
+          "option": "Acero o PVC"
+        }
+      ]
+    }
+  },
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_CATALAN.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios)"
+  }
+}
