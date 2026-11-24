@@ -95,3 +95,18 @@ Regla Shopify: los ajustes `url` no admiten `default` distinto de `/collections`
 - Producto `DUERO` (`/products/duero`): `sistema-europeo`, `ACTIVE`, publicado en Online Store; 4 imágenes (render frontal, hastial y porche, distribución amueblada, plano acotado); datos de IE-SE-01 en `docs/product-migrations/2026-11-23-duero-sistema-europeo.json`.
 - Los renders están en simetría respecto al plano: se indica en el texto alternativo de las imágenes y en `eu_plan_note` («la disposición válida es la del plano»).
 - Pared de referencia 34 mm (uso estacional); recintos numerados 1–6 + T. IE-SE-02 / IE-SE-03 sin cambios. Precio 0,00 € → «Precio según configuración». Sin cambios de theme.
+
+## Rediseño editorial · 2026-11-24 (piloto BURGAS)
+
+Regla editorial de la familia: MODELO → USO → DISTRIBUCIÓN → CONFIGURACIÓN → ALCANCE → DOCUMENTACIÓN → SIGUIENTE PASO.
+Cada dato se cuenta como «qué es → qué significa → qué comprobar». Tuteo en toda la plantilla.
+
+| Campo por modelo | Qué escribir | Si falta |
+|---|---|---|
+| `eu_subtitle` | Frase de posicionamiento: tipo, uso y rasgo principal («Una casa compacta de una planta con…») | Sin subtítulo |
+| `eu_short_description` | Distribución factual, sin adjetivos de valor | Sin introducción |
+| `eu_plan_heading` / `eu_plan_intro` | Para qué sirve la distribución de este modelo | Textos comunes de la sección |
+| `eu_specs[].value` / `.detail` | `value`: primera lectura comprensible · `detail`: precisión técnica | Una sola lectura |
+| `eu_use_note` | Nota de uso con el espesor real de pared del modelo | Nota común sin espesor |
+
+Pendiente: aplicar los campos a ALDAN, CATALAN y DUERO (hoy usan los textos comunes, coherentes pero menos específicos).
