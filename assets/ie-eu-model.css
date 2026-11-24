@@ -28,6 +28,8 @@
 .ie-eu__btn--light{background:var(--eu-white);color:var(--eu-forest);border-color:var(--eu-white)}
 .ie-eu__btn--light:hover{background:var(--eu-bone)}
 .ie-eu__btn--ghost-light{background:transparent;color:var(--eu-white);border-color:rgba(255,255,255,.7)}
+.ie-eu__btn--ghost-light:hover{border-color:var(--eu-white);background:rgba(255,255,255,.08)}
+.ie-eu__btn--ghost-light{background:transparent;color:var(--eu-white);border-color:rgba(255,255,255,.7)}
 .ie-eu__btn--ghost-light:hover{background:rgba(255,255,255,.1);color:var(--eu-white)}
 .ie-eu a:focus-visible,.ie-eu button:focus-visible,.ie-eu summary:focus-visible{outline:2px solid var(--eu-forest);outline-offset:3px}
 .ie-eu__cta-band a:focus-visible{outline-color:var(--eu-white)}
@@ -117,6 +119,7 @@
 .ie-eu-specs__list>div{display:grid;grid-template-columns:minmax(150px,3fr) minmax(0,8fr);gap:24px;padding:18px 0;border-bottom:1px solid var(--eu-border)}
 .ie-eu-specs__list dt{font-weight:600}
 .ie-eu-specs__list dd{margin:0;color:#3a3f37;text-wrap:pretty}
+.ie-eu-specs__detail{display:block;margin-top:8px;font-size:.9rem;line-height:1.55;color:var(--eu-muted)}
 .ie-eu-callout{margin-top:32px;padding:24px;border-left:3px solid var(--eu-forest);border-radius:0 var(--eu-r-md) var(--eu-r-md) 0;background:var(--eu-bone)}
 .ie-eu-callout strong{display:block;margin-bottom:6px;font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--eu-forest)}
 .ie-eu-callout p{font-size:.94rem;line-height:1.6}
@@ -229,3 +232,6 @@ a.ie-eu-doc:hover{border-color:var(--eu-forest)}
   .ie-eu-sticky .ie-eu__btn{min-height:46px;padding:10px 18px}
 }
 @media (prefers-reduced-motion:reduce){.ie-eu *{transition:none}}
+
+.ie-eu-header__subtitle{margin:14px 0 0;max-width:640px;font-family:var(--eu-serif,"Source Serif 4",Georgia,serif);font-size:clamp(1.2rem,1.7vw,1.5rem);line-height:1.3;color:var(--eu-ink,#1f231e);text-wrap:balance}
+.ie-eu-plan__label{margin:0 0 12px;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--eu-muted,#62685d)}

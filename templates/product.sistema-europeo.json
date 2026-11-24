@@ -100,7 +100,7 @@
             "title": "Descarga y medios auxiliares",
             "status": "buyer",
             "status_2": "service",
-            "text": "Si no se contratan, el comprador dispone en la entrega de medios y personal adecuados."
+            "text": "Si no se contratan, en la entrega debes disponer de medios y personal adecuados para la descarga."
           }
         },
         "row_5": {
@@ -258,42 +258,42 @@
           "type": "faq",
           "settings": {
             "question": "¿El precio publicado incluye el transporte?",
-            "answer": "<p>No, salvo indicación expresa. Se presupuesta según modelo, destino y accesos.</p>"
+            "answer": "<p>No, salvo que el presupuesto lo indique expresamente. El transporte se valora según el modelo, el destino y las condiciones de acceso.</p>"
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
             "question": "¿Puedo contratar el montaje?",
-            "answer": "<p>Sí, cuando esté disponible para su modelo y ubicación y se confirme en el presupuesto. Habitualmente abarca la estructura de madera; cubierta, aislamiento, canalones y protección solo se incluyen si figuran expresamente.</p>"
+            "answer": "<p>Sí, cuando el servicio esté disponible para tu modelo y ubicación y figure en el presupuesto. Habitualmente abarca la estructura de madera; cubierta, aislamiento, canalones y protección solo se incluyen si se indican expresamente.</p>"
           }
         },
         "faq_3": {
           "type": "faq",
           "settings": {
             "question": "¿La casa incluye cimentación?",
-            "answer": "<p>No. Puede presupuestarse por separado cuando el servicio esté disponible; su tipo lo define un técnico según el terreno y el uso.</p>"
+            "answer": "<p>No. Puede presupuestarse por separado cuando el servicio esté disponible. El tipo de base lo define un técnico en función del terreno y del uso.</p>"
           }
         },
         "faq_4": {
           "type": "faq",
           "settings": {
             "question": "¿Necesito licencia?",
-            "answer": "<p>Casi siempre. Depende del municipio, del suelo y del uso. Para usarla como vivienda se requiere proyecto técnico y licencia. Confírmelo antes del pedido.</p>"
+            "answer": "<p>Depende del uso, la actuación, la parcela y la normativa aplicable en cada municipio. Una construcción prefabricada no está automáticamente exenta de autorización urbanística. Si el uso previsto es vivienda, el proyecto y las autorizaciones correspondientes deben estudiarse antes del pedido.</p>"
           }
         },
         "faq_5": {
           "type": "faq",
           "settings": {
             "question": "¿Puedo modificar el modelo?",
-            "answer": "<p>Dentro de las opciones compatibles, con valoración técnica y presupuesto actualizado, antes de la fabricación. Los tabiques que traban los muros no pueden suprimirse ni desplazarse libremente.</p>"
+            "answer": "<p>Dentro de las opciones compatibles, con valoración técnica y presupuesto actualizado, antes de la fabricación. Los tabiques que traban los muros forman parte de la estructura: no pueden suprimirse ni desplazarse libremente.</p>"
           }
         },
         "faq_6": {
           "type": "faq",
           "settings": {
             "question": "¿Qué mantenimiento necesita la madera?",
-            "answer": "<p>Una primera protección en los 14 días siguientes al montaje, ajustes de puertas y ventanas durante el primer año por el asentamiento natural, y la renovación periódica del protector. Ninguna casa de madera está libre de mantenimiento.</p>"
+            "answer": "<p>Una primera protección en los 14 días siguientes al montaje, el ajuste de puertas y ventanas durante el primer año por el asentamiento natural de la madera y la renovación periódica del protector. Ninguna casa de madera está libre de mantenimiento.</p>"
           }
         }
       },
@@ -306,7 +306,8 @@
         "faq_6"
       ],
       "settings": {
-        "quote_link": "/pages/contact-ideas-exteriores"
+        "quote_link": "/pages/contact-ideas-exteriores",
+        "secondary_link": "/pages/european-timber-construction-system"
       }
     }
   },

@@ -1,6 +1,7 @@
 {% comment %}
   IE · Sistema Europeo · especificaciones y opciones compatibles del modelo.
-  custom.eu_specs (json): [{"label":"Pared exterior","value":"Madera maciza de 34 mm…"}]
+  custom.eu_specs (json): [{"label":"Sistema constructivo","value":"Primera lectura, comprensible","detail":"Segunda lectura, precisión técnica (opcional)"}]
+  custom.eu_use_note (texto): nota de uso propia del modelo; si falta, la común de la sección.
   custom.eu_options (json): [{"element":"Pared exterior","reference":"34 mm","option":"44 mm"}]
   Compatibilidad: si eu_specs no existe se usan eu_wall, eu_roof y eu_insulation.
 {% endcomment %}
@@ -10,6 +11,8 @@
   assign legacy_wall = product.metafields.custom.eu_wall.value
   assign legacy_roof = product.metafields.custom.eu_roof.value
   assign legacy_insulation = product.metafields.custom.eu_insulation.value
+  assign use_note = product.metafields.custom.eu_use_note.value | default: section.settings.callout_text
+  assign specs_heading = section.settings.heading | replace: '[modelo]', product.title
 %}
 {{ 'ie-eu-model.css' | asset_url | stylesheet_tag }}
 <section class="ie-eu ie-eu--bone ie-eu__section" id="especificaciones" aria-labelledby="ie-eu-specs-{{ section.id }}">
@@ -17,7 +20,7 @@
     <div class="ie-eu-specs__grid">
       <div class="ie-eu-specs__aside">
         <p class="ie-eu__eyebrow">{{ section.settings.eyebrow }}</p>
-        <h2 id="ie-eu-specs-{{ section.id }}">{{ section.settings.heading }}</h2>
+        <h2 id="ie-eu-specs-{{ section.id }}">{{ specs_heading }}</h2>
         {% if section.settings.intro != blank %}<p class="ie-eu__lead">{{ section.settings.intro }}</p>{% endif %}
         {% if section.settings.system_link != blank %}
           <p class="ie-eu__note"><a href="{{ section.settings.system_link }}">{{ section.settings.system_link_label }}</a></p>
@@ -28,7 +31,13 @@
         <dl class="ie-eu-specs__list">
           {% if specs != blank %}
             {% for row in specs %}
-              <div><dt>{{ row.label }}</dt><dd>{{ row.value }}</dd></div>
+              <div>
+                <dt>{{ row.label }}</dt>
+                <dd>
+                  {{ row.value }}
+                  {% if row.detail != blank %}<span class="ie-eu-specs__detail">{{ row.detail }}</span>{% endif %}
+                </dd>
+              </div>
             {% endfor %}
           {% else %}
             {% if legacy_wall != blank %}<div><dt>Pared exterior</dt><dd>{{ legacy_wall | escape }}</dd></div>{% endif %}
@@ -37,10 +46,10 @@
           {% endif %}
         </dl>
 
-        {% if section.settings.callout_text != blank %}
+        {% if use_note != blank %}
           <div class="ie-eu-callout" role="note">
             <strong>{{ section.settings.callout_title }}</strong>
-            <p>{{ section.settings.callout_text }}</p>
+            <p>{{ use_note | escape }}</p>
           </div>
         {% endif %}
       </div>
@@ -80,13 +89,13 @@
   "name": "Europeo · ficha técnica",
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Configuración de referencia" },
-    { "type": "text", "id": "heading", "label": "Título", "default": "Cómo está configurado el modelo" },
-    { "type": "textarea", "id": "intro", "label": "Introducción", "default": "Consulta los materiales y componentes de la configuración de referencia. Las alternativas compatibles se valoran antes de preparar el presupuesto." },
+    { "type": "text", "id": "heading", "label": "Título", "info": "[modelo] se sustituye por el nombre del producto.", "default": "Cómo está configurada [modelo]" },
+    { "type": "textarea", "id": "intro", "label": "Introducción", "default": "Esta es la configuración técnica de referencia del modelo. Algunas partidas admiten alternativas; la solución definitiva se concreta antes del presupuesto y debe coordinarse con el uso previsto y con el proyecto cuando corresponda." },
     { "type": "url", "id": "system_link", "label": "Enlace al sistema constructivo" },
     { "type": "text", "id": "system_link_label", "label": "Texto del enlace", "default": "Cómo funciona el Sistema Europeo →" },
     { "type": "header", "content": "Aviso de uso" },
     { "type": "text", "id": "callout_title", "label": "Título", "default": "Si buscas un uso habitual durante todo el año" },
-    { "type": "textarea", "id": "callout_text", "label": "Texto", "default": "La configuración sin aislamiento está orientada principalmente a usos estacionales. Para un uso habitual durante todo el año deben estudiarse el aislamiento de paredes, cubierta y suelo, la ubicación y las exigencias aplicables. Las prestaciones y el cumplimiento normativo se justifican en el proyecto técnico." },
+    { "type": "textarea", "id": "callout_text", "label": "Texto", "info": "Se sustituye por custom.eu_use_note si el modelo la tiene.", "default": "La configuración sin aislamiento está orientada principalmente a usos estacionales. Para un uso habitual durante todo el año deben estudiarse el aislamiento de paredes, cubierta y suelo, la ubicación y las exigencias aplicables. Las prestaciones y el cumplimiento normativo se justifican en el proyecto técnico." },
     { "type": "header", "content": "Opciones compatibles" },
     { "type": "text", "id": "options_eyebrow", "label": "Antetítulo", "default": "Opciones" },
     { "type": "text", "id": "options_heading", "label": "Título", "info": "[modelo] se sustituye por el nombre del producto.", "default": "Opciones compatibles con [modelo]" },

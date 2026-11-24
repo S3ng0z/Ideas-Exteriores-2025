@@ -12,8 +12,9 @@
 
     <div class="ie-eu-legend" aria-label="Leyenda">
       <span><span class="ie-eu__chip ie-eu__chip--included">Incluido</span> Forma parte del kit</span>
-      <span><span class="ie-eu__chip ie-eu__chip--service">Servicio aparte</span> Se presupuesta por separado</span>
-      <span><span class="ie-eu__chip ie-eu__chip--buyer">Comprador</span> A su cargo si no lo contrata</span>
+      <span><span class="ie-eu__chip ie-eu__chip--optional">Opcional</span> Mejora del modelo con coste adicional</span>
+      <span><span class="ie-eu__chip ie-eu__chip--service">Presupuestable</span> Servicio que puede contratarse aparte</span>
+      <span><span class="ie-eu__chip ie-eu__chip--buyer">A cargo del cliente</span> Lo organizas tú si no lo contratas</span>
     </div>
 
     <table class="ie-eu-table ie-eu-scope__table">
@@ -23,7 +24,7 @@
       <tbody>
         {% for block in section.blocks %}
           {%- liquid
-            assign labels = 'included:Incluido|optional:Opcional|service:Servicio aparte|buyer:Comprador' | split: '|'
+            assign labels = 'included:Incluido|optional:Opcional|service:Presupuestable|buyer:A cargo del cliente' | split: '|'
           -%}
           <tr {{ block.shopify_attributes }}>
             <th scope="row">{{ block.settings.title }}</th>
@@ -64,14 +65,14 @@
         { "type": "select", "id": "status", "label": "Situación", "options": [
           { "value": "included", "label": "Incluido" },
           { "value": "optional", "label": "Opcional" },
-          { "value": "service", "label": "Servicio aparte" },
-          { "value": "buyer", "label": "Comprador" }
+          { "value": "service", "label": "Presupuestable" },
+          { "value": "buyer", "label": "A cargo del cliente" }
         ], "default": "included" },
         { "type": "select", "id": "status_2", "label": "Situación adicional", "options": [
           { "value": "none", "label": "Ninguna" },
           { "value": "optional", "label": "Opcional" },
-          { "value": "service", "label": "Servicio aparte" },
-          { "value": "buyer", "label": "Comprador" }
+          { "value": "service", "label": "Presupuestable" },
+          { "value": "buyer", "label": "A cargo del cliente" }
         ], "default": "none" },
         { "type": "textarea", "id": "text", "label": "Condiciones" }
       ]

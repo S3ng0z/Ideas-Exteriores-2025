@@ -69,12 +69,6 @@
         <p class="ie-eu__eyebrow">{{ section.settings.data_label }}</p>
 
         <dl class="ie-eu-hero__metrics">
-          {% if eu_dimensions != blank %}
-            <div class="ie-eu-hero__metric">
-              <svg class="ie-eu__icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 10V4h6M18 4h6v6M24 18v6h-6M10 24H4v-6M5 5l6 6M23 5l-6 6M23 23l-6-6M5 23l6-6"/></svg>
-              <div><dt>Dimensiones máximas</dt><dd>{{ eu_dimensions | escape }}</dd></div>
-            </div>
-          {% endif %}
           {% if eu_interior != blank %}
             <div class="ie-eu-hero__metric">
               <svg class="ie-eu__icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M3.5 13 14 4l10.5 9M6 11v13h16V11M11.5 24v-7h5v7"/></svg>
@@ -91,6 +85,12 @@
             <div class="ie-eu-hero__metric">
               <svg class="ie-eu__icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 21h20v3H4zM5 21v-7h18v7M8 14v-3h5v3M15 14v-3h5v3M4 24v1.5M24 24v1.5"/></svg>
               <div><dt>Distribución</dt><dd>{{ eu_layout | escape }}</dd></div>
+            </div>
+          {% endif %}
+          {% if eu_dimensions != blank %}
+            <div class="ie-eu-hero__metric">
+              <svg class="ie-eu__icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 10V4h6M18 4h6v6M24 18v6h-6M10 24H4v-6M5 5l6 6M23 5l-6 6M23 23l-6-6M5 23l6-6"/></svg>
+              <div><dt>Dimensiones máximas</dt><dd>{{ eu_dimensions | escape }}</dd></div>
             </div>
           {% endif %}
           {% if eu_wall_height != blank %}
@@ -119,7 +119,7 @@
           <a class="ie-eu__btn ie-eu__btn--secondary" href="#especificaciones">{{ section.settings.secondary_label }}</a>
         </div>
         {% if section.settings.phone != blank %}
-          <p class="ie-eu-hero__contact">¿Prefiere hablarlo? <a href="tel:{{ section.settings.phone | remove: ' ' }}">{{ section.settings.phone }}</a></p>
+          <p class="ie-eu-hero__contact">¿Prefieres hablarlo? <a href="tel:{{ section.settings.phone | remove: ' ' }}">{{ section.settings.phone }}</a></p>
         {% endif %}
       </div>
     </div>

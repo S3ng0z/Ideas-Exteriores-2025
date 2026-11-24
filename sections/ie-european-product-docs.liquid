@@ -42,7 +42,7 @@
       {% if section.settings.quality_url != blank %}
         <a class="ie-eu-doc" href="{{ section.settings.quality_url }}" target="_blank" rel="noopener" data-doc-code="IE-SE-02">
           <span class="ie-eu-doc__code">IE-SE-02 · PDF</span>
-          <strong>Memoria de calidades</strong>
+          <strong>Memoria de calidades · Sistema Europeo</strong>
           <span class="ie-eu-doc__text">{{ section.settings.quality_text }}</span>
           <span class="ie-eu-doc__action">{{ eu_dl_icon }}Descargar memoria</span>
         </a>
@@ -67,11 +67,11 @@
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Documentación" },
     { "type": "text", "id": "heading", "label": "Título", "default": "Documentación para decidir con información" },
     { "type": "textarea", "id": "intro", "label": "Introducción", "default": "Consulta la ficha de este modelo y los documentos comunes del Sistema Europeo. Te ayudarán a conocer sus características, comprobar el alcance del suministro y preparar tu solicitud de presupuesto." },
-    { "type": "textarea", "id": "sheet_text", "label": "IE-SE-01 · descripción", "default": "Dimensiones, planta, configuración de referencia, opciones compatibles y alcance del modelo." },
+    { "type": "textarea", "id": "sheet_text", "label": "IE-SE-01 · descripción", "default": "Medidas, distribución, composición y datos propios del modelo." },
     { "type": "url", "id": "quality_url", "label": "IE-SE-02 · URL del PDF" },
-    { "type": "textarea", "id": "quality_text", "label": "IE-SE-02 · descripción", "default": "Sistema constructivo, materiales, espesores, aislamiento, carpinterías, acabados y mantenimiento." },
+    { "type": "textarea", "id": "quality_text", "label": "IE-SE-02 · descripción", "default": "Materiales, componentes y criterios comunes del sistema." },
     { "type": "url", "id": "guide_url", "label": "IE-SE-03 · URL del PDF" },
-    { "type": "textarea", "id": "guide_text", "label": "IE-SE-03 · descripción", "default": "Alcance, transporte, montaje, responsabilidades, garantías y posventa." }
+    { "type": "textarea", "id": "guide_text", "label": "IE-SE-03 · descripción", "default": "Alcance, opciones, preparación, entrega, montaje y responsabilidades." }
   ],
   "presets": [{ "name": "Europeo · documentos" }]
 }

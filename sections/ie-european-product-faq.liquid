@@ -31,7 +31,10 @@
         <p>{{ section.settings.cta_text }}</p>
       </div>
       <div class="ie-eu__cta-actions">
-        <a class="ie-eu__btn ie-eu__btn--light" href="{{ eu_quote }}">{{ section.settings.cta_label }} <span aria-hidden="true">→</span></a>
+        <a class="ie-eu__btn ie-eu__btn--light" href="{{ eu_quote }}">{{ section.settings.cta_label | replace: '[modelo]', eu_name }} <span aria-hidden="true">→</span></a>
+        {% if section.settings.secondary_link != blank and section.settings.secondary_label != blank %}
+          <a class="ie-eu__btn ie-eu__btn--ghost-light" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label }}</a>
+        {% endif %}
         <div class="ie-eu__cta-contact">
           {% if section.settings.phone != blank %}<a href="tel:{{ section.settings.phone | remove: ' ' }}">{{ section.settings.phone }}</a>{% endif %}
           {% if section.settings.email != blank %}<a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>{% endif %}
@@ -65,8 +68,10 @@
     { "type": "header", "content": "Cierre" },
     { "type": "text", "id": "cta_eyebrow", "label": "Antetítulo", "default": "Siguiente paso" },
     { "type": "text", "id": "cta_heading", "label": "Título", "info": "[modelo] se sustituye por el nombre del producto.", "default": "¿Encaja [modelo] con tu proyecto?" },
-    { "type": "textarea", "id": "cta_text", "label": "Texto", "default": "Indícanos la ubicación, el uso previsto, la configuración que estás valorando y los servicios que necesitas. Revisaremos los condicionantes del emplazamiento y el alcance antes de preparar una propuesta." },
-    { "type": "text", "id": "cta_label", "label": "Botón", "default": "Solicitar presupuesto" },
+    { "type": "textarea", "id": "cta_text", "label": "Texto", "default": "Indícanos la ubicación, el uso previsto, la configuración que estás valorando y los servicios que necesitas. Revisaremos el modelo, los condicionantes del emplazamiento y el alcance necesario para preparar una propuesta comparable." },
+    { "type": "text", "id": "cta_label", "label": "Botón", "info": "[modelo] se sustituye por el nombre del producto.", "default": "Solicitar estudio de [modelo]" },
+    { "type": "text", "id": "secondary_label", "label": "Botón secundario", "default": "Consultar el Sistema Europeo" },
+    { "type": "url", "id": "secondary_link", "label": "Enlace del botón secundario" },
     { "type": "url", "id": "quote_link", "label": "Enlace de presupuesto" },
     { "type": "text", "id": "phone", "label": "Teléfono", "default": "+34 916 99 60 93" },
     { "type": "text", "id": "email", "label": "Correo electrónico", "default": "info@ideas-exteriores.com" },

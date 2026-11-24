@@ -1,7 +1,7 @@
 {% comment %}
   IE · Sistema Europeo · planta y distribución de referencia.
   custom.eu_rooms (json): {"rooms":[{"n":"1","name":"Salón-comedor","area":"15,8"}],"total":"46,3","exterior":[{"n":"1","name":"Terraza cubierta (exterior)","area":"9,5"}]}
-  custom.eu_plan_image / custom.eu_layout_image (file_reference, imagen). custom.eu_plan_caption / custom.eu_plan_note sustituyen al pie y la nota comunes; si los recintos no llevan "n", se oculta la columna Nº. Si faltan, se buscan en las imágenes del producto por texto alternativo («plano» / «amueblad»).
+  custom.eu_plan_image / custom.eu_layout_image (file_reference, imagen). custom.eu_plan_heading / custom.eu_plan_intro / custom.eu_plan_caption / custom.eu_plan_note sustituyen al pie y la nota comunes; si los recintos no llevan "n", se oculta la columna Nº. Si faltan, se buscan en las imágenes del producto por texto alternativo («plano» / «amueblad»).
 {% endcomment %}
 {% liquid
   assign rooms = product.metafields.custom.eu_rooms.value
@@ -9,6 +9,8 @@
   assign layout_img = product.metafields.custom.eu_layout_image.value
   assign plan_caption = product.metafields.custom.eu_plan_caption.value | default: section.settings.plan_caption
   assign plan_note = product.metafields.custom.eu_plan_note.value | default: section.settings.note
+  assign plan_heading = product.metafields.custom.eu_plan_heading.value | default: section.settings.heading
+  assign plan_intro = product.metafields.custom.eu_plan_intro.value | default: section.settings.intro
   assign show_idx = false
   if rooms.rooms.first.n != blank
     assign show_idx = true
@@ -30,14 +32,15 @@
     <header class="ie-eu__head">
       <div>
         <p class="ie-eu__eyebrow">{{ section.settings.eyebrow }}</p>
-        <h2 id="ie-eu-plan-{{ section.id }}">{{ section.settings.heading }}</h2>
+        <h2 id="ie-eu-plan-{{ section.id }}">{{ plan_heading | escape }}</h2>
       </div>
-      {% if section.settings.intro != blank %}<p class="ie-eu__lead">{{ section.settings.intro }}</p>{% endif %}
+      {% if plan_intro != blank %}<p class="ie-eu__lead">{{ plan_intro | escape }}</p>{% endif %}
     </header>
 
     <div class="ie-eu-plan__grid">
       {% if plan_img != blank or layout_img != blank %}
         <figure class="ie-eu-plan__figure" data-eu-plan>
+          {% if section.settings.figure_label != blank %}<p class="ie-eu-plan__label">{{ section.settings.figure_label }}</p>{% endif %}
           {% if plan_img != blank and layout_img != blank %}
             <div class="ie-eu-plan__switch" role="group" aria-label="Tipo de plano">
               <button type="button" aria-pressed="true" data-eu-view="plan">Plano acotado</button>
@@ -64,16 +67,16 @@
           <table class="ie-eu-table">
             <caption>Recintos de {{ product.title | escape }}</caption>
             <thead>
-              <tr>{% if show_idx %}<th scope="col" class="is-idx">Nº</th>{% endif %}<th scope="col">Recinto</th><th scope="col" class="is-num">m²</th></tr>
+              <tr>{% if show_idx %}<th scope="col" class="is-idx">Nº</th>{% endif %}<th scope="col">Espacio</th><th scope="col" class="is-num">Superficie</th></tr>
             </thead>
             <tbody>
               {% for room in rooms.rooms %}
-                <tr>{% if show_idx %}<td class="is-idx">{{ room.n }}</td>{% endif %}<th scope="row">{{ room.name }}</th><td class="is-num">{{ room.area }}</td></tr>
+                <tr>{% if show_idx %}<td class="is-idx">{{ room.n }}</td>{% endif %}<th scope="row">{{ room.name }}</th><td class="is-num">{{ room.area }} m²</td></tr>
               {% endfor %}
             </tbody>
             {% if rooms.total != blank %}
               <tfoot>
-                <tr>{% if show_idx %}<td></td>{% endif %}<th scope="row">Suma de recintos interiores</th><td class="is-num">{{ rooms.total }}</td></tr>
+                <tr>{% if show_idx %}<td></td>{% endif %}<th scope="row">Suma de recintos interiores</th><td class="is-num">{{ rooms.total }} m²</td></tr>
               </tfoot>
             {% endif %}
           </table>
@@ -81,7 +84,7 @@
             <table class="ie-eu-table ie-eu-table--follow">
               <tbody>
                 {% for room in rooms.exterior %}
-                  <tr class="is-exterior">{% if show_idx %}<td class="is-idx">{{ room.n }}</td>{% endif %}<th scope="row">{{ room.name }}</th><td class="is-num">{{ room.area }}</td></tr>
+                  <tr class="is-exterior">{% if show_idx %}<td class="is-idx">{{ room.n }}</td>{% endif %}<th scope="row">{{ room.name }}</th><td class="is-num">{{ room.area }} m²</td></tr>
                 {% endfor %}
               </tbody>
             </table>
@@ -116,11 +119,12 @@
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Planta y distribución" },
     { "type": "text", "id": "heading", "label": "Título", "default": "Planta y distribución del modelo" },
     { "type": "textarea", "id": "intro", "label": "Introducción", "default": "El plano muestra cómo se organizan los espacios de este modelo. Las posibles modificaciones se estudian antes de fabricar y deben respetar los elementos estructurales." },
+    { "type": "text", "id": "figure_label", "label": "Etiqueta del plano", "default": "Plano de referencia" },
     { "type": "text", "id": "plan_alt", "label": "Texto alternativo del plano acotado", "default": "Plano de planta acotado con recintos numerados y superficies" },
     { "type": "text", "id": "layout_alt", "label": "Texto alternativo de la distribución amueblada", "default": "Vista cenital de la distribución amueblada" },
     { "type": "text", "id": "plan_caption", "label": "Pie del plano acotado", "default": "Plano de planta. Cotas en milímetros, sin escala gráfica." },
     { "type": "text", "id": "layout_caption", "label": "Pie de la distribución amueblada", "default": "Representación ilustrativa: mobiliario y equipamiento no incluidos." },
-    { "type": "textarea", "id": "note", "label": "Nota de superficies", "default": "Superficies de recintos según plano, medidas a ejes de muro: no equivalen a la superficie útil ni a la construida. Los usos de cada recinto son de referencia; el equipamiento de cocina y baño no forma parte del modelo." }
+    { "type": "textarea", "id": "note", "label": "Nota de superficies", "default": "Las superficies proceden del plano de referencia y se expresan según el criterio indicado en la documentación del modelo. No deben interpretarse automáticamente como superficie útil o construida. Los usos de cada espacio son orientativos; el equipamiento de cocina y baño no forma parte del modelo." }
   ],
   "presets": [{ "name": "Europeo · planta" }]
 }
