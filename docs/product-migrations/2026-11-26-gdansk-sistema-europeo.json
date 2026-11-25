@@ -1,0 +1,230 @@
+{
+  "product": {
+    "match_title": "GDANSK",
+    "handle": "gdansk",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE"
+  },
+  "media_alt_by_position": [
+    "GDANSK, casa de madera de una planta con porche de entrada bajo hastial. Render ilustrativo; el porche aparece prolongado ante un dormitorio, a diferencia del plano",
+    "GDANSK, vista opuesta con porche y acceso lateral. Render ilustrativo; el porche aparece prolongado, a diferencia del plano",
+    "GDANSK, distribución amueblada en vista cenital. Representación ilustrativa",
+    "GDANSK, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Una casa de una planta con tres dormitorios, despacho y dos baños."
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Una amplia zona de día central une salón, comedor y cocina. A los lados se reparten tres dormitorios, un despacho y dos baños. Dos accesos: desde el porche cubierto y por un vestíbulo lateral."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "12,00 × 9,97 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "88,9 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "10,3 m²"
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Porche cubierto"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "3 dormitorios · 2 baños"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.295 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "44 mm de madera maciza; opción 68 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A varias aguas"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_plan_heading": {
+      "type": "single_line_text_field",
+      "value": "Una zona de día central con los dormitorios repartidos a ambos lados"
+    },
+    "eu_plan_intro": {
+      "type": "multi_line_text_field",
+      "value": "GDANSK organiza la casa en torno a una zona de día de más de 36 m² con salón, cocina y comedor. A cada lado quedan los dormitorios, el despacho y los dos baños; el porche y el vestíbulo lateral dan acceso desde el exterior."
+    },
+    "eu_plan_caption": {
+      "type": "single_line_text_field",
+      "value": "Plano de planta. Cotas en centímetros, sin escala gráfica."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Superficies rotuladas en el plano, comprobadas con sus cotas: no equivalen a la superficie útil ni a la construida. No incluyen los pasos laterales abiertos a la zona de día (unos 5,5 m² según cotas). Los renders muestran el porche prolongado ante un dormitorio: la disposición válida es la del plano. Usos orientativos; el equipamiento de cocina y baños no forma parte del modelo."
+    },
+    "eu_use_note": {
+      "type": "multi_line_text_field",
+      "value": "La configuración de referencia, con pared de 44 mm sin aislamiento, admite incorporar aislamiento. Para un uso habitual durante todo el año debe estudiarse el aislamiento de paredes, cubierta y suelo, o la pared de 68 mm. Disponer de dormitorios y baños no implica aptitud como vivienda: el uso autorizado depende del planeamiento, la parcela y el proyecto técnico."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          {
+            "name": "Salón",
+            "area": "24,0"
+          },
+          {
+            "name": "Cocina y comedor",
+            "area": "12,3"
+          },
+          {
+            "name": "Dormitorio",
+            "area": "11,3"
+          },
+          {
+            "name": "Dormitorio",
+            "area": "10,3"
+          },
+          {
+            "name": "Dormitorio",
+            "area": "9,0"
+          },
+          {
+            "name": "Despacho",
+            "area": "9,0"
+          },
+          {
+            "name": "Vestíbulo (acceso lateral)",
+            "area": "4,8"
+          },
+          {
+            "name": "Baño",
+            "area": "4,2"
+          },
+          {
+            "name": "Baño",
+            "area": "4,0"
+          }
+        ],
+        "total": "88,9",
+        "exterior": [
+          {
+            "name": "Porche cubierto (exterior)",
+            "area": "10,3"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "GDANSK pertenece a la familia Sistema Europeo de Ideas Exteriores. Los muros se forman mediante perfiles horizontales de madera maciza mecanizados en taller y ensamblados durante el montaje.",
+          "detail": "Los perfiles, de abeto, se apilan mediante uniones machihembradas y se traban en los encuentros. La pared participa tanto en el cerramiento como en el comportamiento estructural del conjunto."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de una planta con porche de entrada cubierto en el centro de la fachada principal y acceso secundario por un lateral."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "12,00 × 7,97 m de cuerpo de la casa; 9,97 m de fondo total con el porche. Altura de muro: 2.295 mm.",
+          "detail": "Cotas del plano: 1.200,0 × 796,8 cm. Porche: 513,6 cm de frente y 200 cm de fondo; fondo total 996,8 cm (suma de cotas)."
+        },
+        {
+          "label": "Superficies",
+          "value": "88,9 m² de recintos interiores y 10,3 m² de porche cubierto.",
+          "detail": "Superficies rotuladas en el plano. Superficie útil y construida pendientes de verificación."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 44 mm, vista por ambas caras y sin aislamiento. Admite aislamiento. Disponible en 68 mm."
+        },
+        {
+          "label": "Suelo",
+          "value": "Estructura de madera tratada con tarima interior de madera.",
+          "detail": "Vigas de arranque y viguetas impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A varias aguas: cuerpo principal a dos aguas y hastial sobre el porche, con la madera vista desde el interior. El material de acabado exterior está incluido; su colocación se presupuesta aparte.",
+          "detail": "Vigas de madera y tablero machihembrado de 17 mm. Acabado exterior de tégola asfáltica (teja bituminosa)."
+        },
+        {
+          "label": "Porche",
+          "value": "Tarima de madera tratada bajo la cubierta, con barandilla de madera.",
+          "detail": "Tablas impregnadas de 25 mm sobre rastreles biselados."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera con acristalamiento con cámara. Dos puertas exteriores: una de dos hojas al porche y otra lateral al vestíbulo.",
+          "detail": "Gama Superior. Número, medidas y posición según plano."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido en la configuración de referencia. Puede incorporarse en paredes, cubierta y suelo, por separado."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "La madera se entrega natural, sin acabado protector final.",
+          "detail": "Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "44 mm",
+          "option": "68 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes, cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Tégola asfáltica",
+          "option": "Chapa de acero (dos perfiles) · Fibrocemento"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Superior",
+          "option": "Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Superior",
+          "option": "Premium"
+        },
+        {
+          "element": "Canalones y bajantes",
+          "reference": "No incluidos",
+          "option": "Acero o PVC"
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Dimensiones máximas con porche (12,00 × 9,97 m): la ficha rotula 12,00 × 7,97 m como cuerpo sin porche; la plantilla etiqueta el dato como 'Dimensiones máximas'.",
+    "Renders con porche prolongado ante un dormitorio: indicado en alt y en eu_plan_note."
+  ],
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_GDANSK.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios)"
+  }
+}
