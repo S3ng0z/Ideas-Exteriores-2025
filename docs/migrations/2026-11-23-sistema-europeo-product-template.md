@@ -140,3 +140,12 @@ La plantilla trata como dibujo (sin recorte y sin etiqueta «Render») toda imag
 - «Dimensiones máximas» 5,87 × 6,92 m = cotas totales del plano con porche (sin discrepancia con la ficha).
 - Recintos numerados (1–3) con superficies del plano a ejes; suma 32,05 m². El plano no dibuja el baño: queda dentro del recinto 3 («Salón y cocina, con baño»), indicado en `eu_plan_note`. Porche no rotulado: 5.610 × 1.010 mm = 5,67 m².
 - Configuración de referencia: pared 34 mm sin aislar, uso estacional (`eu_use_note`); opción 44 mm, necesaria para aislar paredes. Carpinterías Silver line. Planta amueblada girada respecto al plano (indicado en alt).
+
+## KARE · aplicado el 2026-11-26
+
+- Producto `KARE` (`/products/kare`, `gid://shopify/Product/16272600727896`): `sistema-europeo`, `ACTIVE`, publicado en Tienda online; 4 imágenes con alt (renders sin «plano»/«distribuci»); `eu_plan_image` y `eu_layout_image` enlazados; ficha IE-SE-01 (`GenericFile/75528305508696`). Datos en `docs/product-migrations/2026-11-26-kare-sistema-europeo.json`; fuentes en `docs/catalogo/sistema-europeo/kare/`.
+- «Dimensiones máximas» 9,86 × 12,66 m = cuerpo 9.864 × 11.864 mm + terraza de 800 mm (suma de cotas). La ficha rotula 9,86 × 11,86 m como cuerpo sin terraza; ambas cifras en especificaciones y en la descripción.
+- Recintos sin numerar (tabla sin columna Nº), superficies rotuladas: suma 108,68 m². Terraza no rotulada: 9.728 × 800 mm = 7,78 m² (`eu_terrace_label` «Terraza»: la ficha no la declara cubierta). Cotas en milímetros y centímetros (`eu_plan_caption`).
+- Configuración de referencia: pared 44 mm sin aislar (opción 68 mm), cubierta a un agua con tela asfáltica, carpinterías gama Superior (opción Premium). `eu_use_note` sin calificar el uso como estacional: recoge la recomendación de la ficha (aislar para uso prolongado).
+- Planta amueblada girada respecto al plano (terraza a la izquierda): indicado en alt y `eu_plan_note`. IE-SE-02 / IE-SE-03 sin cambios (mismo MD5). Precio 0,00 € → «Presupuesto según configuración». Sin cambios de theme.
+- QA en tienda: H1, cifras de cabecera, 8 secciones, tabla de recintos y descarga de la ficha verificados en `https://www.ideas-exteriores.com/products/kare`.
