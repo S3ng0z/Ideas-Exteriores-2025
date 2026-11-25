@@ -34,6 +34,8 @@
       assign layout_img = image
     endif
   endfor
+  assign plan_alt = plan_img.alt | default: section.settings.plan_alt
+  assign layout_alt = layout_img.alt | default: section.settings.layout_alt
 %}
 {% if rooms != blank or plan_img != blank %}
 {{ 'ie-eu-model.css' | asset_url | stylesheet_tag }}
@@ -59,11 +61,11 @@
           {% endif %}
           <div class="ie-eu-plan__media">
             {% if plan_img != blank %}
-              {{ plan_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: plan_img.alt | default: section.settings.plan_alt, data-eu-panel: 'plan' }}
+              {{ plan_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: plan_alt, data-eu-panel: 'plan' }}
             {% endif %}
             {% if layout_img != blank %}
               {%- capture layout_class -%}{% if plan_img != blank %}is-hidden{% endif %}{%- endcapture -%}
-              {{ layout_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: layout_img.alt | default: section.settings.layout_alt, data-eu-panel: 'layout', class: layout_class }}
+              {{ layout_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: layout_alt, data-eu-panel: 'layout', class: layout_class }}
             {% endif %}
           </div>
           <figcaption data-eu-caption data-plan="{{ plan_caption | escape }}" data-layout="{{ layout_caption | escape }}">
