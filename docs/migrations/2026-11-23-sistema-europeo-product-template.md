@@ -174,3 +174,17 @@ Retrocompatibles: si faltan, la página se comporta como antes.
 - «Dimensiones máximas» 9,00 × 9,00 m = cotas totales del plano (entre ejes 8.665 × 8.665 mm). Recintos numerados 1–8, a ejes; suma 75,35 m². Distribuidor (8) abierto a la zona de día (1).
 - Configuración de referencia: pared 44 mm sin aislar (opción 68 mm), cubierta a dos aguas con tégola, carpinterías gama Superior. Renders con terraza pavimentada, escalones y mobiliario ajenos al modelo: indicado en alt. Planta amueblada con la misma orientación que el plano.
 - IE-SE-02 / IE-SE-03 sin cambios (mismo MD5). Precio 0,00 € → «Presupuesto según configuración».
+
+## GIZA · aplicado el 2026-11-26
+
+- Producto `GIZA` (`/products/giza`, `gid://shopify/Product/16272604430680`): `sistema-europeo`, `ACTIVE`, publicado en Tienda online; ficha IE-SE-01 (`GenericFile/75528329822552`). Datos en `docs/product-migrations/2026-11-26-giza-sistema-europeo.json`.
+- Primer modelo de dos plantas y sin plano acotado: usa los campos opcionales de la plantilla (huella del cuerpo 6,0 × 7,4 m, altura total 6.478 mm, conmutador «Planta baja / Planta alta», tabla de espacios por planta sin superficies). No se publican superficies hasta disponer del plano acotado.
+
+### Regla de Liquid (corrección 2026-11-26)
+
+No aplicar filtros dentro de los argumentos de `image_tag` (p. ej. `alt: x | default: y`): Shopify rechaza la sección sin avisar y la sincronización de GitHub no la sube. Asignar antes a una variable. Si un commit se rechaza, los ficheros que no cambien en el siguiente commit no se reenvían: hay que volver a tocarlos. Verificar siempre el `checksumMd5` del tema publicado tras cada push que afecte a `sections/`.
+
+## LENA · aplicado el 2026-11-26
+
+- Producto `LENA` (`/products/lena`, `gid://shopify/Product/16272614293848`): `sistema-europeo`, `ACTIVE`, publicado; 4 imágenes con alt; plano y distribución enlazados; ficha IE-SE-01 (`GenericFile/75528384676184`). Datos en `docs/product-migrations/2026-11-26-lena-sistema-europeo.json`.
+- 5,08 × 6,16 m con porche; recintos 17,72 m²; porche 11,09 m² por cotas (el plano rotula 11,43 m²). El plano numera con «2» la zona de día y el baño: se conserva la numeración y se explica en `eu_plan_note`. Pared 34 mm (uso estacional), opción 44 mm. Cubierta a un agua con lámina asfáltica.
