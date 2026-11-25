@@ -1,0 +1,212 @@
+{
+  "product": {
+    "match_title": "LENA",
+    "handle": "lena",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE"
+  },
+  "media_alt_by_position": [
+    "LENA, casa de madera compacta de una planta con cubierta a un agua y porche a lo largo de la fachada. Render ilustrativo; hamaca, iluminación decorativa y personas no incluidas",
+    "LENA, vista en perspectiva del porche cubierto y la fachada lateral con ventana. Render ilustrativo; hamaca e iluminación decorativa no incluidas",
+    "LENA, distribución amueblada en vista cenital, girada respecto al plano, con el porche abajo. Representación ilustrativa",
+    "LENA, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Una casa compacta de una planta con dormitorio, baño y un porche amplio a lo largo de la fachada."
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "La cubierta a un agua se prolonga sobre un porche que recorre toda la fachada larga. Desde él, una puerta de dos hojas da a la zona de día, con cocina y comedor, y otra al dormitorio. El baño se abre a la zona de día."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "5,08 × 6,16 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "17,7 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "11,1 m²"
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Porche cubierto"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "1 dormitorio · 1 baño"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.565 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "34 mm de madera maciza; opción 44 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A un agua"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_plan_heading": {
+      "type": "single_line_text_field",
+      "value": "Dos estancias con salida propia a un porche de casi 6 m"
+    },
+    "eu_plan_intro": {
+      "type": "multi_line_text_field",
+      "value": "LENA abre sus dos estancias al porche: la zona de día, con cocina, comedor y el acceso al baño, y el dormitorio, cada una con su puerta acristalada de dos hojas. El porche, de 1,88 m de fondo, ocupa toda la fachada larga y funciona como una estancia exterior más."
+    },
+    "eu_plan_caption": {
+      "type": "single_line_text_field",
+      "value": "Plano de planta. Cotas en milímetros, sin escala gráfica."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Superficies según el plano, a ejes de muro: no equivalen a la superficie útil ni a la construida. El plano numera con un «2» tanto la zona de día como el baño. Rotula el porche con 11,43 m², pero sus cotas (1.880 × 5.900 mm) dan 11,09 m², que es la cifra indicada. Usos orientativos; el equipamiento de cocina y baño no forma parte del modelo."
+    },
+    "eu_use_note": {
+      "type": "multi_line_text_field",
+      "value": "La configuración de referencia, con pared de 34 mm sin aislamiento, está indicada para un uso estacional. Para un uso prolongado conviene la pared de 44 mm con aislamiento en paredes, cubierta y suelo. Disponer de dormitorio y baño no implica aptitud como vivienda: el uso autorizado depende del planeamiento, la parcela y el proyecto técnico."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          {
+            "n": "2",
+            "name": "Cocina y comedor",
+            "area": "6,63"
+          },
+          {
+            "n": "2",
+            "name": "Baño",
+            "area": "2,18"
+          },
+          {
+            "n": "3",
+            "name": "Dormitorio",
+            "area": "8,91"
+          }
+        ],
+        "total": "17,72",
+        "exterior": [
+          {
+            "n": "T",
+            "name": "Porche cubierto (exterior)",
+            "area": "11,09"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "LENA pertenece a la familia Sistema Europeo de Ideas Exteriores. Los muros se forman mediante perfiles horizontales de madera maciza mecanizados en taller y ensamblados durante el montaje.",
+          "detail": "Los perfiles, de abeto, se apilan mediante uniones machihembradas y se traban en las esquinas. La pared es a la vez cerramiento y elemento portante."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa compacta de una planta con porche cubierto a lo largo de la fachada larga, bajo la prolongación de la cubierta."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "5,08 × 6,16 m de cotas totales, con porche. Altura de muro: 2.565 mm.",
+          "detail": "Entre ejes: cuerpo cerrado de 3.020 × 5.900 mm y porche de 1.880 mm de fondo."
+        },
+        {
+          "label": "Superficies",
+          "value": "17,72 m² de recintos interiores y 11,09 m² de porche cubierto.",
+          "detail": "Recintos: suma del plano, a ejes. Porche: según cotas. Superficie útil y construida pendientes de verificación."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 34 mm, vista por ambas caras y sin aislamiento. Disponible en 44 mm, necesaria para aislar las paredes."
+        },
+        {
+          "label": "Suelo",
+          "value": "Estructura de madera tratada con tarima interior de madera.",
+          "detail": "Vigas de arranque y viguetas impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A un agua, prolongada sobre el porche, con la madera vista desde el interior. El material de acabado exterior está incluido; su colocación se presupuesta aparte.",
+          "detail": "Vigas de madera y tablero machihembrado de 17 mm. Acabado exterior de lámina asfáltica."
+        },
+        {
+          "label": "Porche",
+          "value": "Tarima de madera tratada bajo la cubierta, con pilares de madera, a lo largo de toda la fachada larga.",
+          "detail": "Tablas impregnadas de 25 mm sobre rastreles biselados."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera con acristalamiento con cámara. Dos puertas acristaladas de dos hojas al porche, dos ventanas y dos puertas interiores.",
+          "detail": "Gama Silver line. Puertas exteriores de 2.164 × 2.088 mm; puertas interiores de 900 × 1.930 mm y 830 × 1.930 mm; ventanas de 700 × 1.930 mm y 600 × 600 mm."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido en la configuración de referencia. Puede incorporarse en paredes (con pared de 44 mm), cubierta y suelo, por separado."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "La madera se entrega natural, sin acabado protector final.",
+          "detail": "Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "34 mm",
+          "option": "44 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes (con 44 mm), cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Lámina asfáltica",
+          "option": "Tela asfáltica"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Silver line",
+          "option": "Superior · Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Silver line",
+          "option": "Superior · Premium"
+        },
+        {
+          "element": "Canalones y bajantes",
+          "reference": "No incluidos",
+          "option": "Acero o PVC"
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Dimensiones máximas 5,08 × 6,16 m = cotas totales del plano con porche.",
+    "El plano numera con «2» zona de día y baño: se conserva la numeración del plano y se explica en eu_plan_note.",
+    "Porche rotulado 11,43 m² en el plano; por cotas 1.880 × 5.900 mm = 11,09 m² (cifra de la ficha).",
+    "Planta amueblada girada respecto al plano (porche abajo): indicado en alt."
+  ],
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_LENA.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios)"
+  }
+}
