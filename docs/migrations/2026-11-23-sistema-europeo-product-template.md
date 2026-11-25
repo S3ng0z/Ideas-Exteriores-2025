@@ -133,3 +133,10 @@ Pendiente: aplicar los campos a ALDAN, CATALAN y DUERO (hoy usan los textos comu
 ### Regla de textos alternativos (corrección 2026-11-26)
 
 La plantilla trata como dibujo (sin recorte y sin etiqueta «Render») toda imagen cuyo alt contenga «plano» o «distribuci». En los renders **no** usar esas palabras: escribir «planta de referencia». Corregidos los alt de los renders de DUERO y GDANSK; revisados los 7 modelos.
+
+## GILA · aplicado el 2026-11-26
+
+- Producto `GILA` (`/products/gila`, `gid://shopify/Product/16272597549400`): `sistema-europeo`, `ACTIVE`, publicado en Tienda online; 4 imágenes con alt (renders sin «plano»/«distribuci»); plano y distribución enlazados; ficha IE-SE-01 (`GenericFile/75528286339416`). Datos en `docs/product-migrations/2026-11-26-gila-sistema-europeo.json`.
+- «Dimensiones máximas» 5,87 × 6,92 m = cotas totales del plano con porche (sin discrepancia con la ficha).
+- Recintos numerados (1–3) con superficies del plano a ejes; suma 32,05 m². El plano no dibuja el baño: queda dentro del recinto 3 («Salón y cocina, con baño»), indicado en `eu_plan_note`. Porche no rotulado: 5.610 × 1.010 mm = 5,67 m².
+- Configuración de referencia: pared 34 mm sin aislar, uso estacional (`eu_use_note`); opción 44 mm, necesaria para aislar paredes. Carpinterías Silver line. Planta amueblada girada respecto al plano (indicado en alt).
