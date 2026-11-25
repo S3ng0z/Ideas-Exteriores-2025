@@ -1,0 +1,234 @@
+{
+  "product": {
+    "match_title": "EBRO",
+    "handle": "ebro",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE",
+    "description_html": "<p>EBRO es una casa de madera de una planta del Sistema Europeo, con muros de perfiles horizontales de madera maciza apilada y cubierta a dos aguas.</p><p>Reúne salón, comedor y cocina, tres dormitorios, un baño, un vestidor y un vestíbulo con acceso desde el porche cubierto. Dimensiones máximas 10,50 × 8,76 m; recintos interiores 79,0 m² y porche 7,3 m², según plano.</p><p>Configuración de referencia en suministro de kit. Precio bajo consulta; transporte, descarga, montaje, base, instalaciones, proyecto técnico y licencias no incluidos.</p>",
+    "seo": {
+      "title": "EBRO · Casa de madera con tres dormitorios | Ideas Exteriores",
+      "description": "Casa de madera EBRO del Sistema Europeo. 79 m² de recintos interiores, 3 dormitorios, vestidor y porche cubierto. Solicita presupuesto."
+    }
+  },
+  "media_alt_by_position": [
+    "EBRO, casa de madera de una planta con porche de entrada. Render frontal ilustrativo",
+    "EBRO, vista del hastial y porche de entrada. Render ilustrativo",
+    "EBRO, distribución amueblada en vista cenital. Representación ilustrativa",
+    "EBRO, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Una casa de una planta con tres dormitorios y porche de entrada cubierto."
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Zona de día abierta con salón, comedor y cocina, tres dormitorios, un baño, un vestidor y un vestíbulo de acceso desde el porche cubierto."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "10,50 × 8,76 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "79,0 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "7,3 m²"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "3 dormitorios · 1 baño"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.430 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "34 mm de madera maciza; opción 44 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A dos aguas"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          {
+            "n": "1",
+            "name": "Salón, comedor, cocina y paso",
+            "area": "34,44"
+          },
+          {
+            "n": "2",
+            "name": "Dormitorio",
+            "area": "10,95"
+          },
+          {
+            "n": "3",
+            "name": "Vestidor",
+            "area": "4,43"
+          },
+          {
+            "n": "4",
+            "name": "Dormitorio",
+            "area": "10,12"
+          },
+          {
+            "n": "6",
+            "name": "Baño",
+            "area": "5,33"
+          },
+          {
+            "n": "7",
+            "name": "Dormitorio",
+            "area": "8,44"
+          },
+          {
+            "n": "7",
+            "name": "Vestíbulo",
+            "area": "5,26"
+          }
+        ],
+        "total": "78,97",
+        "exterior": [
+          {
+            "n": "T",
+            "name": "Porche cubierto (exterior)",
+            "area": "7,25"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "EBRO pertenece a la familia Sistema Europeo de Ideas Exteriores. Los muros se forman mediante perfiles horizontales de madera maciza mecanizados en taller y ensamblados durante el montaje.",
+          "detail": "Los perfiles, de abeto, se apilan mediante uniones machihembradas y se traban en los encuentros. La pared participa tanto en el cerramiento como en el comportamiento estructural del conjunto."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de una planta con porche de entrada cubierto integrado en una esquina bajo la cubierta principal."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "10,50 × 8,76 m de dimensiones máximas, porche incluido. Altura de muro: 2.430 mm.",
+          "detail": "Cotas totales: 10.500 × 8.755 mm. Entre ejes extremos: 10.165 × 8.420 mm."
+        },
+        {
+          "label": "Superficies",
+          "value": "79,0 m² de recintos interiores y 7,3 m² de porche cubierto.",
+          "detail": "Según plano, 78,97 m² de recintos a ejes y 7,25 m² de porche. Superficie útil y construida pendientes de verificación."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 34 mm, vista por ambas caras y sin aislamiento. Disponible en 44 mm."
+        },
+        {
+          "label": "Suelo",
+          "value": "Estructura de madera tratada con tarima interior de madera.",
+          "detail": "Vigas de arranque y viguetas impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A dos aguas, con madera vista desde el interior. El material de acabado exterior está incluido; su colocación se presupuesta aparte.",
+          "detail": "Vigas de madera y tablero machihembrado de 17 mm. Acabado exterior de tégola asfáltica (teja bituminosa)."
+        },
+        {
+          "label": "Porche",
+          "value": "Tarima de madera tratada bajo la cubierta principal.",
+          "detail": "Tablas impregnadas de 25 mm sobre rastreles biselados."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera con acristalamiento con cámara, según plano.",
+          "detail": "Gama Superior. Acceso desde el porche al vestíbulo. Número, medidas y posición según plano."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido en la configuración de referencia. Puede incorporarse en paredes (con pared de 44 mm), cubierta y suelo."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "La madera se entrega natural, sin acabado protector final.",
+          "detail": "Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "34 mm",
+          "option": "44 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes (con 44 mm), cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Tégola asfáltica",
+          "option": "Chapa de acero (dos perfiles)"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Superior",
+          "option": "Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Superior",
+          "option": "Premium"
+        },
+        {
+          "element": "Canalones y bajantes",
+          "reference": "No incluidos",
+          "option": "Acero o PVC"
+        }
+      ]
+    },
+    "eu_plan_heading": {
+      "type": "single_line_text_field",
+      "value": "Una distribución en una sola planta con tres dormitorios y vestidor"
+    },
+    "eu_plan_intro": {
+      "type": "multi_line_text_field",
+      "value": "EBRO reúne la zona de día de 34,44 m², tres dormitorios, un vestidor y un baño. El vestíbulo conecta el interior con el porche cubierto, integrado en una esquina de la casa."
+    },
+    "eu_use_note": {
+      "type": "multi_line_text_field",
+      "value": "La configuración de 34 mm sin aislamiento está orientada principalmente a usos estacionales. Para un uso habitual durante todo el año debe estudiarse una solución con aislamiento en paredes (requiere 44 mm), cubierta y suelo. Las prestaciones y el uso autorizado dependen de la ubicación, el planeamiento y el proyecto técnico."
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Porche cubierto"
+    },
+    "eu_plan_caption": {
+      "type": "single_line_text_field",
+      "value": "Plano de planta. Cotas en milímetros, sin escala gráfica."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "El plano numera dos recintos con el 7; se distinguen por su superficie. Superficies a ejes de muro, no equivalentes a la superficie útil ni construida. Los usos son de referencia; mobiliario y equipamiento de cocina y baño no incluidos."
+    }
+  },
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_EBRO.pdf",
+    "template_settings": {
+      "docs.quality_url": "IE-SE-02_Memoria_Calidades_Sistema_Europeo.pdf",
+      "docs.guide_url": "IE-SE-03_Guia_Compra_Suministro_Instalacion_Sistema_Europeo.pdf"
+    }
+  }
+}
