@@ -123,3 +123,13 @@ Pendiente: aplicar los campos a ALDAN, CATALAN y DUERO (hoy usan los textos comu
 - Producto `FORTUNA` (`/products/fortuna`): `sistema-europeo`, `ACTIVE`, publicado en Online Store; 4 imágenes con alt (render frontal, porche y fachada lateral, distribución amueblada, plano); `eu_plan_image` y `eu_layout_image` enlazados; campos editoriales del piloto BURGAS incluidos desde el alta.
 - Datos de IE-SE-01 en `docs/product-migrations/2026-11-26-fortuna-sistema-europeo.json`. Porche publicado como intervalo 10,2–10,7 m² (calculado con las cotas): el plano rotula 10,99 m², cifra que no resulta de sus cotas; se explica en `eu_plan_note`, como en la ficha.
 - Altura de pared 2.770 mm (cubierta a un agua). IE-SE-02 / IE-SE-03 sin cambios. Precio 0,00 € → «Presupuesto según configuración». Sin cambios de theme.
+
+## GDANSK · aplicado el 2026-11-26
+
+- Producto `GDANSK` (`/products/gdansk`): `sistema-europeo`, `ACTIVE`, publicado; 4 imágenes con alt; plano y distribución enlazados; campos editoriales desde el alta. Datos en `docs/product-migrations/2026-11-26-gdansk-sistema-europeo.json`.
+- «Dimensiones máximas» = 12,00 × 9,97 m (con porche). La ficha rotula 12,00 × 7,97 m como cuerpo sin porche; se detalla en especificaciones.
+- Recintos sin numerar en el plano (tabla sin columna Nº); cotas en centímetros (`eu_plan_caption`); renders con porche prolongado ante un dormitorio, indicado en alt y en `eu_plan_note`. Pared de referencia 44 mm (opción 68 mm). Cubierta a varias aguas.
+
+### Regla de textos alternativos (corrección 2026-11-26)
+
+La plantilla trata como dibujo (sin recorte y sin etiqueta «Render») toda imagen cuyo alt contenga «plano» o «distribuci». En los renders **no** usar esas palabras: escribir «planta de referencia». Corregidos los alt de los renders de DUERO y GDANSK; revisados los 7 modelos.
