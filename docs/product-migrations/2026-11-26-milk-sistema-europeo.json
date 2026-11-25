@@ -1,0 +1,147 @@
+{
+  "product": {
+    "match_title": "MILK",
+    "handle": "milk",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE",
+    "vendor": "Ideas Exteriores",
+    "product_type": "Casa de madera · Sistema Europeo",
+    "tags": ["1 baño", "3 dormitorios", "casa de madera", "despensa", "planta cuadrada", "sistema-europeo", "una planta"],
+    "description_html": "<p>MILK es una casa de madera de una planta y planta cuadrada del Sistema Europeo, con muros de perfiles horizontales de madera maciza apilada y cubierta a dos aguas.</p><p>Se entra por un vestíbulo cerrado que da a un distribuidor central. Desde allí se llega a la zona de día con cocina, comedor y salón, a tres dormitorios, a un baño y a una despensa. Dimensiones máximas de 9,00 × 9,00 m y 75,4 m² de recintos interiores, según plano. No incluye terraza ni porche.</p><p>Configuración de referencia en suministro de kit. Transporte, descarga, montaje, base, instalaciones, proyecto técnico y licencias se presupuestan aparte.</p>",
+    "seo_title": "MILK · Casa de madera de planta cuadrada con 3 dormitorios | Sistema Europeo",
+    "seo_description": "Casa de madera de una planta, de planta cuadrada y cubierta a dos aguas: 3 dormitorios, baño, despensa y vestíbulo de entrada. 75,4 m² de recintos interiores. Suministro en kit."
+  },
+  "media_alt_by_position": [
+    "MILK, casa de madera de una planta con cubierta a dos aguas: hastial de entrada y fachada lateral con dos ventanales. Render ilustrativo; la terraza pavimentada, los escalones y el mobiliario no forman parte del modelo",
+    "MILK, vista opuesta del hastial y la fachada lateral. Render ilustrativo; la terraza pavimentada y el mobiliario no forman parte del modelo",
+    "MILK, distribución amueblada en vista cenital, con la misma orientación que el plano. Representación ilustrativa",
+    "MILK, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Una casa de una planta y planta cuadrada con tres dormitorios, despensa y vestíbulo de entrada cerrado."
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Se entra por un vestíbulo cerrado que da a un distribuidor central. Desde allí se llega a una zona de día con cocina, comedor y salón, a tres dormitorios, a un baño y a una despensa."
+    },
+    "eu_dimensions": { "type": "single_line_text_field", "value": "9,00 × 9,00 m" },
+    "eu_interior_area": { "type": "single_line_text_field", "value": "75,4 m²" },
+    "eu_layout": { "type": "single_line_text_field", "value": "3 dormitorios · 1 baño · despensa" },
+    "eu_wall_height": { "type": "single_line_text_field", "value": "2.295 mm" },
+    "eu_wall": { "type": "single_line_text_field", "value": "44 mm de madera maciza; opción 68 mm" },
+    "eu_roof": { "type": "single_line_text_field", "value": "A dos aguas" },
+    "eu_insulation": { "type": "single_line_text_field", "value": "Opcional" },
+    "eu_plan_heading": {
+      "type": "single_line_text_field",
+      "value": "Un distribuidor central que ordena la zona de día, los dormitorios y el baño"
+    },
+    "eu_plan_intro": {
+      "type": "multi_line_text_field",
+      "value": "MILK se organiza alrededor de un distribuidor de 8,23 m² abierto a la zona de día, donde cocina, comedor y salón ocupan 17,51 m². El vestíbulo cierra la entrada, y desde el distribuidor se llega a los tres dormitorios, al baño y a la despensa, que admite otros usos."
+    },
+    "eu_plan_caption": {
+      "type": "single_line_text_field",
+      "value": "Plano de planta. Cotas en milímetros, sin escala gráfica."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Superficies según el plano, a ejes de muro: no equivalen a la superficie útil ni a la construida. El distribuidor (8) está abierto a la zona de día (1). La despensa admite otros usos. El modelo no incluye terraza ni porche. El mobiliario y el equipamiento de cocina y baño no forman parte del modelo."
+    },
+    "eu_use_note": {
+      "type": "multi_line_text_field",
+      "value": "La configuración de referencia tiene pared de 44 mm sin aislamiento. Para un uso prolongado conviene añadir aislamiento en paredes, cubierta y suelo. Disponer de dormitorios y baño no implica aptitud como vivienda: el uso autorizado depende del planeamiento, la parcela y el proyecto técnico."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          { "n": "1", "name": "Cocina, comedor y salón", "area": "17,51" },
+          { "n": "2", "name": "Dormitorio", "area": "12,57" },
+          { "n": "3", "name": "Baño", "area": "5,94" },
+          { "n": "4", "name": "Dormitorio", "area": "12,42" },
+          { "n": "5", "name": "Dormitorio", "area": "8,79" },
+          { "n": "6", "name": "Despensa", "area": "6,46" },
+          { "n": "7", "name": "Vestíbulo de entrada", "area": "3,43" },
+          { "n": "8", "name": "Distribuidor", "area": "8,23" }
+        ],
+        "total": "75,35"
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "MILK pertenece a la familia Sistema Europeo de Ideas Exteriores. Los muros se forman mediante perfiles horizontales de madera maciza mecanizados en taller y ensamblados durante el montaje.",
+          "detail": "Los perfiles, de abeto, se apilan mediante uniones machihembradas y se traban en las esquinas. La pared es a la vez cerramiento y elemento portante."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de una planta y planta cuadrada, sin porche ni terraza, con acceso por un vestíbulo cerrado."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "9,00 × 9,00 m de cotas totales. Altura de muro: 2.295 mm.",
+          "detail": "Entre ejes: 8.665 × 8.665 mm."
+        },
+        {
+          "label": "Superficies",
+          "value": "75,35 m² de recintos interiores.",
+          "detail": "Suma del plano, a ejes. Superficie útil y construida pendientes de verificación."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 44 mm, vista por ambas caras y sin aislamiento. Admite aislamiento. Disponible en 68 mm."
+        },
+        {
+          "label": "Suelo",
+          "value": "Estructura de madera tratada con tarima interior de madera.",
+          "detail": "Vigas de arranque y viguetas impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A dos aguas, con la madera vista desde el interior. El material de acabado exterior está incluido; su colocación se presupuesta aparte.",
+          "detail": "Vigas de madera y tablero machihembrado de 17 mm. Acabado exterior de tégola asfáltica (teja bituminosa)."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera con acristalamiento con cámara. Siete ventanas y siete puertas, incluida la de entrada.",
+          "detail": "Gama Superior. Ventanas: tres de 1.990 × 2.000 mm, una de 1.990 × 1.200 mm, una de 900 × 2.000 mm y dos de 900 × 600 mm. Puertas de 890 × 2.000 mm."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido en la configuración de referencia. Puede incorporarse en paredes, cubierta y suelo, por separado."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "La madera se entrega natural, sin acabado protector final.",
+          "detail": "Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        { "element": "Pared exterior", "reference": "44 mm", "option": "68 mm" },
+        { "element": "Aislamiento", "reference": "Sin aislamiento", "option": "Paredes, cubierta y suelo, por separado" },
+        { "element": "Acabado de cubierta", "reference": "Tégola asfáltica", "option": "Chapa de acero (dos perfiles)" },
+        { "element": "Ventanas", "reference": "Superior", "option": "Premium" },
+        { "element": "Puertas", "reference": "Superior", "option": "Premium" },
+        { "element": "Canalones y bajantes", "reference": "No incluidos", "option": "Acero o PVC" }
+      ]
+    }
+  },
+  "notes": [
+    "Primer modelo sin terraza ni porche: eu_terrace_area y eu_terrace_label no se rellenan (la cabecera oculta la cifra) y eu_rooms no lleva 'exterior' (la plantilla omite la tabla exterior). El texto común de 'Qué incluye' ya dice 'tarima de terraza en los modelos que la tienen'.",
+    "Dimensiones máximas 9,00 × 9,00 m: cotas totales del plano (sin discrepancia con la ficha).",
+    "Recintos numerados 1–8, superficies del plano a ejes; suma 75,35 m².",
+    "Renders con terraza pavimentada, escalones y mobiliario que no forman parte del modelo: indicado en alt.",
+    "Planta amueblada con la misma orientación que el plano."
+  ],
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_MILK.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios; mismo MD5 que en docs/catalogo/sistema-europeo/)"
+  }
+}
