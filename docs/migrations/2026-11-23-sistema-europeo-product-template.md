@@ -110,3 +110,10 @@ Cada dato se cuenta como «qué es → qué significa → qué comprobar». Tute
 | `eu_use_note` | Nota de uso con el espesor real de pared del modelo | Nota común sin espesor |
 
 Pendiente: aplicar los campos a ALDAN, CATALAN y DUERO (hoy usan los textos comunes, coherentes pero menos específicos).
+
+## EBRO · completado el 2026-11-26
+
+- Producto creado por S3ng0z (datos en `docs/product-migrations/2026-11-26-ebro-sistema-europeo.json`, revisados contra IE-SE-01: correctos; ya con campos editoriales del piloto BURGAS).
+- Completado: publicación en Online Store (`/products/ebro`), orden de imágenes 1 frontal · 2 hastial y porche · 3 distribución amueblada · 4 plano, textos alternativos (la plantilla los usa para distinguir render / plano), `eu_plan_image` y `eu_layout_image`.
+- Fuentes en `docs/catalogo/sistema-europeo/ebro/`. IE-SE-02 / IE-SE-03 sin cambios. Precio 0,00 € → «Presupuesto según configuración». Sin cambios de theme.
+- Checklist para próximos modelos: tras `productSet`, verificar siempre publicación en Online Store, orden y alt de imágenes y los dos campos de imagen del plano.
