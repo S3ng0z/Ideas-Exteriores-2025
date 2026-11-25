@@ -117,3 +117,9 @@ Pendiente: aplicar los campos a ALDAN, CATALAN y DUERO (hoy usan los textos comu
 - Completado: publicación en Online Store (`/products/ebro`), orden de imágenes 1 frontal · 2 hastial y porche · 3 distribución amueblada · 4 plano, textos alternativos (la plantilla los usa para distinguir render / plano), `eu_plan_image` y `eu_layout_image`.
 - Fuentes en `docs/catalogo/sistema-europeo/ebro/`. IE-SE-02 / IE-SE-03 sin cambios. Precio 0,00 € → «Presupuesto según configuración». Sin cambios de theme.
 - Checklist para próximos modelos: tras `productSet`, verificar siempre publicación en Online Store, orden y alt de imágenes y los dos campos de imagen del plano.
+
+## FORTUNA · aplicado el 2026-11-26
+
+- Producto `FORTUNA` (`/products/fortuna`): `sistema-europeo`, `ACTIVE`, publicado en Online Store; 4 imágenes con alt (render frontal, porche y fachada lateral, distribución amueblada, plano); `eu_plan_image` y `eu_layout_image` enlazados; campos editoriales del piloto BURGAS incluidos desde el alta.
+- Datos de IE-SE-01 en `docs/product-migrations/2026-11-26-fortuna-sistema-europeo.json`. Porche publicado como intervalo 10,2–10,7 m² (calculado con las cotas): el plano rotula 10,99 m², cifra que no resulta de sus cotas; se explica en `eu_plan_note`, como en la ficha.
+- Altura de pared 2.770 mm (cubierta a un agua). IE-SE-02 / IE-SE-03 sin cambios. Precio 0,00 € → «Presupuesto según configuración». Sin cambios de theme.
