@@ -1,0 +1,181 @@
+{
+  "product": {
+    "match_title": "KARE",
+    "handle": "kare",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE",
+    "vendor": "Ideas Exteriores",
+    "product_type": "Casa de madera · Sistema Europeo",
+    "tags": ["1 baño", "3 dormitorios", "casa de madera", "despacho", "sistema-europeo", "terraza", "una planta"],
+    "description_html": "<p>KARE es una casa de madera de una planta del Sistema Europeo, con muros de perfiles horizontales de madera maciza apilada, cubierta a un agua y grandes ventanales.</p><p>Se entra por una terraza que recorre toda la fachada principal. Un vestíbulo da paso a la zona de día con salón, comedor y cocina; completan la casa tres dormitorios, un baño y un despacho. Cuerpo de 9,86 × 11,86 m; recintos interiores 108,7 m² y terraza 7,8 m², según plano.</p><p>Configuración de referencia en suministro de kit. Transporte, descarga, montaje, base, instalaciones, proyecto técnico y licencias se presupuestan aparte.</p>"
+  },
+  "media_alt_by_position": [
+    "KARE, casa de madera de una planta con cubierta a un agua, grandes ventanales y terraza a lo largo de la fachada de acceso. Render ilustrativo",
+    "KARE, vista en perspectiva de la fachada de acceso y la fachada lateral. Render ilustrativo",
+    "KARE, distribución amueblada en vista cenital, girada respecto al plano (terraza a la izquierda). Representación ilustrativa",
+    "KARE, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Una casa de una planta con tres dormitorios, despacho, grandes ventanales y terraza a lo largo de la fachada."
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Se entra por una terraza estrecha que recorre toda la fachada principal. Un vestíbulo se abre a la zona de día, con salón, comedor y cocina separados solo por un tabique corto. Tiene además tres dormitorios, un baño y un despacho."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "9,86 × 12,66 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "108,7 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "7,8 m²"
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Terraza"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "3 dormitorios · 1 baño · despacho"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.295 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "44 mm de madera maciza; opción 68 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A un agua"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_plan_heading": {
+      "type": "single_line_text_field",
+      "value": "Una zona de día amplia junto a la entrada y el descanso agrupado al fondo"
+    },
+    "eu_plan_intro": {
+      "type": "multi_line_text_field",
+      "value": "KARE reúne salón, comedor y cocina en 40,6 m² junto al vestíbulo, separados solo por un tabique corto. Los tres dormitorios y el baño se agrupan en el resto de la planta, y el despacho, de 7,47 m², queda junto a la entrada y admite otros usos."
+    },
+    "eu_plan_caption": {
+      "type": "single_line_text_field",
+      "value": "Plano de planta. Cotas en milímetros y centímetros, sin escala gráfica."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Superficies rotuladas en el plano: no equivalen a la superficie útil ni a la construida. La terraza, que el plano no rotula, se ha calculado con sus cotas (9.728 × 800 mm). Usos de referencia; el despacho admite otros. La planta amueblada está girada respecto al plano. El mobiliario y el equipamiento no forman parte del modelo."
+    },
+    "eu_use_note": {
+      "type": "multi_line_text_field",
+      "value": "La configuración de referencia tiene pared de 44 mm sin aislamiento. Para un uso prolongado conviene añadir aislamiento en paredes, cubierta y suelo. Disponer de dormitorios y baño no implica aptitud como vivienda: el uso autorizado depende del planeamiento, la parcela y el proyecto técnico."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          { "name": "Cocina y comedor", "area": "20,94" },
+          { "name": "Salón", "area": "19,65" },
+          { "name": "Dormitorio", "area": "16,90" },
+          { "name": "Dormitorio", "area": "16,90" },
+          { "name": "Dormitorio", "area": "13,70" },
+          { "name": "Despacho", "area": "7,47" },
+          { "name": "Vestíbulo de entrada", "area": "7,20" },
+          { "name": "Baño", "area": "5,92" }
+        ],
+        "total": "108,68",
+        "exterior": [
+          { "name": "Terraza (exterior)", "area": "7,78" }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "KARE pertenece a la familia Sistema Europeo de Ideas Exteriores. Los muros se forman mediante perfiles horizontales de madera maciza mecanizados en taller y ensamblados durante el montaje.",
+          "detail": "Los perfiles, de abeto, se apilan mediante uniones machihembradas y se traban en las esquinas. La pared es a la vez cerramiento y elemento portante."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de una planta con terraza frontal a lo largo de la fachada de acceso."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "9,86 × 11,86 m de cuerpo de la casa; 9,86 × 12,66 m con la terraza. Altura de muro: 2.295 mm.",
+          "detail": "Cotas totales del cuerpo: 9.864 × 11.864 mm. Entre ejes: 9.728 × 11.728 mm. Terraza de 800 mm de fondo en toda la fachada."
+        },
+        {
+          "label": "Superficies",
+          "value": "108,68 m² de recintos interiores y 7,78 m² de terraza.",
+          "detail": "Recintos: suma de las superficies rotuladas en el plano. Terraza: calculada con sus cotas. Superficie útil y construida pendientes de verificación."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 44 mm, vista por ambas caras y sin aislamiento. Admite aislamiento. Disponible en 68 mm."
+        },
+        {
+          "label": "Suelo",
+          "value": "Estructura de madera tratada con tarima interior de madera.",
+          "detail": "Vigas de arranque y viguetas impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A un agua, con la madera vista desde el interior. El material de acabado exterior está incluido; su colocación se presupuesta aparte.",
+          "detail": "Vigas de madera y tablero machihembrado de 17 mm. Acabado exterior de tela asfáltica."
+        },
+        {
+          "label": "Terraza",
+          "value": "Tarima de madera tratada a lo largo de toda la fachada principal.",
+          "detail": "Tablas impregnadas de 25 mm sobre rastreles biselados."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera con acristalamiento con cámara. Diez ventanas, puerta de entrada y cinco puertas más.",
+          "detail": "Gama Superior. Ventanas: cuatro de 1.600 × 2.000 mm, cuatro de 1.500 × 2.000 mm, una de 800 × 2.000 mm y una de 880 × 880 mm. Puerta de entrada de 1.600 × 2.000 mm; otras puertas: una de 880 × 1.860 mm y cuatro de 900 × 1.930 mm."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido en la configuración de referencia. Puede incorporarse en paredes, cubierta y suelo, por separado."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "La madera se entrega natural, sin acabado protector final.",
+          "detail": "Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        { "element": "Pared exterior", "reference": "44 mm", "option": "68 mm" },
+        { "element": "Aislamiento", "reference": "Sin aislamiento", "option": "Paredes, cubierta y suelo, por separado" },
+        { "element": "Acabado de cubierta", "reference": "Tela asfáltica", "option": "Otros acabados bajo estudio" },
+        { "element": "Ventanas", "reference": "Superior", "option": "Premium" },
+        { "element": "Puertas", "reference": "Superior", "option": "Premium" },
+        { "element": "Canalones y bajantes", "reference": "No incluidos", "option": "Acero o PVC" }
+      ]
+    }
+  },
+  "notes": [
+    "Dimensiones máximas 9,86 × 12,66 m: cuerpo 9.864 × 11.864 mm más terraza de 800 mm (suma de cotas del plano). La ficha rotula 9,86 × 11,86 m como cuerpo sin terraza; se detalla en especificaciones.",
+    "Zona de día en eu_plan_intro: cocina y comedor 20,94 + salón 19,65 = 40,59 m² (recintos rotulados).",
+    "Recintos sin numerar en el plano: tabla sin columna Nº.",
+    "Planta amueblada girada respecto al plano (terraza a la izquierda): indicado en alt y en eu_plan_note."
+  ],
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_KARE.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios; mismo MD5 que en docs/catalogo/sistema-europeo/)"
+  }
+}
