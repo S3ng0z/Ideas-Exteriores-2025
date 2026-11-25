@@ -1,0 +1,211 @@
+{
+  "product": {
+    "match_title": "GILA",
+    "handle": "gila",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE"
+  },
+  "media_alt_by_position": [
+    "GILA, casa de madera compacta de una planta con porche frontal y dos puertas acristaladas de dos hojas. Render ilustrativo; canalones y bajantes opcionales",
+    "GILA, vista en perspectiva del porche cubierto y la fachada lateral con ventanas. Render ilustrativo; canalones y bajantes opcionales",
+    "GILA, distribución amueblada en vista cenital, girada respecto al plano. Representación ilustrativa",
+    "GILA, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Una casa compacta de una planta con dormitorio, despacho y porche a lo largo de la fachada."
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Salón y cocina comparten una zona de día que se abre al porche por dos puertas acristaladas de dos hojas. Al fondo quedan el dormitorio y un recinto pequeño para despacho o despensa; el baño se sitúa junto al dormitorio."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "5,87 × 6,92 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "32,1 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "5,7 m²"
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Porche cubierto"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "1 dormitorio · 1 baño"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.295 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "34 mm de madera maciza; opción 44 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A dos aguas"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_plan_heading": {
+      "type": "single_line_text_field",
+      "value": "Una zona de día abierta al porche, con el descanso y el trabajo al fondo"
+    },
+    "eu_plan_intro": {
+      "type": "multi_line_text_field",
+      "value": "GILA reúne salón, cocina y baño en un recinto de 18,87 m² que da al porche por dos puertas de dos hojas. Al fondo, separados por un tabique, quedan el dormitorio y un recinto pequeño que puede servir de despacho o de despensa."
+    },
+    "eu_plan_caption": {
+      "type": "single_line_text_field",
+      "value": "Plano de planta. Cotas en milímetros, sin escala gráfica."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Superficies según el plano, a ejes de muro: no equivalen a la superficie útil ni a la construida. El plano acotado no dibuja el baño: la planta amueblada lo sitúa dentro del recinto 3, junto al dormitorio, por lo que la zona de día es menor que la cifra indicada. El porche, que el plano no rotula, se ha calculado con sus cotas (5.610 × 1.010 mm). Usos orientativos; el equipamiento de cocina y baño no forma parte del modelo."
+    },
+    "eu_use_note": {
+      "type": "multi_line_text_field",
+      "value": "La configuración de referencia, con pared de 34 mm sin aislamiento, está indicada para un uso estacional. Para un uso prolongado conviene la pared de 44 mm con aislamiento en paredes, cubierta y suelo. Disponer de dormitorio y baño no implica aptitud como vivienda: el uso autorizado depende del planeamiento, la parcela y el proyecto técnico."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          {
+            "n": "1",
+            "name": "Despacho o despensa",
+            "area": "3,78"
+          },
+          {
+            "n": "2",
+            "name": "Dormitorio",
+            "area": "9,40"
+          },
+          {
+            "n": "3",
+            "name": "Salón y cocina, con baño",
+            "area": "18,87"
+          }
+        ],
+        "total": "32,05",
+        "exterior": [
+          {
+            "name": "Porche cubierto (exterior)",
+            "area": "5,67"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "GILA pertenece a la familia Sistema Europeo de Ideas Exteriores. Los muros se forman mediante perfiles horizontales de madera maciza mecanizados en taller y ensamblados durante el montaje.",
+          "detail": "Los perfiles, de abeto, se apilan mediante uniones machihembradas y se traban en las esquinas. La pared es a la vez cerramiento y elemento portante."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa compacta de una planta con porche frontal integrado bajo la cubierta principal."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "5,87 × 6,92 m de cotas totales, con porche. Altura de muro: 2.295 mm.",
+          "detail": "Entre ejes: cuerpo cerrado de 5.610 × 5.695 mm y porche de 1.010 mm de fondo."
+        },
+        {
+          "label": "Superficies",
+          "value": "32,05 m² de recintos interiores y 5,67 m² de porche cubierto.",
+          "detail": "Recintos: suma del plano, a ejes. Porche: calculado con sus cotas. Superficie útil y construida pendientes de verificación."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 34 mm, vista por ambas caras y sin aislamiento. Disponible en 44 mm, necesaria para aislar las paredes."
+        },
+        {
+          "label": "Suelo",
+          "value": "Estructura de madera tratada con tarima interior de madera.",
+          "detail": "Vigas de arranque y viguetas impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A dos aguas, con la madera vista desde el interior. El material de acabado exterior está incluido; su colocación se presupuesta aparte.",
+          "detail": "Vigas de madera y tablero machihembrado de 17 mm. Acabado exterior de tégola asfáltica."
+        },
+        {
+          "label": "Porche",
+          "value": "Tarima de madera tratada bajo la cubierta, a lo largo de toda la fachada principal.",
+          "detail": "Tablas impregnadas de 25 mm sobre rastreles biselados."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera con acristalamiento con cámara. Dos puertas acristaladas de dos hojas al porche, cuatro ventanas y tres puertas interiores.",
+          "detail": "Gama Silver line. Puertas exteriores de 2.164 × 2.088 mm; tres ventanas de 1.200 × 1.200 mm y una de 600 × 600 mm."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido en la configuración de referencia. Puede incorporarse en paredes (con pared de 44 mm), cubierta y suelo, por separado."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "La madera se entrega natural, sin acabado protector final.",
+          "detail": "Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "34 mm",
+          "option": "44 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes (con 44 mm), cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Tégola asfáltica",
+          "option": "Chapa de acero trapezoidal"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Silver line",
+          "option": "Superior · Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Silver line",
+          "option": "Superior · Premium · Ventanal de aluminio"
+        },
+        {
+          "element": "Canalones y bajantes",
+          "reference": "No incluidos",
+          "option": "Acero o PVC"
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Dimensiones máximas 5,87 × 6,92 m: coinciden con las cotas totales del plano, porche incluido.",
+    "El plano no dibuja el baño (dentro del recinto 3 según la planta amueblada); indicado en nombre del recinto y en eu_plan_note.",
+    "Porche no rotulado en el plano: 5.610 × 1.010 mm = 5,67 m².",
+    "La planta amueblada está girada respecto al plano (porche a la izquierda); indicado en alt."
+  ],
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_GILA.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios)"
+  }
+}
