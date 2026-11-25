@@ -157,3 +157,12 @@ Retrocompatibles: si faltan, la página se comporta como antes.
 - `custom.eu_plan_views` (json): `figure_label`, `plan_label`, `layout_label`, `layout_caption` del bloque de planta (p. ej. «Planta baja» / «Planta alta»).
 - `custom.eu_rooms` sin `area`: tabla de dos columnas (`head`, `rooms[].detail`, `exterior[].detail`), sin totales.
 - Las imágenes del bloque de planta usan su propio texto alternativo; el ajuste de la sección queda como respaldo.
+
+## MANITOBA · aplicado el 2026-11-26
+
+- Producto `MANITOBA` (`/products/manitoba`, `gid://shopify/Product/16272605380952`): `sistema-europeo`, `ACTIVE`, publicado en Tienda online; 4 imágenes con alt (renders sin «plano»/«distribuci»); `eu_plan_image` y `eu_layout_image` enlazados; ficha IE-SE-01 (`GenericFile/75528337129816`). Datos en `docs/product-migrations/2026-11-26-manitoba-sistema-europeo.json`; fuentes en `docs/catalogo/sistema-europeo/manitoba/`.
+- «Dimensiones máximas» 8,00 × 7,00 m = cotas totales del plano con el porche incluido (sin discrepancia con la ficha). Entre ejes 7.705 × 6.740 mm.
+- Recintos numerados 1–5 + T, superficies del plano a ejes; suma 43,15 m². Porche cubierto rotulado 8,90 m² (no se recalcula). Zona de día = recintos 3 + 5 (19,57 m²), indicado en `eu_plan_intro` y `eu_plan_note`.
+- Configuración de referencia: pared 34 mm sin aislar, uso estacional (`eu_use_note`); opción 44 mm, necesaria para aislar paredes. Cubierta a dos aguas con tégola; carpinterías Silver line. Planta amueblada con la misma orientación que el plano.
+- IE-SE-02 / IE-SE-03 sin cambios (mismo MD5). Precio 0,00 € → «Presupuesto según configuración». Sin cambios de theme (campos opcionales de GIZA no necesarios).
+- QA en tienda: H1, cifras de cabecera, 8 secciones, tabla de recintos con Nº y descarga de la ficha verificados.
