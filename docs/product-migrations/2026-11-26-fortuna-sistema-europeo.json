@@ -1,0 +1,207 @@
+{
+  "product": {
+    "match_title": "FORTUNA",
+    "handle": "fortuna",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE"
+  },
+  "media_alt_by_position": [
+    "FORTUNA, casa de madera de una planta con porche frontal. Render frontal ilustrativo",
+    "FORTUNA, porche y fachada lateral. Render ilustrativo",
+    "FORTUNA, distribución amueblada en vista cenital. Representación ilustrativa",
+    "FORTUNA, plano de planta acotado con recintos y superficies"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Una casa de una planta con dos dormitorios y porche frontal cubierto."
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Zona de día con salón, comedor y cocina, dos dormitorios y un baño. El porche ocupa todo el lado corto de la casa y da paso directo a la zona de día por una puerta acristalada de dos hojas."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "10,29 × 5,50 m"
+    },
+    "eu_interior_area": {
+      "type": "single_line_text_field",
+      "value": "42,1 m²"
+    },
+    "eu_terrace_area": {
+      "type": "single_line_text_field",
+      "value": "10,2–10,7 m²"
+    },
+    "eu_terrace_label": {
+      "type": "single_line_text_field",
+      "value": "Porche cubierto"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "2 dormitorios · 1 baño"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "2.770 mm"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "34 mm de madera maciza; opción 44 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "A un agua"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_plan_heading": {
+      "type": "single_line_text_field",
+      "value": "Una zona de día abierta al porche y dos dormitorios en una sola planta"
+    },
+    "eu_plan_intro": {
+      "type": "multi_line_text_field",
+      "value": "FORTUNA reúne salón, comedor y cocina en un único espacio de 22,81 m² que se abre al porche, con dos dormitorios y un baño en el lado opuesto de la casa."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Superficies de recintos rotuladas en el plano, a ejes de muro: no equivalen a la superficie útil ni a la construida. Con las cotas, el cuerpo cerrado mide 8.000 × 5.235 mm. El plano rotula 10,99 m² en el porche, cifra que no resulta de sus cotas; se indica el intervalo calculado con los dos fondos acotados, de 1.955 y 2.035 mm. Los usos son orientativos; el equipamiento de cocina y baño no forma parte del modelo."
+    },
+    "eu_use_note": {
+      "type": "multi_line_text_field",
+      "value": "La configuración de 34 mm sin aislamiento está orientada principalmente a usos estacionales. Para un uso habitual durante todo el año debe estudiarse una solución con aislamiento en paredes (requiere 44 mm), cubierta y suelo. Las prestaciones y el uso autorizado dependen de la ubicación, el planeamiento y el proyecto técnico."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "rooms": [
+          {
+            "n": "1",
+            "name": "Dormitorio",
+            "area": "6,93"
+          },
+          {
+            "n": "2",
+            "name": "Dormitorio",
+            "area": "8,95"
+          },
+          {
+            "n": "3",
+            "name": "Baño",
+            "area": "3,40"
+          },
+          {
+            "n": "4",
+            "name": "Salón, comedor y cocina",
+            "area": "22,81"
+          }
+        ],
+        "total": "42,09",
+        "exterior": [
+          {
+            "n": "T",
+            "name": "Porche cubierto (exterior)",
+            "area": "10,2–10,7"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "FORTUNA pertenece a la familia Sistema Europeo de Ideas Exteriores. Los muros se forman mediante perfiles horizontales de madera maciza mecanizados en taller y ensamblados durante el montaje.",
+          "detail": "Los perfiles, de abeto, se apilan mediante uniones machihembradas y se traban en los encuentros. La pared participa tanto en el cerramiento como en el comportamiento estructural del conjunto."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de una planta con porche frontal cubierto bajo la prolongación de la cubierta, delimitado por pilares y barandilla."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "10,29 × 5,50 m de dimensiones máximas, porche incluido. Altura de pared: 2.770 mm.",
+          "detail": "Cotas totales del plano: 10.285 × 5.495 mm. Cuerpo cerrado entre ejes: 8.000 × 5.235 mm. Porche: 5.235 mm de frente y 1.955–2.035 mm de fondo, a ejes."
+        },
+        {
+          "label": "Superficies",
+          "value": "42,1 m² de recintos interiores y entre 10,2 y 10,7 m² de porche cubierto.",
+          "detail": "Suma de recintos rotulada en el plano (42,09 m², a ejes). Porche calculado con sus cotas. Superficie útil y construida pendientes de verificación."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 34 mm, vista por ambas caras y sin aislamiento. Disponible en 44 mm."
+        },
+        {
+          "label": "Suelo",
+          "value": "Estructura de madera tratada con tarima interior de madera.",
+          "detail": "Vigas de arranque y viguetas impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "A un agua, con la madera vista desde el interior. El material de acabado exterior está incluido; su colocación se presupuesta aparte.",
+          "detail": "Vigas de madera y tablero machihembrado de 17 mm. Acabado exterior de lámina asfáltica."
+        },
+        {
+          "label": "Porche",
+          "value": "Tarima de madera tratada bajo la cubierta, con pilares y barandilla.",
+          "detail": "Tablas impregnadas de 25 mm sobre rastreles biselados."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera con acristalamiento con cámara, según plano.",
+          "detail": "Gama Silver line. Puerta exterior acristalada de dos hojas, cinco ventanas y tres puertas interiores, según plano y renders."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido en la configuración de referencia. Puede incorporarse en paredes (con pared de 44 mm), cubierta y suelo."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "La madera se entrega natural, sin acabado protector final.",
+          "detail": "Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "34 mm",
+          "option": "44 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes (con 44 mm), cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Lámina asfáltica",
+          "option": "Tela asfáltica"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Silver line",
+          "option": "Superior · Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Silver line",
+          "option": "Superior · Premium"
+        },
+        {
+          "element": "Canalones y bajantes",
+          "reference": "No incluidos",
+          "option": "Acero o PVC"
+        }
+      ]
+    }
+  },
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_FORTUNA.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios)"
+  }
+}
