@@ -1,0 +1,208 @@
+{
+  "product": {
+    "match_title": "GIZA",
+    "handle": "giza",
+    "template_suffix": "sistema-europeo",
+    "status": "ACTIVE"
+  },
+  "media_alt_by_position": [
+    "GIZA, casa de madera de dos plantas con cubierta en forma de A, terraza delantera y balcón en el hastial. Render ilustrativo; escalera de acceso y pasarela no incluidas",
+    "GIZA, vista en perspectiva con el faldón de cubierta bajando casi hasta el suelo. Render ilustrativo; el entorno y la casa del fondo no forman parte del modelo",
+    "GIZA, distribución amueblada de la planta baja en vista cenital, con la terraza a la izquierda. Representación ilustrativa",
+    "GIZA, distribución amueblada de la planta alta, con el balcón sobre la terraza. Representación ilustrativa"
+  ],
+  "metafields": {
+    "eu_subtitle": {
+      "type": "single_line_text_field",
+      "value": "Una casa de dos plantas bajo cubierta en A, con dos dormitorios, despacho, terraza y balcón."
+    },
+    "eu_short_description": {
+      "type": "multi_line_text_field",
+      "value": "Abajo, la zona de día con salón, comedor y cocina, un baño y un dormitorio, con salida a la terraza por una puerta de dos hojas. Arriba, un segundo dormitorio con balcón, un despacho y un distribuidor abierto sobre la planta baja."
+    },
+    "eu_dimensions": {
+      "type": "single_line_text_field",
+      "value": "6,0 × 7,4 m"
+    },
+    "eu_dimensions_label": {
+      "type": "single_line_text_field",
+      "value": "Huella del cuerpo"
+    },
+    "eu_layout": {
+      "type": "single_line_text_field",
+      "value": "2 plantas · 2 dormitorios · 1 baño"
+    },
+    "eu_wall_height": {
+      "type": "single_line_text_field",
+      "value": "6.478 mm"
+    },
+    "eu_height_label": {
+      "type": "single_line_text_field",
+      "value": "Altura total"
+    },
+    "eu_wall": {
+      "type": "single_line_text_field",
+      "value": "44 mm de madera maciza; opción 68 mm"
+    },
+    "eu_roof": {
+      "type": "single_line_text_field",
+      "value": "En forma de A"
+    },
+    "eu_insulation": {
+      "type": "single_line_text_field",
+      "value": "Opcional"
+    },
+    "eu_plan_heading": {
+      "type": "single_line_text_field",
+      "value": "La vida de día abajo; el descanso y el trabajo, arriba"
+    },
+    "eu_plan_intro": {
+      "type": "multi_line_text_field",
+      "value": "La planta baja reúne salón, comedor y cocina junto a la terraza, con un baño, un dormitorio y la escalera. En la planta alta, bajo los faldones de la cubierta, quedan un segundo dormitorio con salida al balcón, un despacho y un distribuidor con armario abierto sobre la planta baja."
+    },
+    "eu_plan_views": {
+      "type": "json",
+      "value": {
+        "figure_label": "Distribución de referencia",
+        "plan_label": "Planta baja",
+        "layout_label": "Planta alta",
+        "layout_caption": "Planta alta, con el balcón sobre la terraza. Representación ilustrativa, sin cotas: mobiliario no incluido."
+      }
+    },
+    "eu_plan_caption": {
+      "type": "single_line_text_field",
+      "value": "Planta baja, con la terraza a la izquierda. Representación ilustrativa, sin cotas: mobiliario no incluido."
+    },
+    "eu_plan_note": {
+      "type": "multi_line_text_field",
+      "value": "Plantas ilustrativas, sin cotas. Las superficies construida, útil y de terraza se están verificando con el plano acotado del modelo y se indicarán en el presupuesto. En la planta alta, la altura libre se reduce hacia los faldones de la cubierta. El mobiliario y el equipamiento de cocina y baño no forman parte del modelo."
+    },
+    "eu_use_note": {
+      "type": "multi_line_text_field",
+      "value": "La configuración de referencia, con pared de 44 mm sin aislamiento, admite incorporar aislamiento. Para un uso prolongado conviene añadirlo en paredes, cubierta y suelo, o elegir la pared de 68 mm. Disponer de dormitorios y baño no implica aptitud como vivienda: el uso autorizado depende del planeamiento, la parcela y el proyecto técnico."
+    },
+    "eu_rooms": {
+      "type": "json",
+      "value": {
+        "head": [
+          "Planta",
+          "Espacios"
+        ],
+        "rooms": [
+          {
+            "name": "Planta baja",
+            "detail": "Salón, comedor y cocina · Baño · Dormitorio · Paso con escalera"
+          },
+          {
+            "name": "Planta alta",
+            "detail": "Dormitorio con salida al balcón · Distribuidor con armario, abierto a la planta baja · Despacho"
+          }
+        ],
+        "exterior": [
+          {
+            "name": "Exterior",
+            "detail": "Terraza delantera · Balcón cubierto en el hastial"
+          }
+        ]
+      }
+    },
+    "eu_specs": {
+      "type": "json",
+      "value": [
+        {
+          "label": "Sistema constructivo",
+          "value": "GIZA pertenece a la familia Sistema Europeo de Ideas Exteriores. Los muros se forman mediante perfiles horizontales de madera maciza mecanizados en taller y ensamblados durante el montaje.",
+          "detail": "Perfiles de abeto apilados con machihembrado y trabados en las esquinas. En GIZA, la madera apilada forma los hastiales y los tabiques; los laterales los cierra la propia cubierta."
+        },
+        {
+          "label": "Tipología",
+          "value": "Casa de dos plantas con cubierta en forma de A, terraza delantera y balcón cubierto en el hastial principal."
+        },
+        {
+          "label": "Dimensiones",
+          "value": "Planta de 6,0 × 7,4 m, sin terraza. Altura total hasta la cumbrera: 6.478 mm.",
+          "detail": "Las dimensiones de la terraza y el balcón se detallan en el presupuesto."
+        },
+        {
+          "label": "Superficies",
+          "value": "Pendientes de publicación.",
+          "detail": "Las superficies construida, útil y de terraza se están verificando con el plano acotado del modelo."
+        },
+        {
+          "label": "Pared exterior",
+          "value": "Madera maciza de 44 mm en hastiales, vista por ambas caras y sin aislamiento. Admite aislamiento. Disponible en 68 mm."
+        },
+        {
+          "label": "Suelo y forjado",
+          "value": "Estructura de madera tratada con tarima interior y forjado de madera entre plantas, con escalera interior.",
+          "detail": "Vigas de arranque y viguetas impregnadas con protector; tarima machihembrada cepillada de 19 mm."
+        },
+        {
+          "label": "Cubierta",
+          "value": "En forma de A, a dos aguas, con los faldones bajando casi hasta el suelo y la madera vista desde el interior. El material de acabado exterior está incluido; su colocación se presupuesta aparte.",
+          "detail": "Vigas de madera y tablero machihembrado de 17 mm. Acabado exterior de tégola asfáltica."
+        },
+        {
+          "label": "Terraza y balcón",
+          "value": "Tarima de madera tratada en la terraza delantera y en el balcón, que tiene barandilla de madera y queda protegido por la cubierta.",
+          "detail": "Tablas impregnadas de 25 mm sobre rastreles biselados."
+        },
+        {
+          "label": "Carpinterías",
+          "value": "Puertas y ventanas de madera con acristalamiento con cámara. Puerta de dos hojas a la terraza.",
+          "detail": "Gama Superior. Puerta de dos hojas de 2.000 × 2.100 mm; dos puertas de 1.000 × 2.100 mm; tres ventanas de 1.000 × 2.100 mm."
+        },
+        {
+          "label": "Aislamiento",
+          "value": "No incluido en la configuración de referencia. Puede incorporarse en paredes, cubierta y suelo, por separado."
+        },
+        {
+          "label": "Acabado y protección",
+          "value": "La madera se entrega natural, sin acabado protector final.",
+          "detail": "Debe protegerse en los 14 días siguientes al montaje, incluidas ambas caras de puertas y ventanas."
+        }
+      ]
+    },
+    "eu_options": {
+      "type": "json",
+      "value": [
+        {
+          "element": "Pared exterior",
+          "reference": "44 mm",
+          "option": "68 mm"
+        },
+        {
+          "element": "Aislamiento",
+          "reference": "Sin aislamiento",
+          "option": "Paredes, cubierta y suelo, por separado"
+        },
+        {
+          "element": "Acabado de cubierta",
+          "reference": "Tégola asfáltica",
+          "option": "Chapa de acero (dos perfiles)"
+        },
+        {
+          "element": "Ventanas",
+          "reference": "Superior",
+          "option": "Premium"
+        },
+        {
+          "element": "Puertas",
+          "reference": "Superior",
+          "option": "Premium"
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Sin plano acotado ni superficies publicadas: no se rellenan eu_interior_area, eu_terrace_area ni totales; la tabla de planta lista espacios por planta (rooms sin 'area').",
+    "Huella 6,0 × 7,4 m sin terraza: se rotula 'Huella del cuerpo' (eu_dimensions_label), no 'Dimensiones máximas'.",
+    "6.478 mm es altura total a cumbrera: se rotula 'Altura total' (eu_height_label).",
+    "Plantas baja y alta amuebladas en eu_plan_image / eu_layout_image con conmutador 'Planta baja / Planta alta' (eu_plan_views).",
+    "Segundo render con otra casa al fondo: indicado en alt."
+  ],
+  "files": {
+    "eu_datasheet": "IE-SE-01_Ficha_Tecnico_Comercial_GIZA.pdf",
+    "shared": "IE-SE-02 e IE-SE-03 ya publicados (sin cambios)"
+  }
+}

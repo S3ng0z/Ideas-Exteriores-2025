@@ -2,6 +2,7 @@
   IE · Sistema Europeo · planta y distribución de referencia.
   custom.eu_rooms (json): {"rooms":[{"n":"1","name":"Salón-comedor","area":"15,8"}],"total":"46,3","exterior":[{"n":"1","name":"Terraza cubierta (exterior)","area":"9,5"}]}
   custom.eu_plan_image / custom.eu_layout_image (file_reference, imagen). custom.eu_plan_heading / custom.eu_plan_intro / custom.eu_plan_caption / custom.eu_plan_note sustituyen al pie y la nota comunes; si los recintos no llevan "n", se oculta la columna Nº. Si faltan, se buscan en las imágenes del producto por texto alternativo («plano» / «amueblad»).
+  Opcionales: custom.eu_plan_views (json) {"figure_label","plan_label","layout_label","layout_caption"} para modelos sin plano acotado (p. ej. planta baja / planta alta). Recintos sin "area": tabla de dos columnas con "detail" y cabeceras en rooms.head (["Planta","Espacios"]).
 {% endcomment %}
 {% liquid
   assign rooms = product.metafields.custom.eu_rooms.value
@@ -11,6 +12,15 @@
   assign plan_note = product.metafields.custom.eu_plan_note.value | default: section.settings.note
   assign plan_heading = product.metafields.custom.eu_plan_heading.value | default: section.settings.heading
   assign plan_intro = product.metafields.custom.eu_plan_intro.value | default: section.settings.intro
+  assign views = product.metafields.custom.eu_plan_views.value
+  assign figure_label = views.figure_label | default: section.settings.figure_label
+  assign plan_label = views.plan_label | default: 'Plano acotado'
+  assign layout_label = views.layout_label | default: 'Distribución amueblada'
+  assign layout_caption = views.layout_caption | default: section.settings.layout_caption
+  assign show_area = true
+  if rooms.rooms.first.area == blank
+    assign show_area = false
+  endif
   assign show_idx = false
   if rooms.rooms.first.n != blank
     assign show_idx = true
@@ -40,30 +50,31 @@
     <div class="ie-eu-plan__grid">
       {% if plan_img != blank or layout_img != blank %}
         <figure class="ie-eu-plan__figure" data-eu-plan>
-          {% if section.settings.figure_label != blank %}<p class="ie-eu-plan__label">{{ section.settings.figure_label }}</p>{% endif %}
+          {% if figure_label != blank %}<p class="ie-eu-plan__label">{{ figure_label | escape }}</p>{% endif %}
           {% if plan_img != blank and layout_img != blank %}
             <div class="ie-eu-plan__switch" role="group" aria-label="Tipo de plano">
-              <button type="button" aria-pressed="true" data-eu-view="plan">Plano acotado</button>
-              <button type="button" aria-pressed="false" data-eu-view="layout">Distribución amueblada</button>
+              <button type="button" aria-pressed="true" data-eu-view="plan">{{ plan_label | escape }}</button>
+              <button type="button" aria-pressed="false" data-eu-view="layout">{{ layout_label | escape }}</button>
             </div>
           {% endif %}
           <div class="ie-eu-plan__media">
             {% if plan_img != blank %}
-              {{ plan_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: section.settings.plan_alt, data-eu-panel: 'plan' }}
+              {{ plan_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: plan_img.alt | default: section.settings.plan_alt, data-eu-panel: 'plan' }}
             {% endif %}
             {% if layout_img != blank %}
               {%- capture layout_class -%}{% if plan_img != blank %}is-hidden{% endif %}{%- endcapture -%}
-              {{ layout_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: section.settings.layout_alt, data-eu-panel: 'layout', class: layout_class }}
+              {{ layout_img | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '700, 1000, 1300, 1600', sizes: '(min-width: 990px) 56vw, 100vw', alt: layout_img.alt | default: section.settings.layout_alt, data-eu-panel: 'layout', class: layout_class }}
             {% endif %}
           </div>
-          <figcaption data-eu-caption data-plan="{{ plan_caption | escape }}" data-layout="{{ section.settings.layout_caption | escape }}">
-            {% if plan_img != blank %}{{ plan_caption | escape }}{% else %}{{ section.settings.layout_caption }}{% endif %}
+          <figcaption data-eu-caption data-plan="{{ plan_caption | escape }}" data-layout="{{ layout_caption | escape }}">
+            {% if plan_img != blank %}{{ plan_caption | escape }}{% else %}{{ layout_caption | escape }}{% endif %}
           </figcaption>
         </figure>
       {% endif %}
 
       {% if rooms != blank %}
         <div>
+          {% if show_area %}
           <table class="ie-eu-table">
             <caption>Recintos de {{ product.title | escape }}</caption>
             <thead>
@@ -88,6 +99,22 @@
                 {% endfor %}
               </tbody>
             </table>
+          {% endif %}
+          {% else %}
+          <table class="ie-eu-table">
+            <caption>Espacios de {{ product.title | escape }}</caption>
+            <thead>
+              <tr><th scope="col">{{ rooms.head[0] | default: 'Espacio' }}</th><th scope="col">{{ rooms.head[1] | default: 'Detalle' }}</th></tr>
+            </thead>
+            <tbody>
+              {% for room in rooms.rooms %}
+                <tr><th scope="row">{{ room.name }}</th><td>{{ room.detail }}</td></tr>
+              {% endfor %}
+              {% for room in rooms.exterior %}
+                <tr class="is-exterior"><th scope="row">{{ room.name }}</th><td>{{ room.detail }}</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
           {% endif %}
           {% if plan_note != blank %}<p class="ie-eu__note">{{ plan_note | escape }}</p>{% endif %}
         </div>

@@ -149,3 +149,11 @@ La plantilla trata como dibujo (sin recorte y sin etiqueta «Render») toda imag
 - Configuración de referencia: pared 44 mm sin aislar (opción 68 mm), cubierta a un agua con tela asfáltica, carpinterías gama Superior (opción Premium). `eu_use_note` sin calificar el uso como estacional: recoge la recomendación de la ficha (aislar para uso prolongado).
 - Planta amueblada girada respecto al plano (terraza a la izquierda): indicado en alt y `eu_plan_note`. IE-SE-02 / IE-SE-03 sin cambios (mismo MD5). Precio 0,00 € → «Presupuesto según configuración». Sin cambios de theme.
 - QA en tienda: H1, cifras de cabecera, 8 secciones, tabla de recintos y descarga de la ficha verificados en `https://www.ideas-exteriores.com/products/kare`.
+## Plantilla: campos opcionales para modelos sin plano acotado (2026-11-26)
+
+Retrocompatibles: si faltan, la página se comporta como antes.
+
+- `custom.eu_dimensions_label` / `custom.eu_height_label`: rótulos de las cifras de cabecera (por defecto «Dimensiones máximas» / «Altura de pared»).
+- `custom.eu_plan_views` (json): `figure_label`, `plan_label`, `layout_label`, `layout_caption` del bloque de planta (p. ej. «Planta baja» / «Planta alta»).
+- `custom.eu_rooms` sin `area`: tabla de dos columnas (`head`, `rooms[].detail`, `exterior[].detail`), sin totales.
+- Las imágenes del bloque de planta usan su propio texto alternativo; el ajuste de la sección queda como respaldo.

@@ -12,6 +12,8 @@
   assign eu_terrace_label = product.metafields.custom.eu_terrace_label.value | default: 'Terraza cubierta'
   assign eu_layout = product.metafields.custom.eu_layout.value
   assign eu_wall_height = product.metafields.custom.eu_wall_height.value
+  assign eu_dimensions_label = product.metafields.custom.eu_dimensions_label.value | default: 'Dimensiones máximas'
+  assign eu_height_label = product.metafields.custom.eu_height_label.value | default: 'Altura de pared'
   assign eu_cover = product.featured_media.preview_image | default: product.featured_image
   assign eu_model_param = eu_name | url_encode
   assign eu_quote = section.settings.quote_link | append: '?modelo=' | append: eu_model_param
@@ -90,13 +92,13 @@
           {% if eu_dimensions != blank %}
             <div class="ie-eu-hero__metric">
               <svg class="ie-eu__icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 10V4h6M18 4h6v6M24 18v6h-6M10 24H4v-6M5 5l6 6M23 5l-6 6M23 23l-6-6M5 23l6-6"/></svg>
-              <div><dt>Dimensiones máximas</dt><dd>{{ eu_dimensions | escape }}</dd></div>
+              <div><dt>{{ eu_dimensions_label | escape }}</dt><dd>{{ eu_dimensions | escape }}</dd></div>
             </div>
           {% endif %}
           {% if eu_wall_height != blank %}
             <div class="ie-eu-hero__metric">
               <svg class="ie-eu__icon" viewBox="0 0 28 28" aria-hidden="true"><path d="M8 4v20M5 7l3-3 3 3M5 21l3 3 3-3M15 6h9M15 11h9M15 16h9M15 21h9"/></svg>
-              <div><dt>Altura de pared</dt><dd>{{ eu_wall_height | escape }}</dd></div>
+              <div><dt>{{ eu_height_label | escape }}</dt><dd>{{ eu_wall_height | escape }}</dd></div>
             </div>
           {% endif %}
         </dl>
