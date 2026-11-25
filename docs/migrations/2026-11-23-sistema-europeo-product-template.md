@@ -166,3 +166,11 @@ Retrocompatibles: si faltan, la página se comporta como antes.
 - Configuración de referencia: pared 34 mm sin aislar, uso estacional (`eu_use_note`); opción 44 mm, necesaria para aislar paredes. Cubierta a dos aguas con tégola; carpinterías Silver line. Planta amueblada con la misma orientación que el plano.
 - IE-SE-02 / IE-SE-03 sin cambios (mismo MD5). Precio 0,00 € → «Presupuesto según configuración». Sin cambios de theme (campos opcionales de GIZA no necesarios).
 - QA en tienda: H1, cifras de cabecera, 8 secciones, tabla de recintos con Nº y descarga de la ficha verificados.
+
+## MILK · aplicado el 2026-11-26
+
+- Producto `MILK` (`/products/milk`, `gid://shopify/Product/16272612393304`): `sistema-europeo`, `ACTIVE`, publicado en Tienda online; 4 imágenes con alt (renders sin «plano»/«distribuci»); `eu_plan_image` y `eu_layout_image` enlazados; ficha IE-SE-01 (`GenericFile/75528375370072`). Datos en `docs/product-migrations/2026-11-26-milk-sistema-europeo.json`; fuentes en `docs/catalogo/sistema-europeo/milk/`.
+- **Primer modelo sin terraza ni porche.** Regla para los siguientes: no rellenar `eu_terrace_area` ni `eu_terrace_label` (la cabecera oculta la cifra) y omitir `exterior` en `eu_rooms` (la plantilla no pinta la tabla exterior). Indicarlo en `eu_plan_note` y en la descripción. Verificado en tienda: sin cifra vacía ni fila exterior. Sin cambios de theme.
+- «Dimensiones máximas» 9,00 × 9,00 m = cotas totales del plano (entre ejes 8.665 × 8.665 mm). Recintos numerados 1–8, a ejes; suma 75,35 m². Distribuidor (8) abierto a la zona de día (1).
+- Configuración de referencia: pared 44 mm sin aislar (opción 68 mm), cubierta a dos aguas con tégola, carpinterías gama Superior. Renders con terraza pavimentada, escalones y mobiliario ajenos al modelo: indicado en alt. Planta amueblada con la misma orientación que el plano.
+- IE-SE-02 / IE-SE-03 sin cambios (mismo MD5). Precio 0,00 € → «Presupuesto según configuración».
